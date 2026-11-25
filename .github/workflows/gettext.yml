@@ -1,0 +1,42 @@
+name: 翻訳の元(.pot)を作る
+
+# 原文(pwntools)の英語の文を取り出して、翻訳の対応表(.po)を更新し、成果物として保存する。
+# pwntools のコードは、この Actions の中でだけ動く(手元では動かさない)。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gettext:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: pwntools を、決まったコミットで取得する
+        run: |
+          git clone --quiet https://github.com/Gallopsled/pwntools.git pwntools
+          git -C pwntools checkout --quiet "$(cat PWNTOOLS_SHA)"
+          git -C pwntools log -1 --format='pwntools %h %cs %s'
+      - name: 依存を入れる
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r pwntools/docs/requirements.txt
+          pip install -e ./pwntools sphinx-intl
+      - name: 英語の文を取り出す(.pot)
+        working-directory: pwntools/docs
+        run: sphinx-build -b gettext source "$GITHUB_WORKSPACE/pot" 2>&1 | tail -20
+      - name: 対応表(.po)を更新する
+        run: |
+          sphinx-intl update -p pot -d locale -l ja
+          echo "pot: $(ls pot | wc -l) 個、po: $(find locale -name '*.po' | wc -l) 個"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gettext
+          path: |
+            pot
+            locale
+          retention-days: 14
