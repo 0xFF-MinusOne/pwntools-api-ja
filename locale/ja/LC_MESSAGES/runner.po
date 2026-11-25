@@ -30,7 +30,7 @@ msgstr "アセンブリのリストを受け取り、アセンブルして実行
 #: of pwnlib.runner.run_assembly pwnlib.runner.run_assembly_exitcode
 #: pwnlib.runner.run_shellcode_exitcode
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.runner.run_assembly:3
 msgid "A :class:`pwnlib.tubes.process.process` tube to interact with the process."
@@ -39,7 +39,7 @@ msgstr "プロセスとやり取りするための :class:`pwnlib.tubes.process.
 #: of pwnlib.runner.run_assembly:6 pwnlib.runner.run_assembly_exitcode:7
 #: pwnlib.runner.run_shellcode:4 pwnlib.runner.run_shellcode_exitcode:7
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.runner.run_assembly_exitcode:1
 msgid "Given an assembly listing, assemble and execute it, and wait for the process to die."

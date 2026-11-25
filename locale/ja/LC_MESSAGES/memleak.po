@@ -45,7 +45,7 @@ msgstr "リークしたメモリをキャッシュします（そのためには
 
 #: ../pwntools/docs/source/memleak.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.memleak.MemLeak:15
 msgid "The leaker function."
@@ -119,7 +119,7 @@ msgstr "``addr`` から始まる連続した ``n`` バイトをリークしま�
 #: ../pwntools/docs/source/memleak.rst of pwnlib.memleak.MemLeak.n
 #: pwnlib.memleak.MemLeak.s
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.memleak.MemLeak._leak:5
 msgid "A string of length ``n``, or :const:`None`."
@@ -140,7 +140,7 @@ msgstr "``((uint8_t*) addr)[ndx]`` のバイトをリークします。"
 #: pwnlib.memleak.MemLeak.setw:4 pwnlib.memleak.MemLeak.struct:12
 #: pwnlib.memleak.MemLeak.w:4 pwnlib.memleak.MemLeak.w:6
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.memleak.MemLeak.clearb:1
 msgid "Clears byte at ``((uint8_t*)addr)[ndx]`` from the cache and returns the removed value or `None` if the address was not completely set."

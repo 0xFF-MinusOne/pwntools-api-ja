@@ -58,7 +58,7 @@ msgstr "正の浮動小数点数。タイムアウトを秒で表す"
 
 #: of pwnlib.timeout.Timeout:11
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.timeout.Timeout.countdown:1 pwnlib.timeout.Timeout.local:1
 msgid "Scoped timeout setter.  Sets the timeout within the scope, and restores it when leaving the scope."

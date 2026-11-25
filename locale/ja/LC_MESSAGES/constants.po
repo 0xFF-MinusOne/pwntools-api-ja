@@ -37,7 +37,7 @@ msgstr "定数は便利なクラスで包まれており、定数の名前を参
 
 #: of pwnlib.constants:11 pwnlib.constants:31
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.constants:23
 msgid "The submodule ``freebsd`` contains all constants for FreeBSD, while the constants for Linux have been split up by architecture."

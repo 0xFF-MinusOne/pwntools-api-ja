@@ -44,7 +44,7 @@ msgstr "シェルコード ``raw_bytes`` を、``avoid`` や ``expr`` に含ま�
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.encoders.encoder.encode:4
 msgid "Sequence of shellcode bytes to encode."
@@ -97,7 +97,7 @@ msgstr "より視覚的な説明と C での実装: https://vincentdary.github.i
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:10
 msgid "Init"
-msgstr ""
+msgstr "初期化"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:12
 msgid "The amount esp will be increased by in the allocation phase (In addition to the length of the packed shellcode) as well as defines the size of the NOP sled (you can increase/ decrease the size of the NOP sled by adding/removing b'P'-s to/ from the end of the packed shellcode). Defaults to 20."
@@ -117,13 +117,13 @@ msgstr "避ける文字。既定では、印字可能な ASCII（0x21-0x7e）を
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:9
 msgid "Ignored"
-msgstr ""
+msgstr "無視"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives
 msgid "Raises"
-msgstr ""
+msgstr "例外"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:12
 msgid "A required character is in ``avoid`` (required     characters are characters which assemble into assembly     instructions and are used to unpack the shellcode onto the     stack, more details in the paper linked above ``\\ - % T X P``)."
@@ -147,7 +147,7 @@ msgstr "指定した ``avoid`` パラメータのもとでは、目的の値に�
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:17
 msgid "*bytes* -- The packed shellcode"
@@ -159,7 +159,7 @@ msgstr "*bytes* -- パックしたシェルコード"
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:13
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:13
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:1
@@ -323,7 +323,7 @@ msgstr "ローダのスタブに加えて、シェルコードのサイズが 2 
 
 #: of pwnlib.encoders.i386.delta.i386DeltaEncoder:6
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder:1
 msgid "Generates an XOR decoder for ARM."

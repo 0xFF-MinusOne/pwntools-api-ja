@@ -49,7 +49,7 @@ msgstr "修飾した関数を呼び出す前にデバイスのトランスポー
 
 #: ../pwntools/docs/source/protocols.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.protocols.adb.AdbClient.devices:1
 msgid "If :const:`True`, fetch the long-format listing."
@@ -57,7 +57,7 @@ msgstr ":const:`True` の場合、長い形式の一覧を取得します。"
 
 #: ../pwntools/docs/source/protocols.rst
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.protocols.adb.AdbClient.devices:4
 msgid "String representation of all available devices."

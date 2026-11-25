@@ -51,7 +51,7 @@ msgstr "カーネルの .config から設定データを解析します。"
 #: pwnlib.elf.elf.ELF.set_interpreter pwnlib.elf.elf.ELF.set_runpath
 #: pwnlib.elf.elf.ELF.vaddr_to_offset pwnlib.elf.elf.ELF.write
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.elf.config.parse_kconfig:3
 msgid "Configuration contents."
@@ -64,7 +64,7 @@ msgstr "設定の内容です。"
 #: pwnlib.elf.elf.ELF.read pwnlib.elf.elf.ELF.set_interpreter
 #: pwnlib.elf.elf.ELF.set_runpath pwnlib.elf.elf.ELF.vaddr_to_offset
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.elf.config.parse_kconfig:6
 msgid "A :class:`dict`  mapping configuration options. \"Not set\" is converted into ``None``, ``y`` and ``n`` are converted into :class:`bool`.  Numbers are converted into :class:`int`. All other values are as-is. Each key has ``CONFIG_`` stripped from the beginning."
@@ -75,7 +75,7 @@ msgstr "設定オプションを対応づける :class:`dict` です。\"Not set
 #: pwnlib.elf.elf.ELF.search:20 pwnlib.elf.elf.ELF.vaddr_to_offset:10
 #: pwnlib.elf.elf.ELF.write:14
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: ../pwntools/docs/source/elf/corefile.rst:26
 msgid ":mod:`pwnlib.elf.corefile` --- Core Files"
@@ -285,7 +285,7 @@ msgstr ":class:`str` -- 環境変数の内容"
 #: pwnlib.elf.elf.ELF.set_interpreter:13 pwnlib.elf.elf.ELF.set_runpath:15
 #: pwnlib.elf.elf.dotdict:9
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc:1
 msgid "Number of arguments passed"
@@ -968,7 +968,7 @@ msgstr "セクションが存在するかどうかを、名前で確認します
 #: of pwnlib.elf.elf.ELF.iter_notes pwnlib.elf.elf.ELF.iter_properties
 #: pwnlib.elf.elf.ELF.iter_segments_by_type pwnlib.elf.elf.ELF.search
 msgid "Yields"
-msgstr ""
+msgstr "生成する値"
 
 #: of pwnlib.elf.elf.ELF.iter_notes:1
 msgid "All the notes in the PT_NOTE segments.  Each result is a dictionary- like object with ``n_name``, ``n_type``, and ``n_desc`` fields, amongst others."
@@ -1104,7 +1104,7 @@ msgstr "ELF の仮想アドレス空間から、指定した文字列を検索�
 
 #: of pwnlib.elf.elf.ELF.search:4
 msgid "Notes"
-msgstr ""
+msgstr "注"
 
 #: of pwnlib.elf.elf.ELF.search:5
 msgid "Does not search empty space between segments, or uninitialized data.  This will only return data that actually exists in the ELF file.  Searching for a long string of NULL bytes probably won't work."

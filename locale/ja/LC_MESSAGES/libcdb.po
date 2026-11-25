@@ -44,7 +44,7 @@ msgstr "注: 現在対応しているのは、.deb と .pkg.tar.* のパッケ�
 #: pwnlib.libcdb.search_by_sha1 pwnlib.libcdb.search_by_sha256
 #: pwnlib.libcdb.search_by_symbol_offsets pwnlib.libcdb.unstrip_libc
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.libcdb.download_libraries:11
 msgid "The path the libc binary."
@@ -66,7 +66,7 @@ msgstr "省略可。libc.rip の URL のあとに試す、Debian 形式の apt �
 #: pwnlib.libcdb.search_by_sha1 pwnlib.libcdb.search_by_sha256
 #: pwnlib.libcdb.search_by_symbol_offsets pwnlib.libcdb.unstrip_libc
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.libcdb.download_libraries:27
 msgid "The path to the cached directory containing the downloaded libraries."
@@ -74,7 +74,7 @@ msgstr "ダウンロードしたライブラリを含む、キャッシュされ
 
 #: of pwnlib.libcdb.download_libraries:30
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.libcdb.download_libraries:40
 msgid "Fetch libraries from a different mirror for a vulnerable libc version ``libc6_2.36-9+deb12u6_amd64`` that was removed from the official Debian mirrors:"
@@ -109,7 +109,7 @@ msgstr "ダウンロードしたライブラリのディスク上のパス。ま
 #: pwnlib.libcdb.search_by_sha256:14 pwnlib.libcdb.search_by_symbol_offsets:33
 #: pwnlib.libcdb.unstrip_libc:12
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.libcdb.search_by_libs_id:1
 msgid "Given a Libs ID, attempt to download a matching libc from libcdb."

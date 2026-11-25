@@ -41,7 +41,7 @@ msgstr "インポートされるものの一覧は、:doc:`globals` にありま
 
 #: ../pwntools/docs/source/intro.rst:24
 msgid "Tutorials"
-msgstr ""
+msgstr "チュートリアル"
 
 #: ../pwntools/docs/source/intro.rst:26
 msgid "A series of tutorials for Pwntools exists online, at https://github.com/Gallopsled/pwntools-tutorial#readme"

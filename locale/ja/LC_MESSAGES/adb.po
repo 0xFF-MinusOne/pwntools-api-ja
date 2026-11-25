@@ -100,7 +100,7 @@ msgstr "ADB のサブコマンドの出力を返します。"
 
 #: ../pwntools/docs/source/adb.rst
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.adb.adb.boot_time:1
 msgid "Boot time of the device, in Unix time, rounded to the nearest second."
@@ -167,7 +167,7 @@ msgstr "システムプロパティストアからプロパティを読み取り
 
 #: ../pwntools/docs/source/adb.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.adb.adb.getprop:3
 msgid "Optional, read a single property."

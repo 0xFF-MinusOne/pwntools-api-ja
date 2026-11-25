@@ -57,7 +57,7 @@ msgstr "``pwntools`` の各モジュールを、ここで説明しています�
 
 #: ../pwntools/docs/source/index.rst:97
 msgid "Bytes"
-msgstr ""
+msgstr "バイト列"
 
 #: ../pwntools/docs/source/index.rst:99
 msgid "The bytes vs text distinction is so important that it even made it to this main page. See the pwntools-tutorial_ repo for the latest tutorial finally explaining the difference once and for all (hopefully)."

@@ -37,7 +37,7 @@ msgstr "アーキテクチャごと、次に OS ごとに整理されていま�
 
 #: ../pwntools/docs/source/shellcraft.rst:19
 msgid "Submodules"
-msgstr ""
+msgstr "サブモジュール"
 
 #: ../pwntools/docs/source/shellcraft/aarch64.rst:10
 msgid ":mod:`pwnlib.shellcraft.aarch64` --- Shellcode for AArch64"
@@ -98,7 +98,7 @@ msgstr "デバッガのブレークポイントを挿入します（SIGTRAP を�
 #: pwnlib.shellcraft.thumb.linux.syscall:7 pwnlib.shellcraft.thumb.mov:10
 #: pwnlib.shellcraft.thumb.push:13 pwnlib.shellcraft.thumb.setregs:10
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.shellcraft.aarch64.crash:1
 msgid "Crashes the process."
@@ -148,7 +148,7 @@ msgstr "メモリをコピーします。"
 #: pwnlib.shellcraft.thumb.linux.stage pwnlib.shellcraft.thumb.push
 #: pwnlib.shellcraft.thumb.pushstr pwnlib.shellcraft.thumb.setregs
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.shellcraft.aarch64.memcpy:3 pwnlib.shellcraft.amd64.memcpy:3
 #: pwnlib.shellcraft.arm.memcpy:3 pwnlib.shellcraft.i386.memcpy:3
@@ -184,7 +184,7 @@ msgstr "src がレジスタ以外の文字列の場合は、`context.arch` を�
 #: pwnlib.shellcraft.arm.mov:11 pwnlib.shellcraft.arm.pushstr:11
 #: pwnlib.shellcraft.arm.ret:6 pwnlib.shellcraft.i386.linux.connect:12
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.shellcraft.aarch64.mov:23 pwnlib.shellcraft.amd64.mov:78
 #: pwnlib.shellcraft.i386.mov:14 pwnlib.shellcraft.loongarch64.mov:8
@@ -406,7 +406,7 @@ msgstr ""
 #: ../pwntools/docs/source/shellcraft/riscv64.rst
 #: ../pwntools/docs/source/shellcraft/thumb.rst
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.shellcraft.aarch64.linux.kill:10
 #: pwnlib.shellcraft.amd64.linux.kill:10 pwnlib.shellcraft.arm.linux.kill:10
@@ -1158,7 +1158,7 @@ msgstr "スタックから値を読み込むレジスタのリスト。"
 
 #: of pwnlib.shellcraft.i386.function:38
 msgid "Notes"
-msgstr ""
+msgstr "注"
 
 #: of pwnlib.shellcraft.i386.function:39
 msgid "Can only be used on a shellcraft template which takes all of its arguments as registers.  For example, the pushstr"

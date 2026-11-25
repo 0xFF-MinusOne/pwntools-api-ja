@@ -83,7 +83,7 @@ msgstr "この関数は、現在のフォーマット文字列の書き込みカ
 #: pwnlib.fmtstr.merge_atoms_writesize:6 pwnlib.fmtstr.normalize_writes:5
 #: pwnlib.fmtstr.sort_atoms:15
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.fmtstr.AtomWrite.replace:1
 msgid "Return a new write with updated fields (everything that is not None is set to the new value)"
@@ -95,7 +95,7 @@ msgstr "隣り合う書き込みを 1 つの書き込みにまとめます。"
 
 #: of pwnlib.fmtstr.AtomWrite.union:4
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.fmtstr.FmtStr:1
 msgid "Provides an automated format string exploitation."
@@ -115,7 +115,7 @@ msgstr "`offset` パラメータが指定されていない場合は、スタッ
 #: pwnlib.fmtstr.make_payload_dollar pwnlib.fmtstr.merge_atoms_overlapping
 #: pwnlib.fmtstr.sort_atoms
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.fmtstr.FmtStr:12
 msgid "function to call for communicate with the vulnerable process"
@@ -141,7 +141,7 @@ msgstr "ペイロードを作り、脆弱なプロセスに送る"
 #: pwnlib.fmtstr.find_min_hamming_in_range_step pwnlib.fmtstr.fmtstr_payload
 #: pwnlib.fmtstr.make_payload_dollar
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.fmtstr.FmtStr.execute_writes:3 pwnlib.fmtstr.FmtStr.write:8
 msgid "None"

@@ -33,7 +33,7 @@ msgstr "レジスタの代入リストをたどり、同じレジスタに再び
 
 #: of pwnlib.regsort.check_cycle pwnlib.regsort.regsort
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.regsort.check_cycle:4
 msgid "The list of register involved in the cycle. If there is no cycle, this is an empty list."
@@ -42,7 +42,7 @@ msgstr "循環に含まれるレジスタのリストです。循環がなけれ
 #: of pwnlib.regsort.check_cycle:8 pwnlib.regsort.extract_dependencies:5
 #: pwnlib.regsort.regsort:58 pwnlib.regsort.resolve_order:4
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.regsort.extract_dependencies:1
 msgid "Return a list of all registers which directly depend on the specified register."
@@ -82,7 +82,7 @@ msgstr "上記の方法で依存の循環を解消できない場合は、例外
 
 #: of pwnlib.regsort.regsort
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.regsort.regsort:26
 msgid "Dictionary of desired register states. Keys are registers, values are either registers or any other value."

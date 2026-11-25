@@ -41,7 +41,7 @@ msgstr "``context`` に指定できるパラメータは、:func:`asm` や :func
 
 #: of pwnlib.asm:12
 msgid "Assembly"
-msgstr ""
+msgstr "アセンブル"
 
 #: of pwnlib.asm:14
 msgid "To assemble code, simply invoke :func:`asm` on the code to assemble."
@@ -57,7 +57,7 @@ msgstr "最後に、:func:`asm` は、``pwntools`` が :mod:`shellcraft` モジ�
 
 #: of pwnlib.asm:32
 msgid "Disassembly"
-msgstr ""
+msgstr "逆アセンブル"
 
 #: of pwnlib.asm:34
 msgid "To disassemble code, simply invoke :func:`disasm` on the bytes to disassemble."
@@ -78,7 +78,7 @@ msgstr "シェルコードをアセンブルするには、対象のアーキテ
 #: of pwnlib.asm.asm pwnlib.asm.cpp pwnlib.asm.disasm pwnlib.asm.make_elf
 #: pwnlib.asm.make_elf_from_assembly
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.asm.asm:10
 msgid "Assembler code to assemble."
@@ -103,7 +103,7 @@ msgstr ":data:`.context` の属性はどれも設定できます。例: ``arch='
 #: of pwnlib.asm.asm:25 pwnlib.asm.cpp:12 pwnlib.asm.disasm:19
 #: pwnlib.asm.make_elf:19
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.asm.asm:39
 msgid "The output is cached:"
@@ -219,7 +219,7 @@ msgstr ":func:`.asm` に渡す引数。"
 
 #: of pwnlib.asm.dpkg_search_for_binutils pwnlib.asm.make_elf_from_assembly
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.asm.make_elf_from_assembly:33
 msgid "The path to the assembled ELF (extract=False), or the data of the assembled ELF."
@@ -227,7 +227,7 @@ msgstr "アセンブルした ELF のパス（extract=False の場合）、ま�
 
 #: of pwnlib.asm.make_elf_from_assembly:37
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.asm.make_elf_from_assembly:38
 msgid "This example shows how to create a shared library, and load it via ``LD_PRELOAD``."
@@ -263,4 +263,4 @@ msgstr "binutils のユーティリティが見つからなかった場合に、
 
 #: of pwnlib.asm.print_binutils_instructions:4
 msgid "Doctest:"
-msgstr ""
+msgstr "doctest:"

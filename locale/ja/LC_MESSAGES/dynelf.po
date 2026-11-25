@@ -29,7 +29,7 @@ msgstr "読み込み済みの、動的リンクされた ELF バイナリのシ�
 
 #: of pwnlib.dynelf:6
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.dynelf:46
 msgid "DynELF"
@@ -85,7 +85,7 @@ msgstr ":class:`pwnlib.memleak.MemLeak` のリーカーと、バイナリ内の�
 
 #: ../pwntools/docs/source/dynelf.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.dynelf.DynELF:56 pwnlib.dynelf.DynELF.__init__:5
 msgid "Instance of pwnlib.memleak.MemLeak for leaking memory"
@@ -117,7 +117,7 @@ msgstr "解決するライブラリの名前、またはその一部の文字列
 
 #: ../pwntools/docs/source/dynelf.rst
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:6
 msgid "A DynELF instance for the loaded library, or None."

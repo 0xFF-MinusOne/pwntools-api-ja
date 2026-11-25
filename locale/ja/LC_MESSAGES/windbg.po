@@ -109,7 +109,7 @@ msgstr "実行中のプロセスに、WinDbg または x64dbg でアタッチし
 
 #: of pwnlib.windbg.attach pwnlib.windbg.debug
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.windbg.attach:3
 msgid "Process to attach to."
@@ -126,7 +126,7 @@ msgstr "デバッガに渡す追加の引数。"
 #: ../pwntools/docs/source/windbg.rst of pwnlib.windbg.attach
 #: pwnlib.windbg.debug
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.windbg.attach:10
 msgid "*int* -- PID of the debugger process."
@@ -134,7 +134,7 @@ msgstr "*int* -- デバッガのプロセスの PID。"
 
 #: of pwnlib.windbg.attach:13 pwnlib.windbg.debug:17
 msgid "Notes"
-msgstr ""
+msgstr "注"
 
 #: of pwnlib.windbg.attach:14
 msgid "The ``target`` argument is very robust, and can be any of the following:"
@@ -166,7 +166,7 @@ msgstr "接続するプロセス"
 
 #: of pwnlib.windbg.attach:24
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.windbg.attach:25
 msgid "Attach to a process by PID"

@@ -109,7 +109,7 @@ msgstr "どちらの向きにも互換性のない値を送らない限り、マ
 
 #: of pwnlib.gdb:69
 msgid "Use"
-msgstr ""
+msgstr "使い方"
 
 #: of pwnlib.gdb:75
 msgid "in order to check your GDB's Python version."
@@ -263,7 +263,7 @@ msgstr "指定した引数で、指定したプログラムを execve する Pyt
 #: pwnlib.gdb.debug pwnlib.gdb.debug_assembly pwnlib.gdb.debug_shellcode
 #: pwnlib.gdb.find_module_addresses
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.gdb._execve_script:6
 msgid "List of arguments to pass to the program"
@@ -298,7 +298,7 @@ msgstr "その関数に渡す引数"
 #: pwnlib.gdb.debug_shellcode pwnlib.gdb.find_module_addresses
 #: pwnlib.gdb.version
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.gdb._execve_script:21
 msgid "The filename of the created script."
@@ -374,7 +374,7 @@ msgstr "GDB プロセス(またはそれを実行しているウィンドウ)の
 
 #: of pwnlib.gdb.attach:25 pwnlib.gdb.debug:41
 msgid "Notes"
-msgstr ""
+msgstr "注"
 
 #: of pwnlib.gdb.attach:26
 msgid "The ``target`` argument is very robust, and can be any of the following:"
@@ -431,7 +431,7 @@ msgstr ":meth:`.ssh.process` で起動したリモートのプロセス。**リ�
 
 #: of pwnlib.gdb.attach:47 pwnlib.gdb.debug:71
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.gdb.attach:48
 msgid "Attach to a process by PID"
@@ -499,7 +499,7 @@ msgstr "*str* -- 使用する適切な ``gdb`` バイナリのパス。"
 
 #: of pwnlib.gdb.binary:4 pwnlib.gdb.corefile:10 pwnlib.gdb.version:12
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.gdb.corefile:1
 msgid "Drops a core file for a running local process."

@@ -43,20 +43,35 @@ jobs:
       - name: 非公式の翻訳であることを、各ページの先頭に入れる
         run: |
           python3 - <<'PY'
-          import pathlib
+          import pathlib, re
           banner = ('<div class="ja-notice" style="background:#fff8e1;border:1px solid #e0c36a;border-radius:6px;'
                     'padding:8px 12px;margin:0 0 16px;font-size:13px;line-height:1.6">'
                     'これは pwntools ドキュメントの<strong>非公式の日本語訳</strong>です。'
                     '訳していない部分は英語のままです。原文: '
                     '<a href="https://docs.pwntools.com/">docs.pwntools.com</a><br>'
+                    '読み物のドキュメント（インストール・はじめの一歩など）は、'
+                    '<a href="https://0xff-minusone.github.io/pwntools-docs-ja/">Pwntools 公式ドキュメント（日本語訳）</a>、'
+                    'チュートリアルは<a href="https://0xff-minusone.github.io/pwntools-tutorial-ja/">Pwntools チュートリアル（日本語訳）</a>にあります。<br>'
                     'Unofficial Japanese translation of the pwntools documentation (MIT License).</div>')
+          # テーマ(sphinx_rtd_theme)の画面の文言。テーマに日本語がないので、できあがった HTML で置き換える
+          plain = [
+              ('placeholder="Search docs" aria-label="Search docs"', 'placeholder="ドキュメントを検索" aria-label="ドキュメントを検索"'),
+              ('> View page source</a>', '> ページのソースを表示</a>'),
+              ('</span> Previous</a>', '</span> 前へ</a>'),
+              ('>Next <span class="fa fa-arrow-circle-right"', '>次へ <span class="fa fa-arrow-circle-right"'),
+          ]
+          built = re.compile(r'Built with <a href="([^"]+)">Sphinx</a> using a\s*<a href="([^"]+)">theme</a>\s*provided by <a href="([^"]+)">Read the Docs</a>\.')
           n = 0
           for p in pathlib.Path('_site').rglob('*.html'):
               s = p.read_text(encoding='utf-8')
+              for old, new in plain:
+                  s = s.replace(old, new)
+              s = built.sub(r'<a href="\1">Sphinx</a> と、<a href="\3">Read the Docs</a> 提供の<a href="\2">テーマ</a>で作成しました。', s)
               # 左に固定されたサイドバーに隠れないよう、本文の欄(wy-nav-content)の先頭に入れる
               marker = '<div class="wy-nav-content">'
               if marker in s:
-                  p.write_text(s.replace(marker, marker + banner, 1), encoding='utf-8'); n += 1
+                  s = s.replace(marker, marker + banner, 1); n += 1
+              p.write_text(s, encoding='utf-8')
           print(n, 'ページに入れました')
           PY
           cp pwntools/LICENSE.md _site/LICENSE.txt 2>/dev/null || true

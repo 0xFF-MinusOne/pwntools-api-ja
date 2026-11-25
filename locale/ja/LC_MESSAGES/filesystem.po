@@ -239,7 +239,7 @@ msgstr "SSH 接続の設定方法は、:class:`.ssh` を参照してください
 
 #: ../pwntools/docs/source/filesystem.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.filesystem.ssh.SSHPath:7
 msgid "Name of the file"
@@ -255,7 +255,7 @@ msgstr ":data:`.context.ssh_session` を設定すれば、``SSHPath`` のたび�
 
 #: of pwnlib.filesystem.ssh.SSHPath:19 pwnlib.filesystem.ssh.SSHPath.resolve:8
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.filesystem.ssh.SSHPath:20
 msgid "First, create an SSH connection to the server."
@@ -304,7 +304,7 @@ msgstr "\"../\" などを残したまま、ファイルの絶対パスを返し�
 #: pwnlib.filesystem.ssh.SSHPath.symlink_to:9
 #: pwnlib.filesystem.ssh.SSHPath.unlink:9
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.filesystem.ssh.SSHPath.as_posix:1
 msgid "Return the string representation of the path with forward (/) slashes."
@@ -421,7 +421,7 @@ msgstr "このパスに、指定した対象へのシンボリックリンクを
 #: of pwnlib.filesystem.ssh.SSHPath.symlink_to:3
 #: pwnlib.filesystem.ssh.SSHPath.unlink:3
 msgid "Todo"
-msgstr ""
+msgstr "今後の課題"
 
 #: of pwnlib.filesystem.ssh.SSHPath.symlink_to:5
 msgid "Paramiko's documentation is wrong and inverted. https://github.com/paramiko/paramiko/issues/1821"

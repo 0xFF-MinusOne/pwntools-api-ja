@@ -29,7 +29,7 @@ msgstr "ゲームサーバーにフラグを提出する"
 
 #: of pwnlib.flag.flag.submit_flag
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.flag.flag.submit_flag:3
 msgid "The flag to submit."
@@ -61,7 +61,7 @@ msgstr "省略可能な引数は、環境から推測されます。何も設定
 
 #: of pwnlib.flag.flag.submit_flag
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.flag.flag.submit_flag:19
 msgid "A string indicating the status of the key submission, or an error code."
@@ -69,4 +69,4 @@ msgstr "キーの提出結果を示す文字列、またはエラーコードで
 
 #: of pwnlib.flag.flag.submit_flag:22
 msgid "Doctest:"
-msgstr ""
+msgstr "doctest:"

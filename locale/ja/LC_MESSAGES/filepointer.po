@@ -53,7 +53,7 @@ msgstr "FILE 構造体を作成します。一部のフィールド(たとえば
 #: pwnlib.filepointer.FileStructure.struntil
 #: pwnlib.filepointer.FileStructure.write pwnlib.filepointer._update_var
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.filepointer.FileStructure:3
 msgid "A pointer to NULL value in memory. This pointer can lie in any segment (stack, heap, bss, libc etc)"
@@ -61,7 +61,7 @@ msgstr "メモリ上の NULL 値へのポインタです。このポインタは
 
 #: of pwnlib.filepointer.FileStructure:7 pwnlib.filepointer._update_var:10
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.filepointer.FileStructure:8
 msgid "FILE structure with flags as 0xfbad1807 and _IO_buf_base and _IO_buf_end pointing to 0xcafebabe and 0xfacef00d"
@@ -105,7 +105,7 @@ msgstr "偽の vtable のメモリ上のアドレス"
 #: pwnlib.filepointer.FileStructure.struntil:7
 #: pwnlib.filepointer.FileStructure.write:9
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.filepointer.FileStructure.orange:10
 msgid "Example payload if address of _IO_list_all is 0xfacef00d and fake vtable is at 0xcafebabe -"

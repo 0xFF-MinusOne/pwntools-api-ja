@@ -25,7 +25,7 @@ msgstr ":mod:`pwnlib.libc` --- libc の実装向けの便利な関数"
 
 #: ../pwntools/docs/source/libc.rst:5
 msgid "Submodules"
-msgstr ""
+msgstr "サブモジュール"
 
 #: ../pwntools/docs/source/libc/glibc.rst:6
 msgid ":mod:`pwnlib.libc.glibc` --- Convenient Functions for Glibc"
@@ -46,7 +46,7 @@ msgstr "``struct dtor_list`` オブジェクトを組み立てます。glibc は
 #: pwnlib.libc.glibc.ptr_demangle pwnlib.libc.glibc.ptr_mangle
 #: pwnlib.libc.glibc.reveal_ptr_same_page
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.libc.glibc.ExitDtorList:5 pwnlib.libc.glibc.ExitFunc:8
 msgid "A pointer to function to execute."
@@ -75,7 +75,7 @@ msgstr "チェーンの次の ``ExitDtorList``。``0`` はチェーンの終わ�
 #: pwnlib.libc.glibc.protect_ptr:14 pwnlib.libc.glibc.ptr_demangle:11
 #: pwnlib.libc.glibc.ptr_mangle:11
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.libc.glibc.ExitDtorList.from_bytes:1
 msgid "Construct an ``ExitDtorList`` from bytes object."
@@ -153,7 +153,7 @@ msgstr "登録された終了処理の関数"
 
 #: ../pwntools/docs/source/libc/glibc.rst
 msgid "Variables"
-msgstr ""
+msgstr "変数"
 
 #: of pwnlib.libc.glibc.ExitFuncList:10
 msgid "Total size of registered exit funcs. (This field is automatically obtained via ``len(funcs)``)"
@@ -182,7 +182,7 @@ msgstr "保護する(または復元する)値。"
 #: of pwnlib.libc.glibc.protect_ptr pwnlib.libc.glibc.ptr_demangle
 #: pwnlib.libc.glibc.ptr_mangle pwnlib.libc.glibc.reveal_ptr_same_page
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.libc.glibc.protect_ptr:11
 msgid "Protected/Revealed value."
@@ -230,4 +230,4 @@ msgstr "*int* -- 元のポインタ。"
 
 #: of pwnlib.libc.glibc.reveal_ptr_same_page:10
 msgid "Example"
-msgstr ""
+msgstr "例"

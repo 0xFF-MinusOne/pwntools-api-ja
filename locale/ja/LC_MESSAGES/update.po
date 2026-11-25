@@ -57,7 +57,7 @@ msgstr "更新の確認を行い、ユーザーに報告します。"
 
 #: of pwnlib.update.perform_check
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.update.perform_check:3
 msgid "Whether or not to include pre-release versions."
@@ -65,7 +65,7 @@ msgstr "プレリリース版を含めるかどうかです。"
 
 #: of pwnlib.update.perform_check
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.update.perform_check:6
 msgid "A list of arguments to the update command."

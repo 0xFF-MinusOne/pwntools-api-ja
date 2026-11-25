@@ -33,7 +33,7 @@ msgstr ":func:`time.sleep()` の置き換えです。シグナルを受け取っ
 
 #: ../pwntools/docs/source/replacements.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.replacements.sleep:3
 msgid "Number of seconds to sleep."

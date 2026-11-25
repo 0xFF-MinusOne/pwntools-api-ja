@@ -218,7 +218,7 @@ msgstr "メッセージを記録しますが、行の接頭辞は付けません
 
 #: ../pwntools/docs/source/log.rst
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.log.Logger.indented:3
 msgid "Alternate log level at which to set the indented message.  Defaults to :const:`logging.INFO`."

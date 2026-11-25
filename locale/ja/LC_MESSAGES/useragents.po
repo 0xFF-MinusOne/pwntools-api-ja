@@ -33,11 +33,11 @@ msgstr "既知のユーザーエージェントをすべて取得します。"
 
 #: of pwnlib.useragents.getall pwnlib.useragents.random
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.useragents.getall pwnlib.useragents.random
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.useragents.getall:5
 msgid "A set of user agent strings."
@@ -45,7 +45,7 @@ msgstr "ユーザーエージェント文字列の集合です。"
 
 #: of pwnlib.useragents.getall:8
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.useragents.random:1
 msgid "Get a random user agent string."

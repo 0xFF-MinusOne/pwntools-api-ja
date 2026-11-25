@@ -79,7 +79,7 @@ msgstr "``with`` キーワードを使うと、context はスコープも認識�
 #: pwnlib.context.ContextType.signed:8 pwnlib.context.ContextType.update:21
 #: pwnlib.context.Thread:18
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.context.ContextType:58 pwnlib.context.ContextType.__init__:1
 msgid "Initialize the ContextType structure."
@@ -165,7 +165,7 @@ msgstr "context の内容を消去します。すべての値が既定値に戻�
 #: of pwnlib.context.ContextType.clear pwnlib.context.ContextType.local
 #: pwnlib.context.ContextType.update
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.context.ContextType.clear:4 pwnlib.context.ContextType.clear:5
 msgid "Arguments passed to ``update``"
@@ -189,7 +189,7 @@ msgstr "新しい環境に代入する変数です。"
 
 #: of pwnlib.context.ContextType.local
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.context.ContextType.local:7
 msgid "ContextType manager for managing the old and new environment."
@@ -203,7 +203,7 @@ msgstr ":attr:`quiet` と似ていますが、関数全体をラップします�
 #: pwnlib.context.ContextType.quiet:5 pwnlib.context.ContextType.quietfunc:4
 #: pwnlib.context.ContextType.verbose:11
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.context.ContextType.quietfunc:5
 msgid "Let's set up two functions, which are the same but one is wrapped with :attr:`quietfunc`."
@@ -305,7 +305,7 @@ msgstr ""
 #: of pwnlib.context.ContextType.arch pwnlib.context.ContextType.endian
 #: pwnlib.context.ContextType.os
 msgid "Raises"
-msgstr ""
+msgstr "例外"
 
 #: of pwnlib.context.ContextType.arch:17
 msgid "An invalid architecture was specified"

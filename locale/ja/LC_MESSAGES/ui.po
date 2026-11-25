@@ -33,7 +33,7 @@ msgstr "term_mode でない場合は、データを画面に表示するだけ�
 
 #: of pwnlib.ui.more pwnlib.ui.options pwnlib.ui.yesno
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.ui.more:5
 msgid "The text to show."
@@ -41,7 +41,7 @@ msgstr "表示するテキストです。"
 
 #: of pwnlib.ui.more pwnlib.ui.options pwnlib.ui.yesno
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.ui.more:8
 msgid ":const:`None`"
@@ -74,7 +74,7 @@ msgstr "ユーザーの選択を整数で表したものです。"
 
 #: of pwnlib.ui.options:13 pwnlib.ui.pause:4 pwnlib.ui.yesno:11
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.ui.pause:1
 msgid "Waits for either user input or a specific number of seconds."

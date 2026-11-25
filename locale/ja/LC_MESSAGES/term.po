@@ -53,7 +53,7 @@ msgstr "組み込みの Python 2 形式の ``input`` を、``pwnlib`` の readli
 
 #: ../pwntools/docs/source/term/readline.rst of pwnlib.term.readline.eval_input
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.term.readline.eval_input:5 pwnlib.term.readline.raw_input:4
 #: pwnlib.term.readline.str_input:4
@@ -66,7 +66,7 @@ msgstr "``True`` にすると、`term.term_mode` が有効なとき、プロン�
 
 #: of pwnlib.term.readline.eval_input:12
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.term.readline.raw_input:1
 msgid "Replacement for the built-in ``raw_input`` using ``pwnlib`` readline implementation."

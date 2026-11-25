@@ -29,7 +29,7 @@ msgstr "異なるアーキテクチャのバイナリを実行する"
 
 #: of pwnlib.qemu:4
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: of pwnlib.qemu:6
 msgid "So you want to exploit ARM binaries on your Intel PC?"
@@ -53,7 +53,7 @@ msgstr "これが失敗すると、pwntools は qemu のユーザーモードエ
 
 #: of pwnlib.qemu:22
 msgid "Debugging"
-msgstr ""
+msgstr "デバッグ"
 
 #: of pwnlib.qemu:24
 msgid "When debugging binaries with :func:`.gdb.debug`, pwntools automatically adds the appropriate command-line flags to QEMU to start its GDB stub, and automatically informs GDB of the correct architecture and sysroot."

@@ -65,7 +65,7 @@ msgstr "数値 ``a`` と ``b`` を足します。"
 
 #: of pwnlib.testexample.add
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.testexample.add:3
 msgid "First number to add"
@@ -77,7 +77,7 @@ msgstr "2 つ目の足す数"
 
 #: of pwnlib.testexample.add
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.testexample.add:8
 msgid "The sum of ``a`` and ``b``."
@@ -85,4 +85,4 @@ msgstr "``a`` と ``b`` の和です。"
 
 #: of pwnlib.testexample.add:11
 msgid "Examples"
-msgstr ""
+msgstr "例"

@@ -81,7 +81,7 @@ msgstr "'with' で、スコープとセッションの終了を制御できる�
 #: pwnlib.tubes.tube.tube.settimeout:6 pwnlib.tubes.tube.tube.shutdown:11
 #: pwnlib.tubes.tube.tube.unrecv:5
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.tubes.tube.tube.__exit__:1
 msgid "Handles closing for 'with' statement"
@@ -130,7 +130,7 @@ msgstr "内部バッファを、パイプから埋めます。:meth:`recv_raw` �
 #: pwnlib.tubes.tube.tube.recvpred pwnlib.tubes.tube.tube.recvuntil
 #: pwnlib.tubes.tube.tube.shutdown
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.tubes.tube.tube._fillbuffer:4
 msgid "The bytes of data received, or ``''`` if no data was received."
@@ -213,7 +213,7 @@ msgstr "tube が、指定した向きで接続されていれば True を返し�
 #: pwnlib.tubes.tube.tube.recvpred pwnlib.tubes.tube.tube.recvuntil
 #: pwnlib.tubes.tube.tube.shutdown
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.tubes.tube.tube.connected:3
 msgid "Can be the string 'any', 'in', 'read', 'recv', 'out', 'write', 'send'."
@@ -221,7 +221,7 @@ msgstr "文字列 'any'、'in'、'read'、'recv'、'out'、'write'、'send' の�
 
 #: of pwnlib.tubes.tube.tube.connected:7
 msgid "Doctest:"
-msgstr ""
+msgstr "doctest:"
 
 #: of pwnlib.tubes.process.process.fileno:1
 #: pwnlib.tubes.serialtube.serialtube.fileno:1 pwnlib.tubes.tube.tube.fileno:1
@@ -418,7 +418,7 @@ msgstr "``timeout`` 秒が過ぎても要求が満たされない場合、すべ
 #: pwnlib.tubes.tube.tube.recvlines pwnlib.tubes.tube.tube.recvn
 #: pwnlib.tubes.tube.tube.recvpred pwnlib.tubes.tube.tube.recvuntil
 msgid "Raises"
-msgstr ""
+msgstr "例外"
 
 #: of pwnlib.tubes.tube.tube.recv:7 pwnlib.tubes.tube.tube.recvpred:12
 msgid "The connection is closed"
@@ -470,7 +470,7 @@ msgstr "行末を取り除く（:const:`False`）。"
 
 #: of pwnlib.tubes.tube.tube.recvline:16
 msgid "Timeout"
-msgstr ""
+msgstr "タイムアウト"
 
 #: of pwnlib.tubes.tube.tube.recvline:19
 msgid "The connection closed before the request     could be satisfied and the buffer is empty"
@@ -901,7 +901,7 @@ msgstr "文字列のリストに、補助のルーチンを付けたものです
 #: pwnlib.tubes.ssh.ssh.ibt:4 pwnlib.tubes.ssh.ssh.upload_data:9
 #: pwnlib.tubes.ssh.ssh.user_shstk:4
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.tubes.buffer.Buffer:21
 msgid "Implementation Details:"
@@ -1906,7 +1906,7 @@ msgstr "新しい SSH チャネル。``run=False`` の場合は、スクリプ�
 
 #: of pwnlib.tubes.ssh.ssh.process:62
 msgid "Notes"
-msgstr ""
+msgstr "注"
 
 #: of pwnlib.tubes.ssh.ssh.process:63
 msgid "Requires Python on the remote server."

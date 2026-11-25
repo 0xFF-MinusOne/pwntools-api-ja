@@ -87,7 +87,7 @@ msgstr "加算は xor に、乗算は桁上がりなしの乗算になります�
 #: pwnlib.util.safeeval.values:11 pwnlib.util.sh_string.sh_command_with:13
 #: pwnlib.util.sh_string.sh_prepare:17 pwnlib.util.sh_string.sh_string:17
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.util.crc.BitPolynom.__eq__:1
 msgid "Return self==value."
@@ -225,7 +225,7 @@ msgstr "UNIX のツール ``cksum`` が返すものと同じチェックサム�
 #: pwnlib.util.proc.tracer pwnlib.util.sh_string.sh_prepare
 #: pwnlib.util.web.wget
 msgid "Parameters"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.util.crc.Module.cksum:3 pwnlib.util.crc.crc_crc_10_atm:14
 #: pwnlib.util.crc.crc_crc_10_cdma2000:14 pwnlib.util.crc.crc_crc_10_gsm:14
@@ -377,7 +377,7 @@ msgstr "チェックサムを計算するデータ。"
 #: pwnlib.util.proc.starttime:7 pwnlib.util.proc.stat:7
 #: pwnlib.util.proc.state:7 pwnlib.util.proc.tracer:7 pwnlib.util.web.wget:13
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:1
 msgid "Calculates the crc_10_atm checksum."
@@ -2229,7 +2229,7 @@ msgstr "一意であるべき部分列の長さ。"
 
 #: of pwnlib.util.cyclic.cyclic:13 pwnlib.util.misc.run_in_new_terminal:48
 msgid "Notes"
-msgstr ""
+msgstr "注"
 
 #: of pwnlib.util.cyclic.cyclic:14
 msgid "The maximum length is `len(alphabet)**n`."
@@ -2425,7 +2425,7 @@ msgstr "1 ビットを表す値。"
 #: pwnlib.util.proc.starttime pwnlib.util.proc.stat pwnlib.util.proc.state
 #: pwnlib.util.proc.tracer
 msgid "Returns"
-msgstr ""
+msgstr "戻り値"
 
 #: of pwnlib.util.fiddling.bits:11
 msgid "A list consisting of the values specified in `zero` and `one`."
@@ -4121,7 +4121,7 @@ msgstr "入力の bytes オブジェクトをまとめた、**最小の** bytes 
 
 #: of pwnlib.util.packing.overlap
 msgid "Raises"
-msgstr ""
+msgstr "例外"
 
 #: of pwnlib.util.packing.overlap:22
 msgid "If multiple non-zero values appears at the same index"
@@ -4301,7 +4301,7 @@ msgstr "`word_size` は、`8` の倍数か、文字列 \"all\" でなければ�
 
 #: of pwnlib.util.packing.unpack_many:5
 msgid "Args"
-msgstr ""
+msgstr "引数"
 
 #: of pwnlib.util.packing.unpack_many:6
 msgid "number (int): String to convert word_size (int): Word size of the converted integers or the string \"all\" (in bits). endianness (str): Endianness of the converted integer (\"little\"/\"big\") sign (str): Signedness of the converted integer (False/True) kwargs: Anything that can be passed to context.local"
