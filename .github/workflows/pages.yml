@@ -44,17 +44,19 @@ jobs:
         run: |
           python3 - <<'PY'
           import pathlib
-          banner = ('<div style="background:#fff8e1;border-bottom:1px solid #e0c36a;padding:6px 12px;'
-                    'font-size:13px">これは pwntools ドキュメントの<strong>非公式の日本語訳</strong>です。'
+          banner = ('<div class="ja-notice" style="background:#fff8e1;border:1px solid #e0c36a;border-radius:6px;'
+                    'padding:8px 12px;margin:0 0 16px;font-size:13px;line-height:1.6">'
+                    'これは pwntools ドキュメントの<strong>非公式の日本語訳</strong>です。'
                     '訳していない部分は英語のままです。原文: '
-                    '<a href="https://docs.pwntools.com/">docs.pwntools.com</a>'
-                    ' / Unofficial Japanese translation of the pwntools documentation (MIT License).</div>')
+                    '<a href="https://docs.pwntools.com/">docs.pwntools.com</a><br>'
+                    'Unofficial Japanese translation of the pwntools documentation (MIT License).</div>')
           n = 0
           for p in pathlib.Path('_site').rglob('*.html'):
               s = p.read_text(encoding='utf-8')
-              if '<body' in s:
-                  i = s.index('>', s.index('<body')) + 1
-                  p.write_text(s[:i] + banner + s[i:], encoding='utf-8'); n += 1
+              # 左に固定されたサイドバーに隠れないよう、本文の欄(wy-nav-content)の先頭に入れる
+              marker = '<div class="wy-nav-content">'
+              if marker in s:
+                  p.write_text(s.replace(marker, marker + banner, 1), encoding='utf-8'); n += 1
           print(n, 'ページに入れました')
           PY
           cp pwntools/LICENSE.md _site/LICENSE.txt 2>/dev/null || true
