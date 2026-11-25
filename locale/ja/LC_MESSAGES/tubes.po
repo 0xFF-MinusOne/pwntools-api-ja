@@ -1,0 +1,2178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/tubes.rst:6
+msgid ":mod:`pwnlib.tubes` --- Talking to the World!"
+msgstr ":mod:`pwnlib.tubes` --- 世界と話す！"
+
+#: of pwnlib.tubes:1
+msgid "The pwnlib is not a big truck! It's a series of tubes!"
+msgstr "pwnlib は大きなトラックじゃない。チューブ（tube）の連なりなんだ！"
+
+#: of pwnlib.tubes:3
+msgid "This is our library for talking to sockets, processes, ssh connections etc. Our goal is to be able to use the same API for e.g. remote TCP servers, local TTY-programs and programs run over over SSH."
+msgstr "ソケット、プロセス、SSH 接続などと話すための、私たちのライブラリです。目標は、たとえばリモートの TCP サーバー、ローカルの TTY プログラム、SSH 越しに実行したプログラムを、同じ API で扱えるようにすることです。"
+
+#: of pwnlib.tubes:7
+msgid "It is organized such that the majority of the functionality is implemented in :class:`pwnlib.tubes.tube`. The remaining classes should only implement just enough for the class to work and possibly code pertaining only to that specific kind of tube."
+msgstr "機能の大半は :class:`pwnlib.tubes.tube` に実装されています。ほかのクラスは、そのクラスが動くのに必要なぶんと、その種類の tube だけに関わるコードだけを実装します。"
+
+#: ../pwntools/docs/source/tubes.rst:12
+msgid "Types of Tubes"
+msgstr "tube の種類"
+
+#: ../pwntools/docs/source/tubes.rst:22
+msgid ":mod:`pwnlib.tubes.tube` --- Common Functionality"
+msgstr ":mod:`pwnlib.tubes.tube` --- 共通の機能"
+
+#: of pwnlib.tubes.tube.tube:1
+msgid "Container of all the tube functions common to sockets, TTYs and SSH connetions."
+msgstr "ソケット、TTY、SSH 接続に共通する、tube の関数をすべてまとめたものです。"
+
+#: of pwnlib.tubes.tube.tube.__enter__:1
+msgid "Permit use of 'with' to control scoping and closing sessions."
+msgstr "'with' で、スコープとセッションの終了を制御できるようにします。"
+
+#: of pwnlib.tubes.listen.listen:18 pwnlib.tubes.process.process:78
+#: pwnlib.tubes.remote.remote:26 pwnlib.tubes.server.server:20
+#: pwnlib.tubes.ssh.ssh.__call__:4 pwnlib.tubes.ssh.ssh.__getattr__:6
+#: pwnlib.tubes.ssh.ssh.__getitem__:4 pwnlib.tubes.ssh.ssh.connect_remote:7
+#: pwnlib.tubes.ssh.ssh.connect_remote:9 pwnlib.tubes.ssh.ssh.download:10
+#: pwnlib.tubes.ssh.ssh.download:12 pwnlib.tubes.ssh.ssh.download_data:7
+#: pwnlib.tubes.ssh.ssh.download_file:12 pwnlib.tubes.ssh.ssh.listen_remote:7
+#: pwnlib.tubes.ssh.ssh.listen_remote:9 pwnlib.tubes.ssh.ssh.process:66
+#: pwnlib.tubes.ssh.ssh.run_to_end:6
+#: pwnlib.tubes.ssh.ssh.set_working_directory:30 pwnlib.tubes.ssh.ssh.shell:12
+#: pwnlib.tubes.ssh.ssh.system:10 pwnlib.tubes.ssh.ssh_process.getenv:4
+#: pwnlib.tubes.ssh.ssh_process.libc:6 pwnlib.tubes.tube.tube.__enter__:4
+#: pwnlib.tubes.tube.tube.__lshift__:6 pwnlib.tubes.tube.tube._fillbuffer:7
+#: pwnlib.tubes.tube.tube.can_recv:4 pwnlib.tubes.tube.tube.clean:12
+#: pwnlib.tubes.tube.tube.clean_and_log:7
+#: pwnlib.tubes.tube.tube.connect_input:5
+#: pwnlib.tubes.tube.tube.connect_output:4 pwnlib.tubes.tube.tube.recv:13
+#: pwnlib.tubes.tube.tube.recvline:28
+#: pwnlib.tubes.tube.tube.recvline_contains:12
+#: pwnlib.tubes.tube.tube.recvline_endswith:10
+#: pwnlib.tubes.tube.tube.recvline_pred:14
+#: pwnlib.tubes.tube.tube.recvline_startswith:17
+#: pwnlib.tubes.tube.tube.recvlines:22 pwnlib.tubes.tube.tube.recvlinesS:6
+#: pwnlib.tubes.tube.tube.recvlinesb:4 pwnlib.tubes.tube.tube.recvn:12
+#: pwnlib.tubes.tube.tube.recvpred:18 pwnlib.tubes.tube.tube.recvregex:14
+#: pwnlib.tubes.tube.tube.recvrepeat:4 pwnlib.tubes.tube.tube.recvuntil:17
+#: pwnlib.tubes.tube.tube.send:10 pwnlib.tubes.tube.tube.sendline:4
+#: pwnlib.tubes.tube.tube.settimeout:6 pwnlib.tubes.tube.tube.shutdown:11
+#: pwnlib.tubes.tube.tube.unrecv:5
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.tubes.tube.tube.__exit__:1
+msgid "Handles closing for 'with' statement"
+msgstr "'with' 文の終了処理を行います。"
+
+#: of pwnlib.tubes.tube.tube.__exit__:3
+msgid "See :meth:`__enter__`"
+msgstr ":meth:`__enter__` を参照してください。"
+
+#: of pwnlib.tubes.tube.tube.__lshift__:1
+msgid "Shorthand for connecting multiple tubes."
+msgstr "複数の tube をつなぐための略記です。"
+
+#: of pwnlib.tubes.tube.tube.__lshift__:3 pwnlib.tubes.tube.tube.__ne__:8
+#: pwnlib.tubes.tube.tube.__rshift__:3
+msgid "See :meth:`connect_input` for more information."
+msgstr "詳しくは :meth:`connect_input` を参照してください。"
+
+#: of pwnlib.tubes.tube.tube.__lshift__:7 pwnlib.tubes.tube.tube.__ne__:3
+msgid "The following are equivalent ::"
+msgstr "次の 2 つは同じ意味です ::"
+
+#: of pwnlib.tubes.tube.tube.__lshift__:12
+msgid "This is useful when chaining multiple tubes ::"
+msgstr "複数の tube を連ねるときに便利です ::"
+
+#: of pwnlib.tubes.tube.tube.__ne__:1
+msgid "Shorthand for connecting tubes to eachother."
+msgstr "tube どうしをつなぐための略記です。"
+
+#: of pwnlib.tubes.tube.tube.__rshift__:1
+msgid "Inverse of the ``<<`` operator.  See :meth:`__lshift__`."
+msgstr "``<<`` 演算子の逆です。:meth:`__lshift__` を参照してください。"
+
+#: of pwnlib.tubes.tube.tube._fillbuffer:1
+msgid "Fills the internal buffer from the pipe, by calling :meth:`recv_raw` exactly once."
+msgstr "内部バッファを、パイプから埋めます。:meth:`recv_raw` を、ちょうど 1 回だけ呼びます。"
+
+#: ../pwntools/docs/source/tubes.rst ../pwntools/docs/source/tubes/buffer.rst
+#: ../pwntools/docs/source/tubes/sockets.rst of pwnlib.tubes.buffer.Buffer.get
+#: pwnlib.tubes.ssh.ssh.process pwnlib.tubes.ssh.ssh.shell
+#: pwnlib.tubes.tube.tube._fillbuffer pwnlib.tubes.tube.tube.clean
+#: pwnlib.tubes.tube.tube.clean_and_log pwnlib.tubes.tube.tube.recv
+#: pwnlib.tubes.tube.tube.recvline pwnlib.tubes.tube.tube.recvline_startswith
+#: pwnlib.tubes.tube.tube.recvlines pwnlib.tubes.tube.tube.recvn
+#: pwnlib.tubes.tube.tube.recvpred pwnlib.tubes.tube.tube.recvuntil
+#: pwnlib.tubes.tube.tube.shutdown
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.tubes.tube.tube._fillbuffer:4
+msgid "The bytes of data received, or ``''`` if no data was received."
+msgstr "受信したデータのバイト列。何も受信しなかった場合は ``''``。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`_recv`"
+msgstr ":meth:`_recv` の別名です。"
+
+#: of pwnlib.tubes.tube.tube._recv:1
+msgid "Receives one chunk of from the internal buffer or from the OS if the buffer is empty."
+msgstr "内部バッファから 1 回ぶんのかたまりを受信します。バッファが空なら OS から受信します。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`can_recv`"
+msgstr ":meth:`can_recv` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`can_recv_raw`"
+msgstr ":meth:`can_recv_raw` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.can_recv:1
+msgid "Returns True, if there is data available within `timeout` seconds."
+msgstr "`timeout` 秒以内に読めるデータがあれば True を返します。"
+
+#: of pwnlib.tubes.tube.tube.clean:1
+msgid "Removes all the buffered data from a tube by calling :meth:`pwnlib.tubes.tube.tube.recv` with a low timeout until it fails."
+msgstr "tube のバッファにあるデータを、すべて取り除きます。:meth:`pwnlib.tubes.tube.tube.recv` を、短いタイムアウトで、失敗するまで呼びます。"
+
+#: of pwnlib.tubes.tube.tube.clean:4
+msgid "If ``timeout`` is zero, only cached data will be cleared."
+msgstr "``timeout`` が 0 の場合は、キャッシュ済みのデータだけを消去します。"
+
+#: of pwnlib.tubes.tube.tube.clean:6
+msgid "Note: If timeout is set to zero, the underlying network is not actually polled; only the internal buffer is cleared."
+msgstr "注: timeout を 0 にした場合、実際にはネットワークを調べず（ポーリングせず）、内部バッファだけを消去します。"
+
+#: of pwnlib.tubes.tube.tube.clean:9 pwnlib.tubes.tube.tube.clean_and_log:4
+msgid "All data received"
+msgstr "受信したすべてのデータ"
+
+#: of pwnlib.tubes.tube.tube.clean_and_log:1
+msgid "Works exactly as :meth:`pwnlib.tubes.tube.tube.clean`, but logs received data with :meth:`pwnlib.self.info`."
+msgstr ":meth:`pwnlib.tubes.tube.tube.clean` と同じように動きますが、受信したデータを :meth:`pwnlib.self.info` でログに出します。"
+
+#: of pwnlib.tubes.listen.listen.close:1 pwnlib.tubes.process.process.close:1
+#: pwnlib.tubes.serialtube.serialtube.close:1 pwnlib.tubes.tube.tube.close:1
+msgid "Closes the tube."
+msgstr "tube を閉じます。"
+
+#: of pwnlib.tubes.tube.tube.connect_both:1
+msgid "Connects the both ends of this tube object with another tube object."
+msgstr "この tube の両端を、別の tube につなぎます。"
+
+#: of pwnlib.tubes.tube.tube.connect_input:1
+msgid "Connects the input of this tube to the output of another tube object."
+msgstr "この tube の入力を、別の tube の出力につなぎます。"
+
+#: of pwnlib.tubes.tube.tube.connect_output:1
+msgid "Connects the output of this tube to the input of another tube object."
+msgstr "この tube の出力を、別の tube の入力につなぎます。"
+
+#: of pwnlib.tubes.tube.tube.connected:1
+msgid "Returns True if the tube is connected in the specified direction."
+msgstr "tube が、指定した向きで接続されていれば True を返します。"
+
+#: ../pwntools/docs/source/tubes.rst ../pwntools/docs/source/tubes/buffer.rst
+#: ../pwntools/docs/source/tubes/processes.rst
+#: ../pwntools/docs/source/tubes/sockets.rst
+#: ../pwntools/docs/source/tubes/ssh.rst of pwnlib.tubes.buffer.Buffer.get
+#: pwnlib.tubes.buffer.Buffer.unget pwnlib.tubes.process.process.musl_mapping
+#: pwnlib.tubes.process.process.poll pwnlib.tubes.ssh.ssh.__init__
+#: pwnlib.tubes.ssh.ssh.download pwnlib.tubes.ssh.ssh.download_data
+#: pwnlib.tubes.ssh.ssh.download_file pwnlib.tubes.ssh.ssh.process
+#: pwnlib.tubes.ssh.ssh.set_working_directory pwnlib.tubes.ssh.ssh.shell
+#: pwnlib.tubes.ssh.ssh.upload_data pwnlib.tubes.tube.tube.connected
+#: pwnlib.tubes.tube.tube.recvline pwnlib.tubes.tube.tube.recvline_contains
+#: pwnlib.tubes.tube.tube.recvline_pred
+#: pwnlib.tubes.tube.tube.recvline_startswith pwnlib.tubes.tube.tube.recvlines
+#: pwnlib.tubes.tube.tube.recvpred pwnlib.tubes.tube.tube.recvuntil
+#: pwnlib.tubes.tube.tube.shutdown
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.tubes.tube.tube.connected:3
+msgid "Can be the string 'any', 'in', 'read', 'recv', 'out', 'write', 'send'."
+msgstr "文字列 'any'、'in'、'read'、'recv'、'out'、'write'、'send' のどれかを指定できます。"
+
+#: of pwnlib.tubes.tube.tube.connected:7
+msgid "Doctest:"
+msgstr ""
+
+#: of pwnlib.tubes.process.process.fileno:1
+#: pwnlib.tubes.serialtube.serialtube.fileno:1 pwnlib.tubes.tube.tube.fileno:1
+msgid "Returns the file number used for reading."
+msgstr "読み込みに使う、ファイル番号を返します。"
+
+#: of pwnlib.tubes.tube.tube.interactive:1
+msgid "Does simultaneous reading and writing to the tube. In principle this just connects the tube to standard in and standard out, but in practice this is much more usable, since we are using :mod:`pwnlib.term` to print a floating prompt."
+msgstr "tube に対して、読み書きを同時に行います。原理としては、tube を標準入力と標準出力につなぐだけですが、:mod:`pwnlib.term` を使って、浮かぶプロンプトを表示するので、実際には、ずっと使いやすくなっています。"
+
+#: of pwnlib.tubes.tube.tube.interactive:6
+msgid "Thus it only works while in :data:`pwnlib.term.term_mode`."
+msgstr "そのため、:data:`pwnlib.term.term_mode` の間だけ動きます。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recv`"
+msgstr ":meth:`recv` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvS`"
+msgstr ":meth:`recvS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recv_raw`"
+msgstr ":meth:`recv_raw` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvall`"
+msgstr ":meth:`recvall` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvallS`"
+msgstr ":meth:`recvallS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvallb`"
+msgstr ":meth:`recvallb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvb`"
+msgstr ":meth:`recvb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline`"
+msgstr ":meth:`recvline` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvlineS`"
+msgstr ":meth:`recvlineS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_contains`"
+msgstr ":meth:`recvline_contains` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_containsS`"
+msgstr ":meth:`recvline_containsS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_containsb`"
+msgstr ":meth:`recvline_containsb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_endswith`"
+msgstr ":meth:`recvline_endswith` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_endswithS`"
+msgstr ":meth:`recvline_endswithS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_endswithb`"
+msgstr ":meth:`recvline_endswithb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_pred`"
+msgstr ":meth:`recvline_pred` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_regex`"
+msgstr ":meth:`recvline_regex` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_regexS`"
+msgstr ":meth:`recvline_regexS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_regexb`"
+msgstr ":meth:`recvline_regexb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_startswith`"
+msgstr ":meth:`recvline_startswith` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_startswithS`"
+msgstr ":meth:`recvline_startswithS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvline_startswithb`"
+msgstr ":meth:`recvline_startswithb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvlineb`"
+msgstr ":meth:`recvlineb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvlines`"
+msgstr ":meth:`recvlines` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvlinesS`"
+msgstr ":meth:`recvlinesS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvlinesb`"
+msgstr ":meth:`recvlinesb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvn`"
+msgstr ":meth:`recvn` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvnS`"
+msgstr ":meth:`recvnS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvnb`"
+msgstr ":meth:`recvnb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvpred`"
+msgstr ":meth:`recvpred` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvpredS`"
+msgstr ":meth:`recvpredS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvpredb`"
+msgstr ":meth:`recvpredb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvregex`"
+msgstr ":meth:`recvregex` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvregexS`"
+msgstr ":meth:`recvregexS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvregexb`"
+msgstr ":meth:`recvregexb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvrepeat`"
+msgstr ":meth:`recvrepeat` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvrepeatS`"
+msgstr ":meth:`recvrepeatS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvrepeatb`"
+msgstr ":meth:`recvrepeatb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvuntil`"
+msgstr ":meth:`recvuntil` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvuntilS`"
+msgstr ":meth:`recvuntilS` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`recvuntilb`"
+msgstr ":meth:`recvuntilb` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.recv:1
+msgid "Receives up to `numb` bytes of data from the tube, and returns as soon as any quantity of data is available."
+msgstr "tube から最大 `numb` バイトのデータを受信し、少しでもデータが読めた時点で、すぐに返します。"
+
+#: of pwnlib.tubes.tube.tube.recv:4 pwnlib.tubes.tube.tube.recvline_endswith:4
+#: pwnlib.tubes.tube.tube.recvline_pred:4
+#: pwnlib.tubes.tube.tube.recvline_regex:7
+#: pwnlib.tubes.tube.tube.recvline_startswith:4
+#: pwnlib.tubes.tube.tube.recvlines:6 pwnlib.tubes.tube.tube.recvn:3
+#: pwnlib.tubes.tube.tube.recvpred:4 pwnlib.tubes.tube.tube.recvregex:10
+#: pwnlib.tubes.tube.tube.recvuntil:3
+msgid "If the request is not satisfied before ``timeout`` seconds pass, all data is buffered and an empty string (``''``) is returned."
+msgstr "``timeout`` 秒が過ぎても要求が満たされない場合、すべてのデータはバッファに入れられ、空の文字列（``''``）が返されます。"
+
+#: of pwnlib.tubes.tube.tube.recv pwnlib.tubes.tube.tube.recvline
+#: pwnlib.tubes.tube.tube.recvlines pwnlib.tubes.tube.tube.recvn
+#: pwnlib.tubes.tube.tube.recvpred pwnlib.tubes.tube.tube.recvuntil
+msgid "Raises"
+msgstr ""
+
+#: of pwnlib.tubes.tube.tube.recv:7 pwnlib.tubes.tube.tube.recvpred:12
+msgid "The connection is closed"
+msgstr "接続が閉じています"
+
+#: of pwnlib.tubes.tube.tube.recv:9 pwnlib.tubes.tube.tube.recvpred:14
+msgid "A bytes object containing bytes received from the socket, or ``''`` if a timeout occurred while waiting."
+msgstr "ソケットから受信したバイト列を含む bytes オブジェクト。待っている間にタイムアウトした場合は ``''``。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recv`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recv` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.recvall:1
+msgid "Receives data until EOF is reached and closes the tube."
+msgstr "EOF（入力の終わり）に達するまでデータを受信し、tube を閉じます。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvall`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvall` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvall`, but returns a bytearray"
+msgstr ":meth:`recvall` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recv`, but returns a bytearray"
+msgstr ":meth:`recv` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline:1
+msgid "Receive a single line from the tube."
+msgstr "tube から 1 行を受信します。"
+
+#: of pwnlib.tubes.tube.tube.recvline:3
+msgid "A \"line\" is any sequence of bytes terminated by the byte sequence set in :attr:`newline`, which defaults to ``b'\\n'``."
+msgstr "「行」とは、:attr:`newline` に設定されたバイト列（既定は ``b'\\n'``）で終わる、バイトの並びです。"
+
+#: of pwnlib.tubes.tube.tube.recvline:6
+msgid "If the connection is closed (:class:`EOFError`) before a newline is received, the buffered data is returned by default and a warning is logged. If the buffer is empty, an :class:`EOFError` is raised. This behavior can be changed by setting :meth:`pwnlib.context.ContextType.throw_eof_on_incomplete_line`."
+msgstr "改行を受信する前に接続が閉じた場合（:class:`EOFError`）、既定ではバッファにあるデータが返され、警告がログに出ます。バッファが空なら、:class:`EOFError` が送出されます。この動作は、:meth:`pwnlib.context.ContextType.throw_eof_on_incomplete_line` を設定すると変えられます。"
+
+#: of pwnlib.tubes.tube.tube.recvline:11
+msgid "If the request is not satisfied before ``timeout`` seconds pass, all data is buffered and an empty byte string (``b''``) is returned."
+msgstr "``timeout`` 秒が過ぎても要求が満たされない場合、すべてのデータはバッファに入れられ、空のバイト列（``b''``）が返されます。"
+
+#: of pwnlib.tubes.tube.tube.recvline:14
+msgid "Drop the line ending (:const:`False`)."
+msgstr "行末を取り除く（:const:`False`）。"
+
+#: of pwnlib.tubes.tube.tube.recvline:16
+msgid "Timeout"
+msgstr ""
+
+#: of pwnlib.tubes.tube.tube.recvline:19
+msgid "The connection closed before the request     could be satisfied and the buffer is empty"
+msgstr "要求が満たされる前に接続が閉じ、バッファも空だった場合"
+
+#: of pwnlib.tubes.tube.tube.recvline:21
+msgid "All bytes received over the tube until the first newline ``'\\n'`` is received.  Optionally retains the ending. If the connection is closed before a newline is received, the remaining data received up to this point is returned."
+msgstr "最初の改行 ``'\\n'`` を受信するまでに、tube で受信したすべてのバイト。必要なら、行末を残せます。改行を受信する前に接続が閉じた場合は、そこまでに受信した残りのデータが返されます。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvline`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvline` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.recvline_contains:1
+msgid "Receive lines until one line is found which contains at least one of `items`."
+msgstr "`items` のうち少なくとも 1 つを含む行が見つかるまで、行を受信します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_contains:4
+msgid "List of strings to search for, or a single string."
+msgstr "探す文字列のリスト、または 1 つの文字列。"
+
+#: of pwnlib.tubes.tube.tube.recvline_contains:6
+#: pwnlib.tubes.tube.tube.recvline_pred:10
+#: pwnlib.tubes.tube.tube.recvline_startswith:9
+msgid "Drop the line ending (:const:`True`)."
+msgstr "行末を取り除く（:const:`True`）。"
+
+#: of pwnlib.tubes.ssh.ssh:19 pwnlib.tubes.ssh.ssh.__init__:19
+#: pwnlib.tubes.tube.tube.recvline_contains:8
+#: pwnlib.tubes.tube.tube.recvline_startswith:11
+msgid "Timeout, in seconds"
+msgstr "タイムアウト（秒）"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvline_contains`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvline_contains` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvline_contains`, but returns a bytearray"
+msgstr ":meth:`recvline_contains` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_endswith:1
+msgid "Keep receiving lines until one is found that ends with one of `delims`.  Returns the last line received."
+msgstr "`delims` のどれかで終わる行が見つかるまで、行を受信し続けます。最後に受信した行を返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_endswith:7
+msgid "See :meth:`recvline_startswith` for more details."
+msgstr "詳しくは :meth:`recvline_startswith` を参照してください。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvline_endswith`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvline_endswith` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvline_endswith`, but returns a bytearray"
+msgstr ":meth:`recvline_endswith` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_pred:1
+msgid "Receive data until ``pred(line)`` returns a truthy value. Drop all other data."
+msgstr "``pred(line)`` が真の値を返すまで、データを受信します。それ以外のデータは、すべて捨てます。"
+
+#: of pwnlib.tubes.tube.tube.recvline_pred:7
+msgid "Function to call.  Returns the line for which this function returns :const:`True`."
+msgstr "呼び出す関数。この関数が :const:`True` を返した行を返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_regex:1
+msgid "Wrapper around :func:`recvline_pred`, which will return when a regex matches a line."
+msgstr ":func:`recvline_pred` を包んだものです。正規表現が行に一致したときに返ります。"
+
+#: of pwnlib.tubes.tube.tube.recvline_regex:4
+#: pwnlib.tubes.tube.tube.recvregex:7
+msgid "By default :func:`re.RegexObject.search` is used, but if `exact` is set to True, then :func:`re.RegexObject.match` will be used instead."
+msgstr "既定では :func:`re.RegexObject.search` を使いますが、`exact` を True にすると、代わりに :func:`re.RegexObject.match` を使います。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvline_regex`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvline_regex` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvline_regex`, but returns a bytearray"
+msgstr ":meth:`recvline_regex` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_startswith:1
+msgid "Keep receiving lines until one is found that starts with one of `delims`.  Returns the last line received."
+msgstr "`delims` のどれかで始まる行が見つかるまで、行を受信し続けます。最後に受信した行を返します。"
+
+#: of pwnlib.tubes.tube.tube.recvline_startswith:7
+msgid "List of strings to search for, or string of single characters"
+msgstr "探す文字列のリスト、または 1 文字ずつの文字列"
+
+#: of pwnlib.tubes.tube.tube.recvline_startswith:14
+msgid "The first line received which starts with a delimiter in ``delims``."
+msgstr "``delims`` の区切りのどれかで始まる、最初に受信した行。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvline_startswith`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvline_startswith` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvline_startswith`, but returns a bytearray"
+msgstr ":meth:`recvline_startswith` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvline`, but returns a bytearray"
+msgstr ":meth:`recvline` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvlines:1
+msgid "Receive up to ``numlines`` lines."
+msgstr "最大 ``numlines`` 行を受信します。"
+
+#: of pwnlib.tubes.tube.tube.recvlines:3
+msgid "A \"line\" is any sequence of bytes terminated by the byte sequence set by :attr:`newline`, which defaults to ``'\\n'``."
+msgstr "「行」とは、:attr:`newline` に設定されたバイト列（既定は ``'\\n'``）で終わる、バイトの並びです。"
+
+#: of pwnlib.tubes.tube.tube.recvlines:9
+msgid "Maximum number of lines to receive"
+msgstr "受信する最大の行数"
+
+#: of pwnlib.tubes.tube.tube.recvlines:11
+msgid "Drop newlines at the end of each line (:const:`True`)."
+msgstr "各行の末尾の改行を取り除く（:const:`True`）。"
+
+#: of pwnlib.tubes.tube.tube.recvlines:13
+msgid "Maximum timeout"
+msgstr "最大のタイムアウト"
+
+#: of pwnlib.tubes.tube.tube.recvlines:16 pwnlib.tubes.tube.tube.recvn:6
+#: pwnlib.tubes.tube.tube.recvuntil:11
+msgid "The connection closed before the request could be satisfied"
+msgstr "要求が満たされる前に、接続が閉じた"
+
+#: of pwnlib.tubes.tube.tube.recvlines:18 pwnlib.tubes.tube.tube.recvn:8
+#: pwnlib.tubes.tube.tube.recvuntil:13
+msgid "A string containing bytes received from the socket, or ``''`` if a timeout occurred while waiting."
+msgstr "ソケットから受信したバイトを含む文字列。待っている間にタイムアウトした場合は ``''``。"
+
+#: of pwnlib.tubes.tube.tube.recvlinesS:1
+msgid "This function is identical to :meth:`recvlines`, but decodes the received bytes into string using :func:`context.encoding`. You should use :meth:`recvlines` whenever possible for better performance."
+msgstr "この関数は :meth:`recvlines` と同じですが、受信したバイトを :func:`context.encoding` で文字列にデコードします。性能の面で、可能なかぎり :meth:`recvlines` を使ってください。"
+
+#: of pwnlib.tubes.tube.tube.recvlinesb:1
+msgid "This function is identical to :meth:`recvlines`, but returns a bytearray."
+msgstr "この関数は :meth:`recvlines` と同じですが、bytearray を返します。"
+
+#: of pwnlib.tubes.tube.tube.recvn:1
+msgid "Receives exactly `n` bytes."
+msgstr "ちょうど `n` バイトを受信します。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvn`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvn` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvn`, but returns a bytearray"
+msgstr ":meth:`recvn` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvpred:1
+msgid "Receives one byte at a time from the tube, until ``pred(all_bytes)`` evaluates to True."
+msgstr "``pred(all_bytes)`` が True になるまで、tube から 1 バイトずつ受信します。"
+
+#: of pwnlib.tubes.tube.tube.recvpred:7
+msgid "Function to call, with the currently-accumulated data."
+msgstr "呼び出す関数。そのときまでに集めたデータを渡されます。"
+
+#: of pwnlib.tubes.tube.tube.recvpred:9
+msgid "Timeout for the operation"
+msgstr "操作のタイムアウト"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvpred`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvpred` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvpred`, but returns a bytearray"
+msgstr ":meth:`recvpred` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvregex:1
+msgid "Wrapper around :func:`recvpred`, which will return when a regex matches the string in the buffer."
+msgstr ":func:`recvpred` を包んだものです。バッファの文字列に正規表現が一致したときに返ります。"
+
+#: of pwnlib.tubes.tube.tube.recvregex:4
+msgid "Returns all received data up until the regex matched. If `capture` is set to True, a :class:`re.Match` object is returned instead."
+msgstr "正規表現が一致するところまでに受信したデータを、すべて返します。`capture` を True にすると、代わりに :class:`re.Match` オブジェクトを返します。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvregex`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvregex` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvregex`, but returns a bytearray"
+msgstr ":meth:`recvregex` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvrepeat:1
+msgid "Receives data until a timeout or EOF is reached."
+msgstr "タイムアウトまたは EOF に達するまで、データを受信します。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvrepeat`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvrepeat` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvrepeat`, but returns a bytearray"
+msgstr ":meth:`recvrepeat` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.recvuntil:1
+msgid "Receive data until one of `delims` is encountered."
+msgstr "`delims` のどれかが現れるまで、データを受信します。"
+
+#: of pwnlib.tubes.tube.tube.recvuntil:6
+msgid "Byte-string of delimiters characters, or list of delimiter byte-strings."
+msgstr "区切り文字のバイト列、または、区切りのバイト列のリスト。"
+
+#: of pwnlib.tubes.tube.tube.recvuntil:8
+msgid "Drop the ending.  If :const:`True` it is removed from the end of the return value."
+msgstr "終端を取り除く。:const:`True` なら、戻り値の末尾から取り除かれます。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperS:1
+msgid "Same as :meth:`recvuntil`, but returns a str, decoding the result using `context.encoding`. (note that the binary versions are way faster)"
+msgstr ":meth:`recvuntil` と同じですが、`context.encoding` で結果をデコードして、str で返します（バイト列版のほうが、ずっと速いです）。"
+
+#: of pwnlib.tubes.tube.tube.make_wrapper.<locals>.wrapperb:1
+msgid "Same as :meth:`recvuntil`, but returns a bytearray"
+msgstr ":meth:`recvuntil` と同じですが、bytearray で返します。"
+
+#: of pwnlib.tubes.tube.tube.send:1
+msgid "Sends data."
+msgstr "データを送ります。"
+
+#: of pwnlib.tubes.tube.tube.send:3
+msgid "If log level ``DEBUG`` is enabled, also prints out the data received."
+msgstr "ログレベル ``DEBUG`` が有効なら、受信したデータも、あわせて表示します。"
+
+#: of pwnlib.tubes.tube.tube.send:6
+msgid "If it is not possible to send anymore because of a closed connection, it raises ``exceptions.EOFError``"
+msgstr "接続が閉じていて、これ以上送れない場合は、``exceptions.EOFError`` を送出します。"
+
+#: of pwnlib.tubes.tube.tube.sendafter:1
+msgid "A combination of ``recvuntil(delim, timeout=timeout)`` and ``send(data)``."
+msgstr "``recvuntil(delim, timeout=timeout)`` と ``send(data)`` を、組み合わせたものです。"
+
+#: of pwnlib.tubes.tube.tube.sendline:1
+msgid "Shorthand for ``t.send(data + t.newline)``."
+msgstr "``t.send(data + t.newline)`` の略記です。"
+
+#: of pwnlib.tubes.tube.tube.sendlineafter:1
+msgid "A combination of ``recvuntil(delim, timeout=timeout)`` and ``sendline(data)``."
+msgstr "``recvuntil(delim, timeout=timeout)`` と ``sendline(data)`` を、組み合わせたものです。"
+
+#: of pwnlib.tubes.tube.tube.sendlinethen:1
+msgid "A combination of ``sendline(data)`` and ``recvuntil(delim, timeout=timeout)``."
+msgstr "``sendline(data)`` と ``recvuntil(delim, timeout=timeout)`` を、組み合わせたものです。"
+
+#: of pwnlib.tubes.tube.tube.sendthen:1
+msgid "A combination of ``send(data)`` and ``recvuntil(delim, timeout=timeout)``."
+msgstr "``send(data)`` と ``recvuntil(delim, timeout=timeout)`` を、組み合わせたものです。"
+
+#: of pwnlib.tubes.tube.tube.settimeout:1
+msgid "Set the timeout for receiving operations. If the string \"default\" is given, then :data:`context.timeout` will be used. If None is given, then there will be no timeout."
+msgstr "受信操作のタイムアウトを設定します。文字列「default」を渡すと、:data:`context.timeout` が使われます。None を渡すと、タイムアウトはなくなります。"
+
+#: of pwnlib.tubes.tube.tube.shutdown:1
+msgid "Closes the tube for futher reading or writing depending on `direction`."
+msgstr "`direction` に応じて、tube の読み込み側、または書き込み側を閉じます。"
+
+#: of pwnlib.tubes.tube.tube.shutdown:3
+msgid "Which direction to close; \"in\", \"read\" or \"recv\" closes the tube in the ingoing direction, \"out\", \"write\" or \"send\" closes it in the outgoing direction."
+msgstr "どちらの向きを閉じるか。'in'、'read'、'recv' は、入ってくる向きを閉じます。'out'、'write'、'send' は、出ていく向きを閉じます。"
+
+#: of pwnlib.tubes.tube.tube.shutdown:8
+msgid ":const:`None`"
+msgstr ""
+
+#: of pwnlib.tubes.listen.listen.spawn_process:1
+#: pwnlib.tubes.tube.tube.spawn_process:1
+msgid "Spawns a new process having this tube as stdin, stdout and stderr."
+msgstr "この tube を、標準入力・標準出力・標準エラー出力にして、新しいプロセスを起動します。"
+
+#: of pwnlib.tubes.listen.listen.spawn_process:3
+#: pwnlib.tubes.tube.tube.spawn_process:3
+msgid "Takes the same arguments as :class:`subprocess.Popen`."
+msgstr ":class:`subprocess.Popen` と同じ引数を受け取ります。"
+
+#: of pwnlib.tubes.tube.tube.stream:1
+msgid "Receive data until the tube exits, and print it to stdout."
+msgstr "tube が終了するまでデータを受信して、標準出力に表示します。"
+
+#: of pwnlib.tubes.tube.tube.stream:3
+msgid "Similar to :func:`interactive`, except that no input is sent."
+msgstr ":func:`interactive` に似ていますが、入力は送りません。"
+
+#: of pwnlib.tubes.tube.tube.stream:5
+msgid "Similar to ``print(tube.recvall())`` except that data is printed as it is received, rather than after all data is received."
+msgstr "``print(tube.recvall())`` に似ていますが、すべてのデータを受信し終えてからではなく、受信するたびに、データを表示します。"
+
+#: of pwnlib.tubes.tube.tube.stream:8
+msgid "Whether to receive line-by-line or raw data."
+msgstr "1 行ずつ受信するか、生のデータとして受信するか。"
+
+#: of pwnlib.tubes.tube.tube.stream:11
+msgid "All data printed."
+msgstr "表示したすべてのデータ。"
+
+#: of pwnlib.tubes.tube.tube.timeout_change:1
+msgid "Should not be called directly. Informs the raw layer of the tube that the timeout has changed."
+msgstr "直接呼ばないでください。タイムアウトが変わったことを、tube の下の層（raw 層）に知らせます。"
+
+#: of pwnlib.tubes.tube.tube.timeout_change:4
+msgid "Inherited from :class:`Timeout`."
+msgstr ":class:`Timeout` から継承しています。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`unrecv`"
+msgstr ":meth:`unrecv` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.unrecv:1
+msgid "Puts the specified data back at the beginning of the receive buffer."
+msgstr "指定したデータを、受信バッファの先頭に戻します。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:1
+msgid "Upload a file manually using base64 encoding and compression. This can be used when the tube is connected to a shell."
+msgstr "base64 エンコードと圧縮を使って、ファイルを手動でアップロードします。tube がシェルにつながっているときに使えます。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:4
+msgid "The file is uploaded in base64-encoded chunks by appending to a file and then decompressing it:"
+msgstr "ファイルは、base64 エンコードしたかたまりを、ファイルに追記していき、そのあと展開する形でアップロードされます:"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:14
+msgid "It is assumed that a `base64` command is available on the target system. When ``compression`` is ``auto`` the best compression utility available between ``gzip`` and ``xz`` is chosen with a fallback to uncompressed upload."
+msgstr "対象のシステムに、`base64` コマンドがあることを前提にしています。``compression`` が ``auto`` のときは、``gzip`` と ``xz`` のうち、使える圧縮ツールで最も良いものが選ばれ、どちらもなければ、圧縮なしでアップロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.upload_data:3
+#: pwnlib.tubes.tube.tube.upload_manually:19
+msgid "The data to upload."
+msgstr "アップロードするデータ。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:21
+msgid "The path to upload the data to."
+msgstr "データをアップロードする先のパス。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:23
+msgid "The shell prompt to wait for."
+msgstr "待つシェルのプロンプト。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:25
+msgid "The size of each chunk to upload."
+msgstr "アップロードする 1 つのかたまりの大きさ。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:27
+msgid "The flags to use with chmod. ``\"\"`` to ignore."
+msgstr "chmod に渡すフラグ。無視するなら ``\"\"``。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:29
+msgid "The compression to use. ``auto`` to automatically choose the best compression or ``gzip`` or ``xz``."
+msgstr "使う圧縮。``auto`` なら最も良い圧縮を自動で選びます。``gzip`` か ``xz`` も指定できます。"
+
+#: of pwnlib.tubes.tube.tube.upload_manually:31
+msgid "The marker to use to detect the end of the output. Only used when prompt is not set."
+msgstr "出力の終わりを見つけるための目印。プロンプトが設定されていないときだけ使われます。"
+
+#: of pwnlib.tubes.process.process.terminate:13
+#: pwnlib.tubes.tube.tube.upload_manually:34
+msgid "Examples:"
+msgstr ""
+
+#: of pwnlib.tubes.tube.tube.wait_for_close:1
+msgid "Waits until the tube is closed."
+msgstr "tube が閉じるまで待ちます。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`send`"
+msgstr ":meth:`send` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`send_raw`"
+msgstr ":meth:`send_raw` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`sendafter`"
+msgstr ":meth:`sendafter` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`sendline`"
+msgstr ":meth:`sendline` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`sendlineafter`"
+msgstr ":meth:`sendlineafter` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`sendlines`"
+msgstr ":meth:`sendlines` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`sendlinethen`"
+msgstr ":meth:`sendlinethen` の別名です。"
+
+#: of pwnlib.tubes.tube.tube.make_alias_wrapper.<locals>.wrapper:1
+msgid "Alias for :meth:`sendthen`"
+msgstr ":meth:`sendthen` の別名です。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.tube.tube.default:1
+msgid "Value indicating that the timeout should not be changed"
+msgstr "タイムアウトを変えないことを示す値"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.tube.tube.forever:1
+msgid "Value indicating that a timeout should not ever occur"
+msgstr "タイムアウトが決して起きないことを示す値"
+
+#: of pwnlib.tubes.tube.tube.newline:1
+msgid "Character sent with methods like sendline() or used for recvline()."
+msgstr "sendline() などのメソッドで送られる文字、または recvline() で使われる文字。"
+
+#: of pwnlib.tubes.tube.tube.newline:14
+msgid "# Clean up >>> context.clear()"
+msgstr ""
+
+#: ../pwntools/docs/source/tubes/buffer.rst:6
+msgid ":mod:`pwnlib.tubes.buffer` --- buffer implementation for tubes"
+msgstr ":mod:`pwnlib.tubes.buffer` --- tube のバッファの実装"
+
+#: of pwnlib.tubes.buffer.Buffer:1
+msgid "List of strings with some helper routines."
+msgstr "文字列のリストに、補助のルーチンを付けたものです。"
+
+#: of pwnlib.tubes.buffer.Buffer:4 pwnlib.tubes.buffer.Buffer.get:9
+#: pwnlib.tubes.buffer.Buffer.unget:7 pwnlib.tubes.process.process.writemem:9
+#: pwnlib.tubes.ssh.ssh.aslr:4 pwnlib.tubes.ssh.ssh.connected:4
+#: pwnlib.tubes.ssh.ssh.ibt:4 pwnlib.tubes.ssh.ssh.upload_data:9
+#: pwnlib.tubes.ssh.ssh.user_shstk:4
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.tubes.buffer.Buffer:21
+msgid "Implementation Details:"
+msgstr "実装の詳細:"
+
+#: of pwnlib.tubes.buffer.Buffer:23
+msgid "Implemented as a list.  Strings are added onto the end. The ``0th`` item in the buffer is the oldest item, and will be received first."
+msgstr "リストとして実装されています。文字列は、末尾に追加されます。バッファの ``0th`` 番目（先頭）が、最も古い要素で、最初に受信されます。"
+
+#: of pwnlib.tubes.buffer.Buffer.add:1
+msgid "Adds data to the buffer."
+msgstr "バッファにデータを追加します。"
+
+#: of pwnlib.tubes.buffer.Buffer.add:3
+msgid "Data to add"
+msgstr "追加するデータ"
+
+#: of pwnlib.tubes.buffer.Buffer.get:1
+msgid "Retrieves bytes from the buffer."
+msgstr "バッファからバイト列を取り出します。"
+
+#: of pwnlib.tubes.buffer.Buffer.get:3
+msgid "Maximum number of bytes to fetch"
+msgstr "取り出す最大のバイト数"
+
+#: of pwnlib.tubes.buffer.Buffer.get:6
+msgid "Data as string"
+msgstr "文字列としてのデータ"
+
+#: of pwnlib.tubes.buffer.Buffer.get_fill_size:1
+msgid "Retrieves the default fill size for this buffer class."
+msgstr "このバッファクラスの、既定の埋めるサイズ（fill size）を取得します。"
+
+#: of pwnlib.tubes.buffer.Buffer.get_fill_size:3
+msgid "(Optional) If set and not None, returns the size variable back."
+msgstr "（省略可）設定されていて None でなければ、その size の値をそのまま返します。"
+
+#: of pwnlib.tubes.buffer.Buffer.get_fill_size:6
+msgid "Fill size as integer if size is None, else size."
+msgstr "size が None なら、整数の fill size。そうでなければ size。"
+
+#: of pwnlib.tubes.buffer.Buffer.unget:1
+msgid "Places data at the front of the buffer."
+msgstr "バッファの先頭に、データを置きます。"
+
+#: of pwnlib.tubes.buffer.Buffer.unget:3
+msgid "Data to place at the beginning of the buffer."
+msgstr "バッファの先頭に置くデータ。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.buffer.Buffer.__weakref__:1
+msgid "list of weak references to the object"
+msgstr "このオブジェクトへの弱参照のリスト"
+
+#: ../pwntools/docs/source/tubes/processes.rst:6
+msgid ":mod:`pwnlib.tubes.process` --- Processes"
+msgstr ":mod:`pwnlib.tubes.process` --- プロセス"
+
+#: of pwnlib.tubes.process.process:1 pwnlib.tubes.sock.sock:1
+msgid "Bases: :py:class:`~pwnlib.tubes.tube.tube`"
+msgstr "継承元: :py:class:`~pwnlib.tubes.tube.tube`"
+
+#: of pwnlib.tubes.process.process:1
+msgid "Spawns a new process, and wraps it with a tube for communication."
+msgstr "新しいプロセスを起動して、通信のために tube で包みます。"
+
+#: of pwnlib.tubes.process.process:3
+msgid "List of arguments to pass to the spawned process."
+msgstr "起動したプロセスに渡す、引数のリスト。"
+
+#: of pwnlib.tubes.process.process:5
+msgid "Set to `True` to interpret `argv` as a string to pass to the shell for interpretation instead of as argv."
+msgstr "`True` にすると、`argv` を、argv としてではなく、シェルに渡して解釈させる文字列として扱います。"
+
+#: of pwnlib.tubes.process.process:8
+msgid "Path to the binary to execute.  If :const:`None`, uses ``argv[0]``. Cannot be used with ``shell``."
+msgstr "実行するバイナリのパス。:const:`None` なら、``argv[0]`` を使います。``shell`` とは、同時に使えません。"
+
+#: of pwnlib.tubes.process.process:11
+msgid "Working directory.  Uses the current working directory by default."
+msgstr "作業ディレクトリ。既定は、現在の作業ディレクトリです。"
+
+#: of pwnlib.tubes.process.process:13 pwnlib.tubes.ssh.ssh.process:23
+msgid "Environment variables to add to the environment."
+msgstr "環境に追加する環境変数。"
+
+#: of pwnlib.tubes.process.process:15
+msgid "Ignore Python's environment.  By default use Python's environment iff env not specified."
+msgstr "Python の環境を無視します。既定では、env を指定していないときだけ、Python の環境を使います。"
+
+#: of pwnlib.tubes.process.process:17
+msgid "File object or file descriptor number to use for ``stdin``. By default, a pipe is used.  A pty can be used instead by setting this to ``PTY``.  This will cause programs to behave in an interactive manner (e.g.., ``python`` will show a ``>>>`` prompt). If the application reads from ``/dev/tty`` directly, use a pty."
+msgstr "``stdin`` に使う、ファイルオブジェクトまたはファイルディスクリプタの番号。既定では、パイプを使います。代わりに ``PTY`` を指定すると、pty（疑似端末）を使えます。これで、プログラムが対話的に動作します（たとえば、``python`` が ``>>>`` のプロンプトを表示します）。アプリケーションが ``/dev/tty`` から直接読む場合は、pty を使ってください。"
+
+#: of pwnlib.tubes.process.process:23
+msgid "File object or file descriptor number to use for ``stdout``. By default, a pty is used so that any stdout buffering by libc routines is disabled. May also be ``PIPE`` to use a normal pipe."
+msgstr "``stdout`` に使う、ファイルオブジェクトまたはファイルディスクリプタの番号。既定では、libc のルーチンによる stdout のバッファリングが無効になるように、pty を使います。``PIPE`` を指定して、ふつうのパイプを使うこともできます。"
+
+#: of pwnlib.tubes.process.process:28
+msgid "File object or file descriptor number to use for ``stderr``. By default, ``STDOUT`` is used. May also be ``PIPE`` to use a separate pipe, although the :class:`pwnlib.tubes.tube.tube` wrapper will not be able to read this data."
+msgstr "``stderr`` に使う、ファイルオブジェクトまたはファイルディスクリプタの番号。既定では ``STDOUT`` を使います。``PIPE`` を指定して、別のパイプを使うこともできますが、その場合、:class:`pwnlib.tubes.tube.tube` のラッパーは、このデータを読めません。"
+
+#: of pwnlib.tubes.process.process:33
+msgid "Close all open file descriptors except stdin, stdout, stderr. By default, :const:`True` is used."
+msgstr "stdin、stdout、stderr 以外の、開いているファイルディスクリプタをすべて閉じます。既定では :const:`True` を使います。"
+
+#: of pwnlib.tubes.process.process:36
+msgid "Callable to invoke immediately before calling ``execve``."
+msgstr "``execve`` を呼ぶ直前に呼び出す関数。"
+
+#: of pwnlib.tubes.process.process:38
+msgid "Arguments passed to ``preexec_fn``."
+msgstr "``preexec_fn`` に渡す引数。"
+
+#: of pwnlib.tubes.process.process:40
+msgid "Set the created pty to raw mode (i.e. disable echo and control characters).  :const:`True` by default.  If no pty is created, this has no effect."
+msgstr "作成した pty を、raw モードにします（エコーと制御文字を無効にします）。既定は :const:`True` です。pty が作られていない場合は、効果がありません。"
+
+#: of pwnlib.tubes.process.process:44
+msgid "If set to :const:`False`, disable ASLR via ``personality`` (``setarch -R``) and ``setrlimit`` (``ulimit -s unlimited``).  This disables ASLR for the target process.  However, the ``setarch`` changes are lost if a ``setuid`` binary is executed.  The default value is inherited from ``context.aslr``. See ``setuid`` below for additional options and information."
+msgstr ":const:`False` にすると、``personality``（``setarch -R``）と ``setrlimit``（``ulimit -s unlimited``）を使って、ASLR を無効にします。これで、対象のプロセスの ASLR が無効になります。ただし、``setuid`` のバイナリが実行されると、``setarch`` による変更は失われます。既定値は ``context.aslr`` から引き継がれます。追加の選択肢と情報は、下の ``setuid`` を参照してください。"
+
+#: of pwnlib.tubes.process.process:44
+msgid "If set to :const:`False`, disable ASLR via ``personality`` (``setarch -R``) and ``setrlimit`` (``ulimit -s unlimited``)."
+msgstr ":const:`False` にすると、``personality``（``setarch -R``）と ``setrlimit``（``ulimit -s unlimited``）を使って、ASLR を無効にします。"
+
+#: of pwnlib.tubes.process.process:47
+msgid "This disables ASLR for the target process.  However, the ``setarch`` changes are lost if a ``setuid`` binary is executed."
+msgstr "これで、対象のプロセスの ASLR が無効になります。ただし、``setuid`` のバイナリが実行されると、``setarch`` による変更は失われます。"
+
+#: of pwnlib.tubes.process.process:50
+msgid "The default value is inherited from ``context.aslr``. See ``setuid`` below for additional options and information."
+msgstr "既定値は ``context.aslr`` から引き継がれます。追加の選択肢と情報は、下の ``setuid`` を参照してください。"
+
+#: of pwnlib.tubes.process.process:53
+msgid "Used to control `setuid` status of the target binary, and the corresponding actions taken.  By default, this value is :const:`None`, so no assumptions are made.  If :const:`True`, treat the target binary as ``setuid``. This modifies the mechanisms used to disable ASLR on the process if ``aslr=False``. This is useful for debugging locally, when the exploit is a ``setuid`` binary.  If :const:`False`, prevent ``setuid`` bits from taking effect on the target binary.  This is only supported on Linux, with kernels v3.5 or greater."
+msgstr "対象のバイナリの `setuid` の扱いと、それに応じた動作を制御します。既定値は :const:`None` で、何も仮定しません。:const:`True` にすると、対象のバイナリを ``setuid`` として扱います。``aslr=False`` のとき、プロセスの ASLR を無効にする仕組みが変わります。エクスプロイトの対象が ``setuid`` のバイナリのとき、手元でのデバッグに便利です。:const:`False` にすると、対象のバイナリで ``setuid`` ビットが効かないようにします。これは、Linux のカーネル v3.5 以降でだけ使えます。"
+
+#: of pwnlib.tubes.process.process:53
+msgid "Used to control `setuid` status of the target binary, and the corresponding actions taken."
+msgstr "対象のバイナリの `setuid` の扱いと、それに応じた動作を制御します。"
+
+#: of pwnlib.tubes.process.process:56
+msgid "By default, this value is :const:`None`, so no assumptions are made."
+msgstr "既定値は :const:`None` で、何も仮定しません。"
+
+#: of pwnlib.tubes.process.process:58
+msgid "If :const:`True`, treat the target binary as ``setuid``. This modifies the mechanisms used to disable ASLR on the process if ``aslr=False``. This is useful for debugging locally, when the exploit is a ``setuid`` binary."
+msgstr ":const:`True` にすると、対象のバイナリを ``setuid`` として扱います。``aslr=False`` のとき、プロセスの ASLR を無効にする仕組みが変わります。エクスプロイトの対象が ``setuid`` のバイナリのとき、手元でのデバッグに便利です。"
+
+#: of pwnlib.tubes.process.process:64
+msgid "If :const:`False`, prevent ``setuid`` bits from taking effect on the target binary.  This is only supported on Linux, with kernels v3.5 or greater."
+msgstr ":const:`False` にすると、対象のバイナリで ``setuid`` ビットが効かないようにします。これは、Linux のカーネル v3.5 以降でだけ使えます。"
+
+#: of pwnlib.tubes.process.process:68
+msgid "Where the process is running, used for logging purposes."
+msgstr "プロセスが動いている場所。ログのために使います。"
+
+#: of pwnlib.tubes.process.process:70
+msgid "List of arguments to display, instead of the main executable name."
+msgstr "メインの実行ファイルの名前の代わりに表示する、引数のリスト。"
+
+#: of pwnlib.tubes.process.process:72
+msgid "Set a SIGALRM alarm timeout on the process."
+msgstr "プロセスに、SIGALRM のアラームのタイムアウトを設定します。"
+
+#: of pwnlib.tubes.process.process:74
+msgid "Windows only.  Flags to pass to ``CreateProcess``."
+msgstr "Windows だけ。``CreateProcess`` に渡すフラグ。"
+
+#: of pwnlib.tubes.process.process.__getattr__:1
+msgid "Permit pass-through access to the underlying process object for fields like ``pid`` and ``stdin``."
+msgstr "``pid`` や ``stdin`` のようなフィールドのために、下にあるプロセスオブジェクトへ、そのままアクセスできるようにします。"
+
+#: of pwnlib.tubes.process.process.__on_enoexec:1
+msgid "We received an 'exec format' error (ENOEXEC)"
+msgstr "'exec format' エラー（ENOEXEC）を受け取りました"
+
+#: of pwnlib.tubes.process.process.__on_enoexec:3
+msgid "This implies that the user tried to execute e.g. an ARM binary on a non-ARM system, and does not have binfmt helpers installed for QEMU."
+msgstr "たとえば、ARM のバイナリを ARM 以外のシステムで実行しようとして、QEMU 用の binfmt の補助が入っていない、ということです。"
+
+#: of pwnlib.tubes.process.process.__preexec_fn:1
+msgid "Routine executed in the child process before invoking execve()."
+msgstr "execve() を呼ぶ前に、子プロセスで実行されるルーチン。"
+
+#: of pwnlib.tubes.process.process.__preexec_fn:3
+msgid "Handles setting the controlling TTY as well as invoking the user- supplied preexec_fn."
+msgstr "制御端末（controlling TTY）の設定と、ユーザーが渡した preexec_fn の呼び出しを行います。"
+
+#: of pwnlib.tubes.process.process.__pty_make_controlling_tty:1
+msgid "This makes the pseudo-terminal the controlling tty. This should be more portable than the pty.fork() function. Specifically, this should work on Solaris."
+msgstr "疑似端末を、制御端末にします。pty.fork() 関数より、移植しやすいはずです。とくに、Solaris で動くはずです。"
+
+#: of pwnlib.tubes.process.process._validate:1
+msgid "Perform extended validation on the executable path, argv, and envp."
+msgstr "実行ファイルのパス、argv、envp に対して、より詳しい検証を行います。"
+
+#: of pwnlib.tubes.process.process._validate:3
+msgid "Mostly to make Python happy, but also to prevent common pitfalls."
+msgstr "おもに Python を満足させるためですが、よくある落とし穴を避けるためでもあります。"
+
+#: of pwnlib.tubes.process.process.address_mapping:1
+msgid "Returns the mapping at the specified address."
+msgstr "指定したアドレスにあるマッピングを返します。"
+
+#: of pwnlib.tubes.process.process.address_mapping:3
+#: pwnlib.tubes.process.process.cwd:3
+#: pwnlib.tubes.process.process.elf_mapping:7
+#: pwnlib.tubes.process.process.get_mapping:11
+#: pwnlib.tubes.process.process.heap_mapping:7
+#: pwnlib.tubes.process.process.leak:8 pwnlib.tubes.process.process.lib_size:8
+#: pwnlib.tubes.process.process.libc:5
+#: pwnlib.tubes.process.process.libc_mapping:8
+#: pwnlib.tubes.process.process.maps:9 pwnlib.tubes.process.process.program:3
+#: pwnlib.tubes.process.process.stack_mapping:7
+#: pwnlib.tubes.process.process.vdso_mapping:7
+#: pwnlib.tubes.process.process.vvar_mapping:7
+msgid "Example:"
+msgstr ""
+
+#: of pwnlib.tubes.process.process.can_recv_raw:1
+#: pwnlib.tubes.serialtube.serialtube.can_recv_raw:1
+msgid "Should not be called directly. Returns True, if there is data available within the timeout, but ignores the buffer on the object."
+msgstr "直接呼ばないでください。タイムアウト内に読めるデータがあれば True を返しますが、オブジェクトのバッファは無視します。"
+
+#: of pwnlib.tubes.process.process.communicate:1
+msgid "Calls :meth:`subprocess.Popen.communicate` method on the process."
+msgstr "プロセスの :meth:`subprocess.Popen.communicate` メソッドを呼びます。"
+
+#: of pwnlib.tubes.process.process.connected_raw:1
+#: pwnlib.tubes.serialtube.serialtube.connected_raw:1
+msgid "connected(direction = 'any') -> bool"
+msgstr ""
+
+#: of pwnlib.tubes.process.process.connected_raw:3
+#: pwnlib.tubes.serialtube.serialtube.connected_raw:3
+msgid "Should not be called directly.  Returns True iff the tube is connected in the given direction."
+msgstr "直接呼ばないでください。tube が指定した向きで接続されている場合に限り、True を返します。"
+
+#: of pwnlib.tubes.process.process.elf_mapping:1
+#: pwnlib.tubes.process.process.get_mapping:4
+#: pwnlib.tubes.process.process.heap_mapping:1
+#: pwnlib.tubes.process.process.libc_mapping:1
+#: pwnlib.tubes.process.process.musl_mapping:1
+#: pwnlib.tubes.process.process.stack_mapping:1
+#: pwnlib.tubes.process.process.vdso_mapping:1
+#: pwnlib.tubes.process.process.vvar_mapping:1
+msgid "Whether to only return the first mapping matched, or all of them."
+msgstr "最初に一致したマッピングだけを返すか、一致したものすべてを返すか。"
+
+#: of pwnlib.tubes.process.process.elf_mapping:5
+msgid "Returns :meth:`.process.get_mapping` with the :meth:`.process.elf` path and single as arguments."
+msgstr ":meth:`.process.get_mapping` を、:meth:`.process.elf` のパスと single を引数にして呼んだ結果を返します。"
+
+#: of pwnlib.tubes.process.process.get_mapping:1
+msgid "The exact path of the requested mapping, valid values are also [stack], [heap], etc.."
+msgstr "探すマッピングの正確なパス。[stack]、[heap] なども、有効な値です。"
+
+#: of pwnlib.tubes.process.process.get_mapping:8
+msgid "Returns found mapping(s) in process memory according to path_value."
+msgstr "path_value に従って、プロセスのメモリの中で見つかったマッピングを返します。"
+
+#: of pwnlib.tubes.process.process.heap_mapping:5
+msgid "Returns :meth:`.process.get_mapping` with '[heap]' and single as arguments."
+msgstr ":meth:`.process.get_mapping` を、'[heap]' と single を引数にして呼んだ結果を返します。"
+
+#: of pwnlib.tubes.process.process.kill:1 pwnlib.tubes.ssh.ssh_channel.kill:1
+msgid "Kills the process."
+msgstr "プロセスを強制終了します。"
+
+#: of pwnlib.tubes.process.process.leak:1
+msgid "Leaks memory within the process at the specified address."
+msgstr "プロセスの中の、指定したアドレスのメモリを漏洩（リーク）させます。"
+
+#: of pwnlib.tubes.process.process.leak:3
+msgid "Address to leak memory at"
+msgstr "メモリをリークさせるアドレス"
+
+#: of pwnlib.tubes.process.process.leak:5
+msgid "Number of bytes to leak at that address."
+msgstr "そのアドレスからリークさせるバイト数。"
+
+#: of pwnlib.tubes.process.process.lib_size:1
+msgid "The exact path of the shared library"
+msgstr "共有ライブラリの正確なパス"
+
+#: of pwnlib.tubes.process.process.lib_size:5
+msgid "Returns the size of the shared library in process memory. If the library is not found, zero is returned."
+msgstr "プロセスのメモリの中の、共有ライブラリの大きさを返します。ライブラリが見つからなければ、0 を返します。"
+
+#: of pwnlib.tubes.process.process.libc_mapping:5
+msgid "Returns either the first libc mapping found in process memory, or all libc mappings, depending on \"single\"."
+msgstr "「single」に応じて、プロセスのメモリの中で最初に見つかった libc のマッピング、またはすべての libc のマッピングを返します。"
+
+#: of pwnlib.tubes.process.process.libs:1
+msgid "Return a dictionary mapping the path of each shared library loaded by the process to the address it is loaded at in the process' address space."
+msgstr "プロセスが読み込んだ共有ライブラリそれぞれのパスから、そのプロセスのアドレス空間で読み込まれたアドレスへの、対応表（辞書）を返します。"
+
+#: of pwnlib.tubes.process.process.maps:1
+msgid "Returns a list of process mappings."
+msgstr "プロセスのマッピングのリストを返します。"
+
+#: of pwnlib.tubes.process.process.maps:3
+msgid "A mapping object has the following fields:"
+msgstr "マッピングオブジェクトには、次のフィールドがあります:"
+
+#: of pwnlib.tubes.process.process.maps:4
+msgid ""
+"addr, address (addr alias), start (addr alias), end, size, perms, path, "
+"rss, pss, shared_clean, shared_dirty, private_clean, private_dirty, "
+"referenced, anonymous, swap"
+msgstr ""
+
+#: of pwnlib.tubes.process.process.maps:6
+msgid "perms is a permissions object, with the following fields:"
+msgstr "perms は、次のフィールドを持つ、権限のオブジェクトです:"
+
+#: of pwnlib.tubes.process.process.maps:7
+msgid "read, write, execute, private, shared, string"
+msgstr ""
+
+#: of pwnlib.tubes.process.process.maps:36
+msgid "Useful information about this can be found at: https://man7.org/linux/man-pages/man5/proc.5.html specifically the /proc/pid/maps section."
+msgstr "これについての役に立つ情報は、次にあります: https://man7.org/linux/man-pages/man5/proc.5.html（とくに /proc/pid/maps の節）。"
+
+#: of pwnlib.tubes.process.process.maps:39
+msgid "memory_maps() returns a list of pmmap_ext objects. The definition (from psutil/_pslinux.py) is:"
+msgstr "memory_maps() は、pmmap_ext オブジェクトのリストを返します。定義（psutil/_pslinux.py より）は次のとおりです:"
+
+#: of pwnlib.tubes.process.process.maps:51
+msgid "Here is an example of a pmmap_ext entry:"
+msgstr "pmmap_ext のエントリの例を示します:"
+
+#: of pwnlib.tubes.process.process.musl_mapping:5
+msgid "Returns either the first musl mapping found in process memory, or all musl mappings, depending on \"single\"."
+msgstr "「single」に応じて、プロセスのメモリの中で最初に見つかった musl のマッピング、またはすべての musl のマッピングを返します。"
+
+#: of pwnlib.tubes.process.process.poll:1
+msgid "Wait for the process to exit"
+msgstr "プロセスが終了するのを待ちます"
+
+#: of pwnlib.tubes.process.process.poll:4 pwnlib.tubes.ssh.ssh_channel.poll:1
+msgid "Poll the exit code of the process. Will return None, if the process has not yet finished and the exit code otherwise."
+msgstr "プロセスの終了コードを調べます（ポーリング）。プロセスがまだ終わっていなければ None を、終わっていれば終了コードを返します。"
+
+#: of pwnlib.tubes.process.process.recv_raw:1
+#: pwnlib.tubes.serialtube.serialtube.recv_raw:1
+msgid "Should not be called directly. Receives data without using the buffer on the object."
+msgstr "直接呼ばないでください。オブジェクトのバッファを使わずに、データを受信します。"
+
+#: of pwnlib.tubes.process.process.recv_raw:4
+#: pwnlib.tubes.serialtube.serialtube.recv_raw:4
+msgid "Unless there is a timeout or closed connection, this should always return data. In case of a timeout, it should return None, in case of a closed connection it should raise an ``exceptions.EOFError``."
+msgstr "タイムアウトや、接続が閉じた場合を除いて、これは常にデータを返すはずです。タイムアウトした場合は None を返し、接続が閉じた場合は ``exceptions.EOFError`` を送出するはずです。"
+
+#: of pwnlib.tubes.process.process.send_raw:1
+#: pwnlib.tubes.serialtube.serialtube.send_raw:1
+msgid "Should not be called directly. Sends data to the tube."
+msgstr "直接呼ばないでください。tube にデータを送ります。"
+
+#: of pwnlib.tubes.process.process.send_raw:3
+#: pwnlib.tubes.serialtube.serialtube.send_raw:3
+msgid "Should return ``exceptions.EOFError``, if it is unable to send any more, because of a closed tube."
+msgstr "tube が閉じていて、これ以上送れない場合は、``exceptions.EOFError`` を返すはずです。"
+
+#: of pwnlib.tubes.process.process.settimeout_raw:1
+#: pwnlib.tubes.serialtube.serialtube.settimeout_raw:1
+msgid "Should not be called directly. Sets the timeout for the tube."
+msgstr "直接呼ばないでください。tube のタイムアウトを設定します。"
+
+#: of pwnlib.tubes.process.process.shutdown_raw:1
+#: pwnlib.tubes.serialtube.serialtube.shutdown_raw:1
+msgid "Should not be called directly.  Closes the tube for further reading or writing."
+msgstr "直接呼ばないでください。tube の、それ以上の読み込みまたは書き込みを閉じます。"
+
+#: of pwnlib.tubes.process.process.stack_mapping:5
+msgid "Returns :meth:`.process.get_mapping` with '[stack]' and single as arguments."
+msgstr ":meth:`.process.get_mapping` を、'[stack]' と single を引数にして呼んだ結果を返します。"
+
+#: of pwnlib.tubes.process.process.terminate:1
+msgid "Terminates the process by sending SIGTERM."
+msgstr "SIGTERM を送って、プロセスを終了させます。"
+
+#: of pwnlib.tubes.process.process.terminate:3
+msgid "This is a more graceful way to stop a process compared to :meth:`kill`, which sends SIGKILL. The process has a chance to clean up and exit gracefully when receiving SIGTERM."
+msgstr "SIGKILL を送る :meth:`kill` に比べて、プロセスを止める、より穏やかな方法です。プロセスは、SIGTERM を受け取ったとき、後片付けをして、きれいに終了する機会があります。"
+
+#: of pwnlib.tubes.process.process.terminate:7
+msgid "The process can choose to ignore this signal, so proper cleanup is only done in :meth:`kill`/:meth:`close`."
+msgstr "プロセスは、このシグナルを無視することもできます。確実に後片付けされるのは、:meth:`kill` / :meth:`close` だけです。"
+
+#: of pwnlib.tubes.process.process.terminate:10
+msgid "Note: On Windows, there is no SIGTERM signal, so the Win32 API function ``TerminateProcess()`` is called instead, leading to :meth:`terminate()` and :meth:`kill()` being effectively the same."
+msgstr "注: Windows には SIGTERM がないので、代わりに Win32 API の関数 ``TerminateProcess()`` が呼ばれます。そのため、:meth:`terminate()` と :meth:`kill()` は、実質的に同じになります。"
+
+#: of pwnlib.tubes.process.process.vdso_mapping:5
+msgid "Returns :meth:`.process.get_mapping` with '[vdso]' and single as arguments."
+msgstr ":meth:`.process.get_mapping` を、'[vdso]' と single を引数にして呼んだ結果を返します。"
+
+#: of pwnlib.tubes.process.process.vvar_mapping:5
+msgid "Returns :meth:`.process.get_mapping` with '[vvar]' and single as arguments."
+msgstr ":meth:`.process.get_mapping` を、'[vvar]' と single を引数にして呼んだ結果を返します。"
+
+#: of pwnlib.tubes.process.process.writemem:1
+msgid "Writes memory within the process at the specified address."
+msgstr "プロセスの中の、指定したアドレスのメモリに書き込みます。"
+
+#: of pwnlib.tubes.process.process.writemem:3
+msgid "Address to write memory"
+msgstr "メモリを書き込むアドレス"
+
+#: of pwnlib.tubes.process.process.writemem:5
+msgid "Data to write to the address"
+msgstr ""
+
+#: of pwnlib.tubes.process.process.writemem:10
+msgid "Let's write data to  the beginning of the mapped memory of the  ELF."
+msgstr "ELF のマップされたメモリの先頭に、データを書いてみましょう。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process._setuid:1
+msgid "Whether setuid is permitted"
+msgstr "setuid を許可するか"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process._stop_noticed:1
+msgid "Have we seen the process stop?  If so, this is a unix timestamp."
+msgstr "プロセスが止まったのを見たか。見たなら、これは unix タイムスタンプです。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.alarm:1
+msgid "Alarm timeout of the process"
+msgstr "プロセスのアラームのタイムアウト"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.argv:1
+msgid "Arguments passed on argv"
+msgstr "argv に渡された引数"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.aslr:1
+msgid "Whether ASLR should be left on"
+msgstr "ASLR を有効のままにするか"
+
+#: of pwnlib.tubes.process.process.corefile:1
+msgid "Returns a corefile for the process."
+msgstr "プロセスのコアファイルを返します。"
+
+#: of pwnlib.tubes.process.process.corefile:3
+msgid "If the process is alive, attempts to create a coredump with GDB."
+msgstr "プロセスが生きていれば、GDB でコアダンプを作ろうとします。"
+
+#: of pwnlib.tubes.process.process.corefile:5
+msgid "If the process is dead: returns None if context.disable_corefiles is enabled, otherwise attempts to locate the coredump created by the kernel."
+msgstr "プロセスが死んでいる場合: context.disable_corefiles が有効なら None を返します。そうでなければ、カーネルが作ったコアダンプを探そうとします。"
+
+#: of pwnlib.tubes.process.process.cwd:1
+msgid "Directory that the process is working in."
+msgstr "プロセスが作業しているディレクトリ。"
+
+#: of pwnlib.tubes.process.process.elf:1 pwnlib.tubes.ssh.ssh_process.elf:1
+msgid "Returns an ELF file for the executable that launched the process."
+msgstr "プロセスを起動した実行ファイルの ELF を返します。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.env:1
+msgid "Environment passed on envp"
+msgstr "envp に渡された環境"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.executable:1
+msgid "Full path to the executable"
+msgstr "実行ファイルのフルパス"
+
+#: of pwnlib.tubes.process.process.libc:1 pwnlib.tubes.ssh.ssh_process.libc:1
+msgid "Returns an ELF for the libc for the current process. If possible, it is adjusted to the correct address automatically."
+msgstr "現在のプロセスの libc の ELF を返します。可能なら、正しいアドレスに自動で調整されます。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.proc:1
+msgid ":class:`subprocess.Popen` object that backs this process"
+msgstr "このプロセスの土台になっている :class:`subprocess.Popen` オブジェクト"
+
+#: of pwnlib.tubes.process.process.program:1
+msgid "Alias for ``executable``, for backward compatibility."
+msgstr "``executable`` の別名です。後方互換のためのものです。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.pty:1
+msgid "Which file descriptor is the controlling TTY"
+msgstr "どのファイルディスクリプタが制御端末か"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.process.process.raw:1
+msgid "Whether the controlling TTY is set to raw mode"
+msgstr "制御端末が raw モードに設定されているか"
+
+#: of pwnlib.tubes.process.process.stderr:1
+msgid "Shorthand for ``self.proc.stderr``"
+msgstr "``self.proc.stderr`` の略記"
+
+#: of pwnlib.tubes.process.process.stderr:3
+#: pwnlib.tubes.process.process.stdin:3 pwnlib.tubes.process.process.stdout:3
+msgid "See: :obj:`.process.proc`"
+msgstr "参照: :obj:`.process.proc`"
+
+#: of pwnlib.tubes.process.process.stdin:1
+msgid "Shorthand for ``self.proc.stdin``"
+msgstr "``self.proc.stdin`` の略記"
+
+#: of pwnlib.tubes.process.process.stdout:1
+msgid "Shorthand for ``self.proc.stdout``"
+msgstr "``self.proc.stdout`` の略記"
+
+#: ../pwntools/docs/source/tubes/serial.rst:6
+msgid ":mod:`pwnlib.tubes.serialtube` --- Serial Ports"
+msgstr ":mod:`pwnlib.tubes.serialtube` --- シリアルポート"
+
+#: ../pwntools/docs/source/tubes/sockets.rst:7
+msgid ":mod:`pwnlib.tubes.sock` --- Sockets"
+msgstr ":mod:`pwnlib.tubes.sock` --- ソケット"
+
+#: of pwnlib.tubes.sock.sock:1
+msgid "Base type used for :class:`.tubes.remote` and :class:`.tubes.listen` classes"
+msgstr ":class:`.tubes.remote` と :class:`.tubes.listen` のクラスの、土台になる型"
+
+#: of pwnlib.tubes.listen.listen:1 pwnlib.tubes.remote.remote:1
+#: pwnlib.tubes.server.server:1 pwnlib.tubes.ssh.ssh_channel:1
+#: pwnlib.tubes.ssh.ssh_connecter:1 pwnlib.tubes.ssh.ssh_listener:1
+msgid "Bases: :py:class:`~pwnlib.tubes.sock.sock`"
+msgstr "継承元: :py:class:`~pwnlib.tubes.sock.sock`"
+
+#: of pwnlib.tubes.remote.remote:1
+msgid "Creates a TCP or UDP-connection to a remote host. It supports both IPv4 and IPv6."
+msgstr "リモートのホストへの、TCP または UDP の接続を作ります。IPv4 と IPv6 の両方に対応しています。"
+
+#: of pwnlib.tubes.listen.listen:5 pwnlib.tubes.remote.remote:4
+msgid "The returned object supports all the methods from :class:`pwnlib.tubes.sock` and :class:`pwnlib.tubes.tube`."
+msgstr "返されるオブジェクトは、:class:`pwnlib.tubes.sock` と :class:`pwnlib.tubes.tube` のすべてのメソッドに対応しています。"
+
+#: of pwnlib.tubes.remote.remote:7
+msgid "The host to connect to."
+msgstr "接続先のホスト。"
+
+#: of pwnlib.tubes.remote.remote:9
+msgid "The port to connect to."
+msgstr "接続先のポート。"
+
+#: of pwnlib.tubes.listen.listen:14 pwnlib.tubes.remote.remote:11
+#: pwnlib.tubes.server.server:13
+msgid "The string \"any\", \"ipv4\" or \"ipv6\" or an integer to pass to :func:`socket.getaddrinfo`."
+msgstr "文字列「any」「ipv4」「ipv6」のどれか、または、:func:`socket.getaddrinfo` に渡す整数。"
+
+#: of pwnlib.tubes.listen.listen:15 pwnlib.tubes.remote.remote:12
+#: pwnlib.tubes.server.server:14
+msgid "The string \"tcp\" or \"udp\" or an integer to pass to :func:`socket.getaddrinfo`."
+msgstr "文字列「tcp」か「udp」、または、:func:`socket.getaddrinfo` に渡す整数。"
+
+#: of pwnlib.tubes.remote.remote:13
+msgid "A positive number, None or the string \"default\"."
+msgstr "正の数、None、または文字列「default」。"
+
+#: of pwnlib.tubes.remote.remote:14
+msgid "Socket to inherit, rather than connecting"
+msgstr "接続する代わりに引き継ぐソケット"
+
+#: of pwnlib.tubes.remote.remote:16
+msgid "Wrap the socket with SSL"
+msgstr "ソケットを SSL で包む"
+
+#: of pwnlib.tubes.remote.remote:18
+msgid "Specify SSLContext used to wrap the socket."
+msgstr "ソケットを包むのに使う SSLContext を指定します。"
+
+#: of pwnlib.tubes.remote.remote:20
+msgid "Pass :func:`ssl.wrap_socket` named arguments in a dictionary."
+msgstr ":func:`ssl.wrap_socket` に渡す名前つき引数を、辞書で渡します。"
+
+#: of pwnlib.tubes.remote.remote:22
+msgid "Set 'server_hostname' in ssl_args. Set to True to set it based on the host argument. Set to False to not provide any value. Default is True."
+msgstr "ssl_args の 'server_hostname' を設定します。True にすると、host 引数をもとに設定します。False にすると、値を渡しません。既定は True です。"
+
+#: of pwnlib.tubes.remote.remote:32
+msgid "If a connection cannot be made, an exception is raised."
+msgstr "接続できない場合は、例外が送出されます。"
+
+#: of pwnlib.tubes.remote.remote:39
+msgid "You can also use :meth:`.remote.fromsocket` to wrap an existing socket."
+msgstr "既存のソケットを包むには、:meth:`.remote.fromsocket` も使えます。"
+
+#: of pwnlib.tubes.remote.remote:57
+msgid "To disable certificate verification, pass in a custom ssl_context:"
+msgstr "証明書の検証を無効にするには、独自の ssl_context を渡します:"
+
+#: of pwnlib.tubes.remote.remote.fromsocket:1
+msgid "Helper method to wrap a standard python socket.socket with the tube APIs."
+msgstr "標準の Python の socket.socket を、tube の API で包むための補助メソッドです。"
+
+#: of pwnlib.tubes.remote.remote.fromsocket:4
+msgid "Instance of socket.socket"
+msgstr "socket.socket のインスタンス"
+
+#: of pwnlib.tubes.remote.remote.fromsocket:6
+msgid "Instance of pwnlib.tubes.remote.remote."
+msgstr "pwnlib.tubes.remote.remote のインスタンス。"
+
+#: of pwnlib.tubes.listen.listen:1
+msgid "Creates an TCP or UDP-socket to receive data on. It supports both IPv4 and IPv6. You need to call :meth:`wait_for_connection` before using the listen socket."
+msgstr "データを受信するための、TCP または UDP のソケットを作ります。IPv4 と IPv6 の両方に対応しています。listen のソケットを使う前に、:meth:`wait_for_connection` を呼ぶ必要があります。"
+
+#: of pwnlib.tubes.listen.listen:8 pwnlib.tubes.server.server:7
+msgid "The port to connect to. Defaults to a port auto-selected by the operating system."
+msgstr "接続するポート。既定は、オペレーティングシステムが自動で選んだポートです。"
+
+#: of pwnlib.tubes.listen.listen:11 pwnlib.tubes.server.server:10
+msgid "The address to bind to. Defaults to ``0.0.0.0`` / `::`."
+msgstr "バインドするアドレス。既定は ``0.0.0.0`` / `::` です。"
+
+#: of pwnlib.tubes.listen.listen.wait_for_connection:1
+msgid "Blocks until a connection has been established."
+msgstr "接続が確立されるまで、待ちます。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.canonname:1
+#: pwnlib.tubes.server.server.canonname:1
+msgid "Canonical name of the listening interface"
+msgstr "待ち受けているインターフェースの正式名"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.family:1
+#: pwnlib.tubes.server.server.family:1
+msgid "Socket family"
+msgstr "ソケットのファミリ"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.lhost:1
+#: pwnlib.tubes.server.server.lhost:1
+msgid "Local host"
+msgstr "ローカルのホスト"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.lport:1
+#: pwnlib.tubes.server.server.lport:1
+msgid "Local port"
+msgstr "ローカルのポート"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.protocol:1
+#: pwnlib.tubes.server.server.protocol:1
+msgid "Socket protocol"
+msgstr "ソケットのプロトコル"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.sockaddr:1
+#: pwnlib.tubes.server.server.sockaddr:1
+msgid "Sockaddr structure that is being listened on"
+msgstr "待ち受けている Sockaddr 構造体"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.listen.listen.type:1
+#: pwnlib.tubes.server.server.type:1
+msgid "Socket type (e.g. socket.SOCK_STREAM)"
+msgstr "ソケットの種類（例: socket.SOCK_STREAM）"
+
+#: of pwnlib.tubes.server.server:1
+msgid "Creates an TCP or UDP-server to listen for connections. It supports both IPv4 and IPv6."
+msgstr "接続を待ち受ける、TCP または UDP のサーバーを作ります。IPv4 と IPv6 の両方に対応しています。"
+
+#: of pwnlib.tubes.server.server:4
+msgid "It can be used in two ways: either by calling :meth:`next_connection()` to get a tube for each incoming connection, or by providing a callback that is called with the tube for each incoming connection. When providing a callback, the accepter thread can either block while the callback is running or start the callback in a new thread. The :meth:`next_connection()` method only works when no callback is provided."
+msgstr "使い方は 2 通りあります。:meth:`next_connection()` を呼んで、接続のたびに tube を受け取る方法と、接続のたびに tube を引数にして呼ばれるコールバックを渡す方法です。コールバックを渡す場合、アクセプタのスレッドは、コールバックの実行中、待つこともできますし、コールバックを新しいスレッドで始めることもできます。:meth:`next_connection()` は、コールバックを渡していないときにだけ使えます。"
+
+#: of pwnlib.tubes.server.server:15
+msgid "A function to be started on incoming connections. It should take a :class:`pwnlib.tubes.remote` as its only argument."
+msgstr "接続されたときに起動する関数。:class:`pwnlib.tubes.remote` を、ただ 1 つの引数として受け取る必要があります。"
+
+#: of pwnlib.tubes.server.server:16
+msgid "Whether to block the accepter thread while the callback is running. The callback is executed in another thread when ``False``. Only relevant if a callback is provided. Defaults to ``False``."
+msgstr "コールバックの実行中、アクセプタのスレッドを待たせるかどうか。``False`` のときは、コールバックを別のスレッドで実行します。コールバックを渡した場合にだけ意味があります。既定は ``False`` です。"
+
+#: of pwnlib.tubes.server.server.close:1
+msgid "Closes the listening socket and waits for the accepter thread to finish."
+msgstr "待ち受けのソケットを閉じて、アクセプタのスレッドが終わるのを待ちます。"
+
+#: of pwnlib.tubes.server.server.next_connection:1
+msgid "Returns the next connection to the server if no callback was provided."
+msgstr "コールバックが渡されていなければ、サーバーへの次の接続を返します。"
+
+#: ../pwntools/docs/source/tubes/ssh.rst:10
+msgid ":mod:`pwnlib.tubes.ssh` --- SSH"
+msgstr ":mod:`pwnlib.tubes.ssh` --- SSH"
+
+#: of pwnlib.tubes.ssh.ssh:1 pwnlib.tubes.ssh.ssh.__init__:1
+msgid "Creates a new ssh connection."
+msgstr "新しい ssh 接続を作ります。"
+
+#: of pwnlib.tubes.ssh.ssh:3 pwnlib.tubes.ssh.ssh.__init__:3
+msgid "The username to log in with"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh:5 pwnlib.tubes.ssh.ssh.__init__:5
+msgid "The hostname to connect to"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh:7 pwnlib.tubes.ssh.ssh.__init__:7
+msgid "The port to connect to"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh:9 pwnlib.tubes.ssh.ssh.__init__:9
+msgid "Try to authenticate using this password"
+msgstr "このパスワードで認証を試みます"
+
+#: of pwnlib.tubes.ssh.ssh:11 pwnlib.tubes.ssh.ssh.__init__:11
+msgid "Try to authenticate using this private key. The string should be the actual private key."
+msgstr "この秘密鍵で認証を試みます。文字列は、秘密鍵そのものです。"
+
+#: of pwnlib.tubes.ssh.ssh:13 pwnlib.tubes.ssh.ssh.__init__:13
+msgid "Try to authenticate using this private key. The string should be a filename."
+msgstr "この秘密鍵で認証を試みます。文字列は、ファイル名です。"
+
+#: of pwnlib.tubes.ssh.ssh:15 pwnlib.tubes.ssh.ssh.__init__:15
+msgid "Use this as a proxy command. It has approximately the same semantics as ProxyCommand from ssh(1)."
+msgstr "プロキシコマンドとして使います。ssh(1) の ProxyCommand と、ほぼ同じ意味です。"
+
+#: of pwnlib.tubes.ssh.ssh:17 pwnlib.tubes.ssh.ssh.__init__:17
+msgid "Use this socket instead of connecting to the host."
+msgstr "ホストに接続する代わりに、このソケットを使います。"
+
+#: of pwnlib.tubes.ssh.ssh:20 pwnlib.tubes.ssh.ssh.__init__:20
+msgid "Log level"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh:21 pwnlib.tubes.ssh.ssh.__init__:21
+msgid "Cache downloaded files (by hash/size/timestamp)"
+msgstr "ダウンロードしたファイルを、キャッシュします（ハッシュ、サイズ、タイムスタンプで判定）"
+
+#: of pwnlib.tubes.ssh.ssh:23 pwnlib.tubes.ssh.ssh.__init__:23
+msgid "If :const:`True`, enable usage of keys via ssh-agent"
+msgstr ":const:`True` にすると、ssh-agent を通した鍵の利用を有効にします。"
+
+#: of pwnlib.tubes.ssh.ssh:25 pwnlib.tubes.ssh.ssh.__init__:25
+msgid "If :const:`True`, disable usage of ~/.ssh/config and ~/.ssh/authorized_keys"
+msgstr ":const:`True` にすると、~/.ssh/config と ~/.ssh/authorized_keys の利用を無効にします。"
+
+#: of pwnlib.tubes.ssh.ssh:27 pwnlib.tubes.ssh.ssh.__init__:27
+msgid "If :const:`True`, assume a non-standard shell and don't probe the environment"
+msgstr ":const:`True` にすると、標準的でないシェルだと仮定して、環境の調査（プローブ）をしません。"
+
+#: of pwnlib.tubes.ssh.ssh:29 pwnlib.tubes.ssh.ssh.__init__:29
+msgid "If :const:`True`, try to authenticate with no authentication methods"
+msgstr ":const:`True` にすると、認証方式を何も使わない認証を試みます。"
+
+#: of pwnlib.tubes.ssh.ssh:31 pwnlib.tubes.ssh.ssh.__init__:31
+msgid "Mapping of algorithm type and list of algorithm identifiers to disable. See :class:`paramiko.transport.Transport` for more information."
+msgstr "無効にするアルゴリズムの種類と、そのアルゴリズム識別子のリストの対応表。詳しくは :class:`paramiko.transport.Transport` を参照してください。"
+
+#: of pwnlib.tubes.ssh.ssh:35 pwnlib.tubes.ssh.ssh.__init__:35
+msgid "NOTE: The proxy_command and proxy_sock arguments is only available if a fairly new version of paramiko is used."
+msgstr "注: proxy_command と proxy_sock の引数は、かなり新しい版の paramiko を使っている場合にだけ使えます。"
+
+#: of pwnlib.tubes.ssh.ssh:38 pwnlib.tubes.ssh.ssh.__init__:38
+msgid "Example proxying:"
+msgstr "プロキシの例:"
+
+#: of pwnlib.tubes.ssh.ssh:49 pwnlib.tubes.ssh.ssh.__init__:49
+msgid "You can authenticate using a password, a private key, or an ssh agent. By default the constructor will attempt to parse ``~/.ssh/config`` for configuration. You can disable this with ``ignore_config=True``."
+msgstr "パスワード、秘密鍵、ssh エージェントのどれかで認証できます。既定では、コンストラクタが設定のために ``~/.ssh/config`` を解析しようとします。``ignore_config=True`` で無効にできます。"
+
+#: of pwnlib.tubes.ssh.ssh:56 pwnlib.tubes.ssh.ssh.__init__:56
+msgid "The private key can be passed as a string or as a file:"
+msgstr "秘密鍵は、文字列またはファイルとして渡せます:"
+
+#: of pwnlib.tubes.ssh.ssh:70 pwnlib.tubes.ssh.ssh.__init__:70
+msgid "You have to wrap the key in a :class:`paramiko.pkey.PKey` object yourself if your key requires a password:"
+msgstr "鍵にパスワードが必要な場合は、自分で鍵を :class:`paramiko.pkey.PKey` オブジェクトで包む必要があります:"
+
+#: of pwnlib.tubes.ssh.ssh.__call__:1
+msgid "Permits function-style access to run commands over SSH"
+msgstr "SSH 越しにコマンドを実行するための、関数の形のアクセスを可能にします"
+
+#: of pwnlib.tubes.ssh.ssh.__getattr__:1
+msgid "Permits member access to run commands over SSH."
+msgstr "SSH 越しにコマンドを実行するための、メンバーとしてのアクセスを可能にします。"
+
+#: of pwnlib.tubes.ssh.ssh.__getattr__:3
+msgid "Supports other keyword arguments which are passed to :meth:`.system`."
+msgstr "ほかのキーワード引数にも対応していて、それらは :meth:`.system` に渡されます。"
+
+#: of pwnlib.tubes.ssh.ssh.__getitem__:1
+msgid "Permits indexed access to run commands over SSH"
+msgstr "SSH 越しにコマンドを実行するための、添字によるアクセスを可能にします"
+
+#: of pwnlib.tubes.ssh.ssh.__repr__:1
+msgid "Return repr(self)."
+msgstr "repr(self) を返します。"
+
+#: of pwnlib.tubes.ssh.ssh._init_remote_platform_info:1
+msgid "Fills _platform_info, e.g.:"
+msgstr "_platform_info を埋めます。例:"
+
+#: of pwnlib.tubes.ssh.ssh._libs_remote:1
+msgid "Return a dictionary of the libraries used by a remote file."
+msgstr "リモートのファイルが使っているライブラリの辞書を返します。"
+
+#: of pwnlib.tubes.ssh.ssh.checksec:1
+msgid "Prints a helpful message about the remote system."
+msgstr "リモートのシステムについての、役に立つメッセージを表示します。"
+
+#: of pwnlib.tubes.ssh.ssh.checksec:3
+msgid "Whether to print the path to the ELF binary."
+msgstr "ELF バイナリのパスを表示するかどうか。"
+
+#: of pwnlib.tubes.ssh.ssh.close:1
+msgid "Close the connection."
+msgstr "接続を閉じます。"
+
+#: of pwnlib.tubes.ssh.ssh.connect_remote:1
+#: pwnlib.tubes.ssh.ssh.connect_remote:3
+msgid "Connects to a host through an SSH connection. This is equivalent to using the ``-L`` flag on ``ssh``."
+msgstr "SSH 接続を通して、ホストに接続します。``ssh`` の ``-L`` フラグを使うのと同じです。"
+
+#: of pwnlib.tubes.ssh.ssh.connect_remote:4
+#: pwnlib.tubes.ssh.ssh.connect_remote:6
+msgid "Returns a :class:`pwnlib.tubes.ssh.ssh_connecter` object."
+msgstr ":class:`pwnlib.tubes.ssh.ssh_connecter` オブジェクトを返します。"
+
+#: of pwnlib.tubes.ssh.ssh.connected:1
+msgid "Returns True if we are connected."
+msgstr "接続されていれば True を返します。"
+
+#: of pwnlib.tubes.ssh.ssh.download:1 pwnlib.tubes.ssh.ssh.download:3
+msgid "Download a file or directory from the remote host."
+msgstr "リモートのホストから、ファイルまたはディレクトリをダウンロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.download:3 pwnlib.tubes.ssh.ssh.download:5
+#: pwnlib.tubes.ssh.ssh.upload:3 pwnlib.tubes.ssh.ssh.upload:5
+msgid "Path to the file or directory to download."
+msgstr "ダウンロードするファイルまたはディレクトリのパス。"
+
+#: of pwnlib.tubes.ssh.ssh.download:5 pwnlib.tubes.ssh.ssh.download:7
+msgid "Local path to store the data. By default, uses the current directory."
+msgstr "データを保存するローカルのパス。既定では、現在のディレクトリを使います。"
+
+#: of pwnlib.tubes.ssh.ssh.download_data:1
+msgid "Downloads a file from the remote server and returns it as a string."
+msgstr "リモートのサーバーからファイルをダウンロードして、文字列として返します。"
+
+#: of pwnlib.tubes.ssh.ssh.download_data:3
+msgid "The remote filename to download."
+msgstr "ダウンロードするリモートのファイル名。"
+
+#: of pwnlib.tubes.ssh.ssh.download_dir:1
+msgid "Recursively downloads a directory from the remote server"
+msgstr "リモートのサーバーから、ディレクトリを再帰的にダウンロードします"
+
+#: of pwnlib.tubes.ssh.ssh.download_dir:3 pwnlib.tubes.ssh.ssh.upload_dir:3
+msgid "Local directory"
+msgstr "ローカルのディレクトリ"
+
+#: of pwnlib.tubes.ssh.ssh.download_dir:4 pwnlib.tubes.ssh.ssh.upload_dir:4
+msgid "Remote directory"
+msgstr "リモートのディレクトリ"
+
+#: of pwnlib.tubes.ssh.ssh.download_file:1
+msgid "Downloads a file from the remote server."
+msgstr "リモートのサーバーからファイルをダウンロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.download_file:3
+msgid "The file is cached in /tmp/pwntools-ssh-cache using a hash of the file, so calling the function twice has little overhead."
+msgstr "ファイルは、ファイルのハッシュを使って /tmp/pwntools-ssh-cache にキャッシュされるので、この関数を 2 回呼んでも、負担はほとんどありません。"
+
+#: of pwnlib.tubes.ssh.ssh.download_file:6
+msgid "The remote filename to download"
+msgstr "ダウンロードするリモートのファイル名"
+
+#: of pwnlib.tubes.ssh.ssh.download_file:8
+msgid "The local filename to save it to. Default is to infer it from the remote filename."
+msgstr "保存するローカルのファイル名。既定では、リモートのファイル名から推測します。"
+
+#: of pwnlib.tubes.ssh.ssh.download:1
+msgid "download(file_or_directory, local=None)"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.getenv:1
+msgid "Retrieve the address of an environment variable on the remote system."
+msgstr "リモートのシステムにある、環境変数のアドレスを取得します。"
+
+#: of pwnlib.tubes.ssh.ssh.getenv:6
+msgid "The exact address will differ based on what other environment variables are set, as well as argv[0].  In order to ensure that the path is *exactly* the same, it is recommended to invoke the process with ``argv=[]``."
+msgstr "正確なアドレスは、ほかにどの環境変数が設定されているかと、argv[0] によって変わります。パスが*まったく*同じになるようにするには、``argv=[]`` でプロセスを起動することをお勧めします。"
+
+#: of pwnlib.tubes.ssh.ssh.interactive:1
+msgid "Create an interactive session."
+msgstr "対話セッションを作ります。"
+
+#: of pwnlib.tubes.ssh.ssh.interactive:3
+msgid "This is a simple wrapper for creating a new :class:`pwnlib.tubes.ssh.ssh_channel` object and calling :meth:`pwnlib.tubes.ssh.ssh_channel.interactive` on it."
+msgstr "新しい :class:`pwnlib.tubes.ssh.ssh_channel` オブジェクトを作って、それに対して :meth:`pwnlib.tubes.ssh.ssh_channel.interactive` を呼ぶ、簡単なラッパーです。"
+
+#: of pwnlib.tubes.ssh.ssh.libs:1
+msgid "Downloads the libraries referred to by a file."
+msgstr "ファイルが参照しているライブラリを、ダウンロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.libs:3
+msgid "This is done by running ldd on the remote server, parsing the output and downloading the relevant files."
+msgstr "リモートのサーバーで ldd を実行し、出力を解析して、関係するファイルをダウンロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.libs:6
+msgid "The directory argument specified where to download the files. This defaults to './$HOSTNAME' where $HOSTNAME is the hostname of the remote server."
+msgstr "directory 引数は、ファイルのダウンロード先を指定します。既定は './$HOSTNAME' で、$HOSTNAME は、リモートのサーバーのホスト名です。"
+
+#: of pwnlib.tubes.ssh.ssh.libs:9
+msgid "Remote file path"
+msgstr "リモートのファイルのパス"
+
+#: of pwnlib.tubes.ssh.ssh.libs:11
+msgid "Output directory"
+msgstr "出力先のディレクトリ"
+
+#: of pwnlib.tubes.ssh.ssh.libs:13
+msgid "Flatten the file tree if True (defaults to False) and ignore the remote directory structure. If there are duplicate filenames, an error will be raised."
+msgstr "True にする（既定は False）と、リモートのディレクトリ構造を無視して、ファイルツリーを平らにします。ファイル名が重複するとエラーになります。"
+
+#: of pwnlib.tubes.ssh.ssh.listen_remote:1
+msgid ""
+"listen_remote(port = 0, bind_address = '', timeout = Timeout.default) -> "
+"ssh_connecter"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.listen_remote:1 pwnlib.tubes.ssh.ssh.listen_remote:3
+msgid "Listens remotely through an SSH connection. This is equivalent to using the ``-R`` flag on ``ssh``."
+msgstr "SSH 接続を通して、リモート側で待ち受けます。``ssh`` の ``-R`` フラグを使うのと同じです。"
+
+#: of pwnlib.tubes.ssh.ssh.listen_remote:4 pwnlib.tubes.ssh.ssh.listen_remote:6
+msgid "Returns a :class:`pwnlib.tubes.ssh.ssh_listener` object."
+msgstr ":class:`pwnlib.tubes.ssh.ssh_listener` オブジェクトを返します。"
+
+#: of pwnlib.tubes.ssh.ssh.listen_remote:18
+#: pwnlib.tubes.ssh.ssh.listen_remote:20
+msgid "Listening can be aborted by closing the listener:"
+msgstr "待ち受けは、リスナーを閉じることで中止できます:"
+
+#: of pwnlib.tubes.ssh.ssh.listen_remote:25
+#: pwnlib.tubes.ssh.ssh.listen_remote:27
+msgid "If no connection is made before the timeout, then :meth:`wait_for_connection` will return a :class:`pwnlib.tubes.ssh.ssh_connecter` object which is not connected. Calling :meth:`ssh_connecter.wait_for_connection` again on the same listener after the timeout is a no-op. You have to create a new listener to accept new connections."
+msgstr "タイムアウトまでに接続されなかった場合、:meth:`wait_for_connection` は、接続されていない :class:`pwnlib.tubes.ssh.ssh_connecter` オブジェクトを返します。タイムアウトのあとで、同じリスナーに対して :meth:`ssh_connecter.wait_for_connection` をもう一度呼んでも、何も起きません。新しい接続を受け付けるには、新しいリスナーを作る必要があります。"
+
+#: of pwnlib.tubes.ssh.ssh.process:1
+msgid "Executes a process on the remote server, in the same fashion as pwnlib.tubes.process.process."
+msgstr "pwnlib.tubes.process.process と同じ流儀で、リモートのサーバーでプロセスを実行します。"
+
+#: of pwnlib.tubes.ssh.ssh.process:4
+msgid "To achieve this, a Python script is created to call ``os.execve`` with the appropriate arguments."
+msgstr "これを実現するために、適切な引数で ``os.execve`` を呼ぶ Python のスクリプトが作られます。"
+
+#: of pwnlib.tubes.ssh.ssh.process:7
+msgid "As an added bonus, the ``ssh_channel`` object returned has a ``pid`` property for the process pid."
+msgstr "おまけとして、返される ``ssh_channel`` オブジェクトには、プロセスの pid を表す ``pid`` プロパティがあります。"
+
+#: of pwnlib.tubes.ssh.ssh.process:10
+msgid "List of arguments to pass into the process"
+msgstr "プロセスに渡す引数のリスト"
+
+#: of pwnlib.tubes.ssh.ssh.process:12
+msgid "Path to the executable to run. If :const:`None`, ``argv[0]`` is used."
+msgstr "実行する実行ファイルのパス。:const:`None` なら ``argv[0]`` を使います。"
+
+#: of pwnlib.tubes.ssh.ssh.process:15
+msgid "Request a `tty` from the server.  This usually fixes buffering problems by causing `libc` to write data immediately rather than buffering it. However, this disables interpretation of control codes (e.g. Ctrl+C) and breaks `.shutdown`."
+msgstr "サーバーに `tty` を要求します。これで、`libc` がデータをバッファせず、すぐに書き出すようになり、バッファリングの問題が直ることがよくあります。ただし、制御コード（Ctrl+C など）の解釈が無効になり、`.shutdown` が壊れます。"
+
+#: of pwnlib.tubes.ssh.ssh.process:20
+msgid "Working directory.  If :const:`None`, uses the working directory specified on :attr:`cwd` or set via :meth:`set_working_directory`."
+msgstr "作業ディレクトリ。:const:`None` なら、:attr:`cwd` で指定されたか、:meth:`set_working_directory` で設定された作業ディレクトリを使います。"
+
+#: of pwnlib.tubes.ssh.ssh.process:25
+msgid "Ignore default environment.  By default use default environment iff env not specified."
+msgstr "既定の環境を無視します。既定では、env を指定していないときだけ、既定の環境を使います。"
+
+#: of pwnlib.tubes.ssh.ssh.process:27
+msgid "Timeout to set on the `tube` created to interact with the process."
+msgstr "プロセスとやりとりするために作る `tube` に設定する、タイムアウト。"
+
+#: of pwnlib.tubes.ssh.ssh.process:29
+msgid "Set to :const:`True` to run the program (default). If :const:`False`, returns the path to an executable Python script on the remote server which, when executed, will do it."
+msgstr ":const:`True`（既定）にすると、プログラムを実行します。:const:`False` にすると、実行すれば、それをやってくれる、リモートのサーバー上の Python スクリプトのパスを返します。"
+
+#: of pwnlib.tubes.ssh.ssh.process:33
+msgid "If an integer, replace stdin with the numbered file descriptor. If a string, a open a file with the specified path and replace stdin with its file descriptor.  May also be one of ``sys.stdin``, ``sys.stdout``, ``sys.stderr``.  If :const:`None`, the file descriptor is closed."
+msgstr "整数なら、stdin を、その番号のファイルディスクリプタで置き換えます。文字列なら、そのパスのファイルを開いて、そのファイルディスクリプタで stdin を置き換えます。``sys.stdin``、``sys.stdout``、``sys.stderr`` のどれかでもかまいません。:const:`None` なら、そのファイルディスクリプタを閉じます。"
+
+#: of pwnlib.tubes.ssh.ssh.process:38 pwnlib.tubes.ssh.ssh.process:40
+msgid "See ``stdin``."
+msgstr "``stdin`` を参照してください。"
+
+#: of pwnlib.tubes.ssh.ssh.process:42
+msgid "Function which is executed on the remote side before execve(). This **MUST** be a self-contained function -- it must perform all of its own imports, and cannot refer to variables outside its scope."
+msgstr "リモート側で、execve() の前に実行される関数。これは、自己完結した関数で**なければなりません**。必要な import をすべて自分で行う必要があり、スコープの外の変数は参照できません。"
+
+#: of pwnlib.tubes.ssh.ssh.process:47
+msgid "Argument passed to ``preexec_fn``. This **MUST** only consist of native Python objects."
+msgstr "``preexec_fn`` に渡す引数。Python のネイティブなオブジェクトだけで**なければなりません**。"
+
+#: of pwnlib.tubes.ssh.ssh.process:50
+msgid "If :const:`True`, disable TTY control code interpretation."
+msgstr ":const:`True` にすると、TTY の制御コードの解釈を無効にします。"
+
+#: of pwnlib.tubes.ssh.ssh.process:52 pwnlib.tubes.ssh.ssh.process:54
+msgid "See :class:`pwnlib.tubes.process.process` for more information."
+msgstr "詳しくは :class:`pwnlib.tubes.process.process` を参照してください。"
+
+#: of pwnlib.tubes.ssh.ssh.process:56
+msgid "Pass the command-line arguments to the shell."
+msgstr "コマンドライン引数を、シェルに渡します。"
+
+#: of pwnlib.tubes.ssh.ssh.process:59
+msgid "A new SSH channel, or a path to a script if ``run=False``."
+msgstr "新しい SSH チャネル。``run=False`` の場合は、スクリプトのパス。"
+
+#: of pwnlib.tubes.ssh.ssh.process:62
+msgid "Notes"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.process:63
+msgid "Requires Python on the remote server."
+msgstr "リモートのサーバーに Python が必要です。"
+
+#: of pwnlib.tubes.ssh.ssh.upload:1
+msgid "upload(file_or_directory, remote=None)"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.upload:1 pwnlib.tubes.ssh.ssh.upload:3
+msgid "Upload a file or directory to the remote host."
+msgstr "ファイルまたはディレクトリを、リモートのホストにアップロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.upload:5 pwnlib.tubes.ssh.ssh.upload:7
+msgid "Local path to store the data. By default, uses the working directory."
+msgstr "データを保存するローカルのパス。既定では、作業ディレクトリを使います。"
+
+#: of pwnlib.tubes.ssh.ssh.read:1
+msgid "Wrapper around download_data to match :func:`pwnlib.util.misc.read`"
+msgstr ":func:`pwnlib.util.misc.read` に合わせるための、download_data のラッパーです"
+
+#: of pwnlib.tubes.ssh.ssh.connect_remote:1
+msgid "connect_remote(host, port, timeout = Timeout.default) -> ssh_connecter"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.system:1
+msgid "Backward compatibility.  Use :meth:`system`"
+msgstr "後方互換のためのものです。:meth:`system` を使ってください"
+
+#: of pwnlib.tubes.ssh.ssh.run_to_end:1
+msgid "Run a command on the remote server and return a tuple with (data, exit_status). If `tty` is True, then the command is run inside a TTY on the remote server."
+msgstr "リモートのサーバーでコマンドを実行して、(data, exit_status) のタプルを返します。`tty` が True なら、コマンドはリモートのサーバーの TTY の中で実行されます。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:1
+msgid "Sets the working directory in which future commands will be run (via ssh.run) and to which files will be uploaded/downloaded from if no path is provided"
+msgstr "今後（ssh.run で）コマンドを実行する作業ディレクトリを設定します。パスを指定しないときの、ファイルのアップロード・ダウンロードの場所にもなります"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:7
+msgid "This uses ``mktemp -d`` under the covers, sets permissions on the directory to ``0700``.  This means that setuid binaries will **not** be able to access files created in this directory."
+msgstr "内部では ``mktemp -d`` を使い、ディレクトリの権限を ``0700`` にします。そのため、setuid のバイナリは、このディレクトリに作られたファイルに**アクセスできません**。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:11
+msgid "In order to work around this, we also ``chmod +x`` the directory."
+msgstr "これを回避するため、ディレクトリに ``chmod +x`` も行います。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:13
+msgid "Working directory.  Default is to auto-generate a directory based on the result of running 'mktemp -d' on the remote machine."
+msgstr "作業ディレクトリ。既定では、リモートのマシンで 'mktemp -d' を実行した結果をもとに、ディレクトリを自動で生成します。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:16
+msgid "Create symlinks in the new directory.  The default value, ``False``, implies that no symlinks should be created.  A string value is treated as a path that should be symlinked. It is passed directly to the shell on the remote end for expansion, so wildcards work.  Any other value is treated as a boolean, where ``True`` indicates that all files in the \"old\" working directory should be symlinked."
+msgstr "新しいディレクトリに、シンボリックリンクを作ります。既定値の ``False`` は、シンボリックリンクを作らないという意味です。文字列は、シンボリックリンクにするパスとして扱われます。展開のために、リモート側のシェルにそのまま渡されるので、ワイルドカードも使えます。それ以外の値は真偽値として扱われ、``True`` は、「古い」作業ディレクトリのすべてのファイルを、シンボリックリンクにする、という意味です。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:16
+msgid "Create symlinks in the new directory."
+msgstr "新しいディレクトリに、シンボリックリンクを作ります。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:18
+msgid "The default value, ``False``, implies that no symlinks should be created."
+msgstr "既定値の ``False`` は、シンボリックリンクを作らないという意味です。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:21
+msgid "A string value is treated as a path that should be symlinked. It is passed directly to the shell on the remote end for expansion, so wildcards work."
+msgstr "文字列は、シンボリックリンクにするパスとして扱われます。展開のために、リモート側のシェルにそのまま渡されるので、ワイルドカードも使えます。"
+
+#: of pwnlib.tubes.ssh.ssh.set_working_directory:25
+msgid "Any other value is treated as a boolean, where ``True`` indicates that all files in the \"old\" working directory should be symlinked."
+msgstr "それ以外の値は真偽値として扱われ、``True`` は、「古い」作業ディレクトリのすべてのファイルを、シンボリックリンクにする、という意味です。"
+
+#: of pwnlib.tubes.ssh.ssh.shell:1
+msgid "Open a new channel with a shell inside."
+msgstr "中にシェルを持つ、新しいチャネルを開きます。"
+
+#: of pwnlib.tubes.ssh.ssh.shell:3
+msgid "Path to the shell program to run. If :const:`None`, uses the default shell for the logged in user."
+msgstr "実行するシェルプログラムのパス。:const:`None` なら、ログインしているユーザーの既定のシェルを使います。"
+
+#: of pwnlib.tubes.ssh.ssh.shell:6
+msgid "If :const:`True`, then a TTY is requested on the remote server."
+msgstr ":const:`True` にすると、リモートのサーバーに TTY を要求します。"
+
+#: of pwnlib.tubes.ssh.ssh.shell:9 pwnlib.tubes.ssh.ssh.system:7
+msgid "Return a :class:`pwnlib.tubes.ssh.ssh_channel` object."
+msgstr ":class:`pwnlib.tubes.ssh.ssh_channel` オブジェクトを返します。"
+
+#: of pwnlib.tubes.ssh.ssh.system:1
+msgid "Open a new channel with a specific process inside. If `tty` is True, then a TTY is requested on the remote server."
+msgstr "中に特定のプロセスを持つ、新しいチャネルを開きます。`tty` が True なら、リモートのサーバーに TTY を要求します。"
+
+#: of pwnlib.tubes.ssh.ssh.system:4
+msgid "If `raw` is True, terminal control codes are ignored and input is not echoed back."
+msgstr "`raw` が True なら、端末の制御コードは無視され、入力はエコーバックされません。"
+
+#: of pwnlib.tubes.ssh.ssh.unlink:1
+msgid "Delete the file on the remote host"
+msgstr "リモートのホストのファイルを削除します"
+
+#: of pwnlib.tubes.ssh.ssh.unlink:3
+msgid "Path to the file"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.upload_data:1
+msgid "Uploads some data into a file on the remote server."
+msgstr "リモートのサーバーの、ファイルにデータをアップロードします。"
+
+#: of pwnlib.tubes.ssh.ssh.upload_data:5
+msgid "The filename to upload it to."
+msgstr "アップロード先のファイル名。"
+
+#: of pwnlib.tubes.ssh.ssh.upload_dir:1
+msgid "Recursively uploads a directory onto the remote server"
+msgstr "リモートのサーバーに、ディレクトリを再帰的にアップロードします"
+
+#: of pwnlib.tubes.ssh.ssh.upload_file:1
+msgid "Uploads a file to the remote server. Returns the remote filename."
+msgstr "リモートのサーバーにファイルをアップロードします。リモートのファイル名を返します。"
+
+#: of pwnlib.tubes.ssh.ssh.upload_file:3
+msgid "Arguments: filename(str): The local filename to download remote(str): The remote filename to save it to. Default is to infer it from the local filename."
+msgstr "引数: filename(str): ダウンロードするローカルのファイル名 remote(str): 保存するリモートのファイル名。既定では、ローカルのファイル名から推測します。"
+
+#: of pwnlib.tubes.ssh.ssh.which:1
+msgid "Minor modification to just directly invoking ``which`` on the remote system which adds the current working directory to the end of ``$PATH``."
+msgstr "リモートのシステムで ``which`` を直接呼ぶのとほぼ同じですが、現在の作業ディレクトリを ``$PATH`` の末尾に加えます。"
+
+#: of pwnlib.tubes.ssh.ssh.write:1
+msgid "Wrapper around upload_data to match :func:`pwnlib.util.misc.write`"
+msgstr ":func:`pwnlib.util.misc.write` に合わせるための、upload_data のラッパーです"
+
+#: of pwnlib.tubes.ssh.ssh.arch:1
+msgid "CPU Architecture of the remote machine."
+msgstr "リモートのマシンの CPU アーキテクチャ。"
+
+#: of pwnlib.tubes.ssh.ssh.arch pwnlib.tubes.ssh.ssh.aslr
+#: pwnlib.tubes.ssh.ssh.aslr_ulimit pwnlib.tubes.ssh.ssh.bits
+#: pwnlib.tubes.ssh.ssh.distro pwnlib.tubes.ssh.ssh.ibt pwnlib.tubes.ssh.ssh.os
+#: pwnlib.tubes.ssh.ssh.user_shstk pwnlib.tubes.ssh.ssh.version
+msgid "type"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.arch:3 pwnlib.tubes.ssh.ssh.bits:3
+#: pwnlib.tubes.ssh.ssh.os:3
+msgid ":class:`str`"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.aslr:1
+msgid "Whether ASLR is enabled on the system."
+msgstr "システムで ASLR が有効かどうか。"
+
+#: of pwnlib.tubes.ssh.ssh.aslr:9 pwnlib.tubes.ssh.ssh.aslr_ulimit:3
+#: pwnlib.tubes.ssh.ssh.ibt:9 pwnlib.tubes.ssh.ssh.user_shstk:9
+msgid ":class:`bool`"
+msgstr ""
+
+#: of pwnlib.tubes.ssh.ssh.aslr_ulimit:1
+msgid "Whether the entropy of 32-bit processes can be reduced with ulimit."
+msgstr "32 ビットのプロセスのエントロピーを、ulimit で減らせるかどうか。"
+
+#: of pwnlib.tubes.ssh.ssh.bits:1
+msgid "Pointer size of the remote machine."
+msgstr "リモートのマシンのポインタのサイズ。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.cache:1
+msgid "Enable caching of SSH downloads (``bool``)"
+msgstr "SSH のダウンロードのキャッシュを有効にする（``bool``）"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.client:1
+msgid "Paramiko SSHClient which backs this object"
+msgstr "このオブジェクトの土台になっている Paramiko の SSHClient"
+
+#: of pwnlib.tubes.ssh.ssh.distro:1
+msgid "Linux distribution name and release."
+msgstr "Linux のディストリビューションの名前とリリース。"
+
+#: of pwnlib.tubes.ssh.ssh.distro:3 pwnlib.tubes.ssh.ssh.version:3
+msgid ":class:`tuple`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.host:1
+msgid "Remote host name (``str``)"
+msgstr "リモートのホスト名（``str``）"
+
+#: of pwnlib.tubes.ssh.ssh.ibt:1
+msgid "Whether kernel indirect branch tracking is supported on the system."
+msgstr "システムで、カーネルの間接分岐トラッキングに対応しているかどうか。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.key:1
+msgid "Remote private key (``str``)"
+msgstr "リモートの秘密鍵（``str``）"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.keyfile:1
+msgid "Remote private key file (``str``)"
+msgstr "リモートの秘密鍵のファイル（``str``）"
+
+#: of pwnlib.tubes.ssh.ssh.os:1
+msgid "Operating System of the remote machine."
+msgstr "リモートのマシンのオペレーティングシステム。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.password:1
+msgid "Remote password (``str``)"
+msgstr "リモートのパスワード（``str``）"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.pid:1
+msgid "PID of the remote ``sshd`` process servicing this connection."
+msgstr "この接続を受け持っている、リモートの ``sshd`` プロセスの PID。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.port:1
+msgid "Remote port (``int``)"
+msgstr "リモートのポート（``int``）"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.raw:1
+msgid "Enable raw mode and don't probe the environment (``bool``)"
+msgstr "raw モードを有効にして、環境の調査をしない（``bool``）"
+
+#: of pwnlib.tubes.ssh.ssh.sftp:1
+msgid "Paramiko SFTPClient object which is used for file transfers. Set to :const:`None` to disable ``sftp``."
+msgstr "ファイル転送に使う Paramiko の SFTPClient オブジェクト。:const:`None` にすると、``sftp`` を無効にします。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh.user:1
+msgid "Remote username (``str``)"
+msgstr "リモートのユーザー名（``str``）"
+
+#: of pwnlib.tubes.ssh.ssh.user_shstk:1
+msgid "Whether userspace shadow stack is supported on the system."
+msgstr "システムで、ユーザー空間のシャドウスタックに対応しているかどうか。"
+
+#: of pwnlib.tubes.ssh.ssh.version:1
+msgid "Kernel version of the remote machine."
+msgstr "リモートのマシンのカーネルのバージョン。"
+
+#: of pwnlib.tubes.ssh.ssh_channel.interactive:1
+msgid "If not in TTY-mode, this does exactly the same as meth:`pwnlib.tubes.tube.tube.interactive`, otherwise it does mostly the same."
+msgstr "TTY モードでなければ、meth:`pwnlib.tubes.tube.tube.interactive` とまったく同じことをします。TTY モードなら、ほぼ同じことをします。"
+
+#: of pwnlib.tubes.ssh.ssh_channel.interactive:5
+msgid "An SSH connection in TTY-mode will typically supply its own prompt, thus the prompt argument is ignored in this case. We also have a few SSH-specific hacks that will ideally be removed once the :mod:`pwnlib.term` is more mature."
+msgstr "TTY モードの SSH 接続は、ふつう独自のプロンプトを出すので、この場合 prompt 引数は無視されます。また、:mod:`pwnlib.term` が成熟すれば、取り除きたい、SSH 特有の小細工がいくつかあります。"
+
+#: of pwnlib.tubes.ssh.ssh_process:1
+msgid "Bases: :py:class:`~pwnlib.tubes.ssh.ssh_channel`"
+msgstr "継承元: :py:class:`~pwnlib.tubes.ssh.ssh_channel`"
+
+#: of pwnlib.tubes.ssh.ssh_process.getenv:1
+msgid "Retrieve the address of an environment variable in the remote process."
+msgstr "リモートのプロセスにある、環境変数のアドレスを取得します。"
+
+#: of pwnlib.tubes.ssh.ssh_process.libs:1
+msgid "Returns a dictionary mapping the address of each loaded library in the process's address space."
+msgstr "プロセスのアドレス空間に読み込まれたライブラリそれぞれのアドレスの、対応表（辞書）を返します。"
+
+#: of pwnlib.tubes.ssh.ssh_process.libs:4
+msgid "If ``/proc/$PID/maps`` cannot be opened, the output of ldd is used verbatim, which may be different than the actual addresses if ASLR is enabled."
+msgstr "``/proc/$PID/maps`` を開けない場合は、ldd の出力をそのまま使います。ASLR が有効なら、実際のアドレスとは違うかもしれません。"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh_process.argv:1
+msgid "Arguments passed to the process Only valid when instantiated through :meth:`ssh.process`"
+msgstr "プロセスに渡された引数。:meth:`ssh.process` 経由で作られたときだけ有効です"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh_process.cwd:1
+msgid "Working directory"
+msgstr "作業ディレクトリ"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh_process.executable:1
+msgid "Executable of the procesks Only valid when instantiated through :meth:`ssh.process`"
+msgstr "プロセスの実行ファイル。:meth:`ssh.process` 経由で作られたときだけ有効です"
+
+#: ../pwntools/docs/docstring of pwnlib.tubes.ssh.ssh_process.pid:1
+msgid "PID of the process Only valid when instantiated through :meth:`ssh.process`"
+msgstr "プロセスの PID。:meth:`ssh.process` 経由で作られたときだけ有効です"

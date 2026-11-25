@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/dynelf.rst:2
+msgid ":mod:`pwnlib.dynelf` --- Resolving remote functions using leaks"
+msgstr ""
+
+#: of pwnlib.dynelf:1
+msgid ""
+"Resolve symbols in loaded, dynamically-linked ELF binaries. Given a "
+"function which can leak data at an arbitrary address, any symbol in any "
+"loaded library can be resolved."
+msgstr ""
+
+#: of pwnlib.dynelf:6
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.dynelf:46
+msgid "DynELF"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:1
+msgid ""
+"DynELF knows how to resolve symbols in remote processes via an infoleak "
+"or memleak vulnerability encapsulated by :class:`pwnlib.memleak.MemLeak`."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:4
+msgid "Implementation Details:"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:6
+msgid "Resolving Functions:"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:8
+msgid ""
+"In all ELFs which export symbols for importing by other libraries, (e.g. "
+"``libc.so``) there are a series of tables which give exported symbol "
+"names, exported symbol addresses, and the ``hash`` of those exported "
+"symbols.  By applying a hash function to the name of the desired symbol "
+"(e.g., ``'printf'``), it can be located in the hash table.  Its location "
+"in the hash table provides an index into the string name table (strtab_),"
+" and the symbol address (symtab_)."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:16
+msgid ""
+"Assuming we have the base address of ``libc.so``, the way to resolve the "
+"address of ``printf`` is to locate the ``symtab``, ``strtab``, and hash "
+"table. The string ``\"printf\"`` is hashed according to the style of the "
+"hash table (SYSV_ or GNU_), and the hash table is walked until a matching"
+" entry is located. We can verify an exact match by checking the string "
+"table, and then get the offset into ``libc.so`` from the ``symtab``."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:24
+msgid "Resolving Library Addresses:"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:26
+msgid ""
+"If we have a pointer into a dynamically-linked executable, we can "
+"leverage an internal linker structure called the `link map`_. This is a "
+"linked list structure which contains information about each loaded "
+"library, including its full path and base address."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:31
+msgid ""
+"A pointer to the ``link map`` can be found in two ways.  Both are "
+"referenced from entries in the DYNAMIC_ array."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:34
+msgid ""
+"In non-RELRO binaries, a pointer is placed in the `.got.plt`_ area in the"
+" binary. This is marked by finding the DT_PLTGOT_ area in the binary."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:37
+msgid ""
+"In all binaries, a pointer can be found in the area described by the "
+"DT_DEBUG_ area.  This exists even in stripped binaries."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:40
+msgid "For maximum flexibility, both mechanisms are used exhaustively."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:52 pwnlib.dynelf.DynELF.__init__:1
+msgid ""
+"Instantiates an object which can resolve symbols in a running binary "
+"given a :class:`pwnlib.memleak.MemLeak` leaker and a pointer inside the "
+"binary."
+msgstr ""
+
+#: ../pwntools/docs/source/dynelf.rst
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:56 pwnlib.dynelf.DynELF.__init__:5
+msgid "Instance of pwnlib.memleak.MemLeak for leaking memory"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:58 pwnlib.dynelf.DynELF.__init__:7
+msgid "A pointer into a loaded ELF file"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:60 pwnlib.dynelf.DynELF.__init__:9
+msgid "Path to the ELF file on disk, or a loaded :class:`pwnlib.elf.ELF`."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF:62 pwnlib.dynelf.DynELF.__init__:11
+msgid "Attempt to use libcdb to speed up libc lookups"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.find_base:1
+msgid ""
+"Given a :class:`pwnlib.memleak.MemLeak` object and a pointer into a "
+"library, find its base address."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:1
+msgid "Looks up information about a loaded library via the link map."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:3
+msgid "Name of the library to resolve, or a substring (e.g. 'libc.so')"
+msgstr ""
+
+#: ../pwntools/docs/source/dynelf.rst
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:6
+msgid "A DynELF instance for the loaded library, or None."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_dt:1
+msgid "Find an entry in the DYNAMIC array."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_dt:3
+msgid "Single tag to find"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_dt:6 pwnlib.dynelf.DynELF._find_dt_optimized:6
+msgid "Pointer to the data described by the specified entry."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_dt_optimized:1
+msgid "Find an entry in the DYNAMIC array through an ELF"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_dt_optimized:3
+msgid "Name of the tag to find ('DT_DEBUG', 'DT_PLTGOT', ...)"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_dynamic_phdr:1
+msgid "Returns the address of the first Program Header with the type PT_DYNAMIC."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_linkmap:1
+msgid ""
+"The linkmap is a chained structure created by the loader at runtime which"
+" contains information on the names and load addresses of all libraries."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_linkmap:5
+msgid "For non-RELRO binaries, a pointer to this is stored in the .got.plt area."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_linkmap:8
+msgid "For RELRO binaries, a pointer is additionally stored in the DT_DEBUG area."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_mapped_pages:1
+msgid "A generator of all mapped pages, as found using the Program Headers."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._find_mapped_pages:3
+msgid "Yields tuples of the form: (virtual address, memory size)"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._lookup:1
+msgid "Performs the actual symbol lookup within one ELF file."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._make_absolute_ptr:1
+msgid ""
+"For shared libraries (or PIE executables), many ELF fields may contain "
+"offsets rather than actual pointers. If the ELF type is 'DYN', the "
+"argument may be an offset. It will not necessarily be an offset, because "
+"the run-time linker may have fixed it up to be a real pointer already. In"
+" this case an educated guess is made, and the ELF base address is added "
+"to the value if it is determined to be an offset."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._rel_lookup:1
+msgid "Performs slower symbol lookup using DT_JMPREL(.rela.plt)"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:1
+#: pwnlib.dynelf.DynELF._resolve_symbol_sysv:1
+msgid "Internal Documentation:"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:2
+msgid ""
+"The GNU hash structure is a bit more complex than the normal hash "
+"structure."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:5
+msgid ""
+"Again, Oracle has good documentation. "
+"https://blogs.oracle.com/solaris/post/gnu-hash-elf-sections"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:8
+msgid ""
+"You can force an ELF to use this type of symbol table by compiling with "
+"'gcc -Wl,--hash-style=gnu'"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._resolve_symbol_sysv:2
+msgid ""
+"See the ELF manual for more information.  Search for the phrase \"A hash "
+"table of Elf32_Word objects supports symbol table access\", or see: "
+"https://docs.oracle.com/cd/E19504-01/802-6319/6ia12qkfo/index.html#chapter6-48031"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF._resolve_symbol_sysv:15
+msgid ""
+"You can force an ELF to use this type of symbol table by compiling with "
+"'gcc -Wl,--hash-style=sysv'"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.bases:1
+msgid "Resolve base addresses of all loaded libraries."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.bases:3
+msgid "Return a dictionary mapping library path to its base address."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.dump:1
+msgid "Dumps the ELF's memory pages to allow further analysis."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.dump:3
+msgid "True if should dump the libraries too (False by default)"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.dump:5
+msgid "True if should dump read-only pages (False by default)"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.dump:8
+#, python-brace-format
+msgid "*a dictionary of the form* -- { address : bytes }"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.heap:1
+msgid ""
+"Finds the beginning of the heap via __curbrk, which is an exported symbol"
+" in the linker, which points to the current brk."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.lookup:1
+msgid "Find the address of ``symbol``, which is found in ``lib``."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.lookup:3
+msgid ""
+"Named routine to look up If omitted, the base address of the library will"
+" be returned."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.lookup:6
+msgid ""
+"Substring to match for the library name. If omitted, the current library "
+"is searched. If set to ``'libc'``, ``'libc.so'`` is assumed."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.lookup:11
+msgid "Address of the named symbol, or :const:`None`."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.stack:1
+msgid ""
+"Finds a pointer to the stack via __environ, which is an exported symbol "
+"in libc, which points to the environment block."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.dynelf.DynELF.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.dynamic:1
+msgid "Returns: Pointer to the ``.DYNAMIC`` area."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.elfclass:1
+msgid "32 or 64"
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.elftype:1
+msgid ""
+"e_type from the elf header. In practice the value will almost always be "
+"'EXEC' or 'DYN'. If the value is architecture-specific (between ET_LOPROC"
+" and ET_HIPROC) or invalid, KeyError is raised."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.libc:1
+msgid ""
+"Leak the Build ID of the remote libc.so, download the file, and load an "
+"``ELF`` object with the correct base address."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.libc:4
+msgid "An ELF object, or None."
+msgstr ""
+
+#: of pwnlib.dynelf.DynELF.link_map:1
+msgid "Pointer to the runtime link_map object"
+msgstr ""
+
+#: of pwnlib.dynelf.gnu_hash:1
+msgid "Function used to generated GNU-style hashes for strings."
+msgstr ""
+
+#: of pwnlib.dynelf.sysv_hash:1
+msgid "Function used to generate SYSV-style hashes for strings."
+msgstr ""
+

@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/ui.rst:10
+msgid ":mod:`pwnlib.ui` --- Functions for user interaction"
+msgstr ""
+
+#: of pwnlib.ui.more:1
+msgid "Shows text like the command line tool ``more``."
+msgstr ""
+
+#: of pwnlib.ui.more:3
+msgid "It not in term_mode, just prints the data to the screen."
+msgstr ""
+
+#: of pwnlib.ui.more pwnlib.ui.options pwnlib.ui.yesno
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.ui.more:5
+msgid "The text to show."
+msgstr ""
+
+#: of pwnlib.ui.more pwnlib.ui.options pwnlib.ui.yesno
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.ui.more:8
+msgid ":const:`None`"
+msgstr ""
+
+#: of pwnlib.ui.more:10 pwnlib.ui.options:19 pwnlib.ui.pause:15
+#: pwnlib.ui.yesno:29
+msgid "Tests:"
+msgstr ""
+
+#: of pwnlib.ui.options:1
+msgid ""
+"Presents the user with a prompt (typically in the form of a question) and"
+" a number of options."
+msgstr ""
+
+#: of pwnlib.ui.options:4 pwnlib.ui.yesno:4
+msgid "The prompt to show"
+msgstr ""
+
+#: of pwnlib.ui.options:6
+msgid "The options to show to the user"
+msgstr ""
+
+#: of pwnlib.ui.options:8
+msgid "The default option to choose"
+msgstr ""
+
+#: of pwnlib.ui.options:10
+msgid "The users choice in the form of an integer."
+msgstr ""
+
+#: of pwnlib.ui.options:13 pwnlib.ui.pause:4 pwnlib.ui.yesno:11
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.ui.pause:1
+msgid "Waits for either user input or a specific number of seconds."
+msgstr ""
+
+#: of pwnlib.ui.yesno:1
+msgid ""
+"Presents the user with prompt (typically in the form of question) which "
+"the user must answer yes or no."
+msgstr ""
+
+#: of pwnlib.ui.yesno:6
+msgid "The default option;  `True` means \"yes\""
+msgstr ""
+
+#: of pwnlib.ui.yesno:8
+msgid "`True` if the answer was \"yes\", `False` if \"no\""
+msgstr ""
+

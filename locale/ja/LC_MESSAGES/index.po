@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/index.rst:2
+msgid "pwntools"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:4
+msgid ""
+"``pwntools`` is a CTF framework and exploit development library. Written "
+"in Python, it is designed for rapid prototyping and development, and "
+"intended to make exploit writing as simple as possible."
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:8
+msgid ""
+"The primary location for this documentation is at docs.pwntools.com_, "
+"which uses readthedocs_. It comes in three primary flavors:"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:11
+msgid "Stable_"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:12
+msgid "Beta_"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:13
+msgid "Dev_"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:23
+msgid "Getting Started"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:37
+msgid "Module Index"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:39
+msgid "Each of the ``pwntools`` modules is documented here."
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:97
+msgid "Bytes"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:99
+msgid ""
+"The bytes vs text distinction is so important that it even made it to "
+"this main page. See the pwntools-tutorial_ repo for the latest tutorial "
+"finally explaining the difference once and for all (hopefully)."
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:90
+msgid "Indices and tables"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:92
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:93
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../pwntools/docs/source/index.rst:94
+msgid ":ref:`search`"
+msgstr ""
+

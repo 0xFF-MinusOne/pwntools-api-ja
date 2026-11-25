@@ -1,0 +1,496 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/fmtstr.rst:7
+msgid ":mod:`pwnlib.fmtstr` --- Format string bug exploitation tools"
+msgstr ""
+
+#: of pwnlib.fmtstr:1
+msgid "Provide some tools to exploit format string bug"
+msgstr ""
+
+#: of pwnlib.fmtstr:3
+msgid "Let's use this program as an example:"
+msgstr ""
+
+#: of pwnlib.fmtstr:33
+msgid "We can automate the exploitation of the process like so:"
+msgstr ""
+
+#: of pwnlib.fmtstr:54
+msgid "Example - Payload generation"
+msgstr ""
+
+#: of pwnlib.fmtstr:72
+msgid "Example - Automated exploitation"
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite:1
+msgid ""
+"This class represents a write action that can be carried out by a single "
+"format string specifier."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite:3
+msgid ""
+"Each write has an address (start), a size and the integer that should be "
+"written."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite:5
+msgid ""
+"Additionally writes can have a mask to specify which bits are important. "
+"While the write always overwrites all bytes in the range [start, "
+"start+size) the mask sometimes allows more efficient execution. For "
+"example, assume the current format string counter is at 0xaabb and a "
+"write with with integer = 0xaa00 and mask = 0xff00 needs to be executed. "
+"In that case, since the lower byte is not covered by the mask, the write "
+"can be directly executed with a %hn sequence (so we will write 0xaabb, "
+"but that is ok because the mask only requires the upper byte to be "
+"correctly written)."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.__eq__:1
+msgid "Return self==value."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.__hash__:1
+msgid "Return hash(self)."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.__ne__:1
+msgid "Return self!=value."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.compute_padding:1
+msgid ""
+"This function computes the least amount of padding necessary to execute "
+"this write, given the current format string write counter (how many bytes"
+" have been written until now)."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.compute_padding:5 pwnlib.fmtstr.FmtStr.write:11
+#: pwnlib.fmtstr.find_min_hamming_in_range:16
+#: pwnlib.fmtstr.find_min_hamming_in_range_step:18
+#: pwnlib.fmtstr.fmtstr_payload:32 pwnlib.fmtstr.make_payload_dollar:18
+#: pwnlib.fmtstr.merge_atoms_overlapping:17
+#: pwnlib.fmtstr.merge_atoms_writesize:6 pwnlib.fmtstr.normalize_writes:5
+#: pwnlib.fmtstr.sort_atoms:15
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.replace:1
+msgid ""
+"Return a new write with updated fields (everything that is not None is "
+"set to the new value)"
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.union:1
+msgid "Combine adjacent writes into a single write."
+msgstr ""
+
+#: of pwnlib.fmtstr.AtomWrite.union:4
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:1
+msgid "Provides an automated format string exploitation."
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:3
+msgid ""
+"It takes a function which is called every time the automated process want"
+" to communicate with the vulnerable process. this function takes a "
+"parameter with the payload that you have to send to the vulnerable "
+"process and must return the process returns."
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:9
+msgid ""
+"If the `offset` parameter is not given, then try to find the right offset"
+" by leaking stack data."
+msgstr ""
+
+#: ../pwntools/docs/source/fmtstr.rst of pwnlib.fmtstr.FmtStr.write
+#: pwnlib.fmtstr.find_min_hamming_in_range
+#: pwnlib.fmtstr.find_min_hamming_in_range_step pwnlib.fmtstr.fmtstr_payload
+#: pwnlib.fmtstr.make_payload_dollar pwnlib.fmtstr.merge_atoms_overlapping
+#: pwnlib.fmtstr.sort_atoms
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:12
+msgid "function to call for communicate with the vulnerable process"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:14 pwnlib.fmtstr.fmtstr_payload:14
+msgid "the first formatter's offset you control"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:16
+msgid "size of the pad you want to add before the payload"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr:18
+msgid "number of already written bytes"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr.execute_writes:1
+msgid "Makes payload and send it to the vulnerable process"
+msgstr ""
+
+#: ../pwntools/docs/source/fmtstr.rst of pwnlib.fmtstr.FmtStr.write
+#: pwnlib.fmtstr.find_min_hamming_in_range_step pwnlib.fmtstr.fmtstr_payload
+#: pwnlib.fmtstr.make_payload_dollar
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr.execute_writes:3 pwnlib.fmtstr.FmtStr.write:8
+msgid "None"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr.write:1
+msgid "In order to tell : I want to write ``data`` at ``addr``."
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr.write:3
+msgid "the address where you want to write"
+msgstr ""
+
+#: of pwnlib.fmtstr.FmtStr.write:5
+msgid "the data that you want to write ``addr``"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.fmtstr.FmtStr.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range:1
+msgid ""
+"Find the value which differs in the least amount of bytes from the target"
+" and is in the given range."
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range:3
+msgid ""
+"Returns a tuple (count, value, mask) where count is the number of equal "
+"bytes and mask selects the equal bytes. So mask & target == value & "
+"target and lower <= value <= upper."
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range:6
+msgid ""
+"bytes above maxbytes (counting from the least significant first) don't "
+"need to match"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range:8
+msgid "lower bound for the returned value, inclusive"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range:10
+msgid "upper bound, inclusive"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range:12
+msgid "the target value that should be approximated"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range_step:1
+msgid "Compute a single step of the algorithm for find_min_hamming_in_range"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range_step:3
+msgid "results from previous iterations"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range_step:5
+msgid "tuple of bounds and target value, (lower, upper, target)"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range_step:7
+msgid "carry means allow for overflow of the previous (less significant) byte"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range_step:9
+msgid ""
+"strict means allow the previous bytes to be bigger than the upper limit "
+"(limited to those bytes) in lower = 0x2000, upper = 0x2100, choosing 0x21"
+" for the upper byte is not strict because then the lower bytes have to "
+"actually be smaller than or equal to 00 (0x2111 would not be in range)"
+msgstr ""
+
+#: of pwnlib.fmtstr.find_min_hamming_in_range_step:15
+msgid ""
+"A tuple (score, value, mask) where score equals the number of matching "
+"bytes between the returned value and target."
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:1
+msgid ""
+"Makes payload with given parameter. It can generate payload for 32 or 64 "
+"bits architectures. The size of the addr is taken from ``context.bits``"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:5
+msgid ""
+"The overflows argument is a format-string-length to output-amount "
+"tradeoff: Larger values for ``overflows`` produce shorter format strings "
+"that generate more output at runtime."
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:8
+#, python-brace-format
+msgid ""
+"The writes argument is a dictionary with address/value pairs like "
+"``{addr: value, addr2: value2}``. If the value is an ``int`` datatype, it"
+" will be automatically casted into a bytestring with the length of a "
+"``long`` (8 bytes in 64-bit, 4 bytes in 32-bit). If a specific number of "
+"bytes is intended to be written (such as only a single byte, single "
+"short, or single int and not an entire long), then provide a bytestring "
+"like ``b'\\x37\\x13'`` or ``p16(0x1337)``. Note that the ``write_size`` "
+"argument does not determine **total** bytes written, only the size of "
+"each consecutive write."
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:16 pwnlib.fmtstr.make_atoms:9
+#, python-brace-format
+msgid "dict with addr, value ``{addr: value, addr2: value2}``"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:18 pwnlib.fmtstr.make_atoms:15
+#: pwnlib.fmtstr.make_payload_dollar:10
+msgid "number of byte already written by the printf function"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:20
+msgid ""
+"must be ``byte``, ``short`` or ``int``. Tells if you want to write byte "
+"by byte, short by short or int by int (hhn, hn or n)"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:22
+msgid ""
+"how many extra overflows (at size sz) to tolerate to reduce the length of"
+" the format string"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:24
+msgid ""
+"either 'fast' or 'small' ('small' is default, 'fast' can be used if there"
+" are many writes)"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:26 pwnlib.fmtstr.make_payload_dollar:14
+msgid "flag to generete the payload with or w/o $ notation"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_payload:29
+msgid "The payload in order to do needed writes"
+msgstr ""
+
+#: of pwnlib.fmtstr.fmtstr_split:1
+msgid ""
+"Build a format string like fmtstr_payload but return the string and data "
+"separately."
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:1
+msgid ""
+"Builds an optimized list of atoms for the given format string payload "
+"parameters. This function tries to optimize two things:"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:4
+msgid "use the fewest amount of possible atoms"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:5
+msgid ""
+"sort these atoms such that the amount of padding needed between "
+"consecutive elements is small"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:7
+msgid "Together this should produce short format strings."
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:11 pwnlib.fmtstr.merge_atoms_overlapping:7
+msgid ""
+"basic write size in bytes. Atoms of this size are generated without "
+"constraints on their values."
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:13
+msgid ""
+"maximum write size in bytes. No atoms with a size larger than this are "
+"generated (ignored for strategy 'fast')"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:17
+msgid ""
+"how many extra overflows (of size sz) to tolerate to reduce the length of"
+" the format string"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:19
+msgid "either 'fast' or 'small'"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms:21
+msgid "bytes that are not allowed to appear in the payload"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms_simple:1
+msgid ""
+"Build format string atoms for writing some data at a given address where "
+"some bytes are not allowed to appear in addresses (such as nullbytes)."
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms_simple:4
+msgid ""
+"This function is simple and does not try to minimize the number of atoms."
+" For example, if there are no bad bytes, it simply returns one atom for "
+"each byte:"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_atoms_simple:10
+msgid ""
+"If there are bad bytes, it will try to bypass by skipping addresses "
+"containing bad bytes, otherwise a RuntimeError will be raised:"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_payload_dollar:1
+msgid ""
+"Makes a format-string payload using glibc's dollar syntax to access the "
+"arguments."
+msgstr ""
+
+#: of pwnlib.fmtstr.make_payload_dollar:3
+msgid ""
+"A tuple (fmt, data) where ``fmt`` are the format string instructions and "
+"data are the pointers that are accessed by the instructions."
+msgstr ""
+
+#: of pwnlib.fmtstr.make_payload_dollar:6
+msgid "format string argument offset at which the first pointer is located"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_payload_dollar:8
+msgid "list of atoms to execute"
+msgstr ""
+
+#: of pwnlib.fmtstr.make_payload_dollar:12
+msgid "size in bytes of the format string counter (usually 4)"
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_overlapping:1
+msgid ""
+"Takes a list of atoms and merges consecutive atoms to reduce the number "
+"of atoms. For example if you have two atoms ``AtomWrite(0, 1, 1)`` and "
+"``AtomWrite(1, 1, 1)`` they can be merged into a single atom "
+"``AtomWrite(0, 2, 0x0101)`` to produce a short format string."
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_overlapping:5
+msgid "list of atoms to merge"
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_overlapping:9
+msgid ""
+"maximum write size in bytes. No atoms with a size larger than this are "
+"generated."
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_overlapping:11 pwnlib.fmtstr.sort_atoms:11
+msgid "the value at which the counter starts"
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_overlapping:13
+msgid ""
+"how many extra overflows (of size sz) to tolerate to reduce the number of"
+" atoms"
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_writesize:1
+msgid "Merge consecutive atoms based on size."
+msgstr ""
+
+#: of pwnlib.fmtstr.merge_atoms_writesize:3
+msgid ""
+"This function simply merges adjacent atoms as long as the merged atom's "
+"size is not larger than ``maxsize``."
+msgstr ""
+
+#: of pwnlib.fmtstr.normalize_writes:1
+#, python-brace-format
+msgid ""
+"This function converts user-specified writes to a dict ``{ address1: "
+"data1, address2: data2, ... }`` such that all values are raw bytes and "
+"consecutive writes are merged to a single key."
+msgstr ""
+
+#: of pwnlib.fmtstr.overlapping_atoms:1
+msgid "Finds pairs of atoms that write to the same address."
+msgstr ""
+
+#: of pwnlib.fmtstr.overlapping_atoms:3
+msgid "Basic examples:"
+msgstr ""
+
+#: of pwnlib.fmtstr.overlapping_atoms:11
+msgid ""
+"When there are transitive overlaps, only the largest overlap is returned."
+" For example:"
+msgstr ""
+
+#: of pwnlib.fmtstr.overlapping_atoms:16
+msgid ""
+"Even though ``AtomWrite(0, 3, 0)`` and ``AtomWrite(2, 4, 1)`` overlap as "
+"well that overlap is not returned as only the largest overlap is "
+"returned."
+msgstr ""
+
+#: of pwnlib.fmtstr.sort_atoms:1
+msgid ""
+"This function sorts atoms such that the amount by which the format string"
+" counter has to been increased between consecutive atoms is minimized."
+msgstr ""
+
+#: of pwnlib.fmtstr.sort_atoms:4
+msgid ""
+"The idea is to reduce the amount of data the the format string has to "
+"output to write the desired atoms. For example, directly generating a "
+"format string for the atoms ``[AtomWrite(0, 1, 0xff), AtomWrite(1, 1, "
+"0xfe)]`` is suboptimal: we'd first need to output 0xff bytes to get the "
+"counter to 0xff and then output 0x100+1 bytes to get it to 0xfe again. If"
+" we sort the writes first we only need to output 0xfe bytes and then 1 "
+"byte to get to 0xff."
+msgstr ""
+
+#: of pwnlib.fmtstr.sort_atoms:9
+msgid "list of atoms to sort"
+msgstr ""
+

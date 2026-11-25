@@ -1,0 +1,2125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/elf.rst:7
+msgid ":mod:`pwnlib.elf` --- ELF Executables and Libraries"
+msgstr ""
+
+#: of pwnlib.elf:1
+msgid ""
+"Most exploitable CTF challenges are provided in the Executable and "
+"Linkable Format (``ELF``).  Generally, it is very useful to be able to "
+"interact with these files to extract data such as function addresses, ROP"
+" gadgets, and writable page addresses."
+msgstr ""
+
+#: ../pwntools/docs/source/elf.rst:13
+msgid "ELF Modules"
+msgstr ""
+
+#: ../pwntools/docs/source/elf/config.rst:7
+msgid ":mod:`pwnlib.elf.config` --- Kernel Config Parsing"
+msgstr ""
+
+#: of pwnlib.elf.config:1
+msgid "Kernel-specific ELF functionality"
+msgstr ""
+
+#: of pwnlib.elf.config.parse_kconfig:1
+msgid "Parses configuration data from a kernel .config."
+msgstr ""
+
+#: ../pwntools/docs/source/elf/corefile.rst ../pwntools/docs/source/elf/elf.rst
+#: of pwnlib.elf.config.parse_kconfig pwnlib.elf.corefile.Corefile.getenv
+#: pwnlib.elf.elf.ELF.from_assembly pwnlib.elf.elf.ELF.from_bytes
+#: pwnlib.elf.elf.ELF.offset_to_vaddr pwnlib.elf.elf.ELF.patch_custom_libraries
+#: pwnlib.elf.elf.ELF.read pwnlib.elf.elf.ELF.search
+#: pwnlib.elf.elf.ELF.set_interpreter pwnlib.elf.elf.ELF.set_runpath
+#: pwnlib.elf.elf.ELF.vaddr_to_offset pwnlib.elf.elf.ELF.write
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.elf.config.parse_kconfig:3
+msgid "Configuration contents."
+msgstr ""
+
+#: ../pwntools/docs/source/elf/elf.rst of pwnlib.elf.config.parse_kconfig
+#: pwnlib.elf.corefile.Corefile.getenv
+#: pwnlib.elf.elf.ELF._patch_elf_and_read_maps
+#: pwnlib.elf.elf.ELF.offset_to_vaddr pwnlib.elf.elf.ELF.patch_custom_libraries
+#: pwnlib.elf.elf.ELF.read pwnlib.elf.elf.ELF.set_interpreter
+#: pwnlib.elf.elf.ELF.set_runpath pwnlib.elf.elf.ELF.vaddr_to_offset
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.elf.config.parse_kconfig:6
+msgid ""
+"A :class:`dict`  mapping configuration options. \"Not set\" is converted "
+"into ``None``, ``y`` and ``n`` are converted into :class:`bool`.  Numbers"
+" are converted into :class:`int`. All other values are as-is. Each key "
+"has ``CONFIG_`` stripped from the beginning."
+msgstr ""
+
+#: of pwnlib.elf.config.parse_kconfig:13 pwnlib.elf.corefile.Corefile:60
+#: pwnlib.elf.elf.ELF.offset_to_vaddr:10 pwnlib.elf.elf.ELF.read:11
+#: pwnlib.elf.elf.ELF.search:20 pwnlib.elf.elf.ELF.vaddr_to_offset:10
+#: pwnlib.elf.elf.ELF.write:14
+msgid "Examples"
+msgstr ""
+
+#: ../pwntools/docs/source/elf/corefile.rst:26
+msgid ":mod:`pwnlib.elf.corefile` --- Core Files"
+msgstr ""
+
+#: of pwnlib.elf.corefile:1
+msgid "Read information from Core Dumps."
+msgstr ""
+
+#: of pwnlib.elf.corefile:3
+msgid ""
+"Core dumps are extremely useful when writing exploits, even outside of "
+"the normal act of debugging things."
+msgstr ""
+
+#: of pwnlib.elf.corefile:7
+msgid "Using Corefiles to Automate Exploitation"
+msgstr ""
+
+#: of pwnlib.elf.corefile:9
+msgid ""
+"For example, if you have a trivial buffer overflow and don't want to open"
+" up a debugger or calculate offsets, you can use a generated core dump to"
+" extract the relevant information."
+msgstr ""
+
+#: of pwnlib.elf.corefile:59 pwnlib.elf.elf:45
+msgid "Module Members"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:1
+msgid "Bases: :py:class:`~pwnlib.elf.elf.ELF`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:1
+msgid ""
+"Enhances the information available about a corefile (which is an "
+"extension of the ELF format) by permitting extraction of information "
+"about the mapped data segments, and register state."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:5
+msgid ""
+"Registers can be accessed directly, e.g. via ``core_obj.eax`` and "
+"enumerated via :data:`Corefile.registers`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:8
+msgid ""
+"Memory can be accessed directly via :meth:`pwnlib.elf.elf.ELF.read` or "
+":meth:`pwnlib.elf.elf.ELF.write`, and also via "
+":meth:`pwnlib.elf.elf.ELF.pack` or :meth:`pwnlib.elf.elf.ELF.unpack` or "
+"even :meth:`.string`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:11
+msgid ""
+"Path to the core file.  Alternately, may be a :class:`.process` instance,"
+" and the core file will be located automatically."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:38
+msgid "Mappings can be iterated in order via :attr:`Corefile.mappings`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:61
+msgid ""
+"Let's build an example binary which should eat ``R0=0xdeadbeef`` and "
+"``PC=0xcafebabe``."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:64
+msgid ""
+"If we run the binary and then wait for it to exit, we can get its core "
+"file."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:77
+msgid ""
+"You can specify a full path a la ``Corefile('/path/to/core')``, but you "
+"can also just access the :attr:`.process.corefile` attribute."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:80
+msgid ""
+"There's a lot of behind-the-scenes logic to locate the corefile for a "
+"given process, but it's all handled transparently by Pwntools."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:85
+msgid ""
+"The core file has a :attr:`exe` property, which is a :class:`.Mapping` "
+"object.  Each mapping can be accessed with virtual addresses via "
+"subscript, or contents can be examined via the :attr:`.Mapping.data` "
+"attribute."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:94
+msgid ""
+"The core file also has registers which can be accessed directly. Pseudo-"
+"registers :attr:`pc` and :attr:`sp` are available on all architectures, "
+"to make writing architecture-agnostic code more simple. If this were an "
+"amd64 corefile, we could access e.g. ``core.rax``."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:106
+msgid ""
+"We may not always know which signal caused the core dump, or what address"
+" caused a segmentation fault.  Instead of accessing registers directly, "
+"we can also extract this information from the core dump via "
+":attr:`fault_addr` and :attr:`signal`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:111
+msgid ""
+"On QEMU-generated core dumps, this information is unavailable, so we "
+"substitute the value of PC.  In our example, that's correct anyway."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:119
+msgid ""
+"Core files can also be generated from running processes. This requires "
+"GDB to be installed, and can only be done with native processes. Getting "
+"a \"complete\" corefile requires GDB 7.11 or better."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:132
+msgid ""
+"The process is still running, but accessing its :attr:`.process.corefile`"
+" property automatically invokes GDB to attach and dump a corefile."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:138
+msgid ""
+"The corefile can be inspected and read from, and even exposes various "
+"mappings"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:145
+msgid ""
+"It also supports all of the features of :class:`ELF`, so you can "
+":meth:`pwnlib.elf.elf.ELF.read` or :meth:`pwnlib.elf.elf.ELF.write` or "
+"even the helpers like :meth:`pwnlib.elf.elf.ELF.pack` or "
+":meth:`pwnlib.elf.elf.ELF.unpack`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:148
+msgid "Don't forget to call :meth:`.ELF.save` to save the changes to disk."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:155
+msgid "Let's re-load it as a new :attr:`Corefile` object and have a look!"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:161
+msgid "Various other mappings are available by name, for the first segment of:"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:163
+msgid ":attr:`.exe` the executable"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:164
+msgid ":attr:`.libc` the loaded libc, if any"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:165
+msgid ":attr:`.stack` the stack mapping"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:166
+msgid ":attr:`.vvar`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:167
+msgid ":attr:`.vdso`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:168
+msgid ":attr:`.vsyscall`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:170
+msgid ""
+"On Linux, 32-bit Intel binaries should have a VDSO section via "
+":attr:`vdso`. Since our ELF is statically linked, there is no libc which "
+"gets mapped."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:177
+msgid ""
+"But if we dump a corefile from a dynamically-linked binary, the "
+":attr:`.libc` will be loaded."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:183
+msgid ""
+"The corefile also contains a :attr:`.stack` property, which gives us "
+"direct access to the stack contents.  On Linux, the very top of the stack"
+" should contain two pointer-widths of NULL bytes, preceded by the NULL- "
+"terminated path to the executable (as passed via the first arg to "
+"``execve``)."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:191
+msgid ""
+"When creating a process, the kernel puts the absolute path of the binary "
+"and some padding bytes at the end of the stack.  We can look at those by "
+"looking at ``core.stack.data``."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:199
+msgid ""
+"We can also directly access the environment variables and arguments, via "
+":attr:`.argc`, :attr:`.argv`, and :attr:`.env`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:215
+msgid "Corefiles can also be pulled from remote machines via SSH!"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:228
+msgid "Make sure fault_addr synthesis works for amd64 on ret."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:237
+msgid ""
+"Corefile.getenv() works correctly, even if the environment variable's "
+"value contains embedded '='. Corefile is able to find the stack, even if "
+"the stack pointer doesn't point at the stack."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:252
+msgid ""
+"context.disable_corefiles disables the automatic corefile generation for "
+"crashed processes. For running processes, io.corefile still invoke GDB to"
+" generate a coredump."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile:268
+msgid ""
+"Corefile gracefully handles the stack being filled with garbage, "
+"including argc / argv / envp being overwritten."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile._populate_got:1
+#: pwnlib.elf.elf.ELF._populate_got:1
+msgid "Loads the symbols for all relocations."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile._populate_plt:1
+#: pwnlib.elf.elf.ELF._populate_plt:1
+msgid "Loads the PLT symbols"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.debug:1
+msgid "Open the corefile under a debugger."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.getenv:1
+msgid "Read an environment variable off the stack, and return its contents."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.getenv:3
+msgid "Name of the environment variable to read."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.getenv:6
+msgid ":class:`str` -- The contents of the environment variable."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.fault_addr:12
+#: pwnlib.elf.corefile.Corefile.getenv:9
+#: pwnlib.elf.corefile.Corefile.registers:4
+#: pwnlib.elf.corefile.Corefile.signal:4 pwnlib.elf.elf.ELF:4
+#: pwnlib.elf.elf.ELF.address:16 pwnlib.elf.elf.ELF.from_assembly:10
+#: pwnlib.elf.elf.ELF.from_bytes:10
+#: pwnlib.elf.elf.ELF.patch_custom_libraries:16
+#: pwnlib.elf.elf.ELF.set_interpreter:13 pwnlib.elf.elf.ELF.set_runpath:15
+#: pwnlib.elf.elf.dotdict:9
+msgid "Example"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc:1
+msgid "Number of arguments passed"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc
+#: pwnlib.elf.corefile.Corefile.argc_address pwnlib.elf.corefile.Corefile.argv
+#: pwnlib.elf.corefile.Corefile.argv_address
+#: pwnlib.elf.corefile.Corefile.envp_address pwnlib.elf.corefile.Corefile.exe
+#: pwnlib.elf.corefile.Corefile.fault_addr pwnlib.elf.corefile.Corefile.libc
+#: pwnlib.elf.corefile.Corefile.mappings pwnlib.elf.corefile.Corefile.maps
+#: pwnlib.elf.corefile.Corefile.pc pwnlib.elf.corefile.Corefile.pid
+#: pwnlib.elf.corefile.Corefile.ppid pwnlib.elf.corefile.Corefile.registers
+#: pwnlib.elf.corefile.Corefile.signal pwnlib.elf.corefile.Corefile.sp
+#: pwnlib.elf.corefile.Corefile.vdso pwnlib.elf.corefile.Corefile.vsyscall
+#: pwnlib.elf.corefile.Corefile.vvar pwnlib.elf.corefile.Mapping.address
+#: pwnlib.elf.corefile.Mapping.data pwnlib.elf.corefile.Mapping.flags
+#: pwnlib.elf.corefile.Mapping.name pwnlib.elf.corefile.Mapping.page_offset
+#: pwnlib.elf.corefile.Mapping.path pwnlib.elf.corefile.Mapping.permstr
+#: pwnlib.elf.corefile.Mapping.size pwnlib.elf.corefile.Mapping.start
+#: pwnlib.elf.corefile.Mapping.stop pwnlib.elf.elf.ELF.address
+#: pwnlib.elf.elf.ELF.arch pwnlib.elf.elf.ELF.asan pwnlib.elf.elf.ELF.aslr
+#: pwnlib.elf.elf.ELF.bits pwnlib.elf.elf.ELF.build pwnlib.elf.elf.ELF.buildid
+#: pwnlib.elf.elf.ELF.bytes pwnlib.elf.elf.ELF.canary pwnlib.elf.elf.ELF.config
+#: pwnlib.elf.elf.ELF.data pwnlib.elf.elf.ELF.debuginfo
+#: pwnlib.elf.elf.ELF.elftype pwnlib.elf.elf.ELF.endian
+#: pwnlib.elf.elf.ELF.entry pwnlib.elf.elf.ELF.entrypoint
+#: pwnlib.elf.elf.ELF.execstack pwnlib.elf.elf.ELF.executable_segments
+#: pwnlib.elf.elf.ELF.file pwnlib.elf.elf.ELF.fortify pwnlib.elf.elf.ELF.ibt
+#: pwnlib.elf.elf.ELF.libc pwnlib.elf.elf.ELF.libc_start_main_return
+#: pwnlib.elf.elf.ELF.mmap pwnlib.elf.elf.ELF.msan
+#: pwnlib.elf.elf.ELF.non_writable_segments pwnlib.elf.elf.ELF.nx
+#: pwnlib.elf.elf.ELF.packed pwnlib.elf.elf.ELF.path pwnlib.elf.elf.ELF.pie
+#: pwnlib.elf.elf.ELF.relro pwnlib.elf.elf.ELF.rpath pwnlib.elf.elf.ELF.runpath
+#: pwnlib.elf.elf.ELF.rwx_segments pwnlib.elf.elf.ELF.sections
+#: pwnlib.elf.elf.ELF.segments pwnlib.elf.elf.ELF.shadowstack
+#: pwnlib.elf.elf.ELF.start pwnlib.elf.elf.ELF.stripped pwnlib.elf.elf.ELF.sym
+#: pwnlib.elf.elf.ELF.ubsan pwnlib.elf.elf.ELF.version
+#: pwnlib.elf.elf.ELF.writable_segments
+msgid "type"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc:3
+#: pwnlib.elf.corefile.Corefile.argc_address:3
+#: pwnlib.elf.corefile.Corefile.argv_address:3
+#: pwnlib.elf.corefile.Corefile.envp_address:3
+#: pwnlib.elf.corefile.Corefile.fault_addr:19 pwnlib.elf.corefile.Corefile.pc:5
+#: pwnlib.elf.corefile.Corefile.pid:3 pwnlib.elf.corefile.Corefile.ppid:3
+#: pwnlib.elf.corefile.Corefile.signal:17 pwnlib.elf.corefile.Corefile.sp:5
+#: pwnlib.elf.corefile.Mapping.address:3 pwnlib.elf.corefile.Mapping.flags:3
+#: pwnlib.elf.corefile.Mapping.page_offset:3 pwnlib.elf.corefile.Mapping.size:3
+#: pwnlib.elf.corefile.Mapping.start:3 pwnlib.elf.corefile.Mapping.stop:3
+#: pwnlib.elf.elf.ELF.address:26 pwnlib.elf.elf.ELF.bits:3
+#: pwnlib.elf.elf.ELF.bytes:3 pwnlib.elf.elf.ELF.entry:3
+#: pwnlib.elf.elf.ELF.entrypoint:3 pwnlib.elf.elf.ELF.libc_start_main_return:24
+#: pwnlib.elf.elf.ELF.start:3
+msgid ":class:`int`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc_address:1
+msgid "Pointer to argc on the stack"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argv:1
+msgid "List of addresses of arguments on the stack."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argv:3
+#: pwnlib.elf.corefile.Corefile.mappings:3
+#: pwnlib.elf.elf.ELF.executable_segments:6
+#: pwnlib.elf.elf.ELF.non_writable_segments:6 pwnlib.elf.elf.ELF.rwx_segments:6
+#: pwnlib.elf.elf.ELF.sections:4 pwnlib.elf.elf.ELF.segments:4
+#: pwnlib.elf.elf.ELF.writable_segments:6
+msgid ":class:`list`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argv_address:1
+msgid "Pointer to argv on the stack"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.envp_address:1
+msgid "Pointer to envp on the stack"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.exe:1
+msgid "First mapping for the executable file."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.exe:3 pwnlib.elf.corefile.Corefile.libc:3
+#: pwnlib.elf.corefile.Corefile.vdso:3 pwnlib.elf.corefile.Corefile.vsyscall:3
+#: pwnlib.elf.corefile.Corefile.vvar:3
+msgid ":class:`Mapping`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.fault_addr:5
+msgid "Address which generated the fault, for the signals"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.fault_addr:6
+msgid ""
+"SIGILL, SIGFPE, SIGSEGV, SIGBUS.  This is only available in native core "
+"dumps created by the kernel.  If the information is unavailable, this "
+"returns the address of the instruction pointer."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.libc:1
+msgid "First mapping for ``libc.so``"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.mappings:1
+msgid "A list of :class:`.Mapping` objects for each loaded memory region"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.maps:1
+msgid "A printable string which is similar to /proc/xx/maps."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.maps:22
+#: pwnlib.elf.corefile.Mapping.data:3 pwnlib.elf.corefile.Mapping.name:3
+#: pwnlib.elf.corefile.Mapping.path:3 pwnlib.elf.corefile.Mapping.permstr:3
+#: pwnlib.elf.elf.ELF.arch:5 pwnlib.elf.elf.ELF.build:3
+#: pwnlib.elf.elf.ELF.elftype:3 pwnlib.elf.elf.ELF.endian:3
+#: pwnlib.elf.elf.ELF.path:3
+msgid ":class:`str`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.pc:1
+msgid "The program counter for the Corefile"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.pc:3
+msgid "This is a cross-platform way to get e.g. ``core.eip``, ``core.rip``, etc."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.pid:1
+msgid "PID of the process which created the core dump."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.ppid:1
+msgid "Parent PID of the process which created the core dump."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.prpsinfo:1
+msgid "The NT_PRPSINFO object"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.prstatus:1
+msgid "The NT_PRSTATUS object."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.registers:1
+msgid "All available registers in the coredump."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.registers:11
+#: pwnlib.elf.elf.ELF.config:3
+msgid ":class:`dict`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.siginfo:1
+msgid "The NT_SIGINFO object"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.signal:1
+msgid "Signal which caused the core to be dumped."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.sp:1
+msgid "The stack pointer for the Corefile"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.sp:3
+msgid "This is a cross-platform way to get e.g. ``core.esp``, ``core.rsp``, etc."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.stack:1
+msgid ""
+"Environment variables read from the stack. Keys are the environment "
+"variable name, values are the memory address of the variable."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.stack:5
+msgid "Use :meth:`.getenv` or :meth:`.string` to retrieve the textual value."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.stack:7
+msgid ""
+"Note: If ``FOO=BAR`` is in the environment, ``self.env['FOO']`` is the "
+"address of the string ``\"BAR \"``."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.vdso:1
+msgid "Mapping for the vdso section"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.vsyscall:1
+msgid "Mapping for the vsyscall section"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Corefile.vvar:1
+msgid "Mapping for the vvar section"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping:1
+msgid "Encapsulates information about a memory mapping in a :class:`Corefile`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.__repr__:1 pwnlib.elf.elf.ELF.__repr__:1
+#: pwnlib.elf.elf.Function.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.__str__:1
+msgid "Return str(self)."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.find:1
+msgid "Similar to str.find() but works on our address space"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.rfind:1
+msgid "Similar to str.rfind() but works on our address space"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.__weakref__:1
+#: pwnlib.elf.elf.ELF.__weakref__:1 pwnlib.elf.elf.Function.__weakref__:1
+#: pwnlib.elf.elf.dotdict.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.address:1
+msgid "Alias for :data:`Mapping.start`."
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.data:1
+msgid "Memory of the mapping."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.flags:1
+msgid "Mapping flags, using e.g. ``PROT_READ`` and so on."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.name:1
+msgid "Name of the mapping, e.g. ``'/bin/bash'`` or ``'[vdso]'``."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.page_offset:1
+msgid "Offset in pages in the mapped file"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.path:1
+msgid "Alias for :attr:`.Mapping.name`"
+msgstr ""
+
+#: of pwnlib.elf.corefile.Mapping.permstr:1
+msgid "Human-readable memory permission string, e.g. ``r-xp``."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.size:1
+msgid "Size of the mapping, in bytes"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.start:1
+msgid "First mapped byte in the mapping"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.stop:1
+msgid "First byte after the end of the mapping"
+msgstr ""
+
+#: ../pwntools/docs/source/elf/elf.rst:13
+msgid ":mod:`pwnlib.elf.elf` --- ELF Files"
+msgstr ""
+
+#: of pwnlib.elf.elf:1
+msgid "Exposes functionality for manipulating ELF files"
+msgstr ""
+
+#: of pwnlib.elf.elf:4
+msgid "Stop hard-coding things!  Look them up at runtime with :mod:`pwnlib.elf`."
+msgstr ""
+
+#: of pwnlib.elf.elf:7
+msgid "Example Usage"
+msgstr ""
+
+#: of pwnlib.elf.elf:21
+msgid "You can even patch and save the files."
+msgstr ""
+
+#: of pwnlib.elf.elf:33
+msgid "An ELF can also be created from in-memory bytes."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF:1
+msgid "Bases: :py:class:`~elftools.elf.elffile.ELFFile`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF:1
+msgid "Encapsulates information about an ELF file."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.load_from_path:1 of
+msgid ""
+"Takes a local filesystem path accepted by open(), and returns an ELFFile "
+"from it, setting up a stream_loader that resolves linked files using "
+"normalized string paths relative to the original file."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._decompress_dwarf_section:1 of
+msgid "Returns the uncompressed contents of the provided DWARF section."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.from_assembly:1
+msgid ""
+"Given an assembly listing, return a fully loaded ELF object which "
+"contains that assembly at its entry point."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.from_assembly:4
+msgid "Assembly language listing"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.from_assembly:6
+msgid "Address of the entry point and the module's base address."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.from_bytes:1
+msgid ""
+"Given a sequence of bytes, return a fully loaded ELF object which "
+"contains those bytes at its entry point."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.from_bytes:4
+msgid "Shellcode byte string"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.from_bytes:6
+msgid "Desired base address for the ELF."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.make_relative_loader:1 of
+msgid ""
+"Return a function that takes a potentially relative path, resolves it "
+"against base_path (str), and opens a file at that."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.make_relative_loader:4 of
+msgid ""
+"ELFFile uses functions like that for resolving DWARF links. The raw bytes"
+" parsed from ELF metadata are decoded before calling this loader."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.patch_custom_libraries:1
+msgid ""
+"Looks for the interpreter binary in the given path and patches the binary"
+" to use it if available. Also patches the RUNPATH to the given path using"
+" the `patchelf utility <https://github.com/NixOS/patchelf>`_."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.patch_custom_libraries:4
+#: pwnlib.elf.elf.ELF.set_interpreter:5 pwnlib.elf.elf.ELF.set_runpath:7
+msgid "Path to the binary to patch."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.patch_custom_libraries:6
+msgid "Path to a folder containing the libraries."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.patch_custom_libraries:8
+msgid "Create a copy of the binary and apply the patches to the copy."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.patch_custom_libraries:10
+msgid "Suffix to append to the filename when creating the copy to patch."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.patch_custom_libraries:13
+#: pwnlib.elf.elf.ELF.set_interpreter:10 pwnlib.elf.elf.ELF.set_runpath:12
+msgid ""
+"A new ELF instance is returned after patching the binary with the "
+"external ``patchelf`` tool."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.set_interpreter:1
+msgid ""
+"Patches the interpreter of the ELF to the given binary using the "
+"`patchelf utility <https://github.com/NixOS/patchelf>`_."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.set_interpreter:3
+msgid "When running the binary, the new interpreter will be used to load the ELF."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.set_interpreter:7
+msgid "Path to the ld.so dynamic loader."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.set_runpath:1
+msgid ""
+"Patches the RUNPATH of the ELF to the given path using the `patchelf "
+"utility <https://github.com/NixOS/patchelf>`_."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.set_runpath:3
+msgid ""
+"The dynamic loader will look for any needed shared libraries in the given"
+" path first, before trying the system library paths. This is useful to "
+"run a binary with a different libc binary."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.set_runpath:9
+msgid "Path containing the needed libraries."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.__getitem__:1 of
+msgid "Implement dict-like access to header entries"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._get_linked_strtab_section:1 of
+msgid ""
+"Get the section at index #n from the file, throws if it's not a STRTAB. "
+"Used for resolving section links with target type validation."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._get_linked_symtab_section:1 of
+msgid ""
+"Get the section at index #n from the file, throws if it's not a "
+"SYMTAB/DYNTAB. Used for resolving section links with target type "
+"validation."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._get_section_header:1 of
+msgid "Find the header of section #n, parse it and return the struct"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._get_section_name:1 of
+msgid ""
+"Given a section header, find this section's name in the file's string "
+"table"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._get_segment_header:1 of
+msgid "Find the header of segment #n, parse it and return the struct"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._identify_file:1 of
+msgid "Verify the ELF file and identify its class and endianness."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_gnu_verdef_section:1 of
+msgid "Create a GNUVerDefSection"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_gnu_verneed_section:1 of
+msgid "Create a GNUVerNeedSection"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_gnu_versym_section:1 of
+msgid "Create a GNUVerSymSection"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_section:1 of
+msgid "Create a section object of the appropriate type"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_segment:1 of
+msgid "Create a Segment object of the appropriate type"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_sunwsyminfo_table_section:1 of
+msgid "Create a SUNWSyminfoTableSection"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_symbol_table_index_section:1 of
+msgid "Create a SymbolTableIndexSection object"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._make_symbol_table_section:1 of
+msgid "Create a SymbolTableSection"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._parse_elf_header:1 of
+msgid ""
+"Parses the ELF file header and assigns the result to attributes of this "
+"object."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:1
+msgid "patch_elf_and_read_maps(self) -> dict"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:3
+msgid "Read ``/proc/self/maps`` as if the ELF were executing."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:5
+msgid ""
+"This is done by replacing the code at the entry point with shellcode "
+"which dumps ``/proc/self/maps`` and exits, and **actually executing the "
+"binary**."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:8
+#, python-brace-format
+msgid ""
+"A ``dict`` mapping file paths to the lowest address they appear at. Does "
+"not do any translation for e.g. QEMU emulation, the raw results are "
+"returned.  If there is not enough space to inject the shellcode in the "
+"segment which contains the entry point, returns ``{}``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:8
+msgid ""
+"A ``dict`` mapping file paths to the lowest address they appear at. Does "
+"not do any translation for e.g. QEMU emulation, the raw results are "
+"returned."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:12
+#, python-brace-format
+msgid ""
+"If there is not enough space to inject the shellcode in the segment which"
+" contains the entry point, returns ``{}``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:15
+msgid "Doctests:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:17
+msgid "These tests are just to ensure that our shellcode is correct."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._populate_functions:1
+msgid ""
+"Builds a dict of 'functions' (i.e. symbols of type 'STT_FUNC') by "
+"function name that map to a tuple consisting of the func address and size"
+" in bytes."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._populate_synthetic_symbols:1
+msgid "Adds symbols from the GOT and PLT to the symbols dictionary."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._populate_synthetic_symbols:3
+msgid "Does not overwrite any existing symbols, and prefers PLT symbols."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._populate_synthetic_symbols:5
+msgid ""
+"Synthetic plt.xxx and got.xxx symbols are added for each PLT and GOT "
+"entry, respectively."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._populate_synthetic_symbols:8
+msgid "Example:bash."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._read_dwarf_section:1 of
+msgid ""
+"Read the contents of a DWARF section from the stream and return a "
+"DebugSectionDescriptor. Apply relocations if asked to."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._section_offset:1 of
+msgid "Compute the offset of section #n in the file"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile._segment_offset:1 of
+msgid "Compute the offset of segment #n in the file"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.asm:1
+msgid ""
+"Assembles the specified instructions and inserts them into the ELF at the"
+" specified address."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.asm:4
+msgid ""
+"This modifies the ELF in-place. The resulting binary can be saved with "
+":meth:`.ELF.save`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.bss:1
+msgid "Address of the ``.bss`` section, plus the specified offset."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.checksec:1
+msgid "Prints out information in the binary, similar to ``checksec.sh``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.checksec:3
+msgid "Whether to print the path to the ELF binary."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.checksec:5
+msgid "Whether to use colored output."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.close:1
+msgid "Close the ELF file and release all resources associated with it."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.debug:1
+msgid "Debug the ELF with :func:`.gdb.debug`."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.debug:3 pwnlib.elf.elf.ELF.process:4
+msgid "List of arguments to the binary"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.debug:5 pwnlib.elf.elf.ELF.debug:6
+msgid "Extra arguments to :func:`.gdb.debug`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.debug:8
+msgid ":class:`.tube` -- See :func:`.gdb.debug`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.disable_nx:1
+msgid "Disables NX for the ELF."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.disable_nx:3
+msgid "Zeroes out the ``PT_GNU_STACK`` program header ``p_type`` field."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.disasm:1
+msgid ""
+"Returns a string of disassembled instructions at the specified virtual "
+"memory address"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_by_tag:1
+msgid "Named ``DT_XXX`` tag (e.g. ``'DT_STRTAB'``)."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_by_tag:4
+msgid ":class:`elftools.elf.dynamic.DynamicTag`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_string:1
+msgid "Fetches an enumerated string from the ``DT_STRTAB`` table."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_string:3
+msgid "String index"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_string:6
+msgid ":class:`str` -- String from the table as raw bytes."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_value_by_tag:1
+msgid "Retrieve the value from a dynamic tag a la ``DT_XXX``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dynamic_value_by_tag:3
+msgid "If the tag is missing, returns ``None``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.fit:1
+msgid "Writes fitted data into the specified address."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.fit:3
+msgid "See: :func:`.packing.fit`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.flat:1
+msgid "Writes a full array of values to the specified address."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.flat:3
+msgid "See: :func:`.packing.flat`"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.get_dwarf_link:1 of
+msgid ""
+"Read the .gnu_debuglink section, return an object with filename (as "
+"bytes) and checksum (as number) in it."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.get_ehabi_infos:1 of
+msgid ""
+"Generally, shared library and executable contain 1 .ARM.exidx section. "
+"Object file contains many .ARM.exidx sections. So we must traverse every "
+"section and filter sections whose type is SHT_ARM_EXIDX."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.get_machine_arch:1
+msgid "Return the machine architecture, as detected from the ELF header."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.get_section_by_name:1 of
+msgid ""
+"Get a section from the file, by name. Return None if no such section "
+"exists."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.get_section_index:1 of
+msgid ""
+"Gets the index of the section by name. Return None if no such section "
+"name exists."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.get_segment_for_address:1
+msgid ""
+"Given a virtual address described by a ``PT_LOAD`` segment, return the "
+"first segment which describes the virtual address.  An optional ``size`` "
+"may be provided to ensure the entire range falls into the same segment."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.get_segment_for_address:5
+msgid "Virtual address to find"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.get_segment_for_address:7
+msgid ""
+"Number of bytes which must be available after ``address`` in **both** the"
+" file-backed data for the segment, and the memory region which is "
+"reserved for the data."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.get_segment_for_address:12
+msgid "Either returns a :class:`.segments.Segment` object, or ``None``."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.get_shstrndx:1 of
+msgid "Find the string table section index for the section header table"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.get_supplementary_dwarfinfo:1 of
+msgid ""
+"Read supplementary dwarfinfo, from either the standared .debug_sup "
+"section, the GNU proprietary .gnu_debugaltlink, or .gnu_debuglink."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.has_dwarf_link:1 of
+msgid ""
+"Whether the binary's debug info is in an external file. Use "
+"get_dwarf_link to retrieve the path to it."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.has_ehabi_info:1 of
+msgid "Check whether this file appears to have arm exception handler index table."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.has_phantom_bytes:1 of
+msgid ""
+"The XC16 compiler for the PIC microcontrollers emits DWARF where all odd "
+"bytes in all DWARF sections are to be discarded (\"phantom\")."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.has_phantom_bytes:4 of
+msgid ""
+"We don't know where does the phantom byte discarding fit into the usual "
+"chain of section content transforms. There are no XC16/PIC binaries in "
+"the corpus with relocations against DWARF, and the DWARF section "
+"compression seems to be unsupported by XC16."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.has_section:1 of
+msgid "Section existence check by name, without the overhead of parsing if found."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.iter_notes pwnlib.elf.elf.ELF.iter_properties
+#: pwnlib.elf.elf.ELF.iter_segments_by_type pwnlib.elf.elf.ELF.search
+msgid "Yields"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.iter_notes:1
+msgid ""
+"All the notes in the PT_NOTE segments.  Each result is a dictionary- like"
+" object with ``n_name``, ``n_type``, and ``n_desc`` fields, amongst "
+"others."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.iter_properties:1
+msgid ""
+"All the GNU properties in the PT_NOTE segments.  Each result is a "
+"dictionary- like object with ``pr_type``, ``pr_datasz``, and ``pr_data`` "
+"fields."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.iter_segments_by_type:1
+msgid "Segments matching the specified type."
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.num_sections:1 of
+msgid "Number of sections in the file"
+msgstr ""
+
+#: elftools.elf.elffile.ELFFile.num_segments:1 of
+msgid "Number of segments in the file"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.offset_to_vaddr:1
+msgid "Translates the specified offset to a virtual address."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.offset_to_vaddr:3
+msgid "Offset to translate"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.offset_to_vaddr:6
+msgid ""
+"`int` -- Virtual address which corresponds to the file offset, or "
+":const:`None`."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.offset_to_vaddr:11
+msgid ""
+"This example shows that regardless of changes to the virtual address "
+"layout by modifying :attr:`.ELF.address`, the offset for any given "
+"address doesn't change."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p16:1
+msgid "Writes a 16-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p32:1
+msgid "Writes a 32-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p40:1
+msgid "Writes a 40-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p48:1
+msgid "Writes a 48-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p56:1
+msgid "Writes a 56-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p64:1
+msgid "Writes a 64-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.p8:1
+msgid "Writes a 8-bit integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.pack:1
+msgid "Writes a packed integer ``data`` to the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.process:1
+msgid ""
+"Execute the binary with :class:`.process`.  Note that ``argv`` is a list "
+"of arguments, and should not include ``argv[0]``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.process:6 pwnlib.elf.elf.ELF.process:7
+msgid "Extra arguments to :class:`.process`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.process:9
+msgid ":class:`.process`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:1
+msgid "Read data from the specified virtual address"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:3
+msgid "Virtual address to read"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:5
+msgid "Number of bytes to read"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:8
+msgid "A :class:`bytes` object, or :const:`None`."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:12
+msgid "The simplest example is just to read the ELF header."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:18
+msgid ""
+"ELF segments do not have to contain all of the data on-disk that gets "
+"loaded into memory."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:21
+msgid "First, let's create an ELF file has some code in two sections."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:33
+msgid "By default, these come right after eachother in memory."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:40
+msgid "Let's move the sections so that B is a little bit further away."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:51
+msgid "Now let's re-load the ELF, and check again"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.read:63
+msgid ""
+"Everything is relative to the user-selected base address, so moving "
+"things around keeps everything working."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.save:1
+msgid "Save the ELF to a file"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:1
+msgid "Search the ELF's virtual address space for the specified string."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:4
+msgid "Notes"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:5
+msgid ""
+"Does not search empty space between segments, or uninitialized data.  "
+"This will only return data that actually exists in the ELF file.  "
+"Searching for a long string of NULL bytes probably won't work."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:10
+msgid "String to search for."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:12
+msgid "Search only writable sections."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:14
+msgid "Search only executable sections."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:17
+msgid "An iterator for each virtual address that matches."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:21
+msgid ""
+"An ELF header starts with the bytes ``\\x7fELF``, so we sould be able to "
+"find it easily."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:28
+msgid "We can also search for string the binary."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.search:33
+msgid "It is also possible to search for instructions in executable sections."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.section:1
+msgid "Gets data for the named section"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.section:3
+msgid "Name of the section"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.section:6
+msgid ":class:`str` -- String containing the bytes for that section"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.string:1
+msgid "Reads a null-terminated string from the specified ``address``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.string:3
+msgid ""
+"A ``str`` with the string contents (NUL terminator is omitted), or an "
+"empty string if no NUL terminator could be found."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.u16:1 pwnlib.elf.elf.ELF.u32:1
+#: pwnlib.elf.elf.ELF.u40:1 pwnlib.elf.elf.ELF.u48:1 pwnlib.elf.elf.ELF.u56:1
+#: pwnlib.elf.elf.ELF.u64:1 pwnlib.elf.elf.ELF.u8:1 pwnlib.elf.elf.ELF.unpack:1
+msgid "Unpacks an integer from the specified ``address``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.vaddr_to_offset:1
+msgid "Translates the specified virtual address to a file offset"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.vaddr_to_offset:3
+msgid "Virtual address to translate"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.vaddr_to_offset:6
+msgid ""
+"*int* -- Offset within the ELF file which corresponds to the address, or "
+":const:`None`."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.write:1
+msgid "Writes data to the specified virtual address"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.write:3
+msgid "Virtual address to write"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.write:5
+msgid "Bytes to write"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.write:10
+msgid ""
+"This routine does not check the bounds on the write to ensure that it "
+"stays in the same segment."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF._section_header_stringtable:1
+msgid "Get the string table section corresponding to the section header table."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:1
+msgid "Address of the lowest segment loaded in the ELF."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:3
+msgid "When updated, the addresses of the following fields are also updated:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:5
+msgid ":attr:`~.ELF.symbols`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:6
+msgid ":attr:`~.ELF.got`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:7
+msgid ":attr:`~.ELF.plt`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:8
+msgid ":attr:`~.ELF.functions`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:10
+msgid "However, the following fields are **NOT** updated:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:12
+msgid ":attr:`~.ELF.segments`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.address:13
+msgid ":attr:`~.ELF.sections`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.arch:1
+msgid "Architecture of the file (e.g. ``'i386'``, ``'arm'``)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.arch:3
+msgid "See: :attr:`.ContextType.arch`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.asan:1
+msgid "Whether the current binary was built with Address Sanitizer (``ASAN``)."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.asan:4 pwnlib.elf.elf.ELF.aslr:3
+#: pwnlib.elf.elf.ELF.canary:3 pwnlib.elf.elf.ELF.debuginfo:3
+#: pwnlib.elf.elf.ELF.execstack:42 pwnlib.elf.elf.ELF.fortify:4
+#: pwnlib.elf.elf.ELF.ibt:4 pwnlib.elf.elf.ELF.msan:4 pwnlib.elf.elf.ELF.nx:198
+#: pwnlib.elf.elf.ELF.packed:3 pwnlib.elf.elf.ELF.pie:3
+#: pwnlib.elf.elf.ELF.relro:51 pwnlib.elf.elf.ELF.rpath:3
+#: pwnlib.elf.elf.ELF.runpath:3 pwnlib.elf.elf.ELF.shadowstack:4
+#: pwnlib.elf.elf.ELF.stripped:3 pwnlib.elf.elf.ELF.ubsan:4
+msgid ":class:`bool`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.aslr:1 pwnlib.elf.elf.ELF.pie:1
+msgid "Whether the current binary is position-independent."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.bits:1
+msgid "Bit-ness of the file"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.build:1
+msgid "Linux kernel build commit, if this is a Linux kernel image"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.buildid:1
+msgid "GNU Build ID embedded into the binary"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.buildid:3 pwnlib.elf.elf.ELF.data:6
+msgid ":class:`bytes`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.bytes:1
+msgid "Pointer width, in bytes"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.canary:1
+msgid "Whether the current binary uses stack canaries."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.config:1
+msgid "Linux kernel configuration, if this is a Linux kernel image"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.data:1
+msgid "Raw data of the ELF file."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.data:3 pwnlib.elf.elf.ELF.executable_segments:3
+#: pwnlib.elf.elf.ELF.non_writable_segments:3 pwnlib.elf.elf.ELF.rwx_segments:3
+#: pwnlib.elf.elf.ELF.writable_segments:3
+msgid "See:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.data:4
+msgid ":meth:`get_data`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.debuginfo:1
+msgid "Whether the current binary has debug information"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.dwarf:1
+msgid "DWARF info for the elf"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.elftype:1
+msgid "ELF type (``EXEC``, ``DYN``, etc)"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.endian:1
+msgid "Endianness of the file (e.g. ``'big'``, ``'little'``)"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.entry:1 pwnlib.elf.elf.ELF.entrypoint:1
+#: pwnlib.elf.elf.ELF.start:1
+msgid "Address of the entry point for the ELF"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.execstack:1
+msgid ""
+"Whether dynamically loading the current binary will make the stack "
+"executable."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.execstack:3
+msgid ""
+"This is based on the presence of a program header ``PT_GNU_STACK``, its "
+"setting, and the default stack permissions for the architecture."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.execstack:6
+msgid ""
+"If ``PT_GNU_STACK`` is persent, the stack permissions are `set according "
+"to it`__:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.execstack:16
+msgid ""
+"Else, the stack permissions are set according to the architecture "
+"defaults as `defined by`__ ``DEFAULT_STACK_PERMS``:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.execstack:28
+msgid ""
+"By searching the source for ``DEFAULT_STACK_PERMS``, we can see which "
+"architectures have which settings."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.executable:1
+msgid "``True`` if the ELF is an executable"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.executable_segments:1
+msgid "List of all segments which are executable."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.executable_segments:4
+#: pwnlib.elf.elf.ELF.non_writable_segments:4 pwnlib.elf.elf.ELF.rwx_segments:4
+#: pwnlib.elf.elf.ELF.writable_segments:4
+msgid ":attr:`.ELF.segments`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.file:1
+msgid "Open handle to the ELF file on disk"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.file:3
+msgid ":class:`file`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.fortify:1
+msgid "Whether the current binary was built with Fortify Source (``-DFORTIFY``)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.functions:1
+msgid ""
+":class:`dotdict` of ``name`` to :class:`.Function` for each function in "
+"the ELF"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.got:1
+msgid ""
+":class:`dotdict` of ``name`` to ``address`` for all Global Offset Table "
+"(GOT) entries"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.ibt:1
+msgid ""
+"Whether the current binary was built with Indirect Branch Tracking "
+"(``IBT``)"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc:1
+msgid ""
+"If this :class:`.ELF` imports any libraries which contain ``/libc[.-]``, "
+"and we can determine the appropriate path to it on the local system, "
+"returns a new :class:`.ELF` object pertaining to that library. Prints the"
+" `checksec` output of the library if it was printed for the original ELF "
+"too."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc:6
+msgid "If not found, the value will be :const:`None`."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc:10 pwnlib.elf.elf.ELF.maps:5
+msgid ""
+"Getting this attribute actually runs the executable. Make sure that you "
+"trust the binary you are exploiting (see :attr:`.ELF.libs`)."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc:14
+msgid ":class:`.ELF`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc_start_main_return:1
+msgid "Address of the return address into __libc_start_main from main."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc_start_main_return:8
+msgid "Looking it up as a symbol doesn't work, but points you here:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libc_start_main_return:19
+msgid ""
+"Try to find the return address from main into __libc_start_main. The "
+"heuristic to find the call to the function pointer of main is to list all"
+" calls inside __libc_start_main, find the call to exit after the call to "
+"main and select the previous call."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.library:1
+msgid "``True`` if the ELF is a shared library"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libs:1
+#, python-brace-format
+msgid "Dictionary of ``{path: address}`` for every library loaded for this ELF."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libs:5
+msgid ""
+"Getting this attribute actually runs the executable. Make sure that you "
+"trust the binary you are exploiting. If it adds itself as ``DT_NEEDED``, "
+"has overlapping segments, ambiguous headers, or employs text relocations,"
+" it can run arbitrary code even though you are just inspecting it. "
+"Running is the only reliable way to ensure all the libraries are loaded "
+"from the correct paths, because some of them may change loading logic."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.libs:14
+msgid "Exploitability first noticed at CWTE CTF 2025."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.linker:1
+msgid "Path to the linker for the ELF"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.maps:1
+#, python-brace-format
+msgid ""
+"Dictionary of ``{name: address}`` for every mapping in this ELF's address"
+" space."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.memory:1
+msgid "IntervalTree which maps all of the loaded memory segments"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.mmap:1
+msgid "Memory-mapped copy of the ELF file on disk"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.mmap:3
+msgid ":class:`mmap.mmap`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.msan:1
+msgid "Whether the current binary was built with Memory Sanitizer (``MSAN``)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.native:1
+msgid "Whether this ELF should be able to run natively"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.non_writable_segments:1
+msgid "List of all segments which are NOT writeable."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:1
+msgid "Whether the current binary uses NX protections."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:3
+msgid ""
+"Specifically, we are checking for ``READ_IMPLIES_EXEC`` being set by the "
+"kernel, as a result of honoring ``PT_GNU_STACK`` in the kernel."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:6
+msgid ""
+"``READ_IMPLIES_EXEC`` is set, according to a set of architecture specific"
+" rules, that depend on the CPU features, and the presence of "
+"``PT_GNU_STACK``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:9
+msgid ""
+"Unfortunately, :class:`ELF` is not context-aware, so it's not always "
+"possible to determine whether the process of a binary that's missing "
+"``PT_GNU_STACK`` will have NX or not."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:13
+msgid "The rules are as follows:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:16
+msgid "ELF arch"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:16
+msgid "linux"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:16
+msgid "GNU_STACK"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:16
+msgid "other"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:16
+msgid "NX"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:18
+msgid "i386"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:18 pwnlib.elf.elf.ELF.nx:26
+msgid "< 5.8 [#x86_5.7]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:18 pwnlib.elf.elf.ELF.nx:26
+#: pwnlib.elf.elf.ELF.nx:55
+msgid "non-exec"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:18 pwnlib.elf.elf.ELF.nx:22
+#: pwnlib.elf.elf.ELF.nx:26 pwnlib.elf.elf.ELF.nx:30 pwnlib.elf.elf.ELF.nx:33
+#: pwnlib.elf.elf.ELF.nx:37 pwnlib.elf.elf.ELF.nx:41 pwnlib.elf.elf.ELF.nx:45
+#: pwnlib.elf.elf.ELF.nx:49 pwnlib.elf.elf.ELF.nx:53 pwnlib.elf.elf.ELF.nx:55
+#: pwnlib.elf.elf.ELF.nx:57 pwnlib.elf.elf.ELF.nx:61
+msgid "enabled"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:20 pwnlib.elf.elf.ELF.nx:28
+#: pwnlib.elf.elf.ELF.nx:35 pwnlib.elf.elf.ELF.nx:43 pwnlib.elf.elf.ELF.nx:57
+msgid "exec / missing"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:20 pwnlib.elf.elf.ELF.nx:24
+#: pwnlib.elf.elf.ELF.nx:28 pwnlib.elf.elf.ELF.nx:35 pwnlib.elf.elf.ELF.nx:39
+#: pwnlib.elf.elf.ELF.nx:43 pwnlib.elf.elf.ELF.nx:47 pwnlib.elf.elf.ELF.nx:51
+#: pwnlib.elf.elf.ELF.nx:59
+msgid "disabled"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:22 pwnlib.elf.elf.ELF.nx:30
+msgid ">= 5.8 [#x86_5.8]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:22
+msgid "exec / non-exec"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:24 pwnlib.elf.elf.ELF.nx:39
+#: pwnlib.elf.elf.ELF.nx:47 pwnlib.elf.elf.ELF.nx:51
+msgid "missing"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:26
+msgid "amd64"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:30 pwnlib.elf.elf.ELF.nx:53
+#: pwnlib.elf.elf.ELF.nx:61
+msgid "exec / non-exec / missing"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:33
+msgid "arm"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:33
+msgid "< 5.8 [#arm_5.7]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:33 pwnlib.elf.elf.ELF.nx:41
+msgid "non-exec*"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:37
+msgid ">= 5.8 [#arm_5.8]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:37 pwnlib.elf.elf.ELF.nx:45
+msgid "exec / non-exec*"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:41
+msgid "mips"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:41
+msgid "< 5.18 [#mips_5.17]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:45
+msgid ">= 5.18 [#mips_5.18]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:49
+msgid "powerpc"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:49 pwnlib.elf.elf.ELF.nx:53
+msgid "[#powerpc]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:49
+msgid "non-exec / exec"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:53
+msgid "powerpc64"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:55
+msgid "ia64"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:55
+msgid "[#ia64]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:57
+msgid "e_flags & EF_IA_64_LINUX_EXECUTABLE_STACK == 0"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:59
+msgid "e_flags & EF_IA_64_LINUX_EXECUTABLE_STACK != 0"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:61
+msgid "the rest"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:61
+msgid "[#the_rest]_"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:64
+msgid "\\* Hardware limitations are ignored."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:66
+msgid ""
+"If ``READ_IMPLIES_EXEC`` is set, then `all readable pages are "
+"executable`__."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:76
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v5.7/arch/x86/include/asm/elf.h#L285-L286>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:84
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v5.8/arch/x86/include/asm/elf.h#L305-L306>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:91
+msgid "`mmap_is_ia32()`__:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:103
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v5.7/arch/arm/kernel/elf.c#L85-L92>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:117
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v5.8/arch/arm/kernel/elf.c#L104-L111>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:131
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v5.17/arch/mips/kernel/elf.c#L329-L342>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:149
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v5.18/arch/mips/kernel/elf.c#L329-L336>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:163
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v6.3/arch/powerpc/include/asm/elf.h#L82-L108>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:176
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v6.3/arch/ia64/include/asm/elf.h#L203-L204>`__"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:183
+msgid "EF_IA_64_LINUX_EXECUTABLE_STACK__:"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.nx:192
+msgid ""
+"`source "
+"<https://github.com/torvalds/linux/blob/v6.3/include/linux/elf.h#L13>`__"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.os:1
+msgid "Operating system of the ELF"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.packed:1
+msgid "Whether the current binary is packed with UPX."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.path:1
+msgid "Path to the file"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.plt:1
+msgid ""
+":class:`dotdict` of ``name`` to ``address`` for all Procedure Linkage "
+"Table (PLT) entries"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:1
+msgid "Whether the current binary uses RELRO protections."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:3
+msgid ""
+"This requires both presence of the dynamic tag ``DT_BIND_NOW``, and a "
+"``GNU_RELRO`` program header."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:6
+msgid ""
+"The `ELF Specification`_ describes how the linker should resolve symbols "
+"immediately, as soon as a binary is loaded.  This can be emulated with "
+"the ``LD_BIND_NOW=1`` environment variable."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:10
+msgid "``DT_BIND_NOW``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:12
+msgid ""
+"If present in a shared object or executable, this entry instructs the "
+"dynamic linker to process all relocations for the object containing this "
+"entry before transferring control to the program. The presence of this "
+"entry takes precedence over a directive to use lazy binding for this "
+"object when specified through the environment or via ``dlopen(BA_LIB)``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:19
+msgid "(`page 81`_)"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:21
+msgid ""
+"Separately, an extension to the GNU linker allows a binary to specify a "
+"PT_GNU_RELRO_ program header, which describes the *region of memory which"
+" is to be made read-only after relocations are complete.*"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:25
+msgid ""
+"Finally, a new-ish extension which doesn't seem to have a canonical "
+"source of documentation is DF_BIND_NOW_, which has supposedly superceded "
+"``DT_BIND_NOW``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:29
+msgid "``DF_BIND_NOW``"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.relro:31
+msgid ""
+"If set in a shared object or executable, this flag instructs the dynamic "
+"linker to process all relocations for the object containing this entry "
+"before transferring control to the program. The presence of this entry "
+"takes precedence over a directive to use lazy binding for this object "
+"when specified through the environment or via ``dlopen(BA_LIB)``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.rpath:1
+msgid "Whether the current binary has an ``RPATH``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.runpath:1
+msgid "Whether the current binary has a ``RUNPATH``."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.rwx_segments:1
+msgid "List of all segments which are writeable and executable."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.sections:1
+msgid ""
+"A list of :class:`elftools.elf.sections.Section` objects for the segments"
+" in the ELF."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.segments:1
+msgid ""
+"A list of :class:`elftools.elf.segments.Segment` objects for the segments"
+" in the ELF."
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.shadowstack:1
+msgid "Whether the current binary was built with Shadow Stack (``SHSTK``)"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.statically_linked:1
+msgid "``True`` if the ELF is statically linked"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.stripped:1
+msgid "Whether the current binary has been stripped of symbols"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.sym:1
+msgid "Alias for :attr:`.ELF.symbols`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.sym:3
+msgid ":class:`dotdict`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.symbols:1
+msgid ":class:`dotdict` of ``name`` to ``address`` for all symbols in the ELF"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.ubsan:1
+msgid ""
+"Whether the current binary was built with Undefined Behavior Sanitizer "
+"(``UBSAN``)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.version:1
+msgid "Linux kernel version, if this is a Linux kernel image"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.version:3
+msgid ":class:`tuple`"
+msgstr ""
+
+#: of pwnlib.elf.elf.ELF.writable_segments:1
+msgid "List of all segments which are writeable."
+msgstr ""
+
+#: of pwnlib.elf.elf.Function:1
+msgid "Encapsulates information about a function in an :class:`.ELF` binary."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.Function:3
+#: pwnlib.elf.elf.Function.name:1
+msgid "Name of the function"
+msgstr ""
+
+#: of pwnlib.elf.elf.Function:5
+msgid "Address of the function"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.Function:7
+#: pwnlib.elf.elf.Function.size:1
+msgid "Size of the function, in bytes"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.Function:9
+#: pwnlib.elf.elf.Function.elf:1
+msgid "Encapsulating ELF object"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.elf.elf.Function.address:1
+msgid "Address of the function in the encapsulating ELF"
+msgstr ""
+
+#: of pwnlib.elf.elf.dotdict:1
+msgid "Wrapper to allow dotted access to dictionary elements."
+msgstr ""
+
+#: of pwnlib.elf.elf.dotdict:3
+msgid ""
+"Is a real :class:`dict` object, but also serves up keys as attributes "
+"when reading attributes."
+msgstr ""
+
+#: of pwnlib.elf.elf.dotdict:6
+msgid "Supports recursive instantiation for keys which contain dots."
+msgstr ""
+

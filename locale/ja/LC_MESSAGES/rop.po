@@ -1,0 +1,862 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/rop.rst:2
+msgid ":mod:`pwnlib.rop` --- Return Oriented Programming"
+msgstr ""
+
+#: ../pwntools/docs/source/rop.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../pwntools/docs/source/rop/ret2dlresolve.rst:7
+msgid ":mod:`pwnlib.rop.ret2dlresolve` --- Return to dl_resolve"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve:1
+msgid ""
+"Provides automatic payload generation for exploiting buffer overflows "
+"using ret2dlresolve."
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve:4
+msgid "We use the following example program:"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve:17
+msgid ""
+"We can automate the  process of exploitation with these some example "
+"binaries."
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve:39
+msgid "You can also use ``Ret2dlresolve`` on AMD64:"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:1
+msgid "Create a ret2dlresolve payload"
+msgstr ""
+
+#: ../pwntools/docs/source/rop/ret2dlresolve.rst
+#: ../pwntools/docs/source/rop/rop.rst ../pwntools/docs/source/rop/srop.rst of
+#: pwnlib.rop.rop.ROP.__call__ pwnlib.rop.rop.ROP.label pwnlib.rop.rop.ROP.raw
+#: pwnlib.rop.rop.ROP.ref pwnlib.rop.rop.ROP.ret2csu
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:3
+msgid "Binary to search"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:5
+msgid "Function to search for"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:7
+msgid "List of arguments to pass to the function"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:9
+msgid ""
+"The address where the payload will be written to. If not provided, a "
+"suitable address will be chosen automatically (recommended)."
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:13
+msgid ""
+"The address where the location of the resolved symbol will be written to."
+" If not provided will be equal to data_addr."
+msgstr ""
+
+#: ../pwntools/docs/source/rop/ret2dlresolve.rst
+#: ../pwntools/docs/source/rop/rop.rst of pwnlib.rop.rop.ROP.ref
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:18
+msgid ""
+"A ``Ret2dlresolvePayload`` object. It can be passed to "
+"``rop.ret2dlresolve`` for automatic exploitation.  If that is not "
+"suitable the object generates useful values (.reloc_index and .payload) "
+"which can be used to aid manual exploitation. In this case it is "
+"recommended to set .resolution_addr to the GOT address of an easily "
+"callable function (do not set it when passing the object to "
+"rop.ret2dlresolve)."
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:18
+msgid ""
+"A ``Ret2dlresolvePayload`` object. It can be passed to "
+"``rop.ret2dlresolve`` for automatic exploitation."
+msgstr ""
+
+#: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:21
+msgid ""
+"If that is not suitable the object generates useful values (.reloc_index "
+"and .payload) which can be used to aid manual exploitation. In this case "
+"it is recommended to set .resolution_addr to the GOT address of an easily"
+" callable function (do not set it when passing the object to "
+"rop.ret2dlresolve)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of
+#: pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload.__weakref__:1
+#: pwnlib.rop.rop.ROP.__weakref__:1
+#: pwnlib.rop.srop.SigreturnFrame.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: ../pwntools/docs/source/rop/rop.rst:28
+msgid ":mod:`pwnlib.rop.rop` --- Return Oriented Programming"
+msgstr ""
+
+#: of pwnlib.rop.rop:1
+msgid "Return Oriented Programming"
+msgstr ""
+
+#: of pwnlib.rop.rop:4
+msgid "Manual ROP"
+msgstr ""
+
+#: of pwnlib.rop.rop:6
+msgid ""
+"The ROP tool can be used to build stacks pretty trivially. Let's create a"
+" fake binary which has some symbols which might have been useful."
+msgstr ""
+
+#: of pwnlib.rop.rop:14
+msgid ""
+"Creating a ROP object which looks up symbols in the binary is pretty "
+"straightforward."
+msgstr ""
+
+#: of pwnlib.rop.rop:18
+msgid ""
+"Once the ROP object has been loaded, you can trivially find gadgets, by "
+"using magic properties on the ``ROP`` object. Each :class:`Gadget` has an"
+" ``address`` property which has the real address as well."
+msgstr ""
+
+#: of pwnlib.rop.rop:26
+msgid "Other, more complicated gadgets also happen magically"
+msgstr ""
+
+#: of pwnlib.rop.rop:31
+msgid ""
+"The easiest way to set up individual registers is to invoke the ``ROP`` "
+"object as a callable, with the registers as arguments. This has the "
+"benefit of using multi-pop gadgets to set multiple registers with one "
+"gadget."
+msgstr ""
+
+#: of pwnlib.rop.rop:36
+msgid ""
+"Setting register values this way accounts for padding and extra registers"
+" which are popped off the stack. Values which are filled with garbage "
+"(i.e. are not used) are filled with the :func:`cyclic` pattern which "
+"corresponds to their offset, which is useful when debugging your exploit."
+msgstr ""
+
+#: of pwnlib.rop.rop:48
+msgid ""
+"If you really want to set one register at a time, you can also use the "
+"assignment form. It's generally advised to use the rop(eax=..., ecx=...) "
+"form, since there may be an e.g. ``pop eax; pop ecx; ret`` gadget that "
+"can be taken advantage of."
+msgstr ""
+
+#: of pwnlib.rop.rop:64
+msgid ""
+"If you just want to FIND a ROP gadget, you can access them as a property "
+"on the ``ROP`` object by register name."
+msgstr ""
+
+#: of pwnlib.rop.rop:78
+msgid "Let's re-create our ROP object now to show for some other examples."
+msgstr ""
+
+#: of pwnlib.rop.rop:82
+msgid "With the ROP object, you can manually add stack frames."
+msgstr ""
+
+#: of pwnlib.rop.rop:88
+msgid "Inspecting the ROP stack is easy, and laid out in an easy-to-read manner."
+msgstr ""
+
+#: of pwnlib.rop.rop:96
+msgid ""
+"The ROP module is also aware of how to make function calls with standard "
+"Linux ABIs."
+msgstr ""
+
+#: of pwnlib.rop.rop:110
+msgid ""
+"You can also use a shorthand to invoke calls. The stack is automatically "
+"adjusted for the next frame."
+msgstr ""
+
+#: of pwnlib.rop.rop:131
+msgid ""
+"You can also append complex arguments onto stack when the stack pointer "
+"is known."
+msgstr ""
+
+#: of pwnlib.rop.rop:151
+msgid ""
+"ROP also detects 'jmp $sp' gadget to help exploit binaries with NX "
+"disabled. You can get this gadget on 'i386':"
+msgstr ""
+
+#: of pwnlib.rop.rop:161
+msgid "You can also get this gadget on 'amd64':"
+msgstr ""
+
+#: of pwnlib.rop.rop:170
+msgid "Gadgets whose address has badchar are filtered out:"
+msgstr ""
+
+#: of pwnlib.rop.rop:183
+msgid "ROP Example"
+msgstr ""
+
+#: of pwnlib.rop.rop:185
+msgid ""
+"Let's assume we have a trivial binary that just reads some data onto the "
+"stack, and returns."
+msgstr ""
+
+#: of pwnlib.rop.rop:193
+msgid "Let's provide some simple gadgets:"
+msgstr ""
+
+#: of pwnlib.rop.rop:197
+msgid "And perhaps a nice \"write\" function."
+msgstr ""
+
+#: of pwnlib.rop.rop:208
+msgid "And a way to exit cleanly."
+msgstr ""
+
+#: of pwnlib.rop.rop:213
+msgid "Finally, let's build our ROP stack"
+msgstr ""
+
+#: of pwnlib.rop.rop:225
+msgid ""
+"The raw data from the ROP stack is available via `r.chain()` (or "
+"`bytes(r)`)."
+msgstr ""
+
+#: of pwnlib.rop.rop:231 pwnlib.rop.rop:350
+msgid "Let's try it out!"
+msgstr ""
+
+#: of pwnlib.rop.rop:239
+msgid "ROP Example (amd64)"
+msgstr ""
+
+#: of pwnlib.rop.rop:241
+msgid ""
+"For amd64 binaries, the registers are loaded off the stack.  Pwntools can"
+" do basic reasoning about simple \"pop; pop; add; ret\"-style gadgets, "
+"and satisfy requirements so that everything \"just works\"."
+msgstr ""
+
+#: of pwnlib.rop.rop:280
+msgid ""
+"Pwntools will also filter out some bad instructions while setting the "
+"registers ( e.g. syscall, int 0x80... )"
+msgstr ""
+
+#: of pwnlib.rop.rop:296
+msgid "ROP + Sigreturn"
+msgstr ""
+
+#: of pwnlib.rop.rop:298
+msgid ""
+"In some cases, control of the desired register is not available. However,"
+" if you have control of the stack, EAX, and can find a `int 0x80` gadget,"
+" you can use sigreturn."
+msgstr ""
+
+#: of pwnlib.rop.rop:302
+msgid "Even better, this happens automagically."
+msgstr ""
+
+#: of pwnlib.rop.rop:304
+msgid ""
+"Our example binary will read some data onto the stack, and not do "
+"anything else interesting."
+msgstr ""
+
+#: of pwnlib.rop.rop:316
+msgid "Let's create a ROP object and invoke the call."
+msgstr ""
+
+#: of pwnlib.rop.rop:323
+msgid "That's all there is to it."
+msgstr ""
+
+#: of pwnlib.rop.rop:360
+msgid "ROP + stack relative addresses"
+msgstr ""
+
+#: of pwnlib.rop.rop:362
+msgid ""
+"Sometimes you want to use gadgets which require you to point back into "
+"your ROP chain. This is especially common for gadgets which adjust the "
+"stack pointer, but can also be useful for other gadgets. You have to know"
+" the absolute address of the ROP chain in memory for this and pass it as "
+"``base=`` into the :class:`ROP` constructor."
+msgstr ""
+
+#: of pwnlib.rop.rop:366
+msgid ""
+"You can use labels to reference other slots in the ROP chain, and the ROP"
+" module will resolve them to the correct addresses when the chain is "
+"finalized. Set a label at the current chain position using "
+":meth:`ROP.label`, and reference it using :meth:`ROP.ref` with an "
+"optional offset."
+msgstr ""
+
+#: of pwnlib.rop.rop:369
+msgid ""
+"Imagine you want to use a `pop rdx; leave; ret` gadget to control rdx and"
+" continue your rop chain afterwards. You can use a label in front of your"
+" next gadget and reference it in `rbp` to achieve this."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP:1
+msgid "Class which simplifies the generation of ROP-chains."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP:3
+msgid "Example:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP:109 pwnlib.rop.rop.ROP.__init__:1
+msgid ""
+"List of :class:`.ELF` objects or single :class:`.ELF` for mining gadgets."
+" bytes or str are passed to :class:`.ELF`'s constructor."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP:111
+#: pwnlib.rop.rop.ROP.__init__:3 pwnlib.rop.rop.ROP.base:1
+msgid "Stack address where the first byte of the ROP chain lies, if known."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP:113
+#: pwnlib.rop.rop.ROP.__init__:5 pwnlib.rop.rop.ROP._badchars:1
+msgid "Characters which should not appear in ROP gadget addresses."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.clear_cache:1
+msgid "Clears the ROP gadget cache"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__bytes__:1
+msgid "Returns: Raw bytes of the ROP chain"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__call__:1
+msgid "Set the given register(s)' by constructing a rop chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__call__:3
+msgid ""
+"This is a thin wrapper around :meth:`setRegisters` which actually "
+"executes the rop chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__call__:6
+msgid ""
+"You can call this :class:`ROP` instance and provide keyword arguments, or"
+" a dictionary."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__call__:9
+msgid "Mapping of registers to values. Can instead provide ``kwargs``."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__get_cachefile_name:1
+msgid ""
+"Given an ELF or list of ELF objects, return a cache file for the set of "
+"files"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__getattr__:1
+msgid "Helper to make finding ROP gadgets easier."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__getattr__:3
+msgid "Also provides a shorthand for ``.call()``:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__getattr__:4
+msgid "``rop.function(args)`` is equivalent to ``rop.call(function, args)``"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__load:1
+msgid "Load all ROP gadgets for the selected ELF files"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__setattr__:1
+msgid "Helper for setting registers."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__setattr__:3
+msgid ""
+"This convenience feature allows one to set the values of registers with "
+"simple python assignment syntax."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__setattr__:8
+msgid ""
+"Only one register is set at a time (one per rop chain). This may lead to "
+"some previously set to registers be overwritten!"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.__setattr__:13
+msgid ""
+"If you would like to set multiple registers in as few rop chains as "
+"possible, see :meth:`__call__`."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.build:1
+msgid ""
+"Construct the ROP chain into a list of elements which can be passed to "
+":func:`.flat`."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.build:4 pwnlib.rop.rop.ROP.chain:3
+#: pwnlib.rop.rop.ROP.dump:3
+msgid "The base address to build the rop-chain from. Defaults to :attr:`base`."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.build:7
+msgid ""
+"Optional output argument, which will gets a mapping of ``address: "
+"description`` for each address on the stack, starting at ``base``."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.call:1
+msgid "Add a call to the ROP chain"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.call:3
+msgid "Value which can be looked up via 'resolve', or is already an integer."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.call:6
+msgid ""
+"List of arguments which can be passed to pack(). Alternately, if a base "
+"address is set, arbitrarily nested structures of strings or integers can "
+"be provided."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.chain:1
+msgid "Build the ROP chain"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.chain:7
+msgid "str containing raw ROP bytes"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.describe:1
+msgid "Return a description for an object in the ROP stack"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.dump:1
+msgid "Dump the ROP chain in an easy-to-read manner"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.find_gadget:1
+msgid ""
+"Returns a gadget with the exact sequence of instructions specified in the"
+" ``instructions`` argument."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.generatePadding:1
+msgid "Generates padding to be inserted into the ROP stack."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:1
+msgid ""
+"Assign a label to the current position in the ROP chain. The label can be"
+" used with :meth:`ref` to refer to this position from elsewhere in the "
+"chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:5
+msgid "Labels can only be set on non-migrated chains with a known base address."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:7
+msgid "Name of the label to set. Has to be unique."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:10 pwnlib.rop.rop.ROP.ref:14
+msgid "Examples:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:26
+msgid "The base address of your rop chain in memory has to be known:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:34
+msgid "Labels have to be unique:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.label:43
+msgid "Trying to set a label on a migrated chain is not allowed:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.migrate:1
+msgid "Explicitly set $sp, by using a ``leave; ret`` gadget"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.raw:1
+msgid "Adds a raw integer or string to the ROP chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.raw:3
+msgid ""
+"If your architecture requires aligned values, then make sure that any "
+"given string is aligned!"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.raw:6
+msgid ""
+"When given a list or a tuple of values, the list is flattened before "
+"adding every item to the chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.raw:9
+msgid "The raw value to put onto the rop chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ref:1
+msgid "Insert a placeholder to the address of a label set by :meth:`label`."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ref:3
+msgid ""
+"You can reference labels that are not defined yet. This placeholder will "
+"be replaced with the address of the label when building the chain. You "
+"can also specify an optional offset to add to the label address."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ref:7
+msgid ""
+"Name of the label to refer to. Has to be defined by a previous call to "
+":meth:`label`."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ref:9
+msgid "Optional offset to add to the label address. Defaults to 0."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ref:12
+msgid ""
+"A :class:`LabelUser` instance which will be resolved to the address of "
+"the label when building the chain."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.resolve:1
+msgid "Resolves a symbol to an address"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.resolve:3
+msgid "Thing to convert into an address"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.resolve:6
+msgid "int containing address of 'resolvable', or None"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ret2csu:1
+msgid "Build a ret2csu ROPchain"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ret2csu:3 pwnlib.rop.rop.ROP.ret2csu:4
+#: pwnlib.rop.rop.ROP.ret2csu:5
+msgid "Three primary registers to populate"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ret2csu:6 pwnlib.rop.rop.ROP.ret2csu:7
+#: pwnlib.rop.rop.ROP.ret2csu:8 pwnlib.rop.rop.ROP.ret2csu:9
+#: pwnlib.rop.rop.ROP.ret2csu:10 pwnlib.rop.rop.ROP.ret2csu:11
+msgid "Optional registers to populate"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ret2csu:12
+msgid ""
+"Pointer to the address of a function to call during second gadget. If "
+"None then use the address of _fini in the .dynamic section. .got.plt "
+"entries are a good target. Required for PIE binaries."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.ret2csu:17
+msgid "Test:"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:1
+msgid "Search for a gadget which matches the specified criteria."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:3
+msgid "Minimum number of bytes by which the stack pointer is adjusted."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:6
+msgid "Minimum list of registers which are popped off the stack."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:9
+msgid ""
+"Either the string 'size', 'leav' or 'regs'. Decides how to order multiple"
+" gadgets the fulfill the requirements."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:13
+msgid ""
+"The search will try to minimize the number of bytes popped more than "
+"requested, the number of registers touched besides the requested and the "
+"address."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:17
+msgid ""
+"If ``order == 'size'``, then gadgets are compared lexicographically by "
+"``(total_moves, total_regs, addr)``, if ``order == 'regs'``, then by "
+"``(total_regs, total_moves, addr)``. ``order == 'leav'`` is specifically "
+"for ``leave`` insn."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search:22
+msgid "A :class:`.Gadget` object"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.search_iter:1
+msgid ""
+"Iterate through all gadgets which move the stack pointer by *at least* "
+"``move`` bytes, and which allow you to set all registers in ``regs``."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.setRegisters:1
+msgid ""
+"Returns an list of addresses/values which will set the specified register"
+" context."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.setRegisters:3
+#, python-brace-format
+msgid "Dictionary of ``{register name: value}``"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.setRegisters:6
+msgid ""
+"A list of tuples, ordering the stack.  Each tuple is in the form of "
+"``(value, name)`` where ``value`` is either a gadget address or literal "
+"value to go on the stack, and ``name`` is either a string name or other "
+"item which can be \"unresolved\"."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.setRegisters:6
+msgid "A list of tuples, ordering the stack."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.setRegisters:8
+msgid ""
+"Each tuple is in the form of ``(value, name)`` where ``value`` is either "
+"a gadget address or literal value to go on the stack, and ``name`` is "
+"either a string name or other item which can be \"unresolved\"."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.setRegisters:14
+msgid ""
+"This is basically an implementation of the Set Cover Problem, which is "
+"NP-hard.  This means that we will take polynomial time N**2, where N is "
+"the number of gadgets.  We can reduce runtime by discarding useless and "
+"inferior gadgets ahead of time."
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.unresolve:1
+msgid ""
+"Inverts 'resolve'.  Given an address, it attempts to find a symbol for it"
+" in the loaded ELF files.  If none is found, it searches all known "
+"gadgets, and returns the disassembly"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.unresolve:5
+msgid "Address to look up"
+msgstr ""
+
+#: of pwnlib.rop.rop.ROP.unresolve:8
+msgid ""
+"String containing the symbol name for the address, disassembly for a "
+"gadget (if there's one at that address), or an empty string."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP._chain:1
+msgid ""
+"List of individual ROP gadgets, ROP calls, SROP frames, etc. This is "
+"intended to be the highest-level abstraction that we can muster."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP._labels:1
+msgid "Dictionary of named labels in the ROP chain."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP.elfs:1
+msgid "List of ELF files which are available for mining gadgets"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP.migrated:1
+msgid ""
+"Whether or not the ROP chain directly sets the stack pointer to a value "
+"which is not contiguous"
+msgstr ""
+
+#: ../pwntools/docs/source/rop/srop.rst:14
+msgid ":mod:`pwnlib.rop.srop` --- Sigreturn Oriented Programming"
+msgstr ""
+
+#: of pwnlib.rop.srop:1
+msgid "Sigreturn ROP (SROP)"
+msgstr ""
+
+#: of pwnlib.rop.srop:3
+msgid ""
+"Sigreturn is a syscall used to restore the entire register context from "
+"memory pointed at by ESP."
+msgstr ""
+
+#: of pwnlib.rop.srop:6
+msgid ""
+"We can leverage this during ROP to gain control of registers for which "
+"there are not convenient gadgets.  The main caveat is that *all* "
+"registers are set, including ESP and EIP (or their equivalents).  This "
+"means that in order to continue after using a sigreturn frame, the stack "
+"pointer must be set accordingly."
+msgstr ""
+
+#: of pwnlib.rop.srop:12
+msgid "i386 Example:"
+msgstr ""
+
+#: of pwnlib.rop.srop:14
+msgid "Let's just print a message out using SROP."
+msgstr ""
+
+#: of pwnlib.rop.srop:18
+msgid ""
+"First, we'll create our example binary. It just reads some data onto the "
+"stack, and invokes the ``sigreturn`` syscall. We also make an ``int "
+"0x80`` gadget available, followed immediately by ``exit(0)``."
+msgstr ""
+
+#: of pwnlib.rop.srop:34
+msgid ""
+"Let's construct our frame to have it invoke a ``write`` syscall, and dump"
+" the message to stdout."
+msgstr ""
+
+#: of pwnlib.rop.srop:45
+msgid "Let's start the process, send the data, and check the message."
+msgstr ""
+
+#: of pwnlib.rop.srop:54
+msgid "amd64 Example:"
+msgstr ""
+
+#: of pwnlib.rop.srop:80
+msgid "arm Example:"
+msgstr ""
+
+#: of pwnlib.rop.srop:107
+msgid "Mips Example:"
+msgstr ""
+
+#: of pwnlib.rop.srop:133
+msgid "Mipsel Example:"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:1
+msgid "Crafts a sigreturn frame with values that are loaded up into registers."
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:4
+msgid "The architecture. Currently ``i386`` and ``amd64`` are supported."
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:9
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:10
+msgid "Crafting a SigreturnFrame that calls mprotect on amd64"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:25
+msgid "Crafting a SigreturnFrame that calls mprotect on i386"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:40
+msgid "Crafting a SigreturnFrame that calls mprotect on ARM"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:53
+msgid "Crafting a SigreturnFrame that calls mprotect on MIPS"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:68
+msgid "Crafting a SigreturnFrame that calls mprotect on MIPSel"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame:83
+msgid "Crafting a SigreturnFrame that calls mprotect on Aarch64"
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame.__len__:1
+msgid "Return len(self)."
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame.__setattr__:1
+msgid "Implement setattr(self, name, value)."
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame.__setitem__:1
+msgid "Set self[key] to value."
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame.__str__:1
+msgid "Return str(self)."
+msgstr ""
+
+#: of pwnlib.rop.srop.SigreturnFrame.set_regvalue:1
+msgid "Sets a specific ``reg`` to a ``val``"
+msgstr ""
+

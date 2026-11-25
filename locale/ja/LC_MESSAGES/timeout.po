@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/timeout.rst:8
+msgid ":mod:`pwnlib.timeout` --- Timeout handling"
+msgstr ""
+
+#: of pwnlib.timeout:1
+msgid "Timeout encapsulation, complete with countdowns and scope managers."
+msgstr ""
+
+#: of pwnlib.timeout.Maximum.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.timeout.Maximum.__weakref__:1
+#: pwnlib.timeout.Timeout.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.timeout.Timeout:1
+msgid ""
+"Implements a basic class which has a timeout, and support for scoped "
+"timeout countdowns."
+msgstr ""
+
+#: of pwnlib.timeout.Timeout:4
+msgid "Valid timeout values are:"
+msgstr ""
+
+#: of pwnlib.timeout.Timeout:6
+msgid "``Timeout.default`` use the global default value (``context.default``)"
+msgstr ""
+
+#: of pwnlib.timeout.Timeout:7
+msgid "``Timeout.forever`` or :const:`None` never time out"
+msgstr ""
+
+#: of pwnlib.timeout.Timeout:8
+msgid "Any positive float, indicates timeouts in seconds"
+msgstr ""
+
+#: of pwnlib.timeout.Timeout:11
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.timeout.Timeout.countdown:1 pwnlib.timeout.Timeout.local:1
+msgid ""
+"Scoped timeout setter.  Sets the timeout within the scope, and restores "
+"it when leaving the scope."
+msgstr ""
+
+#: of pwnlib.timeout.Timeout.countdown:4
+msgid ""
+"When accessing :attr:`timeout` within the scope, it will be calculated "
+"against the time when the scope was entered, in a countdown fashion."
+msgstr ""
+
+#: of pwnlib.timeout.Timeout.countdown:8
+msgid ""
+"If :const:`None` is specified for ``timeout``, then the current timeout "
+"is used is made.  This allows :const:`None` to be specified as a default "
+"argument with less complexity."
+msgstr ""
+
+#: of pwnlib.timeout.Timeout.timeout_change:1
+msgid "Callback for subclasses to hook a timeout change."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.default:1
+msgid "Value indicating that the timeout should not be changed"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.forever:1
+msgid "Value indicating that a timeout should not ever occur"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.maximum:1
+msgid ""
+"Maximum value for a timeout.  Used to get around platform issues with "
+"very large timeouts."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.maximum:4
+msgid ""
+"OSX does not permit setting socket timeouts to 2**22. Assume that if we "
+"receive a timeout of 2**21 or greater, that the value is effectively "
+"infinite."
+msgstr ""
+
+#: of pwnlib.timeout.Timeout.timeout:1
+msgid "Timeout for obj operations.  By default, uses ``context.timeout``."
+msgstr ""
+

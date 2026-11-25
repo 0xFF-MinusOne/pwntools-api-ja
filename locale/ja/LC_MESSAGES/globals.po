@@ -1,0 +1,413 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/globals.rst:6
+msgid "``from pwn import *``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:8
+msgid "The most common way that you'll see pwntools used is"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:12
+msgid ""
+"Which imports a bazillion things into the global namespace to make your "
+"life easier."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:14
+msgid ""
+"This is a quick list of most of the objects and routines imported, in "
+"rough order of importance and frequency of use."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:16
+msgid ":mod:`pwnlib.context`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:17
+msgid ":data:`pwnlib.context.context`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:18
+msgid "Responsible for most of the pwntools convenience settings"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:19
+msgid "Set `context.log_level = 'debug'` when troubleshooting your exploit"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:20
+msgid ""
+"Scope-aware, so you can disable logging for a subsection of code via "
+":meth:`.ContextType.local`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:21
+msgid "``remote``, ``listen``, ``ssh``, ``process``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:22
+msgid ":mod:`pwnlib.tubes`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:23
+msgid ""
+"Super convenient wrappers around all of the common functionality for CTF "
+"challenges"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:24
+msgid "Connect to anything, anywhere, and it works the way you want it to"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:25
+msgid "Helpers for common tasks like ``recvline``, ``recvuntil``, ``clean``, etc."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:26
+msgid "Interact directly with the application via ``.interactive()``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:27
+msgid "``p32`` and ``u32``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:28
+msgid ":mod:`pwnlib.util.packing`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:29
+msgid ""
+"Useful functions to make sure you never have to remember if ``'>'`` means"
+" signed or unsigned for ``struct.pack``, and no more ugly ``[0]`` index "
+"at the end."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:30
+msgid ""
+"Set ``signed`` and ``endian`` in sane manners (also these can be set once"
+" on ``context`` and not bothered with again)"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:31
+msgid ""
+"Most common sizes are pre-defined (``u8``, ``u64``, etc), and "
+":func:`pwnlib.util.packing.pack` lets you define your own."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:32
+msgid "``log``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:33
+msgid ":mod:`pwnlib.log`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:34
+msgid "Make your output pretty!"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:35
+msgid "``cyclic`` and ``cyclic_func``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:36
+msgid ":mod:`pwnlib.util.cyclic`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:37
+msgid ""
+"Utilities for generating strings such that you can find the offset of any"
+" given substring given only N (usually 4) bytes.  This is super useful "
+"for straight buffer overflows.  Instead of looking at 0x41414141, you "
+"could know that 0x61616171 means you control EIP at offset 64 in your "
+"buffer."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:38
+msgid "``asm`` and ``disasm``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:39
+msgid ":mod:`pwnlib.asm`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:40
+msgid ""
+"Quickly turn assembly into some bytes, or vice-versa, without mucking "
+"about"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:41
+msgid "Supports any architecture for which you have a binutils installed"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:42
+msgid ""
+"Over 20 different architectures have pre-built binaries at "
+"`ppa:pwntools/binutils "
+"<https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`_."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:43
+msgid "``shellcraft``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:44
+msgid ":mod:`pwnlib.shellcraft`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:45
+msgid "Library of shellcode ready to go"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:46
+msgid "``asm(shellcraft.sh())`` gives you a shell"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:47
+msgid "Templating library for reusability of shellcode fragments"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:48
+msgid "``ELF``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:49
+msgid ":mod:`pwnlib.elf`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:50
+msgid ""
+"ELF binary manipulation tools, including symbol lookup, virtual memory to"
+" file offset helpers, and the ability to modify and save binaries back to"
+" disk"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:51
+msgid "``DynELF``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:52
+msgid ":mod:`pwnlib.dynelf`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:53
+msgid ""
+"Dynamically resolve functions given only a pointer to any loaded module, "
+"and a function which can leak data at any address"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:54
+msgid "``ROP``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:55
+msgid ":mod:`pwnlib.rop`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:56
+msgid ""
+"Automatically generate ROP chains using a DSL to describe what you want "
+"to do, rather than raw addresses"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:57
+msgid "``gdb.debug`` and ``gdb.attach``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:58
+msgid ":mod:`pwnlib.gdb`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:59
+msgid ""
+"Launch a binary under GDB and pop up a new terminal to interact with it."
+"  Automates setting breakpoints and makes iteration on exploits MUCH "
+"faster."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:60
+msgid ""
+"Alternately, attach to a running process given a PID, :mod:`pwnlib.tubes`"
+" object, or even just a socket that's connected to it"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:61
+msgid "``args``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:62
+msgid "Dictionary containing all-caps command-line arguments for quick access"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:63
+msgid "Run via ``python foo.py REMOTE=1`` and ``args['REMOTE'] == '1'``."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:64
+msgid "Can also control logging verbosity and terminal fanciness"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:65
+msgid "`NOTERM`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:66
+msgid "`SILENT`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:67
+msgid "`DEBUG`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:68
+msgid "``randoms``, ``rol``, ``ror``, ``xor``, ``bits``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:69
+msgid ":mod:`pwnlib.util.fiddling`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:70
+msgid ""
+"Useful utilities for generating random data from a given alphabet, or "
+"simplifying math operations that usually require masking off with "
+"`0xffffffff` or calling `ord` and `chr` an ugly number of times"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:71
+msgid "``net``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:72
+msgid ":mod:`pwnlib.util.net`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:73
+msgid "Routines for querying about network interfaces"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:74
+msgid "``proc``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:75
+msgid ":mod:`pwnlib.util.proc`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:76
+msgid "Routines for querying about processes"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:77
+msgid "``pause``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:78
+msgid "It's the new ``getch``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:79
+msgid "``safeeval``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:80
+msgid ":mod:`pwnlib.util.safeeval`"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:81
+msgid "Functions for safely evaluating python code without nasty side-effects."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:83
+msgid ""
+"These are all pretty self explanatory, but are useful to have in the "
+"global namespace."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:85
+msgid "``hexdump``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:86
+msgid "``read`` and ``write``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:87
+msgid "``enhex`` and ``unhex``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:88
+msgid "``more``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:89
+msgid "``group``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:90
+msgid "``align`` and ``align_down``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:91
+msgid "``urlencode`` and ``urldecode``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:92
+msgid "``which``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:93
+msgid "``wget``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:95
+msgid ""
+"Additionally, all of the following modules are auto-imported for you.  "
+"You were going to do it anyway."
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:97
+msgid "``os``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:98
+msgid "``sys``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:99
+msgid "``time``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:100
+msgid "``requests``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:101
+msgid "``re``"
+msgstr ""
+
+#: ../pwntools/docs/source/globals.rst:102
+msgid "``random``"
+msgstr ""
+

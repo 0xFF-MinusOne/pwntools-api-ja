@@ -1,0 +1,928 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/gdb.rst:12
+msgid ":mod:`pwnlib.gdb` --- Working with GDB"
+msgstr ""
+
+#: of pwnlib.gdb:1
+msgid ""
+"During exploit development, it is frequently useful to debug the target "
+"binary under GDB."
+msgstr ""
+
+#: of pwnlib.gdb:4
+msgid ""
+"Pwntools makes this easy-to-do with a handful of helper routines, "
+"designed to make your exploit-debug-update cycles much faster."
+msgstr ""
+
+#: of pwnlib.gdb:8
+msgid "Useful Functions"
+msgstr ""
+
+#: of pwnlib.gdb:10
+msgid ":func:`attach` - Attach to an existing process"
+msgstr ""
+
+#: of pwnlib.gdb:11
+msgid ""
+":func:`debug` - Start a new process under a debugger, stopped at the "
+"first instruction"
+msgstr ""
+
+#: of pwnlib.gdb:12
+msgid ""
+":func:`debug_shellcode` - Build a binary with the provided shellcode, and"
+" start it under a debugger"
+msgstr ""
+
+#: of pwnlib.gdb:15
+msgid "Debugging Tips"
+msgstr ""
+
+#: of pwnlib.gdb:17
+msgid ""
+"The :func:`attach` and :func:`debug` functions will likely be your bread "
+"and butter for debugging."
+msgstr ""
+
+#: of pwnlib.gdb:20
+msgid ""
+"Both allow you to provide a script to pass to GDB when it is started, so "
+"that it can automatically set your breakpoints."
+msgstr ""
+
+#: of pwnlib.gdb:24
+msgid "Attaching to Processes"
+msgstr ""
+
+#: of pwnlib.gdb:26
+msgid ""
+"To attach to an existing process, just use :func:`attach`.  It is "
+"surprisingly versatile, and can attach to a :class:`.process` for simple "
+"binaries, or will automatically find the correct process to attach to for"
+" a forking server, if given a :class:`.remote` object."
+msgstr ""
+
+#: of pwnlib.gdb:32
+msgid "Spawning New Processes"
+msgstr ""
+
+#: of pwnlib.gdb:34
+msgid ""
+"Attaching to processes with :func:`attach` is useful, but the state the "
+"process is in may vary.  If you need to attach to a process very early, "
+"and debug it from the very first instruction (or even the start of "
+"``main``), you instead should use :func:`debug`."
+msgstr ""
+
+#: of pwnlib.gdb:39
+msgid ""
+"When you use :func:`debug`, the return value is a :class:`.tube` object "
+"that you interact with exactly like normal."
+msgstr ""
+
+#: of pwnlib.gdb:43
+msgid "Using GDB Python API"
+msgstr ""
+
+#: of pwnlib.gdb:45
+msgid ""
+"GDB provides Python API, which is documented at "
+"https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html. Pwntools "
+"allows you to call it right from the exploit, without having to write a "
+"gdbscript. This is useful for inspecting program state, e.g. asserting "
+"that leaked values are correct, or that certain packets trigger a "
+"particular code path or put the heap in a desired state."
+msgstr ""
+
+#: of pwnlib.gdb:52
+msgid ""
+"Pass ``api=True`` to :func:`attach` or :func:`debug` in order to enable "
+"GDB Python API access. Pwntools will then connect to GDB using RPyC "
+"library: https://rpyc.readthedocs.io/en/latest/."
+msgstr ""
+
+#: of pwnlib.gdb:56
+msgid ""
+"At the moment this is an experimental feature with the following "
+"limitations:"
+msgstr ""
+
+#: of pwnlib.gdb:58
+msgid "Only Python 3 is supported."
+msgstr ""
+
+#: of pwnlib.gdb:60
+msgid ""
+"Well, technically that's not quite true. The real limitation is that your"
+" GDB's Python interpreter major version should be the same as that of "
+"Pwntools. However, most GDBs use Python 3 nowadays."
+msgstr ""
+
+#: of pwnlib.gdb:64
+msgid ""
+"Different minor versions are allowed as long as no incompatible values "
+"are sent in either direction. See "
+"https://rpyc.readthedocs.io/en/latest/install.html#cross-interpreter-"
+"compatibility for more information."
+msgstr ""
+
+#: of pwnlib.gdb:69
+msgid "Use"
+msgstr ""
+
+#: of pwnlib.gdb:75
+msgid "in order to check your GDB's Python version."
+msgstr ""
+
+#: of pwnlib.gdb:76
+msgid ""
+"If your GDB uses a different Python interpreter than Pwntools (for "
+"example, because you run Pwntools out of a virtualenv), you should "
+"install ``rpyc`` package into its ``sys.path``. Use"
+msgstr ""
+
+#: of pwnlib.gdb:84
+msgid "in order to check whether this is necessary."
+msgstr ""
+
+#: of pwnlib.gdb:85
+msgid "Only local processes are supported."
+msgstr ""
+
+#: of pwnlib.gdb:86
+msgid ""
+"It is not possible to tell whether ``gdb.execute('continue')`` will be "
+"executed synchronously or asynchronously (in gdbscripts it is always "
+"synchronous). Therefore it is recommended to use either the explicitly "
+"synchronous :func:`pwnlib.gdb.Gdb.continue_and_wait` or the explicitly "
+"asynchronous :func:`pwnlib.gdb.Gdb.continue_nowait` instead."
+msgstr ""
+
+#: of pwnlib.gdb:93
+msgid "Tips and Troubleshooting"
+msgstr ""
+
+#: of pwnlib.gdb:96
+msgid "``NOPTRACE`` magic argument"
+msgstr ""
+
+#: of pwnlib.gdb:98
+msgid "It's quite cumbersom to comment and un-comment lines containing `attach`."
+msgstr ""
+
+#: of pwnlib.gdb:100
+msgid ""
+"You can cause these lines to be a no-op by running your script with the "
+"``NOPTRACE`` argument appended, or with ``PWNLIB_NOPTRACE=1`` in the "
+"environment."
+msgstr ""
+
+#: of pwnlib.gdb:111
+msgid "Kernel Yama ptrace_scope"
+msgstr ""
+
+#: of pwnlib.gdb:113
+msgid ""
+"The Linux kernel v3.4 introduced a security mechanism called "
+"``ptrace_scope``, which is intended to prevent processes from debugging "
+"eachother unless there is a direct parent-child relationship."
+msgstr ""
+
+#: of pwnlib.gdb:117
+msgid ""
+"This causes some issues with the normal Pwntools workflow, since the "
+"process hierarchy looks like this:"
+msgstr ""
+
+#: of pwnlib.gdb:125
+msgid "Note that ``python`` is the parent of ``target``, not ``gdb``."
+msgstr ""
+
+#: of pwnlib.gdb:127
+msgid ""
+"In order to avoid this being a problem, Pwntools uses the function "
+"``prctl(PR_SET_PTRACER, PR_SET_PTRACER_ANY)``.  This disables Yama for "
+"any processes launched by Pwntools via :class:`.process` or via "
+":meth:`.ssh.process`."
+msgstr ""
+
+#: of pwnlib.gdb:132
+msgid ""
+"Older versions of Pwntools did not perform the ``prctl`` step, and "
+"required that the Yama security feature was disabled systemwide, which "
+"requires ``root`` access."
+msgstr ""
+
+#: of pwnlib.gdb:137
+msgid "Member Documentation"
+msgstr ""
+
+#: of pwnlib.gdb.Breakpoint:1
+msgid "Mirror of ``gdb.Breakpoint`` class."
+msgstr ""
+
+#: of pwnlib.gdb.Breakpoint:3
+msgid ""
+"See https://sourceware.org/gdb/onlinedocs/gdb/Breakpoints-In-Python.html "
+"for more information."
+msgstr ""
+
+#: of pwnlib.gdb.Breakpoint:6 pwnlib.gdb.Breakpoint.__init__:1
+#: pwnlib.gdb.FinishBreakpoint:6 pwnlib.gdb.FinishBreakpoint.__init__:1
+#: pwnlib.gdb.Gdb:6 pwnlib.gdb.Gdb.__init__:1
+msgid "Do not create instances of this class directly."
+msgstr ""
+
+#: of pwnlib.gdb.Breakpoint:8 pwnlib.gdb.Breakpoint.__init__:3
+msgid "Use ``pwnlib.gdb.Gdb.Breakpoint`` instead."
+msgstr ""
+
+#: of pwnlib.gdb.Breakpoint.__getattr__:1
+#: pwnlib.gdb.FinishBreakpoint.__getattr__:1
+msgid "Return attributes of the real breakpoint."
+msgstr ""
+
+#: of pwnlib.gdb.Breakpoint.__setattr__:1
+msgid "Set attributes of the real breakpoint."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.gdb.Breakpoint.__weakref__:1
+#: pwnlib.gdb.Gdb.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.gdb.FinishBreakpoint:1
+msgid "Mirror of ``gdb.FinishBreakpoint`` class."
+msgstr ""
+
+#: of pwnlib.gdb.FinishBreakpoint:3
+msgid ""
+"See https://sourceware.org/gdb/onlinedocs/gdb/Finish-Breakpoints-in-"
+"Python.html for more information."
+msgstr ""
+
+#: of pwnlib.gdb.FinishBreakpoint:8 pwnlib.gdb.FinishBreakpoint.__init__:3
+msgid "Use ``pwnlib.gdb.Gdb.FinishBreakpoint`` instead."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb:1
+msgid "Mirror of ``gdb`` module."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb:3
+msgid ""
+"See https://sourceware.org/gdb/onlinedocs/gdb/Basic-Python.html for more "
+"information."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb:8 pwnlib.gdb.Gdb.__init__:3
+msgid "Use :func:`attach` or :func:`debug` with ``api=True`` instead."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb.__getattr__:1
+msgid "Provide access to the attributes of `gdb` module."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb.continue_and_wait:1
+msgid "Continue the program and wait until it stops again."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb.continue_nowait:1
+msgid "Continue the program. Do not wait until it stops again."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb.interrupt_and_wait:1
+msgid "Interrupt the program and wait until it stops."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb.quit:1
+msgid "Terminate GDB."
+msgstr ""
+
+#: of pwnlib.gdb.Gdb.wait:1
+msgid "Wait until the program stops."
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:1
+msgid ""
+"Returns the filename of a python script that calls execve the specified "
+"program with the specified arguments. This script is suitable to call "
+"with gdbservers ``--wrapper`` option, so we have more control over the "
+"environment of the debugged process."
+msgstr ""
+
+#: ../pwntools/docs/source/gdb.rst of pwnlib.gdb.attach pwnlib.gdb.corefile
+#: pwnlib.gdb.debug pwnlib.gdb.debug_assembly pwnlib.gdb.debug_shellcode
+#: pwnlib.gdb.find_module_addresses
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:6
+msgid "List of arguments to pass to the program"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:8
+msgid "Path to the program to run"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:10 pwnlib.gdb._gdbserver_args:16
+msgid "Environment variables to pass to the program"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:12
+msgid "SSH connection to use if we are debugging a remote process"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:14 pwnlib.gdb._gdbserver_args:14
+msgid "Function to find the path of a binary."
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:16
+msgid "Callable to invoke before exec()"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:18
+msgid "Args to pass to callable"
+msgstr ""
+
+#: ../pwntools/docs/source/gdb.rst of pwnlib.gdb.attach pwnlib.gdb.binary
+#: pwnlib.gdb.corefile pwnlib.gdb.debug pwnlib.gdb.debug_assembly
+#: pwnlib.gdb.debug_shellcode pwnlib.gdb.find_module_addresses
+#: pwnlib.gdb.version
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.gdb._execve_script:21
+msgid "The filename of the created script."
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:1
+msgid ""
+"Sets up a listening gdbserver, to either connect to the specified PID, or"
+" launch the specified binary by its full path."
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:4
+msgid "Process ID to attach to"
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:6
+msgid "Process to launch"
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:8
+msgid "Port to use for gdbserver, default: random"
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:10 pwnlib.gdb.debug:18
+msgid "List of additional arguments to pass to gdbserver"
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:12
+msgid "List of arguments to provide on the debugger command line"
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:18
+msgid "Path to a python script to use with ``--wrapper``"
+msgstr ""
+
+#: of pwnlib.gdb._gdbserver_args:21
+msgid "A list of arguments to invoke gdbserver."
+msgstr ""
+
+#: of pwnlib.gdb.attach:1
+msgid "Start GDB in a new terminal and attach to `target`."
+msgstr ""
+
+#: of pwnlib.gdb.attach:3
+msgid "The target to attach to."
+msgstr ""
+
+#: of pwnlib.gdb.attach:4
+msgid "GDB script to run after attaching."
+msgstr ""
+
+#: of pwnlib.gdb.attach:6
+msgid "The path of the target binary."
+msgstr ""
+
+#: of pwnlib.gdb.attach:8
+msgid ""
+"Architechture of the target binary.  If `exe` known GDB will detect the "
+"architechture automatically (if it is supported)."
+msgstr ""
+
+#: of pwnlib.gdb.attach:11 pwnlib.gdb.debug:8
+msgid "List of additional arguments to pass to GDB."
+msgstr ""
+
+#: of pwnlib.gdb.attach:13 pwnlib.gdb.debug:20
+msgid ""
+"Set an alternate system root. The system root is used to load absolute "
+"shared library symbol files. This is useful to instruct gdb to load a "
+"local version of binaries/libraries instead of downloading them from the "
+"gdbserver, which is faster"
+msgstr ""
+
+#: of pwnlib.gdb.attach:18 pwnlib.gdb.debug:25
+msgid "Enable access to GDB Python API."
+msgstr ""
+
+#: of pwnlib.gdb.attach:21
+msgid ""
+"PID of the GDB process (or the window which it is running in). When "
+"``api=True``, a (PID, :class:`Gdb`) tuple."
+msgstr ""
+
+#: of pwnlib.gdb.attach:25 pwnlib.gdb.debug:41
+msgid "Notes"
+msgstr ""
+
+#: of pwnlib.gdb.attach:26
+msgid "The ``target`` argument is very robust, and can be any of the following:"
+msgstr ""
+
+#: of pwnlib.gdb.attach:28
+msgid ":obj:`int`"
+msgstr ""
+
+#: of pwnlib.gdb.attach:29
+msgid "PID of a process"
+msgstr ""
+
+#: of pwnlib.gdb.attach:30
+msgid ":obj:`str`"
+msgstr ""
+
+#: of pwnlib.gdb.attach:31
+msgid "Process name.  The youngest process is selected."
+msgstr ""
+
+#: of pwnlib.gdb.attach:32
+msgid ":obj:`tuple`"
+msgstr ""
+
+#: of pwnlib.gdb.attach:33
+msgid ""
+"Host, port pair of a listening ``gdbserver`` Tries to look up the target "
+"exe from the ``gdbserver`` commandline, requires explicit ``exe`` "
+"argument if the target exe is not in the commandline."
+msgstr ""
+
+#: of pwnlib.gdb.attach:36 pwnlib.gdb.debug_assembly:17
+#: pwnlib.gdb.debug_shellcode:13
+msgid ":class:`.process`"
+msgstr ""
+
+#: of pwnlib.gdb.attach:37
+msgid "Process to connect to"
+msgstr ""
+
+#: of pwnlib.gdb.attach:38
+msgid ":class:`.sock`"
+msgstr ""
+
+#: of pwnlib.gdb.attach:39
+msgid ""
+"Connected socket. The executable on the other end of the connection is "
+"attached to. Can be any socket type, including :class:`.listen` or "
+":class:`.remote`."
+msgstr ""
+
+#: of pwnlib.gdb.attach:41
+msgid ":class:`.ssh_process`"
+msgstr ""
+
+#: of pwnlib.gdb.attach:42
+msgid ""
+"Remote process spawned via :meth:`.ssh.process`. **This will use the GDB "
+"installed on the remote machine.** If a password is required to connect, "
+"the ``sshpass`` program must be installed."
+msgstr ""
+
+#: of pwnlib.gdb.attach:47 pwnlib.gdb.debug:71
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.gdb.attach:48
+msgid "Attach to a process by PID"
+msgstr ""
+
+#: of pwnlib.gdb.attach:52
+msgid "Attach to the youngest process by name"
+msgstr ""
+
+#: of pwnlib.gdb.attach:56
+msgid "Attach a debugger to a :class:`.process` tube and automate interaction"
+msgstr ""
+
+#: of pwnlib.gdb.attach:70 pwnlib.gdb.debug:187
+msgid "Using GDB Python API:"
+msgstr ""
+
+#: of pwnlib.gdb.attach:74
+msgid "Attach a debugger"
+msgstr ""
+
+#: of pwnlib.gdb.attach:78
+msgid "Force the program to write something it normally wouldn't"
+msgstr ""
+
+#: of pwnlib.gdb.attach:82 pwnlib.gdb.debug:216
+msgid "Resume the program"
+msgstr ""
+
+#: of pwnlib.gdb.attach:86
+msgid "Observe the forced line"
+msgstr ""
+
+#: of pwnlib.gdb.attach:91
+msgid "Interact with the program in a regular way"
+msgstr ""
+
+#: of pwnlib.gdb.attach:95
+msgid "Observe the results"
+msgstr ""
+
+#: of pwnlib.gdb.attach:100
+msgid ""
+"Attach to the remote process from a :class:`.remote` or :class:`.listen` "
+"tube, as long as it is running on the same machine."
+msgstr ""
+
+#: of pwnlib.gdb.attach:119
+msgid ""
+"Attach to a gdbserver / gdbstub running on the local machine by "
+"specifying the host and port tuple it is listening on. (gdbserver always "
+"listens on 0.0.0.0)"
+msgstr ""
+
+#: of pwnlib.gdb.attach:142
+msgid ""
+"Attach to processes running on a remote machine via an SSH :class:`.ssh` "
+"process"
+msgstr ""
+
+#: of pwnlib.gdb.attach:159
+msgid ""
+"To attach to remote gdbserver, assume you have a socat server delivering "
+"gdbserver with ``socat TCP-LISTEN:1336,reuseaddr,fork 'EXEC:\"gdbserver "
+":1337 /bin/bash\"'``, then you can connect to gdbserver and attach to it "
+"by: (When connection with gdbserver established, ``/bin/bash`` will pause"
+" at ``_start``, waiting for our gdb to attach.)"
+msgstr ""
+
+#: of pwnlib.gdb.attach:165
+msgid ""
+"A typical case is a sample can't run locally as some dependencies is "
+"missing, so this sample is provided by remote server or docker."
+msgstr ""
+
+#: of pwnlib.gdb.binary:1
+msgid "*str* -- Path to the appropriate ``gdb`` binary to use."
+msgstr ""
+
+#: of pwnlib.gdb.binary:4 pwnlib.gdb.corefile:10 pwnlib.gdb.version:12
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.gdb.corefile:1
+msgid "Drops a core file for a running local process."
+msgstr ""
+
+#: of pwnlib.gdb.corefile:3
+msgid ""
+"You should use :meth:`.process.corefile` instead of using this method "
+"directly."
+msgstr ""
+
+#: of pwnlib.gdb.corefile:5
+msgid "Process to dump"
+msgstr ""
+
+#: of pwnlib.gdb.corefile:7
+msgid ":class:`.Core` -- The generated core file"
+msgstr ""
+
+#: of pwnlib.gdb.debug:1
+msgid ""
+"Launch a GDB server with the specified command line, and launches GDB to "
+"attach to it."
+msgstr ""
+
+#: of pwnlib.gdb.debug:4
+msgid "Arguments to the process, similar to :class:`.process`."
+msgstr ""
+
+#: of pwnlib.gdb.debug:6
+msgid "GDB script to run."
+msgstr ""
+
+#: of pwnlib.gdb.debug:10
+msgid "Path to the executable on disk"
+msgstr ""
+
+#: of pwnlib.gdb.debug:12
+msgid "Environment to start the binary in"
+msgstr ""
+
+#: of pwnlib.gdb.debug:14
+msgid "Remote ssh session to use to launch the process."
+msgstr ""
+
+#: of pwnlib.gdb.debug:16
+msgid "Gdb port to use, default: random"
+msgstr ""
+
+#: of pwnlib.gdb.debug:27
+msgid ""
+"Function which is executed on the remote side before execve(). This "
+"**MUST** be a self-contained function -- it must perform all of its own "
+"imports, and cannot refer to variables outside its scope."
+msgstr ""
+
+#: of pwnlib.gdb.debug:32
+msgid ""
+"Argument passed to ``preexec_fn``. This **MUST** only consist of native "
+"Python objects."
+msgstr ""
+
+#: of pwnlib.gdb.debug:36
+msgid ""
+":class:`.process` or :class:`.ssh_channel` -- A tube connected to the "
+"target process. When ``api=True``, ``gdb`` member of the returned object "
+"contains a :class:`Gdb` instance."
+msgstr ""
+
+#: of pwnlib.gdb.debug:42
+msgid ""
+"The debugger is attached automatically, and you can debug everything from"
+" the very beginning.  This requires that both ``gdb`` and ``gdbserver`` "
+"are installed on your machine."
+msgstr ""
+
+#: of pwnlib.gdb.debug:46
+msgid ""
+"When GDB opens via :func:`debug`, it will initially be stopped on the "
+"very first instruction of the dynamic linker (``ld.so``) for dynamically-"
+"linked binaries."
+msgstr ""
+
+#: of pwnlib.gdb.debug:49
+msgid ""
+"Only the target binary and the linker will be loaded in memory, so you "
+"cannot set breakpoints on shared library routines like ``malloc`` since "
+"``libc.so`` has not even been loaded yet."
+msgstr ""
+
+#: of pwnlib.gdb.debug:53
+msgid "There are several ways to handle this:"
+msgstr ""
+
+#: of pwnlib.gdb.debug:55
+msgid "Set a breakpoint on the executable's entry point (generally, ``_start``)"
+msgstr ""
+
+#: of pwnlib.gdb.debug:56
+msgid ""
+"This is only invoked after all of the required shared libraries are "
+"loaded."
+msgstr ""
+
+#: of pwnlib.gdb.debug:58
+msgid "You can generally get the address via the GDB command ``info file``."
+msgstr ""
+
+#: of pwnlib.gdb.debug:59
+msgid "Use pending breakpoints via ``set breakpoint pending on``"
+msgstr ""
+
+#: of pwnlib.gdb.debug:60
+msgid ""
+"This has the side-effect of setting breakpoints for **every** function "
+"which matches the name.  For ``malloc``, this will generally set a "
+"breakpoint in the executable's PLT, in the linker's internal ``malloc``, "
+"and eventaully in ``libc``'s malloc."
+msgstr ""
+
+#: of pwnlib.gdb.debug:64
+msgid "Wait for libraries to be loaded with ``set stop-on-solib-event 1``"
+msgstr ""
+
+#: of pwnlib.gdb.debug:65
+msgid ""
+"There is no way to stop on any specific library being loaded, and "
+"sometimes multiple libraries are loaded and only a single breakpoint is "
+"issued."
+msgstr ""
+
+#: of pwnlib.gdb.debug:67
+msgid ""
+"Generally, you just add a few ``continue`` commands until things are set "
+"up the way you want it to be."
+msgstr ""
+
+#: of pwnlib.gdb.debug:72
+msgid "Create a new process, and stop it at 'main'"
+msgstr ""
+
+#: of pwnlib.gdb.debug:79 pwnlib.gdb.debug:103 pwnlib.gdb.debug:161
+msgid "Send a command to Bash"
+msgstr ""
+
+#: of pwnlib.gdb.debug:85 pwnlib.gdb.debug:109 pwnlib.gdb.debug:165
+msgid "Interact with the process"
+msgstr ""
+
+#: of pwnlib.gdb.debug:90
+msgid "Create a new process, and stop it at '_start'"
+msgstr ""
+
+#: of pwnlib.gdb.debug:114
+msgid "Start a new process with modified argv[0]"
+msgstr ""
+
+#: of pwnlib.gdb.debug:122
+msgid "Demonstrate that LD_PRELOAD is respected"
+msgstr ""
+
+#: of pwnlib.gdb.debug:135
+msgid "Use preexec_fn"
+msgstr ""
+
+#: of pwnlib.gdb.debug:146
+msgid "Using SSH:"
+msgstr ""
+
+#: of pwnlib.gdb.debug:148
+msgid ""
+"You can use :func:`debug` to spawn new processes on remote machines as "
+"well, by using the ``ssh=`` keyword to pass in your :class:`.ssh` "
+"instance."
+msgstr ""
+
+#: of pwnlib.gdb.debug:151
+msgid "Connect to the SSH server and start a process on the server"
+msgstr ""
+
+#: of pwnlib.gdb.debug:170
+msgid "Using a modified args[0] on a remote process"
+msgstr ""
+
+#: of pwnlib.gdb.debug:178
+msgid "Using an empty args[0] on a remote process"
+msgstr ""
+
+#: of pwnlib.gdb.debug:189
+msgid "Debug a new process"
+msgstr ""
+
+#: of pwnlib.gdb.debug:193
+msgid "or using ssh"
+msgstr ""
+
+#: of pwnlib.gdb.debug:198
+msgid "Stop at 'write'"
+msgstr ""
+
+#: of pwnlib.gdb.debug:205
+msgid "Dump 'count'"
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:1 pwnlib.gdb.debug_shellcode:1
+msgid "Creates an ELF file, and launches it under a debugger."
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:3
+msgid ""
+"This is identical to debug_shellcode, except that any defined symbols are"
+" available in GDB, and it saves you the explicit call to asm()."
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:7
+msgid "Assembly code to debug"
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:9 pwnlib.gdb.debug_shellcode:5
+msgid "Script to run in GDB"
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:11 pwnlib.gdb.debug_shellcode:7
+msgid "Base address to load the shellcode at"
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:13 pwnlib.gdb.debug_shellcode:9
+msgid "Enable access to GDB Python API"
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:15 pwnlib.gdb.debug_shellcode:11
+msgid "Override any :obj:`pwnlib.context.context` values."
+msgstr ""
+
+#: of pwnlib.gdb.debug_assembly:19 pwnlib.gdb.debug_shellcode:15
+#: pwnlib.gdb.find_module_addresses:43
+msgid "Example:"
+msgstr ""
+
+#: of pwnlib.gdb.debug_shellcode:3
+msgid "Assembled shellcode bytes"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:1
+msgid "Cheat to find modules by using GDB."
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:3
+msgid ""
+"We can't use ``/proc/$pid/map`` since some servers forbid it. This breaks"
+" ``info proc`` in GDB, but ``info sharedlibrary`` still works. "
+"Additionally, ``info sharedlibrary`` works on FreeBSD, which may not have"
+" procfs enabled or accessible."
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:8
+msgid "The output looks like this:"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:23
+msgid ""
+"Note that the raw addresses provided by ``info sharedlibrary`` are "
+"actually the address of the ``.text`` segment, not the image base "
+"address."
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:26
+msgid "This routine automates the entire process of:"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:28
+msgid "Downloading the binaries from the remote server"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:29
+msgid "Scraping GDB for the information"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:30
+msgid "Loading each library into an ELF"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:31
+msgid "Fixing up the base address vs. the ``.text`` segment address"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:33
+msgid "Path to the binary on the remote server"
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:35
+msgid ""
+"SSH connection through which to load the libraries. If left as "
+":const:`None`, will use a :class:`pwnlib.tubes.process.process`."
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:38
+msgid "Set to :const:`True` to run \"ulimit -s unlimited\" before GDB."
+msgstr ""
+
+#: of pwnlib.gdb.find_module_addresses:41
+msgid "A list of pwnlib.elf.ELF objects, with correct base addresses."
+msgstr ""
+
+#: of pwnlib.gdb.version:1
+msgid "Gets the current GDB version."
+msgstr ""
+
+#: of pwnlib.gdb.version:5
+msgid "Requires that GDB version meets the following format:"
+msgstr ""
+
+#: of pwnlib.gdb.version:7
+msgid "``GNU gdb (GDB) 7.12``"
+msgstr ""
+
+#: of pwnlib.gdb.version:9
+msgid "*tuple* -- A tuple containing the version numbers"
+msgstr ""
+

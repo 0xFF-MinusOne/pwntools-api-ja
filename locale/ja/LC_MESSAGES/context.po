@@ -1,0 +1,1043 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/context.rst:9
+msgid ":mod:`pwnlib.context` --- Setting runtime variables"
+msgstr ""
+
+#: ../pwntools/docs/source/context.rst:11
+msgid ""
+"Many settings in ``pwntools`` are controlled via the global variable "
+":data:`.context`, such as the selected target operating system, "
+"architecture, and bit-width."
+msgstr ""
+
+#: ../pwntools/docs/source/context.rst:13
+msgid "In general, exploits will start with something like:"
+msgstr ""
+
+#: ../pwntools/docs/source/context.rst:20
+msgid ""
+"Which sets up everything in the exploit for exploiting a 64-bit Intel "
+"binary."
+msgstr ""
+
+#: ../pwntools/docs/source/context.rst:22
+msgid ""
+"The recommended method is to use ``context.binary``  to automagically set"
+" all of the appropriate values."
+msgstr ""
+
+#: ../pwntools/docs/source/context.rst:30
+msgid "Module Members"
+msgstr ""
+
+#: of pwnlib.context:1
+msgid ""
+"Implements context management so that nested/scoped contexts and threaded"
+" contexts work properly and as expected."
+msgstr ""
+
+#: of pwnlib.context.ContextType:1
+msgid ""
+"Class for specifying information about the target machine. Intended for "
+"use as a pseudo-singleton through the global variable :data:`.context`, "
+"available via ``from pwn import *`` as ``context``."
+msgstr ""
+
+#: of pwnlib.context.ContextType:6
+msgid ""
+"The context is usually specified at the top of the Python file for "
+"clarity. ::"
+msgstr ""
+
+#: of pwnlib.context.ContextType:11
+msgid ""
+"Currently supported properties and their defaults are listed below. The "
+"defaults are inherited from :data:`pwnlib.context.ContextType.defaults`."
+msgstr ""
+
+#: of pwnlib.context.ContextType:14
+msgid ""
+"Additionally, the context is thread-aware when using "
+":class:`pwnlib.context.Thread` instead of :class:`threading.Thread` (all "
+"internal ``pwntools`` threads use the former)."
+msgstr ""
+
+#: of pwnlib.context.ContextType:18
+msgid "The context is also scope-aware by using the ``with`` keyword."
+msgstr ""
+
+#: of pwnlib.context.ContextType:21 pwnlib.context.ContextType.arch:20
+#: pwnlib.context.ContextType.bits:6 pwnlib.context.ContextType.bytes:6
+#: pwnlib.context.ContextType.clear:8 pwnlib.context.ContextType.copy:4
+#: pwnlib.context.ContextType.endian:8 pwnlib.context.ContextType.endianness:4
+#: pwnlib.context.ContextType.local:10
+#: pwnlib.context.ContextType.local_libcdb:11
+#: pwnlib.context.ContextType.log_console:4
+#: pwnlib.context.ContextType.log_file:6
+#: pwnlib.context.ContextType.log_level:12 pwnlib.context.ContextType.os:19
+#: pwnlib.context.ContextType.signed:8 pwnlib.context.ContextType.update:21
+#: pwnlib.context.Thread:18
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.context.ContextType:58 pwnlib.context.ContextType.__init__:1
+msgid "Initialize the ContextType structure."
+msgstr ""
+
+#: of pwnlib.context.ContextType:60 pwnlib.context.ContextType.__init__:3
+msgid "All keyword arguments are passed to :func:`update`."
+msgstr ""
+
+#: of pwnlib.context.Thread:1
+msgid ""
+"Instantiates a context-aware thread, which inherit its context when it is"
+" instantiated. The class can be accessed both on the context module as "
+"`pwnlib.context.Thread` and on the context singleton object inside the "
+"context module as `pwnlib.context.context.Thread`."
+msgstr ""
+
+#: of pwnlib.context.Thread:6
+msgid ""
+"Threads created by using the native :class`threading`.Thread` will have a"
+" clean (default) context."
+msgstr ""
+
+#: of pwnlib.context.Thread:9
+msgid ""
+"Regardless of the mechanism used to create any thread, the context is de-"
+"coupled from the parent thread, so changes do not cascade to child or "
+"parent."
+msgstr ""
+
+#: of pwnlib.context.Thread:13
+msgid ""
+"Saves a copy of the context when instantiated (at ``__init__``) and "
+"updates the new thread's context before passing control to the user code "
+"via ``run`` or ``target=``."
+msgstr ""
+
+#: of pwnlib.context.Thread:43 pwnlib.context.Thread.__bootstrap:1
+msgid "Implementation Details:"
+msgstr ""
+
+#: of pwnlib.context.Thread:45
+msgid ""
+"This class implemented by hooking the private function "
+":func:`threading.Thread._Thread_bootstrap`, which is called before "
+"passing control to :func:`threading.Thread.run`."
+msgstr ""
+
+#: of pwnlib.context.Thread:49
+msgid ""
+"This could be done by overriding ``run`` itself, but we would have to "
+"ensure that all uses of the class would only ever use the keyword "
+"``target=`` for ``__init__``, or that all subclasses invoke "
+"``super(Subclass.self).set_up_context()`` or similar."
+msgstr ""
+
+#: of pwnlib.context.Thread:54 pwnlib.context.Thread.__init__:1
+msgid ""
+"This constructor should always be called with keyword arguments. "
+"Arguments are:"
+msgstr ""
+
+#: of pwnlib.context.Thread:56 pwnlib.context.Thread.__init__:3
+msgid ""
+"*group* should be None; reserved for future extension when a ThreadGroup "
+"class is implemented."
+msgstr ""
+
+#: of pwnlib.context.Thread:59 pwnlib.context.Thread.__init__:6
+msgid ""
+"*target* is the callable object to be invoked by the run() method. "
+"Defaults to None, meaning nothing is called."
+msgstr ""
+
+#: of pwnlib.context.Thread:62 pwnlib.context.Thread.__init__:9
+msgid ""
+"*name* is the thread name. By default, a unique name is constructed of "
+"the form \"Thread-N\" where N is a small decimal number."
+msgstr ""
+
+#: of pwnlib.context.Thread:65 pwnlib.context.Thread.__init__:12
+msgid ""
+"*args* is a list or tuple of arguments for the target invocation. "
+"Defaults to ()."
+msgstr ""
+
+#: of pwnlib.context.Thread:67 pwnlib.context.Thread.__init__:14
+#, python-brace-format
+msgid ""
+"*kwargs* is a dictionary of keyword arguments for the target invocation. "
+"Defaults to {}."
+msgstr ""
+
+#: of pwnlib.context.Thread:70 pwnlib.context.Thread.__init__:17
+msgid ""
+"If a subclass overrides the constructor, it must make sure to invoke the "
+"base class constructor (Thread.__init__()) before doing anything else to "
+"the thread."
+msgstr ""
+
+#: of pwnlib.context.Thread.__bootstrap:2
+msgid ""
+"This only works because the class is named ``Thread``. If its name is "
+"changed, we have to implement this hook differently."
+msgstr ""
+
+#: of pwnlib.context.ContextType.__call__:1
+msgid "Alias for :meth:`pwnlib.context.ContextType.update`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.clear:1
+msgid "Clears the contents of the context. All values are set to their defaults."
+msgstr ""
+
+#: of pwnlib.context.ContextType.clear pwnlib.context.ContextType.local
+#: pwnlib.context.ContextType.update
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.context.ContextType.clear:4 pwnlib.context.ContextType.clear:5
+msgid "Arguments passed to ``update``"
+msgstr ""
+
+#: of pwnlib.context.ContextType.copy:1
+msgid "Returns a copy of the current context as a dictionary."
+msgstr ""
+
+#: of pwnlib.context.ContextType.local:1
+msgid "Create a context manager for use with the ``with`` statement."
+msgstr ""
+
+#: of pwnlib.context.ContextType.local:3
+msgid "For more information, see the example below or PEP 343."
+msgstr ""
+
+#: of pwnlib.context.ContextType.local:5
+msgid "Variables to be assigned in the new environment."
+msgstr ""
+
+#: of pwnlib.context.ContextType.local
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.context.ContextType.local:7
+msgid "ContextType manager for managing the old and new environment."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quietfunc:1
+msgid "Similar to :attr:`quiet`, but wraps a whole function."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cache_dir:11
+#: pwnlib.context.ContextType.quiet:5 pwnlib.context.ContextType.quietfunc:4
+#: pwnlib.context.ContextType.verbose:11
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.context.ContextType.quietfunc:5
+msgid ""
+"Let's set up two functions, which are the same but one is wrapped with "
+":attr:`quietfunc`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quietfunc:12
+msgid ""
+"If we set the logging level to 'info', the loud function prints its "
+"contents."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quietfunc:18
+msgid ""
+"However, the quiet function does not, since :attr:`quietfunc` silences "
+"all output unless the log level is DEBUG."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quietfunc:23
+msgid "Now let's try again with debugging enabled."
+msgstr ""
+
+#: of pwnlib.context.ContextType.reset_local:1
+msgid "Deprecated.  Use :meth:`clear`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.update:1
+msgid ""
+"Convenience function, which is shorthand for setting multiple variables "
+"at once."
+msgstr ""
+
+#: of pwnlib.context.ContextType.update:4
+msgid "It is a simple shorthand such that::"
+msgstr ""
+
+#: of pwnlib.context.ContextType.update:8
+msgid "is equivalent to::"
+msgstr ""
+
+#: of pwnlib.context.ContextType.update:14
+msgid "The following syntax is also valid::"
+msgstr ""
+
+#: of pwnlib.context.ContextType.update:18
+msgid "Variables to be assigned in the environment."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb:1
+msgid "Returns an argument array for connecting to adb."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb:3
+msgid "Unless ``$ADB_PATH`` is set, uses the default ``adb`` binary in ``$PATH``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb_host:1
+msgid "Sets the target host which is used for ADB."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb_host:3
+#: pwnlib.context.ContextType.adb_port:3
+msgid "This is useful for Android exploitation."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb_host:5
+msgid ""
+"The default value is inherited from ANDROID_ADB_SERVER_HOST, or set to "
+"the default 'localhost'."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb_port:1
+msgid "Sets the target port which is used for ADB."
+msgstr ""
+
+#: of pwnlib.context.ContextType.adb_port:5
+msgid ""
+"The default value is inherited from ANDROID_ADB_SERVER_PORT, or set to "
+"the default 5037."
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:1
+msgid "Target binary architecture."
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:3
+msgid ""
+"Allowed values are listed in "
+":attr:`pwnlib.context.ContextType.architectures`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:5 pwnlib.context.ContextType.os:7
+msgid "Side Effects:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:7
+msgid ""
+"If an architecture is specified which also implies additional attributes "
+"(e.g. 'amd64' implies 64-bit words, 'powerpc' implies big-endian), these "
+"attributes will be set on the context if a user has not already set a "
+"value."
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:12
+msgid "The following properties may be modified."
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:14
+msgid ":attr:`bits`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:15
+msgid ":attr:`endian`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch pwnlib.context.ContextType.endian
+#: pwnlib.context.ContextType.os
+msgid "Raises"
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:17
+msgid "An invalid architecture was specified"
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:45
+msgid ""
+"Note that expressly setting :attr:`bits` means that we use that value "
+"instead of the default"
+msgstr ""
+
+#: of pwnlib.context.ContextType.arch:54
+msgid ""
+"Setting the architecture can override the defaults for both "
+":attr:`endian` and :attr:`bits`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.ContextType.architectures:1
+msgid ""
+"Values are defaults which are set when "
+":attr:`pwnlib.context.ContextType.arch` is set"
+msgstr ""
+
+#: of pwnlib.context.ContextType.aslr:1
+msgid "ASLR settings for new processes."
+msgstr ""
+
+#: of pwnlib.context.ContextType.aslr:3
+msgid ""
+"If :const:`False`, attempt to disable ASLR in all processes which are "
+"created via ``personality`` (``setarch -R``) and ``setrlimit`` (``ulimit "
+"-s unlimited``)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.aslr:7
+msgid "The ``setarch`` changes are lost if a ``setuid`` binary is executed."
+msgstr ""
+
+#: of pwnlib.context.ContextType.binary:1
+msgid ""
+"Infer target architecture, bit-with, and endianness from a binary file. "
+"Data type is a :class:`pwnlib.elf.ELF` object."
+msgstr ""
+
+#: of pwnlib.context.ContextType.binary:4
+msgid "Examples:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.bits:1
+msgid ""
+"Target machine word size, in bits (i.e. the size of general purpose "
+"registers)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.bits:3
+msgid "The default value is ``32``, but changes according to :attr:`arch`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.buffer_size:1
+msgid "Internal buffer size to use for :class:`pwnlib.tubes.tube.tube` objects."
+msgstr ""
+
+#: of pwnlib.context.ContextType.buffer_size:3
+msgid ""
+"This is not the maximum size of the buffer, but this is the amount of "
+"data which is passed to each raw ``read`` syscall (or equivalent)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.bytes:1
+msgid ""
+"Target machine word size, in bytes (i.e. the size of general purpose "
+"registers)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.bytes:3
+msgid "This is a convenience wrapper around ``bits // 8``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cache_dir:1
+msgid "Directory used for caching data."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cache_dir:5
+msgid ""
+"May be either a path string, or :const:`None`. Set to :const:`None` to "
+"disable caching. Set to :const:`True` to generate the default cache "
+"directory path based on :attr:`cache_dir_base` again."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cache_dir_base:1
+msgid "Base directory to use for caching content."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cache_dir_base:3
+msgid ""
+"Changing this to a different value will clear the :attr:`cache_dir` path "
+"stored in TLS since a new path will need to be generated to respect the "
+"new :attr:`cache_dir_base` value."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cyclic_alphabet:1
+msgid "Cyclic alphabet."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cyclic_alphabet:3
+msgid "Default value is `string.ascii_lowercase`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cyclic_size:1
+msgid "Cyclic pattern size."
+msgstr ""
+
+#: of pwnlib.context.ContextType.cyclic_size:3
+msgid "Default value is `4`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:1
+msgid "Type of debugger to use when running locally."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:3
+#: pwnlib.context.ContextType.throw_eof_on_incomplete_line:6
+msgid "Possible values are:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:5
+msgid "``auto``: Automatically select the available debugger."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:6
+msgid "``gdb``: Use GDB as the debugger."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:7
+msgid "``windbg``: Use WinDbg as the debugger."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:8
+msgid "``windbgx``: Use WinDbgX as the debugger."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:9
+msgid "``x64dbg``: Use x64dbg as the debugger."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:11
+msgid "Defaults to ``windbgx`` on Windows and ``gdb`` on other platforms."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:13
+msgid ""
+"``auto``: Automatically select the available debugger based on the "
+"platform. On Windows, it will prefer ``windbgx`` over ``windbg`` if both "
+"are available."
+msgstr ""
+
+#: of pwnlib.context.ContextType.debugger:16
+msgid "Default value is ``\"auto\"``."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.ContextType.debugger_choices:1
+msgid "Valid values for :attr:`debugger`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.ContextType.defaults:1
+msgid "Default values for :class:`pwnlib.context.ContextType`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.delete_corefiles:1
+msgid ""
+"Whether pwntools automatically deletes corefiles after exiting. This only"
+" affects corefiles accessed via :attr:`.process.corefile`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.delete_corefiles:4
+#: pwnlib.context.ContextType.disable_corefiles:7
+msgid "Default value is ``False``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.device:1
+msgid "Sets the device being operated on."
+msgstr ""
+
+#: of pwnlib.context.ContextType.disable_corefiles:1
+msgid "Whether pwntools automatically disable corefiles generation."
+msgstr ""
+
+#: of pwnlib.context.ContextType.disable_corefiles:3
+msgid ""
+"When enabled, sets RLIMIT_CORE to (0,-1) to prevent core dump creation "
+"entirely, which is useful for brute-force scenarios and repeated segfault"
+" crashes where core files consume excessive disk space"
+msgstr ""
+
+#: of pwnlib.context.ContextType.endian:1
+msgid "Endianness of the target machine."
+msgstr ""
+
+#: of pwnlib.context.ContextType.endian:3
+msgid "The default value is ``'little'``, but changes according to :attr:`arch`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.endian:5
+msgid "An invalid endianness was provided"
+msgstr ""
+
+#: of pwnlib.context.ContextType.endianness:1
+msgid "Legacy alias for :attr:`endian`."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.ContextType.endiannesses:1
+msgid "Valid values for :attr:`endian`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdb_binary:1
+msgid "Path to the binary that is used when running GDB locally."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdb_binary:3
+msgid ""
+"This is useful when you have multiple versions of gdb installed or the "
+"gdb binary is called something different."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdb_binary:6
+msgid ""
+"If set to an empty string, pwntools will try to search for a reasonable "
+"gdb binary from the path."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdb_binary:9
+#: pwnlib.context.ContextType.gdbinit:11
+#: pwnlib.context.ContextType.windbg_binary:12
+#: pwnlib.context.ContextType.windbgx_binary:11
+#: pwnlib.context.ContextType.x64dbg_binary:11
+msgid "Default value is ``\"\"``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdbinit:1
+msgid "Path to the gdbinit that is used when running GDB locally."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdbinit:3
+msgid ""
+"This is useful if you want pwntools-launched GDB to include some "
+"additional modules, like PEDA but you do not want to have GDB include "
+"them by default."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdbinit:6
+msgid ""
+"The setting will only apply when GDB is launched locally since remote "
+"hosts may not have the necessary requirements for the gdbinit."
+msgstr ""
+
+#: of pwnlib.context.ContextType.gdbinit:9
+msgid "If set to an empty string, GDB will use the default `~/.gdbinit`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.kernel:1
+msgid "Target machine's kernel architecture."
+msgstr ""
+
+#: of pwnlib.context.ContextType.kernel:3
+msgid ""
+"Usually, this is the same as ``arch``, except when running a 32-bit "
+"binary on a 64-bit kernel (e.g. i386-on-amd64)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.kernel:6
+msgid ""
+"Even then, this doesn't matter much -- only when the the segment "
+"registers need to be known"
+msgstr ""
+
+#: of pwnlib.context.ContextType.local_libcdb:1
+msgid ""
+"Sets path to local libc-database, get more information for libc-database:"
+" https://github.com/niklasb/libc-database"
+msgstr ""
+
+#: of pwnlib.context.ContextType.local_libcdb:4
+msgid "Works in :attr:`pwnlib.libcdb` when searching by local database provider."
+msgstr ""
+
+#: of pwnlib.context.ContextType.local_libcdb:6
+msgid "The default value is ``/var/lib/libc-database``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.local_libcdb:8
+msgid ""
+"Sets `context.local_libcdb` to empty string or `None` will turn off local"
+" libc-database integration."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_console:1
+msgid "Sets the default logging console target."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_file:1
+msgid "Sets the target file for all logging output."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_file:3
+msgid "Works in a similar fashion to :attr:`log_level`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_level:1
+msgid "Sets the verbosity of ``pwntools`` logging mechanism."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_level:3
+msgid ""
+"More specifically it controls the filtering of messages that happens "
+"inside the handler for logging to the screen. So if you want e.g. log all"
+" messages to a file, then this attribute makes no difference to you."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_level:7
+msgid "Valid values are specified by the standard Python ``logging`` module."
+msgstr ""
+
+#: of pwnlib.context.ContextType.log_level:9
+msgid "Default value is set to ``INFO``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.newline:1
+msgid "Line ending used for Tubes by default."
+msgstr ""
+
+#: of pwnlib.context.ContextType.newline:3
+msgid ""
+"This configures the newline emitted by e.g. ``sendline`` or that is used "
+"as a delimiter for e.g. ``recvline``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.noptrace:1
+msgid "Disable all actions which rely on ptrace."
+msgstr ""
+
+#: of pwnlib.context.ContextType.noptrace:3
+msgid ""
+"This is useful for switching between local exploitation with a debugger, "
+"and remote exploitation (without a debugger)."
+msgstr ""
+
+#: of pwnlib.context.ContextType.noptrace:6
+msgid "This option can be set with the ``NOPTRACE`` command-line argument."
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:1
+msgid "Operating system of the target machine."
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:3
+msgid "The default value is ``linux``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:5
+msgid "Allowed values are listed in :attr:`pwnlib.context.ContextType.oses`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:9
+msgid ""
+"If an os is specified some attributes will be set on the context if a "
+"user has not already set a value."
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:12
+msgid "The following property may be modified:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:14
+msgid ":attr:`newline`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:16
+msgid "An invalid os was specified"
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:40
+msgid ""
+"Note that expressly setting :attr:`newline` means that we use that value "
+"instead of the default"
+msgstr ""
+
+#: of pwnlib.context.ContextType.os:49
+msgid "Setting the os can override the default for :attr:`newline`"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.ContextType.oses:1
+msgid "Keys are valid values for :meth:`pwnlib.context.ContextType.os`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.proxy:1
+msgid "Default proxy for all socket connections."
+msgstr ""
+
+#: of pwnlib.context.ContextType.proxy:3
+msgid ""
+"Accepts either a string (hostname or IP address) for a SOCKS5 proxy on "
+"the default port, **or** a ``tuple`` passed to "
+"``socks.set_default_proxy``, e.g. ``(socks.SOCKS4, 'localhost', 1234)``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quiet:1
+msgid ""
+"Disables all non-error logging within the enclosed scope, *unless* the "
+"debugging level is set to 'debug' or lower."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quiet:6
+msgid "Let's assume the normal situation, where log_level is INFO."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quiet:10
+msgid "Note that only the log levels below ERROR do not print anything."
+msgstr ""
+
+#: of pwnlib.context.ContextType.quiet:17
+msgid ""
+"Next let's try with the debugging level set to 'debug' before we enter "
+"the context handler:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.randomize:1
+msgid "Global flag that lots of things should be randomized."
+msgstr ""
+
+#: of pwnlib.context.ContextType.rename_corefiles:1
+msgid "Whether pwntools automatically renames corefiles."
+msgstr ""
+
+#: of pwnlib.context.ContextType.rename_corefiles:3
+msgid "This is useful for two things:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.rename_corefiles:5
+msgid ""
+"Prevent corefiles from being overwritten, if ``kernel.core_pattern`` is "
+"something simple like ``\"core\"``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.rename_corefiles:7
+msgid ""
+"Ensure corefiles are generated, if ``kernel.core_pattern`` uses "
+"``apport``, which refuses to overwrite any existing files."
+msgstr ""
+
+#: of pwnlib.context.ContextType.rename_corefiles:10
+msgid "This only affects corefiles accessed via :attr:`.process.corefile`."
+msgstr ""
+
+#: of pwnlib.context.ContextType.rename_corefiles:12
+msgid "Default value is ``True``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.sign:1 pwnlib.context.ContextType.signedness:1
+msgid "Alias for :attr:`signed`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.signed:1
+msgid "Signed-ness for packing operation when it's not explicitly set."
+msgstr ""
+
+#: of pwnlib.context.ContextType.signed:3
+msgid ""
+"Can be set to any non-string truthy value, or the specific string values "
+"``'signed'`` or ``'unsigned'`` which are converted into :const:`True` and"
+" :const:`False` correspondingly."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.ContextType.signednesses:1
+msgid "Valid string values for :attr:`signed`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.silent:1
+msgid "Disable all non-error logging within the enclosed scope."
+msgstr ""
+
+#: of pwnlib.context.ContextType.terminal:1
+msgid ""
+"Default terminal used by :meth:`pwnlib.util.misc.run_in_new_terminal`. "
+"Can be a string or an iterable of strings.  In the latter case the first "
+"entry is the terminal and the rest are default arguments."
+msgstr ""
+
+#: of pwnlib.context.ContextType.terminal:7
+msgid ""
+":meth:`pwnlib.util.misc.run_in_new_terminal` has special handlers for "
+"supported terminals with windowing capabilities, which might apply to "
+"terminals set with this context option. See its documentation for "
+"additional information on this behavior."
+msgstr ""
+
+#: of pwnlib.context.ContextType.throw_eof_on_incomplete_line:1
+msgid ""
+"Whether to raise an :class:`EOFError` if an EOF is received before a "
+"newline in ``tube.recvline``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.throw_eof_on_incomplete_line:3
+msgid ""
+"Controls if an :class:`EOFError` is treated as newline in "
+"``tube.recvline`` and similar functions and whether a warning should be "
+"logged about it."
+msgstr ""
+
+#: of pwnlib.context.ContextType.throw_eof_on_incomplete_line:8
+msgid ""
+"``True``: Raise an :class:`EOFError` if an EOF is received before a "
+"newline."
+msgstr ""
+
+#: of pwnlib.context.ContextType.throw_eof_on_incomplete_line:9
+msgid ""
+"``False``: Return the data received so far if an EOF is received before a"
+" newline without logging a warning."
+msgstr ""
+
+#: of pwnlib.context.ContextType.throw_eof_on_incomplete_line:11
+msgid ""
+"``None``: Return the data received so far if an EOF is received before a "
+"newline and log a warning."
+msgstr ""
+
+#: of pwnlib.context.ContextType.throw_eof_on_incomplete_line:14
+msgid "Default value is ``None``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.timeout:1
+msgid ""
+"Default amount of time to wait for a blocking operation before it times "
+"out, specified in seconds."
+msgstr ""
+
+#: of pwnlib.context.ContextType.timeout:4
+msgid "The default value is to have an infinite timeout."
+msgstr ""
+
+#: of pwnlib.context.ContextType.timeout:6
+msgid ""
+"See :class:`pwnlib.timeout.Timeout` for additional information on valid "
+"values."
+msgstr ""
+
+#: of pwnlib.context.ContextType.verbose:1
+msgid "Enable all logging within the enclosed scope."
+msgstr ""
+
+#: of pwnlib.context.ContextType.verbose:3
+msgid "This is the opposite of :attr:`.quiet` and functionally equivalent to:"
+msgstr ""
+
+#: of pwnlib.context.ContextType.verbose:12
+msgid "Note that the function does not emit any information by default"
+msgstr ""
+
+#: of pwnlib.context.ContextType.verbose:18
+msgid ""
+"But if we put it inside a :attr:`.verbose` context manager, the "
+"information is printed."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbg_binary:1
+msgid "Path to the binary that is used when running WinDbg locally."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbg_binary:3
+msgid ""
+"This is useful when you have multiple versions of WinDbg installed or the"
+" WinDbg binary is called something different."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbg_binary:6
+msgid ""
+"Usually, it is installed to ``C:\\Program Files (x86)\\Windows "
+"Kits\\10\\Debuggers\\x64\\windbg.exe``. Adding the path to the Windows "
+"SDK to your PATH variable is recommended."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbg_binary:9
+msgid ""
+"If set to an empty string, pwntools will try to search for a reasonable "
+"WinDbg binary from the path."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbgx_binary:1
+msgid "Path to the binary that is used when running WinDbgX locally."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbgx_binary:3
+msgid ""
+"This is useful when you have multiple versions of WinDbgX installed or "
+"the WinDbgX binary is called something different."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbgx_binary:6
+#, python-format
+msgid ""
+"Usually, it is installed to "
+"``%LocalAppData%\\Microsoft\\WindowsApps\\WinDbgX.exe``."
+msgstr ""
+
+#: of pwnlib.context.ContextType.windbgx_binary:8
+msgid ""
+"If set to an empty string, pwntools will try to search for a reasonable "
+"WinDbgX binary from the path."
+msgstr ""
+
+#: of pwnlib.context.ContextType.word_size:1
+msgid "Alias for :attr:`bits`"
+msgstr ""
+
+#: of pwnlib.context.ContextType.x64dbg_binary:1
+msgid "Path to the binary that is used when running x64dbg locally."
+msgstr ""
+
+#: of pwnlib.context.ContextType.x64dbg_binary:3
+msgid ""
+"Should be set to the x96dbg.exe launcher binary to handle 32-bit and "
+"64-bit binaries."
+msgstr ""
+
+#: of pwnlib.context.ContextType.x64dbg_binary:5
+msgid ""
+"This is useful when you have multiple versions of x64dbg installed or the"
+" x64dbg binary is called something different."
+msgstr ""
+
+#: of pwnlib.context.ContextType.x64dbg_binary:8
+msgid ""
+"If set to an empty string, pwntools will try to search for a reasonable "
+"x64dbg binary from the path or based on the ``\"Debug with x64dbg\"`` "
+"shell extension if available."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.context:1
+msgid ""
+"Global :class:`.ContextType` object, used to store commonly-used pwntools"
+" settings."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.context:3
+msgid ""
+"In most cases, the context is used to infer default variables values. For"
+" example, :func:`.asm` can take an ``arch`` parameter as a keyword "
+"argument."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.context:7
+msgid ""
+"If it is not supplied, the ``arch`` specified by ``context`` is used "
+"instead."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.context.context:9
+msgid ""
+"Consider it a shorthand to passing ``os=`` and ``arch=`` to every single "
+"function call."
+msgstr ""
+

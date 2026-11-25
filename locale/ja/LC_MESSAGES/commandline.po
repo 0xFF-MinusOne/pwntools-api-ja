@@ -1,0 +1,657 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/commandline.rst:12
+msgid "Command Line Tools"
+msgstr ""
+
+#: ../pwntools/docs/source/commandline.rst:14
+msgid ""
+"pwntools comes with a handful of useful command-line utilities which "
+"serve as wrappers for some of the internal functionality."
+msgstr ""
+
+#: ../pwntools/docs/source/commandline.rst:16
+msgid ""
+"If these tools do not appear to be installed, make sure that you have "
+"added ``~/.local/bin`` to your ``$PATH`` environment variable."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Pwntools Command-line Interface"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn asm"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Assemble shellcode into bytes"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Lines to assemble. If none are supplied, use stdin"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Output format (defaults to hex for ttys, otherwise raw)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Output file (defaults to stdout)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"The os/architecture/endianness/bits the shellcode will run in (default: "
+"linux/i386), choose from: ['16', '32', '64', 'baremetal', 'freebsd', "
+"'windows', 'android', 'darwin', 'linux', 'cgc', 'loongarch64', "
+"'powerpc64', 'aarch64', 'powerpc', 'riscv32', 'riscv64', 'sparc64', "
+"'mips64', 'msp430', 'alpha', 'amd64', 'sparc', 'thumb', 'cris', 'i386', "
+"'ia64', 'm68k', 'mips', 's390', 'none', 'avr', 'arm', 'vax', 'little', "
+"'big', 'be', 'eb', 'le', 'el']"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Encode the shellcode to avoid the listed bytes (provided as hex)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Encode the shellcode to avoid newlines"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Encode the shellcode to avoid NULL bytes"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Debug the shellcode with GDB"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Compatibility flag, ignored"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Specify input file"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Run output"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn checksec"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Check binary security settings"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Files to check"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "File to check (for compatibility with checksec.sh)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn constgrep"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Looking up constants from header files."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Example: constgrep -c freebsd -m  ^PROT_ '3 + 4'"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "The regex matching constant you want to find"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "The constant to find"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Do an exact match for a constant instead of searching for a regex"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Search case insensitive"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Instead of searching for a specific constant value, search for values not"
+" containing strictly less bits that the given value."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn cyclic"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Cyclic pattern creator/finder"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Number of characters to print"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"The alphabet to use in the cyclic pattern (defaults to all lower case "
+"letters)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Size of the unique subsequences (defaults to 4)."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Do a lookup instead printing the alphabet"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn debug"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Debug a binary in GDB"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Execute GDB commands from this file."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "PID to attach to"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "File to debug"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Name of the process to attach to (e.g. \"bash\")"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "GDB sysroot path"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn disablenx"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Disable NX for an ELF binary"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn disasm"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Disassemble bytes into text format"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Hex-string to disassemble. If none are supplied, then it uses stdin in "
+"non-hex mode."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Base address"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Color output"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Disable color output"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn elfdiff"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Compare two ELF files"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn elfpatch"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Patch an ELF file"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "File to patch"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Offset to patch in virtual address (hex encoded)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Bytes to patch (hex encoded)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn errno"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Prints out error messages"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Error message or value (errno number, errno name, or perror string)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "List every known errno (number, name, perror string)."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Treat the argument as an errno name or perror substring and print every "
+"match."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Look the errno values up for this architecture or os, e.g. `-c aarch64`."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn hex"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Hex-encodes data provided on the command line or stdin"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Data to convert into hex"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Insert a prefix before each byte"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Add a separator between each byte"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn libcdb"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Print various information about a libc binary"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn libcdb fetch"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Fetch libc database. If no argument passed, it will init and upgrade "
+"libc-database repository"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Set libc-database path, If it is empty, the default path will be "
+"`context.local_libcdb` (/var/lib/libc-database)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Fetch the desired libc categories"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn libcdb file"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Dump information about a libc binary"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Libc binary to dump"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "List of symbol offsets to dump in addition to the common ones"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Display all offsets relative to this symbol"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Attempt to unstrip the libc binary inplace with debug symbols from a "
+"debuginfod server"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn libcdb hash"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Display information of a libc version given an unique hash"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Hex encoded hash value"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"The type of the provided hash value. Supported hashtypes: id, buildid, "
+"md5, sha1, sha256"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Attempt to download the matching libc.so"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Do NOT attempt to unstrip the libc binary with debug symbols from a "
+"debuginfod server"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Attempt to searching with offline only mode"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn libcdb lookup"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Lookup a libc version by function offsets"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Symbol and offset pairs to lookup matching libc version. Can be any "
+"number of pairs to narrow the search. Example: \"read 3e0 write 520\""
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn phd"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Pretty hex dump"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "File to hexdump.  Reads from stdin if missing."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Number of bytes per line."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Byte to highlight."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Skip this many initial bytes."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Only show this many bytes."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Addresses in left hand column starts at this address."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Colorize the output.  When 'auto' output is colorized exactly when stdout"
+" is a TTY.  Default is 'auto'."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn pwnstrip"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Strip binaries for CTF usage"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Strip build ID"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Patch function"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Output file"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn scramble"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Shellcode encoder"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Encode the shellcode with an alphanumeric encoder"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Encode the shellcode to avoid the listed bytes"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn shellcraft"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Microwave shellcode -- Easy, fast and delicious"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "The shellcodes you want.  shellcode [args ...] [+ shellcode [args ...]]"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Show shellcode documentation"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Output file (default: stdout)"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+#, python-brace-format
+msgid ""
+"Output format (default: hex), choose from {e}lf, {r}aw, {s}tring, "
+"{c}-style array, {h}ex string, hex{i}i, {a}ssembly code, {p}reprocssed "
+"code, escape{d} hex string"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Set the delimiter between multiple shellcodes"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Insert a debug trap before the code"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Insert a debug trap after the code"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "List syscalls"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Load address"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "List available shellcodes, optionally provide a filter"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Generated ELF is a shared library"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn template"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Generate an exploit template. If no arguments are given, the current "
+"directory is searched for an executable binary and libc. If only one "
+"binary is found, it is assumed to be the challenge binary."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Target binary. If not given, the current directory is searched for an "
+"executable binary."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Remote host / SSH server"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Remote port / SSH port"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "SSH Username"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "SSH Password"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Path to libc binary to use. If not given, the current directory is "
+"searched for a libc binary."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Remote path of file on SSH server"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Less verbose template comments"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Print the output in color"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid ""
+"Path to a custom template. Tries to use "
+"'~/.config/pwntools/templates/pwnup.mako', if it exists. Check "
+"'pwnlib/data/templates/pwnup.mako' for the default template shipped with "
+"pwntools."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Do not automatically detect missing binaries"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn unhex"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Decodes hex-encoded data provided on the command line or via stdin."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Hex bytes to decode"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn update"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Check for pwntools updates"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Install the update automatically."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Check for pre-releases."
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "pwn version"
+msgstr ""
+
+#: ../pwntools/docs/<autoprogram>:1
+msgid "Pwntools version"
+msgstr ""
+
+#: of pwnlib.commandline.errno:1
+msgid "Look up ``errno`` values for the architecture selected by ``-c``."
+msgstr ""
+
+#: of pwnlib.commandline.errno:3
+msgid "The examples below run in the documentation doctest suite."
+msgstr ""
+

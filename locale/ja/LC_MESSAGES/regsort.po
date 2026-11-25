@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/regsort.rst:6
+msgid ":mod:`pwnlib.regsort` --- Register sorting"
+msgstr ""
+
+#: of pwnlib.regsort:1
+msgid "Topographical sort"
+msgstr ""
+
+#: of pwnlib.regsort.check_cycle:1
+msgid ""
+"Walk down the assignment list of a register, return the path walked if it"
+" is encountered again."
+msgstr ""
+
+#: of pwnlib.regsort.check_cycle pwnlib.regsort.regsort
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.regsort.check_cycle:4
+msgid ""
+"The list of register involved in the cycle. If there is no cycle, this is"
+" an empty list."
+msgstr ""
+
+#: of pwnlib.regsort.check_cycle:8 pwnlib.regsort.extract_dependencies:5
+#: pwnlib.regsort.regsort:58 pwnlib.regsort.resolve_order:4
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.regsort.extract_dependencies:1
+msgid ""
+"Return a list of all registers which directly depend on the specified "
+"register."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:1
+msgid "Sorts register dependencies."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:3
+msgid ""
+"Given a dictionary of registers to desired register contents, return the "
+"optimal order in which to set the registers to those contents."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:7
+msgid ""
+"The implementation assumes that it is possible to move from any register "
+"to any other register."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:10
+msgid "If a dependency cycle is encountered, one of the following will occur:"
+msgstr ""
+
+#: of pwnlib.regsort.regsort:13
+msgid ""
+"If ``xchg`` is :const:`True`, it is assumed that dependency cyles can be "
+"broken by swapping the contents of two register (a la the ``xchg`` "
+"instruction on i386)."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:16
+msgid ""
+"If ``xchg`` is not set, but not all destination registers in ``in_out`` "
+"are involved in a cycle, one of the registers outside the cycle will be "
+"used as a temporary register, and then overwritten with its final value."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:20
+msgid ""
+"If ``xchg`` is not set, and all registers are involved in a dependency "
+"cycle, the named register ``temporary`` is used as a temporary register."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:23
+msgid ""
+"If the dependency cycle cannot be resolved as described above, an "
+"exception is raised."
+msgstr ""
+
+#: of pwnlib.regsort.regsort
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.regsort.regsort:26
+msgid ""
+"Dictionary of desired register states. Keys are registers, values are "
+"either registers or any other value."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:29
+msgid ""
+"List of all possible registers. Used to determine which values in "
+"``in_out`` are registers, versus regular values."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:33
+msgid ""
+"Named register (or other sentinel value) to use as a temporary register."
+"  If ``tmp`` is a named register **and** appears as a source value in "
+"``in_out``, dependencies are handled appropriately.  ``tmp`` cannot be a "
+"destination register in ``in_out``. If ``bool(tmp)==True``, this mode is "
+"enabled."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:40
+msgid ""
+"Indicates the existence of an instruction which can swap the contents of "
+"two registers without use of a third register. If ``bool(xchg)==False``, "
+"this mode is disabled."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:44
+msgid "Randomize as much as possible about the order or registers."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:47
+msgid ""
+"A list of tuples of ``(src, dest)``.  Each register may appear more than "
+"once, if a register is used as a temporary register, and later "
+"overwritten with its final value.  If ``xchg`` is :const:`True` and it is"
+" used to break a dependency cycle, then ``reg_name`` will be "
+":const:`None` and ``value`` will be a tuple of the instructions to swap."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:47
+msgid "A list of tuples of ``(src, dest)``."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:49
+msgid ""
+"Each register may appear more than once, if a register is used as a "
+"temporary register, and later overwritten with its final value."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:53
+msgid ""
+"If ``xchg`` is :const:`True` and it is used to break a dependency cycle, "
+"then ``reg_name`` will be :const:`None` and ``value`` will be a tuple of "
+"the instructions to swap."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:61
+msgid "If order doesn't matter for any subsequence, alphabetic order is used."
+msgstr ""
+
+#: of pwnlib.regsort.regsort:68
+msgid ""
+"Registers which are assigned one of their own aliases are dropped, like "
+"same-name self-assignments."
+msgstr ""
+
+#: of pwnlib.regsort.resolve_order:1
+msgid "Resolve the order of all dependencies starting at a given register."
+msgstr ""
+

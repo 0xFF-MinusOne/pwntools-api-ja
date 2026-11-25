@@ -1,0 +1,580 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/filesystem.rst:13
+msgid ":mod:`pwnlib.filesystem` --- Manipulating Files Locally and Over SSH"
+msgstr ""
+
+#: ../pwntools/docs/source/filesystem.rst:15
+msgid ""
+"Provides a Python2-compatible :py:mod:`pathlib` interface for paths on "
+"the local filesystem (`.Path`) as well as on remote filesystems, via SSH "
+"(`.SSHPath`)."
+msgstr ""
+
+#: of pwnlib.filesystem:1
+msgid "Handles file abstraction for local vs. remote (via ssh)"
+msgstr ""
+
+#: of pathlib.Path:1
+msgid "PurePath subclass that can make system calls."
+msgstr ""
+
+#: of pathlib.Path:3
+msgid ""
+"Path represents a filesystem path but unlike PurePath, also offers "
+"methods to do system calls on path objects. Depending on your system, "
+"instantiating a Path will return either a PosixPath or a WindowsPath "
+"object. You can also instantiate a PosixPath or WindowsPath directly, but"
+" cannot instantiate a WindowsPath on a POSIX system or vice versa."
+msgstr ""
+
+#: of pathlib.Path:9 pathlib.Path.__new__:1 pwnlib.filesystem.ssh.SSHPath:48
+msgid ""
+"Construct a PurePath from one or several strings and or existing PurePath"
+" objects.  The strings and path objects are combined so as to yield a "
+"canonicalized path, which is incorporated into the new PurePath object."
+msgstr ""
+
+#: of pathlib.Path.cwd:1 pwnlib.filesystem.SSHPath.cwd:1
+msgid "Return a new path pointing to the current working directory."
+msgstr ""
+
+#: of pathlib.Path.home:1
+msgid ""
+"Return a new path pointing to the user's home directory (as returned by "
+"os.path.expanduser('~'))."
+msgstr ""
+
+#: of pathlib.Path.absolute:1
+msgid ""
+"Return an absolute version of this path by prepending the current working"
+" directory. No normalization or symlink resolution is performed."
+msgstr ""
+
+#: of pathlib.Path.absolute:4
+msgid "Use resolve() to get the canonical path to a file."
+msgstr ""
+
+#: of pathlib.Path.chmod:1
+msgid "Change the permissions of the path, like os.chmod()."
+msgstr ""
+
+#: of pathlib.Path.exists:1
+msgid "Whether this path exists."
+msgstr ""
+
+#: of pathlib.Path.exists:3
+msgid ""
+"This method normally follows symlinks; to check whether a symlink exists,"
+" add the argument follow_symlinks=False."
+msgstr ""
+
+#: of pathlib.Path.expanduser:1
+msgid ""
+"Return a new path with expanded ~ and ~user constructs (as returned by "
+"os.path.expanduser)"
+msgstr ""
+
+#: of pathlib.Path.glob:1 pwnlib.filesystem.ssh.SSHPath.glob:1
+msgid ""
+"Iterate over this subtree and yield all existing files (of any kind, "
+"including directories) matching the given relative pattern."
+msgstr ""
+
+#: of pathlib.Path.group:1 pwnlib.filesystem.ssh.SSHPath.group:1
+msgid "Return the group name of the file gid."
+msgstr ""
+
+#: of pathlib.Path.hardlink_to:1
+msgid "Make this path a hard link pointing to the same file as *target*."
+msgstr ""
+
+#: of pathlib.Path.hardlink_to:3
+msgid "Note the order of arguments (self, target) is the reverse of os.link's."
+msgstr ""
+
+#: of pathlib.Path.is_block_device:1
+#: pwnlib.filesystem.ssh.SSHPath.is_block_device:1
+msgid "Whether this path is a block device."
+msgstr ""
+
+#: of pathlib.Path.is_char_device:1
+#: pwnlib.filesystem.ssh.SSHPath.is_char_device:1
+msgid "Whether this path is a character device."
+msgstr ""
+
+#: of pathlib.Path.is_dir:1
+msgid "Whether this path is a directory."
+msgstr ""
+
+#: of pathlib.Path.is_fifo:1 pwnlib.filesystem.ssh.SSHPath.is_fifo:1
+msgid "Whether this path is a FIFO."
+msgstr ""
+
+#: of pathlib.Path.is_file:1
+msgid ""
+"Whether this path is a regular file (also True for symlinks pointing to "
+"regular files)."
+msgstr ""
+
+#: of pathlib.Path.is_junction:1
+msgid "Whether this path is a junction."
+msgstr ""
+
+#: of pathlib.Path.is_mount:1
+msgid "Check if this path is a mount point"
+msgstr ""
+
+#: of pathlib.Path.is_socket:1 pwnlib.filesystem.ssh.SSHPath.is_socket:1
+msgid "Whether this path is a socket."
+msgstr ""
+
+#: of pathlib.Path.is_symlink:1 pwnlib.filesystem.ssh.SSHPath.is_symlink:1
+msgid "Whether this path is a symbolic link."
+msgstr ""
+
+#: of pathlib.Path.iterdir:1
+msgid "Yield path objects of the directory contents."
+msgstr ""
+
+#: of pathlib.Path.iterdir:3
+msgid ""
+"The children are yielded in arbitrary order, and the special entries '.' "
+"and '..' are not included."
+msgstr ""
+
+#: of pathlib.Path.lchmod:1 pwnlib.filesystem.ssh.SSHPath.lchmod:1
+msgid ""
+"Like chmod(), except if the path points to a symlink, the symlink's "
+"permissions are changed, rather than its target's."
+msgstr ""
+
+#: of pathlib.Path.lstat:1
+msgid ""
+"Like stat(), except if the path points to a symlink, the symlink's status"
+" information is returned, rather than its target's."
+msgstr ""
+
+#: of pathlib.Path.mkdir:1
+msgid "Create a new directory at this given path."
+msgstr ""
+
+#: of pathlib.Path.open:1
+msgid ""
+"Open the file pointed to by this path and return a file object, as the "
+"built-in open() function does."
+msgstr ""
+
+#: of pathlib.Path.owner:1 pwnlib.filesystem.ssh.SSHPath.owner:1
+msgid "Return the login name of the file owner."
+msgstr ""
+
+#: of pathlib.Path.read_bytes:1
+msgid "Open the file in bytes mode, read it, and close the file."
+msgstr ""
+
+#: of pathlib.Path.read_text:1
+msgid "Open the file in text mode, read it, and close the file."
+msgstr ""
+
+#: of pathlib.Path.readlink:1 pwnlib.filesystem.ssh.SSHPath.readlink:1
+msgid "Return the path to which the symbolic link points."
+msgstr ""
+
+#: of pathlib.Path.rename:1
+msgid "Rename this path to the target path."
+msgstr ""
+
+#: of pathlib.Path.rename:3 pathlib.Path.replace:3
+msgid ""
+"The target path may be absolute or relative. Relative paths are "
+"interpreted relative to the current working directory, *not* the "
+"directory of the Path object."
+msgstr ""
+
+#: of pathlib.Path.rename:7 pathlib.Path.replace:7
+msgid "Returns the new Path instance pointing to the target path."
+msgstr ""
+
+#: of pathlib.Path.replace:1
+msgid "Rename this path to the target path, overwriting if that path exists."
+msgstr ""
+
+#: of pathlib.Path.resolve:1
+msgid ""
+"Make the path absolute, resolving all symlinks on the way and also "
+"normalizing it."
+msgstr ""
+
+#: of pathlib.Path.rglob:1 pwnlib.filesystem.ssh.SSHPath.rglob:1
+msgid ""
+"Recursively yield all existing files (of any kind, including directories)"
+" matching the given relative pattern, anywhere in this subtree."
+msgstr ""
+
+#: of pathlib.Path.rmdir:1
+msgid "Remove this directory.  The directory must be empty."
+msgstr ""
+
+#: of pathlib.Path.samefile:1
+msgid ""
+"Return whether other_path is the same or not as this file (as returned by"
+" os.path.samefile())."
+msgstr ""
+
+#: of pathlib.Path.stat:1
+msgid ""
+"Return the result of the stat() system call on this path, like os.stat() "
+"does."
+msgstr ""
+
+#: of pathlib.Path.symlink_to:1
+msgid ""
+"Make this path a symlink pointing to the target path. Note the order of "
+"arguments (link, target) is the reverse of os.symlink."
+msgstr ""
+
+#: of pathlib.Path.touch:1
+msgid "Create this file with the given access mode, if it doesn't exist."
+msgstr ""
+
+#: of pathlib.Path.unlink:1
+msgid "Remove this file or link. If the path is a directory, use rmdir() instead."
+msgstr ""
+
+#: of pathlib.Path.walk:1
+msgid "Walk the directory tree from this directory, similar to os.walk()."
+msgstr ""
+
+#: of pathlib.Path.write_bytes:1
+msgid "Open the file in bytes mode, write to it, and close the file."
+msgstr ""
+
+#: of pathlib.Path.write_text:1
+msgid "Open the file in text mode, write to it, and close the file."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:1
+msgid "Represents a file that exists on a remote filesystem."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:3
+msgid ""
+"See :class:`.ssh` for more information on how to set up an SSH "
+"connection. See :py:class:`pathlib.Path` for documentation on what "
+"members and properties this object has."
+msgstr ""
+
+#: ../pwntools/docs/source/filesystem.rst
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:7
+msgid "Name of the file"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:9
+msgid ":class:`.ssh` object for manipulating remote files"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:14
+msgid ""
+"You can avoid having to supply ``ssh=`` on every ``SSHPath`` by setting "
+":data:`.context.ssh_session`. In these examples we provide ``ssh=`` for "
+"clarity."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:19 pwnlib.filesystem.ssh.SSHPath.resolve:8
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:20
+msgid "First, create an SSH connection to the server."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:24
+msgid "Let's use a temporary directory for our tests"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:28
+msgid ""
+"Next, you can create SSHPath objects to represent the paths to files on "
+"the remote system."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath:41
+msgid ""
+"``context.ssh_session`` must be set to use the :meth:`.SSHPath.mktemp` or"
+" :meth:`.SSHPath.mkdtemp` methods."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.__bytes__:1
+msgid ""
+"Return the bytes representation of the path.  This is only recommended to"
+" use under Unix."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.__eq__:1
+msgid "Return self==value."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.__str__:1
+msgid ""
+"Return the string representation of the path, suitable for passing to "
+"system calls."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.absolute:1
+msgid ""
+"Return the absolute path to a file, preserving e.g. \"../\". The current "
+"working directory is determined via the :class:`.ssh` member "
+":attr:`.ssh.cwd`."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.absolute:6
+#: pwnlib.filesystem.ssh.SSHPath.exists:4
+#: pwnlib.filesystem.ssh.SSHPath.expanduser:4
+#: pwnlib.filesystem.ssh.SSHPath.is_dir:4
+#: pwnlib.filesystem.ssh.SSHPath.is_file:4
+#: pwnlib.filesystem.ssh.SSHPath.rename:4
+#: pwnlib.filesystem.ssh.SSHPath.replace:4
+#: pwnlib.filesystem.ssh.SSHPath.rmdir:4
+#: pwnlib.filesystem.ssh.SSHPath.symlink_to:9
+#: pwnlib.filesystem.ssh.SSHPath.unlink:9
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.as_posix:1
+msgid "Return the string representation of the path with forward (/) slashes."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.as_uri:1
+msgid "Return the path as a 'file' URI."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.chmod:1
+msgid "Change the permissions of a file"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.exists:1
+msgid "Returns True if the path exists"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.expanduser:1
+msgid "Expands a path that starts with a tilde"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.is_absolute:1
+msgid "Returns whether a path is absolute or not."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.is_dir:1
+msgid "Returns True if the path exists and is a directory"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.is_file:1
+msgid "Returns True if the path exists and is a file"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.is_relative_to:1
+msgid "Return True if the path is relative to another path or False."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.is_reserved:1
+msgid ""
+"Return True if the path contains one of the special names reserved by the"
+" system, if any."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.iterdir:1
+msgid "Iterates over the contents of the directory"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.joinpath:1
+msgid "Combine this path with one or several arguments."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.match:1
+msgid "Return True if this path matches the given pattern."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.mkdir:1
+msgid "Make a directory at the specified path"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.open:1
+msgid "Return a file-like object for this path."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.open:3
+msgid "This currently seems to be broken in Paramiko."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.read_bytes:1
+msgid "Read bytes from the file at this path"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.read_text:1
+msgid "Read text from the file at this path"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.relative_to:1
+msgid ""
+"Return the relative path to another path identified by the passed "
+"arguments.  If the operation is not possible (because this is not related"
+" to the other path), raise ValueError."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.relative_to:5
+msgid ""
+"The *walk_up* parameter controls whether `..` may be used to resolve the "
+"path."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.rename:1
+msgid "Rename a file to the target path"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.replace:1
+msgid "Replace target file with file at this path"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.resolve:1
+msgid ""
+"Return the absolute path to a file, resolving any '..' or symlinks. The "
+"current working directory is determined via the :class:`.ssh` member "
+":attr:`.ssh.cwd`."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.resolve:5
+msgid "The file must exist to call resolve()."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.rmdir:1
+msgid "Remove an existing directory."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.samefile:1
+msgid "Returns whether two files are the same"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.stat:1
+msgid "Returns the permissions and other information about the file"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.symlink_to:1
+msgid "Create a symlink at this path to the provided target"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.symlink_to:3
+#: pwnlib.filesystem.ssh.SSHPath.unlink:3
+msgid "Todo"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.symlink_to:5
+msgid ""
+"Paramiko's documentation is wrong and inverted. "
+"https://github.com/paramiko/paramiko/issues/1821"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.touch:1
+msgid "Touch a file (i.e. make it exist)"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.unlink:1
+msgid "Remove an existing file."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.unlink:5
+msgid ""
+"This test fails catastrophically if the file name is unlink_me (note the "
+"underscore)"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.unlink:20
+msgid "Note that unlink only works on files."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.with_name:1
+msgid "Return a new path with the file name changed"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.with_stem:1
+msgid "Return a new path with the stem changed."
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.with_suffix:1
+msgid "Return a new path with the file suffix changed"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.write_bytes:1
+msgid "Write bytes to the file at this path"
+msgstr ""
+
+#: of pwnlib.filesystem.ssh.SSHPath.write_text:1
+msgid "Write text to the file at this path"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.filesystem.SSHPath.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.anchor:1
+msgid "The concatenation of the drive and root, or ''."
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.home:1
+msgid "Returns the home directory for the SSH connection"
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.name:1
+msgid "Returns the name of the file."
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.parent:1
+msgid "Return the parent of this path"
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.parents:1
+msgid "Return the parents of this path, as individual parts"
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.parts:1
+msgid "Return the individual parts of the path"
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.stem:1
+msgid "Returns the stem of a file without any extension"
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.suffix:1
+msgid "Returns the suffix of the file."
+msgstr ""
+
+#: of pwnlib.filesystem.SSHPath.suffixes:1
+msgid "Returns the suffixes of a file"
+msgstr ""
+

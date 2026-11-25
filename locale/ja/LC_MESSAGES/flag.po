@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/flag.rst:7
+msgid ":mod:`pwnlib.flag` --- CTF Flag Management"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:1
+msgid "Submits a flag to the game server"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:3
+msgid "The flag to submit."
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:5
+msgid "Exploit identifier, optional"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:7
+msgid "Target identifier, optional"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:9
+msgid "Flag server host name, optional"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:11
+msgid "Flag server port, optional"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:13
+msgid "Team identifier, optional"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:16
+msgid ""
+"Optional arguments are inferred from the environment, or omitted if none "
+"is set."
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:19
+msgid "A string indicating the status of the key submission, or an error code."
+msgstr ""
+
+#: of pwnlib.flag.flag.submit_flag:22
+msgid "Doctest:"
+msgstr ""
+

@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/memleak.rst:6
+msgid ":mod:`pwnlib.memleak` --- Helper class for leaking memory"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:1
+msgid "MemLeak is a caching and heuristic tool for exploiting memory leaks."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:3
+msgid "It can be used as a decorator, around functions of the form:"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:5
+msgid "def some_leaker(addr):"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:6
+msgid "... return data_as_string_or_None"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:9
+msgid ""
+"It will cache leaked memory (which requires either non-randomized static "
+"data or a continouous session). If required, dynamic or known data can be"
+" set with the set-functions, but this is usually not required. If a byte "
+"cannot be recovered, it will try to leak nearby bytes in the hope that "
+"the byte is recovered as a side-effect."
+msgstr ""
+
+#: ../pwntools/docs/source/memleak.rst
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:15
+msgid "The leaker function."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:17
+msgid "How many bytes to search backwards in case an address does not work."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:19
+msgid ""
+"Whether to reraise call :func:`pwnlib.log.warning` in case the leaker "
+"function throws an exception."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:21
+msgid ""
+"If set, persist the leak cache to this path and reload it on "
+"construction, so leaked bytes are reused across runs."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak:24
+msgid "Example:"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.NoNewlines:1
+msgid ""
+"Wrapper for leak functions such that addresses which contain newline "
+"bytes are not leaked."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.NoNewlines:4
+msgid ""
+"This is useful if the address which is used for the leak is provided by "
+"e.g. ``fgets()``."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.NoNulls:1
+msgid ""
+"Wrapper for leak functions such that addresses which contain NULL bytes "
+"are not leaked."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.NoNulls:4
+#, python-format
+msgid ""
+"This is useful if the address which is used for the leak is read in via a"
+" string-reading function like ``scanf(\"%s\")`` or smilar."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.NoWhitespace:1
+msgid ""
+"Wrapper for leak functions such that addresses which contain whitespace "
+"bytes are not leaked."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.NoWhitespace:4
+msgid ""
+"This is useful if the address which is used for the leak is read in via "
+"e.g. ``scanf()``."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.String:1
+msgid ""
+"Wrapper for leak functions which leak strings, such that a NULL "
+"terminator is automaticall added."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.String:4
+msgid ""
+"This is useful if the data leaked is printed out as a NULL-terminated "
+"string, via e.g. ``printf()``."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.__call__:1
+msgid "Call self as a function."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak._leak:1
+msgid "_leak(addr, n) => str"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak._leak:3
+msgid "Leak ``n`` consecutive bytes starting at ``addr``."
+msgstr ""
+
+#: ../pwntools/docs/source/memleak.rst of pwnlib.memleak.MemLeak.n
+#: pwnlib.memleak.MemLeak.s
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak._leak:5
+msgid "A string of length ``n``, or :const:`None`."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.b:1 pwnlib.memleak.MemLeak.b:3
+msgid "Leak byte at ``((uint8_t*) addr)[ndx]``"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.b:4 pwnlib.memleak.MemLeak.b:6
+#: pwnlib.memleak.MemLeak.clearb:5 pwnlib.memleak.MemLeak.cleard:5
+#: pwnlib.memleak.MemLeak.clearq:5 pwnlib.memleak.MemLeak.clearw:5
+#: pwnlib.memleak.MemLeak.d:4 pwnlib.memleak.MemLeak.d:6
+#: pwnlib.memleak.MemLeak.n:6 pwnlib.memleak.MemLeak.q:4
+#: pwnlib.memleak.MemLeak.q:6 pwnlib.memleak.MemLeak.s:9
+#: pwnlib.memleak.MemLeak.setb:4 pwnlib.memleak.MemLeak.setd:4
+#: pwnlib.memleak.MemLeak.setq:4 pwnlib.memleak.MemLeak.sets:7
+#: pwnlib.memleak.MemLeak.setw:4 pwnlib.memleak.MemLeak.struct:12
+#: pwnlib.memleak.MemLeak.w:4 pwnlib.memleak.MemLeak.w:6
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.clearb:1
+msgid ""
+"Clears byte at ``((uint8_t*)addr)[ndx]`` from the cache and returns the "
+"removed value or `None` if the address was not completely set."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.cleard:1
+msgid ""
+"Clears dword at ``((uint32_t*)addr)[ndx]`` from the cache and returns the"
+" removed value or `None` if the address was not completely set."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.clearq:1
+msgid ""
+"Clears qword at ``((uint64_t*)addr)[ndx]`` from the cache and returns the"
+" removed value or `None` if the address was not completely set."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.clearw:1
+msgid ""
+"Clears word at ``((uint16_t*)addr)[ndx]`` from the cache and returns the "
+"removed value or `None` if the address was not completely set."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.d:1 pwnlib.memleak.MemLeak.d:3
+msgid "Leak dword at ``((uint32_t*) addr)[ndx]``"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field:1
+msgid "field(address, field) => a structure field."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field:3
+msgid "Leak a field from a structure."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field:5 pwnlib.memleak.MemLeak.field_compare:6
+msgid "Base address to calculate offsets from"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field:7 pwnlib.memleak.MemLeak.field_compare:8
+msgid "Instance of a ctypes field"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field:10 pwnlib.memleak.MemLeak.field_compare:13
+#: pwnlib.memleak.MemLeak.struct:8
+msgid "Return Value:"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field:11 pwnlib.memleak.MemLeak.field_compare:14
+msgid "The type of the return value will be dictated by the type of ``field``."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field_compare:1
+msgid "field_compare(address, field, expected) ==> bool"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field_compare:3
+msgid ""
+"Leak a field from a structure, with an expected value. As soon as any "
+"mismatch is found, stop leaking the structure."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.field_compare:10
+msgid "Expected value"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.n:1
+msgid "Leak `numb` bytes at `addr`."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.n:3
+msgid "A string with the leaked bytes, will return `None` if any are missing"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.p:1
+msgid "Leak a pointer-width value at ``((void**) addr)[ndx]``"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.setw:1
+msgid "Sets word at ``((uint16_t*)addr)[ndx]`` to `val` in the cache."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.setd:1
+msgid "Sets dword at ``((uint32_t*)addr)[ndx]`` to `val` in the cache."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.setd:5 pwnlib.memleak.MemLeak.setq:5
+msgid "See :meth:`setw`."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.setq:1
+msgid "Sets qword at ``((uint64_t*)addr)[ndx]`` to `val` in the cache."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.setb:1
+msgid "Sets byte at ``((uint8_t*)addr)[ndx]`` to `val` in the cache."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.q:1 pwnlib.memleak.MemLeak.q:3
+msgid "Leak qword at ``((uint64_t*) addr)[ndx]``"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.raw:1
+msgid "Leak `numb` bytes at `addr`"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.s:1
+msgid "Leak bytes at `addr` until failure or a nullbyte is found"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.s:3
+msgid ""
+"A string, without a NULL terminator. The returned string will be empty if"
+" the first byte is a NULL terminator, or if the first byte could not be "
+"retrieved."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.sets:1
+msgid "Set known string at `addr`, which will be optionally be null-terminated"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.sets:3
+msgid ""
+"Note that this method is a bit dumb about how it handles the data. It "
+"will null-terminate the data, but it will not stop at the first null."
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.struct:1
+msgid ""
+"struct(address, struct) => structure object Leak an entire structure. "
+":param address: Addess of structure in memory :type address: int :param "
+"struct: A ctypes structure to be instantiated with leaked data :type "
+"struct: class"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.struct:9
+msgid "An instance of the provided struct class, with the leaked data decoded"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.w:1
+msgid "w(addr, ndx = 0) -> int"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.w:1 pwnlib.memleak.MemLeak.w:3
+msgid "Leak word at ``((uint16_t*) addr)[ndx]``"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.d:1
+msgid "d(addr, ndx = 0) -> int"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.q:1
+msgid "q(addr, ndx = 0) -> int"
+msgstr ""
+
+#: of pwnlib.memleak.MemLeak.b:1
+msgid "b(addr, ndx = 0) -> int"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.memleak.MemLeak.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+

@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/constants.rst:7
+msgid ":mod:`pwnlib.constants` --- Easy access to header file constants"
+msgstr ""
+
+#: of pwnlib.constants:1
+msgid "Module containing constants extracted from header files."
+msgstr ""
+
+#: of pwnlib.constants:3
+msgid ""
+"The purpose of this module is to provide quick access to constants from "
+"different architectures and operating systems."
+msgstr ""
+
+#: of pwnlib.constants:6
+msgid ""
+"The constants are wrapped by a convenience class that allows accessing "
+"the name of the constant, while performing all normal mathematical "
+"operations on it."
+msgstr ""
+
+#: of pwnlib.constants:11 pwnlib.constants:31
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.constants:23
+msgid ""
+"The submodule ``freebsd`` contains all constants for FreeBSD, while the "
+"constants for Linux have been split up by architecture."
+msgstr ""
+
+#: of pwnlib.constants:26
+msgid ""
+"The variables of the submodules will be \"lifted up\" by setting the "
+":data:`pwnlib.context.arch` or :data:`pwnlib.context.os` in a manner "
+"similar to what happens in :mod:`pwnlib.shellcraft`."
+msgstr ""
+

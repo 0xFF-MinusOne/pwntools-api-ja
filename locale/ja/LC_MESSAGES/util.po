@@ -1,0 +1,5307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/util/crc.rst:7
+msgid ":mod:`pwnlib.util.crc` --- Calculating CRC-sums"
+msgstr ""
+
+#: of pwnlib.util.crc:1
+msgid "Module for calculating CRC-sums."
+msgstr ""
+
+#: of pwnlib.util.crc:3
+msgid ""
+"Contains all crc implementations know on the interwebz. For most "
+"implementations it contains only the core crc algorithm and not e.g. "
+"padding schemes."
+msgstr ""
+
+#: of pwnlib.util.crc:6
+msgid ""
+"It is horribly slow, as implements a naive algorithm working direclty on "
+"bit polynomials. This class is exposed as `BitPolynom`."
+msgstr ""
+
+#: of pwnlib.util.crc:9
+msgid ""
+"The current algorithm is super-linear and takes about 4 seconds to "
+"calculate the crc32-sum of ``'A'*40000``."
+msgstr ""
+
+#: of pwnlib.util.crc:12
+msgid "An obvious optimization would be to actually generate some lookup-tables."
+msgstr ""
+
+#: of pwnlib.util.crc:14
+msgid "This doctest is to ensure that the known data are accurate:"
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom:1
+msgid "Class for representing GF(2)[X], i.e. the field of polynomials over GF(2)."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom:4
+msgid ""
+"In practice the polynomials are represented as numbers such that `x**n` "
+"corresponds to `1 << n`. In this representation calculations are easy: "
+"Just do everything as normal, but forget about everything the carries."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom:8
+msgid "Addition becomes xor and multiplication becomes carry-less multiplication."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom:11 pwnlib.util.crc.BitPolynom.degree:4
+#: pwnlib.util.cyclic.cyclic_find:22
+#: pwnlib.util.cyclic.cyclic_metasploit_find:9 pwnlib.util.fiddling.bits:14
+#: pwnlib.util.fiddling.bits_str:4 pwnlib.util.fiddling.bitswap_int:9
+#: pwnlib.util.fiddling.hexdump:30 pwnlib.util.iters.consume:12
+#: pwnlib.util.iters.cyclen:11 pwnlib.util.iters.flatten:11
+#: pwnlib.util.iters.group:13 pwnlib.util.iters.iter_except:15
+#: pwnlib.util.iters.nth:14 pwnlib.util.iters.pad:11
+#: pwnlib.util.iters.powerset:10 pwnlib.util.iters.quantify:11
+#: pwnlib.util.iters.random_combination:8
+#: pwnlib.util.iters.random_combination_with_replacement:11
+#: pwnlib.util.iters.random_permutation:11 pwnlib.util.iters.random_product:8
+#: pwnlib.util.iters.repeat_func:15 pwnlib.util.iters.roundrobin:9
+#: pwnlib.util.iters.tabulate:9 pwnlib.util.iters.take:12
+#: pwnlib.util.iters.unique_everseen:13 pwnlib.util.iters.unique_justseen:15
+#: pwnlib.util.iters.unique_window:17 pwnlib.util.misc.read:4
+#: pwnlib.util.net.interfaces4:12 pwnlib.util.net.interfaces6:12
+#: pwnlib.util.packing:11 pwnlib.util.packing.dd:34 pwnlib.util.packing.flat:47
+#: pwnlib.util.packing.make_packer:19 pwnlib.util.packing.make_unpacker:19
+#: pwnlib.util.packing.overlap:25 pwnlib.util.packing.p16:16
+#: pwnlib.util.packing.p32:16 pwnlib.util.packing.p40:16
+#: pwnlib.util.packing.p48:16 pwnlib.util.packing.p56:16
+#: pwnlib.util.packing.p64:16 pwnlib.util.packing.pack:26
+#: pwnlib.util.packing.unpack:24 pwnlib.util.packing.unpack_many:15
+#: pwnlib.util.safeeval.const:8 pwnlib.util.safeeval.expr:8
+#: pwnlib.util.safeeval.values:11 pwnlib.util.sh_string.sh_command_with:13
+#: pwnlib.util.sh_string.sh_prepare:17 pwnlib.util.sh_string.sh_string:17
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom.__eq__:1
+msgid "Return self==value."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom.__hash__:1
+msgid "Return hash(self)."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom.__or__:1
+msgid "Return self|value."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom.__repr__:1
+#: pwnlib.util.getdents.linux_dirent.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom.__ror__:1
+msgid "Return value|self."
+msgstr ""
+
+#: of pwnlib.util.crc.BitPolynom.degree:1
+msgid "Returns the degree of the polynomial."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.util.crc.BitPolynom.__weakref__:1
+#: pwnlib.util.cyclic.cyclic_gen.__weakref__:1
+#: pwnlib.util.getdents.linux_dirent.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.util.crc.Module.cksum:1
+msgid "Calculates the same checksum as returned by the UNIX-tool ``cksum``."
+msgstr ""
+
+#: ../pwntools/docs/source/util/crc.rst ../pwntools/docs/source/util/cyclic.rst
+#: ../pwntools/docs/source/util/fiddling.rst
+#: ../pwntools/docs/source/util/iters.rst ../pwntools/docs/source/util/misc.rst
+#: ../pwntools/docs/source/util/net.rst
+#: ../pwntools/docs/source/util/packing.rst
+#: ../pwntools/docs/source/util/proc.rst of pwnlib.util.crc.Module.cksum
+#: pwnlib.util.crc.Module.find_crc_function pwnlib.util.crc.crc_crc_10_atm
+#: pwnlib.util.crc.crc_crc_10_cdma2000 pwnlib.util.crc.crc_crc_10_gsm
+#: pwnlib.util.crc.crc_crc_11_flexray pwnlib.util.crc.crc_crc_11_umts
+#: pwnlib.util.crc.crc_crc_12_cdma2000 pwnlib.util.crc.crc_crc_12_dect
+#: pwnlib.util.crc.crc_crc_12_gsm pwnlib.util.crc.crc_crc_12_umts
+#: pwnlib.util.crc.crc_crc_13_bbc pwnlib.util.crc.crc_crc_14_darc
+#: pwnlib.util.crc.crc_crc_14_gsm pwnlib.util.crc.crc_crc_15_can
+#: pwnlib.util.crc.crc_crc_15_mpt1327 pwnlib.util.crc.crc_crc_16_arc
+#: pwnlib.util.crc.crc_crc_16_cdma2000 pwnlib.util.crc.crc_crc_16_cms
+#: pwnlib.util.crc.crc_crc_16_dds_110 pwnlib.util.crc.crc_crc_16_dect_r
+#: pwnlib.util.crc.crc_crc_16_dect_x pwnlib.util.crc.crc_crc_16_dnp
+#: pwnlib.util.crc.crc_crc_16_en_13757 pwnlib.util.crc.crc_crc_16_genibus
+#: pwnlib.util.crc.crc_crc_16_gsm pwnlib.util.crc.crc_crc_16_ibm_3740
+#: pwnlib.util.crc.crc_crc_16_ibm_sdlc
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a
+#: pwnlib.util.crc.crc_crc_16_kermit pwnlib.util.crc.crc_crc_16_lj1200
+#: pwnlib.util.crc.crc_crc_16_m17 pwnlib.util.crc.crc_crc_16_maxim_dow
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx pwnlib.util.crc.crc_crc_16_modbus
+#: pwnlib.util.crc.crc_crc_16_nrsc_5 pwnlib.util.crc.crc_crc_16_opensafety_a
+#: pwnlib.util.crc.crc_crc_16_opensafety_b pwnlib.util.crc.crc_crc_16_profibus
+#: pwnlib.util.crc.crc_crc_16_riello pwnlib.util.crc.crc_crc_16_spi_fujitsu
+#: pwnlib.util.crc.crc_crc_16_t10_dif pwnlib.util.crc.crc_crc_16_teledisk
+#: pwnlib.util.crc.crc_crc_16_tms37157 pwnlib.util.crc.crc_crc_16_umts
+#: pwnlib.util.crc.crc_crc_16_usb pwnlib.util.crc.crc_crc_16_xmodem
+#: pwnlib.util.crc.crc_crc_17_can_fd pwnlib.util.crc.crc_crc_21_can_fd
+#: pwnlib.util.crc.crc_crc_24_ble pwnlib.util.crc.crc_crc_24_flexray_a
+#: pwnlib.util.crc.crc_crc_24_flexray_b pwnlib.util.crc.crc_crc_24_interlaken
+#: pwnlib.util.crc.crc_crc_24_lte_a pwnlib.util.crc.crc_crc_24_lte_b
+#: pwnlib.util.crc.crc_crc_24_openpgp pwnlib.util.crc.crc_crc_24_os_9
+#: pwnlib.util.crc.crc_crc_30_cdma pwnlib.util.crc.crc_crc_31_philips
+#: pwnlib.util.crc.crc_crc_32_aixm pwnlib.util.crc.crc_crc_32_autosar
+#: pwnlib.util.crc.crc_crc_32_base91_d pwnlib.util.crc.crc_crc_32_bzip2
+#: pwnlib.util.crc.crc_crc_32_cd_rom_edc pwnlib.util.crc.crc_crc_32_cksum
+#: pwnlib.util.crc.crc_crc_32_iscsi pwnlib.util.crc.crc_crc_32_iso_hdlc
+#: pwnlib.util.crc.crc_crc_32_jamcrc pwnlib.util.crc.crc_crc_32_mef
+#: pwnlib.util.crc.crc_crc_32_mpeg_2 pwnlib.util.crc.crc_crc_32_xfer
+#: pwnlib.util.crc.crc_crc_3_gsm pwnlib.util.crc.crc_crc_3_rohc
+#: pwnlib.util.crc.crc_crc_40_gsm pwnlib.util.crc.crc_crc_4_g_704
+#: pwnlib.util.crc.crc_crc_4_interlaken pwnlib.util.crc.crc_crc_5_epc_c1g2
+#: pwnlib.util.crc.crc_crc_5_g_704 pwnlib.util.crc.crc_crc_5_usb
+#: pwnlib.util.crc.crc_crc_64_ecma_182 pwnlib.util.crc.crc_crc_64_go_iso
+#: pwnlib.util.crc.crc_crc_64_ms pwnlib.util.crc.crc_crc_64_we
+#: pwnlib.util.crc.crc_crc_64_xz pwnlib.util.crc.crc_crc_6_cdma2000_a
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b pwnlib.util.crc.crc_crc_6_darc
+#: pwnlib.util.crc.crc_crc_6_g_704 pwnlib.util.crc.crc_crc_6_gsm
+#: pwnlib.util.crc.crc_crc_7_mmc pwnlib.util.crc.crc_crc_7_rohc
+#: pwnlib.util.crc.crc_crc_7_umts pwnlib.util.crc.crc_crc_82_darc
+#: pwnlib.util.crc.crc_crc_8_autosar pwnlib.util.crc.crc_crc_8_bluetooth
+#: pwnlib.util.crc.crc_crc_8_cdma2000 pwnlib.util.crc.crc_crc_8_darc
+#: pwnlib.util.crc.crc_crc_8_dvb_s2 pwnlib.util.crc.crc_crc_8_gsm_a
+#: pwnlib.util.crc.crc_crc_8_gsm_b pwnlib.util.crc.crc_crc_8_hitag
+#: pwnlib.util.crc.crc_crc_8_i_432_1 pwnlib.util.crc.crc_crc_8_i_code
+#: pwnlib.util.crc.crc_crc_8_lte pwnlib.util.crc.crc_crc_8_maxim_dow
+#: pwnlib.util.crc.crc_crc_8_mifare_mad pwnlib.util.crc.crc_crc_8_nrsc_5
+#: pwnlib.util.crc.crc_crc_8_opensafety pwnlib.util.crc.crc_crc_8_rohc
+#: pwnlib.util.crc.crc_crc_8_sae_j1850 pwnlib.util.crc.crc_crc_8_smbus
+#: pwnlib.util.crc.crc_crc_8_tech_3250 pwnlib.util.crc.crc_crc_8_wcdma
+#: pwnlib.util.cyclic.cyclic pwnlib.util.cyclic.cyclic_find
+#: pwnlib.util.cyclic.cyclic_metasploit
+#: pwnlib.util.cyclic.cyclic_metasploit_find pwnlib.util.fiddling.bits
+#: pwnlib.util.fiddling.bitswap_int pwnlib.util.fiddling.hexdump
+#: pwnlib.util.fiddling.hexdump_iter pwnlib.util.fiddling.js_escape
+#: pwnlib.util.fiddling.js_unescape pwnlib.util.fiddling.randoms
+#: pwnlib.util.fiddling.rol pwnlib.util.fiddling.tty_escape
+#: pwnlib.util.fiddling.unbits pwnlib.util.fiddling.xor
+#: pwnlib.util.fiddling.xor_key pwnlib.util.fiddling.xor_pair
+#: pwnlib.util.getdents.dirents pwnlib.util.getdents.dirents64
+#: pwnlib.util.iters.bruteforce pwnlib.util.iters.chained
+#: pwnlib.util.iters.consume pwnlib.util.iters.cyclen
+#: pwnlib.util.iters.dotproduct pwnlib.util.iters.flatten
+#: pwnlib.util.iters.group pwnlib.util.iters.iter_except
+#: pwnlib.util.iters.lexicographic pwnlib.util.iters.nth pwnlib.util.iters.pad
+#: pwnlib.util.iters.powerset pwnlib.util.iters.quantify
+#: pwnlib.util.iters.random_combination
+#: pwnlib.util.iters.random_combination_with_replacement
+#: pwnlib.util.iters.random_permutation pwnlib.util.iters.random_product
+#: pwnlib.util.iters.repeat_func pwnlib.util.iters.roundrobin
+#: pwnlib.util.iters.tabulate pwnlib.util.iters.take
+#: pwnlib.util.iters.unique_everseen pwnlib.util.iters.unique_justseen
+#: pwnlib.util.iters.unique_window pwnlib.util.lists.group
+#: pwnlib.util.lists.partition pwnlib.util.misc.parse_ldd_output
+#: pwnlib.util.misc.size pwnlib.util.misc.which pwnlib.util.net.interfaces4
+#: pwnlib.util.net.interfaces6 pwnlib.util.packing.flat
+#: pwnlib.util.packing.make_packer pwnlib.util.packing.make_unpacker
+#: pwnlib.util.packing.overlap pwnlib.util.packing.p16 pwnlib.util.packing.p32
+#: pwnlib.util.packing.p40 pwnlib.util.packing.p48 pwnlib.util.packing.p56
+#: pwnlib.util.packing.p64 pwnlib.util.packing.pack pwnlib.util.packing.unpack
+#: pwnlib.util.proc.ancestors pwnlib.util.proc.cmdline pwnlib.util.proc.cwd
+#: pwnlib.util.proc.descendants pwnlib.util.proc.exe
+#: pwnlib.util.proc.memory_maps pwnlib.util.proc.name
+#: pwnlib.util.proc.pid_by_name pwnlib.util.proc.pidof
+#: pwnlib.util.proc.starttime pwnlib.util.proc.stat pwnlib.util.proc.state
+#: pwnlib.util.proc.tracer pwnlib.util.sh_string.sh_prepare
+#: pwnlib.util.web.wget
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.util.crc.Module.cksum:3 pwnlib.util.crc.crc_crc_10_atm:14
+#: pwnlib.util.crc.crc_crc_10_cdma2000:14 pwnlib.util.crc.crc_crc_10_gsm:14
+#: pwnlib.util.crc.crc_crc_11_flexray:14 pwnlib.util.crc.crc_crc_11_umts:14
+#: pwnlib.util.crc.crc_crc_12_cdma2000:14 pwnlib.util.crc.crc_crc_12_dect:14
+#: pwnlib.util.crc.crc_crc_12_gsm:14 pwnlib.util.crc.crc_crc_12_umts:14
+#: pwnlib.util.crc.crc_crc_13_bbc:14 pwnlib.util.crc.crc_crc_14_darc:14
+#: pwnlib.util.crc.crc_crc_14_gsm:14 pwnlib.util.crc.crc_crc_15_can:14
+#: pwnlib.util.crc.crc_crc_15_mpt1327:14 pwnlib.util.crc.crc_crc_16_arc:14
+#: pwnlib.util.crc.crc_crc_16_cdma2000:14 pwnlib.util.crc.crc_crc_16_cms:14
+#: pwnlib.util.crc.crc_crc_16_dds_110:14 pwnlib.util.crc.crc_crc_16_dect_r:14
+#: pwnlib.util.crc.crc_crc_16_dect_x:14 pwnlib.util.crc.crc_crc_16_dnp:14
+#: pwnlib.util.crc.crc_crc_16_en_13757:14 pwnlib.util.crc.crc_crc_16_genibus:14
+#: pwnlib.util.crc.crc_crc_16_gsm:14 pwnlib.util.crc.crc_crc_16_ibm_3740:14
+#: pwnlib.util.crc.crc_crc_16_ibm_sdlc:14
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:14
+#: pwnlib.util.crc.crc_crc_16_kermit:14 pwnlib.util.crc.crc_crc_16_lj1200:14
+#: pwnlib.util.crc.crc_crc_16_m17:14 pwnlib.util.crc.crc_crc_16_maxim_dow:14
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:14 pwnlib.util.crc.crc_crc_16_modbus:14
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:14
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:14
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:14
+#: pwnlib.util.crc.crc_crc_16_profibus:14 pwnlib.util.crc.crc_crc_16_riello:14
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:14
+#: pwnlib.util.crc.crc_crc_16_t10_dif:14 pwnlib.util.crc.crc_crc_16_teledisk:14
+#: pwnlib.util.crc.crc_crc_16_tms37157:14 pwnlib.util.crc.crc_crc_16_umts:14
+#: pwnlib.util.crc.crc_crc_16_usb:14 pwnlib.util.crc.crc_crc_16_xmodem:14
+#: pwnlib.util.crc.crc_crc_17_can_fd:14 pwnlib.util.crc.crc_crc_21_can_fd:14
+#: pwnlib.util.crc.crc_crc_24_ble:14 pwnlib.util.crc.crc_crc_24_flexray_a:14
+#: pwnlib.util.crc.crc_crc_24_flexray_b:14
+#: pwnlib.util.crc.crc_crc_24_interlaken:14 pwnlib.util.crc.crc_crc_24_lte_a:14
+#: pwnlib.util.crc.crc_crc_24_lte_b:14 pwnlib.util.crc.crc_crc_24_openpgp:14
+#: pwnlib.util.crc.crc_crc_24_os_9:14 pwnlib.util.crc.crc_crc_30_cdma:14
+#: pwnlib.util.crc.crc_crc_31_philips:14 pwnlib.util.crc.crc_crc_32_aixm:14
+#: pwnlib.util.crc.crc_crc_32_autosar:14 pwnlib.util.crc.crc_crc_32_base91_d:14
+#: pwnlib.util.crc.crc_crc_32_bzip2:14 pwnlib.util.crc.crc_crc_32_cd_rom_edc:14
+#: pwnlib.util.crc.crc_crc_32_cksum:14 pwnlib.util.crc.crc_crc_32_iscsi:14
+#: pwnlib.util.crc.crc_crc_32_iso_hdlc:14 pwnlib.util.crc.crc_crc_32_jamcrc:14
+#: pwnlib.util.crc.crc_crc_32_mef:14 pwnlib.util.crc.crc_crc_32_mpeg_2:14
+#: pwnlib.util.crc.crc_crc_32_xfer:14 pwnlib.util.crc.crc_crc_3_gsm:14
+#: pwnlib.util.crc.crc_crc_3_rohc:14 pwnlib.util.crc.crc_crc_40_gsm:14
+#: pwnlib.util.crc.crc_crc_4_g_704:14 pwnlib.util.crc.crc_crc_4_interlaken:14
+#: pwnlib.util.crc.crc_crc_5_epc_c1g2:14 pwnlib.util.crc.crc_crc_5_g_704:14
+#: pwnlib.util.crc.crc_crc_5_usb:14 pwnlib.util.crc.crc_crc_64_ecma_182:14
+#: pwnlib.util.crc.crc_crc_64_go_iso:14 pwnlib.util.crc.crc_crc_64_ms:14
+#: pwnlib.util.crc.crc_crc_64_we:14 pwnlib.util.crc.crc_crc_64_xz:14
+#: pwnlib.util.crc.crc_crc_6_cdma2000_a:14
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:14 pwnlib.util.crc.crc_crc_6_darc:14
+#: pwnlib.util.crc.crc_crc_6_g_704:14 pwnlib.util.crc.crc_crc_6_gsm:14
+#: pwnlib.util.crc.crc_crc_7_mmc:14 pwnlib.util.crc.crc_crc_7_rohc:14
+#: pwnlib.util.crc.crc_crc_7_umts:14 pwnlib.util.crc.crc_crc_82_darc:14
+#: pwnlib.util.crc.crc_crc_8_autosar:14 pwnlib.util.crc.crc_crc_8_bluetooth:14
+#: pwnlib.util.crc.crc_crc_8_cdma2000:14 pwnlib.util.crc.crc_crc_8_darc:14
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:14 pwnlib.util.crc.crc_crc_8_gsm_a:14
+#: pwnlib.util.crc.crc_crc_8_gsm_b:14 pwnlib.util.crc.crc_crc_8_hitag:14
+#: pwnlib.util.crc.crc_crc_8_i_432_1:14 pwnlib.util.crc.crc_crc_8_i_code:14
+#: pwnlib.util.crc.crc_crc_8_lte:14 pwnlib.util.crc.crc_crc_8_maxim_dow:14
+#: pwnlib.util.crc.crc_crc_8_mifare_mad:14 pwnlib.util.crc.crc_crc_8_nrsc_5:14
+#: pwnlib.util.crc.crc_crc_8_opensafety:14 pwnlib.util.crc.crc_crc_8_rohc:14
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:14 pwnlib.util.crc.crc_crc_8_smbus:14
+#: pwnlib.util.crc.crc_crc_8_tech_3250:14 pwnlib.util.crc.crc_crc_8_wcdma:14
+msgid "The data to checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.cksum:7 pwnlib.util.crc.Module.find_crc_function:8
+#: pwnlib.util.crc.crc_crc_10_atm:18 pwnlib.util.crc.crc_crc_10_cdma2000:18
+#: pwnlib.util.crc.crc_crc_10_gsm:18 pwnlib.util.crc.crc_crc_11_flexray:18
+#: pwnlib.util.crc.crc_crc_11_umts:18 pwnlib.util.crc.crc_crc_12_cdma2000:18
+#: pwnlib.util.crc.crc_crc_12_dect:18 pwnlib.util.crc.crc_crc_12_gsm:18
+#: pwnlib.util.crc.crc_crc_12_umts:18 pwnlib.util.crc.crc_crc_13_bbc:18
+#: pwnlib.util.crc.crc_crc_14_darc:18 pwnlib.util.crc.crc_crc_14_gsm:18
+#: pwnlib.util.crc.crc_crc_15_can:18 pwnlib.util.crc.crc_crc_15_mpt1327:18
+#: pwnlib.util.crc.crc_crc_16_arc:18 pwnlib.util.crc.crc_crc_16_cdma2000:18
+#: pwnlib.util.crc.crc_crc_16_cms:18 pwnlib.util.crc.crc_crc_16_dds_110:18
+#: pwnlib.util.crc.crc_crc_16_dect_r:18 pwnlib.util.crc.crc_crc_16_dect_x:18
+#: pwnlib.util.crc.crc_crc_16_dnp:18 pwnlib.util.crc.crc_crc_16_en_13757:18
+#: pwnlib.util.crc.crc_crc_16_genibus:18 pwnlib.util.crc.crc_crc_16_gsm:18
+#: pwnlib.util.crc.crc_crc_16_ibm_3740:18
+#: pwnlib.util.crc.crc_crc_16_ibm_sdlc:18
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:18
+#: pwnlib.util.crc.crc_crc_16_kermit:18 pwnlib.util.crc.crc_crc_16_lj1200:18
+#: pwnlib.util.crc.crc_crc_16_m17:18 pwnlib.util.crc.crc_crc_16_maxim_dow:18
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:18 pwnlib.util.crc.crc_crc_16_modbus:18
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:18
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:18
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:18
+#: pwnlib.util.crc.crc_crc_16_profibus:18 pwnlib.util.crc.crc_crc_16_riello:18
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:18
+#: pwnlib.util.crc.crc_crc_16_t10_dif:18 pwnlib.util.crc.crc_crc_16_teledisk:18
+#: pwnlib.util.crc.crc_crc_16_tms37157:18 pwnlib.util.crc.crc_crc_16_umts:18
+#: pwnlib.util.crc.crc_crc_16_usb:18 pwnlib.util.crc.crc_crc_16_xmodem:18
+#: pwnlib.util.crc.crc_crc_17_can_fd:18 pwnlib.util.crc.crc_crc_21_can_fd:18
+#: pwnlib.util.crc.crc_crc_24_ble:18 pwnlib.util.crc.crc_crc_24_flexray_a:18
+#: pwnlib.util.crc.crc_crc_24_flexray_b:18
+#: pwnlib.util.crc.crc_crc_24_interlaken:18 pwnlib.util.crc.crc_crc_24_lte_a:18
+#: pwnlib.util.crc.crc_crc_24_lte_b:18 pwnlib.util.crc.crc_crc_24_openpgp:18
+#: pwnlib.util.crc.crc_crc_24_os_9:18 pwnlib.util.crc.crc_crc_30_cdma:18
+#: pwnlib.util.crc.crc_crc_31_philips:18 pwnlib.util.crc.crc_crc_32_aixm:18
+#: pwnlib.util.crc.crc_crc_32_autosar:18 pwnlib.util.crc.crc_crc_32_base91_d:18
+#: pwnlib.util.crc.crc_crc_32_bzip2:18 pwnlib.util.crc.crc_crc_32_cd_rom_edc:18
+#: pwnlib.util.crc.crc_crc_32_cksum:18 pwnlib.util.crc.crc_crc_32_iscsi:18
+#: pwnlib.util.crc.crc_crc_32_iso_hdlc:18 pwnlib.util.crc.crc_crc_32_jamcrc:18
+#: pwnlib.util.crc.crc_crc_32_mef:18 pwnlib.util.crc.crc_crc_32_mpeg_2:18
+#: pwnlib.util.crc.crc_crc_32_xfer:18 pwnlib.util.crc.crc_crc_3_gsm:18
+#: pwnlib.util.crc.crc_crc_3_rohc:18 pwnlib.util.crc.crc_crc_40_gsm:18
+#: pwnlib.util.crc.crc_crc_4_g_704:18 pwnlib.util.crc.crc_crc_4_interlaken:18
+#: pwnlib.util.crc.crc_crc_5_epc_c1g2:18 pwnlib.util.crc.crc_crc_5_g_704:18
+#: pwnlib.util.crc.crc_crc_5_usb:18 pwnlib.util.crc.crc_crc_64_ecma_182:18
+#: pwnlib.util.crc.crc_crc_64_go_iso:18 pwnlib.util.crc.crc_crc_64_ms:18
+#: pwnlib.util.crc.crc_crc_64_we:18 pwnlib.util.crc.crc_crc_64_xz:18
+#: pwnlib.util.crc.crc_crc_6_cdma2000_a:18
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:18 pwnlib.util.crc.crc_crc_6_darc:18
+#: pwnlib.util.crc.crc_crc_6_g_704:18 pwnlib.util.crc.crc_crc_6_gsm:18
+#: pwnlib.util.crc.crc_crc_7_mmc:18 pwnlib.util.crc.crc_crc_7_rohc:18
+#: pwnlib.util.crc.crc_crc_7_umts:18 pwnlib.util.crc.crc_crc_82_darc:18
+#: pwnlib.util.crc.crc_crc_8_autosar:18 pwnlib.util.crc.crc_crc_8_bluetooth:18
+#: pwnlib.util.crc.crc_crc_8_cdma2000:18 pwnlib.util.crc.crc_crc_8_darc:18
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:18 pwnlib.util.crc.crc_crc_8_gsm_a:18
+#: pwnlib.util.crc.crc_crc_8_gsm_b:18 pwnlib.util.crc.crc_crc_8_hitag:18
+#: pwnlib.util.crc.crc_crc_8_i_432_1:18 pwnlib.util.crc.crc_crc_8_i_code:18
+#: pwnlib.util.crc.crc_crc_8_lte:18 pwnlib.util.crc.crc_crc_8_maxim_dow:18
+#: pwnlib.util.crc.crc_crc_8_mifare_mad:18 pwnlib.util.crc.crc_crc_8_nrsc_5:18
+#: pwnlib.util.crc.crc_crc_8_opensafety:18 pwnlib.util.crc.crc_crc_8_rohc:18
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:18 pwnlib.util.crc.crc_crc_8_smbus:18
+#: pwnlib.util.crc.crc_crc_8_tech_3250:18 pwnlib.util.crc.crc_crc_8_wcdma:18
+#: pwnlib.util.cyclic.cyclic:22 pwnlib.util.cyclic.cyclic_metasploit:8
+#: pwnlib.util.fiddling.b64d:4 pwnlib.util.fiddling.b64e:4
+#: pwnlib.util.fiddling.bitswap:4 pwnlib.util.fiddling.enhex:4
+#: pwnlib.util.fiddling.hexdump_iter:31 pwnlib.util.fiddling.hexstr:4
+#: pwnlib.util.fiddling.naf:8 pwnlib.util.fiddling.randoms:10
+#: pwnlib.util.fiddling.rol:14 pwnlib.util.fiddling.unbits:10
+#: pwnlib.util.fiddling.unhex:4 pwnlib.util.fiddling.urldecode:4
+#: pwnlib.util.fiddling.urlencode:4 pwnlib.util.fiddling.xor:12
+#: pwnlib.util.fiddling.xor_key:15 pwnlib.util.fiddling.xor_pair:11
+#: pwnlib.util.getdents.dirents:9 pwnlib.util.getdents.dirents64:11
+#: pwnlib.util.iters.bruteforce:23 pwnlib.util.iters.chained:10
+#: pwnlib.util.iters.dotproduct:11 pwnlib.util.iters.lexicographic:10
+#: pwnlib.util.lists.concat:4 pwnlib.util.lists.concat_all:4
+#: pwnlib.util.lists.findall:5 pwnlib.util.lists.group:17
+#: pwnlib.util.lists.ordlist:4 pwnlib.util.lists.partition:17
+#: pwnlib.util.lists.unordlist:4 pwnlib.util.misc.align:4
+#: pwnlib.util.misc.align_down:4 pwnlib.util.misc.binary_ip:4
+#: pwnlib.util.misc.parse_ldd_output:9 pwnlib.util.misc.register_sizes:14
+#: pwnlib.util.misc.size:10 pwnlib.util.misc.which:17
+#: pwnlib.util.proc.ancestors:7 pwnlib.util.proc.cmdline:7
+#: pwnlib.util.proc.cwd:8 pwnlib.util.proc.descendants:7 pwnlib.util.proc.exe:7
+#: pwnlib.util.proc.memory_maps:7 pwnlib.util.proc.name:7
+#: pwnlib.util.proc.pid_by_name:7 pwnlib.util.proc.pidof:20
+#: pwnlib.util.proc.starttime:7 pwnlib.util.proc.stat:7
+#: pwnlib.util.proc.state:7 pwnlib.util.proc.tracer:7 pwnlib.util.web.wget:13
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:1
+msgid "Calculates the crc_10_atm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:3 pwnlib.util.crc.crc_crc_10_cdma2000:3
+#: pwnlib.util.crc.crc_crc_10_gsm:3 pwnlib.util.crc.crc_crc_11_flexray:3
+#: pwnlib.util.crc.crc_crc_11_umts:3 pwnlib.util.crc.crc_crc_12_cdma2000:3
+#: pwnlib.util.crc.crc_crc_12_dect:3 pwnlib.util.crc.crc_crc_12_gsm:3
+#: pwnlib.util.crc.crc_crc_12_umts:3 pwnlib.util.crc.crc_crc_13_bbc:3
+#: pwnlib.util.crc.crc_crc_14_darc:3 pwnlib.util.crc.crc_crc_14_gsm:3
+#: pwnlib.util.crc.crc_crc_15_can:3 pwnlib.util.crc.crc_crc_15_mpt1327:3
+#: pwnlib.util.crc.crc_crc_16_arc:3 pwnlib.util.crc.crc_crc_16_cdma2000:3
+#: pwnlib.util.crc.crc_crc_16_cms:3 pwnlib.util.crc.crc_crc_16_dds_110:3
+#: pwnlib.util.crc.crc_crc_16_dect_r:3 pwnlib.util.crc.crc_crc_16_dect_x:3
+#: pwnlib.util.crc.crc_crc_16_dnp:3 pwnlib.util.crc.crc_crc_16_en_13757:3
+#: pwnlib.util.crc.crc_crc_16_genibus:3 pwnlib.util.crc.crc_crc_16_gsm:3
+#: pwnlib.util.crc.crc_crc_16_ibm_3740:3 pwnlib.util.crc.crc_crc_16_ibm_sdlc:3
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:3
+#: pwnlib.util.crc.crc_crc_16_kermit:3 pwnlib.util.crc.crc_crc_16_lj1200:3
+#: pwnlib.util.crc.crc_crc_16_m17:3 pwnlib.util.crc.crc_crc_16_maxim_dow:3
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:3 pwnlib.util.crc.crc_crc_16_modbus:3
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:3
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:3
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:3
+#: pwnlib.util.crc.crc_crc_16_profibus:3 pwnlib.util.crc.crc_crc_16_riello:3
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:3
+#: pwnlib.util.crc.crc_crc_16_t10_dif:3 pwnlib.util.crc.crc_crc_16_teledisk:3
+#: pwnlib.util.crc.crc_crc_16_tms37157:3 pwnlib.util.crc.crc_crc_16_umts:3
+#: pwnlib.util.crc.crc_crc_16_usb:3 pwnlib.util.crc.crc_crc_16_xmodem:3
+#: pwnlib.util.crc.crc_crc_17_can_fd:3 pwnlib.util.crc.crc_crc_21_can_fd:3
+#: pwnlib.util.crc.crc_crc_24_ble:3 pwnlib.util.crc.crc_crc_24_flexray_a:3
+#: pwnlib.util.crc.crc_crc_24_flexray_b:3
+#: pwnlib.util.crc.crc_crc_24_interlaken:3 pwnlib.util.crc.crc_crc_24_lte_a:3
+#: pwnlib.util.crc.crc_crc_24_lte_b:3 pwnlib.util.crc.crc_crc_24_openpgp:3
+#: pwnlib.util.crc.crc_crc_24_os_9:3 pwnlib.util.crc.crc_crc_30_cdma:3
+#: pwnlib.util.crc.crc_crc_31_philips:3 pwnlib.util.crc.crc_crc_32_aixm:3
+#: pwnlib.util.crc.crc_crc_32_autosar:3 pwnlib.util.crc.crc_crc_32_base91_d:3
+#: pwnlib.util.crc.crc_crc_32_bzip2:3 pwnlib.util.crc.crc_crc_32_cd_rom_edc:3
+#: pwnlib.util.crc.crc_crc_32_cksum:3 pwnlib.util.crc.crc_crc_32_iscsi:3
+#: pwnlib.util.crc.crc_crc_32_iso_hdlc:3 pwnlib.util.crc.crc_crc_32_jamcrc:3
+#: pwnlib.util.crc.crc_crc_32_mef:3 pwnlib.util.crc.crc_crc_32_mpeg_2:3
+#: pwnlib.util.crc.crc_crc_32_xfer:3 pwnlib.util.crc.crc_crc_3_gsm:3
+#: pwnlib.util.crc.crc_crc_3_rohc:3 pwnlib.util.crc.crc_crc_40_gsm:3
+#: pwnlib.util.crc.crc_crc_4_g_704:3 pwnlib.util.crc.crc_crc_4_interlaken:3
+#: pwnlib.util.crc.crc_crc_5_epc_c1g2:3 pwnlib.util.crc.crc_crc_5_g_704:3
+#: pwnlib.util.crc.crc_crc_5_usb:3 pwnlib.util.crc.crc_crc_64_ecma_182:3
+#: pwnlib.util.crc.crc_crc_64_go_iso:3 pwnlib.util.crc.crc_crc_64_ms:3
+#: pwnlib.util.crc.crc_crc_64_we:3 pwnlib.util.crc.crc_crc_64_xz:3
+#: pwnlib.util.crc.crc_crc_6_cdma2000_a:3
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:3 pwnlib.util.crc.crc_crc_6_darc:3
+#: pwnlib.util.crc.crc_crc_6_g_704:3 pwnlib.util.crc.crc_crc_6_gsm:3
+#: pwnlib.util.crc.crc_crc_7_mmc:3 pwnlib.util.crc.crc_crc_7_rohc:3
+#: pwnlib.util.crc.crc_crc_7_umts:3 pwnlib.util.crc.crc_crc_82_darc:3
+#: pwnlib.util.crc.crc_crc_8_autosar:3 pwnlib.util.crc.crc_crc_8_bluetooth:3
+#: pwnlib.util.crc.crc_crc_8_cdma2000:3 pwnlib.util.crc.crc_crc_8_darc:3
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:3 pwnlib.util.crc.crc_crc_8_gsm_a:3
+#: pwnlib.util.crc.crc_crc_8_gsm_b:3 pwnlib.util.crc.crc_crc_8_hitag:3
+#: pwnlib.util.crc.crc_crc_8_i_432_1:3 pwnlib.util.crc.crc_crc_8_i_code:3
+#: pwnlib.util.crc.crc_crc_8_lte:3 pwnlib.util.crc.crc_crc_8_maxim_dow:3
+#: pwnlib.util.crc.crc_crc_8_mifare_mad:3 pwnlib.util.crc.crc_crc_8_nrsc_5:3
+#: pwnlib.util.crc.crc_crc_8_opensafety:3 pwnlib.util.crc.crc_crc_8_rohc:3
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:3 pwnlib.util.crc.crc_crc_8_smbus:3
+#: pwnlib.util.crc.crc_crc_8_tech_3250:3 pwnlib.util.crc.crc_crc_8_wcdma:3
+msgid "This is simply the :func:`generic_crc` with these frozen arguments:"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:5
+msgid "polynom = 0x233"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:6 pwnlib.util.crc.crc_crc_10_cdma2000:6
+#: pwnlib.util.crc.crc_crc_10_gsm:6
+msgid "width   = 10"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:7 pwnlib.util.crc.crc_crc_10_gsm:7
+#: pwnlib.util.crc.crc_crc_11_umts:7 pwnlib.util.crc.crc_crc_12_dect:7
+#: pwnlib.util.crc.crc_crc_12_gsm:7 pwnlib.util.crc.crc_crc_12_umts:7
+#: pwnlib.util.crc.crc_crc_13_bbc:7 pwnlib.util.crc.crc_crc_14_darc:7
+#: pwnlib.util.crc.crc_crc_14_gsm:7 pwnlib.util.crc.crc_crc_15_can:7
+#: pwnlib.util.crc.crc_crc_15_mpt1327:7 pwnlib.util.crc.crc_crc_16_arc:7
+#: pwnlib.util.crc.crc_crc_16_dect_r:7 pwnlib.util.crc.crc_crc_16_dect_x:7
+#: pwnlib.util.crc.crc_crc_16_dnp:7 pwnlib.util.crc.crc_crc_16_en_13757:7
+#: pwnlib.util.crc.crc_crc_16_gsm:7 pwnlib.util.crc.crc_crc_16_kermit:7
+#: pwnlib.util.crc.crc_crc_16_lj1200:7 pwnlib.util.crc.crc_crc_16_maxim_dow:7
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:7
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:7
+#: pwnlib.util.crc.crc_crc_16_t10_dif:7 pwnlib.util.crc.crc_crc_16_teledisk:7
+#: pwnlib.util.crc.crc_crc_16_umts:7 pwnlib.util.crc.crc_crc_16_xmodem:7
+#: pwnlib.util.crc.crc_crc_17_can_fd:7 pwnlib.util.crc.crc_crc_21_can_fd:7
+#: pwnlib.util.crc.crc_crc_24_lte_a:7 pwnlib.util.crc.crc_crc_24_lte_b:7
+#: pwnlib.util.crc.crc_crc_32_aixm:7 pwnlib.util.crc.crc_crc_32_cd_rom_edc:7
+#: pwnlib.util.crc.crc_crc_32_cksum:7 pwnlib.util.crc.crc_crc_32_xfer:7
+#: pwnlib.util.crc.crc_crc_3_gsm:7 pwnlib.util.crc.crc_crc_40_gsm:7
+#: pwnlib.util.crc.crc_crc_4_g_704:7 pwnlib.util.crc.crc_crc_5_g_704:7
+#: pwnlib.util.crc.crc_crc_64_ecma_182:7 pwnlib.util.crc.crc_crc_6_darc:7
+#: pwnlib.util.crc.crc_crc_6_g_704:7 pwnlib.util.crc.crc_crc_6_gsm:7
+#: pwnlib.util.crc.crc_crc_7_mmc:7 pwnlib.util.crc.crc_crc_7_umts:7
+#: pwnlib.util.crc.crc_crc_82_darc:7 pwnlib.util.crc.crc_crc_8_bluetooth:7
+#: pwnlib.util.crc.crc_crc_8_darc:7 pwnlib.util.crc.crc_crc_8_dvb_s2:7
+#: pwnlib.util.crc.crc_crc_8_gsm_a:7 pwnlib.util.crc.crc_crc_8_gsm_b:7
+#: pwnlib.util.crc.crc_crc_8_i_432_1:7 pwnlib.util.crc.crc_crc_8_lte:7
+#: pwnlib.util.crc.crc_crc_8_maxim_dow:7 pwnlib.util.crc.crc_crc_8_opensafety:7
+#: pwnlib.util.crc.crc_crc_8_smbus:7 pwnlib.util.crc.crc_crc_8_wcdma:7
+msgid "init    = 0x0"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:8 pwnlib.util.crc.crc_crc_10_cdma2000:8
+#: pwnlib.util.crc.crc_crc_10_gsm:8 pwnlib.util.crc.crc_crc_11_flexray:8
+#: pwnlib.util.crc.crc_crc_11_umts:8 pwnlib.util.crc.crc_crc_12_cdma2000:8
+#: pwnlib.util.crc.crc_crc_12_dect:8 pwnlib.util.crc.crc_crc_12_gsm:8
+#: pwnlib.util.crc.crc_crc_12_umts:8 pwnlib.util.crc.crc_crc_13_bbc:8
+#: pwnlib.util.crc.crc_crc_14_gsm:8 pwnlib.util.crc.crc_crc_15_can:8
+#: pwnlib.util.crc.crc_crc_15_mpt1327:8 pwnlib.util.crc.crc_crc_16_cdma2000:8
+#: pwnlib.util.crc.crc_crc_16_cms:8 pwnlib.util.crc.crc_crc_16_dds_110:8
+#: pwnlib.util.crc.crc_crc_16_dect_r:8 pwnlib.util.crc.crc_crc_16_dect_x:8
+#: pwnlib.util.crc.crc_crc_16_en_13757:8 pwnlib.util.crc.crc_crc_16_genibus:8
+#: pwnlib.util.crc.crc_crc_16_gsm:8 pwnlib.util.crc.crc_crc_16_ibm_3740:8
+#: pwnlib.util.crc.crc_crc_16_lj1200:8 pwnlib.util.crc.crc_crc_16_m17:8
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:8
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:8
+#: pwnlib.util.crc.crc_crc_16_profibus:8
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:8
+#: pwnlib.util.crc.crc_crc_16_t10_dif:8 pwnlib.util.crc.crc_crc_16_teledisk:8
+#: pwnlib.util.crc.crc_crc_16_umts:8 pwnlib.util.crc.crc_crc_16_xmodem:8
+#: pwnlib.util.crc.crc_crc_17_can_fd:8 pwnlib.util.crc.crc_crc_21_can_fd:8
+#: pwnlib.util.crc.crc_crc_24_flexray_a:8
+#: pwnlib.util.crc.crc_crc_24_flexray_b:8
+#: pwnlib.util.crc.crc_crc_24_interlaken:8 pwnlib.util.crc.crc_crc_24_lte_a:8
+#: pwnlib.util.crc.crc_crc_24_lte_b:8 pwnlib.util.crc.crc_crc_24_openpgp:8
+#: pwnlib.util.crc.crc_crc_24_os_9:8 pwnlib.util.crc.crc_crc_30_cdma:8
+#: pwnlib.util.crc.crc_crc_31_philips:8 pwnlib.util.crc.crc_crc_32_aixm:8
+#: pwnlib.util.crc.crc_crc_32_bzip2:8 pwnlib.util.crc.crc_crc_32_cksum:8
+#: pwnlib.util.crc.crc_crc_32_mpeg_2:8 pwnlib.util.crc.crc_crc_32_xfer:8
+#: pwnlib.util.crc.crc_crc_3_gsm:8 pwnlib.util.crc.crc_crc_40_gsm:8
+#: pwnlib.util.crc.crc_crc_4_interlaken:8 pwnlib.util.crc.crc_crc_5_epc_c1g2:8
+#: pwnlib.util.crc.crc_crc_64_ecma_182:8 pwnlib.util.crc.crc_crc_64_we:8
+#: pwnlib.util.crc.crc_crc_6_cdma2000_a:8
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:8 pwnlib.util.crc.crc_crc_6_gsm:8
+#: pwnlib.util.crc.crc_crc_7_mmc:8 pwnlib.util.crc.crc_crc_7_umts:8
+#: pwnlib.util.crc.crc_crc_8_autosar:8 pwnlib.util.crc.crc_crc_8_cdma2000:8
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:8 pwnlib.util.crc.crc_crc_8_gsm_a:8
+#: pwnlib.util.crc.crc_crc_8_gsm_b:8 pwnlib.util.crc.crc_crc_8_hitag:8
+#: pwnlib.util.crc.crc_crc_8_i_432_1:8 pwnlib.util.crc.crc_crc_8_i_code:8
+#: pwnlib.util.crc.crc_crc_8_lte:8 pwnlib.util.crc.crc_crc_8_mifare_mad:8
+#: pwnlib.util.crc.crc_crc_8_nrsc_5:8 pwnlib.util.crc.crc_crc_8_opensafety:8
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:8 pwnlib.util.crc.crc_crc_8_smbus:8
+msgid "refin   = False"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:9 pwnlib.util.crc.crc_crc_10_cdma2000:9
+#: pwnlib.util.crc.crc_crc_10_gsm:9 pwnlib.util.crc.crc_crc_11_flexray:9
+#: pwnlib.util.crc.crc_crc_11_umts:9 pwnlib.util.crc.crc_crc_12_cdma2000:9
+#: pwnlib.util.crc.crc_crc_12_dect:9 pwnlib.util.crc.crc_crc_12_gsm:9
+#: pwnlib.util.crc.crc_crc_13_bbc:9 pwnlib.util.crc.crc_crc_14_gsm:9
+#: pwnlib.util.crc.crc_crc_15_can:9 pwnlib.util.crc.crc_crc_15_mpt1327:9
+#: pwnlib.util.crc.crc_crc_16_cdma2000:9 pwnlib.util.crc.crc_crc_16_cms:9
+#: pwnlib.util.crc.crc_crc_16_dds_110:9 pwnlib.util.crc.crc_crc_16_dect_r:9
+#: pwnlib.util.crc.crc_crc_16_dect_x:9 pwnlib.util.crc.crc_crc_16_en_13757:9
+#: pwnlib.util.crc.crc_crc_16_genibus:9 pwnlib.util.crc.crc_crc_16_gsm:9
+#: pwnlib.util.crc.crc_crc_16_ibm_3740:9 pwnlib.util.crc.crc_crc_16_lj1200:9
+#: pwnlib.util.crc.crc_crc_16_m17:9 pwnlib.util.crc.crc_crc_16_opensafety_a:9
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:9
+#: pwnlib.util.crc.crc_crc_16_profibus:9
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:9
+#: pwnlib.util.crc.crc_crc_16_t10_dif:9 pwnlib.util.crc.crc_crc_16_teledisk:9
+#: pwnlib.util.crc.crc_crc_16_umts:9 pwnlib.util.crc.crc_crc_16_xmodem:9
+#: pwnlib.util.crc.crc_crc_17_can_fd:9 pwnlib.util.crc.crc_crc_21_can_fd:9
+#: pwnlib.util.crc.crc_crc_24_flexray_a:9
+#: pwnlib.util.crc.crc_crc_24_flexray_b:9
+#: pwnlib.util.crc.crc_crc_24_interlaken:9 pwnlib.util.crc.crc_crc_24_lte_a:9
+#: pwnlib.util.crc.crc_crc_24_lte_b:9 pwnlib.util.crc.crc_crc_24_openpgp:9
+#: pwnlib.util.crc.crc_crc_24_os_9:9 pwnlib.util.crc.crc_crc_30_cdma:9
+#: pwnlib.util.crc.crc_crc_31_philips:9 pwnlib.util.crc.crc_crc_32_aixm:9
+#: pwnlib.util.crc.crc_crc_32_bzip2:9 pwnlib.util.crc.crc_crc_32_cksum:9
+#: pwnlib.util.crc.crc_crc_32_mpeg_2:9 pwnlib.util.crc.crc_crc_32_xfer:9
+#: pwnlib.util.crc.crc_crc_3_gsm:9 pwnlib.util.crc.crc_crc_40_gsm:9
+#: pwnlib.util.crc.crc_crc_4_interlaken:9 pwnlib.util.crc.crc_crc_5_epc_c1g2:9
+#: pwnlib.util.crc.crc_crc_64_ecma_182:9 pwnlib.util.crc.crc_crc_64_we:9
+#: pwnlib.util.crc.crc_crc_6_cdma2000_a:9
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:9 pwnlib.util.crc.crc_crc_6_gsm:9
+#: pwnlib.util.crc.crc_crc_7_mmc:9 pwnlib.util.crc.crc_crc_7_umts:9
+#: pwnlib.util.crc.crc_crc_8_autosar:9 pwnlib.util.crc.crc_crc_8_cdma2000:9
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:9 pwnlib.util.crc.crc_crc_8_gsm_a:9
+#: pwnlib.util.crc.crc_crc_8_gsm_b:9 pwnlib.util.crc.crc_crc_8_hitag:9
+#: pwnlib.util.crc.crc_crc_8_i_432_1:9 pwnlib.util.crc.crc_crc_8_i_code:9
+#: pwnlib.util.crc.crc_crc_8_lte:9 pwnlib.util.crc.crc_crc_8_mifare_mad:9
+#: pwnlib.util.crc.crc_crc_8_nrsc_5:9 pwnlib.util.crc.crc_crc_8_opensafety:9
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:9 pwnlib.util.crc.crc_crc_8_smbus:9
+msgid "refout  = False"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:10 pwnlib.util.crc.crc_crc_10_cdma2000:10
+#: pwnlib.util.crc.crc_crc_11_flexray:10 pwnlib.util.crc.crc_crc_11_umts:10
+#: pwnlib.util.crc.crc_crc_12_cdma2000:10 pwnlib.util.crc.crc_crc_12_dect:10
+#: pwnlib.util.crc.crc_crc_12_umts:10 pwnlib.util.crc.crc_crc_13_bbc:10
+#: pwnlib.util.crc.crc_crc_14_darc:10 pwnlib.util.crc.crc_crc_15_can:10
+#: pwnlib.util.crc.crc_crc_16_arc:10 pwnlib.util.crc.crc_crc_16_cdma2000:10
+#: pwnlib.util.crc.crc_crc_16_cms:10 pwnlib.util.crc.crc_crc_16_dds_110:10
+#: pwnlib.util.crc.crc_crc_16_dect_x:10 pwnlib.util.crc.crc_crc_16_ibm_3740:10
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:10
+#: pwnlib.util.crc.crc_crc_16_kermit:10 pwnlib.util.crc.crc_crc_16_lj1200:10
+#: pwnlib.util.crc.crc_crc_16_m17:10 pwnlib.util.crc.crc_crc_16_mcrf4xx:10
+#: pwnlib.util.crc.crc_crc_16_modbus:10 pwnlib.util.crc.crc_crc_16_nrsc_5:10
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:10
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:10
+#: pwnlib.util.crc.crc_crc_16_riello:10
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:10
+#: pwnlib.util.crc.crc_crc_16_t10_dif:10 pwnlib.util.crc.crc_crc_16_teledisk:10
+#: pwnlib.util.crc.crc_crc_16_tms37157:10 pwnlib.util.crc.crc_crc_16_umts:10
+#: pwnlib.util.crc.crc_crc_16_xmodem:10 pwnlib.util.crc.crc_crc_17_can_fd:10
+#: pwnlib.util.crc.crc_crc_21_can_fd:10 pwnlib.util.crc.crc_crc_24_ble:10
+#: pwnlib.util.crc.crc_crc_24_flexray_a:10
+#: pwnlib.util.crc.crc_crc_24_flexray_b:10 pwnlib.util.crc.crc_crc_24_lte_a:10
+#: pwnlib.util.crc.crc_crc_24_lte_b:10 pwnlib.util.crc.crc_crc_24_openpgp:10
+#: pwnlib.util.crc.crc_crc_32_aixm:10 pwnlib.util.crc.crc_crc_32_cd_rom_edc:10
+#: pwnlib.util.crc.crc_crc_32_jamcrc:10 pwnlib.util.crc.crc_crc_32_mef:10
+#: pwnlib.util.crc.crc_crc_32_mpeg_2:10 pwnlib.util.crc.crc_crc_32_xfer:10
+#: pwnlib.util.crc.crc_crc_3_rohc:10 pwnlib.util.crc.crc_crc_4_g_704:10
+#: pwnlib.util.crc.crc_crc_5_epc_c1g2:10 pwnlib.util.crc.crc_crc_5_g_704:10
+#: pwnlib.util.crc.crc_crc_64_ecma_182:10 pwnlib.util.crc.crc_crc_64_ms:10
+#: pwnlib.util.crc.crc_crc_6_cdma2000_a:10
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:10 pwnlib.util.crc.crc_crc_6_darc:10
+#: pwnlib.util.crc.crc_crc_6_g_704:10 pwnlib.util.crc.crc_crc_7_mmc:10
+#: pwnlib.util.crc.crc_crc_7_rohc:10 pwnlib.util.crc.crc_crc_7_umts:10
+#: pwnlib.util.crc.crc_crc_82_darc:10 pwnlib.util.crc.crc_crc_8_bluetooth:10
+#: pwnlib.util.crc.crc_crc_8_cdma2000:10 pwnlib.util.crc.crc_crc_8_darc:10
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:10 pwnlib.util.crc.crc_crc_8_gsm_a:10
+#: pwnlib.util.crc.crc_crc_8_hitag:10 pwnlib.util.crc.crc_crc_8_i_code:10
+#: pwnlib.util.crc.crc_crc_8_lte:10 pwnlib.util.crc.crc_crc_8_maxim_dow:10
+#: pwnlib.util.crc.crc_crc_8_mifare_mad:10 pwnlib.util.crc.crc_crc_8_nrsc_5:10
+#: pwnlib.util.crc.crc_crc_8_opensafety:10 pwnlib.util.crc.crc_crc_8_rohc:10
+#: pwnlib.util.crc.crc_crc_8_smbus:10 pwnlib.util.crc.crc_crc_8_tech_3250:10
+#: pwnlib.util.crc.crc_crc_8_wcdma:10
+msgid "xorout  = 0x0"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_atm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-10-atm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_cdma2000:1
+msgid "Calculates the crc_10_cdma2000 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_cdma2000:5
+msgid "polynom = 0x3d9"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_cdma2000:7
+msgid "init    = 0x3ff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_cdma2000:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-10-cdma2000"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_gsm:1
+msgid "Calculates the crc_10_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_gsm:5
+msgid "polynom = 0x175"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_gsm:10
+msgid "xorout  = 0x3ff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_10_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-10-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_flexray:1
+msgid "Calculates the crc_11_flexray checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_flexray:5
+msgid "polynom = 0x385"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_flexray:6 pwnlib.util.crc.crc_crc_11_umts:6
+msgid "width   = 11"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_flexray:7
+msgid "init    = 0x1a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_flexray:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-11-flexray"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_umts:1
+msgid "Calculates the crc_11_umts checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_umts:5
+msgid "polynom = 0x307"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_11_umts:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-11-umts"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_cdma2000:1
+msgid "Calculates the crc_12_cdma2000 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_cdma2000:5
+msgid "polynom = 0xf13"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_cdma2000:6 pwnlib.util.crc.crc_crc_12_dect:6
+#: pwnlib.util.crc.crc_crc_12_gsm:6 pwnlib.util.crc.crc_crc_12_umts:6
+msgid "width   = 12"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_cdma2000:7
+msgid "init    = 0xfff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_cdma2000:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-12-cdma2000"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_dect:1
+msgid "Calculates the crc_12_dect checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_dect:5 pwnlib.util.crc.crc_crc_12_umts:5
+msgid "polynom = 0x80f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_dect:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-12-dect"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_gsm:1
+msgid "Calculates the crc_12_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_gsm:5
+msgid "polynom = 0xd31"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_gsm:10
+msgid "xorout  = 0xfff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-12-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_umts:1
+msgid "Calculates the crc_12_umts checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_umts:9 pwnlib.util.crc.crc_crc_14_darc:9
+#: pwnlib.util.crc.crc_crc_16_arc:9 pwnlib.util.crc.crc_crc_16_dnp:9
+#: pwnlib.util.crc.crc_crc_16_ibm_sdlc:9
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:9
+#: pwnlib.util.crc.crc_crc_16_kermit:9 pwnlib.util.crc.crc_crc_16_maxim_dow:9
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:9 pwnlib.util.crc.crc_crc_16_modbus:9
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:9 pwnlib.util.crc.crc_crc_16_riello:9
+#: pwnlib.util.crc.crc_crc_16_tms37157:9 pwnlib.util.crc.crc_crc_16_usb:9
+#: pwnlib.util.crc.crc_crc_24_ble:9 pwnlib.util.crc.crc_crc_32_autosar:9
+#: pwnlib.util.crc.crc_crc_32_base91_d:9
+#: pwnlib.util.crc.crc_crc_32_cd_rom_edc:9 pwnlib.util.crc.crc_crc_32_iscsi:9
+#: pwnlib.util.crc.crc_crc_32_iso_hdlc:9 pwnlib.util.crc.crc_crc_32_jamcrc:9
+#: pwnlib.util.crc.crc_crc_32_mef:9 pwnlib.util.crc.crc_crc_3_rohc:9
+#: pwnlib.util.crc.crc_crc_4_g_704:9 pwnlib.util.crc.crc_crc_5_g_704:9
+#: pwnlib.util.crc.crc_crc_5_usb:9 pwnlib.util.crc.crc_crc_64_go_iso:9
+#: pwnlib.util.crc.crc_crc_64_ms:9 pwnlib.util.crc.crc_crc_64_xz:9
+#: pwnlib.util.crc.crc_crc_6_darc:9 pwnlib.util.crc.crc_crc_6_g_704:9
+#: pwnlib.util.crc.crc_crc_7_rohc:9 pwnlib.util.crc.crc_crc_82_darc:9
+#: pwnlib.util.crc.crc_crc_8_bluetooth:9 pwnlib.util.crc.crc_crc_8_darc:9
+#: pwnlib.util.crc.crc_crc_8_maxim_dow:9 pwnlib.util.crc.crc_crc_8_rohc:9
+#: pwnlib.util.crc.crc_crc_8_tech_3250:9 pwnlib.util.crc.crc_crc_8_wcdma:9
+msgid "refout  = True"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_12_umts:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-12-umts"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_13_bbc:1
+msgid "Calculates the crc_13_bbc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_13_bbc:5
+msgid "polynom = 0x1cf5"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_13_bbc:6
+msgid "width   = 13"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_13_bbc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-13-bbc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_darc:1
+msgid "Calculates the crc_14_darc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_darc:5
+msgid "polynom = 0x805"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_darc:6 pwnlib.util.crc.crc_crc_14_gsm:6
+msgid "width   = 14"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_darc:8 pwnlib.util.crc.crc_crc_16_arc:8
+#: pwnlib.util.crc.crc_crc_16_dnp:8 pwnlib.util.crc.crc_crc_16_ibm_sdlc:8
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:8
+#: pwnlib.util.crc.crc_crc_16_kermit:8 pwnlib.util.crc.crc_crc_16_maxim_dow:8
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:8 pwnlib.util.crc.crc_crc_16_modbus:8
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:8 pwnlib.util.crc.crc_crc_16_riello:8
+#: pwnlib.util.crc.crc_crc_16_tms37157:8 pwnlib.util.crc.crc_crc_16_usb:8
+#: pwnlib.util.crc.crc_crc_24_ble:8 pwnlib.util.crc.crc_crc_32_autosar:8
+#: pwnlib.util.crc.crc_crc_32_base91_d:8
+#: pwnlib.util.crc.crc_crc_32_cd_rom_edc:8 pwnlib.util.crc.crc_crc_32_iscsi:8
+#: pwnlib.util.crc.crc_crc_32_iso_hdlc:8 pwnlib.util.crc.crc_crc_32_jamcrc:8
+#: pwnlib.util.crc.crc_crc_32_mef:8 pwnlib.util.crc.crc_crc_3_rohc:8
+#: pwnlib.util.crc.crc_crc_4_g_704:8 pwnlib.util.crc.crc_crc_5_g_704:8
+#: pwnlib.util.crc.crc_crc_5_usb:8 pwnlib.util.crc.crc_crc_64_go_iso:8
+#: pwnlib.util.crc.crc_crc_64_ms:8 pwnlib.util.crc.crc_crc_64_xz:8
+#: pwnlib.util.crc.crc_crc_6_darc:8 pwnlib.util.crc.crc_crc_6_g_704:8
+#: pwnlib.util.crc.crc_crc_7_rohc:8 pwnlib.util.crc.crc_crc_82_darc:8
+#: pwnlib.util.crc.crc_crc_8_bluetooth:8 pwnlib.util.crc.crc_crc_8_darc:8
+#: pwnlib.util.crc.crc_crc_8_maxim_dow:8 pwnlib.util.crc.crc_crc_8_rohc:8
+#: pwnlib.util.crc.crc_crc_8_tech_3250:8 pwnlib.util.crc.crc_crc_8_wcdma:8
+msgid "refin   = True"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_darc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-14-darc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_gsm:1
+msgid "Calculates the crc_14_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_gsm:5
+msgid "polynom = 0x202d"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_gsm:10
+msgid "xorout  = 0x3fff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_14_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-14-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_can:1
+msgid "Calculates the crc_15_can checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_can:5
+msgid "polynom = 0x4599"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_can:6 pwnlib.util.crc.crc_crc_15_mpt1327:6
+msgid "width   = 15"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_can:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-15-can"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_mpt1327:1
+msgid "Calculates the crc_15_mpt1327 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_mpt1327:5
+msgid "polynom = 0x6815"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_mpt1327:10
+#: pwnlib.util.crc.crc_crc_16_dect_r:10
+msgid "xorout  = 0x1"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_15_mpt1327:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-15-mpt1327"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_arc:1
+msgid "Calculates the crc_16_arc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_arc:5 pwnlib.util.crc.crc_crc_16_cms:5
+#: pwnlib.util.crc.crc_crc_16_dds_110:5 pwnlib.util.crc.crc_crc_16_maxim_dow:5
+#: pwnlib.util.crc.crc_crc_16_modbus:5 pwnlib.util.crc.crc_crc_16_umts:5
+#: pwnlib.util.crc.crc_crc_16_usb:5
+msgid "polynom = 0x8005"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_arc:6 pwnlib.util.crc.crc_crc_16_cdma2000:6
+#: pwnlib.util.crc.crc_crc_16_cms:6 pwnlib.util.crc.crc_crc_16_dds_110:6
+#: pwnlib.util.crc.crc_crc_16_dect_r:6 pwnlib.util.crc.crc_crc_16_dect_x:6
+#: pwnlib.util.crc.crc_crc_16_dnp:6 pwnlib.util.crc.crc_crc_16_en_13757:6
+#: pwnlib.util.crc.crc_crc_16_genibus:6 pwnlib.util.crc.crc_crc_16_gsm:6
+#: pwnlib.util.crc.crc_crc_16_ibm_3740:6 pwnlib.util.crc.crc_crc_16_ibm_sdlc:6
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:6
+#: pwnlib.util.crc.crc_crc_16_kermit:6 pwnlib.util.crc.crc_crc_16_lj1200:6
+#: pwnlib.util.crc.crc_crc_16_m17:6 pwnlib.util.crc.crc_crc_16_maxim_dow:6
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:6 pwnlib.util.crc.crc_crc_16_modbus:6
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:6
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:6
+#: pwnlib.util.crc.crc_crc_16_opensafety_b:6
+#: pwnlib.util.crc.crc_crc_16_profibus:6 pwnlib.util.crc.crc_crc_16_riello:6
+#: pwnlib.util.crc.crc_crc_16_spi_fujitsu:6
+#: pwnlib.util.crc.crc_crc_16_t10_dif:6 pwnlib.util.crc.crc_crc_16_teledisk:6
+#: pwnlib.util.crc.crc_crc_16_tms37157:6 pwnlib.util.crc.crc_crc_16_umts:6
+#: pwnlib.util.crc.crc_crc_16_usb:6 pwnlib.util.crc.crc_crc_16_xmodem:6
+msgid "width   = 16"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_arc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-arc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_cdma2000:1
+msgid "Calculates the crc_16_cdma2000 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_cdma2000:5
+msgid "polynom = 0xc867"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_cdma2000:7 pwnlib.util.crc.crc_crc_16_cms:7
+#: pwnlib.util.crc.crc_crc_16_genibus:7 pwnlib.util.crc.crc_crc_16_ibm_3740:7
+#: pwnlib.util.crc.crc_crc_16_ibm_sdlc:7 pwnlib.util.crc.crc_crc_16_m17:7
+#: pwnlib.util.crc.crc_crc_16_mcrf4xx:7 pwnlib.util.crc.crc_crc_16_modbus:7
+#: pwnlib.util.crc.crc_crc_16_nrsc_5:7 pwnlib.util.crc.crc_crc_16_profibus:7
+#: pwnlib.util.crc.crc_crc_16_usb:7
+msgid "init    = 0xffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_cdma2000:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-cdma2000"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_cms:1
+msgid "Calculates the crc_16_cms checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_cms:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-cms"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dds_110:1
+msgid "Calculates the crc_16_dds_110 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dds_110:7
+msgid "init    = 0x800d"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dds_110:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-dds-110"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dect_r:1
+msgid "Calculates the crc_16_dect_r checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dect_r:5 pwnlib.util.crc.crc_crc_16_dect_x:5
+msgid "polynom = 0x589"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dect_r:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-dect-r"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dect_x:1
+msgid "Calculates the crc_16_dect_x checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dect_x:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-dect-x"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dnp:1
+msgid "Calculates the crc_16_dnp checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dnp:5 pwnlib.util.crc.crc_crc_16_en_13757:5
+msgid "polynom = 0x3d65"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dnp:10 pwnlib.util.crc.crc_crc_16_en_13757:10
+#: pwnlib.util.crc.crc_crc_16_genibus:10 pwnlib.util.crc.crc_crc_16_gsm:10
+#: pwnlib.util.crc.crc_crc_16_ibm_sdlc:10
+#: pwnlib.util.crc.crc_crc_16_maxim_dow:10
+#: pwnlib.util.crc.crc_crc_16_profibus:10 pwnlib.util.crc.crc_crc_16_usb:10
+msgid "xorout  = 0xffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_dnp:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-dnp"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_en_13757:1
+msgid "Calculates the crc_16_en_13757 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_en_13757:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-en-13757"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_genibus:1
+msgid "Calculates the crc_16_genibus checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_genibus:5 pwnlib.util.crc.crc_crc_16_gsm:5
+#: pwnlib.util.crc.crc_crc_16_ibm_3740:5 pwnlib.util.crc.crc_crc_16_ibm_sdlc:5
+#: pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:5
+#: pwnlib.util.crc.crc_crc_16_kermit:5 pwnlib.util.crc.crc_crc_16_mcrf4xx:5
+#: pwnlib.util.crc.crc_crc_16_riello:5 pwnlib.util.crc.crc_crc_16_spi_fujitsu:5
+#: pwnlib.util.crc.crc_crc_16_tms37157:5 pwnlib.util.crc.crc_crc_16_xmodem:5
+msgid "polynom = 0x1021"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_genibus:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-genibus"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_gsm:1
+msgid "Calculates the crc_16_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_ibm_3740:1
+msgid "Calculates the crc_16_ibm_3740 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_ibm_3740:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-ibm-3740"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_ibm_sdlc:1
+msgid "Calculates the crc_16_ibm_sdlc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_ibm_sdlc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-ibm-sdlc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:1
+msgid "Calculates the crc_16_iso_iec_14443_3_a checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:7
+msgid "init    = 0xc6c6"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-iso-iec-14443-3-a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_kermit:1
+msgid "Calculates the crc_16_kermit checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_kermit:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-kermit"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_lj1200:1
+msgid "Calculates the crc_16_lj1200 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_lj1200:5
+msgid "polynom = 0x6f63"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_lj1200:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-lj1200"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_m17:1
+msgid "Calculates the crc_16_m17 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_m17:5
+#: pwnlib.util.crc.crc_crc_16_opensafety_a:5
+msgid "polynom = 0x5935"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_m17:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-m17"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_maxim_dow:1
+msgid "Calculates the crc_16_maxim_dow checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_maxim_dow:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-maxim-dow"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_mcrf4xx:1
+msgid "Calculates the crc_16_mcrf4xx checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_mcrf4xx:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-mcrf4xx"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_modbus:1
+msgid "Calculates the crc_16_modbus checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_modbus:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-modbus"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_nrsc_5:1
+msgid "Calculates the crc_16_nrsc_5 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_nrsc_5:5
+msgid "polynom = 0x80b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_nrsc_5:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-nrsc-5"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_opensafety_a:1
+msgid "Calculates the crc_16_opensafety_a checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_opensafety_a:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-opensafety-a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_opensafety_b:1
+msgid "Calculates the crc_16_opensafety_b checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_opensafety_b:5
+msgid "polynom = 0x755b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_opensafety_b:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-opensafety-b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_profibus:1
+msgid "Calculates the crc_16_profibus checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_profibus:5
+msgid "polynom = 0x1dcf"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_profibus:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-profibus"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_riello:1
+msgid "Calculates the crc_16_riello checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_riello:7
+msgid "init    = 0xb2aa"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_riello:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-riello"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_spi_fujitsu:1
+msgid "Calculates the crc_16_spi_fujitsu checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_spi_fujitsu:7
+msgid "init    = 0x1d0f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_spi_fujitsu:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-spi-fujitsu"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_t10_dif:1
+msgid "Calculates the crc_16_t10_dif checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_t10_dif:5
+msgid "polynom = 0x8bb7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_t10_dif:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-t10-dif"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_teledisk:1
+msgid "Calculates the crc_16_teledisk checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_teledisk:5
+msgid "polynom = 0xa097"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_teledisk:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-teledisk"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_tms37157:1
+msgid "Calculates the crc_16_tms37157 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_tms37157:7
+msgid "init    = 0x89ec"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_tms37157:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-tms37157"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_umts:1
+msgid "Calculates the crc_16_umts checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_umts:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-umts"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_usb:1
+msgid "Calculates the crc_16_usb checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_usb:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-usb"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_xmodem:1
+msgid "Calculates the crc_16_xmodem checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_16_xmodem:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-16-xmodem"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_17_can_fd:1
+msgid "Calculates the crc_17_can_fd checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_17_can_fd:5
+msgid "polynom = 0x1685b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_17_can_fd:6
+msgid "width   = 17"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_17_can_fd:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-17-can-fd"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_21_can_fd:1
+msgid "Calculates the crc_21_can_fd checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_21_can_fd:5
+msgid "polynom = 0x102899"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_21_can_fd:6
+msgid "width   = 21"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_21_can_fd:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-21-can-fd"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_ble:1
+msgid "Calculates the crc_24_ble checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_ble:5
+msgid "polynom = 0x65b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_ble:6 pwnlib.util.crc.crc_crc_24_flexray_a:6
+#: pwnlib.util.crc.crc_crc_24_flexray_b:6
+#: pwnlib.util.crc.crc_crc_24_interlaken:6 pwnlib.util.crc.crc_crc_24_lte_a:6
+#: pwnlib.util.crc.crc_crc_24_lte_b:6 pwnlib.util.crc.crc_crc_24_openpgp:6
+#: pwnlib.util.crc.crc_crc_24_os_9:6
+msgid "width   = 24"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_ble:7
+msgid "init    = 0x555555"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_ble:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-ble"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_a:1
+msgid "Calculates the crc_24_flexray_a checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_a:5
+#: pwnlib.util.crc.crc_crc_24_flexray_b:5
+msgid "polynom = 0x5d6dcb"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_a:7
+msgid "init    = 0xfedcba"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_a:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-flexray-a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_b:1
+msgid "Calculates the crc_24_flexray_b checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_b:7
+msgid "init    = 0xabcdef"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_flexray_b:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-flexray-b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_interlaken:1
+msgid "Calculates the crc_24_interlaken checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_interlaken:5
+msgid "polynom = 0x328b63"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_interlaken:7 pwnlib.util.crc.crc_crc_24_os_9:7
+msgid "init    = 0xffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_interlaken:10
+#: pwnlib.util.crc.crc_crc_24_os_9:10
+msgid "xorout  = 0xffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_interlaken:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-interlaken"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_lte_a:1
+msgid "Calculates the crc_24_lte_a checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_lte_a:5 pwnlib.util.crc.crc_crc_24_openpgp:5
+msgid "polynom = 0x864cfb"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_lte_a:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-lte-a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_lte_b:1
+msgid "Calculates the crc_24_lte_b checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_lte_b:5 pwnlib.util.crc.crc_crc_24_os_9:5
+msgid "polynom = 0x800063"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_lte_b:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-lte-b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_openpgp:1
+msgid "Calculates the crc_24_openpgp checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_openpgp:7
+msgid "init    = 0xb704ce"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_openpgp:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-openpgp"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_os_9:1
+msgid "Calculates the crc_24_os_9 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_24_os_9:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-24-os-9"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_30_cdma:1
+msgid "Calculates the crc_30_cdma checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_30_cdma:5
+msgid "polynom = 0x2030b9c7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_30_cdma:6
+msgid "width   = 30"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_30_cdma:7
+msgid "init    = 0x3fffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_30_cdma:10
+msgid "xorout  = 0x3fffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_30_cdma:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-30-cdma"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_31_philips:1
+msgid "Calculates the crc_31_philips checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_31_philips:5 pwnlib.util.crc.crc_crc_32_bzip2:5
+#: pwnlib.util.crc.crc_crc_32_cksum:5 pwnlib.util.crc.crc_crc_32_iso_hdlc:5
+#: pwnlib.util.crc.crc_crc_32_jamcrc:5 pwnlib.util.crc.crc_crc_32_mpeg_2:5
+msgid "polynom = 0x4c11db7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_31_philips:6
+msgid "width   = 31"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_31_philips:7
+msgid "init    = 0x7fffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_31_philips:10
+msgid "xorout  = 0x7fffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_31_philips:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-31-philips"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_aixm:1
+msgid "Calculates the crc_32_aixm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_aixm:5
+msgid "polynom = 0x814141ab"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_aixm:6 pwnlib.util.crc.crc_crc_32_autosar:6
+#: pwnlib.util.crc.crc_crc_32_base91_d:6 pwnlib.util.crc.crc_crc_32_bzip2:6
+#: pwnlib.util.crc.crc_crc_32_cd_rom_edc:6 pwnlib.util.crc.crc_crc_32_cksum:6
+#: pwnlib.util.crc.crc_crc_32_iscsi:6 pwnlib.util.crc.crc_crc_32_iso_hdlc:6
+#: pwnlib.util.crc.crc_crc_32_jamcrc:6 pwnlib.util.crc.crc_crc_32_mef:6
+#: pwnlib.util.crc.crc_crc_32_mpeg_2:6 pwnlib.util.crc.crc_crc_32_xfer:6
+msgid "width   = 32"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_aixm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-aixm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_autosar:1
+msgid "Calculates the crc_32_autosar checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_autosar:5
+msgid "polynom = 0xf4acfb13"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_autosar:7
+#: pwnlib.util.crc.crc_crc_32_base91_d:7 pwnlib.util.crc.crc_crc_32_bzip2:7
+#: pwnlib.util.crc.crc_crc_32_iscsi:7 pwnlib.util.crc.crc_crc_32_iso_hdlc:7
+#: pwnlib.util.crc.crc_crc_32_jamcrc:7 pwnlib.util.crc.crc_crc_32_mef:7
+#: pwnlib.util.crc.crc_crc_32_mpeg_2:7
+msgid "init    = 0xffffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_autosar:10
+#: pwnlib.util.crc.crc_crc_32_base91_d:10 pwnlib.util.crc.crc_crc_32_bzip2:10
+#: pwnlib.util.crc.crc_crc_32_cksum:10 pwnlib.util.crc.crc_crc_32_iscsi:10
+#: pwnlib.util.crc.crc_crc_32_iso_hdlc:10
+msgid "xorout  = 0xffffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_autosar:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-autosar"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_base91_d:1
+msgid "Calculates the crc_32_base91_d checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_base91_d:5
+msgid "polynom = 0xa833982b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_base91_d:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-base91-d"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_bzip2:1
+msgid "Calculates the crc_32_bzip2 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_bzip2:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-bzip2"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_cd_rom_edc:1
+msgid "Calculates the crc_32_cd_rom_edc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_cd_rom_edc:5
+msgid "polynom = 0x8001801b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_cd_rom_edc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-cd-rom-edc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_cksum:1
+msgid "Calculates the crc_32_cksum checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_cksum:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-cksum"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_iscsi:1
+msgid "Calculates the crc_32_iscsi checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_iscsi:5
+msgid "polynom = 0x1edc6f41"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_iscsi:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-iscsi"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_iso_hdlc:1
+msgid "Calculates the crc_32_iso_hdlc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_iso_hdlc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-iso-hdlc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_jamcrc:1
+msgid "Calculates the crc_32_jamcrc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_jamcrc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-jamcrc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_mef:1
+msgid "Calculates the crc_32_mef checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_mef:5
+msgid "polynom = 0x741b8cd7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_mef:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-mef"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_mpeg_2:1
+msgid "Calculates the crc_32_mpeg_2 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_mpeg_2:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-mpeg-2"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_xfer:1
+msgid "Calculates the crc_32_xfer checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_xfer:5
+msgid "polynom = 0xaf"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_32_xfer:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-32-xfer"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_gsm:1
+msgid "Calculates the crc_3_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_gsm:5 pwnlib.util.crc.crc_crc_3_rohc:5
+#: pwnlib.util.crc.crc_crc_4_g_704:5 pwnlib.util.crc.crc_crc_4_interlaken:5
+#: pwnlib.util.crc.crc_crc_6_g_704:5
+msgid "polynom = 0x3"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_gsm:6 pwnlib.util.crc.crc_crc_3_rohc:6
+msgid "width   = 3"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_gsm:10
+msgid "xorout  = 0x7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-3-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_rohc:1
+msgid "Calculates the crc_3_rohc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_rohc:7
+msgid "init    = 0x7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_3_rohc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-3-rohc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_40_gsm:1
+msgid "Calculates the crc_40_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_40_gsm:5
+msgid "polynom = 0x4820009"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_40_gsm:6
+msgid "width   = 40"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_40_gsm:10
+msgid "xorout  = 0xffffffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_40_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-40-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_g_704:1
+msgid "Calculates the crc_4_g_704 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_g_704:6 pwnlib.util.crc.crc_crc_4_interlaken:6
+msgid "width   = 4"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_g_704:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-4-g-704"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_interlaken:1
+msgid "Calculates the crc_4_interlaken checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_interlaken:7
+msgid "init    = 0xf"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_interlaken:10
+msgid "xorout  = 0xf"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_4_interlaken:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-4-interlaken"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_epc_c1g2:1
+msgid "Calculates the crc_5_epc_c1g2 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_epc_c1g2:5 pwnlib.util.crc.crc_crc_7_mmc:5
+msgid "polynom = 0x9"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_epc_c1g2:6 pwnlib.util.crc.crc_crc_5_g_704:6
+#: pwnlib.util.crc.crc_crc_5_usb:6
+msgid "width   = 5"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_epc_c1g2:7
+msgid "init    = 0x9"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_epc_c1g2:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-5-epc-c1g2"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_g_704:1
+msgid "Calculates the crc_5_g_704 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_g_704:5
+msgid "polynom = 0x15"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_g_704:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-5-g-704"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_usb:1
+msgid "Calculates the crc_5_usb checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_usb:5
+msgid "polynom = 0x5"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_usb:7
+msgid "init    = 0x1f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_usb:10
+msgid "xorout  = 0x1f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_5_usb:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-5-usb"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ecma_182:1
+msgid "Calculates the crc_64_ecma_182 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ecma_182:5 pwnlib.util.crc.crc_crc_64_we:5
+#: pwnlib.util.crc.crc_crc_64_xz:5
+msgid "polynom = 0x42f0e1eba9ea3693"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ecma_182:6 pwnlib.util.crc.crc_crc_64_go_iso:6
+#: pwnlib.util.crc.crc_crc_64_ms:6 pwnlib.util.crc.crc_crc_64_we:6
+#: pwnlib.util.crc.crc_crc_64_xz:6
+msgid "width   = 64"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ecma_182:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-64-ecma-182"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_go_iso:1
+msgid "Calculates the crc_64_go_iso checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_go_iso:5
+msgid "polynom = 0x1b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_go_iso:7 pwnlib.util.crc.crc_crc_64_ms:7
+#: pwnlib.util.crc.crc_crc_64_we:7 pwnlib.util.crc.crc_crc_64_xz:7
+msgid "init    = 0xffffffffffffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_go_iso:10 pwnlib.util.crc.crc_crc_64_we:10
+#: pwnlib.util.crc.crc_crc_64_xz:10
+msgid "xorout  = 0xffffffffffffffff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_go_iso:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-64-go-iso"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ms:1
+msgid "Calculates the crc_64_ms checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ms:5
+msgid "polynom = 0x259c84cba6426349"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_ms:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-64-ms"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_we:1
+msgid "Calculates the crc_64_we checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_we:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-64-we"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_xz:1
+msgid "Calculates the crc_64_xz checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_64_xz:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-64-xz"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_a:1
+msgid "Calculates the crc_6_cdma2000_a checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_a:5
+msgid "polynom = 0x27"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_a:6
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:6 pwnlib.util.crc.crc_crc_6_darc:6
+#: pwnlib.util.crc.crc_crc_6_g_704:6 pwnlib.util.crc.crc_crc_6_gsm:6
+msgid "width   = 6"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_a:7
+#: pwnlib.util.crc.crc_crc_6_cdma2000_b:7
+msgid "init    = 0x3f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_a:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-6-cdma2000-a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_b:1
+msgid "Calculates the crc_6_cdma2000_b checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_b:5
+#: pwnlib.util.crc.crc_crc_8_i_432_1:5 pwnlib.util.crc.crc_crc_8_rohc:5
+#: pwnlib.util.crc.crc_crc_8_smbus:5
+msgid "polynom = 0x7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_cdma2000_b:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-6-cdma2000-b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_darc:1
+msgid "Calculates the crc_6_darc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_darc:5
+msgid "polynom = 0x19"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_darc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-6-darc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_g_704:1
+msgid "Calculates the crc_6_g_704 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_g_704:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-6-g-704"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_gsm:1
+msgid "Calculates the crc_6_gsm checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_gsm:5 pwnlib.util.crc.crc_crc_8_autosar:5
+#: pwnlib.util.crc.crc_crc_8_opensafety:5
+msgid "polynom = 0x2f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_gsm:10
+msgid "xorout  = 0x3f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_6_gsm:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-6-gsm"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_mmc:1
+msgid "Calculates the crc_7_mmc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_mmc:6 pwnlib.util.crc.crc_crc_7_rohc:6
+#: pwnlib.util.crc.crc_crc_7_umts:6
+msgid "width   = 7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_mmc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-7-mmc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_rohc:1
+msgid "Calculates the crc_7_rohc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_rohc:5
+msgid "polynom = 0x4f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_rohc:7
+msgid "init    = 0x7f"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_rohc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-7-rohc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_umts:1
+msgid "Calculates the crc_7_umts checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_umts:5
+msgid "polynom = 0x45"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_7_umts:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-7-umts"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_82_darc:1
+msgid "Calculates the crc_82_darc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_82_darc:5
+msgid "polynom = 0x308c0111011401440411"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_82_darc:6
+msgid "width   = 82"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_82_darc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-82-darc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_autosar:1
+msgid "Calculates the crc_8_autosar checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_autosar:6 pwnlib.util.crc.crc_crc_8_bluetooth:6
+#: pwnlib.util.crc.crc_crc_8_cdma2000:6 pwnlib.util.crc.crc_crc_8_darc:6
+#: pwnlib.util.crc.crc_crc_8_dvb_s2:6 pwnlib.util.crc.crc_crc_8_gsm_a:6
+#: pwnlib.util.crc.crc_crc_8_gsm_b:6 pwnlib.util.crc.crc_crc_8_hitag:6
+#: pwnlib.util.crc.crc_crc_8_i_432_1:6 pwnlib.util.crc.crc_crc_8_i_code:6
+#: pwnlib.util.crc.crc_crc_8_lte:6 pwnlib.util.crc.crc_crc_8_maxim_dow:6
+#: pwnlib.util.crc.crc_crc_8_mifare_mad:6 pwnlib.util.crc.crc_crc_8_nrsc_5:6
+#: pwnlib.util.crc.crc_crc_8_opensafety:6 pwnlib.util.crc.crc_crc_8_rohc:6
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:6 pwnlib.util.crc.crc_crc_8_smbus:6
+#: pwnlib.util.crc.crc_crc_8_tech_3250:6 pwnlib.util.crc.crc_crc_8_wcdma:6
+msgid "width   = 8"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_autosar:7 pwnlib.util.crc.crc_crc_8_cdma2000:7
+#: pwnlib.util.crc.crc_crc_8_hitag:7 pwnlib.util.crc.crc_crc_8_nrsc_5:7
+#: pwnlib.util.crc.crc_crc_8_rohc:7 pwnlib.util.crc.crc_crc_8_sae_j1850:7
+#: pwnlib.util.crc.crc_crc_8_tech_3250:7
+msgid "init    = 0xff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_autosar:10 pwnlib.util.crc.crc_crc_8_gsm_b:10
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:10
+msgid "xorout  = 0xff"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_autosar:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-autosar"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_bluetooth:1
+msgid "Calculates the crc_8_bluetooth checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_bluetooth:5
+msgid "polynom = 0xa7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_bluetooth:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-bluetooth"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_cdma2000:1
+msgid "Calculates the crc_8_cdma2000 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_cdma2000:5 pwnlib.util.crc.crc_crc_8_lte:5
+#: pwnlib.util.crc.crc_crc_8_wcdma:5
+msgid "polynom = 0x9b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_cdma2000:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-cdma2000"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_darc:1
+msgid "Calculates the crc_8_darc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_darc:5
+msgid "polynom = 0x39"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_darc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-darc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_dvb_s2:1
+msgid "Calculates the crc_8_dvb_s2 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_dvb_s2:5
+msgid "polynom = 0xd5"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_dvb_s2:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-dvb-s2"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_gsm_a:1
+msgid "Calculates the crc_8_gsm_a checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_gsm_a:5 pwnlib.util.crc.crc_crc_8_hitag:5
+#: pwnlib.util.crc.crc_crc_8_i_code:5 pwnlib.util.crc.crc_crc_8_mifare_mad:5
+#: pwnlib.util.crc.crc_crc_8_sae_j1850:5 pwnlib.util.crc.crc_crc_8_tech_3250:5
+msgid "polynom = 0x1d"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_gsm_a:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-gsm-a"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_gsm_b:1
+msgid "Calculates the crc_8_gsm_b checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_gsm_b:5
+msgid "polynom = 0x49"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_gsm_b:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-gsm-b"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_hitag:1
+msgid "Calculates the crc_8_hitag checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_hitag:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-hitag"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_i_432_1:1
+msgid "Calculates the crc_8_i_432_1 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_i_432_1:10
+msgid "xorout  = 0x55"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_i_432_1:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-i-432-1"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_i_code:1
+msgid "Calculates the crc_8_i_code checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_i_code:7
+msgid "init    = 0xfd"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_i_code:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-i-code"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_lte:1
+msgid "Calculates the crc_8_lte checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_lte:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-lte"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_maxim_dow:1
+msgid "Calculates the crc_8_maxim_dow checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_maxim_dow:5 pwnlib.util.crc.crc_crc_8_nrsc_5:5
+msgid "polynom = 0x31"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_maxim_dow:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-maxim-dow"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_mifare_mad:1
+msgid "Calculates the crc_8_mifare_mad checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_mifare_mad:7
+msgid "init    = 0xc7"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_mifare_mad:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-mifare-mad"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_nrsc_5:1
+msgid "Calculates the crc_8_nrsc_5 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_nrsc_5:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-nrsc-5"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_opensafety:1
+msgid "Calculates the crc_8_opensafety checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_opensafety:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-opensafety"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_rohc:1
+msgid "Calculates the crc_8_rohc checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_rohc:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-rohc"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_sae_j1850:1
+msgid "Calculates the crc_8_sae_j1850 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_sae_j1850:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-sae-j1850"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_smbus:1
+msgid "Calculates the crc_8_smbus checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_smbus:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-smbus"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_tech_3250:1
+msgid "Calculates the crc_8_tech_3250 checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_tech_3250:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-tech-3250"
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_wcdma:1
+msgid "Calculates the crc_8_wcdma checksum."
+msgstr ""
+
+#: of pwnlib.util.crc.crc_crc_8_wcdma:12
+msgid ""
+"See also: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm#crc.cat.crc-8-wcdma"
+msgstr ""
+
+#: of pwnlib.util.crc.Module.find_crc_function:1
+msgid ""
+"Finds all known CRC functions that hashes a piece of data into a specific"
+" checksum. It does this by trying all known CRC functions one after the "
+"other."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.find_crc_function:4
+msgid "Data for which the checksum is known."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:1
+msgid "A generic CRC-sum function."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:3
+msgid ""
+"This is suitable to use with: https://reveng.sourceforge.io/crc-"
+"catalogue/all.htm"
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:6
+msgid ""
+"The \"check\" value in the document is the CRC-sum of the string "
+"\"123456789\"."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:8
+msgid ""
+"The data to calculate the CRC-sum of. This should either be a string or a"
+" list of bits."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:10
+msgid "The polynomial to use."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:12
+msgid ""
+"If the CRC-sum was calculated in hardware, then this would b the initial "
+"value of the checksum register."
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:15
+msgid "Should the input bytes be reflected?"
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:17
+msgid "Should the checksum be reflected?"
+msgstr ""
+
+#: of pwnlib.util.crc.Module.generic_crc:19
+msgid "The value to xor the checksum with before outputting"
+msgstr ""
+
+#: ../pwntools/docs/source/util/cyclic.rst:8
+msgid ":mod:`pwnlib.util.cyclic` --- Generation of unique sequences"
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_gen:1
+msgid ""
+"Creates a stateful cyclic generator which can generate sequential chunks "
+"of de Bruijn sequences."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_gen.find:1
+msgid "Find a chunk and subindex from all the generates de Bruijn sequences."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_gen.get:1
+msgid "Get the next de Bruijn sequence from this generator."
+msgstr ""
+
+#: of pwnlib.util.cyclic._gen_find:1
+msgid ""
+"Returns the first position of `subseq` in the generator or -1 if there is"
+" no such position."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:1
+msgid ""
+"A simple wrapper over :func:`de_bruijn`. This function returns at most "
+"`length` elements."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:4
+msgid ""
+"If the given alphabet is a string, a string is returned from this "
+"function. Otherwise a list is returned."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:7
+msgid "The desired length of the list or None if the entire sequence is desired."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:8 pwnlib.util.cyclic.de_bruijn:6
+msgid "List or string to generate the sequence over."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:9 pwnlib.util.cyclic.de_bruijn:7
+msgid "The length of subsequences that should be unique."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:13 pwnlib.util.misc.run_in_new_terminal:48
+msgid "Notes"
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:14
+msgid "The maximum length is `len(alphabet)**n`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:16
+msgid ""
+"The default values for `alphabet` and `n` restrict the total space to "
+"~446KB."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:18
+msgid ""
+"If you need to generate a longer cyclic pattern, provide a longer "
+"`alphabet`, or if possible a larger `n`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:23
+msgid "Cyclic patterns are usually generated by providing a specific `length`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:31
+msgid ""
+"The `alphabet` and `n` arguments will control the actual output of the "
+"pattern"
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:42
+msgid ""
+"The size of `n` and `alphabet` limit the maximum length that can be "
+"generated. Without providing `length`, the entire possible cyclic space "
+"is generated."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:53
+msgid ""
+"The `alphabet` can be set in `context`, which is useful for circumstances"
+" when certain characters are not allowed.  See "
+":obj:`.context.cyclic_alphabet`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:60
+msgid "The original values can always be restored with:"
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic:64
+msgid "The following just a test to make sure the length is correct."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:1
+msgid "Calculates the position of a substring into a De Bruijn sequence."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:12
+msgid ""
+"The subsequence to look for. This can be a string, a list or an integer. "
+"If an integer is provided it will be packed as a little endian integer."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:15
+msgid ""
+"List or string to generate the sequence over. By default, uses "
+":obj:`.context.cyclic_alphabet`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:17
+msgid ""
+"The length of subsequences that should be unique. By default, uses "
+":obj:`.context.cyclic_size`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:23
+msgid "Let's generate an example cyclic pattern."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:28
+msgid ""
+"Note that 'baaa' starts at offset 4.  The `cyclic_find` routine shows us "
+"this:"
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:33
+msgid ""
+"The *default* length of a subsequence generated by `cyclic` is `4`. If a "
+"longer value is submitted, it is automatically truncated to four bytes."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:39
+msgid ""
+"If you provided e.g. `n=8` to `cyclic` to generate larger subsequences, "
+"you must explicitly provide that argument."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:45
+msgid ""
+"We can generate a large cyclic pattern, and grab a subset of it to check "
+"a deeper offset."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:51
+msgid ""
+"Instead of passing in the byte representation of the pattern, you can "
+"also pass in the integer value.  Note that this is sensitive to the "
+"selected endianness via `context.endian`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:60
+msgid ""
+"Similarly to the case where you can provide a bytes value that is longer "
+"than four bytes, you can provided an integer value that is larger than "
+"what can be held in four bytes. If such a large value is given, it is "
+"automatically truncated."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_find:70
+msgid ""
+"You can use anything for the cyclic pattern, including non-printable "
+"characters."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_metasploit:1
+msgid ""
+"A simple wrapper over :func:`metasploit_pattern`. This function returns a"
+" string of length `length`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_metasploit:4
+msgid ""
+"The desired length of the string or None if the entire sequence is "
+"desired."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_metasploit:5
+#: pwnlib.util.cyclic.cyclic_metasploit_find:6
+#: pwnlib.util.cyclic.metasploit_pattern:7
+msgid "List of strings to generate the sequence over."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_metasploit_find:1
+msgid "Calculates the position of a substring into a Metasploit Pattern sequence."
+msgstr ""
+
+#: of pwnlib.util.cyclic.cyclic_metasploit_find:3
+msgid ""
+"The subsequence to look for. This can be a string or an integer. If an "
+"integer is provided it will be packed as a little endian integer."
+msgstr ""
+
+#: of pwnlib.util.cyclic.de_bruijn:1
+msgid ""
+"Generator for a sequence of unique substrings of length `n`. This is "
+"implemented using a De Bruijn Sequence over the given `alphabet`."
+msgstr ""
+
+#: of pwnlib.util.cyclic.de_bruijn:4
+msgid "The returned generator will yield up to ``len(alphabet)**n`` elements."
+msgstr ""
+
+#: of pwnlib.util.cyclic.metasploit_pattern:1
+msgid ""
+"Generator for a sequence of characters as per Metasploit Framework's "
+"`Rex::Text.pattern_create` (aka `pattern_create.rb`)."
+msgstr ""
+
+#: of pwnlib.util.cyclic.metasploit_pattern:4
+msgid ""
+"The returned generator will yield up to ``len(sets) * reduce(lambda x,y: "
+"x*y, map(len, sets))`` elements."
+msgstr ""
+
+#: ../pwntools/docs/source/util/fiddling.rst:8
+msgid ":mod:`pwnlib.util.fiddling` --- Utilities bit fiddling"
+msgstr ""
+
+#: of pwnlib.util.fiddling.b64d:1
+msgid "Base64 decodes a string"
+msgstr ""
+
+#: of pwnlib.util.fiddling.b64e:1
+msgid "Base64 encodes a string"
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:1
+msgid "bits(s, endian = 'big', zero = 0, one = 1) -> list"
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:3
+msgid "Converts the argument into a list of bits."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:5
+msgid "A bytestring or number to be converted into bits."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:6
+msgid "The binary endian, default 'big'."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:8
+msgid "The value representing a 0-bit."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:9
+msgid "The value representing a 1-bit."
+msgstr ""
+
+#: ../pwntools/docs/source/util/fiddling.rst
+#: ../pwntools/docs/source/util/misc.rst ../pwntools/docs/source/util/net.rst
+#: ../pwntools/docs/source/util/packing.rst
+#: ../pwntools/docs/source/util/proc.rst of pwnlib.util.fiddling.bits
+#: pwnlib.util.fiddling.hexdump pwnlib.util.fiddling.hexdump_iter
+#: pwnlib.util.fiddling.js_escape pwnlib.util.fiddling.js_unescape
+#: pwnlib.util.fiddling.randoms pwnlib.util.fiddling.tty_escape
+#: pwnlib.util.fiddling.unbits pwnlib.util.fiddling.xor
+#: pwnlib.util.fiddling.xor_key pwnlib.util.fiddling.xor_pair
+#: pwnlib.util.getdents.dirents pwnlib.util.getdents.dirents64
+#: pwnlib.util.iters.bruteforce pwnlib.util.iters.chained
+#: pwnlib.util.iters.consume pwnlib.util.iters.cyclen
+#: pwnlib.util.iters.dotproduct pwnlib.util.iters.flatten
+#: pwnlib.util.iters.group pwnlib.util.iters.iter_except
+#: pwnlib.util.iters.lexicographic pwnlib.util.iters.nth pwnlib.util.iters.pad
+#: pwnlib.util.iters.powerset pwnlib.util.iters.quantify
+#: pwnlib.util.iters.random_combination
+#: pwnlib.util.iters.random_combination_with_replacement
+#: pwnlib.util.iters.random_permutation pwnlib.util.iters.random_product
+#: pwnlib.util.iters.repeat_func pwnlib.util.iters.roundrobin
+#: pwnlib.util.iters.tabulate pwnlib.util.iters.take
+#: pwnlib.util.iters.unique_everseen pwnlib.util.iters.unique_justseen
+#: pwnlib.util.iters.unique_window pwnlib.util.lists.group
+#: pwnlib.util.misc.which pwnlib.util.net.interfaces4
+#: pwnlib.util.net.interfaces6 pwnlib.util.packing.make_packer
+#: pwnlib.util.packing.make_unpacker pwnlib.util.packing.overlap
+#: pwnlib.util.packing.p16 pwnlib.util.packing.p32 pwnlib.util.packing.p40
+#: pwnlib.util.packing.p48 pwnlib.util.packing.p56 pwnlib.util.packing.p64
+#: pwnlib.util.packing.pack pwnlib.util.packing.unpack
+#: pwnlib.util.packing.unpack_many pwnlib.util.proc.ancestors
+#: pwnlib.util.proc.cmdline pwnlib.util.proc.cwd pwnlib.util.proc.descendants
+#: pwnlib.util.proc.exe pwnlib.util.proc.memory_maps pwnlib.util.proc.name
+#: pwnlib.util.proc.pid_by_name pwnlib.util.proc.pidof
+#: pwnlib.util.proc.starttime pwnlib.util.proc.stat pwnlib.util.proc.state
+#: pwnlib.util.proc.tracer
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits:11
+msgid "A list consisting of the values specified in `zero` and `one`."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bits_str:1
+msgid "A wrapper around :func:`bits`, which converts the output into a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bitswap:1
+msgid "Reverses the bits in every byte of a given string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bitswap_int:1
+msgid "Reverses the bits of a numbers and returns the result as a new number."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bitswap_int:3
+msgid "The number to swap."
+msgstr ""
+
+#: of pwnlib.util.fiddling.bitswap_int:5
+msgid "The width of the integer"
+msgstr ""
+
+#: of pwnlib.util.fiddling.bnot:1
+msgid "Returns the binary inverse of 'value'."
+msgstr ""
+
+#: of pwnlib.util.fiddling.enhex:1
+msgid "Hex-encodes a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:1
+msgid ""
+"hexdump(s, width = 16, skip = True, hexii = False, begin = 0, style = "
+"None,"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:2
+msgid "highlight = None, cyclic = False, groupsize=4, total = True) -> str"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:4
+msgid "Return a hexdump-dump of a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:6
+msgid "The data to hexdump."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:8 pwnlib.util.fiddling.hexdump_iter:9
+#: pwnlib.util.fiddling.hexii:5
+msgid "The number of characters per line"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:10 pwnlib.util.fiddling.hexdump_iter:11
+msgid "The number of characters per group"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:12 pwnlib.util.fiddling.hexdump_iter:13
+msgid "Set to True, if repeated lines should be replaced by a \"*\""
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:14 pwnlib.util.fiddling.hexdump_iter:15
+msgid "Set to True, if a hexii-dump should be returned instead of a hexdump."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:16 pwnlib.util.fiddling.hexdump_iter:17
+msgid "Offset of the first byte to print in the left column"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:18 pwnlib.util.fiddling.hexdump_iter:19
+msgid "Color scheme to use."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:20 pwnlib.util.fiddling.hexdump_iter:21
+msgid "Byte values to highlight."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:22 pwnlib.util.fiddling.hexdump_iter:23
+msgid "Attempt to skip consecutive, unmodified cyclic lines"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:24 pwnlib.util.fiddling.hexdump_iter:25
+msgid "Set to True, if total bytes should be printed"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump:27
+msgid "A hexdump-dump in the form of a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump_iter:1
+msgid ""
+"hexdump_iter(s, width = 16, skip = True, hexii = False, begin = 0, style "
+"= None,"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump_iter:2
+msgid ""
+"highlight = None, cyclic = False, groupsize=4, total = True) -> str "
+"generator"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump_iter:4
+msgid ""
+"Return a hexdump-dump of a string as a generator of lines.  Unless you "
+"have massive amounts of data you probably want to use :meth:`hexdump`."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump_iter:7
+msgid ""
+"File object to dump.  Use :class:`io.BytesIO` or :meth:`hexdump` to dump "
+"a byte string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexdump_iter:28
+msgid "A generator producing the hexdump-dump one line at a time."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexii:1
+msgid "Return a HEXII-dump of a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexii:3
+msgid "The bytes to dump"
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexii:7
+msgid "Should repeated lines be replaced by a \"*\""
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexii:10
+msgid "A HEXII-dump in the form of a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.hexstr:1
+msgid "Escapes byte string into a C representation."
+msgstr ""
+
+#: of pwnlib.util.fiddling.isprint:1
+msgid "Return True if a character is printable"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_escape:1
+msgid ""
+"Pack data as an escaped Unicode string for use in JavaScript's "
+"`unescape()` function"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_escape:3
+msgid "Bytes to pack"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_escape:5
+msgid "A single byte to use as padding if data is of uneven length"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_escape:7
+msgid "Endianness with which to pack the string (\"little\"/\"big\")"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_escape:10
+msgid "A string representation of the packed data"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_unescape:1
+msgid "Unpack an escaped Unicode string from JavaScript's `escape()` function"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_unescape:3
+msgid "Escaped string to unpack"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_unescape:5
+msgid "Endianness with which to unpack the string (\"little\"/\"big\")"
+msgstr ""
+
+#: of pwnlib.util.fiddling.js_unescape:8
+msgid "A bytes representation of the unpacked data"
+msgstr ""
+
+#: of pwnlib.util.fiddling.naf:1
+msgid ""
+"Returns a generator for the non-adjacent form (NAF[1]) of a number, `n`."
+"  If `naf(n)` generates `z_0, z_1, ...`, then `n == z_0 + z_1 * 2 + z_2 *"
+" 2**2, ...`."
+msgstr ""
+
+#: of pwnlib.util.fiddling.naf:5
+msgid "[1] https://en.wikipedia.org/wiki/Non-adjacent_form"
+msgstr ""
+
+#: of pwnlib.util.fiddling.negate:1
+msgid "Returns the two's complement of 'value'."
+msgstr ""
+
+#: of pwnlib.util.fiddling.randoms:1
+msgid ""
+"Returns a random string of a given length using only the specified "
+"alphabet."
+msgstr ""
+
+#: of pwnlib.util.fiddling.randoms:3
+msgid "The length of the desired string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.randoms:5
+msgid "The alphabet of allowed characters. Defaults to all lowercase characters."
+msgstr ""
+
+#: of pwnlib.util.fiddling.randoms:7
+msgid "A random string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.rol:1
+msgid "Returns a rotation by `k` of `n`."
+msgstr ""
+
+#: of pwnlib.util.fiddling.rol:3
+msgid ""
+"When `n` is a number, then means ``((n << k) | (n >> (word_size - k)))`` "
+"truncated to `word_size` bits."
+msgstr ""
+
+#: of pwnlib.util.fiddling.rol:5
+#, python-format
+msgid ""
+"When `n` is a list, tuple or string, this is ``n[k % len(n):] + n[:k % "
+"len(n)]``."
+msgstr ""
+
+#: of pwnlib.util.fiddling.rol:7
+msgid "The value to rotate."
+msgstr ""
+
+#: of pwnlib.util.fiddling.rol:8
+msgid "The rotation amount. Can be a positive or negative number."
+msgstr ""
+
+#: of pwnlib.util.fiddling.rol:10
+msgid ""
+"If `n` is a number, then this is the assumed bitsize of `n`.  Defaults to"
+" :data:`pwnlib.context.word_size` if `None` ."
+msgstr ""
+
+#: of pwnlib.util.fiddling.ror:1
+msgid "A simple wrapper around :func:`rol`, which negates the values of `k`."
+msgstr ""
+
+#: of pwnlib.util.fiddling.tty_escape:1
+msgid ""
+"Escape data for terminal output. This is useful when sending data to a "
+"terminal that may interpret certain bytes as control characters."
+msgstr ""
+
+#: of pwnlib.util.fiddling.tty_escape:4
+msgid "Check ``stty --all`` for the current settings on your terminal."
+msgstr ""
+
+#: of pwnlib.util.fiddling.tty_escape:6
+msgid "The data to escape"
+msgstr ""
+
+#: of pwnlib.util.fiddling.tty_escape:8
+msgid "The byte to prepend to escape the next character. Defaults to ^V."
+msgstr ""
+
+#: of pwnlib.util.fiddling.tty_escape:10
+msgid "The bytes to escape"
+msgstr ""
+
+#: of pwnlib.util.fiddling.tty_escape:13
+msgid "The escaped data."
+msgstr ""
+
+#: of pwnlib.util.fiddling.unbits:1
+msgid "Converts an iterable of bits into a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.unbits:3
+msgid "Iterable of bits"
+msgstr ""
+
+#: of pwnlib.util.fiddling.unbits:4
+msgid "The string \"little\" or \"big\", which specifies the bits endianness."
+msgstr ""
+
+#: of pwnlib.util.fiddling.unbits:7
+msgid "A string of the decoded bits."
+msgstr ""
+
+#: of pwnlib.util.fiddling.unhex:1
+msgid "Hex-decodes a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.urldecode:1
+msgid "URL-decodes a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.urlencode:1
+msgid "URL-encodes a string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor:1
+msgid ""
+"Flattens its arguments using :func:`pwnlib.util.packing.flat` and then "
+"xors them together. If the end of a string is reached, it wraps around in"
+" the string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor:5
+msgid "The arguments to be xor'ed together."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor:6
+msgid ""
+"How long a string should be returned. Can be either "
+"'min'/'max'/'left'/'right' or a number."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor:9
+msgid "The string of the arguments xor'ed together."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_key:1
+msgid ""
+"Finds a ``size``-width value that can be XORed with a string to produce "
+"``data``, while neither the XOR value or XOR string contain any bytes in "
+"``avoid``."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_key:5 pwnlib.util.fiddling.xor_pair:4
+msgid "The desired string."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_key:7 pwnlib.util.fiddling.xor_pair:6
+msgid "The list of disallowed characters. Defaults to nulls and newlines."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_key:8
+msgid "Size of the desired output value, default is word size."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_key:11
+msgid ""
+"A tuple containing two byte strings; the XOR key and the XOR string. If "
+"no such pair exists, None is returned."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_pair:1
+msgid ""
+"Finds two strings that will xor into a given string, while only using a "
+"given alphabet."
+msgstr ""
+
+#: of pwnlib.util.fiddling.xor_pair:8
+msgid ""
+"Two strings which will xor to the given string. If no such two strings "
+"exist, then None is returned."
+msgstr ""
+
+#: ../pwntools/docs/source/util/getdents.rst:8
+msgid ":mod:`pwnlib.util.getdents` --- Linux binary directory listing"
+msgstr ""
+
+#: of pwnlib.util.getdents.Dtype.__format__:1
+msgid "Convert to a string according to format_spec."
+msgstr ""
+
+#: of pwnlib.util.getdents.linux_dirent:1
+msgid "Represent struct linux_dirent"
+msgstr ""
+
+#: of pwnlib.util.getdents.linux_dirent.__str__:1
+msgid "Return str(self)."
+msgstr ""
+
+#: of pwnlib.util.getdents.dirents:1
+msgid "Extracts data from a buffer emitted by getdents"
+msgstr ""
+
+#: of pwnlib.util.getdents.dirents:3
+msgid "getdents result"
+msgstr ""
+
+#: of pwnlib.util.getdents.dirents:6 pwnlib.util.getdents.dirents64:8
+msgid "A list of file names"
+msgstr ""
+
+#: of pwnlib.util.getdents.dirents64:1
+msgid "dirents(buf: bytes) -> list[linux_dirent]:"
+msgstr ""
+
+#: of pwnlib.util.getdents.dirents64:3
+msgid "Extracts data from a buffer emitted by getdents64"
+msgstr ""
+
+#: of pwnlib.util.getdents.dirents64:5
+msgid "getdents64 result"
+msgstr ""
+
+#: ../pwntools/docs/source/util/hashes.rst:2
+msgid ":mod:`pwnlib.util.hashes` --- Hashing functions"
+msgstr ""
+
+#: of pwnlib.util.hashes:1
+msgid "Functions for computing various hashes of files and strings."
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2b sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2b sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2b sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2b sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2s sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2s sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2s sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the blake2s sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the md5 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the md5 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the md5 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the md5 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha1 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha1 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha1 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha1 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha224 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha224 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha224 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha224 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha256 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha256 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha256 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha256 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha384 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha384 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha384 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha384 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_224 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_224 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_224 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_224 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_256 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_256 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_256 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_256 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_384 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_384 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_384 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_384 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_512 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_512 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_512 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha3_512 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha512 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha512 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha512 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the sha512 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_128 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_128 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_128 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_128 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_256 sum of a file"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_256 sum of a file; returns hex-encoded"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_256 sum of a string"
+msgstr ""
+
+#: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
+msgid "Calculates the shake_256 sum of a string; returns hex-encoded"
+msgstr ""
+
+#: ../pwntools/docs/source/util/iters.rst:8
+msgid ":mod:`pwnlib.util.iters` --- Extension of standard module :mod:`itertools`"
+msgstr ""
+
+#: of pwnlib.util.iters:1
+msgid "This module includes and extends the standard module :mod:`itertools`."
+msgstr ""
+
+#: itertools.pairwise:1 of
+msgid "Return an iterator of overlapping pairs taken from the input iterator."
+msgstr ""
+
+#: itertools.pairwise:3 of
+msgid "s -> (s0,s1), (s1,s2), (s2, s3), ..."
+msgstr ""
+
+#: of pwnlib.util.iters.pairwise.__getattribute__:1
+msgid "Return getattr(self, name)."
+msgstr ""
+
+#: of pwnlib.util.iters.pairwise.__iter__:1
+msgid "Implement iter(self)."
+msgstr ""
+
+#: of pwnlib.util.iters.pairwise.__next__:1
+msgid "Implement next(self)."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:1
+msgid ""
+"Bruteforce `func` to return :const:`True`.  `func` should take a string "
+"input and return a :func:`bool`.  `func` will be called with strings from"
+" `alphabet` until it returns :const:`True` or the search space has been "
+"exhausted."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:6
+msgid ""
+"The argument `start` can be used to split the search space, which is "
+"useful if multiple CPU cores are available."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:9
+msgid "The function to bruteforce."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:11 pwnlib.util.iters.lexicographic:4
+msgid "The alphabet to draw symbols from."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:12
+msgid "Longest string to try."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:13
+msgid ""
+"If 'upto' try strings of length ``1 .. length``, if 'fixed' only try "
+"strings of length ``length`` and if 'downfrom' try strings of length "
+"``length .. 1``."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:16
+msgid ""
+"a tuple ``(i, N)`` which splits the search space up into `N` pieces and "
+"starts at piece `i` (1..N). :const:`None` is equivalent to ``(1, 1)``."
+msgstr ""
+
+#: of pwnlib.util.iters.bruteforce:19
+msgid ""
+"A string `s` such that ``func(s)`` returns :const:`True` or :const:`None`"
+" if the search space was exhausted."
+msgstr ""
+
+#: of pwnlib.util.iters.chained:1
+msgid "A decorator chaining the results of `func`.  Useful for generators."
+msgstr ""
+
+#: of pwnlib.util.iters.chained:3
+msgid "The function being decorated."
+msgstr ""
+
+#: of pwnlib.util.iters.chained:6
+msgid ""
+"A generator function whoose elements are the concatenation of the return "
+"values from ``func(*args, **kwargs)``."
+msgstr ""
+
+#: of pwnlib.util.iters.consume:1
+msgid ""
+"Advance the iterator `n` steps ahead. If `n is :const:`None`, consume "
+"everything."
+msgstr ""
+
+#: of pwnlib.util.iters.consume:4
+msgid "Number of elements to consume."
+msgstr ""
+
+#: of pwnlib.util.iters.consume:6
+msgid "An iterator."
+msgstr ""
+
+#: of pwnlib.util.iters.consume:9
+msgid ":const:`None`."
+msgstr ""
+
+#: of pwnlib.util.iters.cyclen:1
+msgid "Repeats the elements of `iterable` `n` times."
+msgstr ""
+
+#: of pwnlib.util.iters.cyclen:3
+msgid "The number of times to repeat `iterable`."
+msgstr ""
+
+#: of pwnlib.util.iters.cyclen:5 pwnlib.util.iters.dotproduct:3
+#: pwnlib.util.iters.dotproduct:5 pwnlib.util.iters.group:6
+#: pwnlib.util.iters.nth:6 pwnlib.util.iters.pad:4 pwnlib.util.iters.powerset:3
+#: pwnlib.util.iters.quantify:3 pwnlib.util.iters.random_combination:1
+#: pwnlib.util.iters.random_combination_with_replacement:3
+#: pwnlib.util.iters.random_permutation:3 pwnlib.util.iters.take:6
+#: pwnlib.util.iters.unique_everseen:6 pwnlib.util.iters.unique_justseen:8
+#: pwnlib.util.iters.unique_window:8
+msgid "An iterable."
+msgstr ""
+
+#: of pwnlib.util.iters.cyclen:7
+msgid ""
+"An iterator whoose elements are the elements of `iterator` repeated `n` "
+"times."
+msgstr ""
+
+#: of pwnlib.util.iters.dotproduct:1
+msgid "Computes the dot product of `x` and `y`."
+msgstr ""
+
+#: of pwnlib.util.iters.dotproduct:8
+msgid ""
+"The dot product of `x` and `y`, i.e. -- ``x[0] * y[0] + x[1] * y[1] + "
+"...``."
+msgstr ""
+
+#: of pwnlib.util.iters.flatten:1
+msgid ""
+"Flattens one level of nesting; when `xss` is an iterable of iterables, "
+"returns an iterator whoose elements is the concatenation of the elements "
+"of `xss`."
+msgstr ""
+
+#: of pwnlib.util.iters.flatten:5
+msgid "An iterable of iterables."
+msgstr ""
+
+#: of pwnlib.util.iters.flatten:7
+msgid ""
+"An iterator whoose elements are the concatenation of the iterables in "
+"`xss`."
+msgstr ""
+
+#: of pwnlib.util.iters.group:1
+msgid ""
+"Similar to :func:`pwnlib.util.lists.group`, but returns an iterator and "
+"uses :mod:`itertools` fast build-in functions."
+msgstr ""
+
+#: of pwnlib.util.iters.group:4
+msgid "The group size."
+msgstr ""
+
+#: of pwnlib.util.iters.group:7
+msgid ""
+"The value to fill into the remaining slots of the last group if the `n` "
+"does not divide the number of elements in `iterable`."
+msgstr ""
+
+#: of pwnlib.util.iters.group:10
+msgid "An iterator whoose elements are `n`-tuples of the elements of `iterable`."
+msgstr ""
+
+#: of pwnlib.util.iters.iter_except:1
+msgid ""
+"Calls `func` repeatedly until an exception is raised.  Works like the "
+"build-in :func:`iter` but uses an exception instead of a sentinel to "
+"signal the end."
+msgstr ""
+
+#: of pwnlib.util.iters.iter_except:5 pwnlib.util.iters.repeat_func:6
+msgid "The function to call."
+msgstr ""
+
+#: of pwnlib.util.iters.iter_except:7
+msgid "The exception that signals the end.  Other exceptions will not be caught."
+msgstr ""
+
+#: of pwnlib.util.iters.iter_except:11
+msgid ""
+"An iterator whoose elements are the results of calling ``func()`` until "
+"an exception matching `exception` is raised."
+msgstr ""
+
+#: of pwnlib.util.iters.lexicographic:1
+msgid ""
+"The words with symbols in `alphabet`, in lexicographic order (determined "
+"by the order of `alphabet`)."
+msgstr ""
+
+#: of pwnlib.util.iters.lexicographic:6
+msgid ""
+"An iterator of the words with symbols in `alphabet`, in lexicographic "
+"order."
+msgstr ""
+
+#: of pwnlib.util.iters.mbruteforce:1
+msgid "Same functionality as bruteforce(), but multithreaded."
+msgstr ""
+
+#: of pwnlib.util.iters.mbruteforce:3 pwnlib.util.iters.mbruteforce:4
+#: pwnlib.util.iters.mbruteforce:5 pwnlib.util.iters.mbruteforce:6
+#: pwnlib.util.iters.mbruteforce:7
+msgid "same as for bruteforce()"
+msgstr ""
+
+#: of pwnlib.util.iters.mbruteforce:8
+msgid "Amount of threads to spawn, default is the amount of cores."
+msgstr ""
+
+#: of pwnlib.util.iters.mbruteforce:10
+msgid "Example:"
+msgstr ""
+
+#: of pwnlib.util.iters.nth:1
+msgid ""
+"Returns the element at index `n` in `iterable`.  If `iterable` is a "
+"iterator it will be advanced."
+msgstr ""
+
+#: of pwnlib.util.iters.nth:4
+msgid "Index of the element to return."
+msgstr ""
+
+#: of pwnlib.util.iters.nth:7
+msgid "A default value."
+msgstr ""
+
+#: of pwnlib.util.iters.nth:10
+msgid ""
+"The element at index `n` in `iterable` or `default` if `iterable` has too"
+" few elements."
+msgstr ""
+
+#: of pwnlib.util.iters.pad:1
+msgid ""
+"Pad an `iterable` with `value`, i.e. returns an iterator whoose elements "
+"are first the elements of `iterable` then `value` indefinitely."
+msgstr ""
+
+#: of pwnlib.util.iters.pad:5
+msgid "The value to pad with."
+msgstr ""
+
+#: of pwnlib.util.iters.pad:7
+msgid ""
+"An iterator whoose elements are first the elements of `iterable` then "
+"`value` indefinitely."
+msgstr ""
+
+#: of pwnlib.util.iters.powerset:1
+msgid "The powerset of an iterable."
+msgstr ""
+
+#: of pwnlib.util.iters.powerset:4
+msgid "Whether to include the empty set."
+msgstr ""
+
+#: of pwnlib.util.iters.powerset:7
+msgid "The powerset of `iterable` as an interator of tuples."
+msgstr ""
+
+#: of pwnlib.util.iters.quantify:1
+msgid "Count how many times the predicate `pred` is :const:`True`."
+msgstr ""
+
+#: of pwnlib.util.iters.quantify:4
+msgid ""
+"A function that given an element from `iterable` returns either "
+":const:`True` or :const:`False`."
+msgstr ""
+
+#: of pwnlib.util.iters.quantify:7
+msgid ""
+"The number of elements in `iterable` for which `pred` returns "
+":const:`True`."
+msgstr ""
+
+#: of pwnlib.util.iters.random_combination:2
+#: pwnlib.util.iters.random_combination_with_replacement:4
+msgid "Size of the combination."
+msgstr ""
+
+#: of pwnlib.util.iters.random_combination:5
+msgid "A random element from ``itertools.combinations(iterable, r = r)``."
+msgstr ""
+
+#: of pwnlib.util.iters.random_combination_with_replacement:1
+msgid "random_combination(iterable, r) -> tuple"
+msgstr ""
+
+#: of pwnlib.util.iters.random_combination_with_replacement:7
+msgid ""
+"A random element from ``itertools.combinations_with_replacement(iterable,"
+" r = r)``."
+msgstr ""
+
+#: of pwnlib.util.iters.random_permutation:1
+msgid "random_product(iterable, r = None) -> tuple"
+msgstr ""
+
+#: of pwnlib.util.iters.random_permutation:4
+msgid ""
+"Size of the permutation.  If :const:`None` select all elements in "
+"`iterable`."
+msgstr ""
+
+#: of pwnlib.util.iters.random_permutation:8
+msgid "A random element from ``itertools.permutations(iterable, r = r)``."
+msgstr ""
+
+#: of pwnlib.util.iters.random_product:1
+msgid "One or more iterables"
+msgstr ""
+
+#: of pwnlib.util.iters.random_product:2
+msgid "Number of times to repeat `args`."
+msgstr ""
+
+#: of pwnlib.util.iters.random_product:5
+msgid "A random element from ``itertools.product(*args, repeat = repeat)``."
+msgstr ""
+
+#: of pwnlib.util.iters.repeat_func:1
+msgid ""
+"Repeatedly calls `func` with positional arguments `args` and keyword "
+"arguments `kwargs`.  If no keyword arguments is given the resulting "
+"iterator will be computed using only functions from :mod:`itertools` "
+"which are very fast."
+msgstr ""
+
+#: of pwnlib.util.iters.repeat_func:8
+msgid "Positional arguments."
+msgstr ""
+
+#: of pwnlib.util.iters.repeat_func:9
+msgid "Keyword arguments."
+msgstr ""
+
+#: of pwnlib.util.iters.repeat_func:11
+msgid ""
+"An iterator whoose elements are the results of calling ``func(*args, "
+"**kwargs)`` repeatedly."
+msgstr ""
+
+#: of pwnlib.util.iters.roundrobin:1
+msgid "Take elements from `iterables` in a round-robin fashion."
+msgstr ""
+
+#: of pwnlib.util.iters.roundrobin:3
+msgid "One or more iterables."
+msgstr ""
+
+#: of pwnlib.util.iters.roundrobin:5
+msgid ""
+"An iterator whoose elements are taken from `iterables` in a round-robin "
+"fashion."
+msgstr ""
+
+#: of pwnlib.util.iters.tabulate:1
+msgid "The function to tabulate over."
+msgstr ""
+
+#: of pwnlib.util.iters.tabulate:3
+msgid "Number to start on."
+msgstr ""
+
+#: of pwnlib.util.iters.tabulate:6
+msgid "An iterator with the elements ``func(start), func(start + 1), ...``."
+msgstr ""
+
+#: of pwnlib.util.iters.take:1
+msgid ""
+"Returns first `n` elements of `iterable`.  If `iterable` is a iterator it"
+" will be advanced."
+msgstr ""
+
+#: of pwnlib.util.iters.take:4
+msgid "Number of elements to take."
+msgstr ""
+
+#: of pwnlib.util.iters.take:8
+msgid ""
+"A list of the first `n` elements of `iterable`.  If there are fewer than "
+"`n` elements in `iterable` they will all be returned."
+msgstr ""
+
+#: of pwnlib.util.iters.unique_everseen:1
+msgid ""
+"Get unique elements, preserving order. Remember all elements ever seen.  "
+"If `key` is not :const:`None` then for each element ``elm`` in `iterable`"
+" the element that will be rememberes is ``key(elm)``.  Otherwise ``elm`` "
+"is remembered."
+msgstr ""
+
+#: of pwnlib.util.iters.unique_everseen:7 pwnlib.util.iters.unique_justseen:9
+#: pwnlib.util.iters.unique_window:11
+msgid ""
+"A function to map over each element in `iterable` before remembering it."
+"  Setting to :const:`None` is equivalent to the identity function."
+msgstr ""
+
+#: of pwnlib.util.iters.unique_everseen:10 pwnlib.util.iters.unique_justseen:12
+#: pwnlib.util.iters.unique_window:14
+msgid "An iterator of the unique elements in `iterable`."
+msgstr ""
+
+#: of pwnlib.util.iters.unique_justseen:1
+msgid "unique_everseen(iterable, key = None) -> iterator"
+msgstr ""
+
+#: of pwnlib.util.iters.unique_justseen:3
+msgid ""
+"Get unique elements, preserving order. Remember only the elements just "
+"seen. If `key` is not :const:`None` then for each element ``elm`` in "
+"`iterable` the element that will be rememberes is ``key(elm)``.  "
+"Otherwise ``elm`` is remembered."
+msgstr ""
+
+#: of pwnlib.util.iters.unique_window:1
+msgid "unique_everseen(iterable, window, key = None) -> iterator"
+msgstr ""
+
+#: of pwnlib.util.iters.unique_window:3
+msgid ""
+"Get unique elements, preserving order. Remember only the last `window` "
+"elements seen.  If `key` is not :const:`None` then for each element "
+"``elm`` in `iterable` the element that will be rememberes is "
+"``key(elm)``. Otherwise ``elm`` is remembered."
+msgstr ""
+
+#: of pwnlib.util.iters.unique_window:9
+msgid "The number of elements to remember."
+msgstr ""
+
+#: ../pwntools/docs/source/util/iters.rst:36
+msgid "Alias for :func:`itertools.chain`."
+msgstr ":func:`itertools.chain` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:40
+msgid "Alias for :func:`itertools.combinations`"
+msgstr ":func:`itertools.combinations` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:44
+msgid "Alias for :func:`itertools.combinations_with_replacement`"
+msgstr ":func:`itertools.combinations_with_replacement` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:48
+msgid "Alias for :func:`itertools.compress`"
+msgstr ":func:`itertools.compress` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:52
+msgid "Alias for :func:`itertools.count`"
+msgstr ":func:`itertools.count` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:56
+msgid "Alias for :func:`itertools.cycle`"
+msgstr ":func:`itertools.cycle` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:60
+msgid "Alias for :func:`itertools.dropwhile`"
+msgstr ":func:`itertools.dropwhile` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:64
+msgid "Alias for :func:`itertools.groupby`"
+msgstr ":func:`itertools.groupby` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:68
+msgid "Alias for python3-style :func:`filter`"
+msgstr ""
+
+#: ../pwntools/docs/source/util/iters.rst:72
+msgid "Alias for :func:`itertools.filterfalse`"
+msgstr ":func:`itertools.filterfalse` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:76
+msgid "Alias for python3-style :func:`map`"
+msgstr ""
+
+#: ../pwntools/docs/source/util/iters.rst:80
+msgid "Alias for :func:`itertools.islice`"
+msgstr ":func:`itertools.islice` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:84
+msgid "Alias for python3-style :func:`zip`"
+msgstr ""
+
+#: ../pwntools/docs/source/util/iters.rst:88
+msgid "Alias for :func:`itertools.zip_longest`"
+msgstr ":func:`itertools.zip_longest` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:92
+msgid "Alias for :func:`itertools.permutations`"
+msgstr ":func:`itertools.permutations` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:96
+msgid "Alias for :func:`itertools.product`"
+msgstr ":func:`itertools.product` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:100
+msgid "Alias for :func:`itertools.repeat`"
+msgstr ":func:`itertools.repeat` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:104
+msgid "Alias for :func:`itertools.starmap`"
+msgstr ":func:`itertools.starmap` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:108
+msgid "Alias for :func:`itertools.takewhile`"
+msgstr ":func:`itertools.takewhile` の別名です。"
+
+#: ../pwntools/docs/source/util/iters.rst:112
+msgid "Alias for :func:`itertools.tee`"
+msgstr ":func:`itertools.tee` の別名です。"
+
+#: ../pwntools/docs/source/util/lists.rst:6
+msgid ":mod:`pwnlib.util.lists` --- Operations on lists"
+msgstr ""
+
+#: of pwnlib.util.lists.concat:1
+msgid "Concats a list of lists into a list."
+msgstr ""
+
+#: of pwnlib.util.lists.concat_all:1
+msgid "Concats all the arguments together."
+msgstr ""
+
+#: of pwnlib.util.lists.findall:1
+msgid ""
+"Generate all indices of needle in haystack, using the Knuth-Morris-Pratt "
+"algorithm."
+msgstr ""
+
+#: of pwnlib.util.lists.group:1
+msgid "group(n, lst, underfull_action = 'ignore', fill_value = None) -> list"
+msgstr ""
+
+#: of pwnlib.util.lists.group:3
+msgid ""
+"Split sequence into subsequences of given size. If the values cannot be "
+"evenly distributed among into groups, then the last group will either be "
+"returned as is, thrown out or padded with the value specified in "
+"fill_value."
+msgstr ""
+
+#: of pwnlib.util.lists.group:7
+msgid "The size of resulting groups"
+msgstr ""
+
+#: of pwnlib.util.lists.group:9
+msgid "The list, tuple or string to group"
+msgstr ""
+
+#: of pwnlib.util.lists.group:10
+msgid ""
+"The action to take in case of an underfull group at the end. Possible "
+"values are 'ignore', 'drop' or 'fill'."
+msgstr ""
+
+#: of pwnlib.util.lists.group:12
+msgid "The value to fill into an underfull remaining group."
+msgstr ""
+
+#: of pwnlib.util.lists.group:14
+msgid "A list containing the grouped values."
+msgstr ""
+
+#: of pwnlib.util.lists.ordlist:1
+msgid "Turns a string into a list of the corresponding ascii values."
+msgstr ""
+
+#: of pwnlib.util.lists.partition:1
+msgid "partition(lst, f, save_keys = False) -> list"
+msgstr ""
+
+#: of pwnlib.util.lists.partition:3
+msgid ""
+"Partitions an iterable into sublists using a function to specify which "
+"group they belong to."
+msgstr ""
+
+#: of pwnlib.util.lists.partition:6
+msgid ""
+"It works by calling `f` on every element and saving the results into an "
+":class:`collections.OrderedDict`."
+msgstr ""
+
+#: of pwnlib.util.lists.partition:9
+msgid "The iterable to partition"
+msgstr ""
+
+#: of pwnlib.util.lists.partition:10
+msgid "The function to use as the partitioner."
+msgstr ""
+
+#: of pwnlib.util.lists.partition:12
+msgid ""
+"Set this to True, if you want the OrderedDict returned instead of just "
+"the values"
+msgstr ""
+
+#: of pwnlib.util.lists.unordlist:1
+msgid "Takes a list of ascii values and returns the corresponding string."
+msgstr ""
+
+#: ../pwntools/docs/source/util/misc.rst:8
+msgid ":mod:`pwnlib.util.misc` --- We could not fit it any other place"
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:1
+msgid ""
+"Creates a python wrapper script that triggers the syscall `execve` "
+"directly."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:3
+msgid "List of arguments to pass into the process"
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:5
+msgid "Path to the executable to run. If :const:`None`, ``argv[0]`` is used."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:8
+msgid ""
+"Working directory.  If :const:`None`, uses the working directory "
+"specified on :attr:`cwd` or set via :meth:`set_working_directory`."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:11
+msgid "Environment variables to add to the environment."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:13
+msgid "Function to find the path of a binary."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:15
+msgid ""
+"Ignore default environment.  By default use default environment iff env "
+"not specified."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:17
+msgid ""
+"If an integer, replace stdin with the numbered file descriptor. If a "
+"string, a open a file with the specified path and replace stdin with its "
+"file descriptor.  May also be one of ``sys.stdin``, ``sys.stdout``, "
+"``sys.stderr``.  If :const:`None`, the file descriptor is closed."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:22
+#: pwnlib.util.misc._create_execve_script:24
+msgid "See ``stdin``."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:26
+msgid ""
+"Function which is executed on the remote side before execve(). This "
+"**MUST** be a self-contained function -- it must perform all of its own "
+"imports, and cannot refer to variables outside its scope."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:31
+msgid ""
+"Argument passed to ``preexec_fn``. This **MUST** only consist of native "
+"Python objects."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:34
+#: pwnlib.util.misc._create_execve_script:36
+msgid "See :class:`pwnlib.tubes.process.process` for more information."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:38
+msgid "Pass the command-line arguments to the shell."
+msgstr ""
+
+#: of pwnlib.util.misc._create_execve_script:41
+msgid "A string containing the python script."
+msgstr ""
+
+#: of pwnlib.util.misc.align:1
+msgid "Rounds `x` up to nearest multiple of the `alignment`."
+msgstr ""
+
+#: of pwnlib.util.misc.align_down:1
+msgid "Rounds `x` down to nearest multiple of the `alignment`."
+msgstr ""
+
+#: of pwnlib.util.misc.binary_ip:1
+msgid "Resolve host and return IP as four byte string."
+msgstr ""
+
+#: of pwnlib.util.misc.dealarm_shell:1
+msgid "Given a tube which is a shell, dealarm it."
+msgstr ""
+
+#: of pwnlib.util.misc.mkdir_p:1
+msgid "Emulates the behavior of ``mkdir -p``."
+msgstr ""
+
+#: of pwnlib.util.misc.parse_ldd_output:1
+#, python-brace-format
+msgid ""
+"Parses the output from a run of 'ldd' on a binary. Returns a dictionary "
+"of {path: address} for each library required by the specified binary."
+msgstr ""
+
+#: of pwnlib.util.misc.parse_ldd_output:5
+msgid "The output to parse"
+msgstr ""
+
+#: of pwnlib.util.misc.read:1
+msgid "Open file, return content."
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:1
+msgid "Create dictionaries over register sizes and relations"
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:3
+msgid ""
+"Given a list of lists of overlapping register names (e.g. "
+"['eax','ax','al','ah']) and a list of input sizes, it returns the "
+"following:"
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:6
+msgid "all_regs    : list of all valid registers"
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:7
+msgid "sizes[reg]  : the size of reg in bits"
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:8
+msgid "bigger[reg] : list of overlapping registers bigger than reg"
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:9
+msgid "smaller[reg]: list of overlapping registers smaller than reg"
+msgstr ""
+
+#: of pwnlib.util.misc.register_sizes:11
+msgid "Used in i386/AMD64 shellcode, e.g. the mov-shellcode."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:1
+msgid "Run a command in a new terminal."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:3
+msgid "When ``terminal`` is not set:"
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:4
+msgid ""
+"If ``context.terminal`` is set it will be used. If it is an iterable then"
+" ``context.terminal[1:]`` are default arguments."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:6
+msgid "If a ``pwntools-terminal`` command exists in ``$PATH``, it is used"
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:7
+msgid ""
+"If tmux is detected (by the presence of the ``$TMUX`` environment "
+"variable), a new pane will be opened."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:9
+msgid ""
+"If GNU Screen is detected (by the presence of the ``$STY`` environment "
+"variable), a new screen will be opened."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:11
+msgid "If ``$TERM_PROGRAM`` is set, that is used."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:12
+msgid ""
+"If X11 is detected (by the presence of the ``$DISPLAY`` environment "
+"variable), ``x-terminal-emulator`` is used."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:14
+msgid ""
+"If kitty is detected (by the presence of the ``$KITTY_PID`` environment "
+"variable), a new kitty window will be opened."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:16
+msgid ""
+"If Terminator is detected (by the presence of the ``$TERMINATOR_UUID`` "
+"environment variable), a new terminator window will be opened."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:18
+msgid ""
+"If GNOME Terminal is detected (by the presence of the "
+"``$GNOME_TERMINAL_SCREEN`` and ``$GNOME_TERMINAL_SERVICE`` environment "
+"variables), a new GNOME Terminal will be opened."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:21
+msgid ""
+"If Alacritty is detected (by the presence of the ``$ALACRITTY_SOCKET`` "
+"and ``$ALACRITTY_WINDOW_ID`` environment variables), Alacritty is used."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:23
+msgid ""
+"If Tilix is detected (by the presence of the ``$TILIX_ID`` environment "
+"variable), a new pane is split."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:25
+msgid ""
+"If KDE Konsole is detected (by the presence of the ``$KONSOLE_VERSION`` "
+"environment variable), a terminal will be split."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:27
+msgid ""
+"If WSL (Windows Subsystem for Linux) is detected (by the presence of a "
+"``wsl.exe`` binary in the ``$PATH`` and ``/proc/sys/kernel/osrelease`` "
+"containing ``Microsoft``), a new ``cmd.exe`` window will be opened."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:30
+msgid ""
+"If zellij is detected (by the presence of the ``$ZELLIJ`` environment "
+"variable), a new screen will be opened.`)"
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:33
+msgid ""
+"If `kill_at_exit` is :const:`True`, try to close the command/terminal "
+"when the current process exits. This may not work for all terminal types."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:36
+msgid "The command to run."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:38
+msgid "Which terminal to use."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:40
+msgid "Arguments to pass to the terminal"
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:42
+msgid "Whether to close the command/terminal on process exit."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:44
+msgid "Callable to invoke before exec()."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:49
+msgid "The command is opened with ``/dev/null`` for stdin, stdout, stderr."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:50
+msgid ""
+"When ``context.terminal`` is not a path and the terminal is one of the "
+"above which support windowing/tiling, this will also cause the terminal "
+"to split. Setting ``context.terminal`` to a path (e.g. using "
+"``which(terminal)``) bypasses this."
+msgstr ""
+
+#: of pwnlib.util.misc.run_in_new_terminal:55
+msgid "PID of the new terminal process"
+msgstr ""
+
+#: of pwnlib.util.misc.size:1
+msgid "Convert the length of a bytestream to human readable form."
+msgstr ""
+
+#: of pwnlib.util.misc.size:3
+msgid ""
+"The length to convert to human readable form, or an object which can have"
+" ``len()`` called on it."
+msgstr ""
+
+#: of pwnlib.util.misc.size:6
+msgid "String appended to the size, defaults to ``'B'``."
+msgstr ""
+
+#: of pwnlib.util.misc.which:1
+msgid ""
+"Works as the system command ``which``; searches $PATH for ``name`` and "
+"returns a full path if found. Tries all of the file extensions in "
+"$PATHEXT on Windows too."
+msgstr ""
+
+#: of pwnlib.util.misc.which:5
+msgid ""
+"If `all` is :const:`True` the set of all found locations is returned, "
+"else the first occurrence or :const:`None` is returned."
+msgstr ""
+
+#: of pwnlib.util.misc.which:8
+msgid "The file to search for."
+msgstr ""
+
+#: of pwnlib.util.misc.which:10
+msgid "Whether to return all locations where `name` was found."
+msgstr ""
+
+#: of pwnlib.util.misc.which:13
+msgid ""
+"If `all` is :const:`True` the set of all locations where `name` was "
+"found, else the first location or :const:`None` if not found."
+msgstr ""
+
+#: of pwnlib.util.misc.write:1
+msgid "Create new file or truncate existing to zero length and write data."
+msgstr ""
+
+#: ../pwntools/docs/source/util/net.rst:9
+msgid ":mod:`pwnlib.util.net` --- Networking interfaces"
+msgstr ""
+
+#: of pwnlib.util.net.getifaddrs:1
+msgid "A wrapper for libc's ``getifaddrs``."
+msgstr ""
+
+#: of pwnlib.util.net.getifaddrs:5
+msgid ""
+"list of dictionaries each representing a `struct ifaddrs`. The "
+"dictionaries have the fields `name`, `flags`, `family`, `addr` and "
+"`netmask`.  Refer to `getifaddrs(3)` for details.  The fields `addr` and "
+"`netmask` are themselves dictionaries.  Their structure depend on "
+"`family`.  If `family` is not :const:`socket.AF_INET` or "
+":const:`socket.AF_INET6` they will be empty."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces:1 pwnlib.util.net.interfaces4:4
+#: pwnlib.util.net.interfaces6:4
+msgid "Whether to include interfaces with not associated address."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces:3 pwnlib.util.net.interfaces4:6
+#: pwnlib.util.net.interfaces6:6
+msgid ":const:`False`."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces:5
+msgid ""
+"A dictionary mapping each of the hosts interfaces to a list of it's "
+"addresses.  Each entry in the list is a tuple ``(family, addr)``, and "
+"`family` is either :const:`socket.AF_INET` or :const:`socket.AF_INET6`."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces4:1
+msgid ""
+"As :func:`interfaces` but only includes IPv4 addresses and the lists in "
+"the dictionary only contains the addresses not the family."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces4:8
+msgid ""
+"A dictionary mapping each of the hosts interfaces to a list of it's IPv4 "
+"addresses."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces6:1
+msgid ""
+"As :func:`interfaces` but only includes IPv6 addresses and the lists in "
+"the dictionary only contains the addresses not the family."
+msgstr ""
+
+#: of pwnlib.util.net.interfaces6:8
+msgid ""
+"A dictionary mapping each of the hosts interfaces to a list of it's IPv6 "
+"addresses."
+msgstr ""
+
+#: of pwnlib.util.net.sockaddr:1
+msgid "Creates a sockaddr_in or sockaddr_in6 memory buffer for use in shellcode."
+msgstr ""
+
+#: of pwnlib.util.net.sockaddr:3
+msgid "Either an IP address or a hostname to be looked up."
+msgstr ""
+
+#: of pwnlib.util.net.sockaddr:5
+msgid "TCP/UDP port."
+msgstr ""
+
+#: of pwnlib.util.net.sockaddr:7
+msgid "Either 'ipv4' or 'ipv6'."
+msgstr ""
+
+#: of pwnlib.util.net.sockaddr:10
+msgid "A tuple containing the sockaddr buffer, length, and the address family."
+msgstr ""
+
+#: ../pwntools/docs/source/util/packing.rst:7
+msgid ":mod:`pwnlib.util.packing` --- Packing and unpacking of strings"
+msgstr ":mod:`pwnlib.util.packing` --- 文字列のパック（pack）とアンパック（unpack）"
+
+#: of pwnlib.util.packing:1
+msgid "Module for packing and unpacking integers."
+msgstr "整数をパック・アンパックするためのモジュールです。"
+
+#: of pwnlib.util.packing:3
+msgid "Simplifies access to the standard ``struct.pack`` and ``struct.unpack`` functions, and also adds support for packing/unpacking arbitrary-width integers."
+msgstr "標準の ``struct.pack`` と ``struct.unpack`` を使いやすくし、任意の幅の整数のパック・アンパックにも対応します。"
+
+#: of pwnlib.util.packing:7
+msgid "The packers are all context-aware for ``endian`` and ``signed`` arguments, though they can be overridden in the parameters."
+msgstr "パックの関数はすべて、``endian`` と ``signed`` の引数について context を考慮して動きます。引数で上書きすることもできます。"
+
+#: of pwnlib.util.packing:21
+msgid "Make a frozen packer, which does not change with context."
+msgstr "context で変わらない、固定したパッカー（packer）を作ります。"
+
+#: of pwnlib.util.packing.dd:1
+msgid "Inspired by the command line tool ``dd``, this function copies `count` byte values from offset `seek` in `src` to offset `skip` in `dst`.  If `count` is 0, all of ``src[seek:]`` is copied."
+msgstr "コマンドラインツール ``dd`` をヒントにした関数です。`src` のオフセット `seek` から、`count` バイトの値を、`dst` のオフセット `skip` へコピーします。`count` が 0 なら、``src[seek:]`` のすべてをコピーします。"
+
+#: of pwnlib.util.packing.dd:5
+msgid "If `dst` is a mutable type it will be updated.  Otherwise, a new instance of the same type will be created.  In either case the result is returned."
+msgstr "`dst` が変更可能な型なら、その場で更新されます。そうでなければ、同じ型の新しいインスタンスが作られます。どちらの場合も、結果が返されます。"
+
+#: of pwnlib.util.packing.dd:8
+msgid "`src` can be an iterable of characters or integers, a string or a file object.  If it is an iterable of integers, each integer must be in the range [0;255].  If it is a string, its UTF-8 encoding will be used."
+msgstr "`src` には、文字または整数のイテラブル、文字列、ファイルオブジェクトを渡せます。整数のイテラブルなら、各整数は [0;255] の範囲でなければなりません。文字列なら、その UTF-8 エンコードが使われます。"
+
+#: of pwnlib.util.packing.dd:12
+msgid "The seek offset of file objects will be preserved."
+msgstr "ファイルオブジェクトのシークの位置は、保たれます。"
+
+#: of pwnlib.util.packing.dd:14
+msgid "Supported types are :class:`file`, :class:`list`, :class:`tuple`, :class:`str` and :class:`bytearray`."
+msgstr "対応する型は、:class:`file`、:class:`list`、:class:`tuple`、:class:`str`、:class:`bytearray` です。"
+
+#: of pwnlib.util.packing.dd:16
+msgid "An iterable of byte values (characters or integers), a string or a file object."
+msgstr "バイトの値（文字または整数）のイテラブル、文字列、またはファイルオブジェクト。"
+
+#: of pwnlib.util.packing.dd:18
+msgid "How many bytes to copy.  If `count` is 0 or larger than ``len(src[seek:])``, all bytes until the end of `src` are copied."
+msgstr "コピーするバイト数。`count` が 0、または ``len(src[seek:])`` より大きければ、`src` の終わりまでのすべてのバイトをコピーします。"
+
+#: of pwnlib.util.packing.dd:22
+msgid "Offset in `dst` to copy to."
+msgstr "コピー先の、`dst` の中のオフセット。"
+
+#: of pwnlib.util.packing.dd:24
+msgid "Offset in `src` to copy from."
+msgstr "コピー元の、`src` の中のオフセット。"
+
+#: of pwnlib.util.packing.dd:26
+msgid "If :const:`True`, `dst` is truncated at the last copied byte."
+msgstr ":const:`True` なら、`dst` は、最後にコピーしたバイトで切り詰められます。"
+
+#: of pwnlib.util.packing.dd:30
+msgid "A modified version of `dst`.  If `dst` is a mutable type it will be modified in-place."
+msgstr "`dst` を変更したもの。`dst` が変更可能な型なら、その場で変更されます。"
+
+#: of pwnlib.util.packing.fit:1
+msgid "Legacy alias for :func:`flat`"
+msgstr ":func:`flat` の、古い名前の別名です"
+
+#: of pwnlib.util.packing.flat:1
+msgid "flat(\\*args, preprocessor = None, length = None, filler = de_bruijn(),"
+msgstr ""
+
+#: of pwnlib.util.packing.flat:2
+msgid "word_size = None, endianness = None, sign = None) -> bytes"
+msgstr ""
+
+#: of pwnlib.util.packing.flat:4
+msgid "Flattens the arguments into a string."
+msgstr "引数を、平らにして、1 つの文字列にします。"
+
+#: of pwnlib.util.packing.flat:6
+msgid "This function takes an arbitrary number of arbitrarily nested lists, tuples and dictionaries.  It will then find every string and number inside those and flatten them out.  Strings are inserted directly while numbers are packed using the :func:`pack` function.  Unicode strings are UTF-8 encoded."
+msgstr "この関数は、任意の数の、任意に入れ子になったリスト、タプル、辞書を受け取ります。その中にあるすべての文字列と数を見つけて、平らに並べます。文字列はそのまま挿入し、数は :func:`pack` 関数でパックします。Unicode 文字列は UTF-8 でエンコードされます。"
+
+#: of pwnlib.util.packing.flat:11
+#, python-brace-format
+msgid "Dictionary keys give offsets at which to place the corresponding values (which are recursively flattened).  Offsets are relative to where the flattened dictionary occurs in the output (i.e. ``{0: 'foo'}`` is equivalent to ``'foo'``).  Offsets can be integers, unicode strings or regular strings. Integer offsets >= ``2**(word_size-8)`` are converted to a string using :func:`pack`.  Unicode strings are UTF-8 encoded.  After these conversions offsets are either integers or strings.  In the latter case, the offset will be the lowest index at which the string occurs in `filler`.  See examples below."
+msgstr "辞書のキーは、対応する値（これも再帰的に平らにされます）を置くオフセットを表します。オフセットは、平らにした辞書が出力に現れる位置からの相対です（つまり ``{0: 'foo'}`` は ``'foo'`` と同じです）。オフセットには、整数、Unicode 文字列、ふつうの文字列を使えます。``2**(word_size-8)`` 以上の整数のオフセットは、:func:`pack` で文字列に変換されます。Unicode 文字列は UTF-8 でエンコードされます。これらの変換のあと、オフセットは、整数か文字列になります。文字列の場合、そのオフセットは、`filler` の中でその文字列が現れる、最も小さい添字になります。下の例を参照してください。"
+
+#: of pwnlib.util.packing.flat:21
+#, python-format
+msgid "Space between pieces of data is filled out using the iterable `filler`.  The `n`'th byte in the output will be byte at index ``n % len(iterable)`` byte in `filler` if it has finite length or the byte at index `n` otherwise."
+msgstr "データとデータの間のすき間は、イテラブルの `filler` で埋められます。出力の `n` 番目のバイトは、`filler` の長さが有限なら、`filler` の添字 ``n % len(iterable)`` のバイト、そうでなければ添字 `n` のバイトになります。"
+
+#: of pwnlib.util.packing.flat:25
+msgid "If `length` is given, the output will be padded with bytes from `filler` to be this size.  If the output is longer than `length`, a :py:exc:`ValueError` exception is raised."
+msgstr "`length` を指定すると、出力は、`filler` のバイトで、この大きさまで埋められます。出力が `length` より長い場合は、:py:exc:`ValueError` 例外が送出されます。"
+
+#: of pwnlib.util.packing.flat:29
+msgid "The three kwargs `word_size`, `endianness` and `sign` will default to using values in :mod:`pwnlib.context` if not specified as an argument."
+msgstr "3 つのキーワード引数 `word_size`、`endianness`、`sign` は、引数で指定しなければ、:mod:`pwnlib.context` の値を使います。"
+
+#: of pwnlib.util.packing.flat:32
+msgid "Values to flatten"
+msgstr "平らにする値"
+
+#: of pwnlib.util.packing.flat:33
+msgid "Gets called on every element to optionally transform the element before flattening. If :const:`None` is returned, then the original value is used."
+msgstr "各要素に対して呼ばれ、平らにする前に、要素を変換できます。:const:`None` を返すと、元の値が使われます。"
+
+#: of pwnlib.util.packing.flat:37
+msgid "The length of the output."
+msgstr "出力の長さ。"
+
+#: of pwnlib.util.packing.flat:38
+msgid "Iterable to use for padding."
+msgstr "埋めるために使うイテラブル。"
+
+#: of pwnlib.util.packing.flat:39
+msgid "Word size of the converted integer."
+msgstr "変換する整数の語のサイズ（ワードサイズ）。"
+
+#: of pwnlib.util.packing.flat:41
+msgid "Endianness of the converted integer (\"little\"/\"big\")."
+msgstr "変換する整数のエンディアン（\"little\"/\"big\"）。"
+
+#: of pwnlib.util.packing.flat:43 pwnlib.util.packing.pack:19
+#: pwnlib.util.packing.unpack:17
+msgid "Signedness of the converted integer (False/True)"
+msgstr "変換する整数の符号の有無（False/True）"
+
+#: of pwnlib.util.packing.flat:48
+msgid "(Test setup, please ignore)"
+msgstr "（テストの準備です。無視してください）"
+
+#: of pwnlib.util.packing.flat:52
+msgid "Basic usage of :meth:`flat` works similar to the pack() routines."
+msgstr ":meth:`flat` の基本的な使い方は、pack() 系のルーチンに似ています。"
+
+#: of pwnlib.util.packing.flat:57
+msgid ":meth:`flat` works with strings, bytes, lists, and dictionaries."
+msgstr ":meth:`flat` は、文字列、バイト列、リスト、辞書で動きます。"
+
+#: of pwnlib.util.packing.flat:66
+msgid ":meth:`.flat` flattens all of the values provided, and allows nested lists and dictionaries."
+msgstr ":meth:`.flat` は、渡された値をすべて平らにします。リストや辞書が入れ子になっていてもかまいません。"
+
+#: of pwnlib.util.packing.flat:74
+msgid "You can also provide additional arguments like endianness, word-size, and whether the values are treated as signed or not."
+msgstr "エンディアン、ワードサイズ、値を符号つきとして扱うかどうか、といった引数も指定できます。"
+
+#: of pwnlib.util.packing.flat:80
+msgid "A preprocessor function can be provided in order to modify the values in-flight. This example converts increments each value by 1, then converts to a byte string."
+msgstr "前処理の関数を渡して、値をその場で変更できます。この例は、各値に 1 を足してから、バイト列に変換します。"
+
+#: of pwnlib.util.packing.flat:86
+msgid "Using dictionaries is a fast way to get specific values at specific offsets, without having to do ``data += \"foo\"`` repeatedly."
+msgstr "辞書を使うと、``data += \"foo\"`` を繰り返さなくても、特定のオフセットに特定の値を、手早く置けます。"
+
+#: of pwnlib.util.packing.flat:94
+msgid "Dictionary usage permits directly using values derived from :func:`.cyclic`. See :func:`.cyclic`, :func:`pwnlib.context.context.cyclic_alphabet`, and :data:`.context.cyclic_size` for more options."
+msgstr "辞書では、:func:`.cyclic` から得た値を、そのまま使えます。そのほかの選択肢は、:func:`.cyclic`、:func:`pwnlib.context.context.cyclic_alphabet`、:data:`.context.cyclic_size` を参照してください。"
+
+#: of pwnlib.util.packing.flat:98
+msgid "The cyclic pattern can be provided as either the text or hexadecimal offset."
+msgstr "循環パターン（cyclic pattern）は、テキストでも、16 進のオフセットでも渡せます。"
+
+#: of pwnlib.util.packing.flat:105
+msgid "Fields do not have to be in linear order, and can be freely mixed. This also works with cyclic offsets."
+msgstr "フィールドは、順番に並んでいなくてもよく、自由に混ぜられます。循環パターンのオフセットでも同じです。"
+
+#: of pwnlib.util.packing.flat:115
+msgid "Fields do not have to be in order, and can be freely mixed."
+msgstr "フィールドは、順番に並んでいなくてもよく、自由に混ぜられます。"
+
+#: of pwnlib.util.packing.flat:129
+msgid "By default, gaps in the data are filled in with the :meth:`.cyclic` pattern. You can customize this by providing an iterable or method for the ``filler`` argument."
+msgstr "既定では、データのすき間は :meth:`.cyclic` のパターンで埋められます。``filler`` 引数に、イテラブルかメソッドを渡すと、変えられます。"
+
+#: of pwnlib.util.packing.flat:138
+msgid "Nested dictionaries also work as expected."
+msgstr "入れ子の辞書も、期待どおりに動きます。"
+
+#: of pwnlib.util.packing.flat:145
+msgid "Negative indices are also supported, though this only works for integer keys."
+msgstr "負の添字にも対応していますが、整数のキーでだけ動きます。"
+
+#: of pwnlib.util.packing.make_packer:1
+msgid "Creates a packer by \"freezing\" the given arguments."
+msgstr "与えた引数を「固定」して、パッカーを作ります。"
+
+#: of pwnlib.util.packing.make_packer:3
+msgid "Semantically calling ``make_packer(w, e, s)(data)`` is equivalent to calling ``pack(data, w, e, s)``. If word_size is one of 8, 16, 32 or 64, it is however faster to call this function, since it will then use a specialized version."
+msgstr "意味のうえでは、``make_packer(w, e, s)(data)`` を呼ぶのは、``pack(data, w, e, s)`` を呼ぶのと同じです。ただし、word_size が 8、16、32、64 のどれかなら、専用の版が使われるので、この関数を呼ぶほうが速くなります。"
+
+#: of pwnlib.util.packing.make_packer:7
+msgid "The word size to be baked into the returned packer or the string all (in bits)."
+msgstr "返されるパッカーに固定するワードサイズ（ビット）、または文字列 all。"
+
+#: of pwnlib.util.packing.make_packer:9 pwnlib.util.packing.make_unpacker:9
+msgid "The endianness to be baked into the returned packer. (\"little\"/\"big\")"
+msgstr "返されるパッカーに固定するエンディアン。（\"little\"/\"big\"）"
+
+#: of pwnlib.util.packing.make_packer:11 pwnlib.util.packing.make_unpacker:11
+msgid "The signness to be baked into the returned packer. (\"unsigned\"/\"signed\")"
+msgstr "返されるパッカーに固定する符号の有無。（\"unsigned\"/\"signed\"）"
+
+#: of pwnlib.util.packing.make_packer:13 pwnlib.util.packing.make_unpacker:13
+msgid "Additional context flags, for setting by alias (e.g. ``endian=`` rather than index)"
+msgstr "追加の context のフラグ。添字ではなく別名で設定するためのものです（例: ``endian=``）"
+
+#: of pwnlib.util.packing.make_packer:15
+msgid "A function, which takes a single argument in the form of a number and returns a string of that number in a packed form."
+msgstr "数を 1 つ受け取り、その数をパックした形の文字列を返す関数。"
+
+#: of pwnlib.util.packing.make_unpacker:1
+msgid "Creates an unpacker by \"freezing\" the given arguments."
+msgstr "与えた引数を「固定」して、アンパッカーを作ります。"
+
+#: of pwnlib.util.packing.make_unpacker:3
+msgid "Semantically calling ``make_unpacker(w, e, s)(data)`` is equivalent to calling ``unpack(data, w, e, s)``. If word_size is one of 8, 16, 32 or 64, it is however faster to call this function, since it will then use a specialized version."
+msgstr "意味のうえでは、``make_unpacker(w, e, s)(data)`` を呼ぶのは、``unpack(data, w, e, s)`` を呼ぶのと同じです。ただし、word_size が 8、16、32、64 のどれかなら、専用の版が使われるので、この関数を呼ぶほうが速くなります。"
+
+#: of pwnlib.util.packing.make_unpacker:7
+msgid "The word size to be baked into the returned packer (in bits)."
+msgstr "返されるパッカーに固定するワードサイズ（ビット）。"
+
+#: of pwnlib.util.packing.make_unpacker:15
+msgid "A function, which takes a single argument in the form of a bytestring and returns a number of that bytestring in an unpacked form."
+msgstr "バイト列を 1 つ受け取り、そのバイト列をアンパックした形の数を返す関数。"
+
+#: of pwnlib.util.packing.overlap:1
+msgid "Merge multiple byte sequences with possible positional offsets into a single overlapped bytes object. From lowest byte index, scan through every bytes object, if only one byte is non-zero, then the output will append that byte. If multiple non-zero bytes are found at the same index, an error will be thrown as these bytes objects can not be overlapped."
+msgstr "位置のオフセットを持つかもしれない、複数のバイト列を、重ね合わせて、1 つの bytes オブジェクトにまとめます。最も小さいバイトの添字から、すべての bytes オブジェクトを走査し、0 でないバイトが 1 つだけなら、そのバイトを出力に追加します。同じ添字に 0 でないバイトが複数あると、これらの bytes オブジェクトは重ねられないので、エラーになります。"
+
+#: of pwnlib.util.packing.overlap:7
+msgid "If holes present as the bytes object has an ``offset`` or its length is not enough to align to the output bytes object length, these holes are set to ``\\x00`` implicitly."
+msgstr "bytes オブジェクトに ``offset`` があったり、長さが出力の長さにそろえるのに足りなかったりして、穴ができる場合、その穴は暗黙のうちに ``\\x00`` になります。"
+
+#: of pwnlib.util.packing.overlap:11
+msgid "See the examples below for how this function works."
+msgstr "この関数の動きは、下の例を参照してください。"
+
+#: of pwnlib.util.packing.overlap:13
+msgid "``bytes`` objects like ``b'123'`` or adding an optional offset like ``(b'123', 3)``. The ``offset`` can be positive or negative or 0. ``bytes`` objects has an implicit offset 0."
+msgstr "``b'123'`` のような ``bytes`` オブジェクト、または ``(b'123', 3)`` のようにオフセットを添えたもの。``offset`` は、正でも負でも 0 でもかまいません。``bytes`` オブジェクトは、暗黙のオフセット 0 を持ちます。"
+
+#: of pwnlib.util.packing.overlap:19
+msgid "A **minimal** bytes object merged from input bytes objects. That means, offsets are aligned to 0 first to keep output minimal."
+msgstr "入力の bytes オブジェクトをまとめた、**最小の** bytes オブジェクト。つまり、出力を最小にするために、オフセットはまず 0 にそろえられます。"
+
+#: of pwnlib.util.packing.overlap
+msgid "Raises"
+msgstr ""
+
+#: of pwnlib.util.packing.overlap:22
+msgid "If multiple non-zero values appears at the same index"
+msgstr "同じ添字に、0 でない値が複数ある場合"
+
+#: of pwnlib.util.packing.p16:1
+msgid "Packs an 16-bit integer"
+msgstr "16 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.p16:3 pwnlib.util.packing.p32:3
+#: pwnlib.util.packing.p40:3 pwnlib.util.packing.p48:3
+#: pwnlib.util.packing.p56:3 pwnlib.util.packing.p64:3 pwnlib.util.packing.p8:3
+#: pwnlib.util.packing.pack:13
+msgid "Number to convert"
+msgstr "変換する数"
+
+#: of pwnlib.util.packing.p16:5 pwnlib.util.packing.p32:5
+#: pwnlib.util.packing.p40:5 pwnlib.util.packing.p48:5
+#: pwnlib.util.packing.p56:5 pwnlib.util.packing.p64:5 pwnlib.util.packing.p8:5
+#: pwnlib.util.packing.pack:17 pwnlib.util.packing.u16:5
+#: pwnlib.util.packing.u32:5 pwnlib.util.packing.u40:5
+#: pwnlib.util.packing.u48:5 pwnlib.util.packing.u56:5
+#: pwnlib.util.packing.u64:5 pwnlib.util.packing.u8:5
+#: pwnlib.util.packing.unpack:15
+msgid "Endianness of the converted integer (\"little\"/\"big\")"
+msgstr "変換する整数のエンディアン（\"little\"/\"big\"）"
+
+#: of pwnlib.util.packing.p16:7 pwnlib.util.packing.p32:7
+#: pwnlib.util.packing.p40:7 pwnlib.util.packing.p48:7
+#: pwnlib.util.packing.p56:7 pwnlib.util.packing.p64:7 pwnlib.util.packing.p8:7
+#: pwnlib.util.packing.u16:7 pwnlib.util.packing.u32:7
+#: pwnlib.util.packing.u40:7 pwnlib.util.packing.u48:7
+#: pwnlib.util.packing.u56:7 pwnlib.util.packing.u64:7 pwnlib.util.packing.u8:7
+msgid "Signedness of the converted integer (\"unsigned\"/\"signed\")"
+msgstr "変換する整数の符号の有無（\"unsigned\"/\"signed\"）"
+
+#: of pwnlib.util.packing.p16:9 pwnlib.util.packing.p32:9
+#: pwnlib.util.packing.p40:9 pwnlib.util.packing.p48:9
+#: pwnlib.util.packing.p56:9 pwnlib.util.packing.p64:9 pwnlib.util.packing.p8:9
+#: pwnlib.util.packing.u16:9 pwnlib.util.packing.u32:9
+#: pwnlib.util.packing.u40:9 pwnlib.util.packing.u48:9
+#: pwnlib.util.packing.u56:9 pwnlib.util.packing.u64:9 pwnlib.util.packing.u8:9
+msgid "Arguments passed to context.local(), such as ``endian`` or ``signed``."
+msgstr "context.local() に渡す引数。``endian`` や ``signed`` など。"
+
+#: of pwnlib.util.packing.p16:13 pwnlib.util.packing.p32:13
+#: pwnlib.util.packing.p40:13 pwnlib.util.packing.p48:13
+#: pwnlib.util.packing.p56:13 pwnlib.util.packing.p64:13
+#: pwnlib.util.packing.p8:13
+msgid "The packed number as a byte string"
+msgstr "パックした数のバイト列"
+
+#: of pwnlib.util.packing.p32:1
+msgid "Packs an 32-bit integer"
+msgstr "32 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.p40:1
+msgid "Packs an 40-bit integer"
+msgstr "40 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.p48:1
+msgid "Packs an 48-bit integer"
+msgstr "48 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.p56:1
+msgid "Packs an 56-bit integer"
+msgstr "56 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.p64:1
+msgid "Packs an 64-bit integer"
+msgstr "64 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.p8:1
+msgid "Packs an 8-bit integer"
+msgstr "8 ビットの整数をパックします"
+
+#: of pwnlib.util.packing.pack:1
+msgid "Packs arbitrary-sized integer."
+msgstr "任意の大きさの整数をパックします。"
+
+#: of pwnlib.util.packing.pack:3 pwnlib.util.packing.unpack:3
+msgid "Word-size, endianness and signedness is done according to context."
+msgstr "ワードサイズ、エンディアン、符号の有無は、context に従って決まります。"
+
+#: of pwnlib.util.packing.pack:5
+msgid "`word_size` can be any positive number or the string \"all\". Choosing the string \"all\" will output a string long enough to contain all the significant bits and thus be decodable by :func:`unpack`."
+msgstr "`word_size` には、任意の正の数か、文字列 \"all\" を指定できます。\"all\" を選ぶと、すべての有効なビットを入れるのに十分な長さの文字列を出力するので、:func:`unpack` でデコードできます。"
+
+#: of pwnlib.util.packing.pack:9
+msgid "`word_size` can be any positive number. The output will contain word_size/8 rounded up number of bytes. If word_size is not a multiple of 8, it will be padded with zeroes up to a byte boundary."
+msgstr "`word_size` には、任意の正の数を指定できます。出力は、word_size/8 を切り上げたバイト数になります。word_size が 8 の倍数でなければ、バイトの境界まで 0 で埋められます。"
+
+#: of pwnlib.util.packing.pack:15
+msgid "Word size of the converted integer or the string 'all' (in bits)."
+msgstr "変換する整数のワードサイズ（ビット）、または文字列 'all'。"
+
+#: of pwnlib.util.packing.pack:21 pwnlib.util.packing.unpack:19
+msgid "Anything that can be passed to context.local"
+msgstr "context.local に渡せるもの、何でも"
+
+#: of pwnlib.util.packing.pack:23
+msgid "The packed number as a bytestring."
+msgstr "パックした数のバイト列。"
+
+#: of pwnlib.util.packing.u16:1
+msgid "Unpacks an 16-bit integer"
+msgstr "16 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.u16:3 pwnlib.util.packing.u32:3
+#: pwnlib.util.packing.u40:3 pwnlib.util.packing.u48:3
+#: pwnlib.util.packing.u56:3 pwnlib.util.packing.u64:3 pwnlib.util.packing.u8:3
+msgid "Byte string to convert"
+msgstr "変換するバイト列"
+
+#: of pwnlib.util.packing.u16:13 pwnlib.util.packing.u32:13
+#: pwnlib.util.packing.u40:13 pwnlib.util.packing.u48:13
+#: pwnlib.util.packing.u56:13 pwnlib.util.packing.u64:13
+#: pwnlib.util.packing.u8:13
+msgid "The unpacked number"
+msgstr "アンパックした数"
+
+#: of pwnlib.util.packing.u32:1
+msgid "Unpacks an 32-bit integer"
+msgstr "32 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.u40:1
+msgid "Unpacks an 40-bit integer"
+msgstr "40 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.u48:1
+msgid "Unpacks an 48-bit integer"
+msgstr "48 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.u56:1
+msgid "Unpacks an 56-bit integer"
+msgstr "56 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.u64:1
+msgid "Unpacks an 64-bit integer"
+msgstr "64 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.u8:1
+msgid "Unpacks an 8-bit integer"
+msgstr "8 ビットの整数をアンパックします"
+
+#: of pwnlib.util.packing.unpack:1
+msgid "Unpacks arbitrary-sized integer."
+msgstr "任意の大きさの整数をアンパックします。"
+
+#: of pwnlib.util.packing.unpack:5
+msgid "`word_size` can be any positive number or the string \"all\". Choosing the string \"all\" is equivalent to ``len(data)*8``."
+msgstr "`word_size` には、任意の正の数か、文字列 \"all\" を指定できます。\"all\" は、``len(data)*8`` と同じです。"
+
+#: of pwnlib.util.packing.unpack:8
+msgid "If `word_size` is not a multiple of 8, then the bits used for padding are discarded."
+msgstr "`word_size` が 8 の倍数でなければ、埋めるのに使われたビットは捨てられます。"
+
+#: of pwnlib.util.packing.unpack:11
+msgid "Data to convert"
+msgstr "変換するデータ"
+
+#: of pwnlib.util.packing.unpack:13
+msgid "Word size of the converted integer or the string \"all\" (in bits)."
+msgstr "変換する整数のワードサイズ（ビット）、または文字列 \"all\"。"
+
+#: of pwnlib.util.packing.unpack:21
+msgid "The unpacked number."
+msgstr "アンパックした数。"
+
+#: of pwnlib.util.packing.unpack_many:1
+msgid "Splits `data` into groups of ``word_size//8`` bytes and calls :func:`unpack` on each group.  Returns a list of the results."
+msgstr "`data` を ``word_size//8`` バイトずつのグループに分け、各グループに :func:`unpack` を呼びます。結果のリストを返します。"
+
+#: of pwnlib.util.packing.unpack_many:3
+msgid "`word_size` must be a multiple of `8` or the string \"all\".  In the latter case a singleton list will always be returned."
+msgstr "`word_size` は、`8` の倍数か、文字列 \"all\" でなければなりません。\"all\" の場合は、要素が 1 つだけのリストが、常に返されます。"
+
+#: of pwnlib.util.packing.unpack_many:5
+msgid "Args"
+msgstr ""
+
+#: of pwnlib.util.packing.unpack_many:6
+msgid "number (int): String to convert word_size (int): Word size of the converted integers or the string \"all\" (in bits). endianness (str): Endianness of the converted integer (\"little\"/\"big\") sign (str): Signedness of the converted integer (False/True) kwargs: Anything that can be passed to context.local"
+msgstr "number (int): 変換する文字列 word_size (int): 変換する整数のワードサイズ（ビット）、または文字列 \"all\"。 endianness (str): 変換する整数のエンディアン（\"little\"/\"big\"） sign (str): 変換する整数の符号の有無（False/True） kwargs: context.local に渡せるもの、何でも"
+
+#: of pwnlib.util.packing.unpack_many:12
+msgid "The unpacked numbers."
+msgstr "アンパックした数のリスト。"
+
+#: ../pwntools/docs/source/util/proc.rst:12
+msgid ":mod:`pwnlib.util.proc` --- Working with ``/proc/``"
+msgstr ""
+
+#: of pwnlib.util.proc.ancestors:1 pwnlib.util.proc.children:1
+#: pwnlib.util.proc.cmdline:1 pwnlib.util.proc.cwd:1
+#: pwnlib.util.proc.descendants:1 pwnlib.util.proc.exe:1
+#: pwnlib.util.proc.memory_maps:1 pwnlib.util.proc.name:1
+#: pwnlib.util.proc.parent:1 pwnlib.util.proc.starttime:1
+#: pwnlib.util.proc.stat:1 pwnlib.util.proc.state:1 pwnlib.util.proc.status:3
+#: pwnlib.util.proc.tracer:1 pwnlib.util.proc.wait_for_debugger:4
+msgid "PID of the process."
+msgstr ""
+
+#: of pwnlib.util.proc.ancestors:4
+msgid "List of PIDs of whose parent process is `pid` or an ancestor of `pid`."
+msgstr ""
+
+#: of pwnlib.util.proc.children:4
+msgid "List of PIDs of whose parent process is `pid`."
+msgstr ""
+
+#: of pwnlib.util.proc.cmdline:4
+msgid "A list of the fields in ``/proc/<pid>/cmdline``."
+msgstr ""
+
+#: of pwnlib.util.proc.cwd:4
+msgid ""
+"The path of the process's current working directory. I.e. what "
+"``/proc/<pid>/cwd`` points to."
+msgstr ""
+
+#: of pwnlib.util.proc.descendants:4
+msgid "Dictionary mapping the PID of each child of `pid` to it's descendants."
+msgstr ""
+
+#: of pwnlib.util.proc.exe:4
+msgid ""
+"The path of the binary of the process. I.e. what ``/proc/<pid>/exe`` "
+"points to."
+msgstr ""
+
+#: of pwnlib.util.proc.memory_maps:4
+msgid "A list of the memory mappings in the process."
+msgstr ""
+
+#: of pwnlib.util.proc.name:4
+msgid "Name of process as listed in ``/proc/<pid>/status``."
+msgstr ""
+
+#: of pwnlib.util.proc.parent:4
+msgid ""
+"Parent PID as listed in ``/proc/<pid>/status`` under ``PPid``, or 0 if "
+"there is not parent."
+msgstr ""
+
+#: of pwnlib.util.proc.pid_by_name:1
+msgid "Name of program."
+msgstr ""
+
+#: of pwnlib.util.proc.pid_by_name:4
+msgid "List of PIDs matching `name` sorted by lifetime, youngest to oldest."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:1
+msgid ""
+"Get PID(s) of `target`.  The returned PID(s) depends on the type of "
+"`target`:"
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:3
+msgid ":class:`str`: PIDs of all processes with a name matching `target`."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:4
+msgid ""
+":class:`pwnlib.tubes.process.process`: singleton list of the PID of "
+"`target`."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:5
+msgid ""
+":class:`pwnlib.tubes.sock.sock`: singleton list of the PID at the remote "
+"end of `target` if it is running on the host.  Otherwise an empty list."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:8
+msgid ""
+":class:`pwnlib.tubes.ssh.ssh_process`: singleton list of the PID of "
+"`target` on the remote system."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:10
+msgid ":class:`tuple`: singleton list of the PID at the local end of the"
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:11
+msgid ""
+"connection to `target` if it is running on the host.  Otherwise an empty "
+"list."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:14
+msgid "The target whose PID(s) to find."
+msgstr ""
+
+#: of pwnlib.util.proc.pidof:17
+msgid "A list of found PIDs."
+msgstr ""
+
+#: of pwnlib.util.proc.starttime:4
+msgid "The time (in seconds) the process started after system boot"
+msgstr ""
+
+#: of pwnlib.util.proc.stat:4
+msgid ""
+"A list of the values in ``/proc/<pid>/stat``, with the exception that "
+"``(`` and ``)`` has been removed from around the process name."
+msgstr ""
+
+#: of pwnlib.util.proc.state:4
+msgid ""
+"State of the process as listed in ``/proc/<pid>/status``.  See `proc(5)` "
+"for details."
+msgstr ""
+
+#: of pwnlib.util.proc.status:1
+msgid "Get the status of a process."
+msgstr ""
+
+#: of pwnlib.util.proc.status:6
+msgid "The contents of ``/proc/<pid>/status`` as a dictionary."
+msgstr ""
+
+#: of pwnlib.util.proc.tracer:4
+msgid "PID of the process tracing `pid`, or None if no `pid` is not being traced."
+msgstr ""
+
+#: of pwnlib.util.proc.wait_for_debugger:1
+msgid ""
+"Sleeps until the process with PID `pid` is being traced. If debugger_pid "
+"is set and debugger exits, raises an error."
+msgstr ""
+
+#: of pwnlib.util.proc.wait_for_debugger:7
+msgid "The PID of the debugger that attached to the process."
+msgstr ""
+
+#: ../pwntools/docs/source/util/safeeval.rst:8
+msgid ":mod:`pwnlib.util.safeeval` --- Safe evaluation of python code"
+msgstr ""
+
+#: of pwnlib.util.safeeval._get_opcodes:1
+msgid "Extract the actual opcodes as a list from a code object"
+msgstr ""
+
+#: of pwnlib.util.safeeval.const:1
+msgid "Safe Python constant evaluation"
+msgstr ""
+
+#: of pwnlib.util.safeeval.const:3
+msgid ""
+"Evaluates a string that contains an expression describing a Python "
+"constant. Strings that are not valid Python expressions or that contain "
+"other code besides the constant raise ValueError."
+msgstr ""
+
+#: of pwnlib.util.safeeval.expr:1 pwnlib.util.safeeval.values:1
+msgid "Safe Python expression evaluation"
+msgstr ""
+
+#: of pwnlib.util.safeeval.expr:3
+msgid ""
+"Evaluates a string that contains an expression that only uses Python "
+"constants. This can be used to e.g. evaluate a numerical expression from "
+"an untrusted source."
+msgstr ""
+
+#: of pwnlib.util.safeeval.test_expr:1
+msgid ""
+"Test that the expression contains only the listed opcodes. If the "
+"expression is valid and contains only allowed codes, return the compiled "
+"code object. Otherwise raise a ValueError"
+msgstr ""
+
+#: of pwnlib.util.safeeval.values:3
+msgid ""
+"Evaluates a string that contains an expression that only uses Python "
+"constants and values from a supplied dictionary. This can be used to e.g."
+" evaluate e.g. an argument to a syscall."
+msgstr ""
+
+#: of pwnlib.util.safeeval.values:7
+msgid "Note: This is potentially unsafe if e.g. the __add__ method has side"
+msgstr ""
+
+#: of pwnlib.util.safeeval.values:8
+msgid "effects."
+msgstr ""
+
+#: ../pwntools/docs/source/util/sh_string.rst:7
+msgid ":mod:`pwnlib.util.sh_string` --- Shell Expansion is Hard"
+msgstr ""
+
+#: of pwnlib.util.sh_string:1
+msgid ""
+"Routines here are for getting any NULL-terminated sequence of bytes "
+"evaluated intact by any shell.  This includes all variants of quotes, "
+"whitespace, and non-printable characters."
+msgstr ""
+
+#: of pwnlib.util.sh_string:6
+msgid "Supported Shells"
+msgstr ""
+
+#: of pwnlib.util.sh_string:8
+msgid "The following shells have been evaluated:"
+msgstr ""
+
+#: of pwnlib.util.sh_string:10
+msgid "Ubuntu (dash/sh)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:11
+msgid "MacOS (GNU Bash)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:12
+msgid "Zsh"
+msgstr ""
+
+#: of pwnlib.util.sh_string:13
+msgid "FreeBSD (sh)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:14
+msgid "OpenBSD (sh)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:15
+msgid "NetBSD (sh)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:18
+msgid "Debian Almquist shell (Dash)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:20
+msgid ""
+"Ubuntu 14.04 and 16.04 use the Dash shell, and /bin/sh is actually just a"
+" symlink to /bin/dash.  The feature set supported when invoked as \"sh\" "
+"instead of \"dash\" is different, and we focus exclusively on the "
+"\"/bin/sh\" implementation."
+msgstr ""
+
+#: of pwnlib.util.sh_string:24
+msgid ""
+"From the `Ubuntu Man Pages`_, every character except for single-quote can"
+" be wrapped in single-quotes, and a backslash can be used to escape "
+"unquoted single-quotes."
+msgstr ""
+
+#: of pwnlib.util.sh_string:55
+msgid "GNU Bash"
+msgstr ""
+
+#: of pwnlib.util.sh_string:57
+msgid ""
+"The Bash shell is default on many systems, though it is not generally the"
+" default system-wide shell (i.e., the `system` syscall does not generally"
+" invoke it)."
+msgstr ""
+
+#: of pwnlib.util.sh_string:60
+msgid "That said, its prevalence suggests that it also be addressed."
+msgstr ""
+
+#: of pwnlib.util.sh_string:62
+msgid ""
+"From the `GNU Bash Manual`_, every character except for single-quote can "
+"be wrapped in single-quotes, and a backslash can be used to escape "
+"unquoted single-quotes."
+msgstr ""
+
+#: of pwnlib.util.sh_string:100
+msgid "Z Shell"
+msgstr ""
+
+#: of pwnlib.util.sh_string:102
+msgid ""
+"The Z shell is also a relatively common user shell, even though it's not "
+"generally the default system-wide shell."
+msgstr ""
+
+#: of pwnlib.util.sh_string:105
+msgid ""
+"From the `Z Shell Manual`_, every character except for single-quote can "
+"be wrapped in single-quotes, and a backslash can be used to escape "
+"unquoted single-quotes."
+msgstr ""
+
+#: of pwnlib.util.sh_string:132
+msgid "FreeBSD Shell"
+msgstr ""
+
+#: of pwnlib.util.sh_string:134
+msgid "Compatibility with the FreeBSD shell is included for completeness."
+msgstr ""
+
+#: of pwnlib.util.sh_string:136
+msgid ""
+"From the `FreeBSD man pages`_, every character except for single-quote "
+"can be wrapped in single-quotes, and a backslash can be used to escape "
+"unquoted single-quotes."
+msgstr ""
+
+#: of pwnlib.util.sh_string:176
+msgid "OpenBSD Shell"
+msgstr ""
+
+#: of pwnlib.util.sh_string:178
+msgid ""
+"From the `OpenBSD Man Pages`_, every character except for single-quote "
+"can be wrapped in single-quotes, and a backslash can be used to escape "
+"unquoted single-quotes."
+msgstr ""
+
+#: of pwnlib.util.sh_string:200
+msgid "NetBSD Shell"
+msgstr ""
+
+#: of pwnlib.util.sh_string:202
+msgid "The NetBSD shell's documentation is identical to the Dash documentation."
+msgstr ""
+
+#: of pwnlib.util.sh_string:205
+msgid "Android Shells"
+msgstr ""
+
+#: of pwnlib.util.sh_string:207
+msgid "Android has gone through some number of shells."
+msgstr ""
+
+#: of pwnlib.util.sh_string:209
+msgid "Mksh, a Korn shell, was used with Toolbox releases (5.0 and prior)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:210
+msgid "Toybox, also derived from the Almquist Shell (6.0 and newer)"
+msgstr ""
+
+#: of pwnlib.util.sh_string:212
+msgid ""
+"Notably, the Toolbox implementation is not POSIX compliant as it lacks a "
+"\"printf\" builtin (e.g. Android 5.0 emulator images)."
+msgstr ""
+
+#: of pwnlib.util.sh_string:216
+msgid "Toybox Shell"
+msgstr ""
+
+#: of pwnlib.util.sh_string:218
+msgid "Android 6.0 (and possibly other versions) use a shell based on ``toybox``."
+msgstr ""
+
+#: of pwnlib.util.sh_string:220
+msgid ""
+"While it does not include a ``printf`` builtin, ``toybox`` itself "
+"includes a POSIX-compliant ``printf`` binary."
+msgstr ""
+
+#: of pwnlib.util.sh_string:223
+msgid "The Ash shells should be feature-compatible with ``dash``."
+msgstr ""
+
+#: of pwnlib.util.sh_string:226
+msgid "BusyBox Shell"
+msgstr ""
+
+#: of pwnlib.util.sh_string:228
+msgid ""
+"`BusyBox's Wikipedia page`_ claims to use an ``ash``-compliant shell, and"
+" should therefore be compatible with ``dash``."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_command_with:1
+msgid ""
+"Returns a command create by evaluating `f(new_arg0, ..., new_argN)` "
+"whenever `f` is a function and `f % (new_arg0, ..., new_argN)` otherwise."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_command_with:4
+msgid ""
+"If the arguments are purely alphanumeric, then they are simply passed to "
+"function. If they are simple to escape, they will be escaped and passed "
+"to the function."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_command_with:8
+msgid ""
+"If the arguments contain trailing newlines, then it is hard to use them "
+"directly because of a limitation in the posix shell. In this case the "
+"output from `f` is prepended with a bit of code to create the variables."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_prepare:1
+msgid ""
+"Outputs a posix compliant shell command that will put the data specified "
+"by the dictionary into the environment."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_prepare:4
+msgid ""
+"It is assumed that the keys in the dictionary are valid variable names "
+"that does not need any escaping."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_prepare:7
+msgid "The variables to set."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_prepare:9
+msgid "Should the variables be exported or only stored in the shell environment?"
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_prepare:11
+msgid "A valid posix shell command that will set the given variables."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_prepare:14
+msgid "It is assumed that `var` is a valid name for a variable in the shell."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_string:1
+msgid "Outputs a string in a format that will be understood by /bin/sh."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_string:3
+msgid ""
+"If the string does not contain any bad characters, it will simply be "
+"returned, possibly with quotes. If it contains bad characters, it will be"
+" escaped in a way which is compatible with most known systems."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_string:9
+msgid ""
+"This does not play along well with the shell's built-in \"echo\". It "
+"works exactly as expected to set environment variables and arguments, "
+"**unless** it's the shell-builtin echo."
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_string:13
+msgid "Argument:"
+msgstr ""
+
+#: of pwnlib.util.sh_string.sh_string:14
+msgid "s(str): String to escape."
+msgstr ""
+
+#: of pwnlib.util.sh_string.test:1
+msgid "Tests the output provided by a shell interpreting a string"
+msgstr ""
+
+#: ../pwntools/docs/source/util/web.rst:9
+msgid ":mod:`pwnlib.util.web` --- Utilities for working with the WWW"
+msgstr ""
+
+#: of pwnlib.util.web.wget:1
+msgid "Downloads a file via HTTP/HTTPS."
+msgstr ""
+
+#: of pwnlib.util.web.wget:3
+msgid "URL to download"
+msgstr ""
+
+#: of pwnlib.util.web.wget:5
+msgid ""
+"Name to save as.  Any truthy value will auto-generate a name based on the"
+" URL."
+msgstr ""
+
+#: of pwnlib.util.web.wget:8
+msgid ""
+"Timeout, in seconds. Can be a single value for both connect and read, or "
+"a tuple of (connect, read). Set to None to disable timeouts."
+msgstr ""

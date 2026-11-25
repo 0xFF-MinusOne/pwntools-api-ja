@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/libcdb.rst:11
+msgid ":mod:`pwnlib.libcdb` --- Libc Database"
+msgstr ""
+
+#: of pwnlib.libcdb:1
+msgid "Fetch a LIBC binary based on some heuristics."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:1
+msgid ""
+"Download the matching libraries for the given libc binary and cache them "
+"in a local directory. The libraries are looked up using `libc.rip "
+"<https://libc.rip>`_ and fetched from the official package repositories "
+"if available."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:5
+msgid ""
+"This commonly includes the ``ld-linux-x86-64.so.2`` and "
+"``libpthread.so.0`` binaries which can be used to execute the program "
+"locally when the given libc is incompatible with the local dynamic "
+"loader."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:9
+msgid ""
+"Note: Only .deb and .pkg.tar.* packages are currently supported "
+"(Debian/Ubuntu, Arch)."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries pwnlib.libcdb.search_by_build_id
+#: pwnlib.libcdb.search_by_libs_id pwnlib.libcdb.search_by_md5
+#: pwnlib.libcdb.search_by_sha1 pwnlib.libcdb.search_by_sha256
+#: pwnlib.libcdb.search_by_symbol_offsets pwnlib.libcdb.unstrip_libc
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:11
+msgid "The path the libc binary."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:13 pwnlib.libcdb.search_by_build_id:5
+#: pwnlib.libcdb.search_by_libs_id:5 pwnlib.libcdb.search_by_md5:5
+#: pwnlib.libcdb.search_by_sha1:5 pwnlib.libcdb.search_by_sha256:5
+#: pwnlib.libcdb.search_by_symbol_offsets:15
+msgid "Try to fetch debug info for the libc and apply it to the downloaded file."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:15
+msgid ""
+"Optional additional Debian-style apt mirror prefix(es) to try after the "
+"libc.rip URL. Useful when the official mirror has dropped older "
+"vulnerable libc versions: each candidate URL is re-tried with everything "
+"before ``/pool/`` swapped for the mirror prefix. Mirrors can also be "
+"supplied via the ``PWNLIB_EXTRA_LIBC_MIRRORS`` environment variable as a "
+"comma- or whitespace-separated list. Example: pass "
+"``\"https://debian.sipwise.com/debian-security\"`` to find ``GLIBC "
+"2.36-9+deb12u6`` after the official Debian mirrors removed it."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries pwnlib.libcdb.search_by_build_id
+#: pwnlib.libcdb.search_by_libs_id pwnlib.libcdb.search_by_md5
+#: pwnlib.libcdb.search_by_sha1 pwnlib.libcdb.search_by_sha256
+#: pwnlib.libcdb.search_by_symbol_offsets pwnlib.libcdb.unstrip_libc
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:27
+msgid "The path to the cached directory containing the downloaded libraries."
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:30
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.libcdb.download_libraries:40
+msgid ""
+"Fetch libraries from a different mirror for a vulnerable libc version "
+"``libc6_2.36-9+deb12u6_amd64`` that was removed from the official Debian "
+"mirrors:"
+msgstr ""
+
+#: of pwnlib.libcdb.get_build_id_offsets:1
+msgid ""
+"Returns a list of file offsets where the Build ID should reside within an"
+" ELF file of the currently selected architecture."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_build_id:1
+msgid ""
+"Given a hex-encoded Build ID, attempt to download a matching libc from "
+"libcdb."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_build_id:3
+msgid "Hex-encoded Build ID (e.g. 'ABCDEF...') of the library"
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_build_id:7 pwnlib.libcdb.search_by_md5:7
+#: pwnlib.libcdb.search_by_sha1:7 pwnlib.libcdb.search_by_sha256:7
+#: pwnlib.libcdb.search_by_symbol_offsets:17
+msgid ""
+"When pass `offline_only=True`, restricts search mode to offline sources "
+"only, disable online lookup. Defaults to `False`, and enable both offline"
+" and online providers."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_build_id:11 pwnlib.libcdb.search_by_libs_id:11
+#: pwnlib.libcdb.search_by_md5:11 pwnlib.libcdb.search_by_sha1:11
+#: pwnlib.libcdb.search_by_sha256:11
+msgid "Path to the downloaded library on disk, or :const:`None`."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_build_id:14 pwnlib.libcdb.search_by_libs_id:14
+#: pwnlib.libcdb.search_by_md5:14 pwnlib.libcdb.search_by_sha1:14
+#: pwnlib.libcdb.search_by_sha256:14 pwnlib.libcdb.search_by_symbol_offsets:33
+#: pwnlib.libcdb.unstrip_libc:12
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_libs_id:1
+msgid "Given a Libs ID, attempt to download a matching libc from libcdb."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_libs_id:3
+msgid "Libs ID (e.g. ``'libc6_...'``) of the library"
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_libs_id:7
+msgid ""
+"When pass ``offline_only=True``, restricts search mode to offline sources"
+" only, disable online lookup. Defaults to :const:`False`, and enable both"
+" offline and online providers."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_md5:1
+msgid ""
+"Given a hex-encoded md5sum, attempt to download a matching libc from "
+"libcdb."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_md5:3
+msgid "Hex-encoded md5sum (e.g. 'ABCDEF...') of the library"
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_sha1:1
+msgid "Given a hex-encoded sha1, attempt to download a matching libc from libcdb."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_sha1:3
+msgid "Hex-encoded sha1sum (e.g. 'ABCDEF...') of the library"
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_sha256:1
+msgid ""
+"Given a hex-encoded sha256, attempt to download a matching libc from "
+"libcdb."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_sha256:3
+msgid "Hex-encoded sha256sum (e.g. 'ABCDEF...') of the library"
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:1
+msgid "Lookup possible matching libc versions based on leaked function addresses."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:3
+msgid ""
+"The leaked function addresses have to be provided as a dict mapping the "
+"function name to the leaked value. Only the lower 3 nibbles are relevant "
+"for the lookup."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:7
+msgid ""
+"If there are multiple matches you are presented with a list to select one"
+" interactively, unless the ``select_index`` or ``return_as_list`` "
+"arguments are used."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:11
+msgid "Dictionary mapping symbol names to their addresses."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:13
+msgid "The libc to select if there are multiple matches (starting at 1)."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:20
+msgid "An option to select searched hash."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:22
+msgid ""
+"Return a list of build ids of all matching libc versions instead of a "
+"path to a downloaded file."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:25
+msgid "Return raw list of matched libc."
+msgstr ""
+
+#: of pwnlib.libcdb.search_by_symbol_offsets:28
+msgid ""
+"Path to the downloaded library on disk, or :const:`None`. If the "
+"``return_as_list`` argument is :const:`True`, a list of build ids is "
+"returned instead."
+msgstr ""
+
+#: of pwnlib.libcdb.unstrip_libc:1
+msgid ""
+"Given a path to a libc binary, attempt to download matching debug info "
+"and add them back to the given binary."
+msgstr ""
+
+#: of pwnlib.libcdb.unstrip_libc:4
+msgid "This modifies the given file."
+msgstr ""
+
+#: of pwnlib.libcdb.unstrip_libc:6
+msgid "Path to the libc binary to unstrip."
+msgstr ""
+
+#: of pwnlib.libcdb.unstrip_libc:9
+msgid ":const:`True` if binary was unstripped, :const:`False` otherwise."
+msgstr ""
+

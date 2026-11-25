@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/atexit.rst:2
+msgid ":mod:`pwnlib.atexit` --- Replacement for atexit"
+msgstr ""
+
+#: of pwnlib.atexit:1
+msgid "Replacement for the Python standard library's atexit.py."
+msgstr ""
+
+#: of pwnlib.atexit:3
+msgid ""
+"Whereas the standard :mod:`atexit` module only defines "
+":func:`atexit.register`, this replacement module also defines "
+":func:`unregister`."
+msgstr ""
+
+#: of pwnlib.atexit:6
+msgid ""
+"This module also fixes a the issue that exceptions raised by an exit "
+"handler is printed twice when the standard :mod:`atexit` is used."
+msgstr ""
+
+#: of pwnlib.atexit.register:1
+msgid ""
+"Registers a function to be called on program termination.  The function "
+"will be called with positional arguments `args` and keyword arguments "
+"`kwargs`, i.e. ``func(*args, **kwargs)``.  The current `context` is "
+"recorded and will be the one used when the handler is run."
+msgstr ""
+
+#: of pwnlib.atexit.register:6
+msgid "E.g. to suppress logging output from an exit-handler one could write::"
+msgstr ""
+
+#: of pwnlib.atexit.register:11
+msgid ""
+"An identifier is returned which can be used to unregister the exit-"
+"handler."
+msgstr ""
+
+#: of pwnlib.atexit.register:13
+msgid "This function can be used as a decorator::"
+msgstr ""
+
+#: of pwnlib.atexit.register:19
+msgid ""
+"Notice however that this will bind ``handler`` to the identifier and not "
+"the actual exit-handler.  The exit-handler can then be unregistered "
+"with::"
+msgstr ""
+
+#: of pwnlib.atexit.register:25
+msgid "This function is thread safe."
+msgstr ""
+
+#: of pwnlib.atexit.unregister:1
+msgid ""
+"Remove the exit-handler identified by `ident` from the list of registered"
+" handlers.  If `ident` isn't registered this is a no-op."
+msgstr ""
+

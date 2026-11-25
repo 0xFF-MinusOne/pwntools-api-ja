@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/args.rst:6
+msgid ":mod:`pwnlib.args` --- Magic Command-Line Arguments"
+msgstr ""
+
+#: of pwnlib.args:1
+msgid ""
+"Pwntools exposes several magic command-line arguments and environment "
+"variables when operating in `from pwn import *` mode."
+msgstr ""
+
+#: of pwnlib.args:4
+msgid ""
+"The arguments extracted from the command-line and removed from "
+"``sys.argv``."
+msgstr ""
+
+#: of pwnlib.args:6
+msgid ""
+"Arguments can be set by appending them to the command-line, or setting "
+"them in the environment prefixed by ``PWNLIB_``."
+msgstr ""
+
+#: of pwnlib.args:9
+msgid ""
+"The easiest example is to enable more verbose debugging.  Just set "
+"``DEBUG``."
+msgstr ""
+
+#: of pwnlib.args:16
+msgid ""
+"These arguments are automatically extracted, regardless of their name, "
+"and exposed via :mod:`pwnlib.args.args`, which is exposed as the global "
+"variable :data:`args`.  Arguments which ``pwntools`` reserves internally "
+"are not exposed this way.  These reserved arguments (such as ``DEBUG`` "
+"and ``NOASLR``) instead adjust :data:`pwnlib.context.context`, so their "
+"effect is read from ``context`` (e.g. ``context.log_level``, "
+"``context.aslr``) rather than from ``args`` -- ``args.NOASLR`` is always "
+"the empty string."
+msgstr ""
+
+#: of pwnlib.args:29
+msgid ""
+"This is very useful for conditional code, for example determining whether"
+" to run an exploit locally or to connect to a remote server.  Arguments "
+"which are not specified evaluate to an empty string."
+msgstr ""
+
+#: of pwnlib.args:40
+msgid "Arguments can also be accessed directly with the dot operator, e.g.:"
+msgstr ""
+
+#: of pwnlib.args:47
+msgid "Any undefined arguments evaluate to an empty string, ``''``."
+msgstr ""
+
+#: of pwnlib.args:49
+msgid ""
+"The full list of supported \"magic arguments\" and their effects are "
+"listed below."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.args.PwnlibArgs.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.args.DEBUG:1
+msgid ""
+"Sets the logging verbosity to ``debug`` which displays much more "
+"information, including logging each byte sent by tubes."
+msgstr ""
+
+#: of pwnlib.args.LOCAL_LIBCDB:1
+msgid ""
+"Sets path to local libc-database via ``context.local_libcdb``, e.g. "
+"``LOCAL_LIBCDB='/path/to/libc-databse'``"
+msgstr ""
+
+#: of pwnlib.args.LOG_FILE:1
+msgid ""
+"Sets a log file to be used via ``context.log_file``, e.g. "
+"``LOG_FILE=./log.txt``"
+msgstr ""
+
+#: of pwnlib.args.LOG_LEVEL:1
+msgid ""
+"Sets the logging verbosity used via ``context.log_level``, e.g. "
+"``LOG_LEVEL=debug``."
+msgstr ""
+
+#: of pwnlib.args.NOASLR:1
+msgid "Disables ASLR via ``context.aslr``"
+msgstr ""
+
+#: of pwnlib.args.NOPTRACE:1
+msgid ""
+"Disables facilities which require ``ptrace`` such as ``gdb.attach()`` "
+"statements, via ``context.noptrace``."
+msgstr ""
+
+#: of pwnlib.args.NOTERM:1
+msgid "Disables pretty terminal settings and animations."
+msgstr ""
+
+#: of pwnlib.args.RANDOMIZE:1
+msgid "Enables randomization of various pieces via ``context.randomize``"
+msgstr ""
+
+#: of pwnlib.args.SILENT:1
+msgid "Sets the logging verbosity to ``error`` which silences most output."
+msgstr ""
+
+#: of pwnlib.args.STDERR:1
+msgid "Sends logging to ``stderr`` by default, instead of ``stdout``"
+msgstr ""
+
+#: of pwnlib.args.TIMEOUT:1
+msgid ""
+"Sets a timeout for tube operations (in seconds) via ``context.timeout``, "
+"e.g. ``TIMEOUT=30``"
+msgstr ""
+
+#: of pwnlib.args.asbool:1
+msgid "Convert a string to its boolean value"
+msgstr ""
+
+#: of pwnlib.args.isident:1
+msgid ""
+"Helper function to check whether a string is a valid identifier, as "
+"passed in on the command-line."
+msgstr ""
+

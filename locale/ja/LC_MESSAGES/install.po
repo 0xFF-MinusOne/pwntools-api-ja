@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/install.rst:2
+msgid "Installation"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:4
+msgid ""
+"Pwntools is best supported on 64-bit Ubuntu LTS releases (22.04 and "
+"24.04).  Most functionality should work on any Posix-like distribution "
+"(Debian, Arch, FreeBSD, OSX, etc.)."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:7
+msgid "Prerequisites"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:9
+msgid ""
+"In order to get the most out of ``pwntools``, you should have the "
+"following system libraries installed."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:19
+msgid ""
+"Note: For Mac OS X you will need to have cmake ``brew install cmake`` and"
+" pkg-config ``brew install pkg-config`` installed."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:26
+msgid "Released Version"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:28
+msgid ""
+"pwntools is available as a ``pip`` package for Python3. Version v5.0.0 "
+"supports Python3.10 or later. Use v4 if you use earlier versions of "
+"Python."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:31
+msgid "Python3"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:33
+msgid ""
+"The Python version required for installing Pwntools is kept as low as "
+"possible on a best-effort basis.  However, new features target Python3.10"
+" and later."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:44
+msgid "Python2 (Deprecated)"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:46
+msgid ""
+"Python2 support has been removed in Pwntools v5.0.0.  The last version to"
+" support Python2 was v4.15.0."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:48
+msgid ""
+"NOTE: Pwntools maintainers STRONGLY recommend using Python3 for all "
+"future Pwntools-based scripts and projects."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:50
+msgid ""
+"Additionally, due to `pip` dropping support for Python2, a specfic "
+"version of `pip` must be installed."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:61
+msgid "Command-Line Tools"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:63
+msgid ""
+"When installed with ``sudo`` the above commands will install Pwntools' "
+"command-line tools to somewhere like ``/usr/bin``."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:65
+msgid ""
+"However, if you run as an unprivileged user, you may see a warning "
+"message that looks like this::"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:71
+msgid ""
+"Follow the instructions listed and add ``~/.local/bin`` to your ``$PATH``"
+" environment variable."
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:74
+msgid "Development"
+msgstr ""
+
+#: ../pwntools/docs/source/install.rst:76
+msgid ""
+"If you are hacking on Pwntools locally, you'll want to do something like "
+"this:"
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:2
+msgid "Binutils"
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:4
+msgid ""
+"Assembly of foreign architectures (e.g. assembling Sparc shellcode on Mac"
+" OS X) requires cross-compiled versions of ``binutils`` to be installed. "
+"We've made this process as smooth as we can."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:8
+msgid ""
+"In these examples, replace ``$ARCH`` with your target architecture (e.g.,"
+" arm, aarch64, mips64, vax, etc.)."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:10
+msgid ""
+"Building `binutils` from source takes about 60 seconds on a modern 8-core"
+" machine."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:13
+#: ../pwntools/docs/source/install/headers.rst:9
+msgid "Ubuntu"
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:15
+msgid ""
+"For Ubuntu 12.04 through 15.10, you must first add the pwntools `Personal"
+" Package Archive repository "
+"<https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`__."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:17
+msgid ""
+"Ubuntu Xenial (16.04) has official packages for most architectures, and "
+"does not require this step."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:25
+msgid "Then, install the binutils for your architecture."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:32
+#: ../pwntools/docs/source/install/headers.rst:16
+msgid "Mac OS X"
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:34
+msgid ""
+"Mac OS X is just as easy, but requires building binutils from source. "
+"However, we've made ``homebrew`` recipes to make this just two commands. "
+"After installing `brew <https://brew.sh>`__, grab the appropriate recipe "
+"from our `binutils repo <https://github.com/Gallopsled/pwntools-"
+"binutils/>`__."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:45
+msgid ""
+"Note: The pwntools/pwntools Homebrew tap is currently (August 2026) "
+"undergoing migration. If you encounter issues on Mac OS, try running "
+"``export HOMEBREW_DEVELOPER=\"true\"`` before ``brew install ...``. The "
+"actual resolution of the tap migration is still pending."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:51
+msgid "Windows"
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:53
+msgid ""
+"Windows support is experimental. You can try installing a prebuilt "
+"version of binutils for your desired architecture from the `GNU "
+"Toolchains <https://gnutoolchains.com/>`__ project."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:56
+msgid ""
+"Note: For x86 and x86_64, you should use the `ubuntu toolchain "
+"<https://gnutoolchains.com/ubuntu/>`__ instead of the MinGW toolchains "
+"due to differences in the commandline handling."
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:60
+msgid "Alternate OSes"
+msgstr ""
+
+#: ../pwntools/docs/source/install/binutils.rst:62
+msgid ""
+"If you want to build everything by hand, or don't use any of the above "
+"OSes, ``binutils`` is simple to build by hand."
+msgstr ""
+
+#: ../pwntools/docs/source/install/headers.rst:2
+msgid "Python Development Headers"
+msgstr ""
+
+#: ../pwntools/docs/source/install/headers.rst:4
+msgid ""
+"Some of pwntools' Python dependencies require native extensions (for "
+"example, Paramiko requires PyCrypto)."
+msgstr ""
+
+#: ../pwntools/docs/source/install/headers.rst:6
+msgid ""
+"In order to build these native extensions, the development headers for "
+"Python must be installed."
+msgstr ""
+
+#: ../pwntools/docs/source/install/headers.rst:18
+msgid "No action needed."
+msgstr ""
+

@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/protocols.rst:7
+msgid ":mod:`pwnlib.protocols.adb` --- Protocol implementations"
+msgstr ""
+
+#: of pwnlib.protocols.adb:1
+msgid "Implementation of the Android Debug Bridge (ADB) protocol."
+msgstr ""
+
+#: of pwnlib.protocols.adb:3
+msgid "Documentation is available here_."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient:1
+msgid "ADB Client"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient._autoclose:1
+msgid ""
+"Decorator which automatically closes the connection to the ADB server "
+"after calling the decorated function."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient._sync:1
+msgid ""
+"Decorator which enters 'sync:' mode to the selected transport, then "
+"invokes the decorated funciton."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient._with_transport:1
+msgid ""
+"Decorator which automatically selects a device transport before calling "
+"the decorated function, and closes the connection afterward."
+msgstr ""
+
+#: ../pwntools/docs/source/protocols.rst
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.devices:1
+msgid "If :const:`True`, fetch the long-format listing."
+msgstr ""
+
+#: ../pwntools/docs/source/protocols.rst
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.devices:4
+msgid "String representation of all available devices."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.execute:1
+msgid "Executes a program on the device."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.execute:3
+msgid "A :class:`pwnlib.tubes.tube.tube` which is connected to the process."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.execute:5
+#: pwnlib.protocols.adb.AdbClient.list:25
+#: pwnlib.protocols.adb.AdbClient.transport:3
+msgid "Examples:"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.kill:1
+msgid "Kills the remote ADB server\""
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.kill:9
+msgid ""
+"The server is automatically re-started on the next request, if the "
+"default host/port are used."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:1
+msgid "Execute the ``LIST`` command of the ``SYNC`` API."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:3
+msgid "Path of the directory to list."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:6
+msgid ""
+"A dictionary, where the keys are relative filenames, and the values are a"
+" dictionary containing the same values as ``stat()`` supplies."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:12
+msgid ""
+"In recent releases of Android (e.g. 7.0), the domain that adbd executes "
+"from does not have access to everything that the shell user does."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:16
+msgid ""
+"Because of this, while the shell user can get listings of e.g. the root "
+"directory ('/'), adbd cannot."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:19
+msgid ""
+"The SYNC APIs are executed within the adbd context, not the shell user "
+"context."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.list:22
+msgid ""
+"This issue is not a problem if the phone is rooted via 'adb root', since "
+"adbd then runs in the ``su`` domain."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:1
+msgid "Execute the ``READ`` command of the ``SYNC`` API."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:3
+msgid "Path to the file to read"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:5
+msgid "Size of the file, in bytes.  Optional."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:7
+msgid ""
+"Callback function invoked as data becomes available.  Arguments provided "
+"are:  - File path - All data - Expected size of all data - Current chunk "
+"- Expected size of chunk"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:7
+msgid ""
+"Callback function invoked as data becomes available.  Arguments provided "
+"are:"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:10
+#: pwnlib.protocols.adb.AdbClient.write:14
+msgid "File path"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:11
+#: pwnlib.protocols.adb.AdbClient.write:15
+msgid "All data"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:12
+#: pwnlib.protocols.adb.AdbClient.write:16
+msgid "Expected size of all data"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:13
+#: pwnlib.protocols.adb.AdbClient.write:17
+msgid "Current chunk"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:14
+#: pwnlib.protocols.adb.AdbClient.write:18
+msgid "Expected size of chunk"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.read:17
+msgid "The data received as a string."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.recvl:1
+msgid "Receives a length-prefixed data buffer from the ADB server"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.send:1
+msgid "Sends data to the ADB server"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.stat:1
+msgid "Execute the STAT command of the SYNC API."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.stat:3
+msgid "Path to the file to stat."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.stat:6
+msgid ""
+"On success, a dictionary mapping the values returned. If the file cannot "
+"be stat() ed, None is returned."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.stat:9
+#: pwnlib.protocols.adb.AdbClient.version:3
+msgid "Example:"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.track_devices:1
+msgid ""
+"Generator which returns a short-format listing of available devices each "
+"time a device state changes."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.transport:1
+msgid "Sets the Transport on the remote device."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.unpack:1
+msgid "Receives a hex-ascii packed integer from the ADB server"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.version:1
+msgid "Tuple containing the ``(major, minor)`` version from the ADB server"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:1
+msgid "Execute the ``WRITE`` command of the ``SYNC`` API."
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:3
+msgid "Path to the file to write"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:5
+msgid "Data to write to the file"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:7
+msgid "File mode to set (e.g. ``0o755``)"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:9
+msgid "Unix timestamp to set the file date to"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:11
+msgid ""
+"Callback function invoked as data is written.  Arguments provided are:  -"
+" File path - All data - Expected size of all data - Current chunk - "
+"Expected size of chunk"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.write:11
+msgid "Callback function invoked as data is written.  Arguments provided are:"
+msgstr ""
+
+#: of pwnlib.protocols.adb.AdbClient.c:1
+msgid "AdbClient's connection to the ADB server"
+msgstr ""
+
+#: of pwnlib.protocols.adb.Connection:1
+msgid "Connection to the ADB server"
+msgstr ""
+
+#: of pwnlib.protocols.adb.Connection.close:1
+msgid "Closes the tube."
+msgstr ""
+
+#: of pwnlib.protocols.adb.Message:1
+msgid "An ADB hex-length-prefixed message"
+msgstr ""
+
+#: of pwnlib.protocols.adb.Message.__str__:1
+msgid "Return str(self)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.protocols.adb.Message.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.protocols.adb.Process:1
+msgid ""
+"Duck-typed ``tubes.remote`` object to add properties of a "
+"``tubes.process``"
+msgstr ""
+
+#: of pwnlib.protocols.adb.proxy:1
+msgid "Starts an ADB proxy on the specified port, for debugging purposes."
+msgstr ""
+

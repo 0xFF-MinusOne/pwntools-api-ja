@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/filepointer.rst:7
+msgid ":mod:`pwnlib.filepointer` --- `FILE*` structure exploitation"
+msgstr ""
+
+#: of pwnlib.filepointer:1
+msgid "File Structure Exploitation"
+msgstr ""
+
+#: of pwnlib.filepointer:3
+msgid ""
+"struct FILE (_IO_FILE) is the structure for File Streams. This offers "
+"various targets for exploitation on an existing bug in the code. Examples"
+" - ``_IO_buf_base`` and ``_IO_buf_end`` for reading data to arbitrary "
+"location."
+msgstr ""
+
+#: of pwnlib.filepointer:7
+msgid ""
+"Remembering the offsets of various structure members while faking a FILE "
+"structure can be difficult, so this python class helps you with that. "
+"Example-"
+msgstr ""
+
+#: of pwnlib.filepointer:17
+msgid ""
+"Now payload contains the FILE structure with its vtable pointer pointing "
+"to 0xcafebabe"
+msgstr ""
+
+#: of pwnlib.filepointer:19
+msgid "Currently only 'amd64' and 'i386' architectures are supported"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:1
+msgid ""
+"Crafts a FILE structure, with default values for some fields, like _lock "
+"which should point to null ideally, set."
+msgstr ""
+
+#: ../pwntools/docs/source/filepointer.rst of
+#: pwnlib.filepointer.FileStructure.orange
+#: pwnlib.filepointer.FileStructure.read
+#: pwnlib.filepointer.FileStructure.struntil
+#: pwnlib.filepointer.FileStructure.write pwnlib.filepointer._update_var
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:3
+msgid ""
+"A pointer to NULL value in memory. This pointer can lie in any segment "
+"(stack, heap, bss, libc etc)"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:7 pwnlib.filepointer._update_var:10
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:8
+msgid ""
+"FILE structure with flags as 0xfbad1807 and _IO_buf_base and _IO_buf_end "
+"pointing to 0xcafebabe and 0xfacef00d"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:20
+msgid "Check the length of the FileStructure"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:25
+msgid ""
+"The definition for __repr__ orders the structure members and displays "
+"then in a dictionary format. It's useful when viewing a structure objet "
+"in python/IPython shell"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure:63
+msgid ""
+"Bytes fields are padded to the correct field size. For example, _unused2 "
+"is 40 bytes on i386, so a short value gets zero-padded to 40, not to "
+"context.bytes (4):"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.__setattr__:1
+#: pwnlib.filepointer._FlagsUnionBase.__setattr__:1
+msgid "Implement setattr(self, name, value)."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.orange:1
+msgid ""
+"Perform a House of Orange "
+"(https://github.com/shellphish/how2heap/blob/master/glibc_2.23/house_of_orange.c),"
+" provided you have libc leaks."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.orange:3
+msgid "Address of _IO_list_all in libc."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.orange:5
+msgid "Address of the fake vtable in memory"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.orange:9
+#: pwnlib.filepointer.FileStructure.read:9
+#: pwnlib.filepointer.FileStructure.struntil:7
+#: pwnlib.filepointer.FileStructure.write:9
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.orange:10
+msgid ""
+"Example payload if address of _IO_list_all is 0xfacef00d and fake vtable "
+"is at 0xcafebabe -"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.read:1
+msgid "Reading data into arbitrary memory location."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.read:3
+msgid "The address into which data is to be written from stdin"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.read:5
+msgid "The size, in bytes, of the data to be written"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.read:10
+msgid "Payload for reading 100 bytes from stdin into the address 0xcafebabe"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.struntil:1
+msgid ""
+"Payload for stuff till 'v' where 'v' is a structure member. This payload "
+"includes 'v' as well."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.struntil:3
+msgid "The name of the field uptil which the payload should be created."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.struntil:8
+msgid "Payload for data uptil _IO_buf_end"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.struntil:16
+msgid ""
+"The returned payload includes the whole of the final field ``v``, so its "
+"length is the sum of the field sizes up to and including ``v``:"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.write:1
+msgid "Writing data out from arbitrary memory address."
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.write:3
+msgid "The address from which data is to be printed to stdout"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.write:5
+msgid "The size, in bytes, of the data to be printed"
+msgstr ""
+
+#: of pwnlib.filepointer.FileStructure.write:10
+msgid "Payload for writing 100 bytes to stdout from the address 0xcafebabe"
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.filepointer.FileStructure.__weakref__:1
+#: pwnlib.filepointer.FileStructureMember.__weakref__:1
+#: pwnlib.filepointer._FlagsUnionBase.__weakref__:1
+#: pwnlib.filepointer._IOFileFlags2_bits.__weakref__:1
+#: pwnlib.filepointer._IOFileFlags_bits.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.filepointer._FlagsUnionBase.__str__:1
+#: pwnlib.filepointer._IOFileFlags2_bits.__str__:1
+#: pwnlib.filepointer._IOFileFlags_bits.__str__:1
+msgid "Return str(self)."
+msgstr ""
+
+#: of pwnlib.filepointer._update_var:1
+msgid ""
+"Since different members of the file structure have different sizes, we "
+"need to keep track of the sizes. The following function is used by the "
+"FileStructure class to initialise the lengths of the various fields."
+msgstr ""
+
+#: of pwnlib.filepointer._update_var:3
+msgid "l=8 for 'amd64' architecture and l=4 for 'i386' architecture"
+msgstr ""
+
+#: of pwnlib.filepointer._update_var:6
+msgid "Return Value:"
+msgstr ""
+
+#: of pwnlib.filepointer._update_var:7
+msgid ""
+"Returns a dictionary in which each field is mapped to its corresponding "
+"length according to the architecture set"
+msgstr ""
+

@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/libc.rst:2
+msgid ":mod:`pwnlib.libc` --- Convenient Functions for Libc Implementations"
+msgstr ""
+
+#: ../pwntools/docs/source/libc.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../pwntools/docs/source/libc/glibc.rst:6
+msgid ":mod:`pwnlib.libc.glibc` --- Convenient Functions for Glibc"
+msgstr ""
+
+#: of pwnlib.libc.glibc:1
+msgid "Some glibc related convenient functions."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:1
+msgid ""
+"Craft a ``struct dtor_list`` object. glibc will invoke functions in it if"
+" it's not null when exits. Note that to avoid program aborting, the "
+"``ExitDtorList`` pointer must be free-able. Check `struct dtor_list "
+"definitions`_."
+msgstr ""
+
+#: ../pwntools/docs/source/libc/glibc.rst of
+#: pwnlib.libc.glibc.ExitDtorList.from_bytes
+#: pwnlib.libc.glibc.ExitFunc.from_bytes
+#: pwnlib.libc.glibc.ExitFuncList.from_bytes pwnlib.libc.glibc.protect_ptr
+#: pwnlib.libc.glibc.ptr_demangle pwnlib.libc.glibc.ptr_mangle
+#: pwnlib.libc.glibc.reveal_ptr_same_page
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:5 pwnlib.libc.glibc.ExitFunc:8
+msgid "A pointer to function to execute."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:7 pwnlib.libc.glibc.ExitFunc:10
+msgid "Process ``POINTER_GUARD``."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:9
+msgid "Argument passed to ``func``."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:11
+msgid ""
+"A valid pointer to a ``link_map`` if you want program not to abort. "
+"(``func`` is executed first.)"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:14
+msgid "Next ``ExitDtorList`` on chain. ``0`` means end of chain."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList:18
+#: pwnlib.libc.glibc.ExitDtorList.from_bytes:10 pwnlib.libc.glibc.ExitFunc:18
+#: pwnlib.libc.glibc.ExitFunc.from_bytes:10 pwnlib.libc.glibc.ExitFuncList:16
+#: pwnlib.libc.glibc.ExitFuncList.from_bytes:10
+#: pwnlib.libc.glibc.protect_ptr:14 pwnlib.libc.glibc.ptr_demangle:11
+#: pwnlib.libc.glibc.ptr_mangle:11
+msgid "Examples"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList.from_bytes:1
+msgid "Construct an ``ExitDtorList`` from bytes object."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList.from_bytes:3
+msgid ""
+"The bytes object to convert to ``ExitDtorList``, whose length should "
+"exactly be ``4 * sizeof(size_t)``."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList.from_bytes:6
+#: pwnlib.libc.glibc.ExitFunc.from_bytes:6
+#: pwnlib.libc.glibc.ExitFuncList.from_bytes:6
+msgid "Process ``POINTER_GUARD`` to demangle pointers."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitDtorList.__repr__:1
+#: pwnlib.libc.glibc.ExitFunc.__repr__:1
+#: pwnlib.libc.glibc.ExitFuncList.__repr__:1
+msgid "Return repr(self)."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.libc.glibc.ExitDtorList.__weakref__:1
+#: pwnlib.libc.glibc.ExitFunc.__weakref__:1
+#: pwnlib.libc.glibc.ExitFuncList.__weakref__:1
+msgid "list of weak references to the object"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFlavor:1
+msgid "Enum adapted from glibc ``exit.h``. Check `enum definitions`_."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFlavor:3
+msgid ""
+"Original enums are: ``ef_free``, ``ef_us``, ``ef_on``, ``ef_at`` and "
+"``ef_cxa``."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFlavor.__format__:1
+msgid "Convert to a string according to format_spec."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFunc:1
+msgid ""
+"Craft a ``struct exit_function`` object. If user has arbitrary write to "
+"libc area and knows pointer guard used in ``PTR_MANGLE``, then the user "
+"is able to hijack control flow when process exits. Check `struct "
+"exit_function definitions`_."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFunc:6
+msgid "Which flavor of exit func is registered."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFunc:12
+msgid "Optional. ``onexit`` and ``cxa_exit`` require it."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFunc:14
+msgid "Optional. ``cxa_exit`` require it. (dso_handle)"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFunc.from_bytes:1
+msgid "Construct an ``ExitFunc`` from bytes object."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFunc.from_bytes:3
+msgid ""
+"The bytes object to convert to ``ExitFunc``. Must be aligned to "
+"``context.arch`` word boundry."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFuncList:1
+msgid ""
+"Craft a ``struct exit_function_list`` object. glibc has a static variable"
+" ``initial`` to store most atexit objects and a pointer ``__exit_funcs`` "
+"pointing to ``initial``. Check `struct exit_function_list definitions`_."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFuncList:5
+msgid "Next ``struct exit_function_list`` pointer on chain."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFuncList:7
+msgid "Registered exit functions"
+msgstr ""
+
+#: ../pwntools/docs/source/libc/glibc.rst
+msgid "Variables"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFuncList:10
+msgid ""
+"Total size of registered exit funcs. (This field is automatically "
+"obtained via ``len(funcs)``)"
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFuncList.from_bytes:1
+msgid "Construct an ``ExitFuncList`` from bytes object."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ExitFuncList.from_bytes:3
+msgid ""
+"The bytes object to convert to ``ExitFuncList``. Should be large enough "
+"to resolve all entries specified by ``idx``."
+msgstr ""
+
+#: of pwnlib.libc.glibc.protect_ptr:1
+msgid ""
+"Perform `PROTECT_PTR "
+"<https://elixir.bootlin.com/glibc/glibc-2.42/source/malloc/malloc.c#L331>`__"
+" in glibc heap macros to protect pointers. ``REVEAL_PTR`` is basically "
+"``PROTECT_PTR``, and since we don't know the address of the word, so use "
+"``protect_ptr`` instead."
+msgstr ""
+
+#: of pwnlib.libc.glibc.protect_ptr:6
+msgid "The address of where ``value`` is stored."
+msgstr ""
+
+#: of pwnlib.libc.glibc.protect_ptr:8
+msgid "The value to protect/reveal."
+msgstr ""
+
+#: of pwnlib.libc.glibc.protect_ptr pwnlib.libc.glibc.ptr_demangle
+#: pwnlib.libc.glibc.ptr_mangle pwnlib.libc.glibc.reveal_ptr_same_page
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.libc.glibc.protect_ptr:11
+msgid "Protected/Revealed value."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_demangle:1
+msgid "Perform ``PTR_DEMANGLE`` in glibc to demangle protected pointer."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_demangle:3 pwnlib.libc.glibc.ptr_mangle:3
+msgid "The value of ``POINTER_GUARD``."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_demangle:5
+msgid "The value to demangle."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_demangle:8
+msgid "Demangled value."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_mangle:1
+msgid "Perform ``PTR_MANGLE`` in glibc to protect pointers."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_mangle:5
+msgid "The value to protect."
+msgstr ""
+
+#: of pwnlib.libc.glibc.ptr_mangle:8
+msgid "Mangled value."
+msgstr ""
+
+#: of pwnlib.libc.glibc.reveal_ptr_same_page:1
+msgid ""
+"Reveal a pointer that was mangled by protect_ptr without knowing where "
+"the pointer is stored. Only works if the leaked pointer itself is stored "
+"on the same page as its value."
+msgstr ""
+
+#: of pwnlib.libc.glibc.reveal_ptr_same_page:4
+msgid "The mangled pointer."
+msgstr ""
+
+#: of pwnlib.libc.glibc.reveal_ptr_same_page:7
+msgid "*int* -- The original pointer."
+msgstr ""
+
+#: of pwnlib.libc.glibc.reveal_ptr_same_page:10
+msgid "Example"
+msgstr ""
+

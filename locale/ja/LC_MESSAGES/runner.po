@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/runner.rst:11
+msgid ":mod:`pwnlib.runner` --- Running Shellcode"
+msgstr ""
+
+#: of pwnlib.runner.run_assembly:1
+msgid "Given an assembly listing, assemble and execute it."
+msgstr ""
+
+#: of pwnlib.runner.run_assembly pwnlib.runner.run_assembly_exitcode
+#: pwnlib.runner.run_shellcode_exitcode
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.runner.run_assembly:3
+msgid "A :class:`pwnlib.tubes.process.process` tube to interact with the process."
+msgstr ""
+
+#: of pwnlib.runner.run_assembly:6 pwnlib.runner.run_assembly_exitcode:7
+#: pwnlib.runner.run_shellcode:4 pwnlib.runner.run_shellcode_exitcode:7
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.runner.run_assembly_exitcode:1
+msgid ""
+"Given an assembly listing, assemble and execute it, and wait for the "
+"process to die."
+msgstr ""
+
+#: of pwnlib.runner.run_assembly_exitcode:4
+#: pwnlib.runner.run_shellcode_exitcode:4
+msgid "The exit code of the process."
+msgstr ""
+
+#: of pwnlib.runner.run_shellcode:1
+msgid "Given assembled machine code bytes, execute them."
+msgstr ""
+
+#: of pwnlib.runner.run_shellcode_exitcode:1
+msgid ""
+"Given assembled machine code bytes, execute them, and wait for the "
+"process to die."
+msgstr ""
+

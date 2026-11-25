@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/update.rst:7
+msgid ":mod:`pwnlib.update` --- Updating Pwntools"
+msgstr ""
+
+#: of pwnlib.update:1
+msgid "# Pwntools Update"
+msgstr ""
+
+#: of pwnlib.update:3
+msgid ""
+"In order to ensure that Pwntools users always have the latest and "
+"greatest version, Pwntools automatically checks for updates."
+msgstr ""
+
+#: of pwnlib.update:6
+msgid ""
+"Since this update check takes a moment, it is only performed once every "
+"week.  It can be permanently disabled via:"
+msgstr ""
+
+#: of pwnlib.update:13
+msgid ""
+"Or adding the following lines to ~/.pwn.conf (or system-wide "
+"/etc/pwn.conf):"
+msgstr ""
+
+#: of pwnlib.update.available_on_pypi:1
+msgid "Return True if an update is available on PyPI."
+msgstr ""
+
+#: of pwnlib.update.cache_file:1
+msgid ""
+"Returns the path of the file used to cache update data, and ensures that "
+"it exists."
+msgstr ""
+
+#: of pwnlib.update.last_check:1
+msgid "Return the date of the last check"
+msgstr ""
+
+#: of pwnlib.update.perform_check:1
+msgid "Perform the update check, and report to the user."
+msgstr ""
+
+#: of pwnlib.update.perform_check
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.update.perform_check:3
+msgid "Whether or not to include pre-release versions."
+msgstr ""
+
+#: of pwnlib.update.perform_check
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.update.perform_check:6
+msgid "A list of arguments to the update command."
+msgstr ""
+
+#: of pwnlib.update.should_check:1
+msgid "Return True if we should check for an update"
+msgstr ""
+

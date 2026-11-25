@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2026, Gallopsled et al.
+# This file is distributed under the same license as the pwntools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pwntools 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 05:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.19.0\n"
+
+#: ../pwntools/docs/source/encoders.rst:10
+msgid ":mod:`pwnlib.encoders` --- Encoding Shellcode"
+msgstr ""
+
+#: of pwnlib.encoders.encoder.alphanumeric:1
+msgid ""
+"Encode the shellcode ``raw_bytes`` such that it does not contain any "
+"bytes except for [A-Za-z0-9]."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.alphanumeric:4 pwnlib.encoders.encoder.line:4
+#: pwnlib.encoders.encoder.null:4 pwnlib.encoders.encoder.printable:4
+#: pwnlib.encoders.encoder.scramble:3
+msgid "Accepts the same arguments as :func:`encode`."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.encode:1
+msgid ""
+"Encode shellcode ``raw_bytes`` such that it does not contain any bytes in"
+" ``avoid`` or ``expr``."
+msgstr ""
+
+#: ../pwntools/docs/source/encoders.rst of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions
+msgid "Parameters"
+msgstr ""
+
+#: of pwnlib.encoders.encoder.encode:4
+msgid "Sequence of shellcode bytes to encode."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.encode:6
+msgid "Bytes to avoid"
+msgstr ""
+
+#: of pwnlib.encoders.encoder.encode:8
+msgid "Regular expression which matches bad characters."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.encode:10
+msgid ""
+"Force re-encoding of the shellcode, even if it doesn't contain any bytes "
+"in ``avoid``."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.line:1
+msgid ""
+"Encode the shellcode ``raw_bytes`` such that it does not contain any NULL"
+" bytes or whitespace."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.null:1
+msgid ""
+"Encode the shellcode ``raw_bytes`` such that it does not contain any NULL"
+" bytes."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.printable:1
+msgid ""
+"Encode the shellcode ``raw_bytes`` such that it only contains non-space "
+"printable bytes."
+msgstr ""
+
+#: of pwnlib.encoders.encoder.scramble:1
+msgid "Encodes the input data with a random encoder."
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode:1
+msgid ""
+"Encoder to convert shellcode to shellcode that contains only ascii "
+"characters"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:1
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:1
+msgid ""
+"Pack shellcode into only ascii characters that unpacks itself and "
+"executes (on the stack)"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:4
+msgid ""
+"The original paper this encoder is based on: "
+"https://julianor.tripod.com/bc/bypass-msb.txt"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:7
+msgid ""
+"A more visual explanation as well as an implementation in C: "
+"https://vincentdary.github.io/blog-posts/polyasciishellgen-caezar-ascii-"
+"shellcode-generator/index.html#22-mechanism"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:10
+msgid "Init"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:12
+msgid ""
+"The amount esp will be increased by in the allocation phase (In addition "
+"to the length of the packed shellcode) as well as defines the size of the"
+" NOP sled (you can increase/ decrease the size of the NOP sled by "
+"adding/removing b'P'-s to/ from the end of the packed shellcode). "
+"Defaults to 20."
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:19
+msgid ""
+"The maximum amount of subtractions allowed to be taken. This may be "
+"increased if you have a relatively  restrictive ``avoid`` set. The more "
+"subtractions there are, the bigger the packed shellcode will be. Defaults"
+" to 4."
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:4
+msgid "The shellcode to be packed"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:6
+msgid "Characters to avoid. Defaults to allow printable ascii (0x21-0x7e)."
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:9
+msgid "Ignored"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives
+msgid "Raises"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:12
+msgid ""
+"A required character is in ``avoid`` (required     characters are "
+"characters which assemble into assembly     instructions and are used to "
+"unpack the shellcode onto the     stack, more details in the paper linked"
+" above ``\\ - % T X P``)."
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:13
+msgid "Not supported architecture"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:14
+msgid ""
+"The allowed character set does not contain     two characters that when "
+"they are bitwise-anded with eachother     their result is 0"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:15
+msgid ""
+"Could not find a correct subtraction sequence     to get to the the "
+"desired target value with the given ``avoid``     parameter"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions
+msgid "Returns"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:17
+msgid "*bytes* -- The packed shellcode"
+msgstr ""
+
+#: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:20
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:20
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:14
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:13
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:13
+msgid "Examples"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:1
+msgid "Given `target` and `last`, return a list of integers that when"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:2
+msgid ""
+"subtracted from `last` will equal `target` while only constructing "
+"integers from bytes in `vocab`"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:5
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:4
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:3
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:3
+msgid "int_size is taken from the context"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:7
+msgid "Original value"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:9
+msgid "Desired value"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:11
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:6
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:7
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:7
+msgid "Allowed characters"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:14
+msgid "If a sequence of subtractions could not be found"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:16
+msgid ""
+"*List[bytearray]* -- List of numbers that would need to be subtracted "
+"from `last` to get to `target`"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:1
+msgid ""
+"Find two bitwise negatives in the vocab so that when they are and-ed the "
+"result is 0."
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:9
+msgid "*Tuple[int, int]* -- value A, value B"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:11
+msgid ""
+"The allowed character set does not contain     two characters that when "
+"they are bitwise-and-ed with eachother     the result is 0"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:1
+msgid "Allocate enough space on the stack for the shellcode"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:5
+msgid "The allocation size"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:10
+msgid "*bytearray* -- The allocator shellcode"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:1
+msgid "Covert the sellcode to sub eax and posh eax instructions"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:5
+msgid "The shellcode to pack"
+msgstr ""
+
+#: of
+#: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:10
+msgid "*bytearray* -- packed shellcode"
+msgstr ""
+
+#: of pwnlib.encoders.i386.xor.i386XorEncoder:1
+msgid "Generates an XOR decoder for i386."
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder:17
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder:12
+#: pwnlib.encoders.i386.xor.i386XorEncoder:19
+#: pwnlib.encoders.mips.xor.MipsXorEncoder:13
+msgid "Shellcode encoder class"
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder:19
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder:14
+#: pwnlib.encoders.i386.xor.i386XorEncoder:21
+#: pwnlib.encoders.mips.xor.MipsXorEncoder:15
+msgid "Implements an architecture-specific shellcode encoder"
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:1
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:1
+#: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:1
+#: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:1
+msgid "avoid(raw_bytes, avoid)"
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:3
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:3
+#: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:3
+#: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:3
+msgid "String of bytes to encode"
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:5
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:5
+#: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:5
+#: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:5
+msgid "Set of bytes to avoid"
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:7
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:7
+#: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:7
+#: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:7
+msgid ""
+"Register which contains the address of the shellcode. May be necessary "
+"for some shellcode."
+msgstr ""
+
+#: ../pwntools/docs/docstring of pwnlib.encoders.arm.xor.ArmXorEncoder.arch:1
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder.arch:1
+#: pwnlib.encoders.i386.xor.i386XorEncoder.arch:1
+#: pwnlib.encoders.mips.xor.MipsXorEncoder.arch:1
+msgid "Architecture which this encoder works on"
+msgstr ""
+
+#: ../pwntools/docs/docstring of
+#: pwnlib.encoders.arm.xor.ArmXorEncoder.blacklist:1
+#: pwnlib.encoders.i386.delta.i386DeltaEncoder.blacklist:1
+#: pwnlib.encoders.i386.xor.i386XorEncoder.blacklist:1
+#: pwnlib.encoders.mips.xor.MipsXorEncoder.blacklist:1
+msgid "Blacklist of bytes which are known not to be supported"
+msgstr ""
+
+#: of pwnlib.encoders.i386.delta.i386DeltaEncoder:1
+msgid "i386 encoder built on delta-encoding."
+msgstr ""
+
+#: of pwnlib.encoders.i386.delta.i386DeltaEncoder:3
+msgid "In addition to the loader stub, doubles the size of the shellcode."
+msgstr ""
+
+#: of pwnlib.encoders.i386.delta.i386DeltaEncoder:6
+msgid "Example"
+msgstr ""
+
+#: of pwnlib.encoders.arm.xor.ArmXorEncoder:1
+msgid "Generates an XOR decoder for ARM."
+msgstr ""
+
+#: of pwnlib.encoders.mips.xor.MipsXorEncoder:1
+msgid "Generates an XOR decoder for MIPS."
+msgstr ""
+
