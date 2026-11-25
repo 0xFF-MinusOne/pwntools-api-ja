@@ -45,11 +45,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/index.rst:23
 msgid "Getting Started"
-msgstr ""
+msgstr "はじめの一歩"
 
 #: ../pwntools/docs/source/index.rst:37
 msgid "Module Index"
-msgstr ""
+msgstr "モジュール索引"
 
 #: ../pwntools/docs/source/index.rst:39
 msgid "Each of the ``pwntools`` modules is documented here."
@@ -65,7 +65,7 @@ msgstr "bytes と text の違いはとても重要なので、このトップペ
 
 #: ../pwntools/docs/source/index.rst:90
 msgid "Indices and tables"
-msgstr ""
+msgstr "索引と表"
 
 #: ../pwntools/docs/source/index.rst:92
 msgid ":ref:`genindex`"

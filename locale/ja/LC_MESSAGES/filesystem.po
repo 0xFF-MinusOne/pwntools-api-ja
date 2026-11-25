@@ -119,7 +119,7 @@ msgstr "このパスがジャンクションかどうか。"
 
 #: of pathlib.Path.is_mount:1
 msgid "Check if this path is a mount point"
-msgstr ""
+msgstr "このパスがマウントポイントかどうかを調べる"
 
 #: of pathlib.Path.is_socket:1 pwnlib.filesystem.ssh.SSHPath.is_socket:1
 msgid "Whether this path is a socket."
@@ -243,7 +243,7 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath:7
 msgid "Name of the file"
-msgstr ""
+msgstr "ファイル名"
 
 #: of pwnlib.filesystem.ssh.SSHPath:9
 msgid ":class:`.ssh` object for manipulating remote files"
@@ -316,15 +316,15 @@ msgstr "パスを 'file' URI として返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.chmod:1
 msgid "Change the permissions of a file"
-msgstr ""
+msgstr "ファイルのパーミッションを変更する"
 
 #: of pwnlib.filesystem.ssh.SSHPath.exists:1
 msgid "Returns True if the path exists"
-msgstr ""
+msgstr "パスが存在すれば True を返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.expanduser:1
 msgid "Expands a path that starts with a tilde"
-msgstr ""
+msgstr "チルダで始まるパスを展開する"
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_absolute:1
 msgid "Returns whether a path is absolute or not."
@@ -332,11 +332,11 @@ msgstr "パスが絶対パスかどうかを返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_dir:1
 msgid "Returns True if the path exists and is a directory"
-msgstr ""
+msgstr "パスが存在し、ディレクトリであれば True を返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_file:1
 msgid "Returns True if the path exists and is a file"
-msgstr ""
+msgstr "パスが存在し、ファイルであれば True を返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_relative_to:1
 msgid "Return True if the path is relative to another path or False."
@@ -348,7 +348,7 @@ msgstr "パスに、システムが予約している特別な名前が含まれ
 
 #: of pwnlib.filesystem.ssh.SSHPath.iterdir:1
 msgid "Iterates over the contents of the directory"
-msgstr ""
+msgstr "ディレクトリの内容を順に返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.joinpath:1
 msgid "Combine this path with one or several arguments."
@@ -360,7 +360,7 @@ msgstr "このパスが指定したパターンに一致すれば True を返し
 
 #: of pwnlib.filesystem.ssh.SSHPath.mkdir:1
 msgid "Make a directory at the specified path"
-msgstr ""
+msgstr "指定したパスにディレクトリを作る"
 
 #: of pwnlib.filesystem.ssh.SSHPath.open:1
 msgid "Return a file-like object for this path."
@@ -372,11 +372,11 @@ msgstr "これは現在、Paramiko では壊れているようです。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.read_bytes:1
 msgid "Read bytes from the file at this path"
-msgstr ""
+msgstr "このパスのファイルからバイト列を読む"
 
 #: of pwnlib.filesystem.ssh.SSHPath.read_text:1
 msgid "Read text from the file at this path"
-msgstr ""
+msgstr "このパスのファイルから文字列を読む"
 
 #: of pwnlib.filesystem.ssh.SSHPath.relative_to:1
 msgid "Return the relative path to another path identified by the passed arguments.  If the operation is not possible (because this is not related to the other path), raise ValueError."
@@ -388,11 +388,11 @@ msgstr "*walk_up* パラメータは、パスの解決に `..` を使ってよ�
 
 #: of pwnlib.filesystem.ssh.SSHPath.rename:1
 msgid "Rename a file to the target path"
-msgstr ""
+msgstr "ファイルを指定のパスに名前変更する"
 
 #: of pwnlib.filesystem.ssh.SSHPath.replace:1
 msgid "Replace target file with file at this path"
-msgstr ""
+msgstr "対象のファイルを、このパスのファイルで置き換える"
 
 #: of pwnlib.filesystem.ssh.SSHPath.resolve:1
 msgid "Return the absolute path to a file, resolving any '..' or symlinks. The current working directory is determined via the :class:`.ssh` member :attr:`.ssh.cwd`."
@@ -408,15 +408,15 @@ msgstr "既存のディレクトリを削除します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.samefile:1
 msgid "Returns whether two files are the same"
-msgstr ""
+msgstr "2 つのファイルが同じかどうかを返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.stat:1
 msgid "Returns the permissions and other information about the file"
-msgstr ""
+msgstr "ファイルのパーミッションなどの情報を返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.symlink_to:1
 msgid "Create a symlink at this path to the provided target"
-msgstr ""
+msgstr "このパスに、指定した対象へのシンボリックリンクを作る"
 
 #: of pwnlib.filesystem.ssh.SSHPath.symlink_to:3
 #: pwnlib.filesystem.ssh.SSHPath.unlink:3
@@ -436,10 +436,8 @@ msgid "Remove an existing file."
 msgstr "既存のファイルを削除します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.unlink:5
-msgid ""
-"This test fails catastrophically if the file name is unlink_me (note the "
-"underscore)"
-msgstr ""
+msgid "This test fails catastrophically if the file name is unlink_me (note the underscore)"
+msgstr "ファイル名が unlink_me (アンダースコアに注意) の場合、このテストは壊滅的に失敗する"
 
 #: of pwnlib.filesystem.ssh.SSHPath.unlink:20
 msgid "Note that unlink only works on files."
@@ -447,7 +445,7 @@ msgstr "unlink はファイルに対してしか動作しないことに注意�
 
 #: of pwnlib.filesystem.ssh.SSHPath.with_name:1
 msgid "Return a new path with the file name changed"
-msgstr ""
+msgstr "ファイル名を変えた新しいパスを返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.with_stem:1
 msgid "Return a new path with the stem changed."
@@ -455,19 +453,19 @@ msgstr "stem を変更した新しいパスを返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.with_suffix:1
 msgid "Return a new path with the file suffix changed"
-msgstr ""
+msgstr "ファイルの拡張子を変えた新しいパスを返す"
 
 #: of pwnlib.filesystem.ssh.SSHPath.write_bytes:1
 msgid "Write bytes to the file at this path"
-msgstr ""
+msgstr "このパスのファイルにバイト列を書き込む"
 
 #: of pwnlib.filesystem.ssh.SSHPath.write_text:1
 msgid "Write text to the file at this path"
-msgstr ""
+msgstr "このパスのファイルに文字列を書き込む"
 
 #: ../pwntools/docs/docstring of pwnlib.filesystem.SSHPath.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.filesystem.SSHPath.anchor:1
 msgid "The concatenation of the drive and root, or ''."
@@ -475,7 +473,7 @@ msgstr "ドライブとルートを連結したもの。なければ ''。"
 
 #: of pwnlib.filesystem.SSHPath.home:1
 msgid "Returns the home directory for the SSH connection"
-msgstr ""
+msgstr "SSH 接続先のホームディレクトリを返す"
 
 #: of pwnlib.filesystem.SSHPath.name:1
 msgid "Returns the name of the file."
@@ -483,19 +481,19 @@ msgstr "ファイルの名前を返します。"
 
 #: of pwnlib.filesystem.SSHPath.parent:1
 msgid "Return the parent of this path"
-msgstr ""
+msgstr "このパスの親を返す"
 
 #: of pwnlib.filesystem.SSHPath.parents:1
 msgid "Return the parents of this path, as individual parts"
-msgstr ""
+msgstr "このパスの親を、個々の部分に分けて返す"
 
 #: of pwnlib.filesystem.SSHPath.parts:1
 msgid "Return the individual parts of the path"
-msgstr ""
+msgstr "パスの個々の部分を返す"
 
 #: of pwnlib.filesystem.SSHPath.stem:1
 msgid "Returns the stem of a file without any extension"
-msgstr ""
+msgstr "拡張子を除いたファイル名を返す"
 
 #: of pwnlib.filesystem.SSHPath.suffix:1
 msgid "Returns the suffix of the file."
@@ -503,4 +501,4 @@ msgstr "ファイルの拡張子を返します。"
 
 #: of pwnlib.filesystem.SSHPath.suffixes:1
 msgid "Returns the suffixes of a file"
-msgstr ""
+msgstr "ファイルの拡張子のリストを返す"

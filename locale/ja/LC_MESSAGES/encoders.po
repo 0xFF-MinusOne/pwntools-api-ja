@@ -52,7 +52,7 @@ msgstr "エンコードするシェルコードのバイト列。"
 
 #: of pwnlib.encoders.encoder.encode:6
 msgid "Bytes to avoid"
-msgstr ""
+msgstr "避けるバイト"
 
 #: of pwnlib.encoders.encoder.encode:8
 msgid "Regular expression which matches bad characters."
@@ -79,17 +79,13 @@ msgid "Encodes the input data with a random encoder."
 msgstr "ランダムなエンコーダで、入力データをエンコードします。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode:1
-msgid ""
-"Encoder to convert shellcode to shellcode that contains only ascii "
-"characters"
-msgstr ""
+msgid "Encoder to convert shellcode to shellcode that contains only ascii characters"
+msgstr "シェルコードを、ASCII 文字だけを含むシェルコードに変換するエンコーダ"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:1
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:1
-msgid ""
-"Pack shellcode into only ascii characters that unpacks itself and "
-"executes (on the stack)"
-msgstr ""
+msgid "Pack shellcode into only ascii characters that unpacks itself and executes (on the stack)"
+msgstr "シェルコードを ASCII 文字だけに詰め込み、自分で展開して (スタック上で) 実行する"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:4
 msgid "The original paper this encoder is based on: https://julianor.tripod.com/bc/bypass-msb.txt"
@@ -113,7 +109,7 @@ msgstr "使える減算の最大回数。``avoid`` の制約がかなり厳し�
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:4
 msgid "The shellcode to be packed"
-msgstr ""
+msgstr "詰め込むシェルコード"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:6
 msgid "Characters to avoid. Defaults to allow printable ascii (0x21-0x7e)."
@@ -135,7 +131,7 @@ msgstr "必要な文字が ``avoid`` に含まれています（必要な文字�
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:13
 msgid "Not supported architecture"
-msgstr ""
+msgstr "未対応のアーキテクチャ"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:14
 msgid "The allowed character set does not contain     two characters that when they are bitwise-anded with eachother     their result is 0"
@@ -181,17 +177,17 @@ msgstr "`last` から引くと `target` に等しくなり、しかも整数は 
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:3
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:3
 msgid "int_size is taken from the context"
-msgstr ""
+msgstr "int_size は context から取られる"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:7
 msgid "Original value"
-msgstr ""
+msgstr "元の値"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:9
 msgid "Desired value"
-msgstr ""
+msgstr "目標の値"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:11
@@ -199,12 +195,12 @@ msgstr ""
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:7
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:7
 msgid "Allowed characters"
-msgstr ""
+msgstr "使える文字"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:14
 msgid "If a sequence of subtractions could not be found"
-msgstr ""
+msgstr "引き算の並びが見つからなかった場合"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:16
@@ -229,12 +225,12 @@ msgstr "許可された文字集合に、互いにビット単位で AND した�
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:1
 msgid "Allocate enough space on the stack for the shellcode"
-msgstr ""
+msgstr "シェルコードのために、スタック上に十分な領域を確保する"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:5
 msgid "The allocation size"
-msgstr ""
+msgstr "確保するサイズ"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:10
@@ -244,12 +240,12 @@ msgstr "*bytearray* -- アロケータのシェルコード"
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:1
 msgid "Covert the sellcode to sub eax and posh eax instructions"
-msgstr ""
+msgstr "シェルコードを sub eax 命令と push eax 命令に変換する"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:5
 msgid "The shellcode to pack"
-msgstr ""
+msgstr "詰め込むシェルコード"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:10
@@ -265,7 +261,7 @@ msgstr "i386 用の XOR デコーダを生成します。"
 #: pwnlib.encoders.i386.xor.i386XorEncoder:19
 #: pwnlib.encoders.mips.xor.MipsXorEncoder:13
 msgid "Shellcode encoder class"
-msgstr ""
+msgstr "シェルコードのエンコーダのクラス"
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder:19
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder:14
@@ -286,14 +282,14 @@ msgstr ""
 #: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:3
 #: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:3
 msgid "String of bytes to encode"
-msgstr ""
+msgstr "エンコードするバイト列"
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:5
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:5
 #: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:5
 #: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:5
 msgid "Set of bytes to avoid"
-msgstr ""
+msgstr "避けるバイトの集合"
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:7
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:7
@@ -307,7 +303,7 @@ msgstr "シェルコードのアドレスを保持するレジスタ。シェル
 #: pwnlib.encoders.i386.xor.i386XorEncoder.arch:1
 #: pwnlib.encoders.mips.xor.MipsXorEncoder.arch:1
 msgid "Architecture which this encoder works on"
-msgstr ""
+msgstr "このエンコーダが動作するアーキテクチャ"
 
 #: ../pwntools/docs/docstring of
 #: pwnlib.encoders.arm.xor.ArmXorEncoder.blacklist:1
@@ -315,7 +311,7 @@ msgstr ""
 #: pwnlib.encoders.i386.xor.i386XorEncoder.blacklist:1
 #: pwnlib.encoders.mips.xor.MipsXorEncoder.blacklist:1
 msgid "Blacklist of bytes which are known not to be supported"
-msgstr ""
+msgstr "対応していないことが分かっているバイトのブラックリスト"
 
 #: of pwnlib.encoders.i386.delta.i386DeltaEncoder:1
 msgid "i386 encoder built on delta-encoding."

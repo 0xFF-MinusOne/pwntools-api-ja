@@ -65,7 +65,7 @@ msgstr "指定すると、リークのキャッシュをこのパスに保存し
 
 #: of pwnlib.memleak.MemLeak:24
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.memleak.MemLeak.NoNewlines:1
 msgid "Wrapper for leak functions such that addresses which contain newline bytes are not leaked."
@@ -172,11 +172,11 @@ msgstr "構造体のフィールドをリークします。"
 
 #: of pwnlib.memleak.MemLeak.field:5 pwnlib.memleak.MemLeak.field_compare:6
 msgid "Base address to calculate offsets from"
-msgstr ""
+msgstr "オフセットの計算の基準にするアドレス"
 
 #: of pwnlib.memleak.MemLeak.field:7 pwnlib.memleak.MemLeak.field_compare:8
 msgid "Instance of a ctypes field"
-msgstr ""
+msgstr "ctypes のフィールドのインスタンス"
 
 #: of pwnlib.memleak.MemLeak.field:10 pwnlib.memleak.MemLeak.field_compare:13
 #: pwnlib.memleak.MemLeak.struct:8
@@ -197,7 +197,7 @@ msgstr "期待する値を指定して、構造体のフィールドをリーク
 
 #: of pwnlib.memleak.MemLeak.field_compare:10
 msgid "Expected value"
-msgstr ""
+msgstr "期待する値"
 
 #: of pwnlib.memleak.MemLeak.n:1
 msgid "Leak `numb` bytes at `addr`."
@@ -261,7 +261,7 @@ msgstr "struct(address, struct) => 構造体オブジェクト 構造体全体�
 
 #: of pwnlib.memleak.MemLeak.struct:9
 msgid "An instance of the provided struct class, with the leaked data decoded"
-msgstr ""
+msgstr "漏らしたデータをデコードした、指定の構造体クラスのインスタンス"
 
 #: of pwnlib.memleak.MemLeak.w:1
 msgid "w(addr, ndx = 0) -> int"
@@ -285,4 +285,4 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.memleak.MemLeak.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"

@@ -34,7 +34,7 @@ msgstr "repr(self) を返します。"
 #: ../pwntools/docs/docstring of pwnlib.timeout.Maximum.__weakref__:1
 #: pwnlib.timeout.Timeout.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.timeout.Timeout:1
 msgid "Implements a basic class which has a timeout, and support for scoped timeout countdowns."
@@ -54,7 +54,7 @@ msgstr "``Timeout.forever`` または :const:`None` はタイムアウトしま�
 
 #: of pwnlib.timeout.Timeout:8
 msgid "Any positive float, indicates timeouts in seconds"
-msgstr ""
+msgstr "正の浮動小数点数。タイムアウトを秒で表す"
 
 #: of pwnlib.timeout.Timeout:11
 msgid "Example"
@@ -78,11 +78,11 @@ msgstr "サブクラスがタイムアウトの変更をフックするための
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.default:1
 msgid "Value indicating that the timeout should not be changed"
-msgstr ""
+msgstr "タイムアウトを変えないことを示す値"
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.forever:1
 msgid "Value indicating that a timeout should not ever occur"
-msgstr ""
+msgstr "タイムアウトが決して起きないことを示す値"
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.maximum:1
 msgid "Maximum value for a timeout.  Used to get around platform issues with very large timeouts."

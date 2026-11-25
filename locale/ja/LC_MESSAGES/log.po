@@ -29,7 +29,7 @@ msgstr "エクスプロイトの実行中と、``pwntools`` の内部で、状�
 
 #: of pwnlib.log:5
 msgid "Exploit Developers"
-msgstr ""
+msgstr "エクスプロイト開発者向け"
 
 #: of pwnlib.log:6
 msgid "By using the standard ``from pwn import *``, an object named ``log`` will be inserted into the global namespace.  You can use this to print out status messages during exploitation."
@@ -57,7 +57,7 @@ msgstr "この属性の目的は、画面に何を表示するかを制御する
 
 #: of pwnlib.log:39
 msgid "Pwnlib Developers"
-msgstr ""
+msgstr "Pwnlib の開発者向け"
 
 #: of pwnlib.log:40
 msgid "A module-specific logger can be imported into the module via::"
@@ -73,7 +73,7 @@ msgstr "``progress`` を使うときは、例外が投げられてもスピナ�
 
 #: of pwnlib.log:53
 msgid "Technical details"
-msgstr ""
+msgstr "技術的な詳細"
 
 #: of pwnlib.log:54
 msgid "Familiarity with the :mod:`logging` module is assumed."
@@ -146,7 +146,7 @@ msgstr "実行中の処理が失敗したことを記録します。以後、状
 #: ../pwntools/docs/docstring of pwnlib.log.Logger.__weakref__:1
 #: pwnlib.log.Progress.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.log.Logger:1
 msgid "A class akin to the :class:`logging.LoggerAdapter` class.  All public methods defined on :class:`logging.Logger` instances are defined on this class."

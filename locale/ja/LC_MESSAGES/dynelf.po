@@ -93,7 +93,7 @@ msgstr "メモリをリークするための pwnlib.memleak.MemLeak のインス
 
 #: of pwnlib.dynelf.DynELF:58 pwnlib.dynelf.DynELF.__init__:7
 msgid "A pointer into a loaded ELF file"
-msgstr ""
+msgstr "ロードされた ELF ファイル内を指すポインタ"
 
 #: of pwnlib.dynelf.DynELF:60 pwnlib.dynelf.DynELF.__init__:9
 msgid "Path to the ELF file on disk, or a loaded :class:`pwnlib.elf.ELF`."
@@ -101,7 +101,7 @@ msgstr "ディスク上の ELF ファイルのパス、または読み込み済�
 
 #: of pwnlib.dynelf.DynELF:62 pwnlib.dynelf.DynELF.__init__:11
 msgid "Attempt to use libcdb to speed up libc lookups"
-msgstr ""
+msgstr "libc の検索を速くするために libcdb を使ってみる"
 
 #: of pwnlib.dynelf.DynELF.find_base:1
 msgid "Given a :class:`pwnlib.memleak.MemLeak` object and a pointer into a library, find its base address."
@@ -129,7 +129,7 @@ msgstr "DYNAMIC 配列のエントリを探します。"
 
 #: of pwnlib.dynelf.DynELF._find_dt:3
 msgid "Single tag to find"
-msgstr ""
+msgstr "探す単一のタグ"
 
 #: of pwnlib.dynelf.DynELF._find_dt:6 pwnlib.dynelf.DynELF._find_dt_optimized:6
 msgid "Pointer to the data described by the specified entry."
@@ -137,7 +137,7 @@ msgstr "指定したエントリが示すデータへのポインタ。"
 
 #: of pwnlib.dynelf.DynELF._find_dt_optimized:1
 msgid "Find an entry in the DYNAMIC array through an ELF"
-msgstr ""
+msgstr "ELF を通じて DYNAMIC 配列の項目を探す"
 
 #: of pwnlib.dynelf.DynELF._find_dt_optimized:3
 msgid "Name of the tag to find ('DT_DEBUG', 'DT_PLTGOT', ...)"
@@ -218,7 +218,7 @@ msgstr "ELF のメモリページをダンプして、さらに解析できる�
 
 #: of pwnlib.dynelf.DynELF.dump:3
 msgid "True if should dump the libraries too (False by default)"
-msgstr ""
+msgstr "ライブラリもダンプするなら True (既定は False)"
 
 #: of pwnlib.dynelf.DynELF.dump:5
 msgid "True if should dump read-only pages (False by default)"
@@ -255,7 +255,7 @@ msgstr "__environ を使って、スタックへのポインタを探します�
 
 #: ../pwntools/docs/docstring of pwnlib.dynelf.DynELF.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.dynelf.DynELF.dynamic:1
 msgid "Returns: Pointer to the ``.DYNAMIC`` area."
@@ -263,7 +263,7 @@ msgstr "Returns: ``.DYNAMIC`` 領域へのポインタ。"
 
 #: of pwnlib.dynelf.DynELF.elfclass:1
 msgid "32 or 64"
-msgstr ""
+msgstr "32 または 64"
 
 #: of pwnlib.dynelf.DynELF.elftype:1
 msgid "e_type from the elf header. In practice the value will almost always be 'EXEC' or 'DYN'. If the value is architecture-specific (between ET_LOPROC and ET_HIPROC) or invalid, KeyError is raised."
@@ -279,7 +279,7 @@ msgstr "ELF オブジェクト、または None。"
 
 #: of pwnlib.dynelf.DynELF.link_map:1
 msgid "Pointer to the runtime link_map object"
-msgstr ""
+msgstr "実行時の link_map オブジェクトへのポインタ"
 
 #: of pwnlib.dynelf.gnu_hash:1
 msgid "Function used to generated GNU-style hashes for strings."

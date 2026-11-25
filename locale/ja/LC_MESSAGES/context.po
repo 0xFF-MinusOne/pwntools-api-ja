@@ -41,7 +41,7 @@ msgstr "推奨する方法は、``context.binary`` を使って、適切な値�
 
 #: ../pwntools/docs/source/context.rst:30
 msgid "Module Members"
-msgstr ""
+msgstr "モジュールの要素"
 
 #: of pwnlib.context:1
 msgid "Implements context management so that nested/scoped contexts and threaded contexts work properly and as expected."
@@ -309,7 +309,7 @@ msgstr ""
 
 #: of pwnlib.context.ContextType.arch:17
 msgid "An invalid architecture was specified"
-msgstr ""
+msgstr "不正なアーキテクチャが指定された"
 
 #: of pwnlib.context.ContextType.arch:45
 msgid "Note that expressly setting :attr:`bits` means that we use that value instead of the default"
@@ -341,7 +341,7 @@ msgstr "バイナリファイルから、対象のアーキテクチャ、ビッ
 
 #: of pwnlib.context.ContextType.binary:4
 msgid "Examples:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.context.ContextType.bits:1
 msgid "Target machine word size, in bits (i.e. the size of general purpose registers)."
@@ -479,7 +479,7 @@ msgstr "既定値は ``'little'`` ですが、:attr:`arch` に応じて変わり
 
 #: of pwnlib.context.ContextType.endian:5
 msgid "An invalid endianness was provided"
-msgstr ""
+msgstr "不正なエンディアンが指定された"
 
 #: of pwnlib.context.ContextType.endianness:1
 msgid "Legacy alias for :attr:`endian`."
@@ -627,7 +627,7 @@ msgstr ""
 
 #: of pwnlib.context.ContextType.os:16
 msgid "An invalid os was specified"
-msgstr ""
+msgstr "不正な OS が指定された"
 
 #: of pwnlib.context.ContextType.os:40
 msgid "Note that expressly setting :attr:`newline` means that we use that value instead of the default"
@@ -767,7 +767,7 @@ msgstr "これは :attr:`.quiet` の逆で、機能としては次と同じで�
 
 #: of pwnlib.context.ContextType.verbose:12
 msgid "Note that the function does not emit any information by default"
-msgstr ""
+msgstr "この関数は、既定では何も情報を出力しないことに注意"
 
 #: of pwnlib.context.ContextType.verbose:18
 msgid "But if we put it inside a :attr:`.verbose` context manager, the information is printed."

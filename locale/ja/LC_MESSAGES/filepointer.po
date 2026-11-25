@@ -25,7 +25,7 @@ msgstr ":mod:`pwnlib.filepointer` --- `FILE*` 構造体のエクスプロイト"
 
 #: of pwnlib.filepointer:1
 msgid "File Structure Exploitation"
-msgstr ""
+msgstr "FILE 構造体への攻撃"
 
 #: of pwnlib.filepointer:3
 msgid "struct FILE (_IO_FILE) is the structure for File Streams. This offers various targets for exploitation on an existing bug in the code. Examples - ``_IO_buf_base`` and ``_IO_buf_end`` for reading data to arbitrary location."
@@ -36,10 +36,8 @@ msgid "Remembering the offsets of various structure members while faking a FILE 
 msgstr "FILE 構造体を偽造するときに各メンバーのオフセットを覚えておくのは大変なので、この Python のクラスがそれを助けます。例:"
 
 #: of pwnlib.filepointer:17
-msgid ""
-"Now payload contains the FILE structure with its vtable pointer pointing "
-"to 0xcafebabe"
-msgstr ""
+msgid "Now payload contains the FILE structure with its vtable pointer pointing to 0xcafebabe"
+msgstr "これで payload は、vtable ポインタが 0xcafebabe を指す FILE 構造体を含む"
 
 #: of pwnlib.filepointer:19
 msgid "Currently only 'amd64' and 'i386' architectures are supported"
@@ -66,14 +64,12 @@ msgid "Examples"
 msgstr ""
 
 #: of pwnlib.filepointer.FileStructure:8
-msgid ""
-"FILE structure with flags as 0xfbad1807 and _IO_buf_base and _IO_buf_end "
-"pointing to 0xcafebabe and 0xfacef00d"
-msgstr ""
+msgid "FILE structure with flags as 0xfbad1807 and _IO_buf_base and _IO_buf_end pointing to 0xcafebabe and 0xfacef00d"
+msgstr "フラグが 0xfbad1807 で、_IO_buf_base と _IO_buf_end がそれぞれ 0xcafebabe と 0xfacef00d を指す FILE 構造体"
 
 #: of pwnlib.filepointer.FileStructure:20
 msgid "Check the length of the FileStructure"
-msgstr ""
+msgstr "FileStructure の長さを調べる"
 
 #: of pwnlib.filepointer.FileStructure:25
 msgid "The definition for __repr__ orders the structure members and displays then in a dictionary format. It's useful when viewing a structure objet in python/IPython shell"
@@ -102,7 +98,7 @@ msgstr "libc 内の _IO_list_all のアドレスです。"
 
 #: of pwnlib.filepointer.FileStructure.orange:5
 msgid "Address of the fake vtable in memory"
-msgstr ""
+msgstr "偽の vtable のメモリ上のアドレス"
 
 #: of pwnlib.filepointer.FileStructure.orange:9
 #: pwnlib.filepointer.FileStructure.read:9
@@ -121,15 +117,15 @@ msgstr "任意のメモリ位置へのデータ読み込みです。"
 
 #: of pwnlib.filepointer.FileStructure.read:3
 msgid "The address into which data is to be written from stdin"
-msgstr ""
+msgstr "標準入力からのデータを書き込む先のアドレス"
 
 #: of pwnlib.filepointer.FileStructure.read:5
 msgid "The size, in bytes, of the data to be written"
-msgstr ""
+msgstr "書き込むデータのサイズ (バイト)"
 
 #: of pwnlib.filepointer.FileStructure.read:10
 msgid "Payload for reading 100 bytes from stdin into the address 0xcafebabe"
-msgstr ""
+msgstr "標準入力から 100 バイトをアドレス 0xcafebabe に読み込むペイロード"
 
 #: of pwnlib.filepointer.FileStructure.struntil:1
 msgid "Payload for stuff till 'v' where 'v' is a structure member. This payload includes 'v' as well."
@@ -141,7 +137,7 @@ msgstr "ペイロードを作成する最後のフィールドの名前です。
 
 #: of pwnlib.filepointer.FileStructure.struntil:8
 msgid "Payload for data uptil _IO_buf_end"
-msgstr ""
+msgstr "_IO_buf_end までのデータのペイロード"
 
 #: of pwnlib.filepointer.FileStructure.struntil:16
 msgid "The returned payload includes the whole of the final field ``v``, so its length is the sum of the field sizes up to and including ``v``:"
@@ -153,15 +149,15 @@ msgstr "任意のメモリアドレスからのデータ書き出しです。"
 
 #: of pwnlib.filepointer.FileStructure.write:3
 msgid "The address from which data is to be printed to stdout"
-msgstr ""
+msgstr "標準出力に出力するデータがあるアドレス"
 
 #: of pwnlib.filepointer.FileStructure.write:5
 msgid "The size, in bytes, of the data to be printed"
-msgstr ""
+msgstr "出力するデータのサイズ (バイト)"
 
 #: of pwnlib.filepointer.FileStructure.write:10
 msgid "Payload for writing 100 bytes to stdout from the address 0xcafebabe"
-msgstr ""
+msgstr "アドレス 0xcafebabe から 100 バイトを標準出力に書き出すペイロード"
 
 #: ../pwntools/docs/docstring of pwnlib.filepointer.FileStructure.__weakref__:1
 #: pwnlib.filepointer.FileStructureMember.__weakref__:1
@@ -169,7 +165,7 @@ msgstr ""
 #: pwnlib.filepointer._IOFileFlags2_bits.__weakref__:1
 #: pwnlib.filepointer._IOFileFlags_bits.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.filepointer._FlagsUnionBase.__str__:1
 #: pwnlib.filepointer._IOFileFlags2_bits.__str__:1
@@ -190,7 +186,5 @@ msgid "Return Value:"
 msgstr "戻り値:"
 
 #: of pwnlib.filepointer._update_var:7
-msgid ""
-"Returns a dictionary in which each field is mapped to its corresponding "
-"length according to the architecture set"
-msgstr ""
+msgid "Returns a dictionary in which each field is mapped to its corresponding length according to the architecture set"
+msgstr "設定されたアーキテクチャに応じて、各フィールドをその長さに対応づけた辞書を返す"

@@ -41,7 +41,7 @@ msgstr "自動での検索に失敗した場合は、:attr:`.context.debugger` �
 
 #: of pwnlib.windbg:20
 msgid "Useful Functions"
-msgstr ""
+msgstr "便利な関数"
 
 #: of pwnlib.windbg:22
 msgid ":func:`attach` - Attach to an existing process"
@@ -53,7 +53,7 @@ msgstr ":func:`debug` - 新しいプロセスをデバッガの下で起動し�
 
 #: of pwnlib.windbg:26
 msgid "Debugging Tips"
-msgstr ""
+msgstr "デバッグのヒント"
 
 #: of pwnlib.windbg:28
 msgid "The :func:`attach` and :func:`debug` functions will likely be your bread and butter for debugging."
@@ -65,7 +65,7 @@ msgstr "どちらも、WinDbg の起動時に渡すスクリプトを指定で�
 
 #: of pwnlib.windbg:35
 msgid "Attaching to Processes"
-msgstr ""
+msgstr "プロセスへのアタッチ"
 
 #: of pwnlib.windbg:37
 msgid "To attach to an existing process, just use :func:`attach`.  You can pass a PID, a process name (including file extension), or a :class:`.process`."
@@ -73,11 +73,11 @@ msgstr "実行中のプロセスにアタッチするには、:func:`attach` を
 
 #: of pwnlib.windbg:41
 msgid "Spawning New Processes"
-msgstr ""
+msgstr "新しいプロセスの起動"
 
 #: of pwnlib.windbg:43
 msgid "Attaching to processes with :func:`attach` is useful, but the state the process is in may vary.  If you need to attach to a process very early, and debug it from the very first instruction (or even the start of ``main``), you instead should use :func:`debug`."
-msgstr ":func:`attach` でプロセスにアタッチすると便利ですが、そのときのプロセスの状態は一定ではありません。プロセスのごく早い段階でアタッチし、最初の命令(あるいは ``main`` の先頭)からデバッグしたい場合は、代わりに :func:`debug` を使ってください。"
+msgstr ":func:`attach` でプロセスにアタッチすると便利ですが、そのときのプロセスの状態は一定ではありません。プロセスのごく早い段階でアタッチし、最初の命令（あるいは ``main`` の先頭）からデバッグしたい場合は、代わりに :func:`debug` を使ってください。"
 
 #: of pwnlib.windbg:48
 msgid "When you use :func:`debug`, the return value is a :class:`.tube` object that you interact with exactly like normal."
@@ -85,7 +85,7 @@ msgstr ":func:`debug` を使うと、戻り値は :class:`.tube` オブジェク
 
 #: of pwnlib.windbg:52
 msgid "Tips and Troubleshooting"
-msgstr ""
+msgstr "ヒントとトラブルシューティング"
 
 #: of pwnlib.windbg:55
 msgid "``NOPTRACE`` magic argument"
@@ -101,7 +101,7 @@ msgstr "スクリプトの実行時に ``NOPTRACE`` 引数を末尾に付ける�
 
 #: of pwnlib.windbg:71
 msgid "Member Documentation"
-msgstr ""
+msgstr "メンバーのドキュメント"
 
 #: of pwnlib.windbg.attach:1
 msgid "Attach to a running process with WinDbg or x64dbg."
@@ -146,7 +146,7 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:17
 msgid "PID of a process"
-msgstr ""
+msgstr "プロセスの PID"
 
 #: of pwnlib.windbg.attach:18
 msgid ":obj:`str`"
@@ -162,7 +162,7 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:21
 msgid "Process to connect to"
-msgstr ""
+msgstr "接続するプロセス"
 
 #: of pwnlib.windbg.attach:24
 msgid "Examples"
@@ -170,11 +170,11 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:25
 msgid "Attach to a process by PID"
-msgstr ""
+msgstr "PID を指定してプロセスにアタッチする"
 
 #: of pwnlib.windbg.attach:29
 msgid "Attach to the youngest process by name"
-msgstr ""
+msgstr "名前を指定して、いちばん新しいプロセスにアタッチする"
 
 #: of pwnlib.windbg.attach:33
 msgid "Attach a debugger to a :class:`.process` tube and automate interaction"

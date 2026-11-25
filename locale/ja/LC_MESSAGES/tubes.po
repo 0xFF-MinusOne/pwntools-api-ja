@@ -833,7 +833,7 @@ msgstr "出力の終わりを見つけるための目印。プロンプトが設
 #: of pwnlib.tubes.process.process.terminate:13
 #: pwnlib.tubes.tube.tube.upload_manually:34
 msgid "Examples:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.tubes.tube.tube.wait_for_close:1
 msgid "Waits until the tube is closed."
@@ -1120,7 +1120,7 @@ msgstr "指定したアドレスにあるマッピングを返します。"
 #: pwnlib.tubes.process.process.vdso_mapping:7
 #: pwnlib.tubes.process.process.vvar_mapping:7
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.tubes.process.process.can_recv_raw:1
 #: pwnlib.tubes.serialtube.serialtube.can_recv_raw:1
@@ -1315,7 +1315,7 @@ msgstr "メモリを書き込むアドレス"
 
 #: of pwnlib.tubes.process.process.writemem:5
 msgid "Data to write to the address"
-msgstr ""
+msgstr "アドレスに書き込むデータ"
 
 #: of pwnlib.tubes.process.process.writemem:10
 msgid "Let's write data to  the beginning of the mapped memory of the  ELF."
@@ -1583,15 +1583,15 @@ msgstr "新しい ssh 接続を作ります。"
 
 #: of pwnlib.tubes.ssh.ssh:3 pwnlib.tubes.ssh.ssh.__init__:3
 msgid "The username to log in with"
-msgstr ""
+msgstr "ログインするユーザー名"
 
 #: of pwnlib.tubes.ssh.ssh:5 pwnlib.tubes.ssh.ssh.__init__:5
 msgid "The hostname to connect to"
-msgstr ""
+msgstr "接続先のホスト名"
 
 #: of pwnlib.tubes.ssh.ssh:7 pwnlib.tubes.ssh.ssh.__init__:7
 msgid "The port to connect to"
-msgstr ""
+msgstr "接続先のポート"
 
 #: of pwnlib.tubes.ssh.ssh:9 pwnlib.tubes.ssh.ssh.__init__:9
 msgid "Try to authenticate using this password"
@@ -1615,7 +1615,7 @@ msgstr "ホストに接続する代わりに、このソケットを使います
 
 #: of pwnlib.tubes.ssh.ssh:20 pwnlib.tubes.ssh.ssh.__init__:20
 msgid "Log level"
-msgstr ""
+msgstr "ログレベル"
 
 #: of pwnlib.tubes.ssh.ssh:21 pwnlib.tubes.ssh.ssh.__init__:21
 msgid "Cache downloaded files (by hash/size/timestamp)"
@@ -2006,7 +2006,7 @@ msgstr "リモートのホストのファイルを削除します"
 
 #: of pwnlib.tubes.ssh.ssh.unlink:3
 msgid "Path to the file"
-msgstr ""
+msgstr "ファイルのパス"
 
 #: of pwnlib.tubes.ssh.ssh.upload_data:1
 msgid "Uploads some data into a file on the remote server."

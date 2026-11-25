@@ -25,7 +25,7 @@ msgstr ":mod:`pwnlib.flag` --- CTF のフラグ管理"
 
 #: of pwnlib.flag.flag.submit_flag:1
 msgid "Submits a flag to the game server"
-msgstr ""
+msgstr "ゲームサーバーにフラグを提出する"
 
 #: of pwnlib.flag.flag.submit_flag
 msgid "Parameters"
@@ -37,23 +37,23 @@ msgstr "提出するフラグです。"
 
 #: of pwnlib.flag.flag.submit_flag:5
 msgid "Exploit identifier, optional"
-msgstr ""
+msgstr "エクスプロイトの識別子 (省略可)"
 
 #: of pwnlib.flag.flag.submit_flag:7
 msgid "Target identifier, optional"
-msgstr ""
+msgstr "攻撃対象の識別子 (省略可)"
 
 #: of pwnlib.flag.flag.submit_flag:9
 msgid "Flag server host name, optional"
-msgstr ""
+msgstr "フラグサーバーのホスト名 (省略可)"
 
 #: of pwnlib.flag.flag.submit_flag:11
 msgid "Flag server port, optional"
-msgstr ""
+msgstr "フラグサーバーのポート (省略可)"
 
 #: of pwnlib.flag.flag.submit_flag:13
 msgid "Team identifier, optional"
-msgstr ""
+msgstr "チームの識別子 (省略可)"
 
 #: of pwnlib.flag.flag.submit_flag:16
 msgid "Optional arguments are inferred from the environment, or omitted if none is set."

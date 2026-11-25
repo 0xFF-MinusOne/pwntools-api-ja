@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/intro.rst:9
 msgid "Getting Started"
-msgstr ""
+msgstr "はじめの一歩"
 
 #: ../pwntools/docs/source/intro.rst:11
 msgid "To get your feet wet with pwntools, let's first go through a few examples."
@@ -49,7 +49,7 @@ msgstr "Pwntools のチュートリアルが https://github.com/Gallopsled/pwnto
 
 #: ../pwntools/docs/source/intro.rst:31
 msgid "Making Connections"
-msgstr ""
+msgstr "接続の作成"
 
 #: ../pwntools/docs/source/intro.rst:33
 msgid "You need to talk to the challenge binary in order to pwn it, right? pwntools makes this stupid simple with its :mod:`pwnlib.tubes` module."
@@ -77,7 +77,7 @@ msgstr "ローカルや setuid のエクスプロイトを行うために、マ�
 
 #: ../pwntools/docs/source/intro.rst:100
 msgid "Packing Integers"
-msgstr ""
+msgstr "整数のパック"
 
 #: ../pwntools/docs/source/intro.rst:102
 msgid "A common task for exploit-writing is converting between integers as Python sees them, and their representation as a sequence of bytes. Usually folks resort to the built-in ``struct`` module."
@@ -93,7 +93,7 @@ msgstr "パックとアンパックの操作は、一般的な多くのビット
 
 #: ../pwntools/docs/source/intro.rst:122
 msgid "Setting the Target Architecture and OS"
-msgstr ""
+msgstr "対象のアーキテクチャと OS の設定"
 
 #: ../pwntools/docs/source/intro.rst:124
 msgid "The target architecture can generally be specified as an argument to the routine that requires it."
@@ -109,7 +109,7 @@ msgstr "さらに、省略記法を使って、すべての値を一度に設定
 
 #: ../pwntools/docs/source/intro.rst:152
 msgid "Setting Logging Verbosity"
-msgstr ""
+msgstr "ログの詳細度の設定"
 
 #: ../pwntools/docs/source/intro.rst:154
 msgid "You can control the verbosity of the standard pwntools logging via ``context``."
@@ -117,7 +117,7 @@ msgstr "pwntools の標準的なログの詳細度は、``context`` で制御で
 
 #: ../pwntools/docs/source/intro.rst:156
 msgid "For example, setting"
-msgstr ""
+msgstr "たとえば、次のように設定すると"
 
 #: ../pwntools/docs/source/intro.rst:160
 msgid "Will cause all of the data sent and received by a ``tube`` to be printed to the screen."
@@ -125,7 +125,7 @@ msgstr "``tube`` が送受信するデータをすべて画面に表示するよ
 
 #: ../pwntools/docs/source/intro.rst:168
 msgid "Assembly and Disassembly"
-msgstr ""
+msgstr "アセンブルと逆アセンブル"
 
 #: ../pwntools/docs/source/intro.rst:170
 msgid "Never again will you need to run some already-assembled pile of shellcode from the internet!  The :mod:`pwnlib.asm` module is full of awesome."
@@ -145,7 +145,7 @@ msgstr "たとえば、`setreuid(getuid(), getuid())` を実行し、続けて�
 
 #: ../pwntools/docs/source/intro.rst:196
 msgid "Misc Tools"
-msgstr ""
+msgstr "その他のツール"
 
 #: ../pwntools/docs/source/intro.rst:198
 msgid "Never write another hexdump, thanks to :mod:`pwnlib.util.fiddling`."
@@ -157,7 +157,7 @@ msgstr ":mod:`pwnlib.cyclic` を使えば、バッファ内でクラッシュの
 
 #: ../pwntools/docs/source/intro.rst:210
 msgid "ELF Manipulation"
-msgstr ""
+msgstr "ELF の操作"
 
 #: ../pwntools/docs/source/intro.rst:212
 msgid "Stop hard-coding things!  Look them up at runtime with :mod:`pwnlib.elf`."

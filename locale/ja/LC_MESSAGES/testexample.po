@@ -69,11 +69,11 @@ msgstr ""
 
 #: of pwnlib.testexample.add:3
 msgid "First number to add"
-msgstr ""
+msgstr "1 つ目の足す数"
 
 #: of pwnlib.testexample.add:5
 msgid "Second number to add"
-msgstr ""
+msgstr "2 つ目の足す数"
 
 #: of pwnlib.testexample.add
 msgid "Returns"

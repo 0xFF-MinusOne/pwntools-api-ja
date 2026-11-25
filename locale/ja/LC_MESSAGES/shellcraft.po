@@ -154,19 +154,19 @@ msgstr ""
 #: pwnlib.shellcraft.arm.memcpy:3 pwnlib.shellcraft.i386.memcpy:3
 #: pwnlib.shellcraft.thumb.memcpy:3
 msgid "Destination address"
-msgstr ""
+msgstr "宛先アドレス"
 
 #: of pwnlib.shellcraft.aarch64.memcpy:4 pwnlib.shellcraft.amd64.memcpy:4
 #: pwnlib.shellcraft.arm.memcpy:4 pwnlib.shellcraft.i386.memcpy:4
 #: pwnlib.shellcraft.thumb.memcpy:4
 msgid "Source address"
-msgstr ""
+msgstr "コピー元アドレス"
 
 #: of pwnlib.shellcraft.aarch64.memcpy:5 pwnlib.shellcraft.amd64.memcpy:5
 #: pwnlib.shellcraft.arm.memcpy:5 pwnlib.shellcraft.i386.memcpy:5
 #: pwnlib.shellcraft.thumb.memcpy:5
 msgid "Number of bytes"
-msgstr ""
+msgstr "バイト数"
 
 #: of pwnlib.shellcraft.aarch64.mov:1 pwnlib.shellcraft.arm.mov:1
 msgid "Move src into dest."
@@ -219,15 +219,15 @@ msgstr "AArch64 ではスタックを常に 16 バイト境界にそろえてお
 #: of pwnlib.shellcraft.aarch64.push:14 pwnlib.shellcraft.amd64.push:9
 #: pwnlib.shellcraft.i386.push:9 pwnlib.shellcraft.thumb.push:9
 msgid "The value or register to push"
-msgstr ""
+msgstr "push する値またはレジスタ"
 
 #: of pwnlib.shellcraft.aarch64.push:16
 msgid "Scratch register to use"
-msgstr ""
+msgstr "使う作業用レジスタ"
 
 #: of pwnlib.shellcraft.aarch64.push:18
 msgid "Second scratch register to use"
-msgstr ""
+msgstr "2 つ目に使う作業用レジスタ"
 
 #: of pwnlib.shellcraft.aarch64.pushstr:1 pwnlib.shellcraft.arm.pushstr:1
 #: pwnlib.shellcraft.loongarch64.pushstr:1
@@ -298,7 +298,7 @@ msgstr "複数のレジスタを、レジスタ間の依存関係を考慮して
 #: pwnlib.shellcraft.loongarch64.setregs:4 pwnlib.shellcraft.mips.setregs:4
 #: pwnlib.shellcraft.riscv64.setregs:4 pwnlib.shellcraft.thumb.setregs:4
 msgid "Desired register context"
-msgstr ""
+msgstr "目的のレジスタの context"
 
 #: of pwnlib.shellcraft.aarch64.setregs:6 pwnlib.shellcraft.amd64.mov:82
 #: pwnlib.shellcraft.amd64.setregs:6 pwnlib.shellcraft.arm.setregs:6
@@ -359,7 +359,7 @@ msgstr "引数: [sock (imm/reg) = x12] sock を標準入力・標準出力・標
 #: pwnlib.shellcraft.i386.linux.echo:1 pwnlib.shellcraft.mips.linux.echo:1
 #: pwnlib.shellcraft.thumb.linux.echo:1
 msgid "Writes a string to a file descriptor"
-msgstr ""
+msgstr "ファイルディスクリプタに文字列を書き込む"
 
 #: of pwnlib.shellcraft.aarch64.linux.forkexit:1
 #: pwnlib.shellcraft.amd64.linux.forkexit:1
@@ -459,7 +459,7 @@ msgstr "有効なファイル名の場合は、そのファイルからデータ
 #: of pwnlib.shellcraft.aarch64.linux.loader_append:10
 #: pwnlib.shellcraft.thumb.linux.loader_append:10
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.shellcraft.aarch64.linux.loader_append:12
 #: pwnlib.shellcraft.thumb.linux.loader_append:12
@@ -469,7 +469,7 @@ msgstr "次の doctest は、原因を突き止められていない理由で Tr
 #: of pwnlib.shellcraft.aarch64.linux.open:1
 #: pwnlib.shellcraft.riscv64.linux.open:1
 msgid "Opens a file"
-msgstr ""
+msgstr "ファイルを開く"
 
 #: of pwnlib.shellcraft.aarch64.linux.readn:1
 #: pwnlib.shellcraft.amd64.linux.readn:1 pwnlib.shellcraft.i386.linux.readn:1
@@ -537,7 +537,7 @@ msgstr "スリープする時間（秒）。"
 #: of pwnlib.shellcraft.aarch64.linux.socket:1
 #: pwnlib.shellcraft.amd64.linux.socket:1 pwnlib.shellcraft.i386.linux.socket:1
 msgid "Creates a new socket"
-msgstr ""
+msgstr "新しいソケットを作る"
 
 #: of pwnlib.shellcraft.aarch64.linux.stage:1
 #: pwnlib.shellcraft.amd64.linux.stage:1 pwnlib.shellcraft.i386.linux.stage:1
@@ -579,7 +579,7 @@ msgstr "引数: [syscall_number, \\*args]"
 #: pwnlib.shellcraft.riscv64.linux.syscall:2
 #: pwnlib.shellcraft.thumb.linux.syscall:2
 msgid "Does a syscall"
-msgstr ""
+msgstr "システムコールを呼ぶ"
 
 #: of pwnlib.shellcraft.aarch64.linux.syscall:4
 #: pwnlib.shellcraft.amd64.linux.syscall:4
@@ -608,7 +608,7 @@ msgstr "汎用の Intel x86_64 シェルコードを含む shellcraft モジュ�
 #: of pwnlib.shellcraft.amd64.crash:1 pwnlib.shellcraft.arm.crash:1
 #: pwnlib.shellcraft.i386.crash:1 pwnlib.shellcraft.thumb.crash:1
 msgid "Crash."
-msgstr ""
+msgstr "クラッシュさせる"
 
 #: of pwnlib.shellcraft.amd64.infloop:1 pwnlib.shellcraft.i386.infloop:1
 msgid "A two-byte infinite loop."
@@ -670,11 +670,11 @@ msgstr "1 バイトの RET 命令です。"
 #: pwnlib.shellcraft.i386.getpc:3 pwnlib.shellcraft.i386.ret:3
 #: pwnlib.shellcraft.thumb.ret:3
 msgid "Value to return"
-msgstr ""
+msgstr "返す値"
 
 #: of pwnlib.shellcraft.amd64.strcpy:1 pwnlib.shellcraft.i386.strcpy:1
 msgid "Copies a string"
-msgstr ""
+msgstr "文字列をコピーする"
 
 #: of pwnlib.shellcraft.amd64.strlen:1 pwnlib.shellcraft.i386.strlen:1
 msgid "Calculate the length of the specified string."
@@ -682,7 +682,7 @@ msgstr "指定した文字列の長さを計算します。"
 
 #: of pwnlib.shellcraft.amd64.strlen:3 pwnlib.shellcraft.i386.strlen:3
 msgid "Register or address with the string"
-msgstr ""
+msgstr "文字列を持つレジスタまたはアドレス"
 
 #: of pwnlib.shellcraft.amd64.strlen:5
 msgid "Named register to return the value in, rcx is the default."
@@ -764,7 +764,7 @@ msgstr "探すバイト列、またはワードサイズの整数"
 #: of pwnlib.shellcraft.amd64.linux.egghunter:8
 #: pwnlib.shellcraft.i386.linux.egghunter:8
 msgid "Where to start the search"
-msgstr ""
+msgstr "検索を始める場所"
 
 #: of pwnlib.shellcraft.amd64.linux.findpeer:1
 msgid "Args: port (defaults to any port) Finds a socket, which is connected to the specified port. Leaves socket in RDI."
@@ -791,7 +791,7 @@ msgstr "フォーク爆弾攻撃を行います。"
 
 #: of pwnlib.shellcraft.amd64.linux.getpid:1
 msgid "Retrieve the current PID"
-msgstr ""
+msgstr "現在の PID を取得する"
 
 #: of pwnlib.shellcraft.amd64.linux.listen:1
 msgid "Listens on a TCP port, accept a client and leave his socket in RAX. Port is the TCP port to listen on, network is either 'ipv4' or 'ipv6'."
@@ -823,7 +823,7 @@ msgstr "新しいスタックに移ります。"
 
 #: of pwnlib.shellcraft.amd64.linux.mmap_rwx:1
 msgid "Maps some memory"
-msgstr ""
+msgstr "メモリをマップする"
 
 #: of pwnlib.shellcraft.amd64.linux.read:1
 msgid "Reads data from the file descriptor into the provided buffer. This is a one-shot and does not fill the request."
@@ -831,7 +831,7 @@ msgstr "ファイルディスクリプタから、与えられたバッファに
 
 #: of pwnlib.shellcraft.amd64.linux.read_upto:1
 msgid "Reads up to N bytes 8 bytes into the specified register"
-msgstr ""
+msgstr "最大 N バイトを読み、8 バイトを指定のレジスタに入れる"
 
 #: of pwnlib.shellcraft.amd64.linux.readfile:1
 msgid "Args: [path, dst (imm/reg) = rdi ] Opens the specified file path and sends its content to the specified file descriptor."
@@ -844,7 +844,7 @@ msgstr "実行時に決まるサイズと位置のバッファに読み込みま
 
 #: of pwnlib.shellcraft.amd64.linux.readptr:1
 msgid "Reads 8 bytes into the specified register"
-msgstr ""
+msgstr "8 バイトを読み、指定のレジスタに入れる"
 
 #: of pwnlib.shellcraft.amd64.linux.recvsize:1
 #: pwnlib.shellcraft.i386.linux.recvsize:1
@@ -856,7 +856,7 @@ msgstr "4 バイトのサイズフィールドを受信します。findpeer や 
 #: pwnlib.shellcraft.i386.linux.recvsize:10
 #: pwnlib.shellcraft.thumb.linux.recvsize:10
 msgid "Leaves socket in ebx"
-msgstr ""
+msgstr "ソケットを ebx に残す"
 
 #: of pwnlib.shellcraft.amd64.linux.setregid:1
 #: pwnlib.shellcraft.i386.linux.setregid:1
@@ -874,7 +874,7 @@ msgstr "固定サイズのペイロードを、mmap したバッファに受信�
 
 #: of pwnlib.shellcraft.amd64.linux.strace_dos:1
 msgid "Kills strace"
-msgstr ""
+msgstr "strace を終了させる"
 
 #: of pwnlib.shellcraft.amd64.linux.writeloop:1
 msgid "Reads from a buffer of a size and location determined at runtime. When the shellcode is executing, it should send a pointer and pointer-width size to determine the location and size of buffer."
@@ -1001,7 +1001,7 @@ msgstr "r12 はプロシージャ間のスクラッチレジスタ ($ip) と定�
 
 #: of pwnlib.shellcraft.arm.push:6
 msgid "The word to push"
-msgstr ""
+msgstr "push するワード"
 
 #: of pwnlib.shellcraft.arm.push:8
 msgid "Register to use as a temporary register.  R7 is used by default."
@@ -1114,7 +1114,7 @@ msgstr "指定した接頭辞を持つ、新しい一意のラベルを返しま
 
 #: of pwnlib.shellcraft.common.label:3
 msgid "The string to prefix the label with"
-msgstr ""
+msgstr "ラベルの先頭に付ける文字列"
 
 #: ../pwntools/docs/source/shellcraft/i386.rst:10
 msgid ":mod:`pwnlib.shellcraft.i386` --- Shellcode for Intel 80386"
@@ -1226,7 +1226,7 @@ msgstr "Linux 用の Intel i386 シェルコードを含む shellcraft モジュ
 
 #: of pwnlib.shellcraft.i386.linux.acceptloop_ipv4:1
 msgid "the listening port"
-msgstr ""
+msgstr "待ち受けるポート"
 
 #: of pwnlib.shellcraft.i386.linux.acceptloop_ipv4:4
 msgid "Waits for a connection.  Leaves socket in EBP. ipv4 only"
@@ -1242,11 +1242,11 @@ msgstr "リモートの IP アドレスまたはホスト名（ドット区切�
 
 #: of pwnlib.shellcraft.i386.linux.connect:6
 msgid "Remote port"
-msgstr ""
+msgstr "リモートのポート"
 
 #: of pwnlib.shellcraft.i386.linux.connect:8
 msgid "Network protocol (ipv4 or ipv6)"
-msgstr ""
+msgstr "ネットワークプロトコル (ipv4 または ipv6)"
 
 #: of pwnlib.shellcraft.i386.linux.dupio:1
 msgid "Args: [sock (imm/reg) = ebp] Duplicates sock to stdin, stdout and stderr"
@@ -1495,7 +1495,7 @@ msgstr "src が文字列の場合は、プッシュ方法を決める前に、`c
 
 #: of pwnlib.shellcraft.thumb.pushstr:9
 msgid "Examples:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.shellcraft.thumb.pushstr:11
 msgid "Note that this doctest has two possibilities for the first result, depending on your version of binutils."

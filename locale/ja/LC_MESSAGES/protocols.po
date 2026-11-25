@@ -33,7 +33,7 @@ msgstr "文書は here_ にあります。"
 
 #: of pwnlib.protocols.adb.AdbClient:1
 msgid "ADB Client"
-msgstr ""
+msgstr "ADB クライアント"
 
 #: of pwnlib.protocols.adb.AdbClient._autoclose:1
 msgid "Decorator which automatically closes the connection to the ADB server after calling the decorated function."
@@ -75,7 +75,7 @@ msgstr "そのプロセスにつながった :class:`pwnlib.tubes.tube.tube`。"
 #: pwnlib.protocols.adb.AdbClient.list:25
 #: pwnlib.protocols.adb.AdbClient.transport:3
 msgid "Examples:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.protocols.adb.AdbClient.kill:1
 msgid "Kills the remote ADB server\""
@@ -119,7 +119,7 @@ msgstr "``SYNC`` API の ``READ`` コマンドを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.read:3
 msgid "Path to the file to read"
-msgstr ""
+msgstr "読み込むファイルのパス"
 
 #: of pwnlib.protocols.adb.AdbClient.read:5
 msgid "Size of the file, in bytes.  Optional."
@@ -136,27 +136,27 @@ msgstr "データが利用できるようになるたびに呼ばれるコール
 #: of pwnlib.protocols.adb.AdbClient.read:10
 #: pwnlib.protocols.adb.AdbClient.write:14
 msgid "File path"
-msgstr ""
+msgstr "ファイルのパス"
 
 #: of pwnlib.protocols.adb.AdbClient.read:11
 #: pwnlib.protocols.adb.AdbClient.write:15
 msgid "All data"
-msgstr ""
+msgstr "すべてのデータ"
 
 #: of pwnlib.protocols.adb.AdbClient.read:12
 #: pwnlib.protocols.adb.AdbClient.write:16
 msgid "Expected size of all data"
-msgstr ""
+msgstr "全データの想定サイズ"
 
 #: of pwnlib.protocols.adb.AdbClient.read:13
 #: pwnlib.protocols.adb.AdbClient.write:17
 msgid "Current chunk"
-msgstr ""
+msgstr "現在のチャンク"
 
 #: of pwnlib.protocols.adb.AdbClient.read:14
 #: pwnlib.protocols.adb.AdbClient.write:18
 msgid "Expected size of chunk"
-msgstr ""
+msgstr "チャンクの想定サイズ"
 
 #: of pwnlib.protocols.adb.AdbClient.read:17
 msgid "The data received as a string."
@@ -168,7 +168,7 @@ msgstr "ADB サーバーから、長さが前に付いたデータバッファ�
 
 #: of pwnlib.protocols.adb.AdbClient.send:1
 msgid "Sends data to the ADB server"
-msgstr ""
+msgstr "ADB サーバーにデータを送る"
 
 #: of pwnlib.protocols.adb.AdbClient.stat:1
 msgid "Execute the STAT command of the SYNC API."
@@ -185,7 +185,7 @@ msgstr "成功した場合は、返された値を対応させた辞書。ファ
 #: of pwnlib.protocols.adb.AdbClient.stat:9
 #: pwnlib.protocols.adb.AdbClient.version:3
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.protocols.adb.AdbClient.track_devices:1
 msgid "Generator which returns a short-format listing of available devices each time a device state changes."
@@ -209,11 +209,11 @@ msgstr "``SYNC`` API の ``WRITE`` コマンドを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.write:3
 msgid "Path to the file to write"
-msgstr ""
+msgstr "書き込むファイルのパス"
 
 #: of pwnlib.protocols.adb.AdbClient.write:5
 msgid "Data to write to the file"
-msgstr ""
+msgstr "ファイルに書き込むデータ"
 
 #: of pwnlib.protocols.adb.AdbClient.write:7
 msgid "File mode to set (e.g. ``0o755``)"
@@ -221,7 +221,7 @@ msgstr "設定するファイルのモード(例: ``0o755``)"
 
 #: of pwnlib.protocols.adb.AdbClient.write:9
 msgid "Unix timestamp to set the file date to"
-msgstr ""
+msgstr "ファイルの日時に設定する Unix タイムスタンプ"
 
 #: of pwnlib.protocols.adb.AdbClient.write:11
 msgid "Callback function invoked as data is written.  Arguments provided are:  - File path - All data - Expected size of all data - Current chunk - Expected size of chunk"
@@ -237,7 +237,7 @@ msgstr "ADB サーバーへの AdbClient の接続"
 
 #: of pwnlib.protocols.adb.Connection:1
 msgid "Connection to the ADB server"
-msgstr ""
+msgstr "ADB サーバーへの接続"
 
 #: of pwnlib.protocols.adb.Connection.close:1
 msgid "Closes the tube."
@@ -253,7 +253,7 @@ msgstr "str(self) を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.protocols.adb.Message.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.protocols.adb.Process:1
 msgid "Duck-typed ``tubes.remote`` object to add properties of a ``tubes.process``"

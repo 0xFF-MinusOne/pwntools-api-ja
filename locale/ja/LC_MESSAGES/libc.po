@@ -101,7 +101,7 @@ msgstr "repr(self) を返します。"
 #: pwnlib.libc.glibc.ExitFunc.__weakref__:1
 #: pwnlib.libc.glibc.ExitFuncList.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.libc.glibc.ExitFlavor:1
 msgid "Enum adapted from glibc ``exit.h``. Check `enum definitions`_."
@@ -149,7 +149,7 @@ msgstr "チェーンの次の ``struct exit_function_list`` のポインタ。"
 
 #: of pwnlib.libc.glibc.ExitFuncList:7
 msgid "Registered exit functions"
-msgstr ""
+msgstr "登録された終了処理の関数"
 
 #: ../pwntools/docs/source/libc/glibc.rst
 msgid "Variables"

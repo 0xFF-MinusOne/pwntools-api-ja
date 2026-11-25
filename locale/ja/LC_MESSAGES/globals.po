@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:18
 msgid "Responsible for most of the pwntools convenience settings"
-msgstr ""
+msgstr "pwntools の便利な設定のほとんどを担う"
 
 #: ../pwntools/docs/source/globals.rst:19
 msgid "Set `context.log_level = 'debug'` when troubleshooting your exploit"
@@ -64,14 +64,12 @@ msgid ":mod:`pwnlib.tubes`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:23
-msgid ""
-"Super convenient wrappers around all of the common functionality for CTF "
-"challenges"
-msgstr ""
+msgid "Super convenient wrappers around all of the common functionality for CTF challenges"
+msgstr "CTF の課題で使う一般的な機能すべてを、とても便利に包んだラッパー"
 
 #: ../pwntools/docs/source/globals.rst:24
 msgid "Connect to anything, anywhere, and it works the way you want it to"
-msgstr ""
+msgstr "どこにでも何にでも接続でき、思いどおりに動く"
 
 #: ../pwntools/docs/source/globals.rst:25
 msgid "Helpers for common tasks like ``recvline``, ``recvuntil``, ``clean``, etc."
@@ -139,7 +137,7 @@ msgstr "面倒な手間なしに、アセンブリをすばやくバイト列に
 
 #: ../pwntools/docs/source/globals.rst:41
 msgid "Supports any architecture for which you have a binutils installed"
-msgstr ""
+msgstr "binutils が入っていれば、どのアーキテクチャにも対応"
 
 #: ../pwntools/docs/source/globals.rst:42
 msgid "Over 20 different architectures have pre-built binaries at `ppa:pwntools/binutils <https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`_."
@@ -155,7 +153,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:45
 msgid "Library of shellcode ready to go"
-msgstr ""
+msgstr "すぐ使えるシェルコードのライブラリ"
 
 #: ../pwntools/docs/source/globals.rst:46
 msgid "``asm(shellcraft.sh())`` gives you a shell"
@@ -163,7 +161,7 @@ msgstr "``asm(shellcraft.sh())`` で、シェルを取れます"
 
 #: ../pwntools/docs/source/globals.rst:47
 msgid "Templating library for reusability of shellcode fragments"
-msgstr ""
+msgstr "シェルコードの断片を再利用するためのテンプレートライブラリ"
 
 #: ../pwntools/docs/source/globals.rst:48
 msgid "``ELF``"
@@ -174,11 +172,8 @@ msgid ":mod:`pwnlib.elf`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:50
-msgid ""
-"ELF binary manipulation tools, including symbol lookup, virtual memory to"
-" file offset helpers, and the ability to modify and save binaries back to"
-" disk"
-msgstr ""
+msgid "ELF binary manipulation tools, including symbol lookup, virtual memory to file offset helpers, and the ability to modify and save binaries back to disk"
+msgstr "シンボルの検索、仮想メモリからファイルオフセットへの変換、バイナリの変更とディスクへの保存など、ELF バイナリを操作する道具"
 
 #: ../pwntools/docs/source/globals.rst:51
 msgid "``DynELF``"
@@ -189,10 +184,8 @@ msgid ":mod:`pwnlib.dynelf`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:53
-msgid ""
-"Dynamically resolve functions given only a pointer to any loaded module, "
-"and a function which can leak data at any address"
-msgstr ""
+msgid "Dynamically resolve functions given only a pointer to any loaded module, and a function which can leak data at any address"
+msgstr "読み込まれた任意のモジュールへのポインタと、任意のアドレスのデータを漏らせる関数だけから、関数を動的に解決する"
 
 #: ../pwntools/docs/source/globals.rst:54
 msgid "``ROP``"
@@ -203,10 +196,8 @@ msgid ":mod:`pwnlib.rop`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:56
-msgid ""
-"Automatically generate ROP chains using a DSL to describe what you want "
-"to do, rather than raw addresses"
-msgstr ""
+msgid "Automatically generate ROP chains using a DSL to describe what you want to do, rather than raw addresses"
+msgstr "生のアドレスではなく、やりたいことを DSL で記述して ROP チェーンを自動生成する"
 
 #: ../pwntools/docs/source/globals.rst:57
 msgid "``gdb.debug`` and ``gdb.attach``"
@@ -238,7 +229,7 @@ msgstr "``python foo.py REMOTE=1`` で実行すると、``args['REMOTE'] == '1'`
 
 #: ../pwntools/docs/source/globals.rst:64
 msgid "Can also control logging verbosity and terminal fanciness"
-msgstr ""
+msgstr "ログの詳細さや、ターミナルの見た目も制御できる"
 
 #: ../pwntools/docs/source/globals.rst:65
 msgid "`NOTERM`"
@@ -274,7 +265,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:73
 msgid "Routines for querying about network interfaces"
-msgstr ""
+msgstr "ネットワークインターフェースを調べるルーチン"
 
 #: ../pwntools/docs/source/globals.rst:74
 msgid "``proc``"
@@ -286,7 +277,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:76
 msgid "Routines for querying about processes"
-msgstr ""
+msgstr "プロセスを調べるルーチン"
 
 #: ../pwntools/docs/source/globals.rst:77
 msgid "``pause``"

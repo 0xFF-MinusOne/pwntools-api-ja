@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/commandline.rst:12
 msgid "Command Line Tools"
-msgstr ""
+msgstr "コマンドラインツール"
 
 #: ../pwntools/docs/source/commandline.rst:14
 msgid "pwntools comes with a handful of useful command-line utilities which serve as wrappers for some of the internal functionality."
@@ -41,7 +41,7 @@ msgstr "Pwntools のコマンドラインインターフェース"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "show this help message and exit"
-msgstr ""
+msgstr "このヘルプを表示して終了する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn asm"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Assemble shellcode into bytes"
-msgstr ""
+msgstr "シェルコードをバイト列にアセンブルする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Lines to assemble. If none are supplied, use stdin"
@@ -57,11 +57,11 @@ msgstr "アセンブルする行。指定しない場合は、標準入力を使
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Output format (defaults to hex for ttys, otherwise raw)"
-msgstr ""
+msgstr "出力形式 (端末なら hex、それ以外は raw が既定)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Output file (defaults to stdout)"
-msgstr ""
+msgstr "出力ファイル (既定は標準出力)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "The os/architecture/endianness/bits the shellcode will run in (default: linux/i386), choose from: ['16', '32', '64', 'baremetal', 'freebsd', 'windows', 'android', 'darwin', 'linux', 'cgc', 'loongarch64', 'powerpc64', 'aarch64', 'powerpc', 'riscv32', 'riscv64', 'sparc64', 'mips64', 'msp430', 'alpha', 'amd64', 'sparc', 'thumb', 'cris', 'i386', 'ia64', 'm68k', 'mips', 's390', 'none', 'avr', 'arm', 'vax', 'little', 'big', 'be', 'eb', 'le', 'el']"
@@ -69,31 +69,31 @@ msgstr "シェルコードを実行する OS・アーキテクチャ・エンデ
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Encode the shellcode to avoid the listed bytes (provided as hex)"
-msgstr ""
+msgstr "指定したバイトを避けるようにシェルコードをエンコードする (hex で指定)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Encode the shellcode to avoid newlines"
-msgstr ""
+msgstr "改行を避けるようにシェルコードをエンコードする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Encode the shellcode to avoid NULL bytes"
-msgstr ""
+msgstr "NULL バイトを避けるようにシェルコードをエンコードする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Debug the shellcode with GDB"
-msgstr ""
+msgstr "GDB でシェルコードをデバッグする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Compatibility flag, ignored"
-msgstr ""
+msgstr "互換性のためのフラグ (無視される)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Specify input file"
-msgstr ""
+msgstr "入力ファイルを指定する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Run output"
-msgstr ""
+msgstr "出力を実行する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn checksec"
@@ -101,11 +101,11 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Check binary security settings"
-msgstr ""
+msgstr "バイナリのセキュリティ設定を調べる"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Files to check"
-msgstr ""
+msgstr "調べるファイル"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "File to check (for compatibility with checksec.sh)"
@@ -125,19 +125,19 @@ msgstr "例: constgrep -c freebsd -m  ^PROT_ '3 + 4'"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "The regex matching constant you want to find"
-msgstr ""
+msgstr "探したい定数に一致する正規表現"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "The constant to find"
-msgstr ""
+msgstr "探したい定数"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Do an exact match for a constant instead of searching for a regex"
-msgstr ""
+msgstr "正規表現で探さず、定数の完全一致で探す"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Search case insensitive"
-msgstr ""
+msgstr "大文字小文字を区別せずに探す"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Instead of searching for a specific constant value, search for values not containing strictly less bits that the given value."
@@ -153,13 +153,11 @@ msgstr "循環パターン(cyclic)の作成・検索ツール"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Number of characters to print"
-msgstr ""
+msgstr "出力する文字数"
 
 #: ../pwntools/docs/<autoprogram>:1
-msgid ""
-"The alphabet to use in the cyclic pattern (defaults to all lower case "
-"letters)"
-msgstr ""
+msgid "The alphabet to use in the cyclic pattern (defaults to all lower case letters)"
+msgstr "cyclic パターンに使う文字種 (既定は英小文字すべて)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Size of the unique subsequences (defaults to 4)."
@@ -167,7 +165,7 @@ msgstr "一意な部分列のサイズ(既定値は 4)。"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Do a lookup instead printing the alphabet"
-msgstr ""
+msgstr "文字種を出力せず、逆引きする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn debug"
@@ -175,7 +173,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Debug a binary in GDB"
-msgstr ""
+msgstr "GDB でバイナリをデバッグする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Execute GDB commands from this file."
@@ -183,11 +181,11 @@ msgstr "このファイルから GDB のコマンドを実行します。"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "PID to attach to"
-msgstr ""
+msgstr "アタッチする PID"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "File to debug"
-msgstr ""
+msgstr "デバッグするファイル"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Name of the process to attach to (e.g. \"bash\")"
@@ -195,7 +193,7 @@ msgstr "アタッチするプロセスの名前(例: \"bash\")"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "GDB sysroot path"
-msgstr ""
+msgstr "GDB の sysroot のパス"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn disablenx"
@@ -203,7 +201,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Disable NX for an ELF binary"
-msgstr ""
+msgstr "ELF バイナリの NX を無効にする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn disasm"
@@ -211,7 +209,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Disassemble bytes into text format"
-msgstr ""
+msgstr "バイト列を逆アセンブルしてテキストにする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Hex-string to disassemble. If none are supplied, then it uses stdin in non-hex mode."
@@ -219,15 +217,15 @@ msgstr "逆アセンブルする 16 進文字列。指定しない場合は、16
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Base address"
-msgstr ""
+msgstr "ベースアドレス"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Color output"
-msgstr ""
+msgstr "色つきで出力する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Disable color output"
-msgstr ""
+msgstr "色つき出力を無効にする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn elfdiff"
@@ -235,7 +233,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Compare two ELF files"
-msgstr ""
+msgstr "2 つの ELF ファイルを比較する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn elfpatch"
@@ -243,19 +241,19 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Patch an ELF file"
-msgstr ""
+msgstr "ELF ファイルにパッチを当てる"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "File to patch"
-msgstr ""
+msgstr "パッチを当てるファイル"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Offset to patch in virtual address (hex encoded)"
-msgstr ""
+msgstr "パッチを当てる仮想アドレスのオフセット (hex)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Bytes to patch (hex encoded)"
-msgstr ""
+msgstr "パッチのバイト列 (hex)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn errno"
@@ -263,11 +261,11 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Prints out error messages"
-msgstr ""
+msgstr "エラーメッセージを出力する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Error message or value (errno number, errno name, or perror string)"
-msgstr ""
+msgstr "エラーメッセージまたは値 (errno の番号、errno の名前、perror の文字列)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "List every known errno (number, name, perror string)."
@@ -291,15 +289,15 @@ msgstr "コマンドラインまたは標準入力で渡したデータを、16 
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Data to convert into hex"
-msgstr ""
+msgstr "hex に変換するデータ"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Insert a prefix before each byte"
-msgstr ""
+msgstr "各バイトの前に付ける接頭辞"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Add a separator between each byte"
-msgstr ""
+msgstr "各バイトの間に入れる区切り"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn libcdb"
@@ -307,7 +305,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Print various information about a libc binary"
-msgstr ""
+msgstr "libc バイナリに関するさまざまな情報を出力する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn libcdb fetch"
@@ -323,7 +321,7 @@ msgstr "libc-database のパスを設定します。空の場合の既定のパ�
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Fetch the desired libc categories"
-msgstr ""
+msgstr "目的の libc の種別を取得する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn libcdb file"
@@ -331,25 +329,23 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Dump information about a libc binary"
-msgstr ""
+msgstr "libc バイナリの情報を出力する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Libc binary to dump"
-msgstr ""
+msgstr "情報を出力する libc バイナリ"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "List of symbol offsets to dump in addition to the common ones"
-msgstr ""
+msgstr "よく使うものに加えて出力するシンボルのオフセットのリスト"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Display all offsets relative to this symbol"
-msgstr ""
+msgstr "すべてのオフセットをこのシンボルからの相対で表示する"
 
 #: ../pwntools/docs/<autoprogram>:1
-msgid ""
-"Attempt to unstrip the libc binary inplace with debug symbols from a "
-"debuginfod server"
-msgstr ""
+msgid "Attempt to unstrip the libc binary inplace with debug symbols from a debuginfod server"
+msgstr "debuginfod サーバーのデバッグシンボルで、libc バイナリのシンボル除去を、その場で元に戻そうとする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn libcdb hash"
@@ -357,11 +353,11 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Display information of a libc version given an unique hash"
-msgstr ""
+msgstr "一意なハッシュから libc のバージョンの情報を表示する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Hex encoded hash value"
-msgstr ""
+msgstr "hex エンコードしたハッシュ値"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "The type of the provided hash value. Supported hashtypes: id, buildid, md5, sha1, sha256"
@@ -372,14 +368,12 @@ msgid "Attempt to download the matching libc.so"
 msgstr "一致する libc.so のダウンロードを試みます"
 
 #: ../pwntools/docs/<autoprogram>:1
-msgid ""
-"Do NOT attempt to unstrip the libc binary with debug symbols from a "
-"debuginfod server"
-msgstr ""
+msgid "Do NOT attempt to unstrip the libc binary with debug symbols from a debuginfod server"
+msgstr "debuginfod サーバーのデバッグシンボルで、libc バイナリのシンボル除去を元に戻そうとしない"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Attempt to searching with offline only mode"
-msgstr ""
+msgstr "オフラインのみのモードで検索しようとする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn libcdb lookup"
@@ -387,7 +381,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Lookup a libc version by function offsets"
-msgstr ""
+msgstr "関数のオフセットから libc のバージョンを検索する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Symbol and offset pairs to lookup matching libc version. Can be any number of pairs to narrow the search. Example: \"read 3e0 write 520\""
@@ -399,7 +393,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Pretty hex dump"
-msgstr ""
+msgstr "見やすい hex ダンプ"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "File to hexdump.  Reads from stdin if missing."
@@ -435,19 +429,19 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Strip binaries for CTF usage"
-msgstr ""
+msgstr "CTF 用にバイナリのシンボルを除去する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Strip build ID"
-msgstr ""
+msgstr "ビルド ID を除去する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Patch function"
-msgstr ""
+msgstr "関数にパッチを当てる"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Output file"
-msgstr ""
+msgstr "出力ファイル"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn scramble"
@@ -455,15 +449,15 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Shellcode encoder"
-msgstr ""
+msgstr "シェルコードのエンコーダー"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Encode the shellcode with an alphanumeric encoder"
-msgstr ""
+msgstr "英数字だけのエンコーダーでシェルコードをエンコードする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Encode the shellcode to avoid the listed bytes"
-msgstr ""
+msgstr "指定したバイトを避けるようにシェルコードをエンコードする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn shellcraft"
@@ -479,7 +473,7 @@ msgstr "使いたいシェルコード。shellcode [引数 ...] [+ shellcode [�
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Show shellcode documentation"
-msgstr ""
+msgstr "シェルコードのドキュメントを表示する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Output file (default: stdout)"
@@ -492,31 +486,31 @@ msgstr "出力形式(既定値: hex)。{e}lf、{r}aw、{s}tring、{c} 言語風�
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Set the delimiter between multiple shellcodes"
-msgstr ""
+msgstr "複数のシェルコードの間の区切りを設定する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Insert a debug trap before the code"
-msgstr ""
+msgstr "コードの前にデバッグ用のトラップを入れる"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Insert a debug trap after the code"
-msgstr ""
+msgstr "コードの後にデバッグ用のトラップを入れる"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "List syscalls"
-msgstr ""
+msgstr "システムコールの一覧を表示する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Load address"
-msgstr ""
+msgstr "ロードするアドレス"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "List available shellcodes, optionally provide a filter"
-msgstr ""
+msgstr "使えるシェルコードの一覧を表示する (絞り込みの条件も指定できる)"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Generated ELF is a shared library"
-msgstr ""
+msgstr "生成する ELF を共有ライブラリにする"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn template"
@@ -540,11 +534,11 @@ msgstr "リモートのポート / SSH のポート"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "SSH Username"
-msgstr ""
+msgstr "SSH のユーザー名"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "SSH Password"
-msgstr ""
+msgstr "SSH のパスワード"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Path to libc binary to use. If not given, the current directory is searched for a libc binary."
@@ -552,15 +546,15 @@ msgstr "使う libc バイナリのパス。指定しない場合は、カレン
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Remote path of file on SSH server"
-msgstr ""
+msgstr "SSH サーバー上のファイルのリモートパス"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Less verbose template comments"
-msgstr ""
+msgstr "テンプレートのコメントを減らす"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Print the output in color"
-msgstr ""
+msgstr "出力を色つきで表示する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Path to a custom template. Tries to use '~/.config/pwntools/templates/pwnup.mako', if it exists. Check 'pwnlib/data/templates/pwnup.mako' for the default template shipped with pwntools."
@@ -568,7 +562,7 @@ msgstr "独自のテンプレートのパス。'~/.config/pwntools/templates/pwn
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Do not automatically detect missing binaries"
-msgstr ""
+msgstr "足りないバイナリを自動で検出しない"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn unhex"
@@ -580,7 +574,7 @@ msgstr "コマンドラインまたは標準入力で渡した、16 進にエン
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Hex bytes to decode"
-msgstr ""
+msgstr "デコードする hex バイト列"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "pwn update"
@@ -588,7 +582,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Check for pwntools updates"
-msgstr ""
+msgstr "pwntools の更新を確認する"
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Install the update automatically."
@@ -604,7 +598,7 @@ msgstr ""
 
 #: ../pwntools/docs/<autoprogram>:1
 msgid "Pwntools version"
-msgstr ""
+msgstr "pwntools のバージョン"
 
 #: of pwnlib.commandline.errno:1
 msgid "Look up ``errno`` values for the architecture selected by ``-c``."

@@ -118,7 +118,7 @@ msgstr "多項式の次数を返します。"
 #: pwnlib.util.cyclic.cyclic_gen.__weakref__:1
 #: pwnlib.util.getdents.linux_dirent.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.util.crc.Module.cksum:1
 msgid "Calculates the same checksum as returned by the UNIX-tool ``cksum``."
@@ -2185,7 +2185,7 @@ msgstr "チェックサムを反転するかどうか。"
 
 #: of pwnlib.util.crc.Module.generic_crc:19
 msgid "The value to xor the checksum with before outputting"
-msgstr ""
+msgstr "出力する前に、チェックサムと xor する値"
 
 #: ../pwntools/docs/source/util/cyclic.rst:8
 msgid ":mod:`pwnlib.util.cyclic` --- Generation of unique sequences"
@@ -2359,11 +2359,11 @@ msgstr ":mod:`pwnlib.util.fiddling` --- ビット操作のユーティリティ"
 
 #: of pwnlib.util.fiddling.b64d:1
 msgid "Base64 decodes a string"
-msgstr ""
+msgstr "文字列を Base64 でデコードする"
 
 #: of pwnlib.util.fiddling.b64e:1
 msgid "Base64 encodes a string"
-msgstr ""
+msgstr "文字列を Base64 でエンコードする"
 
 #: of pwnlib.util.fiddling.bits:1
 msgid "bits(s, endian = 'big', zero = 0, one = 1) -> list"
@@ -2449,7 +2449,7 @@ msgstr "入れ替える数値。"
 
 #: of pwnlib.util.fiddling.bitswap_int:5
 msgid "The width of the integer"
-msgstr ""
+msgstr "整数の幅"
 
 #: of pwnlib.util.fiddling.bnot:1
 msgid "Returns the binary inverse of 'value'."
@@ -2478,11 +2478,11 @@ msgstr "hexdump するデータ。"
 #: of pwnlib.util.fiddling.hexdump:8 pwnlib.util.fiddling.hexdump_iter:9
 #: pwnlib.util.fiddling.hexii:5
 msgid "The number of characters per line"
-msgstr ""
+msgstr "1 行あたりの文字数"
 
 #: of pwnlib.util.fiddling.hexdump:10 pwnlib.util.fiddling.hexdump_iter:11
 msgid "The number of characters per group"
-msgstr ""
+msgstr "1 グループあたりの文字数"
 
 #: of pwnlib.util.fiddling.hexdump:12 pwnlib.util.fiddling.hexdump_iter:13
 msgid "Set to True, if repeated lines should be replaced by a \"*\""
@@ -2494,7 +2494,7 @@ msgstr "True にすると、hexdump の代わりに hexii-dump を返します�
 
 #: of pwnlib.util.fiddling.hexdump:16 pwnlib.util.fiddling.hexdump_iter:17
 msgid "Offset of the first byte to print in the left column"
-msgstr ""
+msgstr "左の列に表示する最初のバイトのオフセット"
 
 #: of pwnlib.util.fiddling.hexdump:18 pwnlib.util.fiddling.hexdump_iter:19
 msgid "Color scheme to use."
@@ -2506,11 +2506,11 @@ msgstr "強調するバイト値。"
 
 #: of pwnlib.util.fiddling.hexdump:22 pwnlib.util.fiddling.hexdump_iter:23
 msgid "Attempt to skip consecutive, unmodified cyclic lines"
-msgstr ""
+msgstr "連続する変更のない cyclic の行を省略する"
 
 #: of pwnlib.util.fiddling.hexdump:24 pwnlib.util.fiddling.hexdump_iter:25
 msgid "Set to True, if total bytes should be printed"
-msgstr ""
+msgstr "合計バイト数を表示する場合は True にする"
 
 #: of pwnlib.util.fiddling.hexdump:27
 msgid "A hexdump-dump in the form of a string."
@@ -2544,7 +2544,7 @@ msgstr "文字列の HEXII-dump を返します。"
 
 #: of pwnlib.util.fiddling.hexii:3
 msgid "The bytes to dump"
-msgstr ""
+msgstr "ダンプするバイト列"
 
 #: of pwnlib.util.fiddling.hexii:7
 msgid "Should repeated lines be replaced by a \"*\""
@@ -2560,7 +2560,7 @@ msgstr "バイト列を C の表現にエスケープします。"
 
 #: of pwnlib.util.fiddling.isprint:1
 msgid "Return True if a character is printable"
-msgstr ""
+msgstr "文字が表示可能なら True を返す"
 
 #: of pwnlib.util.fiddling.js_escape:1
 msgid "Pack data as an escaped Unicode string for use in JavaScript's `unescape()` function"
@@ -2568,11 +2568,11 @@ msgstr "JavaScript の `unescape()` 関数で使うために、データをエ�
 
 #: of pwnlib.util.fiddling.js_escape:3
 msgid "Bytes to pack"
-msgstr ""
+msgstr "パックするバイト列"
 
 #: of pwnlib.util.fiddling.js_escape:5
 msgid "A single byte to use as padding if data is of uneven length"
-msgstr ""
+msgstr "データの長さが奇数のときにパディングに使う 1 バイト"
 
 #: of pwnlib.util.fiddling.js_escape:7
 msgid "Endianness with which to pack the string (\"little\"/\"big\")"
@@ -2580,7 +2580,7 @@ msgstr "文字列をパックするときのエンディアン(\"little\"/\"big\
 
 #: of pwnlib.util.fiddling.js_escape:10
 msgid "A string representation of the packed data"
-msgstr ""
+msgstr "パックしたデータの文字列表現"
 
 #: of pwnlib.util.fiddling.js_unescape:1
 msgid "Unpack an escaped Unicode string from JavaScript's `escape()` function"
@@ -2588,7 +2588,7 @@ msgstr "JavaScript の `escape()` 関数が出力するエスケープ済みの 
 
 #: of pwnlib.util.fiddling.js_unescape:3
 msgid "Escaped string to unpack"
-msgstr ""
+msgstr "アンパックするエスケープ済みの文字列"
 
 #: of pwnlib.util.fiddling.js_unescape:5
 msgid "Endianness with which to unpack the string (\"little\"/\"big\")"
@@ -2596,7 +2596,7 @@ msgstr "文字列をアンパックするときのエンディアン(\"little\"/
 
 #: of pwnlib.util.fiddling.js_unescape:8
 msgid "A bytes representation of the unpacked data"
-msgstr ""
+msgstr "アンパックしたデータのバイト列表現"
 
 #: of pwnlib.util.fiddling.naf:1
 msgid "Returns a generator for the non-adjacent form (NAF[1]) of a number, `n`.  If `naf(n)` generates `z_0, z_1, ...`, then `n == z_0 + z_1 * 2 + z_2 * 2**2, ...`."
@@ -2665,7 +2665,7 @@ msgstr "端末の現在の設定は ``stty --all`` で確認してください�
 
 #: of pwnlib.util.fiddling.tty_escape:6
 msgid "The data to escape"
-msgstr ""
+msgstr "エスケープするデータ"
 
 #: of pwnlib.util.fiddling.tty_escape:8
 msgid "The byte to prepend to escape the next character. Defaults to ^V."
@@ -2673,7 +2673,7 @@ msgstr "次の文字をエスケープするために前に付けるバイト。
 
 #: of pwnlib.util.fiddling.tty_escape:10
 msgid "The bytes to escape"
-msgstr ""
+msgstr "エスケープするバイト列"
 
 #: of pwnlib.util.fiddling.tty_escape:13
 msgid "The escaped data."
@@ -2685,7 +2685,7 @@ msgstr "ビットのイテラブルを文字列に変換します。"
 
 #: of pwnlib.util.fiddling.unbits:3
 msgid "Iterable of bits"
-msgstr ""
+msgstr "ビットのイテラブル"
 
 #: of pwnlib.util.fiddling.unbits:4
 msgid "The string \"little\" or \"big\", which specifies the bits endianness."
@@ -2757,11 +2757,11 @@ msgstr ":mod:`pwnlib.util.getdents` --- Linux のバイナリ形式のディレ�
 
 #: of pwnlib.util.getdents.Dtype.__format__:1
 msgid "Convert to a string according to format_spec."
-msgstr "format_spec に従って文字列に変換します。"
+msgstr "format_spec に従って、文字列に変換します。"
 
 #: of pwnlib.util.getdents.linux_dirent:1
 msgid "Represent struct linux_dirent"
-msgstr ""
+msgstr "struct linux_dirent を表す"
 
 #: of pwnlib.util.getdents.linux_dirent.__str__:1
 msgid "Return str(self)."
@@ -2769,15 +2769,15 @@ msgstr "str(self) を返します。"
 
 #: of pwnlib.util.getdents.dirents:1
 msgid "Extracts data from a buffer emitted by getdents"
-msgstr ""
+msgstr "getdents が出力したバッファからデータを取り出す"
 
 #: of pwnlib.util.getdents.dirents:3
 msgid "getdents result"
-msgstr ""
+msgstr "getdents の結果"
 
 #: of pwnlib.util.getdents.dirents:6 pwnlib.util.getdents.dirents64:8
 msgid "A list of file names"
-msgstr ""
+msgstr "ファイル名のリスト"
 
 #: of pwnlib.util.getdents.dirents64:1
 msgid "dirents(buf: bytes) -> list[linux_dirent]:"
@@ -2785,11 +2785,11 @@ msgstr ""
 
 #: of pwnlib.util.getdents.dirents64:3
 msgid "Extracts data from a buffer emitted by getdents64"
-msgstr ""
+msgstr "getdents64 が出力したバッファからデータを取り出す"
 
 #: of pwnlib.util.getdents.dirents64:5
 msgid "getdents64 result"
-msgstr ""
+msgstr "getdents64 の結果"
 
 #: ../pwntools/docs/source/util/hashes.rst:2
 msgid ":mod:`pwnlib.util.hashes` --- Hashing functions"
@@ -2801,7 +2801,7 @@ msgstr "ファイルや文字列のさまざまなハッシュを計算する関
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a file"
-msgstr ""
+msgstr "ファイルの blake2b ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a file; returns hex-encoded"
@@ -2809,7 +2809,7 @@ msgstr "ファイルの blake2b 和を計算し、16 進数にエンコードし
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a string"
-msgstr ""
+msgstr "文字列の blake2b ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a string; returns hex-encoded"
@@ -2817,7 +2817,7 @@ msgstr "文字列の blake2b 和を計算し、16 進数にエンコードして
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a file"
-msgstr ""
+msgstr "ファイルの blake2s ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a file; returns hex-encoded"
@@ -2825,7 +2825,7 @@ msgstr "ファイルの blake2s 和を計算し、16 進数にエンコードし
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a string"
-msgstr ""
+msgstr "文字列の blake2s ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a string; returns hex-encoded"
@@ -2833,7 +2833,7 @@ msgstr "文字列の blake2s 和を計算し、16 進数にエンコードして
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a file"
-msgstr ""
+msgstr "ファイルの md5 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a file; returns hex-encoded"
@@ -2841,7 +2841,7 @@ msgstr "ファイルの md5 和を計算し、16 進数にエンコードして�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a string"
-msgstr ""
+msgstr "文字列の md5 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a string; returns hex-encoded"
@@ -2849,7 +2849,7 @@ msgstr "文字列の md5 和を計算し、16 進数にエンコードして返�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a file"
-msgstr ""
+msgstr "ファイルの sha1 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a file; returns hex-encoded"
@@ -2857,7 +2857,7 @@ msgstr "ファイルの sha1 和を計算し、16 進数にエンコードして
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a string"
-msgstr ""
+msgstr "文字列の sha1 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a string; returns hex-encoded"
@@ -2865,7 +2865,7 @@ msgstr "文字列の sha1 和を計算し、16 進数にエンコードして返
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a file"
-msgstr ""
+msgstr "ファイルの sha224 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a file; returns hex-encoded"
@@ -2873,7 +2873,7 @@ msgstr "ファイルの sha224 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a string"
-msgstr ""
+msgstr "文字列の sha224 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a string; returns hex-encoded"
@@ -2881,7 +2881,7 @@ msgstr "文字列の sha224 和を計算し、16 進数にエンコードして�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a file"
-msgstr ""
+msgstr "ファイルの sha256 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a file; returns hex-encoded"
@@ -2889,7 +2889,7 @@ msgstr "ファイルの sha256 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a string"
-msgstr ""
+msgstr "文字列の sha256 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a string; returns hex-encoded"
@@ -2897,7 +2897,7 @@ msgstr "文字列の sha256 和を計算し、16 進数にエンコードして�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a file"
-msgstr ""
+msgstr "ファイルの sha384 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a file; returns hex-encoded"
@@ -2905,7 +2905,7 @@ msgstr "ファイルの sha384 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a string"
-msgstr ""
+msgstr "文字列の sha384 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a string; returns hex-encoded"
@@ -2913,7 +2913,7 @@ msgstr "文字列の sha384 和を計算し、16 進数にエンコードして�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a file"
-msgstr ""
+msgstr "ファイルの sha3_224 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a file; returns hex-encoded"
@@ -2921,7 +2921,7 @@ msgstr "ファイルの sha3_224 和を計算し、16 進数にエンコード�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a string"
-msgstr ""
+msgstr "文字列の sha3_224 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a string; returns hex-encoded"
@@ -2929,7 +2929,7 @@ msgstr "文字列の sha3_224 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a file"
-msgstr ""
+msgstr "ファイルの sha3_256 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a file; returns hex-encoded"
@@ -2937,7 +2937,7 @@ msgstr "ファイルの sha3_256 和を計算し、16 進数にエンコード�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a string"
-msgstr ""
+msgstr "文字列の sha3_256 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a string; returns hex-encoded"
@@ -2945,7 +2945,7 @@ msgstr "文字列の sha3_256 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a file"
-msgstr ""
+msgstr "ファイルの sha3_384 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a file; returns hex-encoded"
@@ -2953,7 +2953,7 @@ msgstr "ファイルの sha3_384 和を計算し、16 進数にエンコード�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a string"
-msgstr ""
+msgstr "文字列の sha3_384 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a string; returns hex-encoded"
@@ -2961,7 +2961,7 @@ msgstr "文字列の sha3_384 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a file"
-msgstr ""
+msgstr "ファイルの sha3_512 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a file; returns hex-encoded"
@@ -2969,7 +2969,7 @@ msgstr "ファイルの sha3_512 和を計算し、16 進数にエンコード�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a string"
-msgstr ""
+msgstr "文字列の sha3_512 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a string; returns hex-encoded"
@@ -2977,7 +2977,7 @@ msgstr "文字列の sha3_512 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a file"
-msgstr ""
+msgstr "ファイルの sha512 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a file; returns hex-encoded"
@@ -2985,7 +2985,7 @@ msgstr "ファイルの sha512 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a string"
-msgstr ""
+msgstr "文字列の sha512 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a string; returns hex-encoded"
@@ -2993,7 +2993,7 @@ msgstr "文字列の sha512 和を計算し、16 進数にエンコードして�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a file"
-msgstr ""
+msgstr "ファイルの shake_128 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a file; returns hex-encoded"
@@ -3001,7 +3001,7 @@ msgstr "ファイルの shake_128 和を計算し、16 進数にエンコード�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a string"
-msgstr ""
+msgstr "文字列の shake_128 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a string; returns hex-encoded"
@@ -3009,7 +3009,7 @@ msgstr "文字列の shake_128 和を計算し、16 進数にエンコードし�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a file"
-msgstr ""
+msgstr "ファイルの shake_256 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a file; returns hex-encoded"
@@ -3017,7 +3017,7 @@ msgstr "ファイルの shake_256 和を計算し、16 進数にエンコード�
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a string"
-msgstr ""
+msgstr "文字列の shake_256 ハッシュを計算する"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a string; returns hex-encoded"
@@ -3202,7 +3202,7 @@ msgstr "bruteforce() と同じ機能ですが、マルチスレッドで動き�
 #: pwnlib.util.iters.mbruteforce:5 pwnlib.util.iters.mbruteforce:6
 #: pwnlib.util.iters.mbruteforce:7
 msgid "same as for bruteforce()"
-msgstr ""
+msgstr "bruteforce() と同じ"
 
 #: of pwnlib.util.iters.mbruteforce:8
 msgid "Amount of threads to spawn, default is the amount of cores."
@@ -3210,7 +3210,7 @@ msgstr "起動するスレッドの数。既定はコア数です。"
 
 #: of pwnlib.util.iters.mbruteforce:10
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.util.iters.nth:1
 msgid "Returns the element at index `n` in `iterable`.  If `iterable` is a iterator it will be advanced."
@@ -3295,7 +3295,7 @@ msgstr "``itertools.permutations(iterable, r = r)`` からのランダムな要�
 
 #: of pwnlib.util.iters.random_product:1
 msgid "One or more iterables"
-msgstr ""
+msgstr "1 つ以上のイテラブル"
 
 #: of pwnlib.util.iters.random_product:2
 msgid "Number of times to repeat `args`."
@@ -3497,11 +3497,11 @@ msgstr "シーケンスを、指定した大きさの部分列に分割します
 
 #: of pwnlib.util.lists.group:7
 msgid "The size of resulting groups"
-msgstr ""
+msgstr "できあがるグループの大きさ"
 
 #: of pwnlib.util.lists.group:9
 msgid "The list, tuple or string to group"
-msgstr ""
+msgstr "グループ化するリスト、タプル、または文字列"
 
 #: of pwnlib.util.lists.group:10
 msgid "The action to take in case of an underfull group at the end. Possible values are 'ignore', 'drop' or 'fill'."
@@ -3533,17 +3533,15 @@ msgstr "すべての要素に対して `f` を呼び出し、結果を :class:`c
 
 #: of pwnlib.util.lists.partition:9
 msgid "The iterable to partition"
-msgstr ""
+msgstr "分割するイテラブル"
 
 #: of pwnlib.util.lists.partition:10
 msgid "The function to use as the partitioner."
 msgstr "分割に使う関数。"
 
 #: of pwnlib.util.lists.partition:12
-msgid ""
-"Set this to True, if you want the OrderedDict returned instead of just "
-"the values"
-msgstr ""
+msgid "Set this to True, if you want the OrderedDict returned instead of just the values"
+msgstr "値だけでなく OrderedDict を返してほしい場合は True にする"
 
 #: of pwnlib.util.lists.unordlist:1
 msgid "Takes a list of ascii values and returns the corresponding string."
@@ -3559,15 +3557,15 @@ msgstr "システムコール `execve` を直接呼び出す Python のラッパ
 
 #: of pwnlib.util.misc._create_execve_script:3
 msgid "List of arguments to pass into the process"
-msgstr ""
+msgstr "プロセスに渡す引数のリスト"
 
 #: of pwnlib.util.misc._create_execve_script:5
 msgid "Path to the executable to run. If :const:`None`, ``argv[0]`` is used."
-msgstr "実行する実行ファイルのパス。:const:`None` の場合は ``argv[0]`` を使います。"
+msgstr "実行する実行ファイルのパス。:const:`None` なら ``argv[0]`` を使います。"
 
 #: of pwnlib.util.misc._create_execve_script:8
 msgid "Working directory.  If :const:`None`, uses the working directory specified on :attr:`cwd` or set via :meth:`set_working_directory`."
-msgstr "作業ディレクトリ。:const:`None` の場合は、:attr:`cwd` に指定されている作業ディレクトリ、または :meth:`set_working_directory` で設定した作業ディレクトリを使います。"
+msgstr "作業ディレクトリ。:const:`None` なら、:attr:`cwd` で指定されたか、:meth:`set_working_directory` で設定された作業ディレクトリを使います。"
 
 #: of pwnlib.util.misc._create_execve_script:11
 msgid "Environment variables to add to the environment."
@@ -3579,11 +3577,11 @@ msgstr "バイナリのパスを探す関数。"
 
 #: of pwnlib.util.misc._create_execve_script:15
 msgid "Ignore default environment.  By default use default environment iff env not specified."
-msgstr "既定の環境を無視します。既定では、env を指定しない場合に限り、既定の環境を使います。"
+msgstr "既定の環境を無視します。既定では、env を指定していないときだけ、既定の環境を使います。"
 
 #: of pwnlib.util.misc._create_execve_script:17
 msgid "If an integer, replace stdin with the numbered file descriptor. If a string, a open a file with the specified path and replace stdin with its file descriptor.  May also be one of ``sys.stdin``, ``sys.stdout``, ``sys.stderr``.  If :const:`None`, the file descriptor is closed."
-msgstr "整数の場合は、標準入力を、その番号のファイルディスクリプタに置き換えます。文字列の場合は、そのパスのファイルを開き、そのファイルディスクリプタで標準入力を置き換えます。``sys.stdin``、``sys.stdout``、``sys.stderr`` のいずれかも指定できます。:const:`None` の場合は、ファイルディスクリプタを閉じます。"
+msgstr "整数なら、stdin を、その番号のファイルディスクリプタで置き換えます。文字列なら、そのパスのファイルを開いて、そのファイルディスクリプタで stdin を置き換えます。``sys.stdin``、``sys.stdout``、``sys.stderr`` のどれかでもかまいません。:const:`None` なら、そのファイルディスクリプタを閉じます。"
 
 #: of pwnlib.util.misc._create_execve_script:22
 #: pwnlib.util.misc._create_execve_script:24
@@ -3592,11 +3590,11 @@ msgstr "``stdin`` を参照してください。"
 
 #: of pwnlib.util.misc._create_execve_script:26
 msgid "Function which is executed on the remote side before execve(). This **MUST** be a self-contained function -- it must perform all of its own imports, and cannot refer to variables outside its scope."
-msgstr "execve() の前にリモート側で実行される関数。自己完結した関数で **なければなりません**。必要な import はすべて関数内で行い、スコープ外の変数は参照できません。"
+msgstr "リモート側で、execve() の前に実行される関数。これは、自己完結した関数で**なければなりません**。必要な import をすべて自分で行う必要があり、スコープの外の変数は参照できません。"
 
 #: of pwnlib.util.misc._create_execve_script:31
 msgid "Argument passed to ``preexec_fn``. This **MUST** only consist of native Python objects."
-msgstr "``preexec_fn`` に渡す引数。ネイティブの Python オブジェクトだけで構成されて **いなければなりません**。"
+msgstr "``preexec_fn`` に渡す引数。Python のネイティブなオブジェクトだけで**なければなりません**。"
 
 #: of pwnlib.util.misc._create_execve_script:34
 #: pwnlib.util.misc._create_execve_script:36
@@ -3605,7 +3603,7 @@ msgstr "詳しくは :class:`pwnlib.tubes.process.process` を参照してくだ
 
 #: of pwnlib.util.misc._create_execve_script:38
 msgid "Pass the command-line arguments to the shell."
-msgstr "コマンドライン引数をシェルに渡します。"
+msgstr "コマンドライン引数を、シェルに渡します。"
 
 #: of pwnlib.util.misc._create_execve_script:41
 msgid "A string containing the python script."
@@ -3638,7 +3636,7 @@ msgstr "バイナリに対して実行した 'ldd' の出力を解析します�
 
 #: of pwnlib.util.misc.parse_ldd_output:5
 msgid "The output to parse"
-msgstr ""
+msgstr "解析する出力"
 
 #: of pwnlib.util.misc.read:1
 msgid "Open file, return content."
@@ -3646,7 +3644,7 @@ msgstr "ファイルを開き、内容を返します。"
 
 #: of pwnlib.util.misc.register_sizes:1
 msgid "Create dictionaries over register sizes and relations"
-msgstr ""
+msgstr "レジスタのサイズと関係を表す辞書を作る"
 
 #: of pwnlib.util.misc.register_sizes:3
 msgid "Given a list of lists of overlapping register names (e.g. ['eax','ax','al','ah']) and a list of input sizes, it returns the following:"
@@ -3750,7 +3748,7 @@ msgstr "使用する端末。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:40
 msgid "Arguments to pass to the terminal"
-msgstr ""
+msgstr "ターミナルに渡す引数"
 
 #: of pwnlib.util.misc.run_in_new_terminal:42
 msgid "Whether to close the command/terminal on process exit."
@@ -3770,7 +3768,7 @@ msgstr "``context.terminal`` がパスでなく、端末が上記のうちウィ
 
 #: of pwnlib.util.misc.run_in_new_terminal:55
 msgid "PID of the new terminal process"
-msgstr ""
+msgstr "新しいターミナルプロセスの PID"
 
 #: of pwnlib.util.misc.size:1
 msgid "Convert the length of a bytestream to human readable form."
@@ -4409,7 +4407,7 @@ msgstr "見つかった PID のリスト。"
 
 #: of pwnlib.util.proc.starttime:4
 msgid "The time (in seconds) the process started after system boot"
-msgstr ""
+msgstr "システム起動後にプロセスが開始するまでの時間(秒)"
 
 #: of pwnlib.util.proc.stat:4
 msgid "A list of the values in ``/proc/<pid>/stat``, with the exception that ``(`` and ``)`` has been removed from around the process name."
@@ -4445,11 +4443,11 @@ msgstr ":mod:`pwnlib.util.safeeval` --- Python コードの安全な評価"
 
 #: of pwnlib.util.safeeval._get_opcodes:1
 msgid "Extract the actual opcodes as a list from a code object"
-msgstr ""
+msgstr "コードオブジェクトから、実際のオペコードをリストとして取り出す"
 
 #: of pwnlib.util.safeeval.const:1
 msgid "Safe Python constant evaluation"
-msgstr ""
+msgstr "安全な Python の定数評価"
 
 #: of pwnlib.util.safeeval.const:3
 msgid "Evaluates a string that contains an expression describing a Python constant. Strings that are not valid Python expressions or that contain other code besides the constant raise ValueError."
@@ -4457,7 +4455,7 @@ msgstr "Python の定数を表す式を含む文字列を評価します。有�
 
 #: of pwnlib.util.safeeval.expr:1 pwnlib.util.safeeval.values:1
 msgid "Safe Python expression evaluation"
-msgstr ""
+msgstr "安全な Python の式の評価"
 
 #: of pwnlib.util.safeeval.expr:3
 msgid "Evaluates a string that contains an expression that only uses Python constants. This can be used to e.g. evaluate a numerical expression from an untrusted source."
@@ -4489,7 +4487,7 @@ msgstr "ここにあるルーチンは、NULL で終わる任意のバイト列�
 
 #: of pwnlib.util.sh_string:6
 msgid "Supported Shells"
-msgstr ""
+msgstr "対応するシェル"
 
 #: of pwnlib.util.sh_string:8
 msgid "The following shells have been evaluated:"
@@ -4589,7 +4587,7 @@ msgstr "NetBSD のシェルのドキュメントは、Dash のドキュメント
 
 #: of pwnlib.util.sh_string:205
 msgid "Android Shells"
-msgstr ""
+msgstr "Android のシェル"
 
 #: of pwnlib.util.sh_string:207
 msgid "Android has gone through some number of shells."
@@ -4681,7 +4679,7 @@ msgstr "シェルの組み込みの \"echo\" とはうまく連携しません�
 
 #: of pwnlib.util.sh_string.sh_string:13
 msgid "Argument:"
-msgstr ""
+msgstr "引数:"
 
 #: of pwnlib.util.sh_string.sh_string:14
 msgid "s(str): String to escape."
@@ -4689,7 +4687,7 @@ msgstr "s(str): エスケープする文字列。"
 
 #: of pwnlib.util.sh_string.test:1
 msgid "Tests the output provided by a shell interpreting a string"
-msgstr ""
+msgstr "文字列を解釈したシェルの出力をテストする"
 
 #: ../pwntools/docs/source/util/web.rst:9
 msgid ":mod:`pwnlib.util.web` --- Utilities for working with the WWW"
@@ -4701,7 +4699,7 @@ msgstr "HTTP/HTTPS でファイルをダウンロードします。"
 
 #: of pwnlib.util.web.wget:3
 msgid "URL to download"
-msgstr ""
+msgstr "ダウンロードする URL"
 
 #: of pwnlib.util.web.wget:5
 msgid "Name to save as.  Any truthy value will auto-generate a name based on the URL."

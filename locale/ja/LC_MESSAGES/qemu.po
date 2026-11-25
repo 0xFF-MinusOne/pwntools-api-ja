@@ -69,7 +69,7 @@ msgstr "環境変数 ``QEMU_LD_PREFIX`` を設定すると、既定の sysroot �
 
 #: of pwnlib.qemu:35
 msgid "Required Setup"
-msgstr ""
+msgstr "必要な準備"
 
 #: of pwnlib.qemu:37
 msgid "For Ubuntu 16.04 and newer, the setup is relatively straightforward for most architectures."
@@ -93,7 +93,7 @@ msgstr "それ以外に必要なライブラリは、ほかの方法で探す必
 
 #: of pwnlib.qemu:60
 msgid "Telling QEMU Where Libraries Are"
-msgstr ""
+msgstr "QEMU にライブラリの場所を教える"
 
 #: of pwnlib.qemu:62
 msgid "The libraries are now installed on your system at e.g. ``/usr/aarch64-linux-gnu``."

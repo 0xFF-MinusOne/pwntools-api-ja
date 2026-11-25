@@ -25,7 +25,7 @@ msgstr ":mod:`pwnlib.regsort` --- レジスタのソート"
 
 #: of pwnlib.regsort:1
 msgid "Topographical sort"
-msgstr ""
+msgstr "トポロジカルソート"
 
 #: of pwnlib.regsort.check_cycle:1
 msgid "Walk down the assignment list of a register, return the path walked if it is encountered again."

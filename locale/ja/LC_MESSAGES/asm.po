@@ -29,7 +29,7 @@ msgstr "コードのアセンブルと逆アセンブルのためのユーティ
 
 #: of pwnlib.asm:4
 msgid "Architecture Selection"
-msgstr ""
+msgstr "アーキテクチャの選択"
 
 #: of pwnlib.asm:6
 msgid "Architecture, endianness, and word size are selected by using :mod:`pwnlib.context`."
@@ -86,7 +86,7 @@ msgstr "アセンブルするアセンブラコード。"
 
 #: of pwnlib.asm.asm:12
 msgid "Virtual memory address of the beginning of assembly"
-msgstr ""
+msgstr "アセンブリの先頭の仮想メモリアドレス"
 
 #: of pwnlib.asm.asm:14
 msgid "Extract the raw assembly bytes from the assembled file.  If :const:`False`, returns the path to an ELF file with the assembly embedded."
@@ -119,11 +119,11 @@ msgstr "出力の末尾には、必ずちょうど 1 つの改行が付きます
 
 #: of pwnlib.asm.cpp:5
 msgid "Shellcode to preprocess"
-msgstr ""
+msgstr "前処理するシェルコード"
 
 #: of pwnlib.asm.cpp:8 pwnlib.asm.disasm:15
 msgid "Kwargs:"
-msgstr ""
+msgstr "キーワード引数:"
 
 #: of pwnlib.asm.cpp:9 pwnlib.asm.disasm:16
 msgid "Any arguments/properties that can be set on ``context``"
@@ -151,7 +151,7 @@ msgstr "逆アセンブルの結果に、16 進表記のバイトを含めます
 
 #: of pwnlib.asm.disasm:12
 msgid "Include the virtual memory address in the disassembly"
-msgstr ""
+msgstr "逆アセンブルの結果に仮想メモリアドレスを含める"
 
 #: of pwnlib.asm.make_elf:1
 msgid "Builds an ELF file with the specified binary data as its executable code."
@@ -159,11 +159,11 @@ msgstr "指定したバイナリデータを実行可能コードとして持つ
 
 #: of pwnlib.asm.make_elf:3
 msgid "Assembled code"
-msgstr ""
+msgstr "アセンブルされたコード"
 
 #: of pwnlib.asm.make_elf:5
 msgid "Load address for the ELF file"
-msgstr ""
+msgstr "ELF ファイルのロードアドレス"
 
 #: of pwnlib.asm.make_elf:7
 msgid "Strip the resulting ELF file. Only matters if ``extract=False``. (Default: ``True``)"
@@ -199,7 +199,7 @@ msgstr "`arch=thumb` で作成した ELF ファイルは、先頭に、Thumb モ
 
 #: of pwnlib.asm.make_elf_from_assembly:19
 msgid "Assembly code to build into an ELF"
-msgstr ""
+msgstr "ELF にビルドするアセンブリコード"
 
 #: of pwnlib.asm.make_elf_from_assembly:21
 msgid "Load address of the binary (Default: ``0x10000000``, or ``0`` if ``shared=True``)"
@@ -239,7 +239,7 @@ msgstr "同じことは :func:`.make_elf` でもできますが、サイズが�
 
 #: ../pwntools/docs/source/asm.rst:18
 msgid "Internal Functions"
-msgstr ""
+msgstr "内部の関数"
 
 #: ../pwntools/docs/source/asm.rst:20
 msgid "These are only included so that their tests are run."

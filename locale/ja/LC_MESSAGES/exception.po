@@ -42,4 +42,4 @@ msgstr "repr(self) を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.exception.PwnlibException.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"

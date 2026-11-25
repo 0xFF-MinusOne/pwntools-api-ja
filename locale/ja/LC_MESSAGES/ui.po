@@ -50,7 +50,7 @@ msgstr ""
 #: of pwnlib.ui.more:10 pwnlib.ui.options:19 pwnlib.ui.pause:15
 #: pwnlib.ui.yesno:29
 msgid "Tests:"
-msgstr ""
+msgstr "テスト:"
 
 #: of pwnlib.ui.options:1
 msgid "Presents the user with a prompt (typically in the form of a question) and a number of options."
@@ -58,15 +58,15 @@ msgstr "ユーザーにプロンプト(通常は質問の形)と、いくつか�
 
 #: of pwnlib.ui.options:4 pwnlib.ui.yesno:4
 msgid "The prompt to show"
-msgstr ""
+msgstr "表示するプロンプト"
 
 #: of pwnlib.ui.options:6
 msgid "The options to show to the user"
-msgstr ""
+msgstr "ユーザーに見せる選択肢"
 
 #: of pwnlib.ui.options:8
 msgid "The default option to choose"
-msgstr ""
+msgstr "既定で選ぶ選択肢"
 
 #: of pwnlib.ui.options:10
 msgid "The users choice in the form of an integer."

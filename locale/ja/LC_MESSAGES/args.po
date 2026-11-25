@@ -61,7 +61,7 @@ msgstr "サポートされている「特別な引数」とその効果の一覧
 
 #: ../pwntools/docs/docstring of pwnlib.args.PwnlibArgs.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.args.DEBUG:1
 msgid "Sets the logging verbosity to ``debug`` which displays much more information, including logging each byte sent by tubes."
@@ -109,7 +109,7 @@ msgstr "``context.timeout`` を通じて、tube 操作のタイムアウト(秒)
 
 #: of pwnlib.args.asbool:1
 msgid "Convert a string to its boolean value"
-msgstr ""
+msgstr "文字列を、対応する真偽値に変換する"
 
 #: of pwnlib.args.isident:1
 msgid "Helper function to check whether a string is a valid identifier, as passed in on the command-line."

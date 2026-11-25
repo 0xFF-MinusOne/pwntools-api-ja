@@ -41,7 +41,7 @@ msgstr ":func:`init` でターミナルを引き継いだときに限り、True 
 
 #: ../pwntools/docs/source/term.rst:8
 msgid "Term Modules"
-msgstr ""
+msgstr "Term のモジュール"
 
 #: ../pwntools/docs/source/term/readline.rst:7
 msgid ":mod:`pwnlib.term.readline` --- Terminal nice readline"

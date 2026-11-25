@@ -29,7 +29,7 @@ msgstr "Android Debug Bridge を介して、Android デバイスを操作する�
 
 #: of pwnlib.adb.adb:4
 msgid "Using Android Devices with Pwntools"
-msgstr ""
+msgstr "pwntools で Android 端末を使う"
 
 #: of pwnlib.adb.adb:6
 msgid "Pwntools tries to be as easy as possible to use with Android devices."
@@ -60,7 +60,7 @@ msgstr "接続されているデバイスの情報をまとめたものです。
 #: pwnlib.adb.adb.proc_exe:3 pwnlib.adb.adb.pull:11 pwnlib.adb.adb.push:10
 #: pwnlib.adb.adb.uptime:3 pwnlib.adb.adb.which:12 pwnlib.adb.adb.whoami:3
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.adb.adb.AdbDevice.__getattr__:1
 msgid "Provides scoped access to ``adb`` module properties, in the context of this device."
@@ -80,7 +80,7 @@ msgstr "呼び出し可能オブジェクトを、現在のデバイスを選択
 
 #: of pwnlib.adb.adb.Partitions:1
 msgid "Enable access to partitions"
-msgstr ""
+msgstr "パーティションへのアクセスを有効にする"
 
 #: of pwnlib.adb.adb.Partitions.__dir__:1
 msgid "Default dir() implementation."
@@ -88,7 +88,7 @@ msgstr "既定の dir() の実装です。"
 
 #: ../pwntools/docs/docstring of pwnlib.adb.adb.Partitions.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.adb.adb._build_date:1
 msgid "Returns the build date in the form YYYY-MM-DD as a string"
@@ -135,7 +135,7 @@ msgstr "``path`` が対象のデバイスに存在する場合は :const:`True` 
 #: pwnlib.adb.adb.unlink:3 pwnlib.adb.adb.wait_for_device:9
 #: pwnlib.adb.adb.write:8
 msgid "Examples:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.adb.adb.fastboot:1
 msgid "Executes a fastboot command."
@@ -247,7 +247,7 @@ msgstr "作成するディレクトリ。"
 
 #: of pwnlib.adb.adb.packages:1
 msgid "Returns a list of packages installed on the system"
-msgstr ""
+msgstr "端末にインストールされているパッケージのリストを返す"
 
 #: of pwnlib.adb.adb.pidof:1
 msgid "Returns a list of PIDs for the named process."
@@ -379,7 +379,7 @@ msgstr "adbd を AID_SHELL として再起動します。"
 
 #: of pwnlib.adb.adb.uptime:1
 msgid "Uptime of the device, in seconds"
-msgstr ""
+msgstr "端末の稼働時間 (秒)"
 
 #: of pwnlib.adb.adb.version:1
 msgid "Returns rthe platform version as a tuple."
@@ -403,11 +403,11 @@ msgstr "デバイスの ``$PATH`` にあるバイナリのフルパスを取得�
 
 #: of pwnlib.adb.adb.which:3
 msgid "Binary name"
-msgstr ""
+msgstr "バイナリの名前"
 
 #: of pwnlib.adb.adb.which:5
 msgid "Whether to return all paths, or just the first"
-msgstr ""
+msgstr "すべてのパスを返すか、最初の 1 つだけ返すか"
 
 #: of pwnlib.adb.adb.which:7 pwnlib.adb.adb.which:8
 msgid "Additional arguments for :func:`.adb.process`"
@@ -415,11 +415,11 @@ msgstr ":func:`.adb.process` への追加の引数"
 
 #: of pwnlib.adb.adb.which:10
 msgid "Either a path, or list of paths"
-msgstr ""
+msgstr "パス、またはパスのリスト"
 
 #: of pwnlib.adb.adb.whoami:1
 msgid "Returns current shell user"
-msgstr ""
+msgstr "現在のシェルのユーザーを返す"
 
 #: of pwnlib.adb.adb.write:1
 msgid "Create a file on the device with the provided contents."
@@ -427,12 +427,12 @@ msgstr "指定した内容で、デバイス上にファイルを作成します
 
 #: of pwnlib.adb.adb.write:3
 msgid "Path to the file on the device"
-msgstr ""
+msgstr "端末上のファイルのパス"
 
 #: of pwnlib.adb.adb.write:5
 msgid "Contents to store in the file"
-msgstr ""
+msgstr "ファイルに保存する内容"
 
 #: of pwnlib.adb.protocol:1
 msgid "This file exists only for backward compatibility"
-msgstr ""
+msgstr "このファイルは後方互換性のためだけに存在する"

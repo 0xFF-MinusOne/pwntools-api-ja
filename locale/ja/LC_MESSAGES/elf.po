@@ -29,7 +29,7 @@ msgstr "攻略対象となる CTF の問題の多くは、Executable and Linkabl
 
 #: ../pwntools/docs/source/elf.rst:13
 msgid "ELF Modules"
-msgstr ""
+msgstr "ELF モジュール"
 
 #: ../pwntools/docs/source/elf/config.rst:7
 msgid ":mod:`pwnlib.elf.config` --- Kernel Config Parsing"
@@ -91,7 +91,7 @@ msgstr "コアダンプは、通常のデバッグ作業以外でも、エクス
 
 #: of pwnlib.elf.corefile:7
 msgid "Using Corefiles to Automate Exploitation"
-msgstr ""
+msgstr "コアファイルを使ったエクスプロイトの自動化"
 
 #: of pwnlib.elf.corefile:9
 msgid "For example, if you have a trivial buffer overflow and don't want to open up a debugger or calculate offsets, you can use a generated core dump to extract the relevant information."
@@ -99,7 +99,7 @@ msgstr "たとえば、単純なバッファオーバーフローで、デバッ
 
 #: of pwnlib.elf.corefile:59 pwnlib.elf.elf:45
 msgid "Module Members"
-msgstr ""
+msgstr "モジュールの要素"
 
 #: of pwnlib.elf.corefile.Corefile:1
 msgid "Bases: :py:class:`~pwnlib.elf.elf.ELF`"
@@ -166,10 +166,8 @@ msgid "The process is still running, but accessing its :attr:`.process.corefile`
 msgstr "プロセスは実行中のままですが、:attr:`.process.corefile` プロパティにアクセスすると、自動的に GDB が呼び出され、アタッチしてコアファイルをダンプします。"
 
 #: of pwnlib.elf.corefile.Corefile:138
-msgid ""
-"The corefile can be inspected and read from, and even exposes various "
-"mappings"
-msgstr ""
+msgid "The corefile can be inspected and read from, and even exposes various mappings"
+msgstr "コアファイルは、中身を調べたり読み出したりでき、さまざまなマッピングも公開しています。"
 
 #: of pwnlib.elf.corefile.Corefile:145
 msgid "It also supports all of the features of :class:`ELF`, so you can :meth:`pwnlib.elf.elf.ELF.read` or :meth:`pwnlib.elf.elf.ELF.write` or even the helpers like :meth:`pwnlib.elf.elf.ELF.pack` or :meth:`pwnlib.elf.elf.ELF.unpack`."
@@ -259,7 +257,7 @@ msgstr "すべてのリロケーションのシンボルを読み込みます。
 #: of pwnlib.elf.corefile.Corefile._populate_plt:1
 #: pwnlib.elf.elf.ELF._populate_plt:1
 msgid "Loads the PLT symbols"
-msgstr ""
+msgstr "PLT のシンボルを読み込む"
 
 #: of pwnlib.elf.corefile.Corefile.debug:1
 msgid "Open the corefile under a debugger."
@@ -291,7 +289,7 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc:1
 msgid "Number of arguments passed"
-msgstr ""
+msgstr "渡された引数の数"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc
 #: pwnlib.elf.corefile.Corefile.argc_address pwnlib.elf.corefile.Corefile.argv
@@ -349,7 +347,7 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argc_address:1
 msgid "Pointer to argc on the stack"
-msgstr ""
+msgstr "スタック上の argc へのポインタ"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argv:1
 msgid "List of addresses of arguments on the stack."
@@ -366,11 +364,11 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.argv_address:1
 msgid "Pointer to argv on the stack"
-msgstr ""
+msgstr "スタック上の argv へのポインタ"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.envp_address:1
 msgid "Pointer to envp on the stack"
-msgstr ""
+msgstr "スタック上の envp へのポインタ"
 
 #: of pwnlib.elf.corefile.Corefile.exe:1
 msgid "First mapping for the executable file."
@@ -384,7 +382,7 @@ msgstr ""
 
 #: of pwnlib.elf.corefile.Corefile.fault_addr:5
 msgid "Address which generated the fault, for the signals"
-msgstr ""
+msgstr "シグナルの場合、フォルトを起こしたアドレス"
 
 #: of pwnlib.elf.corefile.Corefile.fault_addr:6
 msgid "SIGILL, SIGFPE, SIGSEGV, SIGBUS.  This is only available in native core dumps created by the kernel.  If the information is unavailable, this returns the address of the instruction pointer."
@@ -413,7 +411,7 @@ msgstr ""
 
 #: of pwnlib.elf.corefile.Corefile.pc:1
 msgid "The program counter for the Corefile"
-msgstr ""
+msgstr "コアファイルのプログラムカウンタ"
 
 #: of pwnlib.elf.corefile.Corefile.pc:3
 msgid "This is a cross-platform way to get e.g. ``core.eip``, ``core.rip``, etc."
@@ -429,7 +427,7 @@ msgstr "コアダンプを作成したプロセスの親 PID です。"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.prpsinfo:1
 msgid "The NT_PRPSINFO object"
-msgstr ""
+msgstr "NT_PRPSINFO オブジェクト"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.prstatus:1
 msgid "The NT_PRSTATUS object."
@@ -446,7 +444,7 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Corefile.siginfo:1
 msgid "The NT_SIGINFO object"
-msgstr ""
+msgstr "NT_SIGINFO オブジェクト"
 
 #: of pwnlib.elf.corefile.Corefile.signal:1
 msgid "Signal which caused the core to be dumped."
@@ -454,7 +452,7 @@ msgstr "コアダンプの原因となったシグナルです。"
 
 #: of pwnlib.elf.corefile.Corefile.sp:1
 msgid "The stack pointer for the Corefile"
-msgstr ""
+msgstr "コアファイルのスタックポインタ"
 
 #: of pwnlib.elf.corefile.Corefile.sp:3
 msgid "This is a cross-platform way to get e.g. ``core.esp``, ``core.rsp``, etc."
@@ -474,15 +472,15 @@ msgstr "注: 環境に ``FOO=BAR`` がある場合、``self.env['FOO']`` は、�
 
 #: of pwnlib.elf.corefile.Corefile.vdso:1
 msgid "Mapping for the vdso section"
-msgstr ""
+msgstr "vdso セクションのマッピング"
 
 #: of pwnlib.elf.corefile.Corefile.vsyscall:1
 msgid "Mapping for the vsyscall section"
-msgstr ""
+msgstr "vsyscall セクションのマッピング"
 
 #: of pwnlib.elf.corefile.Corefile.vvar:1
 msgid "Mapping for the vvar section"
-msgstr ""
+msgstr "vvar セクションのマッピング"
 
 #: of pwnlib.elf.corefile.Mapping:1
 msgid "Encapsulates information about a memory mapping in a :class:`Corefile`."
@@ -509,7 +507,7 @@ msgstr "str.rfind() に似ていますが、こちらのアドレス空間に対
 #: pwnlib.elf.elf.ELF.__weakref__:1 pwnlib.elf.elf.Function.__weakref__:1
 #: pwnlib.elf.elf.dotdict.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: of pwnlib.elf.corefile.Mapping.address:1
 msgid "Alias for :data:`Mapping.start`."
@@ -529,7 +527,7 @@ msgstr "マッピングの名前です。例: ``'/bin/bash'``、``'[vdso]'``。"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.page_offset:1
 msgid "Offset in pages in the mapped file"
-msgstr ""
+msgstr "マップされたファイル内のオフセット(ページ単位)"
 
 #: of pwnlib.elf.corefile.Mapping.path:1
 msgid "Alias for :attr:`.Mapping.name`"
@@ -541,15 +539,15 @@ msgstr "人が読める形式のメモリ権限の文字列です。例: ``r-xp`
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.size:1
 msgid "Size of the mapping, in bytes"
-msgstr ""
+msgstr "マッピングのサイズ(バイト単位)"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.start:1
 msgid "First mapped byte in the mapping"
-msgstr ""
+msgstr "マッピングの最初のマップ済みバイト"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.corefile.Mapping.stop:1
 msgid "First byte after the end of the mapping"
-msgstr ""
+msgstr "マッピングの末尾の次のバイト"
 
 #: ../pwntools/docs/source/elf/elf.rst:13
 msgid ":mod:`pwnlib.elf.elf` --- ELF Files"
@@ -557,7 +555,7 @@ msgstr ":mod:`pwnlib.elf.elf` --- ELF ファイル"
 
 #: of pwnlib.elf.elf:1
 msgid "Exposes functionality for manipulating ELF files"
-msgstr ""
+msgstr "ELF ファイルを操作する機能を提供する"
 
 #: of pwnlib.elf.elf:4
 msgid "Stop hard-coding things!  Look them up at runtime with :mod:`pwnlib.elf`."
@@ -565,7 +563,7 @@ msgstr "値のハードコードはやめましょう。:mod:`pwnlib.elf` を使
 
 #: of pwnlib.elf.elf:7
 msgid "Example Usage"
-msgstr ""
+msgstr "使用例"
 
 #: of pwnlib.elf.elf:21
 msgid "You can even patch and save the files."
@@ -597,7 +595,7 @@ msgstr "アセンブリのリストを受け取り、そのアセンブリをエ
 
 #: of pwnlib.elf.elf.ELF.from_assembly:4
 msgid "Assembly language listing"
-msgstr ""
+msgstr "アセンブリ言語のリスト"
 
 #: of pwnlib.elf.elf.ELF.from_assembly:6
 msgid "Address of the entry point and the module's base address."
@@ -609,7 +607,7 @@ msgstr "バイト列を受け取り、そのバイト列をエントリポイン
 
 #: of pwnlib.elf.elf.ELF.from_bytes:4
 msgid "Shellcode byte string"
-msgstr ""
+msgstr "シェルコードのバイト列"
 
 #: of pwnlib.elf.elf.ELF.from_bytes:6
 msgid "Desired base address for the ELF."
@@ -703,35 +701,35 @@ msgstr "ELF ファイルを検証し、そのクラスとエンディアンを�
 
 #: elftools.elf.elffile.ELFFile._make_gnu_verdef_section:1 of
 msgid "Create a GNUVerDefSection"
-msgstr ""
+msgstr "GNUVerDefSection を作る"
 
 #: elftools.elf.elffile.ELFFile._make_gnu_verneed_section:1 of
 msgid "Create a GNUVerNeedSection"
-msgstr ""
+msgstr "GNUVerNeedSection を作る"
 
 #: elftools.elf.elffile.ELFFile._make_gnu_versym_section:1 of
 msgid "Create a GNUVerSymSection"
-msgstr ""
+msgstr "GNUVerSymSection を作る"
 
 #: elftools.elf.elffile.ELFFile._make_section:1 of
 msgid "Create a section object of the appropriate type"
-msgstr ""
+msgstr "適切な型のセクションオブジェクトを作る"
 
 #: elftools.elf.elffile.ELFFile._make_segment:1 of
 msgid "Create a Segment object of the appropriate type"
-msgstr ""
+msgstr "適切な型の Segment オブジェクトを作る"
 
 #: elftools.elf.elffile.ELFFile._make_sunwsyminfo_table_section:1 of
 msgid "Create a SUNWSyminfoTableSection"
-msgstr ""
+msgstr "SUNWSyminfoTableSection を作る"
 
 #: elftools.elf.elffile.ELFFile._make_symbol_table_index_section:1 of
 msgid "Create a SymbolTableIndexSection object"
-msgstr ""
+msgstr "SymbolTableIndexSection オブジェクトを作る"
 
 #: elftools.elf.elffile.ELFFile._make_symbol_table_section:1 of
 msgid "Create a SymbolTableSection"
-msgstr ""
+msgstr "SymbolTableSection を作る"
 
 #: elftools.elf.elffile.ELFFile._parse_elf_header:1 of
 msgid "Parses the ELF file header and assigns the result to attributes of this object."
@@ -765,7 +763,7 @@ msgstr "エントリポイントを含むセグメントに、シェルコード
 
 #: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:15
 msgid "Doctests:"
-msgstr ""
+msgstr "doctest:"
 
 #: of pwnlib.elf.elf.ELF._patch_elf_and_read_maps:17
 msgid "These tests are just to ensure that our shellcode is correct."
@@ -821,7 +819,7 @@ msgstr "``checksec.sh`` と同じように、バイナリの情報を出力し�
 
 #: of pwnlib.elf.elf.ELF.checksec:3
 msgid "Whether to print the path to the ELF binary."
-msgstr "ELF バイナリのパスを出力するかどうかです。"
+msgstr "ELF バイナリのパスを表示するかどうか。"
 
 #: of pwnlib.elf.elf.ELF.checksec:5
 msgid "Whether to use colored output."
@@ -837,7 +835,7 @@ msgstr ":func:`.gdb.debug` で ELF をデバッグします。"
 
 #: of pwnlib.elf.elf.ELF.debug:3 pwnlib.elf.elf.ELF.process:4
 msgid "List of arguments to the binary"
-msgstr ""
+msgstr "バイナリに渡す引数のリスト"
 
 #: of pwnlib.elf.elf.ELF.debug:5 pwnlib.elf.elf.ELF.debug:6
 msgid "Extra arguments to :func:`.gdb.debug`"
@@ -856,10 +854,8 @@ msgid "Zeroes out the ``PT_GNU_STACK`` program header ``p_type`` field."
 msgstr "プログラムヘッダ ``PT_GNU_STACK`` の ``p_type`` フィールドをゼロにします。"
 
 #: of pwnlib.elf.elf.ELF.disasm:1
-msgid ""
-"Returns a string of disassembled instructions at the specified virtual "
-"memory address"
-msgstr ""
+msgid "Returns a string of disassembled instructions at the specified virtual memory address"
+msgstr "指定した仮想メモリアドレスの逆アセンブル結果を文字列で返す"
 
 #: of pwnlib.elf.elf.ELF.dynamic_by_tag:1
 msgid "Named ``DT_XXX`` tag (e.g. ``'DT_STRTAB'``)."
@@ -875,7 +871,7 @@ msgstr "``DT_STRTAB`` テーブルから、列挙された文字列を取得し�
 
 #: of pwnlib.elf.elf.ELF.dynamic_string:3
 msgid "String index"
-msgstr ""
+msgstr "文字列のインデックス"
 
 #: of pwnlib.elf.elf.ELF.dynamic_string:6
 msgid ":class:`str` -- String from the table as raw bytes."
@@ -931,7 +927,7 @@ msgstr "``PT_LOAD`` セグメントで記述される仮想アドレスを受け
 
 #: of pwnlib.elf.elf.ELF.get_segment_for_address:5
 msgid "Virtual address to find"
-msgstr ""
+msgstr "探す仮想アドレス"
 
 #: of pwnlib.elf.elf.ELF.get_segment_for_address:7
 msgid "Number of bytes which must be available after ``address`` in **both** the file-backed data for the segment, and the memory region which is reserved for the data."
@@ -943,7 +939,7 @@ msgstr ":class:`.segments.Segment` オブジェクトか、``None`` のどちら
 
 #: elftools.elf.elffile.ELFFile.get_shstrndx:1 of
 msgid "Find the string table section index for the section header table"
-msgstr ""
+msgstr "セクションヘッダテーブルの文字列テーブルセクションのインデックスを探す"
 
 #: elftools.elf.elffile.ELFFile.get_supplementary_dwarfinfo:1 of
 msgid "Read supplementary dwarfinfo, from either the standared .debug_sup section, the GNU proprietary .gnu_debugaltlink, or .gnu_debuglink."
@@ -988,11 +984,11 @@ msgstr "指定した種類に一致するセグメントです。"
 
 #: elftools.elf.elffile.ELFFile.num_sections:1 of
 msgid "Number of sections in the file"
-msgstr ""
+msgstr "ファイル内のセクションの数"
 
 #: elftools.elf.elffile.ELFFile.num_segments:1 of
 msgid "Number of segments in the file"
-msgstr ""
+msgstr "ファイル内のセグメントの数"
 
 #: of pwnlib.elf.elf.ELF.offset_to_vaddr:1
 msgid "Translates the specified offset to a virtual address."
@@ -1000,7 +996,7 @@ msgstr "指定したオフセットを仮想アドレスに変換します。"
 
 #: of pwnlib.elf.elf.ELF.offset_to_vaddr:3
 msgid "Offset to translate"
-msgstr ""
+msgstr "変換するオフセット"
 
 #: of pwnlib.elf.elf.ELF.offset_to_vaddr:6
 msgid "`int` -- Virtual address which corresponds to the file offset, or :const:`None`."
@@ -1056,15 +1052,15 @@ msgstr ""
 
 #: of pwnlib.elf.elf.ELF.read:1
 msgid "Read data from the specified virtual address"
-msgstr ""
+msgstr "指定した仮想アドレスからデータを読む"
 
 #: of pwnlib.elf.elf.ELF.read:3
 msgid "Virtual address to read"
-msgstr ""
+msgstr "読む仮想アドレス"
 
 #: of pwnlib.elf.elf.ELF.read:5
 msgid "Number of bytes to read"
-msgstr ""
+msgstr "読むバイト数"
 
 #: of pwnlib.elf.elf.ELF.read:8
 msgid "A :class:`bytes` object, or :const:`None`."
@@ -1100,7 +1096,7 @@ msgstr "すべてはユーザーが選んだベースアドレスからの相対
 
 #: of pwnlib.elf.elf.ELF.save:1
 msgid "Save the ELF to a file"
-msgstr ""
+msgstr "ELF をファイルに保存する"
 
 #: of pwnlib.elf.elf.ELF.search:1
 msgid "Search the ELF's virtual address space for the specified string."
@@ -1144,11 +1140,11 @@ msgstr "実行可能なセクションで、命令を検索することもでき
 
 #: of pwnlib.elf.elf.ELF.section:1
 msgid "Gets data for the named section"
-msgstr ""
+msgstr "指定した名前のセクションのデータを取得する"
 
 #: of pwnlib.elf.elf.ELF.section:3
 msgid "Name of the section"
-msgstr ""
+msgstr "セクションの名前"
 
 #: of pwnlib.elf.elf.ELF.section:6
 msgid ":class:`str` -- String containing the bytes for that section"
@@ -1170,11 +1166,11 @@ msgstr "指定した ``address`` から整数をアンパックします。"
 
 #: of pwnlib.elf.elf.ELF.vaddr_to_offset:1
 msgid "Translates the specified virtual address to a file offset"
-msgstr ""
+msgstr "指定した仮想アドレスをファイルオフセットに変換する"
 
 #: of pwnlib.elf.elf.ELF.vaddr_to_offset:3
 msgid "Virtual address to translate"
-msgstr ""
+msgstr "変換する仮想アドレス"
 
 #: of pwnlib.elf.elf.ELF.vaddr_to_offset:6
 msgid "*int* -- Offset within the ELF file which corresponds to the address, or :const:`None`."
@@ -1182,15 +1178,15 @@ msgstr "*int* -- アドレスに対応する ELF ファイル内のオフセッ�
 
 #: of pwnlib.elf.elf.ELF.write:1
 msgid "Writes data to the specified virtual address"
-msgstr ""
+msgstr "指定した仮想アドレスにデータを書き込む"
 
 #: of pwnlib.elf.elf.ELF.write:3
 msgid "Virtual address to write"
-msgstr ""
+msgstr "書き込む仮想アドレス"
 
 #: of pwnlib.elf.elf.ELF.write:5
 msgid "Bytes to write"
-msgstr ""
+msgstr "書き込むバイト列"
 
 #: of pwnlib.elf.elf.ELF.write:10
 msgid "This routine does not check the bounds on the write to ensure that it stays in the same segment."
@@ -1269,11 +1265,11 @@ msgstr "ファイルのビット幅です。"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.build:1
 msgid "Linux kernel build commit, if this is a Linux kernel image"
-msgstr ""
+msgstr "Linux カーネルイメージの場合、そのビルドのコミット"
 
 #: of pwnlib.elf.elf.ELF.buildid:1
 msgid "GNU Build ID embedded into the binary"
-msgstr ""
+msgstr "バイナリに埋め込まれた GNU Build ID"
 
 #: of pwnlib.elf.elf.ELF.buildid:3 pwnlib.elf.elf.ELF.data:6
 msgid ":class:`bytes`"
@@ -1281,7 +1277,7 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.bytes:1
 msgid "Pointer width, in bytes"
-msgstr ""
+msgstr "ポインタの幅(バイト単位)"
 
 #: of pwnlib.elf.elf.ELF.canary:1
 msgid "Whether the current binary uses stack canaries."
@@ -1289,7 +1285,7 @@ msgstr "このバイナリがスタックカナリアを使っているかどう
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.config:1
 msgid "Linux kernel configuration, if this is a Linux kernel image"
-msgstr ""
+msgstr "Linux カーネルイメージの場合、その設定"
 
 #: of pwnlib.elf.elf.ELF.data:1
 msgid "Raw data of the ELF file."
@@ -1299,7 +1295,7 @@ msgstr "ELF ファイルの生データです。"
 #: pwnlib.elf.elf.ELF.non_writable_segments:3 pwnlib.elf.elf.ELF.rwx_segments:3
 #: pwnlib.elf.elf.ELF.writable_segments:3
 msgid "See:"
-msgstr ""
+msgstr "参照:"
 
 #: of pwnlib.elf.elf.ELF.data:4
 msgid ":meth:`get_data`"
@@ -1307,11 +1303,11 @@ msgstr ""
 
 #: of pwnlib.elf.elf.ELF.debuginfo:1
 msgid "Whether the current binary has debug information"
-msgstr ""
+msgstr "現在のバイナリにデバッグ情報があるかどうか"
 
 #: of pwnlib.elf.elf.ELF.dwarf:1
 msgid "DWARF info for the elf"
-msgstr ""
+msgstr "この ELF の DWARF 情報"
 
 #: of pwnlib.elf.elf.ELF.elftype:1
 msgid "ELF type (``EXEC``, ``DYN``, etc)"
@@ -1324,7 +1320,7 @@ msgstr "ファイルのエンディアンです(例: ``'big'``、``'little'``)�
 #: of pwnlib.elf.elf.ELF.entry:1 pwnlib.elf.elf.ELF.entrypoint:1
 #: pwnlib.elf.elf.ELF.start:1
 msgid "Address of the entry point for the ELF"
-msgstr ""
+msgstr "ELF のエントリポイントのアドレス"
 
 #: of pwnlib.elf.elf.ELF.execstack:1
 msgid "Whether dynamically loading the current binary will make the stack executable."
@@ -1362,7 +1358,7 @@ msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.file:1
 msgid "Open handle to the ELF file on disk"
-msgstr ""
+msgstr "ディスク上の ELF ファイルを開いたハンドル"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.file:3
 msgid ":class:`file`"
@@ -1431,7 +1427,7 @@ msgstr "この攻略可能性は、CWTE CTF 2025 で初めて指摘されまし�
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.linker:1
 msgid "Path to the linker for the ELF"
-msgstr ""
+msgstr "ELF のリンカへのパス"
 
 #: of pwnlib.elf.elf.ELF.maps:1
 #, python-brace-format
@@ -1440,7 +1436,7 @@ msgstr "この ELF のアドレス空間内のすべてのマッピングにつ�
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.memory:1
 msgid "IntervalTree which maps all of the loaded memory segments"
-msgstr ""
+msgstr "読み込まれたすべてのメモリセグメントを対応づける IntervalTree"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.mmap:1
 msgid "Memory-mapped copy of the ELF file on disk"
@@ -1456,7 +1452,7 @@ msgstr "このバイナリが、Memory Sanitizer(``MSAN``)付きでビルドさ�
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.native:1
 msgid "Whether this ELF should be able to run natively"
-msgstr ""
+msgstr "この ELF をネイティブに実行できるかどうか"
 
 #: of pwnlib.elf.elf.ELF.non_writable_segments:1
 msgid "List of all segments which are NOT writeable."
@@ -1484,7 +1480,7 @@ msgstr "規則は次のとおりです。"
 
 #: of pwnlib.elf.elf.ELF.nx:16
 msgid "ELF arch"
-msgstr ""
+msgstr "ELF のアーキテクチャ"
 
 #: of pwnlib.elf.elf.ELF.nx:16
 msgid "linux"
@@ -1683,7 +1679,7 @@ msgstr "`source <https://github.com/torvalds/linux/blob/v6.3/include/linux/elf.h
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.os:1
 msgid "Operating system of the ELF"
-msgstr ""
+msgstr "ELF のオペレーティングシステム"
 
 #: of pwnlib.elf.elf.ELF.packed:1
 msgid "Whether the current binary is packed with UPX."
@@ -1691,7 +1687,7 @@ msgstr "このバイナリが UPX でパックされているかどうかです�
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.path:1
 msgid "Path to the file"
-msgstr ""
+msgstr "ファイルのパス"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.plt:1
 msgid ":class:`dotdict` of ``name`` to ``address`` for all Procedure Linkage Table (PLT) entries"
@@ -1767,7 +1763,7 @@ msgstr "ELF が静的リンクされていれば ``True`` です。"
 
 #: of pwnlib.elf.elf.ELF.stripped:1
 msgid "Whether the current binary has been stripped of symbols"
-msgstr ""
+msgstr "現在のバイナリからシンボルが取り除かれているかどうか"
 
 #: of pwnlib.elf.elf.ELF.sym:1
 msgid "Alias for :attr:`.ELF.symbols`"
@@ -1787,7 +1783,7 @@ msgstr "このバイナリが、Undefined Behavior Sanitizer(``UBSAN``)付きで
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.version:1
 msgid "Linux kernel version, if this is a Linux kernel image"
-msgstr ""
+msgstr "Linux カーネルイメージの場合、そのカーネルのバージョン"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.ELF.version:3
 msgid ":class:`tuple`"
@@ -1804,25 +1800,25 @@ msgstr ":class:`.ELF` バイナリ内の関数に関する情報をまとめた�
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.Function:3
 #: pwnlib.elf.elf.Function.name:1
 msgid "Name of the function"
-msgstr ""
+msgstr "関数の名前"
 
 #: of pwnlib.elf.elf.Function:5
 msgid "Address of the function"
-msgstr ""
+msgstr "関数のアドレス"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.Function:7
 #: pwnlib.elf.elf.Function.size:1
 msgid "Size of the function, in bytes"
-msgstr ""
+msgstr "関数のサイズ(バイト単位)"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.Function:9
 #: pwnlib.elf.elf.Function.elf:1
 msgid "Encapsulating ELF object"
-msgstr ""
+msgstr "それを含む ELF オブジェクト"
 
 #: ../pwntools/docs/docstring of pwnlib.elf.elf.Function.address:1
 msgid "Address of the function in the encapsulating ELF"
-msgstr ""
+msgstr "それを含む ELF 内での関数のアドレス"
 
 #: of pwnlib.elf.elf.dotdict:1
 msgid "Wrapper to allow dotted access to dictionary elements."

@@ -49,7 +49,7 @@ msgstr "AMD64 でも ``Ret2dlresolve`` を使えます。"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:1
 msgid "Create a ret2dlresolve payload"
-msgstr ""
+msgstr "ret2dlresolve のペイロードを作る"
 
 #: ../pwntools/docs/source/rop/ret2dlresolve.rst
 #: ../pwntools/docs/source/rop/rop.rst ../pwntools/docs/source/rop/srop.rst of
@@ -60,15 +60,15 @@ msgstr ""
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:3
 msgid "Binary to search"
-msgstr ""
+msgstr "検索対象のバイナリ"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:5
 msgid "Function to search for"
-msgstr ""
+msgstr "検索する関数"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:7
 msgid "List of arguments to pass to the function"
-msgstr ""
+msgstr "関数に渡す引数のリスト"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:9
 msgid "The address where the payload will be written to. If not provided, a suitable address will be chosen automatically (recommended)."
@@ -100,7 +100,7 @@ msgstr "それが適さない場合は、このオブジェクトが手動での
 #: pwnlib.rop.rop.ROP.__weakref__:1
 #: pwnlib.rop.srop.SigreturnFrame.__weakref__:1
 msgid "list of weak references to the object"
-msgstr ""
+msgstr "このオブジェクトへの弱参照のリスト"
 
 #: ../pwntools/docs/source/rop/rop.rst:28
 msgid ":mod:`pwnlib.rop.rop` --- Return Oriented Programming"
@@ -108,11 +108,11 @@ msgstr ":mod:`pwnlib.rop.rop` --- Return Oriented Programming"
 
 #: of pwnlib.rop.rop:1
 msgid "Return Oriented Programming"
-msgstr ""
+msgstr "Return Oriented Programming(ROP)"
 
 #: of pwnlib.rop.rop:4
 msgid "Manual ROP"
-msgstr ""
+msgstr "手作業での ROP"
 
 #: of pwnlib.rop.rop:6
 msgid "The ROP tool can be used to build stacks pretty trivially. Let's create a fake binary which has some symbols which might have been useful."
@@ -128,7 +128,7 @@ msgstr "ROP オブジェクトを読み込んだら、``ROP`` オブジェクト
 
 #: of pwnlib.rop.rop:26
 msgid "Other, more complicated gadgets also happen magically"
-msgstr ""
+msgstr "ほかのもっと複雑なガジェットも、自然に見つかります。"
 
 #: of pwnlib.rop.rop:31
 msgid "The easiest way to set up individual registers is to invoke the ``ROP`` object as a callable, with the registers as arguments. This has the benefit of using multi-pop gadgets to set multiple registers with one gadget."
@@ -184,7 +184,7 @@ msgstr "アドレスに不正な文字（badchar）を含むガジェットは�
 
 #: of pwnlib.rop.rop:183
 msgid "ROP Example"
-msgstr ""
+msgstr "ROP の例"
 
 #: of pwnlib.rop.rop:185
 msgid "Let's assume we have a trivial binary that just reads some data onto the stack, and returns."
@@ -216,7 +216,7 @@ msgstr "試してみましょう。"
 
 #: of pwnlib.rop.rop:239
 msgid "ROP Example (amd64)"
-msgstr ""
+msgstr "ROP の例 (amd64)"
 
 #: of pwnlib.rop.rop:241
 msgid "For amd64 binaries, the registers are loaded off the stack.  Pwntools can do basic reasoning about simple \"pop; pop; add; ret\"-style gadgets, and satisfy requirements so that everything \"just works\"."
@@ -272,7 +272,7 @@ msgstr "ROP チェーンの生成を簡単にするクラスです。"
 
 #: of pwnlib.rop.rop.ROP:3
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.rop.rop.ROP:109 pwnlib.rop.rop.ROP.__init__:1
 msgid "List of :class:`.ELF` objects or single :class:`.ELF` for mining gadgets. bytes or str are passed to :class:`.ELF`'s constructor."
@@ -290,7 +290,7 @@ msgstr "ROP ガジェットのアドレスに含めてはいけない文字。"
 
 #: of pwnlib.rop.rop.ROP.clear_cache:1
 msgid "Clears the ROP gadget cache"
-msgstr ""
+msgstr "ROP ガジェットのキャッシュを消去する"
 
 #: of pwnlib.rop.rop.ROP.__bytes__:1
 msgid "Returns: Raw bytes of the ROP chain"
@@ -313,10 +313,8 @@ msgid "Mapping of registers to values. Can instead provide ``kwargs``."
 msgstr "レジスタと値の対応。代わりに ``kwargs`` を渡すこともできます。"
 
 #: of pwnlib.rop.rop.ROP.__get_cachefile_name:1
-msgid ""
-"Given an ELF or list of ELF objects, return a cache file for the set of "
-"files"
-msgstr ""
+msgid "Given an ELF or list of ELF objects, return a cache file for the set of files"
+msgstr "ELF または ELF オブジェクトのリストを受け取り、そのファイル群用のキャッシュファイルを返す"
 
 #: of pwnlib.rop.rop.ROP.__getattr__:1
 msgid "Helper to make finding ROP gadgets easier."
@@ -332,7 +330,7 @@ msgstr "``rop.function(args)`` は ``rop.call(function, args)`` と同じ意味�
 
 #: of pwnlib.rop.rop.ROP.__load:1
 msgid "Load all ROP gadgets for the selected ELF files"
-msgstr ""
+msgstr "選んだ ELF ファイルのすべての ROP ガジェットを読み込む"
 
 #: of pwnlib.rop.rop.ROP.__repr__:1
 msgid "Return repr(self)."
@@ -369,7 +367,7 @@ msgstr "出力用の省略可能な引数。``base`` から始まるスタック
 
 #: of pwnlib.rop.rop.ROP.call:1
 msgid "Add a call to the ROP chain"
-msgstr ""
+msgstr "ROP チェーンに呼び出しを追加する"
 
 #: of pwnlib.rop.rop.ROP.call:3
 msgid "Value which can be looked up via 'resolve', or is already an integer."
@@ -381,15 +379,15 @@ msgstr "pack() に渡せる引数のリスト。基準アドレスが設定さ�
 
 #: of pwnlib.rop.rop.ROP.chain:1
 msgid "Build the ROP chain"
-msgstr ""
+msgstr "ROP チェーンを組み立てる"
 
 #: of pwnlib.rop.rop.ROP.chain:7
 msgid "str containing raw ROP bytes"
-msgstr ""
+msgstr "ROP の生バイト列を含む str"
 
 #: of pwnlib.rop.rop.ROP.describe:1
 msgid "Return a description for an object in the ROP stack"
-msgstr ""
+msgstr "ROP スタック内のオブジェクトの説明を返す"
 
 #: of pwnlib.rop.rop.ROP.dump:1
 msgid "Dump the ROP chain in an easy-to-read manner"
@@ -417,7 +415,7 @@ msgstr "設定するラベルの名前。一意である必要があります。
 
 #: of pwnlib.rop.rop.ROP.label:10 pwnlib.rop.rop.ROP.ref:14
 msgid "Examples:"
-msgstr ""
+msgstr "例:"
 
 #: of pwnlib.rop.rop.ROP.label:26
 msgid "The base address of your rop chain in memory has to be known:"
@@ -473,11 +471,11 @@ msgstr "チェーンを組み立てるときにラベルのアドレスに解決
 
 #: of pwnlib.rop.rop.ROP.resolve:1
 msgid "Resolves a symbol to an address"
-msgstr ""
+msgstr "シンボルをアドレスに解決する"
 
 #: of pwnlib.rop.rop.ROP.resolve:3
 msgid "Thing to convert into an address"
-msgstr ""
+msgstr "アドレスに変換する対象"
 
 #: of pwnlib.rop.rop.ROP.resolve:6
 msgid "int containing address of 'resolvable', or None"
@@ -485,18 +483,18 @@ msgstr "'resolvable' のアドレスを持つ int、または None"
 
 #: of pwnlib.rop.rop.ROP.ret2csu:1
 msgid "Build a ret2csu ROPchain"
-msgstr ""
+msgstr "ret2csu の ROP チェーンを組み立てる"
 
 #: of pwnlib.rop.rop.ROP.ret2csu:3 pwnlib.rop.rop.ROP.ret2csu:4
 #: pwnlib.rop.rop.ROP.ret2csu:5
 msgid "Three primary registers to populate"
-msgstr ""
+msgstr "値を設定する 3 つの主要なレジスタ"
 
 #: of pwnlib.rop.rop.ROP.ret2csu:6 pwnlib.rop.rop.ROP.ret2csu:7
 #: pwnlib.rop.rop.ROP.ret2csu:8 pwnlib.rop.rop.ROP.ret2csu:9
 #: pwnlib.rop.rop.ROP.ret2csu:10 pwnlib.rop.rop.ROP.ret2csu:11
 msgid "Optional registers to populate"
-msgstr ""
+msgstr "値を設定する任意のレジスタ"
 
 #: of pwnlib.rop.rop.ROP.ret2csu:12
 msgid "Pointer to the address of a function to call during second gadget. If None then use the address of _fini in the .dynamic section. .got.plt entries are a good target. Required for PIE binaries."
@@ -504,7 +502,7 @@ msgstr "2 番目のガジェットの実行中に呼び出す関数のアドレ�
 
 #: of pwnlib.rop.rop.ROP.ret2csu:17
 msgid "Test:"
-msgstr ""
+msgstr "テスト:"
 
 #: of pwnlib.rop.rop.ROP.search:1
 msgid "Search for a gadget which matches the specified criteria."
@@ -569,7 +567,7 @@ msgstr "'resolve' の逆の操作です。アドレスを与えると、読み�
 
 #: of pwnlib.rop.rop.ROP.unresolve:5
 msgid "Address to look up"
-msgstr ""
+msgstr "調べるアドレス"
 
 #: of pwnlib.rop.rop.ROP.unresolve:8
 msgid "String containing the symbol name for the address, disassembly for a gadget (if there's one at that address), or an empty string."
@@ -585,13 +583,11 @@ msgstr "ROP チェーン内の名前付きラベルの辞書。"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP.elfs:1
 msgid "List of ELF files which are available for mining gadgets"
-msgstr ""
+msgstr "ガジェットの探索に使える ELF ファイルのリスト"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP.migrated:1
-msgid ""
-"Whether or not the ROP chain directly sets the stack pointer to a value "
-"which is not contiguous"
-msgstr ""
+msgid "Whether or not the ROP chain directly sets the stack pointer to a value which is not contiguous"
+msgstr "ROP チェーンが、連続していない値へスタックポインタを直接設定するかどうか"
 
 #: ../pwntools/docs/source/rop/srop.rst:14
 msgid ":mod:`pwnlib.rop.srop` --- Sigreturn Oriented Programming"
@@ -599,7 +595,7 @@ msgstr ":mod:`pwnlib.rop.srop` --- Sigreturn Oriented Programming"
 
 #: of pwnlib.rop.srop:1
 msgid "Sigreturn ROP (SROP)"
-msgstr ""
+msgstr "Sigreturn ROP (SROP)"
 
 #: of pwnlib.rop.srop:3
 msgid "Sigreturn is a syscall used to restore the entire register context from memory pointed at by ESP."
@@ -659,27 +655,27 @@ msgstr ""
 
 #: of pwnlib.rop.srop.SigreturnFrame:10
 msgid "Crafting a SigreturnFrame that calls mprotect on amd64"
-msgstr ""
+msgstr "amd64 で mprotect を呼ぶ SigreturnFrame を作る"
 
 #: of pwnlib.rop.srop.SigreturnFrame:25
 msgid "Crafting a SigreturnFrame that calls mprotect on i386"
-msgstr ""
+msgstr "i386 で mprotect を呼ぶ SigreturnFrame を作る"
 
 #: of pwnlib.rop.srop.SigreturnFrame:40
 msgid "Crafting a SigreturnFrame that calls mprotect on ARM"
-msgstr ""
+msgstr "ARM で mprotect を呼ぶ SigreturnFrame を作る"
 
 #: of pwnlib.rop.srop.SigreturnFrame:53
 msgid "Crafting a SigreturnFrame that calls mprotect on MIPS"
-msgstr ""
+msgstr "MIPS で mprotect を呼ぶ SigreturnFrame を作る"
 
 #: of pwnlib.rop.srop.SigreturnFrame:68
 msgid "Crafting a SigreturnFrame that calls mprotect on MIPSel"
-msgstr ""
+msgstr "MIPSel で mprotect を呼ぶ SigreturnFrame を作る"
 
 #: of pwnlib.rop.srop.SigreturnFrame:83
 msgid "Crafting a SigreturnFrame that calls mprotect on Aarch64"
-msgstr ""
+msgstr "Aarch64 で mprotect を呼ぶ SigreturnFrame を作る"
 
 #: of pwnlib.rop.srop.SigreturnFrame.__len__:1
 msgid "Return len(self)."
