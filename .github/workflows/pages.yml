@@ -44,8 +44,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import pathlib, re
-          banner = ('<div class="ja-notice" style="background:#fff8e1;border:1px solid #e0c36a;border-radius:6px;'
-                    'padding:8px 12px;margin:0 0 16px;font-size:13px;line-height:1.6">'
+          banner = ('<div class="ja-notice">'
                     'これは pwntools ドキュメントの<strong>非公式の日本語訳</strong>です。'
                     '訳していない部分は英語のままです。原文: '
                     '<a href="https://docs.pwntools.com/">docs.pwntools.com</a><br>'
@@ -71,9 +70,16 @@ jobs:
               marker = '<div class="wy-nav-content">'
               if marker in s:
                   s = s.replace(marker, marker + banner, 1); n += 1
+              depth = len(p.relative_to('_site').parts) - 1
+              root = '../' * depth
+              head = ''.join(f'<link rel="stylesheet" href="{root}_static/ja-docs/{f}">' for f in ('ja-docs.css', 'sphinx.css'))
+              tail = ('<script>window.JaDocs={repo:"https://github.com/0xFF-MinusOne/pwntools-api-ja"};</script>'
+                      + ''.join(f'<script src="{root}_static/ja-docs/{f}"></script>' for f in ('ja-docs.js', 'glossary-pwntools.js', 'glossary.js')))
+              s = s.replace('</head>', head + '</head>', 1).replace('</body>', tail + '</body>', 1)
               p.write_text(s, encoding='utf-8')
           print(n, 'ページに入れました')
           PY
+          mkdir -p _site/_static/ja-docs && cp theme/*.css theme/*.js _site/_static/ja-docs/
           cp pwntools/LICENSE.md _site/LICENSE.txt 2>/dev/null || true
       - uses: actions/upload-pages-artifact@v3
         with:

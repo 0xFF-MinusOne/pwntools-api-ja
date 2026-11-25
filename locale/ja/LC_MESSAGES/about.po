@@ -37,11 +37,11 @@ msgstr "pwntools 2.0 を設計し直すにあたり、相反する 2 つの目�
 
 #: ../pwntools/docs/source/about.rst:13
 msgid "We would like to have a \"normal\" python module structure, to allow other people to familiarize themselves with pwntools quickly."
-msgstr "ほかの人が pwntools にすばやく慣れられるように、「通常の」Python モジュール構成にしたい。"
+msgstr "ほかの人が pwntools にすばやく慣れられるように、「通常の」Python モジュール構成にしたいと考えました。"
 
 #: ../pwntools/docs/source/about.rst:15
 msgid "We would like to have even more side-effects, especially by putting the terminal in raw-mode."
-msgstr "とくにターミナルを raw モードにするなど、副作用をさらに増やしたい。"
+msgstr "とくにターミナルを raw モードにするなど、副作用をさらに増やしたいと考えました。"
 
 #: ../pwntools/docs/source/about.rst:18
 msgid "To make this possible, we decided to have two different modules. :mod:`pwnlib` would be our nice, clean Python module, while :mod:`pwn` would be used during CTFs."
