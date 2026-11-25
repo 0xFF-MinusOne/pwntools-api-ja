@@ -21,32 +21,27 @@ msgstr ""
 
 #: ../pwntools/docs/source/memleak.rst:6
 msgid ":mod:`pwnlib.memleak` --- Helper class for leaking memory"
-msgstr ""
+msgstr ":mod:`pwnlib.memleak` --- メモリリーク用のヘルパークラス"
 
 #: of pwnlib.memleak.MemLeak:1
 msgid "MemLeak is a caching and heuristic tool for exploiting memory leaks."
-msgstr ""
+msgstr "MemLeak は、メモリリークをエクスプロイトするための、キャッシュとヒューリスティクス（経験則）のツールです。"
 
 #: of pwnlib.memleak.MemLeak:3
 msgid "It can be used as a decorator, around functions of the form:"
-msgstr ""
+msgstr "次の形の関数に対するデコレータとして使えます。"
 
 #: of pwnlib.memleak.MemLeak:5
 msgid "def some_leaker(addr):"
-msgstr ""
+msgstr "def some_leaker(addr):"
 
 #: of pwnlib.memleak.MemLeak:6
 msgid "... return data_as_string_or_None"
-msgstr ""
+msgstr "... return data_as_string_or_None"
 
 #: of pwnlib.memleak.MemLeak:9
-msgid ""
-"It will cache leaked memory (which requires either non-randomized static "
-"data or a continouous session). If required, dynamic or known data can be"
-" set with the set-functions, but this is usually not required. If a byte "
-"cannot be recovered, it will try to leak nearby bytes in the hope that "
-"the byte is recovered as a side-effect."
-msgstr ""
+msgid "It will cache leaked memory (which requires either non-randomized static data or a continouous session). If required, dynamic or known data can be set with the set-functions, but this is usually not required. If a byte cannot be recovered, it will try to leak nearby bytes in the hope that the byte is recovered as a side-effect."
+msgstr "リークしたメモリをキャッシュします（そのためには、ランダム化されない静的なデータか、途切れないセッションが必要です）。必要なら、動的なデータや既知のデータを set 系の関数で設定できますが、通常は不要です。あるバイトを復元できなかった場合は、副作用としてそのバイトが復元されることを期待して、近くのバイトをリークしようとします。"
 
 #: ../pwntools/docs/source/memleak.rst
 msgid "Parameters"
@@ -54,92 +49,72 @@ msgstr ""
 
 #: of pwnlib.memleak.MemLeak:15
 msgid "The leaker function."
-msgstr ""
+msgstr "リーク用の関数。"
 
 #: of pwnlib.memleak.MemLeak:17
 msgid "How many bytes to search backwards in case an address does not work."
-msgstr ""
+msgstr "アドレスがうまく動かない場合に、後ろ向きに探すバイト数。"
 
 #: of pwnlib.memleak.MemLeak:19
-msgid ""
-"Whether to reraise call :func:`pwnlib.log.warning` in case the leaker "
-"function throws an exception."
-msgstr ""
+msgid "Whether to reraise call :func:`pwnlib.log.warning` in case the leaker function throws an exception."
+msgstr "リーク用の関数が例外を投げたときに、:func:`pwnlib.log.warning` を呼び出して再度例外を発生させるかどうか。"
 
 #: of pwnlib.memleak.MemLeak:21
-msgid ""
-"If set, persist the leak cache to this path and reload it on "
-"construction, so leaked bytes are reused across runs."
-msgstr ""
+msgid "If set, persist the leak cache to this path and reload it on construction, so leaked bytes are reused across runs."
+msgstr "指定すると、リークのキャッシュをこのパスに保存し、構築時に読み込み直します。そのため、リークしたバイトを実行をまたいで再利用できます。"
 
 #: of pwnlib.memleak.MemLeak:24
 msgid "Example:"
 msgstr ""
 
 #: of pwnlib.memleak.MemLeak.NoNewlines:1
-msgid ""
-"Wrapper for leak functions such that addresses which contain newline "
-"bytes are not leaked."
-msgstr ""
+msgid "Wrapper for leak functions such that addresses which contain newline bytes are not leaked."
+msgstr "リーク用の関数のラッパーで、改行バイトを含むアドレスをリークしないようにします。"
 
 #: of pwnlib.memleak.MemLeak.NoNewlines:4
-msgid ""
-"This is useful if the address which is used for the leak is provided by "
-"e.g. ``fgets()``."
-msgstr ""
+msgid "This is useful if the address which is used for the leak is provided by e.g. ``fgets()``."
+msgstr "リークに使うアドレスが、例えば ``fgets()`` で与えられる場合に便利です。"
 
 #: of pwnlib.memleak.MemLeak.NoNulls:1
-msgid ""
-"Wrapper for leak functions such that addresses which contain NULL bytes "
-"are not leaked."
-msgstr ""
+msgid "Wrapper for leak functions such that addresses which contain NULL bytes are not leaked."
+msgstr "リーク用の関数のラッパーで、NULL バイトを含むアドレスをリークしないようにします。"
 
 #: of pwnlib.memleak.MemLeak.NoNulls:4
 #, python-format
-msgid ""
-"This is useful if the address which is used for the leak is read in via a"
-" string-reading function like ``scanf(\"%s\")`` or smilar."
-msgstr ""
+msgid "This is useful if the address which is used for the leak is read in via a string-reading function like ``scanf(\"%s\")`` or smilar."
+msgstr "リークに使うアドレスが、``scanf(\"%s\")`` のような文字列を読み込む関数などで読み込まれる場合に便利です。"
 
 #: of pwnlib.memleak.MemLeak.NoWhitespace:1
-msgid ""
-"Wrapper for leak functions such that addresses which contain whitespace "
-"bytes are not leaked."
-msgstr ""
+msgid "Wrapper for leak functions such that addresses which contain whitespace bytes are not leaked."
+msgstr "リーク用の関数のラッパーで、空白のバイトを含むアドレスをリークしないようにします。"
 
 #: of pwnlib.memleak.MemLeak.NoWhitespace:4
-msgid ""
-"This is useful if the address which is used for the leak is read in via "
-"e.g. ``scanf()``."
-msgstr ""
+msgid "This is useful if the address which is used for the leak is read in via e.g. ``scanf()``."
+msgstr "リークに使うアドレスが、例えば ``scanf()`` で読み込まれる場合に便利です。"
 
 #: of pwnlib.memleak.MemLeak.String:1
-msgid ""
-"Wrapper for leak functions which leak strings, such that a NULL "
-"terminator is automaticall added."
-msgstr ""
+msgid "Wrapper for leak functions which leak strings, such that a NULL terminator is automaticall added."
+msgstr "文字列をリークするリーク用の関数のラッパーで、NULL 終端を自動で付け足します。"
 
 #: of pwnlib.memleak.MemLeak.String:4
-msgid ""
-"This is useful if the data leaked is printed out as a NULL-terminated "
-"string, via e.g. ``printf()``."
-msgstr ""
+msgid "This is useful if the data leaked is printed out as a NULL-terminated string, via e.g. ``printf()``."
+msgstr "リークするデータが、例えば ``printf()`` で、NULL 終端の文字列として出力される場合に便利です。"
 
 #: of pwnlib.memleak.MemLeak.__call__:1
 msgid "Call self as a function."
-msgstr ""
+msgstr "自分自身を関数として呼び出します。"
 
 #: of pwnlib.memleak.MemLeak.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: of pwnlib.memleak.MemLeak._leak:1
 msgid "_leak(addr, n) => str"
-msgstr ""
+msgstr "_leak(addr, n) => str"
 
 #: of pwnlib.memleak.MemLeak._leak:3
 msgid "Leak ``n`` consecutive bytes starting at ``addr``."
-msgstr ""
+msgstr "``addr`` から始まる連続した ``n`` バイトをリークします。"
 
 #: ../pwntools/docs/source/memleak.rst of pwnlib.memleak.MemLeak.n
 #: pwnlib.memleak.MemLeak.s
@@ -148,11 +123,11 @@ msgstr ""
 
 #: of pwnlib.memleak.MemLeak._leak:5
 msgid "A string of length ``n``, or :const:`None`."
-msgstr ""
+msgstr "長さ ``n`` の文字列、または :const:`None`。"
 
 #: of pwnlib.memleak.MemLeak.b:1 pwnlib.memleak.MemLeak.b:3
 msgid "Leak byte at ``((uint8_t*) addr)[ndx]``"
-msgstr ""
+msgstr "``((uint8_t*) addr)[ndx]`` のバイトをリークします。"
 
 #: of pwnlib.memleak.MemLeak.b:4 pwnlib.memleak.MemLeak.b:6
 #: pwnlib.memleak.MemLeak.clearb:5 pwnlib.memleak.MemLeak.cleard:5
@@ -168,40 +143,32 @@ msgid "Examples"
 msgstr ""
 
 #: of pwnlib.memleak.MemLeak.clearb:1
-msgid ""
-"Clears byte at ``((uint8_t*)addr)[ndx]`` from the cache and returns the "
-"removed value or `None` if the address was not completely set."
-msgstr ""
+msgid "Clears byte at ``((uint8_t*)addr)[ndx]`` from the cache and returns the removed value or `None` if the address was not completely set."
+msgstr "``((uint8_t*)addr)[ndx]`` のバイトをキャッシュから消去し、消去した値を返します。そのアドレスが完全には設定されていなかった場合は `None` を返します。"
 
 #: of pwnlib.memleak.MemLeak.cleard:1
-msgid ""
-"Clears dword at ``((uint32_t*)addr)[ndx]`` from the cache and returns the"
-" removed value or `None` if the address was not completely set."
-msgstr ""
+msgid "Clears dword at ``((uint32_t*)addr)[ndx]`` from the cache and returns the removed value or `None` if the address was not completely set."
+msgstr "``((uint32_t*)addr)[ndx]`` のダブルワードをキャッシュから消去し、消去した値を返します。そのアドレスが完全には設定されていなかった場合は `None` を返します。"
 
 #: of pwnlib.memleak.MemLeak.clearq:1
-msgid ""
-"Clears qword at ``((uint64_t*)addr)[ndx]`` from the cache and returns the"
-" removed value or `None` if the address was not completely set."
-msgstr ""
+msgid "Clears qword at ``((uint64_t*)addr)[ndx]`` from the cache and returns the removed value or `None` if the address was not completely set."
+msgstr "``((uint64_t*)addr)[ndx]`` のクアッドワードをキャッシュから消去し、消去した値を返します。そのアドレスが完全には設定されていなかった場合は `None` を返します。"
 
 #: of pwnlib.memleak.MemLeak.clearw:1
-msgid ""
-"Clears word at ``((uint16_t*)addr)[ndx]`` from the cache and returns the "
-"removed value or `None` if the address was not completely set."
-msgstr ""
+msgid "Clears word at ``((uint16_t*)addr)[ndx]`` from the cache and returns the removed value or `None` if the address was not completely set."
+msgstr "``((uint16_t*)addr)[ndx]`` のワードをキャッシュから消去し、消去した値を返します。そのアドレスが完全には設定されていなかった場合は `None` を返します。"
 
 #: of pwnlib.memleak.MemLeak.d:1 pwnlib.memleak.MemLeak.d:3
 msgid "Leak dword at ``((uint32_t*) addr)[ndx]``"
-msgstr ""
+msgstr "``((uint32_t*) addr)[ndx]`` のダブルワードをリークします。"
 
 #: of pwnlib.memleak.MemLeak.field:1
 msgid "field(address, field) => a structure field."
-msgstr ""
+msgstr "field(address, field) => 構造体のフィールド。"
 
 #: of pwnlib.memleak.MemLeak.field:3
 msgid "Leak a field from a structure."
-msgstr ""
+msgstr "構造体のフィールドをリークします。"
 
 #: of pwnlib.memleak.MemLeak.field:5 pwnlib.memleak.MemLeak.field_compare:6
 msgid "Base address to calculate offsets from"
@@ -214,21 +181,19 @@ msgstr ""
 #: of pwnlib.memleak.MemLeak.field:10 pwnlib.memleak.MemLeak.field_compare:13
 #: pwnlib.memleak.MemLeak.struct:8
 msgid "Return Value:"
-msgstr ""
+msgstr "戻り値:"
 
 #: of pwnlib.memleak.MemLeak.field:11 pwnlib.memleak.MemLeak.field_compare:14
 msgid "The type of the return value will be dictated by the type of ``field``."
-msgstr ""
+msgstr "戻り値の型は、``field`` の型によって決まります。"
 
 #: of pwnlib.memleak.MemLeak.field_compare:1
 msgid "field_compare(address, field, expected) ==> bool"
-msgstr ""
+msgstr "field_compare(address, field, expected) ==> bool"
 
 #: of pwnlib.memleak.MemLeak.field_compare:3
-msgid ""
-"Leak a field from a structure, with an expected value. As soon as any "
-"mismatch is found, stop leaking the structure."
-msgstr ""
+msgid "Leak a field from a structure, with an expected value. As soon as any mismatch is found, stop leaking the structure."
+msgstr "期待する値を指定して、構造体のフィールドをリークします。一致しない箇所が見つかった時点で、構造体のリークをやめます。"
 
 #: of pwnlib.memleak.MemLeak.field_compare:10
 msgid "Expected value"
@@ -236,72 +201,63 @@ msgstr ""
 
 #: of pwnlib.memleak.MemLeak.n:1
 msgid "Leak `numb` bytes at `addr`."
-msgstr ""
+msgstr "`addr` の `numb` バイトをリークします。"
 
 #: of pwnlib.memleak.MemLeak.n:3
 msgid "A string with the leaked bytes, will return `None` if any are missing"
-msgstr ""
+msgstr "リークしたバイトを含む文字列。足りないバイトがある場合は `None` を返します。"
 
 #: of pwnlib.memleak.MemLeak.p:1
 msgid "Leak a pointer-width value at ``((void**) addr)[ndx]``"
-msgstr ""
+msgstr "``((void**) addr)[ndx]`` のポインタ幅の値をリークします。"
 
 #: of pwnlib.memleak.MemLeak.setw:1
 msgid "Sets word at ``((uint16_t*)addr)[ndx]`` to `val` in the cache."
-msgstr ""
+msgstr "キャッシュ内の ``((uint16_t*)addr)[ndx]`` のワードに `val` を設定します。"
 
 #: of pwnlib.memleak.MemLeak.setd:1
 msgid "Sets dword at ``((uint32_t*)addr)[ndx]`` to `val` in the cache."
-msgstr ""
+msgstr "キャッシュ内の ``((uint32_t*)addr)[ndx]`` のダブルワードに `val` を設定します。"
 
 #: of pwnlib.memleak.MemLeak.setd:5 pwnlib.memleak.MemLeak.setq:5
 msgid "See :meth:`setw`."
-msgstr ""
+msgstr ":meth:`setw` を参照してください。"
 
 #: of pwnlib.memleak.MemLeak.setq:1
 msgid "Sets qword at ``((uint64_t*)addr)[ndx]`` to `val` in the cache."
-msgstr ""
+msgstr "キャッシュ内の ``((uint64_t*)addr)[ndx]`` のクアッドワードに `val` を設定します。"
 
 #: of pwnlib.memleak.MemLeak.setb:1
 msgid "Sets byte at ``((uint8_t*)addr)[ndx]`` to `val` in the cache."
-msgstr ""
+msgstr "キャッシュ内の ``((uint8_t*)addr)[ndx]`` のバイトに `val` を設定します。"
 
 #: of pwnlib.memleak.MemLeak.q:1 pwnlib.memleak.MemLeak.q:3
 msgid "Leak qword at ``((uint64_t*) addr)[ndx]``"
-msgstr ""
+msgstr "``((uint64_t*) addr)[ndx]`` のクアッドワードをリークします。"
 
 #: of pwnlib.memleak.MemLeak.raw:1
 msgid "Leak `numb` bytes at `addr`"
-msgstr ""
+msgstr "`addr` の `numb` バイトをリークします。"
 
 #: of pwnlib.memleak.MemLeak.s:1
 msgid "Leak bytes at `addr` until failure or a nullbyte is found"
-msgstr ""
+msgstr "失敗するか、ヌルバイトが見つかるまで、`addr` のバイトをリークします。"
 
 #: of pwnlib.memleak.MemLeak.s:3
-msgid ""
-"A string, without a NULL terminator. The returned string will be empty if"
-" the first byte is a NULL terminator, or if the first byte could not be "
-"retrieved."
-msgstr ""
+msgid "A string, without a NULL terminator. The returned string will be empty if the first byte is a NULL terminator, or if the first byte could not be retrieved."
+msgstr "NULL 終端を含まない文字列。最初のバイトが NULL 終端の場合、または最初のバイトを取得できなかった場合は、空の文字列を返します。"
 
 #: of pwnlib.memleak.MemLeak.sets:1
 msgid "Set known string at `addr`, which will be optionally be null-terminated"
-msgstr ""
+msgstr "`addr` に既知の文字列を設定します。任意で NULL 終端を付けます。"
 
 #: of pwnlib.memleak.MemLeak.sets:3
-msgid ""
-"Note that this method is a bit dumb about how it handles the data. It "
-"will null-terminate the data, but it will not stop at the first null."
-msgstr ""
+msgid "Note that this method is a bit dumb about how it handles the data. It will null-terminate the data, but it will not stop at the first null."
+msgstr "このメソッドは、データの扱いが少し単純である点に注意してください。データを NULL 終端にしますが、最初の NULL で止まることはありません。"
 
 #: of pwnlib.memleak.MemLeak.struct:1
-msgid ""
-"struct(address, struct) => structure object Leak an entire structure. "
-":param address: Addess of structure in memory :type address: int :param "
-"struct: A ctypes structure to be instantiated with leaked data :type "
-"struct: class"
-msgstr ""
+msgid "struct(address, struct) => structure object Leak an entire structure. :param address: Addess of structure in memory :type address: int :param struct: A ctypes structure to be instantiated with leaked data :type struct: class"
+msgstr "struct(address, struct) => 構造体オブジェクト 構造体全体をリークします。:param address: メモリ上の構造体のアドレス :type address: int :param struct: リークしたデータでインスタンス化する ctypes の構造体 :type struct: class"
 
 #: of pwnlib.memleak.MemLeak.struct:9
 msgid "An instance of the provided struct class, with the leaked data decoded"
@@ -313,7 +269,7 @@ msgstr ""
 
 #: of pwnlib.memleak.MemLeak.w:1 pwnlib.memleak.MemLeak.w:3
 msgid "Leak word at ``((uint16_t*) addr)[ndx]``"
-msgstr ""
+msgstr "``((uint16_t*) addr)[ndx]`` のワードをリークします。"
 
 #: of pwnlib.memleak.MemLeak.d:1
 msgid "d(addr, ndx = 0) -> int"
@@ -330,4 +286,3 @@ msgstr ""
 #: ../pwntools/docs/docstring of pwnlib.memleak.MemLeak.__weakref__:1
 msgid "list of weak references to the object"
 msgstr ""
-

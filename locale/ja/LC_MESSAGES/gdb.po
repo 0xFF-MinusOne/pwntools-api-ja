@@ -21,19 +21,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/gdb.rst:12
 msgid ":mod:`pwnlib.gdb` --- Working with GDB"
-msgstr ""
+msgstr ":mod:`pwnlib.gdb` --- GDB の操作"
 
 #: of pwnlib.gdb:1
-msgid ""
-"During exploit development, it is frequently useful to debug the target "
-"binary under GDB."
-msgstr ""
+msgid "During exploit development, it is frequently useful to debug the target binary under GDB."
+msgstr "エクスプロイトの開発中は、対象のバイナリを GDB でデバッグすると便利なことがよくあります。"
 
 #: of pwnlib.gdb:4
-msgid ""
-"Pwntools makes this easy-to-do with a handful of helper routines, "
-"designed to make your exploit-debug-update cycles much faster."
-msgstr ""
+msgid "Pwntools makes this easy-to-do with a handful of helper routines, designed to make your exploit-debug-update cycles much faster."
+msgstr "Pwntools には、エクスプロイトのデバッグと修正のサイクルをずっと速くするための補助関数が、いくつか用意されています。"
 
 #: of pwnlib.gdb:8
 msgid "Useful Functions"
@@ -41,111 +37,75 @@ msgstr ""
 
 #: of pwnlib.gdb:10
 msgid ":func:`attach` - Attach to an existing process"
-msgstr ""
+msgstr ":func:`attach` - 実行中のプロセスにアタッチします"
 
 #: of pwnlib.gdb:11
-msgid ""
-":func:`debug` - Start a new process under a debugger, stopped at the "
-"first instruction"
-msgstr ""
+msgid ":func:`debug` - Start a new process under a debugger, stopped at the first instruction"
+msgstr ":func:`debug` - 新しいプロセスをデバッガの下で起動し、最初の命令で停止させます"
 
 #: of pwnlib.gdb:12
-msgid ""
-":func:`debug_shellcode` - Build a binary with the provided shellcode, and"
-" start it under a debugger"
-msgstr ""
+msgid ":func:`debug_shellcode` - Build a binary with the provided shellcode, and start it under a debugger"
+msgstr ":func:`debug_shellcode` - 指定したシェルコードでバイナリをビルドし、デバッガの下で起動します"
 
 #: of pwnlib.gdb:15
 msgid "Debugging Tips"
 msgstr ""
 
 #: of pwnlib.gdb:17
-msgid ""
-"The :func:`attach` and :func:`debug` functions will likely be your bread "
-"and butter for debugging."
-msgstr ""
+msgid "The :func:`attach` and :func:`debug` functions will likely be your bread and butter for debugging."
+msgstr "デバッグでは、おもに :func:`attach` と :func:`debug` を使うことになるでしょう。"
 
 #: of pwnlib.gdb:20
-msgid ""
-"Both allow you to provide a script to pass to GDB when it is started, so "
-"that it can automatically set your breakpoints."
-msgstr ""
+msgid "Both allow you to provide a script to pass to GDB when it is started, so that it can automatically set your breakpoints."
+msgstr "どちらも、GDB の起動時に渡すスクリプトを指定できるので、ブレークポイントを自動で設定できます。"
 
 #: of pwnlib.gdb:24
 msgid "Attaching to Processes"
 msgstr ""
 
 #: of pwnlib.gdb:26
-msgid ""
-"To attach to an existing process, just use :func:`attach`.  It is "
-"surprisingly versatile, and can attach to a :class:`.process` for simple "
-"binaries, or will automatically find the correct process to attach to for"
-" a forking server, if given a :class:`.remote` object."
-msgstr ""
+msgid "To attach to an existing process, just use :func:`attach`.  It is surprisingly versatile, and can attach to a :class:`.process` for simple binaries, or will automatically find the correct process to attach to for a forking server, if given a :class:`.remote` object."
+msgstr "実行中のプロセスにアタッチするには、:func:`attach` を使います。意外と融通が利き、単純なバイナリでは :class:`.process` にアタッチできます。:class:`.remote` オブジェクトを渡すと、フォークするサーバーでも、アタッチすべきプロセスを自動で見つけます。"
 
 #: of pwnlib.gdb:32
 msgid "Spawning New Processes"
 msgstr ""
 
 #: of pwnlib.gdb:34
-msgid ""
-"Attaching to processes with :func:`attach` is useful, but the state the "
-"process is in may vary.  If you need to attach to a process very early, "
-"and debug it from the very first instruction (or even the start of "
-"``main``), you instead should use :func:`debug`."
-msgstr ""
+msgid "Attaching to processes with :func:`attach` is useful, but the state the process is in may vary.  If you need to attach to a process very early, and debug it from the very first instruction (or even the start of ``main``), you instead should use :func:`debug`."
+msgstr ":func:`attach` でプロセスにアタッチすると便利ですが、そのときのプロセスの状態は一定ではありません。プロセスのごく早い段階でアタッチし、最初の命令（あるいは ``main`` の先頭）からデバッグしたい場合は、代わりに :func:`debug` を使ってください。"
 
 #: of pwnlib.gdb:39
-msgid ""
-"When you use :func:`debug`, the return value is a :class:`.tube` object "
-"that you interact with exactly like normal."
-msgstr ""
+msgid "When you use :func:`debug`, the return value is a :class:`.tube` object that you interact with exactly like normal."
+msgstr ":func:`debug` を使うと、戻り値は :class:`.tube` オブジェクトになり、ふだんと同じように操作できます。"
 
 #: of pwnlib.gdb:43
 msgid "Using GDB Python API"
 msgstr ""
 
 #: of pwnlib.gdb:45
-msgid ""
-"GDB provides Python API, which is documented at "
-"https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html. Pwntools "
-"allows you to call it right from the exploit, without having to write a "
-"gdbscript. This is useful for inspecting program state, e.g. asserting "
-"that leaked values are correct, or that certain packets trigger a "
-"particular code path or put the heap in a desired state."
-msgstr ""
+msgid "GDB provides Python API, which is documented at https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html. Pwntools allows you to call it right from the exploit, without having to write a gdbscript. This is useful for inspecting program state, e.g. asserting that leaked values are correct, or that certain packets trigger a particular code path or put the heap in a desired state."
+msgstr "GDB には Python API があり、https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html に文書があります。Pwntools では、gdbscript を書かなくても、エクスプロイトの中から直接この API を呼び出せます。プログラムの状態を調べるときに便利です。たとえば、リークした値が正しいことの確認、特定のパケットが特定のコードパスを通ること、ヒープが望みの状態になることの確認などです。"
 
 #: of pwnlib.gdb:52
-msgid ""
-"Pass ``api=True`` to :func:`attach` or :func:`debug` in order to enable "
-"GDB Python API access. Pwntools will then connect to GDB using RPyC "
-"library: https://rpyc.readthedocs.io/en/latest/."
-msgstr ""
+msgid "Pass ``api=True`` to :func:`attach` or :func:`debug` in order to enable GDB Python API access. Pwntools will then connect to GDB using RPyC library: https://rpyc.readthedocs.io/en/latest/."
+msgstr ":func:`attach` または :func:`debug` に ``api=True`` を渡すと、GDB の Python API を使えるようになります。そのとき Pwntools は、RPyC ライブラリ(https://rpyc.readthedocs.io/en/latest/)を使って GDB に接続します。"
 
 #: of pwnlib.gdb:56
-msgid ""
-"At the moment this is an experimental feature with the following "
-"limitations:"
-msgstr ""
+msgid "At the moment this is an experimental feature with the following limitations:"
+msgstr "現時点では実験的な機能で、次の制限があります。"
 
 #: of pwnlib.gdb:58
 msgid "Only Python 3 is supported."
-msgstr ""
+msgstr "Python 3 のみ対応しています。"
 
 #: of pwnlib.gdb:60
-msgid ""
-"Well, technically that's not quite true. The real limitation is that your"
-" GDB's Python interpreter major version should be the same as that of "
-"Pwntools. However, most GDBs use Python 3 nowadays."
-msgstr ""
+msgid "Well, technically that's not quite true. The real limitation is that your GDB's Python interpreter major version should be the same as that of Pwntools. However, most GDBs use Python 3 nowadays."
+msgstr "厳密には、これは正確ではありません。実際の制限は、GDB の Python インタプリタのメジャーバージョンが Pwntools と同じであることです。ただ、最近の GDB はほとんどが Python 3 を使っています。"
 
 #: of pwnlib.gdb:64
-msgid ""
-"Different minor versions are allowed as long as no incompatible values "
-"are sent in either direction. See "
-"https://rpyc.readthedocs.io/en/latest/install.html#cross-interpreter-"
-"compatibility for more information."
-msgstr ""
+msgid "Different minor versions are allowed as long as no incompatible values are sent in either direction. See https://rpyc.readthedocs.io/en/latest/install.html#cross-interpreter-compatibility for more information."
+msgstr "どちらの向きにも互換性のない値を送らない限り、マイナーバージョンは異なっていてもかまいません。詳しくは https://rpyc.readthedocs.io/en/latest/install.html#cross-interpreter-compatibility を参照してください。"
 
 #: of pwnlib.gdb:69
 msgid "Use"
@@ -153,31 +113,23 @@ msgstr ""
 
 #: of pwnlib.gdb:75
 msgid "in order to check your GDB's Python version."
-msgstr ""
+msgstr "を使うと、GDB の Python のバージョンを確認できます。"
 
 #: of pwnlib.gdb:76
-msgid ""
-"If your GDB uses a different Python interpreter than Pwntools (for "
-"example, because you run Pwntools out of a virtualenv), you should "
-"install ``rpyc`` package into its ``sys.path``. Use"
-msgstr ""
+msgid "If your GDB uses a different Python interpreter than Pwntools (for example, because you run Pwntools out of a virtualenv), you should install ``rpyc`` package into its ``sys.path``. Use"
+msgstr "GDB が Pwntools と異なる Python インタプリタを使っている場合(たとえば、Pwntools を virtualenv から実行している場合)は、その ``sys.path`` に ``rpyc`` パッケージをインストールしてください。次のコマンドを使います。"
 
 #: of pwnlib.gdb:84
 msgid "in order to check whether this is necessary."
-msgstr ""
+msgstr "を使うと、これが必要かどうかを確認できます。"
 
 #: of pwnlib.gdb:85
 msgid "Only local processes are supported."
-msgstr ""
+msgstr "ローカルのプロセスのみ対応しています。"
 
 #: of pwnlib.gdb:86
-msgid ""
-"It is not possible to tell whether ``gdb.execute('continue')`` will be "
-"executed synchronously or asynchronously (in gdbscripts it is always "
-"synchronous). Therefore it is recommended to use either the explicitly "
-"synchronous :func:`pwnlib.gdb.Gdb.continue_and_wait` or the explicitly "
-"asynchronous :func:`pwnlib.gdb.Gdb.continue_nowait` instead."
-msgstr ""
+msgid "It is not possible to tell whether ``gdb.execute('continue')`` will be executed synchronously or asynchronously (in gdbscripts it is always synchronous). Therefore it is recommended to use either the explicitly synchronous :func:`pwnlib.gdb.Gdb.continue_and_wait` or the explicitly asynchronous :func:`pwnlib.gdb.Gdb.continue_nowait` instead."
+msgstr "``gdb.execute('continue')`` が同期で実行されるか非同期で実行されるかは、判別できません(gdbscript の中では、常に同期です)。そのため、明示的に同期の :func:`pwnlib.gdb.Gdb.continue_and_wait` か、明示的に非同期の :func:`pwnlib.gdb.Gdb.continue_nowait` のどちらかを使うことをお勧めします。"
 
 #: of pwnlib.gdb:93
 msgid "Tips and Troubleshooting"
@@ -185,54 +137,39 @@ msgstr ""
 
 #: of pwnlib.gdb:96
 msgid "``NOPTRACE`` magic argument"
-msgstr ""
+msgstr "``NOPTRACE`` という特別な引数"
 
 #: of pwnlib.gdb:98
 msgid "It's quite cumbersom to comment and un-comment lines containing `attach`."
-msgstr ""
+msgstr "`attach` を含む行を、コメントアウトしたり戻したりするのは面倒です。"
 
 #: of pwnlib.gdb:100
-msgid ""
-"You can cause these lines to be a no-op by running your script with the "
-"``NOPTRACE`` argument appended, or with ``PWNLIB_NOPTRACE=1`` in the "
-"environment."
-msgstr ""
+msgid "You can cause these lines to be a no-op by running your script with the ``NOPTRACE`` argument appended, or with ``PWNLIB_NOPTRACE=1`` in the environment."
+msgstr "スクリプトの実行時に ``NOPTRACE`` 引数を末尾に付けるか、環境変数に ``PWNLIB_NOPTRACE=1`` を設定すると、これらの行を何もしない処理にできます。"
 
 #: of pwnlib.gdb:111
 msgid "Kernel Yama ptrace_scope"
 msgstr ""
 
 #: of pwnlib.gdb:113
-msgid ""
-"The Linux kernel v3.4 introduced a security mechanism called "
-"``ptrace_scope``, which is intended to prevent processes from debugging "
-"eachother unless there is a direct parent-child relationship."
-msgstr ""
+msgid "The Linux kernel v3.4 introduced a security mechanism called ``ptrace_scope``, which is intended to prevent processes from debugging eachother unless there is a direct parent-child relationship."
+msgstr "Linux カーネル v3.4 で、``ptrace_scope`` というセキュリティの仕組みが導入されました。直接の親子関係がない限り、プロセス同士がデバッグし合えないようにするものです。"
 
 #: of pwnlib.gdb:117
-msgid ""
-"This causes some issues with the normal Pwntools workflow, since the "
-"process hierarchy looks like this:"
-msgstr ""
+msgid "This causes some issues with the normal Pwntools workflow, since the process hierarchy looks like this:"
+msgstr "プロセスの階層が次のようになるため、通常の Pwntools の使い方では問題が起きます。"
 
 #: of pwnlib.gdb:125
 msgid "Note that ``python`` is the parent of ``target``, not ``gdb``."
-msgstr ""
+msgstr "``python`` は ``target`` の親で、``gdb`` ではないことに注意してください。"
 
 #: of pwnlib.gdb:127
-msgid ""
-"In order to avoid this being a problem, Pwntools uses the function "
-"``prctl(PR_SET_PTRACER, PR_SET_PTRACER_ANY)``.  This disables Yama for "
-"any processes launched by Pwntools via :class:`.process` or via "
-":meth:`.ssh.process`."
-msgstr ""
+msgid "In order to avoid this being a problem, Pwntools uses the function ``prctl(PR_SET_PTRACER, PR_SET_PTRACER_ANY)``.  This disables Yama for any processes launched by Pwntools via :class:`.process` or via :meth:`.ssh.process`."
+msgstr "これが問題にならないように、Pwntools は ``prctl(PR_SET_PTRACER, PR_SET_PTRACER_ANY)`` を呼び出します。これにより、:class:`.process` や :meth:`.ssh.process` 経由で Pwntools が起動したすべてのプロセスで、Yama が無効になります。"
 
 #: of pwnlib.gdb:132
-msgid ""
-"Older versions of Pwntools did not perform the ``prctl`` step, and "
-"required that the Yama security feature was disabled systemwide, which "
-"requires ``root`` access."
-msgstr ""
+msgid "Older versions of Pwntools did not perform the ``prctl`` step, and required that the Yama security feature was disabled systemwide, which requires ``root`` access."
+msgstr "古いバージョンの Pwntools は ``prctl`` の手順を実行せず、Yama のセキュリティ機能をシステム全体で無効にする必要がありました。そのためには ``root`` 権限が必要です。"
 
 #: of pwnlib.gdb:137
 msgid "Member Documentation"
@@ -240,32 +177,30 @@ msgstr ""
 
 #: of pwnlib.gdb.Breakpoint:1
 msgid "Mirror of ``gdb.Breakpoint`` class."
-msgstr ""
+msgstr "``gdb.Breakpoint`` クラスのミラーです。"
 
 #: of pwnlib.gdb.Breakpoint:3
-msgid ""
-"See https://sourceware.org/gdb/onlinedocs/gdb/Breakpoints-In-Python.html "
-"for more information."
-msgstr ""
+msgid "See https://sourceware.org/gdb/onlinedocs/gdb/Breakpoints-In-Python.html for more information."
+msgstr "詳しくは https://sourceware.org/gdb/onlinedocs/gdb/Breakpoints-In-Python.html を参照してください。"
 
 #: of pwnlib.gdb.Breakpoint:6 pwnlib.gdb.Breakpoint.__init__:1
 #: pwnlib.gdb.FinishBreakpoint:6 pwnlib.gdb.FinishBreakpoint.__init__:1
 #: pwnlib.gdb.Gdb:6 pwnlib.gdb.Gdb.__init__:1
 msgid "Do not create instances of this class directly."
-msgstr ""
+msgstr "このクラスのインスタンスを直接作らないでください。"
 
 #: of pwnlib.gdb.Breakpoint:8 pwnlib.gdb.Breakpoint.__init__:3
 msgid "Use ``pwnlib.gdb.Gdb.Breakpoint`` instead."
-msgstr ""
+msgstr "代わりに ``pwnlib.gdb.Gdb.Breakpoint`` を使ってください。"
 
 #: of pwnlib.gdb.Breakpoint.__getattr__:1
 #: pwnlib.gdb.FinishBreakpoint.__getattr__:1
 msgid "Return attributes of the real breakpoint."
-msgstr ""
+msgstr "実際のブレークポイントの属性を返します。"
 
 #: of pwnlib.gdb.Breakpoint.__setattr__:1
 msgid "Set attributes of the real breakpoint."
-msgstr ""
+msgstr "実際のブレークポイントの属性を設定します。"
 
 #: ../pwntools/docs/docstring of pwnlib.gdb.Breakpoint.__weakref__:1
 #: pwnlib.gdb.Gdb.__weakref__:1
@@ -274,63 +209,55 @@ msgstr ""
 
 #: of pwnlib.gdb.FinishBreakpoint:1
 msgid "Mirror of ``gdb.FinishBreakpoint`` class."
-msgstr ""
+msgstr "``gdb.FinishBreakpoint`` クラスのミラーです。"
 
 #: of pwnlib.gdb.FinishBreakpoint:3
-msgid ""
-"See https://sourceware.org/gdb/onlinedocs/gdb/Finish-Breakpoints-in-"
-"Python.html for more information."
-msgstr ""
+msgid "See https://sourceware.org/gdb/onlinedocs/gdb/Finish-Breakpoints-in-Python.html for more information."
+msgstr "詳しくは https://sourceware.org/gdb/onlinedocs/gdb/Finish-Breakpoints-in-Python.html を参照してください。"
 
 #: of pwnlib.gdb.FinishBreakpoint:8 pwnlib.gdb.FinishBreakpoint.__init__:3
 msgid "Use ``pwnlib.gdb.Gdb.FinishBreakpoint`` instead."
-msgstr ""
+msgstr "代わりに ``pwnlib.gdb.Gdb.FinishBreakpoint`` を使ってください。"
 
 #: of pwnlib.gdb.Gdb:1
 msgid "Mirror of ``gdb`` module."
-msgstr ""
+msgstr "``gdb`` モジュールのミラーです。"
 
 #: of pwnlib.gdb.Gdb:3
-msgid ""
-"See https://sourceware.org/gdb/onlinedocs/gdb/Basic-Python.html for more "
-"information."
-msgstr ""
+msgid "See https://sourceware.org/gdb/onlinedocs/gdb/Basic-Python.html for more information."
+msgstr "詳しくは https://sourceware.org/gdb/onlinedocs/gdb/Basic-Python.html を参照してください。"
 
 #: of pwnlib.gdb.Gdb:8 pwnlib.gdb.Gdb.__init__:3
 msgid "Use :func:`attach` or :func:`debug` with ``api=True`` instead."
-msgstr ""
+msgstr "代わりに、``api=True`` を指定した :func:`attach` または :func:`debug` を使ってください。"
 
 #: of pwnlib.gdb.Gdb.__getattr__:1
 msgid "Provide access to the attributes of `gdb` module."
-msgstr ""
+msgstr "`gdb` モジュールの属性へのアクセスを提供します。"
 
 #: of pwnlib.gdb.Gdb.continue_and_wait:1
 msgid "Continue the program and wait until it stops again."
-msgstr ""
+msgstr "プログラムを続行し、再び停止するまで待ちます。"
 
 #: of pwnlib.gdb.Gdb.continue_nowait:1
 msgid "Continue the program. Do not wait until it stops again."
-msgstr ""
+msgstr "プログラムを続行します。再び停止するまでは待ちません。"
 
 #: of pwnlib.gdb.Gdb.interrupt_and_wait:1
 msgid "Interrupt the program and wait until it stops."
-msgstr ""
+msgstr "プログラムを中断し、停止するまで待ちます。"
 
 #: of pwnlib.gdb.Gdb.quit:1
 msgid "Terminate GDB."
-msgstr ""
+msgstr "GDB を終了します。"
 
 #: of pwnlib.gdb.Gdb.wait:1
 msgid "Wait until the program stops."
-msgstr ""
+msgstr "プログラムが停止するまで待ちます。"
 
 #: of pwnlib.gdb._execve_script:1
-msgid ""
-"Returns the filename of a python script that calls execve the specified "
-"program with the specified arguments. This script is suitable to call "
-"with gdbservers ``--wrapper`` option, so we have more control over the "
-"environment of the debugged process."
-msgstr ""
+msgid "Returns the filename of a python script that calls execve the specified program with the specified arguments. This script is suitable to call with gdbservers ``--wrapper`` option, so we have more control over the environment of the debugged process."
+msgstr "指定した引数で、指定したプログラムを execve する Python スクリプトのファイル名を返します。このスクリプトは gdbserver の ``--wrapper`` オプションに渡して使えるので、デバッグ対象のプロセスの環境をより細かく制御できます。"
 
 #: ../pwntools/docs/source/gdb.rst of pwnlib.gdb.attach pwnlib.gdb.corefile
 #: pwnlib.gdb.debug pwnlib.gdb.debug_assembly pwnlib.gdb.debug_shellcode
@@ -356,7 +283,7 @@ msgstr ""
 
 #: of pwnlib.gdb._execve_script:14 pwnlib.gdb._gdbserver_args:14
 msgid "Function to find the path of a binary."
-msgstr ""
+msgstr "バイナリのパスを探す関数。"
 
 #: of pwnlib.gdb._execve_script:16
 msgid "Callable to invoke before exec()"
@@ -375,13 +302,11 @@ msgstr ""
 
 #: of pwnlib.gdb._execve_script:21
 msgid "The filename of the created script."
-msgstr ""
+msgstr "作成したスクリプトのファイル名。"
 
 #: of pwnlib.gdb._gdbserver_args:1
-msgid ""
-"Sets up a listening gdbserver, to either connect to the specified PID, or"
-" launch the specified binary by its full path."
-msgstr ""
+msgid "Sets up a listening gdbserver, to either connect to the specified PID, or launch the specified binary by its full path."
+msgstr "待ち受け状態の gdbserver を用意します。指定した PID に接続するか、フルパスで指定したバイナリを起動します。"
 
 #: of pwnlib.gdb._gdbserver_args:4
 msgid "Process ID to attach to"
@@ -393,7 +318,7 @@ msgstr ""
 
 #: of pwnlib.gdb._gdbserver_args:8
 msgid "Port to use for gdbserver, default: random"
-msgstr ""
+msgstr "gdbserver が使うポート。既定値はランダムです。"
 
 #: of pwnlib.gdb._gdbserver_args:10 pwnlib.gdb.debug:18
 msgid "List of additional arguments to pass to gdbserver"
@@ -405,55 +330,47 @@ msgstr ""
 
 #: of pwnlib.gdb._gdbserver_args:18
 msgid "Path to a python script to use with ``--wrapper``"
-msgstr ""
+msgstr "``--wrapper`` で使う Python スクリプトのパス"
 
 #: of pwnlib.gdb._gdbserver_args:21
 msgid "A list of arguments to invoke gdbserver."
-msgstr ""
+msgstr "gdbserver を起動するときの引数のリスト。"
 
 #: of pwnlib.gdb.attach:1
 msgid "Start GDB in a new terminal and attach to `target`."
-msgstr ""
+msgstr "新しい端末で GDB を起動し、`target` にアタッチします。"
 
 #: of pwnlib.gdb.attach:3
 msgid "The target to attach to."
-msgstr ""
+msgstr "アタッチ対象。"
 
 #: of pwnlib.gdb.attach:4
 msgid "GDB script to run after attaching."
-msgstr ""
+msgstr "アタッチ後に実行する GDB スクリプト。"
 
 #: of pwnlib.gdb.attach:6
 msgid "The path of the target binary."
-msgstr ""
+msgstr "対象バイナリのパス。"
 
 #: of pwnlib.gdb.attach:8
-msgid ""
-"Architechture of the target binary.  If `exe` known GDB will detect the "
-"architechture automatically (if it is supported)."
-msgstr ""
+msgid "Architechture of the target binary.  If `exe` known GDB will detect the architechture automatically (if it is supported)."
+msgstr "対象バイナリのアーキテクチャ。`exe` が分かっている場合、GDB はアーキテクチャを自動で検出します(対応している場合)。"
 
 #: of pwnlib.gdb.attach:11 pwnlib.gdb.debug:8
 msgid "List of additional arguments to pass to GDB."
-msgstr ""
+msgstr "GDB に渡す追加の引数のリスト。"
 
 #: of pwnlib.gdb.attach:13 pwnlib.gdb.debug:20
-msgid ""
-"Set an alternate system root. The system root is used to load absolute "
-"shared library symbol files. This is useful to instruct gdb to load a "
-"local version of binaries/libraries instead of downloading them from the "
-"gdbserver, which is faster"
-msgstr ""
+msgid "Set an alternate system root. The system root is used to load absolute shared library symbol files. This is useful to instruct gdb to load a local version of binaries/libraries instead of downloading them from the gdbserver, which is faster"
+msgstr "代替のシステムルートを設定します。システムルートは、絶対パスの共有ライブラリのシンボルファイルを読み込むために使われます。gdbserver からダウンロードする代わりに、ローカルにあるバイナリやライブラリを GDB に読み込ませたいときに便利で、そのほうが速くなります。"
 
 #: of pwnlib.gdb.attach:18 pwnlib.gdb.debug:25
 msgid "Enable access to GDB Python API."
-msgstr ""
+msgstr "GDB の Python API を使えるようにします。"
 
 #: of pwnlib.gdb.attach:21
-msgid ""
-"PID of the GDB process (or the window which it is running in). When "
-"``api=True``, a (PID, :class:`Gdb`) tuple."
-msgstr ""
+msgid "PID of the GDB process (or the window which it is running in). When ``api=True``, a (PID, :class:`Gdb`) tuple."
+msgstr "GDB プロセス(またはそれを実行しているウィンドウ)の PID。``api=True`` のときは、(PID, :class:`Gdb`) のタプル。"
 
 #: of pwnlib.gdb.attach:25 pwnlib.gdb.debug:41
 msgid "Notes"
@@ -461,7 +378,7 @@ msgstr ""
 
 #: of pwnlib.gdb.attach:26
 msgid "The ``target`` argument is very robust, and can be any of the following:"
-msgstr ""
+msgstr "``target`` 引数はとても柔軟で、次のどれでも指定できます。"
 
 #: of pwnlib.gdb.attach:28
 msgid ":obj:`int`"
@@ -477,18 +394,15 @@ msgstr ""
 
 #: of pwnlib.gdb.attach:31
 msgid "Process name.  The youngest process is selected."
-msgstr ""
+msgstr "プロセス名。最も新しいプロセスが選ばれます。"
 
 #: of pwnlib.gdb.attach:32
 msgid ":obj:`tuple`"
 msgstr ""
 
 #: of pwnlib.gdb.attach:33
-msgid ""
-"Host, port pair of a listening ``gdbserver`` Tries to look up the target "
-"exe from the ``gdbserver`` commandline, requires explicit ``exe`` "
-"argument if the target exe is not in the commandline."
-msgstr ""
+msgid "Host, port pair of a listening ``gdbserver`` Tries to look up the target exe from the ``gdbserver`` commandline, requires explicit ``exe`` argument if the target exe is not in the commandline."
+msgstr "待ち受け中の ``gdbserver`` の (ホスト, ポート) の組。``gdbserver`` のコマンドラインから対象の実行ファイルを調べます。コマンドラインに対象の実行ファイルがない場合は、``exe`` 引数を明示する必要があります。"
 
 #: of pwnlib.gdb.attach:36 pwnlib.gdb.debug_assembly:17
 #: pwnlib.gdb.debug_shellcode:13
@@ -504,22 +418,16 @@ msgid ":class:`.sock`"
 msgstr ""
 
 #: of pwnlib.gdb.attach:39
-msgid ""
-"Connected socket. The executable on the other end of the connection is "
-"attached to. Can be any socket type, including :class:`.listen` or "
-":class:`.remote`."
-msgstr ""
+msgid "Connected socket. The executable on the other end of the connection is attached to. Can be any socket type, including :class:`.listen` or :class:`.remote`."
+msgstr "接続済みのソケット。接続の相手側で動いている実行ファイルにアタッチします。:class:`.listen` や :class:`.remote` を含め、どの種類のソケットでも使えます。"
 
 #: of pwnlib.gdb.attach:41
 msgid ":class:`.ssh_process`"
 msgstr ""
 
 #: of pwnlib.gdb.attach:42
-msgid ""
-"Remote process spawned via :meth:`.ssh.process`. **This will use the GDB "
-"installed on the remote machine.** If a password is required to connect, "
-"the ``sshpass`` program must be installed."
-msgstr ""
+msgid "Remote process spawned via :meth:`.ssh.process`. **This will use the GDB installed on the remote machine.** If a password is required to connect, the ``sshpass`` program must be installed."
+msgstr ":meth:`.ssh.process` で起動したリモートのプロセス。**リモートのマシンにインストールされている GDB を使います。** 接続にパスワードが必要な場合は、``sshpass`` プログラムがインストールされている必要があります。"
 
 #: of pwnlib.gdb.attach:47 pwnlib.gdb.debug:71
 msgid "Examples"
@@ -535,11 +443,11 @@ msgstr ""
 
 #: of pwnlib.gdb.attach:56
 msgid "Attach a debugger to a :class:`.process` tube and automate interaction"
-msgstr ""
+msgstr ":class:`.process` の tube にデバッガをアタッチし、操作を自動化します"
 
 #: of pwnlib.gdb.attach:70 pwnlib.gdb.debug:187
 msgid "Using GDB Python API:"
-msgstr ""
+msgstr "GDB の Python API を使う場合:"
 
 #: of pwnlib.gdb.attach:74
 msgid "Attach a debugger"
@@ -547,7 +455,7 @@ msgstr ""
 
 #: of pwnlib.gdb.attach:78
 msgid "Force the program to write something it normally wouldn't"
-msgstr ""
+msgstr "プログラムに、ふだんは書かないものを強制的に書かせます"
 
 #: of pwnlib.gdb.attach:82 pwnlib.gdb.debug:216
 msgid "Resume the program"
@@ -566,42 +474,28 @@ msgid "Observe the results"
 msgstr ""
 
 #: of pwnlib.gdb.attach:100
-msgid ""
-"Attach to the remote process from a :class:`.remote` or :class:`.listen` "
-"tube, as long as it is running on the same machine."
-msgstr ""
+msgid "Attach to the remote process from a :class:`.remote` or :class:`.listen` tube, as long as it is running on the same machine."
+msgstr ":class:`.remote` や :class:`.listen` の tube から、同じマシンで実行されているリモートのプロセスにアタッチします。"
 
 #: of pwnlib.gdb.attach:119
-msgid ""
-"Attach to a gdbserver / gdbstub running on the local machine by "
-"specifying the host and port tuple it is listening on. (gdbserver always "
-"listens on 0.0.0.0)"
-msgstr ""
+msgid "Attach to a gdbserver / gdbstub running on the local machine by specifying the host and port tuple it is listening on. (gdbserver always listens on 0.0.0.0)"
+msgstr "ローカルのマシンで動いている gdbserver / gdbstub に、待ち受け中のホストとポートのタプルを指定してアタッチします(gdbserver は常に 0.0.0.0 で待ち受けます)。"
 
 #: of pwnlib.gdb.attach:142
-msgid ""
-"Attach to processes running on a remote machine via an SSH :class:`.ssh` "
-"process"
-msgstr ""
+msgid "Attach to processes running on a remote machine via an SSH :class:`.ssh` process"
+msgstr "SSH の :class:`.ssh` プロセスを介して、リモートのマシンで動いているプロセスにアタッチします"
 
 #: of pwnlib.gdb.attach:159
-msgid ""
-"To attach to remote gdbserver, assume you have a socat server delivering "
-"gdbserver with ``socat TCP-LISTEN:1336,reuseaddr,fork 'EXEC:\"gdbserver "
-":1337 /bin/bash\"'``, then you can connect to gdbserver and attach to it "
-"by: (When connection with gdbserver established, ``/bin/bash`` will pause"
-" at ``_start``, waiting for our gdb to attach.)"
-msgstr ""
+msgid "To attach to remote gdbserver, assume you have a socat server delivering gdbserver with ``socat TCP-LISTEN:1336,reuseaddr,fork 'EXEC:\"gdbserver :1337 /bin/bash\"'``, then you can connect to gdbserver and attach to it by: (When connection with gdbserver established, ``/bin/bash`` will pause at ``_start``, waiting for our gdb to attach.)"
+msgstr "リモートの gdbserver にアタッチするには、たとえば ``socat TCP-LISTEN:1336,reuseaddr,fork 'EXEC:\"gdbserver :1337 /bin/bash\"'`` で gdbserver を提供する socat サーバーがあるとします。次のようにすると、gdbserver に接続してアタッチできます。(gdbserver との接続が確立すると、``/bin/bash`` は ``_start`` で一時停止し、GDB がアタッチするのを待ちます。)"
 
 #: of pwnlib.gdb.attach:165
-msgid ""
-"A typical case is a sample can't run locally as some dependencies is "
-"missing, so this sample is provided by remote server or docker."
-msgstr ""
+msgid "A typical case is a sample can't run locally as some dependencies is missing, so this sample is provided by remote server or docker."
+msgstr "典型的な例は、依存するものが足りずにサンプルをローカルで実行できず、リモートのサーバーや docker がそのサンプルを提供している場合です。"
 
 #: of pwnlib.gdb.binary:1
 msgid "*str* -- Path to the appropriate ``gdb`` binary to use."
-msgstr ""
+msgstr "*str* -- 使用する適切な ``gdb`` バイナリのパス。"
 
 #: of pwnlib.gdb.binary:4 pwnlib.gdb.corefile:10 pwnlib.gdb.version:12
 msgid "Example"
@@ -609,13 +503,11 @@ msgstr ""
 
 #: of pwnlib.gdb.corefile:1
 msgid "Drops a core file for a running local process."
-msgstr ""
+msgstr "実行中のローカルのプロセスのコアファイルを出力します。"
 
 #: of pwnlib.gdb.corefile:3
-msgid ""
-"You should use :meth:`.process.corefile` instead of using this method "
-"directly."
-msgstr ""
+msgid "You should use :meth:`.process.corefile` instead of using this method directly."
+msgstr "このメソッドを直接使わずに、:meth:`.process.corefile` を使ってください。"
 
 #: of pwnlib.gdb.corefile:5
 msgid "Process to dump"
@@ -623,21 +515,19 @@ msgstr ""
 
 #: of pwnlib.gdb.corefile:7
 msgid ":class:`.Core` -- The generated core file"
-msgstr ""
+msgstr ":class:`.Core` -- 生成されたコアファイル"
 
 #: of pwnlib.gdb.debug:1
-msgid ""
-"Launch a GDB server with the specified command line, and launches GDB to "
-"attach to it."
-msgstr ""
+msgid "Launch a GDB server with the specified command line, and launches GDB to attach to it."
+msgstr "指定したコマンドラインで GDB サーバーを起動し、GDB を起動してそれにアタッチします。"
 
 #: of pwnlib.gdb.debug:4
 msgid "Arguments to the process, similar to :class:`.process`."
-msgstr ""
+msgstr "プロセスへの引数。:class:`.process` と同様です。"
 
 #: of pwnlib.gdb.debug:6
 msgid "GDB script to run."
-msgstr ""
+msgstr "実行する GDB スクリプト。"
 
 #: of pwnlib.gdb.debug:10
 msgid "Path to the executable on disk"
@@ -649,103 +539,75 @@ msgstr ""
 
 #: of pwnlib.gdb.debug:14
 msgid "Remote ssh session to use to launch the process."
-msgstr ""
+msgstr "プロセスの起動に使うリモートの SSH セッション。"
 
 #: of pwnlib.gdb.debug:16
 msgid "Gdb port to use, default: random"
-msgstr ""
+msgstr "使用する GDB のポート。既定値はランダムです。"
 
 #: of pwnlib.gdb.debug:27
-msgid ""
-"Function which is executed on the remote side before execve(). This "
-"**MUST** be a self-contained function -- it must perform all of its own "
-"imports, and cannot refer to variables outside its scope."
-msgstr ""
+msgid "Function which is executed on the remote side before execve(). This **MUST** be a self-contained function -- it must perform all of its own imports, and cannot refer to variables outside its scope."
+msgstr "リモート側で execve() の前に実行される関数。これは、自己完結した関数で **なければなりません**。必要な import はすべてその中で行う必要があり、スコープの外の変数は参照できません。"
 
 #: of pwnlib.gdb.debug:32
-msgid ""
-"Argument passed to ``preexec_fn``. This **MUST** only consist of native "
-"Python objects."
-msgstr ""
+msgid "Argument passed to ``preexec_fn``. This **MUST** only consist of native Python objects."
+msgstr "``preexec_fn`` に渡す引数。ネイティブな Python オブジェクトだけで構成されて **いなければなりません**。"
 
 #: of pwnlib.gdb.debug:36
-msgid ""
-":class:`.process` or :class:`.ssh_channel` -- A tube connected to the "
-"target process. When ``api=True``, ``gdb`` member of the returned object "
-"contains a :class:`Gdb` instance."
-msgstr ""
+msgid ":class:`.process` or :class:`.ssh_channel` -- A tube connected to the target process. When ``api=True``, ``gdb`` member of the returned object contains a :class:`Gdb` instance."
+msgstr ":class:`.process` または :class:`.ssh_channel` -- 対象のプロセスにつながった tube。``api=True`` のときは、戻り値の ``gdb`` メンバーに :class:`Gdb` インスタンスが入ります。"
 
 #: of pwnlib.gdb.debug:42
-msgid ""
-"The debugger is attached automatically, and you can debug everything from"
-" the very beginning.  This requires that both ``gdb`` and ``gdbserver`` "
-"are installed on your machine."
-msgstr ""
+msgid "The debugger is attached automatically, and you can debug everything from the very beginning.  This requires that both ``gdb`` and ``gdbserver`` are installed on your machine."
+msgstr "デバッガは自動でアタッチされるので、最初からすべてをデバッグできます。そのためには、``gdb`` と ``gdbserver`` の両方がマシンにインストールされている必要があります。"
 
 #: of pwnlib.gdb.debug:46
-msgid ""
-"When GDB opens via :func:`debug`, it will initially be stopped on the "
-"very first instruction of the dynamic linker (``ld.so``) for dynamically-"
-"linked binaries."
-msgstr ""
+msgid "When GDB opens via :func:`debug`, it will initially be stopped on the very first instruction of the dynamic linker (``ld.so``) for dynamically-linked binaries."
+msgstr ":func:`debug` で GDB を開くと、動的リンクされたバイナリでは、最初は動的リンカ(``ld.so``)の最初の命令で停止しています。"
 
 #: of pwnlib.gdb.debug:49
-msgid ""
-"Only the target binary and the linker will be loaded in memory, so you "
-"cannot set breakpoints on shared library routines like ``malloc`` since "
-"``libc.so`` has not even been loaded yet."
-msgstr ""
+msgid "Only the target binary and the linker will be loaded in memory, so you cannot set breakpoints on shared library routines like ``malloc`` since ``libc.so`` has not even been loaded yet."
+msgstr "メモリに読み込まれているのは対象のバイナリとリンカだけです。``libc.so`` がまだ読み込まれていないので、``malloc`` のような共有ライブラリのルーチンにはブレークポイントを設定できません。"
 
 #: of pwnlib.gdb.debug:53
 msgid "There are several ways to handle this:"
-msgstr ""
+msgstr "これには、いくつかの対処法があります。"
 
 #: of pwnlib.gdb.debug:55
 msgid "Set a breakpoint on the executable's entry point (generally, ``_start``)"
-msgstr ""
+msgstr "実行ファイルのエントリポイント(通常は ``_start``)にブレークポイントを設定する"
 
 #: of pwnlib.gdb.debug:56
-msgid ""
-"This is only invoked after all of the required shared libraries are "
-"loaded."
-msgstr ""
+msgid "This is only invoked after all of the required shared libraries are loaded."
+msgstr "これは、必要な共有ライブラリがすべて読み込まれたあとにだけ呼び出されます。"
 
 #: of pwnlib.gdb.debug:58
 msgid "You can generally get the address via the GDB command ``info file``."
-msgstr ""
+msgstr "アドレスは、たいてい GDB のコマンド ``info file`` で分かります。"
 
 #: of pwnlib.gdb.debug:59
 msgid "Use pending breakpoints via ``set breakpoint pending on``"
-msgstr ""
+msgstr "``set breakpoint pending on`` で保留中のブレークポイントを使う"
 
 #: of pwnlib.gdb.debug:60
-msgid ""
-"This has the side-effect of setting breakpoints for **every** function "
-"which matches the name.  For ``malloc``, this will generally set a "
-"breakpoint in the executable's PLT, in the linker's internal ``malloc``, "
-"and eventaully in ``libc``'s malloc."
-msgstr ""
+msgid "This has the side-effect of setting breakpoints for **every** function which matches the name.  For ``malloc``, this will generally set a breakpoint in the executable's PLT, in the linker's internal ``malloc``, and eventaully in ``libc``'s malloc."
+msgstr "副作用として、その名前に一致する **すべての** 関数にブレークポイントが設定されます。``malloc`` の場合、通常は実行ファイルの PLT、リンカ内部の ``malloc``、そして最終的に ``libc`` の malloc にブレークポイントが設定されます。"
 
 #: of pwnlib.gdb.debug:64
 msgid "Wait for libraries to be loaded with ``set stop-on-solib-event 1``"
-msgstr ""
+msgstr "``set stop-on-solib-event 1`` で、ライブラリが読み込まれるのを待つ"
 
 #: of pwnlib.gdb.debug:65
-msgid ""
-"There is no way to stop on any specific library being loaded, and "
-"sometimes multiple libraries are loaded and only a single breakpoint is "
-"issued."
-msgstr ""
+msgid "There is no way to stop on any specific library being loaded, and sometimes multiple libraries are loaded and only a single breakpoint is issued."
+msgstr "特定のライブラリが読み込まれたときだけ停止する方法はありません。また、複数のライブラリが読み込まれるのに、ブレークポイントが 1 回しか発生しないこともあります。"
 
 #: of pwnlib.gdb.debug:67
-msgid ""
-"Generally, you just add a few ``continue`` commands until things are set "
-"up the way you want it to be."
-msgstr ""
+msgid "Generally, you just add a few ``continue`` commands until things are set up the way you want it to be."
+msgstr "たいていは、望みどおりの状態になるまで ``continue`` コマンドをいくつか足します。"
 
 #: of pwnlib.gdb.debug:72
 msgid "Create a new process, and stop it at 'main'"
-msgstr ""
+msgstr "新しいプロセスを作り、'main' で停止させます"
 
 #: of pwnlib.gdb.debug:79 pwnlib.gdb.debug:103 pwnlib.gdb.debug:161
 msgid "Send a command to Bash"
@@ -757,11 +619,11 @@ msgstr ""
 
 #: of pwnlib.gdb.debug:90
 msgid "Create a new process, and stop it at '_start'"
-msgstr ""
+msgstr "新しいプロセスを作り、'_start' で停止させます"
 
 #: of pwnlib.gdb.debug:114
 msgid "Start a new process with modified argv[0]"
-msgstr ""
+msgstr "argv[0] を変更して、新しいプロセスを起動します"
 
 #: of pwnlib.gdb.debug:122
 msgid "Demonstrate that LD_PRELOAD is respected"
@@ -773,14 +635,11 @@ msgstr ""
 
 #: of pwnlib.gdb.debug:146
 msgid "Using SSH:"
-msgstr ""
+msgstr "SSH を使う場合:"
 
 #: of pwnlib.gdb.debug:148
-msgid ""
-"You can use :func:`debug` to spawn new processes on remote machines as "
-"well, by using the ``ssh=`` keyword to pass in your :class:`.ssh` "
-"instance."
-msgstr ""
+msgid "You can use :func:`debug` to spawn new processes on remote machines as well, by using the ``ssh=`` keyword to pass in your :class:`.ssh` instance."
+msgstr ":func:`debug` は、``ssh=`` キーワードで :class:`.ssh` インスタンスを渡せば、リモートのマシンでも新しいプロセスを起動できます。"
 
 #: of pwnlib.gdb.debug:151
 msgid "Connect to the SSH server and start a process on the server"
@@ -788,11 +647,11 @@ msgstr ""
 
 #: of pwnlib.gdb.debug:170
 msgid "Using a modified args[0] on a remote process"
-msgstr ""
+msgstr "リモートのプロセスで、変更した args[0] を使います"
 
 #: of pwnlib.gdb.debug:178
 msgid "Using an empty args[0] on a remote process"
-msgstr ""
+msgstr "リモートのプロセスで、空の args[0] を使います"
 
 #: of pwnlib.gdb.debug:189
 msgid "Debug a new process"
@@ -804,21 +663,19 @@ msgstr ""
 
 #: of pwnlib.gdb.debug:198
 msgid "Stop at 'write'"
-msgstr ""
+msgstr "'write' で停止します"
 
 #: of pwnlib.gdb.debug:205
 msgid "Dump 'count'"
-msgstr ""
+msgstr "'count' をダンプします"
 
 #: of pwnlib.gdb.debug_assembly:1 pwnlib.gdb.debug_shellcode:1
 msgid "Creates an ELF file, and launches it under a debugger."
-msgstr ""
+msgstr "ELF ファイルを作り、デバッガの下で起動します。"
 
 #: of pwnlib.gdb.debug_assembly:3
-msgid ""
-"This is identical to debug_shellcode, except that any defined symbols are"
-" available in GDB, and it saves you the explicit call to asm()."
-msgstr ""
+msgid "This is identical to debug_shellcode, except that any defined symbols are available in GDB, and it saves you the explicit call to asm()."
+msgstr "debug_shellcode と同じですが、定義済みのシンボルが GDB で使える点と、asm() を明示的に呼ばなくてよい点が異なります。"
 
 #: of pwnlib.gdb.debug_assembly:7
 msgid "Assembly code to debug"
@@ -838,7 +695,7 @@ msgstr ""
 
 #: of pwnlib.gdb.debug_assembly:15 pwnlib.gdb.debug_shellcode:11
 msgid "Override any :obj:`pwnlib.context.context` values."
-msgstr ""
+msgstr ":obj:`pwnlib.context.context` の値を上書きします。"
 
 #: of pwnlib.gdb.debug_assembly:19 pwnlib.gdb.debug_shellcode:15
 #: pwnlib.gdb.find_module_addresses:43
@@ -851,30 +708,23 @@ msgstr ""
 
 #: of pwnlib.gdb.find_module_addresses:1
 msgid "Cheat to find modules by using GDB."
-msgstr ""
+msgstr "GDB を使う近道で、モジュールを見つけます。"
 
 #: of pwnlib.gdb.find_module_addresses:3
-msgid ""
-"We can't use ``/proc/$pid/map`` since some servers forbid it. This breaks"
-" ``info proc`` in GDB, but ``info sharedlibrary`` still works. "
-"Additionally, ``info sharedlibrary`` works on FreeBSD, which may not have"
-" procfs enabled or accessible."
-msgstr ""
+msgid "We can't use ``/proc/$pid/map`` since some servers forbid it. This breaks ``info proc`` in GDB, but ``info sharedlibrary`` still works. Additionally, ``info sharedlibrary`` works on FreeBSD, which may not have procfs enabled or accessible."
+msgstr "サーバーによっては ``/proc/$pid/map`` を禁止しているため、これは使えません。そのため GDB の ``info proc`` は動きませんが、``info sharedlibrary`` は動きます。さらに ``info sharedlibrary`` は、procfs が有効でない、またはアクセスできない FreeBSD でも動きます。"
 
 #: of pwnlib.gdb.find_module_addresses:8
 msgid "The output looks like this:"
-msgstr ""
+msgstr "出力は次のようになります。"
 
 #: of pwnlib.gdb.find_module_addresses:23
-msgid ""
-"Note that the raw addresses provided by ``info sharedlibrary`` are "
-"actually the address of the ``.text`` segment, not the image base "
-"address."
-msgstr ""
+msgid "Note that the raw addresses provided by ``info sharedlibrary`` are actually the address of the ``.text`` segment, not the image base address."
+msgstr "``info sharedlibrary`` が返す生のアドレスは、実際にはイメージのベースアドレスではなく、``.text`` セグメントのアドレスであることに注意してください。"
 
 #: of pwnlib.gdb.find_module_addresses:26
 msgid "This routine automates the entire process of:"
-msgstr ""
+msgstr "このルーチンは、次の処理全体を自動化します。"
 
 #: of pwnlib.gdb.find_module_addresses:28
 msgid "Downloading the binaries from the remote server"
@@ -890,39 +740,36 @@ msgstr ""
 
 #: of pwnlib.gdb.find_module_addresses:31
 msgid "Fixing up the base address vs. the ``.text`` segment address"
-msgstr ""
+msgstr "ベースアドレスと ``.text`` セグメントのアドレスの差を補正する"
 
 #: of pwnlib.gdb.find_module_addresses:33
 msgid "Path to the binary on the remote server"
 msgstr ""
 
 #: of pwnlib.gdb.find_module_addresses:35
-msgid ""
-"SSH connection through which to load the libraries. If left as "
-":const:`None`, will use a :class:`pwnlib.tubes.process.process`."
-msgstr ""
+msgid "SSH connection through which to load the libraries. If left as :const:`None`, will use a :class:`pwnlib.tubes.process.process`."
+msgstr "ライブラリを読み込むための SSH 接続。:const:`None` のままにすると、:class:`pwnlib.tubes.process.process` を使います。"
 
 #: of pwnlib.gdb.find_module_addresses:38
 msgid "Set to :const:`True` to run \"ulimit -s unlimited\" before GDB."
-msgstr ""
+msgstr ":const:`True` にすると、GDB の前に \"ulimit -s unlimited\" を実行します。"
 
 #: of pwnlib.gdb.find_module_addresses:41
 msgid "A list of pwnlib.elf.ELF objects, with correct base addresses."
-msgstr ""
+msgstr "正しいベースアドレスを持つ pwnlib.elf.ELF オブジェクトのリスト。"
 
 #: of pwnlib.gdb.version:1
 msgid "Gets the current GDB version."
-msgstr ""
+msgstr "現在の GDB のバージョンを取得します。"
 
 #: of pwnlib.gdb.version:5
 msgid "Requires that GDB version meets the following format:"
-msgstr ""
+msgstr "GDB のバージョンが、次の形式であることが必要です。"
 
 #: of pwnlib.gdb.version:7
 msgid "``GNU gdb (GDB) 7.12``"
-msgstr ""
+msgstr "``GNU gdb (GDB) 7.12``"
 
 #: of pwnlib.gdb.version:9
 msgid "*tuple* -- A tuple containing the version numbers"
-msgstr ""
-
+msgstr "*tuple* -- バージョン番号を含むタプル"

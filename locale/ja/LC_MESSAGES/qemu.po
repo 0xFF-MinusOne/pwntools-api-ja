@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/qemu.rst:11
 msgid ":mod:`pwnlib.qemu` --- QEMU Utilities"
-msgstr ""
+msgstr ":mod:`pwnlib.qemu` --- QEMU ユーティリティ"
 
 #: of pwnlib.qemu:1
 msgid "Run foreign-architecture binaries"
-msgstr ""
+msgstr "異なるアーキテクチャのバイナリを実行する"
 
 #: of pwnlib.qemu:4
 msgid "Overview"
@@ -33,129 +33,92 @@ msgstr ""
 
 #: of pwnlib.qemu:6
 msgid "So you want to exploit ARM binaries on your Intel PC?"
-msgstr ""
+msgstr "Intel の PC で ARM のバイナリをエクスプロイトしたいですか?"
 
 #: of pwnlib.qemu:8
-msgid ""
-"Pwntools has a good level of integration with QEMU user-mode emulation, "
-"in order to run, debug, and pwn foreign architecture binaries."
-msgstr ""
+msgid "Pwntools has a good level of integration with QEMU user-mode emulation, in order to run, debug, and pwn foreign architecture binaries."
+msgstr "Pwntools は QEMU のユーザーモードエミュレーションとよく統合されており、異なるアーキテクチャのバイナリを実行、デバッグ、攻略できます。"
 
 #: of pwnlib.qemu:11
-msgid ""
-"In general, everything magic happens \"behind the scenes\", and pwntools "
-"attempts to make your life easier."
-msgstr ""
+msgid "In general, everything magic happens \"behind the scenes\", and pwntools attempts to make your life easier."
+msgstr "基本的に、必要な処理はすべて「裏側」で行われ、pwntools は作業を楽にしようとします。"
 
 #: of pwnlib.qemu:14
-msgid ""
-"When using :class:`.process`, pwntools will attempt to blindly execute "
-"the binary, in case your system is configured to use ``binfmt-misc``."
-msgstr ""
+msgid "When using :class:`.process`, pwntools will attempt to blindly execute the binary, in case your system is configured to use ``binfmt-misc``."
+msgstr ":class:`.process` を使うと、pwntools は、システムが ``binfmt-misc`` を使うように設定されている場合に備えて、まずバイナリをそのまま実行しようとします。"
 
 #: of pwnlib.qemu:17
-msgid ""
-"If this fails, pwntools will attempt to manually launch the binary under "
-"qemu user-mode emulation.  Preference is given to statically-linked "
-"variants, i.e. ``qemu-arm-static`` will be selected before ``qemu-arm``."
-msgstr ""
+msgid "If this fails, pwntools will attempt to manually launch the binary under qemu user-mode emulation.  Preference is given to statically-linked variants, i.e. ``qemu-arm-static`` will be selected before ``qemu-arm``."
+msgstr "これが失敗すると、pwntools は qemu のユーザーモードエミュレーションでバイナリを手動で起動しようとします。静的リンク版が優先されるので、``qemu-arm-static`` は ``qemu-arm`` より先に選ばれます。"
 
 #: of pwnlib.qemu:22
 msgid "Debugging"
 msgstr ""
 
 #: of pwnlib.qemu:24
-msgid ""
-"When debugging binaries with :func:`.gdb.debug`, pwntools automatically "
-"adds the appropriate command-line flags to QEMU to start its GDB stub, "
-"and automatically informs GDB of the correct architecture and sysroot."
-msgstr ""
+msgid "When debugging binaries with :func:`.gdb.debug`, pwntools automatically adds the appropriate command-line flags to QEMU to start its GDB stub, and automatically informs GDB of the correct architecture and sysroot."
+msgstr ":func:`.gdb.debug` でバイナリをデバッグするとき、pwntools は、GDB スタブを起動するための適切なコマンドラインフラグを QEMU に自動で追加し、正しいアーキテクチャと sysroot を GDB に自動で伝えます。"
 
 #: of pwnlib.qemu:29
 msgid "Sysroot"
 msgstr ""
 
 #: of pwnlib.qemu:30
-msgid ""
-"You can override the default sysroot by setting the ``QEMU_LD_PREFIX`` "
-"environment variable.  This affects where ``qemu`` will look for files "
-"when ``open()`` is called, e.g. when the linker is attempting to resolve "
-"``libc.so``."
-msgstr ""
+msgid "You can override the default sysroot by setting the ``QEMU_LD_PREFIX`` environment variable.  This affects where ``qemu`` will look for files when ``open()`` is called, e.g. when the linker is attempting to resolve ``libc.so``."
+msgstr "環境変数 ``QEMU_LD_PREFIX`` を設定すると、既定の sysroot を上書きできます。これは、``open()`` が呼ばれたとき(たとえば、リンカが ``libc.so`` を解決しようとするとき)に ``qemu`` がファイルを探す場所に影響します。"
 
 #: of pwnlib.qemu:35
 msgid "Required Setup"
 msgstr ""
 
 #: of pwnlib.qemu:37
-msgid ""
-"For Ubuntu 16.04 and newer, the setup is relatively straightforward for "
-"most architectures."
-msgstr ""
+msgid "For Ubuntu 16.04 and newer, the setup is relatively straightforward for most architectures."
+msgstr "Ubuntu 16.04 以降では、ほとんどのアーキテクチャで、セットアップは比較的簡単です。"
 
 #: of pwnlib.qemu:40
-msgid ""
-"First, install the QEMU emulator itself.  If your binary is statically-"
-"linked, this is sufficient. ::"
-msgstr ""
+msgid "First, install the QEMU emulator itself.  If your binary is statically-linked, this is sufficient. ::"
+msgstr "まず、QEMU エミュレータ自体をインストールします。バイナリが静的リンクなら、これで十分です。::"
 
 #: of pwnlib.qemu:45
-msgid ""
-"If your binary is dynamically linked, you need to install libraries like "
-"libc. Generally, this package is named ``libc6-$ARCH-cross``, e.g. "
-"``libc-mips-cross``. ARM comes in both soft-float and hard-float "
-"variants, e.g. ``armhf``. ::"
-msgstr ""
+msgid "If your binary is dynamically linked, you need to install libraries like libc. Generally, this package is named ``libc6-$ARCH-cross``, e.g. ``libc-mips-cross``. ARM comes in both soft-float and hard-float variants, e.g. ``armhf``. ::"
+msgstr "バイナリが動的リンクなら、libc などのライブラリをインストールする必要があります。一般に、このパッケージの名前は ``libc6-$ARCH-cross`` で、たとえば ``libc-mips-cross`` です。ARM には、ソフトフロートとハードフロートの両方の版があり、たとえば ``armhf`` です。::"
 
 #: of pwnlib.qemu:51
-msgid ""
-"If your binary relies on additional libraries, you can generally find "
-"them easily with ``apt-cache search``.  For example, if it's a C++ binary"
-" it may require ``libstdc++``. ::"
-msgstr ""
+msgid "If your binary relies on additional libraries, you can generally find them easily with ``apt-cache search``.  For example, if it's a C++ binary it may require ``libstdc++``. ::"
+msgstr "バイナリがほかのライブラリに依存する場合は、たいてい ``apt-cache search`` で簡単に見つかります。たとえば C++ のバイナリなら、``libstdc++`` が必要かもしれません。::"
 
 #: of pwnlib.qemu:57
 msgid "Any other libraries that you require you'll have to find some other way."
-msgstr ""
+msgstr "それ以外に必要なライブラリは、ほかの方法で探す必要があります。"
 
 #: of pwnlib.qemu:60
 msgid "Telling QEMU Where Libraries Are"
 msgstr ""
 
 #: of pwnlib.qemu:62
-msgid ""
-"The libraries are now installed on your system at e.g. ``/usr/aarch64"
-"-linux-gnu``."
-msgstr ""
+msgid "The libraries are now installed on your system at e.g. ``/usr/aarch64-linux-gnu``."
+msgstr "これで、ライブラリがシステムの、たとえば ``/usr/aarch64-linux-gnu`` にインストールされました。"
 
 #: of pwnlib.qemu:64
-msgid ""
-"QEMU does not know where they are, and expects them to be at e.g. ``/etc"
-"/qemu-binfmt/aarch64``. If you try to run your library now, you'll "
-"probably see an error about ``libc.so.6`` missing."
-msgstr ""
+msgid "QEMU does not know where they are, and expects them to be at e.g. ``/etc/qemu-binfmt/aarch64``. If you try to run your library now, you'll probably see an error about ``libc.so.6`` missing."
+msgstr "QEMU はその場所を知らず、たとえば ``/etc/qemu-binfmt/aarch64`` にあると想定しています。この状態でバイナリを実行しようとすると、おそらく ``libc.so.6`` が見つからないというエラーが出ます。"
 
 #: of pwnlib.qemu:67
-msgid ""
-"Create the ``/etc/qemu-binfmt`` directory if it does not exist, and "
-"create a symlink to the appropriate path. ::"
-msgstr ""
+msgid "Create the ``/etc/qemu-binfmt`` directory if it does not exist, and create a symlink to the appropriate path. ::"
+msgstr "``/etc/qemu-binfmt`` ディレクトリがなければ作成し、適切なパスへのシンボリックリンクを作成します。::"
 
 #: of pwnlib.qemu:73
 msgid "Now QEMU should be able to run the libraries."
-msgstr ""
+msgstr "これで、QEMU がライブラリを実行できるようになります。"
 
 #: of pwnlib.qemu.archname:1
 msgid "Returns the name which QEMU uses for the currently selected architecture."
-msgstr ""
+msgstr "現在選択されているアーキテクチャについて、QEMU が使う名前を返します。"
 
 #: of pwnlib.qemu.ld_prefix:1
 msgid "Returns the linker prefix for the selected qemu-user binary"
-msgstr ""
+msgstr "選択された qemu-user バイナリのリンカのプレフィックスを返します。"
 
 #: of pwnlib.qemu.user_path:1
-msgid ""
-"Returns the path to the QEMU-user binary for the currently selected "
-"architecture."
-msgstr ""
-
+msgid "Returns the path to the QEMU-user binary for the currently selected architecture."
+msgstr "現在選択されているアーキテクチャ用の QEMU-user バイナリのパスを返します。"

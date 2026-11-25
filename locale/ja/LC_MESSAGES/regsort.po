@@ -21,27 +21,23 @@ msgstr ""
 
 #: ../pwntools/docs/source/regsort.rst:6
 msgid ":mod:`pwnlib.regsort` --- Register sorting"
-msgstr ""
+msgstr ":mod:`pwnlib.regsort` --- レジスタのソート"
 
 #: of pwnlib.regsort:1
 msgid "Topographical sort"
 msgstr ""
 
 #: of pwnlib.regsort.check_cycle:1
-msgid ""
-"Walk down the assignment list of a register, return the path walked if it"
-" is encountered again."
-msgstr ""
+msgid "Walk down the assignment list of a register, return the path walked if it is encountered again."
+msgstr "レジスタの代入リストをたどり、同じレジスタに再び行き当たった場合は、たどった経路を返します。"
 
 #: of pwnlib.regsort.check_cycle pwnlib.regsort.regsort
 msgid "Returns"
 msgstr ""
 
 #: of pwnlib.regsort.check_cycle:4
-msgid ""
-"The list of register involved in the cycle. If there is no cycle, this is"
-" an empty list."
-msgstr ""
+msgid "The list of register involved in the cycle. If there is no cycle, this is an empty list."
+msgstr "循環に含まれるレジスタのリストです。循環がなければ空のリストです。"
 
 #: of pwnlib.regsort.check_cycle:8 pwnlib.regsort.extract_dependencies:5
 #: pwnlib.regsort.regsort:58 pwnlib.regsort.resolve_order:4
@@ -49,130 +45,89 @@ msgid "Example"
 msgstr ""
 
 #: of pwnlib.regsort.extract_dependencies:1
-msgid ""
-"Return a list of all registers which directly depend on the specified "
-"register."
-msgstr ""
+msgid "Return a list of all registers which directly depend on the specified register."
+msgstr "指定したレジスタに直接依存するレジスタをすべてリストにして返します。"
 
 #: of pwnlib.regsort.regsort:1
 msgid "Sorts register dependencies."
-msgstr ""
+msgstr "レジスタの依存関係をソートします。"
 
 #: of pwnlib.regsort.regsort:3
-msgid ""
-"Given a dictionary of registers to desired register contents, return the "
-"optimal order in which to set the registers to those contents."
-msgstr ""
+msgid "Given a dictionary of registers to desired register contents, return the optimal order in which to set the registers to those contents."
+msgstr "レジスタと、そこに設定したい内容を対応づけた辞書を受け取り、各レジスタにその内容を設定するための最適な順序を返します。"
 
 #: of pwnlib.regsort.regsort:7
-msgid ""
-"The implementation assumes that it is possible to move from any register "
-"to any other register."
-msgstr ""
+msgid "The implementation assumes that it is possible to move from any register to any other register."
+msgstr "この実装は、任意のレジスタから他の任意のレジスタへ値を移せることを前提にしています。"
 
 #: of pwnlib.regsort.regsort:10
 msgid "If a dependency cycle is encountered, one of the following will occur:"
-msgstr ""
+msgstr "依存関係が循環している場合は、次のいずれかになります。"
 
 #: of pwnlib.regsort.regsort:13
-msgid ""
-"If ``xchg`` is :const:`True`, it is assumed that dependency cyles can be "
-"broken by swapping the contents of two register (a la the ``xchg`` "
-"instruction on i386)."
-msgstr ""
+msgid "If ``xchg`` is :const:`True`, it is assumed that dependency cyles can be broken by swapping the contents of two register (a la the ``xchg`` instruction on i386)."
+msgstr "``xchg`` が :const:`True` の場合、2 つのレジスタの内容を入れ替えることで依存の循環を断ち切れるものとして扱います(i386 の ``xchg`` 命令のようなものです)。"
 
 #: of pwnlib.regsort.regsort:16
-msgid ""
-"If ``xchg`` is not set, but not all destination registers in ``in_out`` "
-"are involved in a cycle, one of the registers outside the cycle will be "
-"used as a temporary register, and then overwritten with its final value."
-msgstr ""
+msgid "If ``xchg`` is not set, but not all destination registers in ``in_out`` are involved in a cycle, one of the registers outside the cycle will be used as a temporary register, and then overwritten with its final value."
+msgstr "``xchg`` が設定されておらず、``in_out`` の宛先レジスタのうち循環に含まれないものがある場合は、循環の外にあるレジスタのどれかを一時レジスタとして使い、あとで最終的な値で上書きします。"
 
 #: of pwnlib.regsort.regsort:20
-msgid ""
-"If ``xchg`` is not set, and all registers are involved in a dependency "
-"cycle, the named register ``temporary`` is used as a temporary register."
-msgstr ""
+msgid "If ``xchg`` is not set, and all registers are involved in a dependency cycle, the named register ``temporary`` is used as a temporary register."
+msgstr "``xchg`` が設定されておらず、すべてのレジスタが依存の循環に含まれる場合は、名前つきレジスタ ``temporary`` を一時レジスタとして使います。"
 
 #: of pwnlib.regsort.regsort:23
-msgid ""
-"If the dependency cycle cannot be resolved as described above, an "
-"exception is raised."
-msgstr ""
+msgid "If the dependency cycle cannot be resolved as described above, an exception is raised."
+msgstr "上記の方法で依存の循環を解消できない場合は、例外を送出します。"
 
 #: of pwnlib.regsort.regsort
 msgid "Parameters"
 msgstr ""
 
 #: of pwnlib.regsort.regsort:26
-msgid ""
-"Dictionary of desired register states. Keys are registers, values are "
-"either registers or any other value."
-msgstr ""
+msgid "Dictionary of desired register states. Keys are registers, values are either registers or any other value."
+msgstr "設定したいレジスタの状態を表す辞書です。キーはレジスタ、値はレジスタまたはそれ以外の値です。"
 
 #: of pwnlib.regsort.regsort:29
-msgid ""
-"List of all possible registers. Used to determine which values in "
-"``in_out`` are registers, versus regular values."
-msgstr ""
+msgid "List of all possible registers. Used to determine which values in ``in_out`` are registers, versus regular values."
+msgstr "取りうるすべてのレジスタのリストです。``in_out`` の値のうち、どれがレジスタで、どれが通常の値かを判別するのに使います。"
 
 #: of pwnlib.regsort.regsort:33
-msgid ""
-"Named register (or other sentinel value) to use as a temporary register."
-"  If ``tmp`` is a named register **and** appears as a source value in "
-"``in_out``, dependencies are handled appropriately.  ``tmp`` cannot be a "
-"destination register in ``in_out``. If ``bool(tmp)==True``, this mode is "
-"enabled."
-msgstr ""
+msgid "Named register (or other sentinel value) to use as a temporary register.  If ``tmp`` is a named register **and** appears as a source value in ``in_out``, dependencies are handled appropriately.  ``tmp`` cannot be a destination register in ``in_out``. If ``bool(tmp)==True``, this mode is enabled."
+msgstr "一時レジスタとして使う名前つきレジスタ(またはそれ以外の目印となる値)です。``tmp`` が名前つきレジスタで、**かつ** ``in_out`` の元の値として現れる場合も、依存関係は適切に処理されます。``tmp`` を ``in_out`` の宛先レジスタにすることはできません。``bool(tmp)==True`` のとき、このモードが有効になります。"
 
 #: of pwnlib.regsort.regsort:40
-msgid ""
-"Indicates the existence of an instruction which can swap the contents of "
-"two registers without use of a third register. If ``bool(xchg)==False``, "
-"this mode is disabled."
-msgstr ""
+msgid "Indicates the existence of an instruction which can swap the contents of two registers without use of a third register. If ``bool(xchg)==False``, this mode is disabled."
+msgstr "第 3 のレジスタを使わずに 2 つのレジスタの内容を入れ替えられる命令があることを示します。``bool(xchg)==False`` の場合、このモードは無効です。"
 
 #: of pwnlib.regsort.regsort:44
 msgid "Randomize as much as possible about the order or registers."
-msgstr ""
+msgstr "レジスタの順序を、できるかぎりランダムにします。"
 
 #: of pwnlib.regsort.regsort:47
-msgid ""
-"A list of tuples of ``(src, dest)``.  Each register may appear more than "
-"once, if a register is used as a temporary register, and later "
-"overwritten with its final value.  If ``xchg`` is :const:`True` and it is"
-" used to break a dependency cycle, then ``reg_name`` will be "
-":const:`None` and ``value`` will be a tuple of the instructions to swap."
-msgstr ""
+msgid "A list of tuples of ``(src, dest)``.  Each register may appear more than once, if a register is used as a temporary register, and later overwritten with its final value.  If ``xchg`` is :const:`True` and it is used to break a dependency cycle, then ``reg_name`` will be :const:`None` and ``value`` will be a tuple of the instructions to swap."
+msgstr "``(src, dest)`` のタプルのリストです。レジスタを一時レジスタとして使い、あとで最終的な値で上書きする場合は、同じレジスタが複数回現れることがあります。``xchg`` が :const:`True` で、依存の循環を断ち切るために使われた場合、``reg_name`` は :const:`None` になり、``value`` は入れ替えを行う命令のタプルになります。"
 
 #: of pwnlib.regsort.regsort:47
 msgid "A list of tuples of ``(src, dest)``."
-msgstr ""
+msgstr "``(src, dest)`` のタプルのリストです。"
 
 #: of pwnlib.regsort.regsort:49
-msgid ""
-"Each register may appear more than once, if a register is used as a "
-"temporary register, and later overwritten with its final value."
-msgstr ""
+msgid "Each register may appear more than once, if a register is used as a temporary register, and later overwritten with its final value."
+msgstr "レジスタを一時レジスタとして使い、あとで最終的な値で上書きする場合は、同じレジスタが複数回現れることがあります。"
 
 #: of pwnlib.regsort.regsort:53
-msgid ""
-"If ``xchg`` is :const:`True` and it is used to break a dependency cycle, "
-"then ``reg_name`` will be :const:`None` and ``value`` will be a tuple of "
-"the instructions to swap."
-msgstr ""
+msgid "If ``xchg`` is :const:`True` and it is used to break a dependency cycle, then ``reg_name`` will be :const:`None` and ``value`` will be a tuple of the instructions to swap."
+msgstr "``xchg`` が :const:`True` で、依存の循環を断ち切るために使われた場合、``reg_name`` は :const:`None` になり、``value`` は入れ替えを行う命令のタプルになります。"
 
 #: of pwnlib.regsort.regsort:61
 msgid "If order doesn't matter for any subsequence, alphabetic order is used."
-msgstr ""
+msgstr "どの部分列でも順序が問題にならない場合は、アルファベット順になります。"
 
 #: of pwnlib.regsort.regsort:68
-msgid ""
-"Registers which are assigned one of their own aliases are dropped, like "
-"same-name self-assignments."
-msgstr ""
+msgid "Registers which are assigned one of their own aliases are dropped, like same-name self-assignments."
+msgstr "自分自身の別名が代入されているレジスタは、同名への自己代入と同じように除外されます。"
 
 #: of pwnlib.regsort.resolve_order:1
 msgid "Resolve the order of all dependencies starting at a given register."
-msgstr ""
-
+msgstr "指定したレジスタを起点に、すべての依存関係の順序を解決します。"

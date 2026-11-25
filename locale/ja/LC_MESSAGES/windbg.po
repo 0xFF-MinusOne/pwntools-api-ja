@@ -21,33 +21,23 @@ msgstr ""
 
 #: ../pwntools/docs/source/windbg.rst:6
 msgid ":mod:`pwnlib.windbg` --- Working with WinDbg"
-msgstr ""
+msgstr ":mod:`pwnlib.windbg` --- WinDbg の操作"
 
 #: of pwnlib.windbg:1
-msgid ""
-"During exploit development, it is frequently useful to debug the target "
-"binary under WinDbg. This module provides a simple interface to do so "
-"under Windows."
-msgstr ""
+msgid "During exploit development, it is frequently useful to debug the target binary under WinDbg. This module provides a simple interface to do so under Windows."
+msgstr "エクスプロイトの開発中は、対象のバイナリを WinDbg でデバッグすると便利なことがよくあります。このモジュールは、Windows でそれを行うための簡単なインターフェースを提供します。"
 
 #: of pwnlib.windbg:5
-msgid ""
-"By default, :attr:`.context.debugger` is set to ``\"auto\"``, which will "
-"attempt to automatically select an appropriate debugger based on the "
-"available debuggers on the system."
-msgstr ""
+msgid "By default, :attr:`.context.debugger` is set to ``\"auto\"``, which will attempt to automatically select an appropriate debugger based on the available debuggers on the system."
+msgstr "既定では :attr:`.context.debugger` は ``\"auto\"`` に設定されていて、システムで利用できるデバッガから、適切なものを自動で選ぼうとします。"
 
 #: of pwnlib.windbg:9
 msgid "The order of preference is: - ``windbgx`` - ``windbg`` - ``x64dbg``"
-msgstr ""
+msgstr "優先順位は次のとおりです: - ``windbgx`` - ``windbg`` - ``x64dbg``"
 
 #: of pwnlib.windbg:14
-msgid ""
-"If automatic lookup fails, you can manually set :attr:`.context.debugger`"
-" to the debugger of your choice and provide the path to the debugger "
-"binary using :attr:`.context.windbgx_binary`, "
-":attr:`.context.windbg_binary`, or :attr:`.context.x64dbg_binary`."
-msgstr ""
+msgid "If automatic lookup fails, you can manually set :attr:`.context.debugger` to the debugger of your choice and provide the path to the debugger binary using :attr:`.context.windbgx_binary`, :attr:`.context.windbg_binary`, or :attr:`.context.x64dbg_binary`."
+msgstr "自動での検索に失敗した場合は、:attr:`.context.debugger` に好みのデバッガを手動で設定し、そのデバッガのバイナリのパスを :attr:`.context.windbgx_binary`、:attr:`.context.windbg_binary`、:attr:`.context.x64dbg_binary` のいずれかで指定できます。"
 
 #: of pwnlib.windbg:20
 msgid "Useful Functions"
@@ -55,55 +45,43 @@ msgstr ""
 
 #: of pwnlib.windbg:22
 msgid ":func:`attach` - Attach to an existing process"
-msgstr ""
+msgstr ":func:`attach` - 実行中のプロセスにアタッチします"
 
 #: of pwnlib.windbg:23
 msgid ":func:`debug` - Start a new process under the debugger"
-msgstr ""
+msgstr ":func:`debug` - 新しいプロセスをデバッガの下で起動します"
 
 #: of pwnlib.windbg:26
 msgid "Debugging Tips"
 msgstr ""
 
 #: of pwnlib.windbg:28
-msgid ""
-"The :func:`attach` and :func:`debug` functions will likely be your bread "
-"and butter for debugging."
-msgstr ""
+msgid "The :func:`attach` and :func:`debug` functions will likely be your bread and butter for debugging."
+msgstr "デバッグでは、おもに :func:`attach` と :func:`debug` を使うことになるでしょう。"
 
 #: of pwnlib.windbg:31
-msgid ""
-"Both allow you to provide a script to pass to WinDbg when it is started, "
-"so that it can automatically set your breakpoints."
-msgstr ""
+msgid "Both allow you to provide a script to pass to WinDbg when it is started, so that it can automatically set your breakpoints."
+msgstr "どちらも、WinDbg の起動時に渡すスクリプトを指定できるので、ブレークポイントを自動で設定できます。"
 
 #: of pwnlib.windbg:35
 msgid "Attaching to Processes"
 msgstr ""
 
 #: of pwnlib.windbg:37
-msgid ""
-"To attach to an existing process, just use :func:`attach`.  You can pass "
-"a PID, a process name (including file extension), or a :class:`.process`."
-msgstr ""
+msgid "To attach to an existing process, just use :func:`attach`.  You can pass a PID, a process name (including file extension), or a :class:`.process`."
+msgstr "実行中のプロセスにアタッチするには、:func:`attach` を使います。PID、(拡張子を含む)プロセス名、または :class:`.process` を渡せます。"
 
 #: of pwnlib.windbg:41
 msgid "Spawning New Processes"
 msgstr ""
 
 #: of pwnlib.windbg:43
-msgid ""
-"Attaching to processes with :func:`attach` is useful, but the state the "
-"process is in may vary.  If you need to attach to a process very early, "
-"and debug it from the very first instruction (or even the start of "
-"``main``), you instead should use :func:`debug`."
-msgstr ""
+msgid "Attaching to processes with :func:`attach` is useful, but the state the process is in may vary.  If you need to attach to a process very early, and debug it from the very first instruction (or even the start of ``main``), you instead should use :func:`debug`."
+msgstr ":func:`attach` でプロセスにアタッチすると便利ですが、そのときのプロセスの状態は一定ではありません。プロセスのごく早い段階でアタッチし、最初の命令(あるいは ``main`` の先頭)からデバッグしたい場合は、代わりに :func:`debug` を使ってください。"
 
 #: of pwnlib.windbg:48
-msgid ""
-"When you use :func:`debug`, the return value is a :class:`.tube` object "
-"that you interact with exactly like normal."
-msgstr ""
+msgid "When you use :func:`debug`, the return value is a :class:`.tube` object that you interact with exactly like normal."
+msgstr ":func:`debug` を使うと、戻り値は :class:`.tube` オブジェクトになり、ふだんと同じように操作できます。"
 
 #: of pwnlib.windbg:52
 msgid "Tips and Troubleshooting"
@@ -111,18 +89,15 @@ msgstr ""
 
 #: of pwnlib.windbg:55
 msgid "``NOPTRACE`` magic argument"
-msgstr ""
+msgstr "``NOPTRACE`` という特別な引数"
 
 #: of pwnlib.windbg:57
 msgid "It's quite cumbersom to comment and un-comment lines containing `attach`."
-msgstr ""
+msgstr "`attach` を含む行を、コメントアウトしたり戻したりするのは面倒です。"
 
 #: of pwnlib.windbg:59
-msgid ""
-"You can cause these lines to be a no-op by running your script with the "
-"``NOPTRACE`` argument appended, or with ``PWNLIB_NOPTRACE=1`` in the "
-"environment. (The name is borrowed from ptrace syscall on Linux.)"
-msgstr ""
+msgid "You can cause these lines to be a no-op by running your script with the ``NOPTRACE`` argument appended, or with ``PWNLIB_NOPTRACE=1`` in the environment. (The name is borrowed from ptrace syscall on Linux.)"
+msgstr "スクリプトの実行時に ``NOPTRACE`` 引数を末尾に付けるか、環境変数に ``PWNLIB_NOPTRACE=1`` を設定すると、これらの行を何もしない処理にできます。(この名前は、Linux の ptrace システムコールから借りています。)"
 
 #: of pwnlib.windbg:71
 msgid "Member Documentation"
@@ -130,7 +105,7 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:1
 msgid "Attach to a running process with WinDbg or x64dbg."
-msgstr ""
+msgstr "実行中のプロセスに、WinDbg または x64dbg でアタッチします。"
 
 #: of pwnlib.windbg.attach pwnlib.windbg.debug
 msgid "Parameters"
@@ -138,15 +113,15 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:3
 msgid "Process to attach to."
-msgstr ""
+msgstr "アタッチ対象のプロセス。"
 
 #: of pwnlib.windbg.attach:5
 msgid "Debugger script to run after attaching."
-msgstr ""
+msgstr "アタッチ後に実行するデバッガのスクリプト。"
 
 #: of pwnlib.windbg.attach:7
 msgid "Additional arguments to pass to the debugger."
-msgstr ""
+msgstr "デバッガに渡す追加の引数。"
 
 #: ../pwntools/docs/source/windbg.rst of pwnlib.windbg.attach
 #: pwnlib.windbg.debug
@@ -155,7 +130,7 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:10
 msgid "*int* -- PID of the debugger process."
-msgstr ""
+msgstr "*int* -- デバッガのプロセスの PID。"
 
 #: of pwnlib.windbg.attach:13 pwnlib.windbg.debug:17
 msgid "Notes"
@@ -163,7 +138,7 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:14
 msgid "The ``target`` argument is very robust, and can be any of the following:"
-msgstr ""
+msgstr "``target`` 引数はとても柔軟で、次のどれでも指定できます。"
 
 #: of pwnlib.windbg.attach:16
 msgid ":obj:`int`"
@@ -179,7 +154,7 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:19
 msgid "Process name.  The youngest process is selected."
-msgstr ""
+msgstr "プロセス名。最も新しいプロセスが選ばれます。"
 
 #: of pwnlib.windbg.attach:20
 msgid ":class:`.process`"
@@ -203,51 +178,44 @@ msgstr ""
 
 #: of pwnlib.windbg.attach:33
 msgid "Attach a debugger to a :class:`.process` tube and automate interaction"
-msgstr ""
+msgstr ":class:`.process` の tube にデバッガをアタッチし、操作を自動化します"
 
 #: of pwnlib.windbg.binary:1
-msgid ""
-"Returns the path to the debugger binary depending on the context. "
-":attr:`.context.debugger` is used to determine which debugger to use."
-msgstr ""
+msgid "Returns the path to the debugger binary depending on the context. :attr:`.context.debugger` is used to determine which debugger to use."
+msgstr "context に応じて、デバッガのバイナリのパスを返します。どのデバッガを使うかは、:attr:`.context.debugger` で決まります。"
 
 #: of pwnlib.windbg.binary:4
-msgid ""
-"*str* -- Name of the selected debugger. str: Path to the appropriate "
-"``windbg`` binary to use."
-msgstr ""
+msgid "*str* -- Name of the selected debugger. str: Path to the appropriate ``windbg`` binary to use."
+msgstr "*str* -- 選ばれたデバッガの名前。str: 使用する適切な ``windbg`` バイナリのパス。"
 
 #: of pwnlib.windbg.debug:1
 msgid "Launch a process in suspended state, attach debugger and resume process."
-msgstr ""
+msgstr "プロセスを一時停止の状態で起動し、デバッガをアタッチして、プロセスを再開します。"
 
 #: of pwnlib.windbg.debug:3
 msgid "Arguments to the process, similar to :class:`.process`."
-msgstr ""
+msgstr "プロセスへの引数。:class:`.process` と同様です。"
 
 #: of pwnlib.windbg.debug:5
 msgid "windbg script to run."
-msgstr ""
+msgstr "実行する windbg のスクリプト。"
 
 #: of pwnlib.windbg.debug:7
 msgid "Path to the executable on disk."
-msgstr ""
+msgstr "ディスク上の実行ファイルのパス。"
 
 #: of pwnlib.windbg.debug:9
 msgid "Environment to start the binary in."
-msgstr ""
+msgstr "バイナリを起動する環境。"
 
 #: of pwnlib.windbg.debug:11
 msgid "Flags to pass to :func:`.process.process`."
-msgstr ""
+msgstr ":func:`.process.process` に渡すフラグ。"
 
 #: of pwnlib.windbg.debug:14
 msgid ":class:`.process` -- A tube connected to the target process."
-msgstr ""
+msgstr ":class:`.process` -- 対象のプロセスにつながった tube。"
 
 #: of pwnlib.windbg.debug:26
-msgid ""
-"When the debugger opens via :func:`.debug`, it will initially be stopped "
-"on the very first instruction of the entry point."
-msgstr ""
-
+msgid "When the debugger opens via :func:`.debug`, it will initially be stopped on the very first instruction of the entry point."
+msgstr ":func:`.debug` でデバッガを開くと、最初はエントリポイントの最初の命令で停止しています。"

@@ -21,18 +21,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/exception.rst:2
 msgid ":mod:`pwnlib.exception` --- Pwnlib exceptions"
-msgstr ""
+msgstr ":mod:`pwnlib.exception` --- Pwnlib の例外"
 
 #: of pwnlib.exception.PwnlibException:1
 msgid "Exception thrown by :func:`pwnlib.log.error`."
-msgstr ""
+msgstr ":func:`pwnlib.log.error` が送出する例外です。"
 
 #: of pwnlib.exception.PwnlibException:3
-msgid ""
-"Pwnlib functions that encounters unrecoverable errors should call the "
-":func:`pwnlib.log.error` function instead of throwing this exception "
-"directly."
-msgstr ""
+msgid "Pwnlib functions that encounters unrecoverable errors should call the :func:`pwnlib.log.error` function instead of throwing this exception directly."
+msgstr "回復できないエラーに遭遇した Pwnlib の関数は、この例外を直接送出せずに、:func:`pwnlib.log.error` 関数を呼ぶべきです。"
 
 #: of pwnlib.exception.PwnlibException:6
 #: pwnlib.exception.PwnlibException.__init__:1
@@ -41,9 +38,8 @@ msgstr ""
 
 #: of pwnlib.exception.PwnlibException.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.exception.PwnlibException.__weakref__:1
 msgid "list of weak references to the object"
 msgstr ""
-

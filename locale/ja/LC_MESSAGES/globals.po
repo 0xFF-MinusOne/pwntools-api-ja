@@ -21,23 +21,19 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:6
 msgid "``from pwn import *``"
-msgstr ""
+msgstr "``from pwn import *``"
 
 #: ../pwntools/docs/source/globals.rst:8
 msgid "The most common way that you'll see pwntools used is"
-msgstr ""
+msgstr "pwntools の使い方として、いちばんよく目にするのは次の形です。"
 
 #: ../pwntools/docs/source/globals.rst:12
-msgid ""
-"Which imports a bazillion things into the global namespace to make your "
-"life easier."
-msgstr ""
+msgid "Which imports a bazillion things into the global namespace to make your life easier."
+msgstr "これは、膨大な数のものをグローバル名前空間に import して、作業を楽にします。"
 
 #: ../pwntools/docs/source/globals.rst:14
-msgid ""
-"This is a quick list of most of the objects and routines imported, in "
-"rough order of importance and frequency of use."
-msgstr ""
+msgid "This is a quick list of most of the objects and routines imported, in rough order of importance and frequency of use."
+msgstr "import されるオブジェクトとルーチンの主なものを、重要度と使用頻度のおおよその順に、簡単にまとめます。"
 
 #: ../pwntools/docs/source/globals.rst:16
 msgid ":mod:`pwnlib.context`"
@@ -53,17 +49,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:19
 msgid "Set `context.log_level = 'debug'` when troubleshooting your exploit"
-msgstr ""
+msgstr "エクスプロイトのトラブルシューティングでは、`context.log_level = 'debug'` を設定します"
 
 #: ../pwntools/docs/source/globals.rst:20
-msgid ""
-"Scope-aware, so you can disable logging for a subsection of code via "
-":meth:`.ContextType.local`"
-msgstr ""
+msgid "Scope-aware, so you can disable logging for a subsection of code via :meth:`.ContextType.local`"
+msgstr "スコープに対応しているので、:meth:`.ContextType.local` を使えば、コードの一部だけログを無効にできます"
 
 #: ../pwntools/docs/source/globals.rst:21
 msgid "``remote``, ``listen``, ``ssh``, ``process``"
-msgstr ""
+msgstr "``remote``、``listen``、``ssh``、``process``"
 
 #: ../pwntools/docs/source/globals.rst:22
 msgid ":mod:`pwnlib.tubes`"
@@ -81,38 +75,31 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:25
 msgid "Helpers for common tasks like ``recvline``, ``recvuntil``, ``clean``, etc."
-msgstr ""
+msgstr "``recvline``、``recvuntil``、``clean`` など、よくある作業のための補助関数があります"
 
 #: ../pwntools/docs/source/globals.rst:26
 msgid "Interact directly with the application via ``.interactive()``"
-msgstr ""
+msgstr "``.interactive()`` で、アプリケーションと直接やり取りできます"
 
 #: ../pwntools/docs/source/globals.rst:27
 msgid "``p32`` and ``u32``"
-msgstr ""
+msgstr "``p32`` と ``u32``"
 
 #: ../pwntools/docs/source/globals.rst:28
 msgid ":mod:`pwnlib.util.packing`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:29
-msgid ""
-"Useful functions to make sure you never have to remember if ``'>'`` means"
-" signed or unsigned for ``struct.pack``, and no more ugly ``[0]`` index "
-"at the end."
-msgstr ""
+msgid "Useful functions to make sure you never have to remember if ``'>'`` means signed or unsigned for ``struct.pack``, and no more ugly ``[0]`` index at the end."
+msgstr "``struct.pack`` で ``'>'`` が符号付きか符号なしかを覚えておく必要がなくなり、末尾の見苦しい ``[0]`` の添字も要らなくなる、便利な関数です。"
 
 #: ../pwntools/docs/source/globals.rst:30
-msgid ""
-"Set ``signed`` and ``endian`` in sane manners (also these can be set once"
-" on ``context`` and not bothered with again)"
-msgstr ""
+msgid "Set ``signed`` and ``endian`` in sane manners (also these can be set once on ``context`` and not bothered with again)"
+msgstr "``signed`` と ``endian`` を、妥当な方法で設定できます(これらは ``context`` に一度設定すれば、以後は気にしなくて済みます)"
 
 #: ../pwntools/docs/source/globals.rst:31
-msgid ""
-"Most common sizes are pre-defined (``u8``, ``u64``, etc), and "
-":func:`pwnlib.util.packing.pack` lets you define your own."
-msgstr ""
+msgid "Most common sizes are pre-defined (``u8``, ``u64``, etc), and :func:`pwnlib.util.packing.pack` lets you define your own."
+msgstr "よく使うサイズは、あらかじめ定義されています(``u8``、``u64`` など)。独自のサイズは :func:`pwnlib.util.packing.pack` で定義できます。"
 
 #: ../pwntools/docs/source/globals.rst:32
 msgid "``log``"
@@ -124,49 +111,39 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:34
 msgid "Make your output pretty!"
-msgstr ""
+msgstr "出力をきれいにします。"
 
 #: ../pwntools/docs/source/globals.rst:35
 msgid "``cyclic`` and ``cyclic_func``"
-msgstr ""
+msgstr "``cyclic`` と ``cyclic_func``"
 
 #: ../pwntools/docs/source/globals.rst:36
 msgid ":mod:`pwnlib.util.cyclic`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:37
-msgid ""
-"Utilities for generating strings such that you can find the offset of any"
-" given substring given only N (usually 4) bytes.  This is super useful "
-"for straight buffer overflows.  Instead of looking at 0x41414141, you "
-"could know that 0x61616171 means you control EIP at offset 64 in your "
-"buffer."
-msgstr ""
+msgid "Utilities for generating strings such that you can find the offset of any given substring given only N (usually 4) bytes.  This is super useful for straight buffer overflows.  Instead of looking at 0x41414141, you could know that 0x61616171 means you control EIP at offset 64 in your buffer."
+msgstr "N バイト(たいていは 4 バイト)さえ分かれば、任意の部分文字列のオフセットを割り出せるような文字列を生成する、ユーティリティです。単純なバッファオーバーフローで、とても役に立ちます。0x41414141 を眺める代わりに、0x61616171 なら、バッファのオフセット 64 で EIP を制御できると分かります。"
 
 #: ../pwntools/docs/source/globals.rst:38
 msgid "``asm`` and ``disasm``"
-msgstr ""
+msgstr "``asm`` と ``disasm``"
 
 #: ../pwntools/docs/source/globals.rst:39
 msgid ":mod:`pwnlib.asm`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:40
-msgid ""
-"Quickly turn assembly into some bytes, or vice-versa, without mucking "
-"about"
-msgstr ""
+msgid "Quickly turn assembly into some bytes, or vice-versa, without mucking about"
+msgstr "面倒な手間なしに、アセンブリをすばやくバイト列に変換できます。逆も同様です"
 
 #: ../pwntools/docs/source/globals.rst:41
 msgid "Supports any architecture for which you have a binutils installed"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:42
-msgid ""
-"Over 20 different architectures have pre-built binaries at "
-"`ppa:pwntools/binutils "
-"<https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`_."
-msgstr ""
+msgid "Over 20 different architectures have pre-built binaries at `ppa:pwntools/binutils <https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`_."
+msgstr "20 を超えるアーキテクチャ向けのビルド済みバイナリが、`ppa:pwntools/binutils <https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`_ にあります。"
 
 #: ../pwntools/docs/source/globals.rst:43
 msgid "``shellcraft``"
@@ -182,7 +159,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:46
 msgid "``asm(shellcraft.sh())`` gives you a shell"
-msgstr ""
+msgstr "``asm(shellcraft.sh())`` で、シェルを取れます"
 
 #: ../pwntools/docs/source/globals.rst:47
 msgid "Templating library for reusability of shellcode fragments"
@@ -233,24 +210,19 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:57
 msgid "``gdb.debug`` and ``gdb.attach``"
-msgstr ""
+msgstr "``gdb.debug`` と ``gdb.attach``"
 
 #: ../pwntools/docs/source/globals.rst:58
 msgid ":mod:`pwnlib.gdb`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:59
-msgid ""
-"Launch a binary under GDB and pop up a new terminal to interact with it."
-"  Automates setting breakpoints and makes iteration on exploits MUCH "
-"faster."
-msgstr ""
+msgid "Launch a binary under GDB and pop up a new terminal to interact with it.  Automates setting breakpoints and makes iteration on exploits MUCH faster."
+msgstr "バイナリを GDB の下で起動し、新しい端末を開いて操作します。ブレークポイントの設定を自動化するので、エクスプロイトの試行錯誤がずっと速くなります。"
 
 #: ../pwntools/docs/source/globals.rst:60
-msgid ""
-"Alternately, attach to a running process given a PID, :mod:`pwnlib.tubes`"
-" object, or even just a socket that's connected to it"
-msgstr ""
+msgid "Alternately, attach to a running process given a PID, :mod:`pwnlib.tubes` object, or even just a socket that's connected to it"
+msgstr "あるいは、実行中のプロセスに、PID、:mod:`pwnlib.tubes` オブジェクト、またはそのプロセスにつながったソケットを指定してアタッチします"
 
 #: ../pwntools/docs/source/globals.rst:61
 msgid "``args``"
@@ -258,11 +230,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:62
 msgid "Dictionary containing all-caps command-line arguments for quick access"
-msgstr ""
+msgstr "大文字だけのコマンドライン引数を含む辞書で、すばやくアクセスできます"
 
 #: ../pwntools/docs/source/globals.rst:63
 msgid "Run via ``python foo.py REMOTE=1`` and ``args['REMOTE'] == '1'``."
-msgstr ""
+msgstr "``python foo.py REMOTE=1`` で実行すると、``args['REMOTE'] == '1'`` になります。"
 
 #: ../pwntools/docs/source/globals.rst:64
 msgid "Can also control logging verbosity and terminal fanciness"
@@ -282,18 +254,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:68
 msgid "``randoms``, ``rol``, ``ror``, ``xor``, ``bits``"
-msgstr ""
+msgstr "``randoms``、``rol``、``ror``、``xor``、``bits``"
 
 #: ../pwntools/docs/source/globals.rst:69
 msgid ":mod:`pwnlib.util.fiddling`"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:70
-msgid ""
-"Useful utilities for generating random data from a given alphabet, or "
-"simplifying math operations that usually require masking off with "
-"`0xffffffff` or calling `ord` and `chr` an ugly number of times"
-msgstr ""
+msgid "Useful utilities for generating random data from a given alphabet, or simplifying math operations that usually require masking off with `0xffffffff` or calling `ord` and `chr` an ugly number of times"
+msgstr "指定した文字集合からランダムなデータを生成したり、ふつうは `0xffffffff` でマスクしたり、`ord` や `chr` を何度も呼んだりする数値演算を、簡単にしたりするのに便利なユーティリティです"
 
 #: ../pwntools/docs/source/globals.rst:71
 msgid "``net``"
@@ -325,7 +294,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:78
 msgid "It's the new ``getch``"
-msgstr ""
+msgstr "新しい ``getch`` です"
 
 #: ../pwntools/docs/source/globals.rst:79
 msgid "``safeeval``"
@@ -337,13 +306,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:81
 msgid "Functions for safely evaluating python code without nasty side-effects."
-msgstr ""
+msgstr "悪い副作用なしに、Python のコードを安全に評価するための関数です。"
 
 #: ../pwntools/docs/source/globals.rst:83
-msgid ""
-"These are all pretty self explanatory, but are useful to have in the "
-"global namespace."
-msgstr ""
+msgid "These are all pretty self explanatory, but are useful to have in the global namespace."
+msgstr "どれも名前から用途が分かりますが、グローバル名前空間にあると便利です。"
 
 #: ../pwntools/docs/source/globals.rst:85
 msgid "``hexdump``"
@@ -351,11 +318,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:86
 msgid "``read`` and ``write``"
-msgstr ""
+msgstr "``read`` と ``write``"
 
 #: ../pwntools/docs/source/globals.rst:87
 msgid "``enhex`` and ``unhex``"
-msgstr ""
+msgstr "``enhex`` と ``unhex``"
 
 #: ../pwntools/docs/source/globals.rst:88
 msgid "``more``"
@@ -367,11 +334,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:90
 msgid "``align`` and ``align_down``"
-msgstr ""
+msgstr "``align`` と ``align_down``"
 
 #: ../pwntools/docs/source/globals.rst:91
 msgid "``urlencode`` and ``urldecode``"
-msgstr ""
+msgstr "``urlencode`` と ``urldecode``"
 
 #: ../pwntools/docs/source/globals.rst:92
 msgid "``which``"
@@ -382,10 +349,8 @@ msgid "``wget``"
 msgstr ""
 
 #: ../pwntools/docs/source/globals.rst:95
-msgid ""
-"Additionally, all of the following modules are auto-imported for you.  "
-"You were going to do it anyway."
-msgstr ""
+msgid "Additionally, all of the following modules are auto-imported for you.  You were going to do it anyway."
+msgstr "さらに、次のモジュールはすべて自動で import されます。どうせ自分で import することになるので、先回りしています。"
 
 #: ../pwntools/docs/source/globals.rst:97
 msgid "``os``"
@@ -410,4 +375,3 @@ msgstr ""
 #: ../pwntools/docs/source/globals.rst:102
 msgid "``random``"
 msgstr ""
-

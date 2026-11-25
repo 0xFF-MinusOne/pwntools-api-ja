@@ -21,124 +21,101 @@ msgstr ""
 
 #: ../pwntools/docs/source/filesystem.rst:13
 msgid ":mod:`pwnlib.filesystem` --- Manipulating Files Locally and Over SSH"
-msgstr ""
+msgstr ":mod:`pwnlib.filesystem` --- ローカルと SSH 越しのファイル操作"
 
 #: ../pwntools/docs/source/filesystem.rst:15
-msgid ""
-"Provides a Python2-compatible :py:mod:`pathlib` interface for paths on "
-"the local filesystem (`.Path`) as well as on remote filesystems, via SSH "
-"(`.SSHPath`)."
-msgstr ""
+msgid "Provides a Python2-compatible :py:mod:`pathlib` interface for paths on the local filesystem (`.Path`) as well as on remote filesystems, via SSH (`.SSHPath`)."
+msgstr "ローカルのファイルシステム(`.Path`)と、SSH 越しのリモートのファイルシステム(`.SSHPath`)のパスに対して、Python 2 でも使える :py:mod:`pathlib` 風のインターフェースを提供します。"
 
 #: of pwnlib.filesystem:1
 msgid "Handles file abstraction for local vs. remote (via ssh)"
-msgstr ""
+msgstr "ローカルとリモート(SSH 越し)の違いを、ファイルの扱いで吸収します"
 
 #: of pathlib.Path:1
 msgid "PurePath subclass that can make system calls."
-msgstr ""
+msgstr "システムコールを実行できる PurePath のサブクラスです。"
 
 #: of pathlib.Path:3
-msgid ""
-"Path represents a filesystem path but unlike PurePath, also offers "
-"methods to do system calls on path objects. Depending on your system, "
-"instantiating a Path will return either a PosixPath or a WindowsPath "
-"object. You can also instantiate a PosixPath or WindowsPath directly, but"
-" cannot instantiate a WindowsPath on a POSIX system or vice versa."
-msgstr ""
+msgid "Path represents a filesystem path but unlike PurePath, also offers methods to do system calls on path objects. Depending on your system, instantiating a Path will return either a PosixPath or a WindowsPath object. You can also instantiate a PosixPath or WindowsPath directly, but cannot instantiate a WindowsPath on a POSIX system or vice versa."
+msgstr "Path はファイルシステムのパスを表します。PurePath と違って、パスのオブジェクトに対してシステムコールを実行するメソッドも持っています。システムによって、Path をインスタンス化すると PosixPath か WindowsPath のオブジェクトが返ります。PosixPath や WindowsPath を直接インスタンス化することもできますが、POSIX のシステムで WindowsPath を(またはその逆を)インスタンス化することはできません。"
 
 #: of pathlib.Path:9 pathlib.Path.__new__:1 pwnlib.filesystem.ssh.SSHPath:48
-msgid ""
-"Construct a PurePath from one or several strings and or existing PurePath"
-" objects.  The strings and path objects are combined so as to yield a "
-"canonicalized path, which is incorporated into the new PurePath object."
-msgstr ""
+msgid "Construct a PurePath from one or several strings and or existing PurePath objects.  The strings and path objects are combined so as to yield a canonicalized path, which is incorporated into the new PurePath object."
+msgstr "1 つ以上の文字列や既存の PurePath オブジェクトから、PurePath を作ります。文字列とパスのオブジェクトは、正規化されたパスになるように結合され、新しい PurePath オブジェクトに取り込まれます。"
 
 #: of pathlib.Path.cwd:1 pwnlib.filesystem.SSHPath.cwd:1
 msgid "Return a new path pointing to the current working directory."
-msgstr ""
+msgstr "現在の作業ディレクトリを指す新しいパスを返します。"
 
 #: of pathlib.Path.home:1
-msgid ""
-"Return a new path pointing to the user's home directory (as returned by "
-"os.path.expanduser('~'))."
-msgstr ""
+msgid "Return a new path pointing to the user's home directory (as returned by os.path.expanduser('~'))."
+msgstr "ユーザーのホームディレクトリ(os.path.expanduser('~') が返すもの)を指す新しいパスを返します。"
 
 #: of pathlib.Path.absolute:1
-msgid ""
-"Return an absolute version of this path by prepending the current working"
-" directory. No normalization or symlink resolution is performed."
-msgstr ""
+msgid "Return an absolute version of this path by prepending the current working directory. No normalization or symlink resolution is performed."
+msgstr "現在の作業ディレクトリを先頭に付けて、このパスの絶対パス版を返します。正規化もシンボリックリンクの解決も行いません。"
 
 #: of pathlib.Path.absolute:4
 msgid "Use resolve() to get the canonical path to a file."
-msgstr ""
+msgstr "ファイルの正規のパスを得るには、resolve() を使ってください。"
 
 #: of pathlib.Path.chmod:1
 msgid "Change the permissions of the path, like os.chmod()."
-msgstr ""
+msgstr "os.chmod() と同じように、パスのパーミッションを変更します。"
 
 #: of pathlib.Path.exists:1
 msgid "Whether this path exists."
-msgstr ""
+msgstr "このパスが存在するかどうか。"
 
 #: of pathlib.Path.exists:3
-msgid ""
-"This method normally follows symlinks; to check whether a symlink exists,"
-" add the argument follow_symlinks=False."
-msgstr ""
+msgid "This method normally follows symlinks; to check whether a symlink exists, add the argument follow_symlinks=False."
+msgstr "このメソッドは通常、シンボリックリンクをたどります。シンボリックリンク自体が存在するかを調べるには、引数 follow_symlinks=False を付けてください。"
 
 #: of pathlib.Path.expanduser:1
-msgid ""
-"Return a new path with expanded ~ and ~user constructs (as returned by "
-"os.path.expanduser)"
-msgstr ""
+msgid "Return a new path with expanded ~ and ~user constructs (as returned by os.path.expanduser)"
+msgstr "~ や ~user を展開した新しいパスを返します(os.path.expanduser が返すもの)"
 
 #: of pathlib.Path.glob:1 pwnlib.filesystem.ssh.SSHPath.glob:1
-msgid ""
-"Iterate over this subtree and yield all existing files (of any kind, "
-"including directories) matching the given relative pattern."
-msgstr ""
+msgid "Iterate over this subtree and yield all existing files (of any kind, including directories) matching the given relative pattern."
+msgstr "このサブツリーをたどり、指定した相対パターンに一致する既存のファイルを(ディレクトリを含め、種類を問わず)すべて yield します。"
 
 #: of pathlib.Path.group:1 pwnlib.filesystem.ssh.SSHPath.group:1
 msgid "Return the group name of the file gid."
-msgstr ""
+msgstr "ファイルの gid のグループ名を返します。"
 
 #: of pathlib.Path.hardlink_to:1
 msgid "Make this path a hard link pointing to the same file as *target*."
-msgstr ""
+msgstr "このパスを、*target* と同じファイルを指すハードリンクにします。"
 
 #: of pathlib.Path.hardlink_to:3
 msgid "Note the order of arguments (self, target) is the reverse of os.link's."
-msgstr ""
+msgstr "引数の順序 (self, target) は、os.link とは逆であることに注意してください。"
 
 #: of pathlib.Path.is_block_device:1
 #: pwnlib.filesystem.ssh.SSHPath.is_block_device:1
 msgid "Whether this path is a block device."
-msgstr ""
+msgstr "このパスがブロックデバイスかどうか。"
 
 #: of pathlib.Path.is_char_device:1
 #: pwnlib.filesystem.ssh.SSHPath.is_char_device:1
 msgid "Whether this path is a character device."
-msgstr ""
+msgstr "このパスがキャラクタデバイスかどうか。"
 
 #: of pathlib.Path.is_dir:1
 msgid "Whether this path is a directory."
-msgstr ""
+msgstr "このパスがディレクトリかどうか。"
 
 #: of pathlib.Path.is_fifo:1 pwnlib.filesystem.ssh.SSHPath.is_fifo:1
 msgid "Whether this path is a FIFO."
-msgstr ""
+msgstr "このパスが FIFO かどうか。"
 
 #: of pathlib.Path.is_file:1
-msgid ""
-"Whether this path is a regular file (also True for symlinks pointing to "
-"regular files)."
-msgstr ""
+msgid "Whether this path is a regular file (also True for symlinks pointing to regular files)."
+msgstr "このパスが通常のファイルかどうか(通常のファイルを指すシンボリックリンクでも True になります)。"
 
 #: of pathlib.Path.is_junction:1
 msgid "Whether this path is a junction."
-msgstr ""
+msgstr "このパスがジャンクションかどうか。"
 
 #: of pathlib.Path.is_mount:1
 msgid "Check if this path is a mount point"
@@ -146,143 +123,119 @@ msgstr ""
 
 #: of pathlib.Path.is_socket:1 pwnlib.filesystem.ssh.SSHPath.is_socket:1
 msgid "Whether this path is a socket."
-msgstr ""
+msgstr "このパスがソケットかどうか。"
 
 #: of pathlib.Path.is_symlink:1 pwnlib.filesystem.ssh.SSHPath.is_symlink:1
 msgid "Whether this path is a symbolic link."
-msgstr ""
+msgstr "このパスがシンボリックリンクかどうか。"
 
 #: of pathlib.Path.iterdir:1
 msgid "Yield path objects of the directory contents."
-msgstr ""
+msgstr "ディレクトリの内容のパスオブジェクトを yield します。"
 
 #: of pathlib.Path.iterdir:3
-msgid ""
-"The children are yielded in arbitrary order, and the special entries '.' "
-"and '..' are not included."
-msgstr ""
+msgid "The children are yielded in arbitrary order, and the special entries '.' and '..' are not included."
+msgstr "子は任意の順序で yield され、特別なエントリ '.' と '..' は含まれません。"
 
 #: of pathlib.Path.lchmod:1 pwnlib.filesystem.ssh.SSHPath.lchmod:1
-msgid ""
-"Like chmod(), except if the path points to a symlink, the symlink's "
-"permissions are changed, rather than its target's."
-msgstr ""
+msgid "Like chmod(), except if the path points to a symlink, the symlink's permissions are changed, rather than its target's."
+msgstr "chmod() と同じですが、パスがシンボリックリンクを指す場合は、リンク先ではなくシンボリックリンク自体のパーミッションを変更します。"
 
 #: of pathlib.Path.lstat:1
-msgid ""
-"Like stat(), except if the path points to a symlink, the symlink's status"
-" information is returned, rather than its target's."
-msgstr ""
+msgid "Like stat(), except if the path points to a symlink, the symlink's status information is returned, rather than its target's."
+msgstr "stat() と同じですが、パスがシンボリックリンクを指す場合は、リンク先ではなくシンボリックリンク自体のステータス情報を返します。"
 
 #: of pathlib.Path.mkdir:1
 msgid "Create a new directory at this given path."
-msgstr ""
+msgstr "指定したパスに新しいディレクトリを作成します。"
 
 #: of pathlib.Path.open:1
-msgid ""
-"Open the file pointed to by this path and return a file object, as the "
-"built-in open() function does."
-msgstr ""
+msgid "Open the file pointed to by this path and return a file object, as the built-in open() function does."
+msgstr "組み込みの open() 関数と同じように、このパスが指すファイルを開き、ファイルオブジェクトを返します。"
 
 #: of pathlib.Path.owner:1 pwnlib.filesystem.ssh.SSHPath.owner:1
 msgid "Return the login name of the file owner."
-msgstr ""
+msgstr "ファイルの所有者のログイン名を返します。"
 
 #: of pathlib.Path.read_bytes:1
 msgid "Open the file in bytes mode, read it, and close the file."
-msgstr ""
+msgstr "ファイルをバイト列モードで開いて読み取り、閉じます。"
 
 #: of pathlib.Path.read_text:1
 msgid "Open the file in text mode, read it, and close the file."
-msgstr ""
+msgstr "ファイルをテキストモードで開いて読み取り、閉じます。"
 
 #: of pathlib.Path.readlink:1 pwnlib.filesystem.ssh.SSHPath.readlink:1
 msgid "Return the path to which the symbolic link points."
-msgstr ""
+msgstr "シンボリックリンクが指すパスを返します。"
 
 #: of pathlib.Path.rename:1
 msgid "Rename this path to the target path."
-msgstr ""
+msgstr "このパスを、対象のパスに名前変更します。"
 
 #: of pathlib.Path.rename:3 pathlib.Path.replace:3
-msgid ""
-"The target path may be absolute or relative. Relative paths are "
-"interpreted relative to the current working directory, *not* the "
-"directory of the Path object."
-msgstr ""
+msgid "The target path may be absolute or relative. Relative paths are interpreted relative to the current working directory, *not* the directory of the Path object."
+msgstr "対象のパスは、絶対パスでも相対パスでもかまいません。相対パスは、Path オブジェクトのディレクトリではなく、現在の作業ディレクトリからの相対として解釈されます。"
 
 #: of pathlib.Path.rename:7 pathlib.Path.replace:7
 msgid "Returns the new Path instance pointing to the target path."
-msgstr ""
+msgstr "対象のパスを指す新しい Path インスタンスを返します。"
 
 #: of pathlib.Path.replace:1
 msgid "Rename this path to the target path, overwriting if that path exists."
-msgstr ""
+msgstr "このパスを対象のパスに名前変更します。そのパスがすでにある場合は上書きします。"
 
 #: of pathlib.Path.resolve:1
-msgid ""
-"Make the path absolute, resolving all symlinks on the way and also "
-"normalizing it."
-msgstr ""
+msgid "Make the path absolute, resolving all symlinks on the way and also normalizing it."
+msgstr "パスを絶対パスにします。途中のシンボリックリンクはすべて解決し、正規化もします。"
 
 #: of pathlib.Path.rglob:1 pwnlib.filesystem.ssh.SSHPath.rglob:1
-msgid ""
-"Recursively yield all existing files (of any kind, including directories)"
-" matching the given relative pattern, anywhere in this subtree."
-msgstr ""
+msgid "Recursively yield all existing files (of any kind, including directories) matching the given relative pattern, anywhere in this subtree."
+msgstr "このサブツリーのどこにある、指定した相対パターンに一致する既存のファイルも(ディレクトリを含め、種類を問わず)、再帰的にすべて yield します。"
 
 #: of pathlib.Path.rmdir:1
 msgid "Remove this directory.  The directory must be empty."
-msgstr ""
+msgstr "このディレクトリを削除します。ディレクトリは空でなければなりません。"
 
 #: of pathlib.Path.samefile:1
-msgid ""
-"Return whether other_path is the same or not as this file (as returned by"
-" os.path.samefile())."
-msgstr ""
+msgid "Return whether other_path is the same or not as this file (as returned by os.path.samefile())."
+msgstr "other_path がこのファイルと同じかどうかを返します(os.path.samefile() が返すもの)。"
 
 #: of pathlib.Path.stat:1
-msgid ""
-"Return the result of the stat() system call on this path, like os.stat() "
-"does."
-msgstr ""
+msgid "Return the result of the stat() system call on this path, like os.stat() does."
+msgstr "os.stat() と同じように、このパスに対する stat() システムコールの結果を返します。"
 
 #: of pathlib.Path.symlink_to:1
-msgid ""
-"Make this path a symlink pointing to the target path. Note the order of "
-"arguments (link, target) is the reverse of os.symlink."
-msgstr ""
+msgid "Make this path a symlink pointing to the target path. Note the order of arguments (link, target) is the reverse of os.symlink."
+msgstr "このパスを、対象のパスを指すシンボリックリンクにします。引数の順序 (link, target) は、os.symlink とは逆であることに注意してください。"
 
 #: of pathlib.Path.touch:1
 msgid "Create this file with the given access mode, if it doesn't exist."
-msgstr ""
+msgstr "ファイルがなければ、指定したアクセスモードで作成します。"
 
 #: of pathlib.Path.unlink:1
 msgid "Remove this file or link. If the path is a directory, use rmdir() instead."
-msgstr ""
+msgstr "このファイルまたはリンクを削除します。パスがディレクトリの場合は、代わりに rmdir() を使ってください。"
 
 #: of pathlib.Path.walk:1
 msgid "Walk the directory tree from this directory, similar to os.walk()."
-msgstr ""
+msgstr "os.walk() と同じように、このディレクトリからディレクトリツリーをたどります。"
 
 #: of pathlib.Path.write_bytes:1
 msgid "Open the file in bytes mode, write to it, and close the file."
-msgstr ""
+msgstr "ファイルをバイト列モードで開いて書き込み、閉じます。"
 
 #: of pathlib.Path.write_text:1
 msgid "Open the file in text mode, write to it, and close the file."
-msgstr ""
+msgstr "ファイルをテキストモードで開いて書き込み、閉じます。"
 
 #: of pwnlib.filesystem.ssh.SSHPath:1
 msgid "Represents a file that exists on a remote filesystem."
-msgstr ""
+msgstr "リモートのファイルシステムにあるファイルを表します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath:3
-msgid ""
-"See :class:`.ssh` for more information on how to set up an SSH "
-"connection. See :py:class:`pathlib.Path` for documentation on what "
-"members and properties this object has."
-msgstr ""
+msgid "See :class:`.ssh` for more information on how to set up an SSH connection. See :py:class:`pathlib.Path` for documentation on what members and properties this object has."
+msgstr "SSH 接続の設定方法は、:class:`.ssh` を参照してください。このオブジェクトが持つメンバーやプロパティについては、:py:class:`pathlib.Path` の文書を参照してください。"
 
 #: ../pwntools/docs/source/filesystem.rst
 msgid "Parameters"
@@ -294,14 +247,11 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath:9
 msgid ":class:`.ssh` object for manipulating remote files"
-msgstr ""
+msgstr "リモートのファイルを操作するための :class:`.ssh` オブジェクト"
 
 #: of pwnlib.filesystem.ssh.SSHPath:14
-msgid ""
-"You can avoid having to supply ``ssh=`` on every ``SSHPath`` by setting "
-":data:`.context.ssh_session`. In these examples we provide ``ssh=`` for "
-"clarity."
-msgstr ""
+msgid "You can avoid having to supply ``ssh=`` on every ``SSHPath`` by setting :data:`.context.ssh_session`. In these examples we provide ``ssh=`` for clarity."
+msgstr ":data:`.context.ssh_session` を設定すれば、``SSHPath`` のたびに ``ssh=`` を渡さずに済みます。ここの例では、分かりやすくするために ``ssh=`` を渡しています。"
 
 #: of pwnlib.filesystem.ssh.SSHPath:19 pwnlib.filesystem.ssh.SSHPath.resolve:8
 msgid "Examples"
@@ -309,50 +259,39 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath:20
 msgid "First, create an SSH connection to the server."
-msgstr ""
+msgstr "まず、サーバーへの SSH 接続を作ります。"
 
 #: of pwnlib.filesystem.ssh.SSHPath:24
 msgid "Let's use a temporary directory for our tests"
-msgstr ""
+msgstr "テストには、一時ディレクトリを使います"
 
 #: of pwnlib.filesystem.ssh.SSHPath:28
-msgid ""
-"Next, you can create SSHPath objects to represent the paths to files on "
-"the remote system."
-msgstr ""
+msgid "Next, you can create SSHPath objects to represent the paths to files on the remote system."
+msgstr "次に、SSHPath オブジェクトを作って、リモートのシステム上のファイルのパスを表せます。"
 
 #: of pwnlib.filesystem.ssh.SSHPath:41
-msgid ""
-"``context.ssh_session`` must be set to use the :meth:`.SSHPath.mktemp` or"
-" :meth:`.SSHPath.mkdtemp` methods."
-msgstr ""
+msgid "``context.ssh_session`` must be set to use the :meth:`.SSHPath.mktemp` or :meth:`.SSHPath.mkdtemp` methods."
+msgstr ":meth:`.SSHPath.mktemp` や :meth:`.SSHPath.mkdtemp` メソッドを使うには、``context.ssh_session`` を設定しておく必要があります。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.__bytes__:1
-msgid ""
-"Return the bytes representation of the path.  This is only recommended to"
-" use under Unix."
-msgstr ""
+msgid "Return the bytes representation of the path.  This is only recommended to use under Unix."
+msgstr "パスのバイト列表現を返します。Unix でだけ使うことをお勧めします。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.__eq__:1
 msgid "Return self==value."
-msgstr ""
+msgstr "self==value を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.__str__:1
-msgid ""
-"Return the string representation of the path, suitable for passing to "
-"system calls."
-msgstr ""
+msgid "Return the string representation of the path, suitable for passing to system calls."
+msgstr "システムコールに渡すのに適した、パスの文字列表現を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.absolute:1
-msgid ""
-"Return the absolute path to a file, preserving e.g. \"../\". The current "
-"working directory is determined via the :class:`.ssh` member "
-":attr:`.ssh.cwd`."
-msgstr ""
+msgid "Return the absolute path to a file, preserving e.g. \"../\". The current working directory is determined via the :class:`.ssh` member :attr:`.ssh.cwd`."
+msgstr "\"../\" などを残したまま、ファイルの絶対パスを返します。現在の作業ディレクトリは、:class:`.ssh` のメンバー :attr:`.ssh.cwd` で決まります。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.absolute:6
 #: pwnlib.filesystem.ssh.SSHPath.exists:4
@@ -369,11 +308,11 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.as_posix:1
 msgid "Return the string representation of the path with forward (/) slashes."
-msgstr ""
+msgstr "スラッシュ(/)区切りのパスの文字列表現を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.as_uri:1
 msgid "Return the path as a 'file' URI."
-msgstr ""
+msgstr "パスを 'file' URI として返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.chmod:1
 msgid "Change the permissions of a file"
@@ -389,7 +328,7 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_absolute:1
 msgid "Returns whether a path is absolute or not."
-msgstr ""
+msgstr "パスが絶対パスかどうかを返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_dir:1
 msgid "Returns True if the path exists and is a directory"
@@ -401,13 +340,11 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_relative_to:1
 msgid "Return True if the path is relative to another path or False."
-msgstr ""
+msgstr "パスが別のパスからの相対なら True を、そうでなければ False を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.is_reserved:1
-msgid ""
-"Return True if the path contains one of the special names reserved by the"
-" system, if any."
-msgstr ""
+msgid "Return True if the path contains one of the special names reserved by the system, if any."
+msgstr "パスに、システムが予約している特別な名前が含まれていれば True を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.iterdir:1
 msgid "Iterates over the contents of the directory"
@@ -415,11 +352,11 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.joinpath:1
 msgid "Combine this path with one or several arguments."
-msgstr ""
+msgstr "このパスと、1 つ以上の引数を結合します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.match:1
 msgid "Return True if this path matches the given pattern."
-msgstr ""
+msgstr "このパスが指定したパターンに一致すれば True を返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.mkdir:1
 msgid "Make a directory at the specified path"
@@ -427,11 +364,11 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.open:1
 msgid "Return a file-like object for this path."
-msgstr ""
+msgstr "このパスのファイルのようなオブジェクトを返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.open:3
 msgid "This currently seems to be broken in Paramiko."
-msgstr ""
+msgstr "これは現在、Paramiko では壊れているようです。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.read_bytes:1
 msgid "Read bytes from the file at this path"
@@ -442,17 +379,12 @@ msgid "Read text from the file at this path"
 msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.relative_to:1
-msgid ""
-"Return the relative path to another path identified by the passed "
-"arguments.  If the operation is not possible (because this is not related"
-" to the other path), raise ValueError."
-msgstr ""
+msgid "Return the relative path to another path identified by the passed arguments.  If the operation is not possible (because this is not related to the other path), raise ValueError."
+msgstr "引数で指定した別のパスへの相対パスを返します。この操作ができない場合(このパスが他のパスと関係がない場合)は、ValueError を送出します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.relative_to:5
-msgid ""
-"The *walk_up* parameter controls whether `..` may be used to resolve the "
-"path."
-msgstr ""
+msgid "The *walk_up* parameter controls whether `..` may be used to resolve the path."
+msgstr "*walk_up* パラメータは、パスの解決に `..` を使ってよいかどうかを制御します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.rename:1
 msgid "Rename a file to the target path"
@@ -463,19 +395,16 @@ msgid "Replace target file with file at this path"
 msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.resolve:1
-msgid ""
-"Return the absolute path to a file, resolving any '..' or symlinks. The "
-"current working directory is determined via the :class:`.ssh` member "
-":attr:`.ssh.cwd`."
-msgstr ""
+msgid "Return the absolute path to a file, resolving any '..' or symlinks. The current working directory is determined via the :class:`.ssh` member :attr:`.ssh.cwd`."
+msgstr "'..' やシンボリックリンクをすべて解決して、ファイルの絶対パスを返します。現在の作業ディレクトリは、:class:`.ssh` のメンバー :attr:`.ssh.cwd` で決まります。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.resolve:5
 msgid "The file must exist to call resolve()."
-msgstr ""
+msgstr "resolve() を呼ぶには、ファイルが存在している必要があります。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.rmdir:1
 msgid "Remove an existing directory."
-msgstr ""
+msgstr "既存のディレクトリを削除します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.samefile:1
 msgid "Returns whether two files are the same"
@@ -495,18 +424,16 @@ msgid "Todo"
 msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.symlink_to:5
-msgid ""
-"Paramiko's documentation is wrong and inverted. "
-"https://github.com/paramiko/paramiko/issues/1821"
-msgstr ""
+msgid "Paramiko's documentation is wrong and inverted. https://github.com/paramiko/paramiko/issues/1821"
+msgstr "Paramiko の文書は誤っていて、逆になっています。https://github.com/paramiko/paramiko/issues/1821"
 
 #: of pwnlib.filesystem.ssh.SSHPath.touch:1
 msgid "Touch a file (i.e. make it exist)"
-msgstr ""
+msgstr "ファイルを touch します(つまり、存在させます)"
 
 #: of pwnlib.filesystem.ssh.SSHPath.unlink:1
 msgid "Remove an existing file."
-msgstr ""
+msgstr "既存のファイルを削除します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.unlink:5
 msgid ""
@@ -516,7 +443,7 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.unlink:20
 msgid "Note that unlink only works on files."
-msgstr ""
+msgstr "unlink はファイルに対してしか動作しないことに注意してください。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.with_name:1
 msgid "Return a new path with the file name changed"
@@ -524,7 +451,7 @@ msgstr ""
 
 #: of pwnlib.filesystem.ssh.SSHPath.with_stem:1
 msgid "Return a new path with the stem changed."
-msgstr ""
+msgstr "stem を変更した新しいパスを返します。"
 
 #: of pwnlib.filesystem.ssh.SSHPath.with_suffix:1
 msgid "Return a new path with the file suffix changed"
@@ -544,7 +471,7 @@ msgstr ""
 
 #: of pwnlib.filesystem.SSHPath.anchor:1
 msgid "The concatenation of the drive and root, or ''."
-msgstr ""
+msgstr "ドライブとルートを連結したもの。なければ ''。"
 
 #: of pwnlib.filesystem.SSHPath.home:1
 msgid "Returns the home directory for the SSH connection"
@@ -552,7 +479,7 @@ msgstr ""
 
 #: of pwnlib.filesystem.SSHPath.name:1
 msgid "Returns the name of the file."
-msgstr ""
+msgstr "ファイルの名前を返します。"
 
 #: of pwnlib.filesystem.SSHPath.parent:1
 msgid "Return the parent of this path"
@@ -572,9 +499,8 @@ msgstr ""
 
 #: of pwnlib.filesystem.SSHPath.suffix:1
 msgid "Returns the suffix of the file."
-msgstr ""
+msgstr "ファイルの拡張子を返します。"
 
 #: of pwnlib.filesystem.SSHPath.suffixes:1
 msgid "Returns the suffixes of a file"
 msgstr ""
-

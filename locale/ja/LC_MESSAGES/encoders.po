@@ -21,25 +21,21 @@ msgstr ""
 
 #: ../pwntools/docs/source/encoders.rst:10
 msgid ":mod:`pwnlib.encoders` --- Encoding Shellcode"
-msgstr ""
+msgstr ":mod:`pwnlib.encoders` --- シェルコードのエンコード"
 
 #: of pwnlib.encoders.encoder.alphanumeric:1
-msgid ""
-"Encode the shellcode ``raw_bytes`` such that it does not contain any "
-"bytes except for [A-Za-z0-9]."
-msgstr ""
+msgid "Encode the shellcode ``raw_bytes`` such that it does not contain any bytes except for [A-Za-z0-9]."
+msgstr "シェルコード ``raw_bytes`` を、[A-Za-z0-9] 以外のバイトを含まないようにエンコードします。"
 
 #: of pwnlib.encoders.encoder.alphanumeric:4 pwnlib.encoders.encoder.line:4
 #: pwnlib.encoders.encoder.null:4 pwnlib.encoders.encoder.printable:4
 #: pwnlib.encoders.encoder.scramble:3
 msgid "Accepts the same arguments as :func:`encode`."
-msgstr ""
+msgstr ":func:`encode` と同じ引数を受け取ります。"
 
 #: of pwnlib.encoders.encoder.encode:1
-msgid ""
-"Encode shellcode ``raw_bytes`` such that it does not contain any bytes in"
-" ``avoid`` or ``expr``."
-msgstr ""
+msgid "Encode shellcode ``raw_bytes`` such that it does not contain any bytes in ``avoid`` or ``expr``."
+msgstr "シェルコード ``raw_bytes`` を、``avoid`` や ``expr`` に含まれるバイトを含まないようにエンコードします。"
 
 #: ../pwntools/docs/source/encoders.rst of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__
@@ -52,7 +48,7 @@ msgstr ""
 
 #: of pwnlib.encoders.encoder.encode:4
 msgid "Sequence of shellcode bytes to encode."
-msgstr ""
+msgstr "エンコードするシェルコードのバイト列。"
 
 #: of pwnlib.encoders.encoder.encode:6
 msgid "Bytes to avoid"
@@ -60,35 +56,27 @@ msgstr ""
 
 #: of pwnlib.encoders.encoder.encode:8
 msgid "Regular expression which matches bad characters."
-msgstr ""
+msgstr "不正な文字に一致する正規表現。"
 
 #: of pwnlib.encoders.encoder.encode:10
-msgid ""
-"Force re-encoding of the shellcode, even if it doesn't contain any bytes "
-"in ``avoid``."
-msgstr ""
+msgid "Force re-encoding of the shellcode, even if it doesn't contain any bytes in ``avoid``."
+msgstr "シェルコードが ``avoid`` に含まれるバイトを含んでいなくても、強制的に再エンコードします。"
 
 #: of pwnlib.encoders.encoder.line:1
-msgid ""
-"Encode the shellcode ``raw_bytes`` such that it does not contain any NULL"
-" bytes or whitespace."
-msgstr ""
+msgid "Encode the shellcode ``raw_bytes`` such that it does not contain any NULL bytes or whitespace."
+msgstr "シェルコード ``raw_bytes`` を、NULL バイトや空白を含まないようにエンコードします。"
 
 #: of pwnlib.encoders.encoder.null:1
-msgid ""
-"Encode the shellcode ``raw_bytes`` such that it does not contain any NULL"
-" bytes."
-msgstr ""
+msgid "Encode the shellcode ``raw_bytes`` such that it does not contain any NULL bytes."
+msgstr "シェルコード ``raw_bytes`` を、NULL バイトを含まないようにエンコードします。"
 
 #: of pwnlib.encoders.encoder.printable:1
-msgid ""
-"Encode the shellcode ``raw_bytes`` such that it only contains non-space "
-"printable bytes."
-msgstr ""
+msgid "Encode the shellcode ``raw_bytes`` such that it only contains non-space printable bytes."
+msgstr "シェルコード ``raw_bytes`` を、空白以外の印字可能なバイトだけを含むようにエンコードします。"
 
 #: of pwnlib.encoders.encoder.scramble:1
 msgid "Encodes the input data with a random encoder."
-msgstr ""
+msgstr "ランダムなエンコーダで、入力データをエンコードします。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode:1
 msgid ""
@@ -104,38 +92,24 @@ msgid ""
 msgstr ""
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:4
-msgid ""
-"The original paper this encoder is based on: "
-"https://julianor.tripod.com/bc/bypass-msb.txt"
-msgstr ""
+msgid "The original paper this encoder is based on: https://julianor.tripod.com/bc/bypass-msb.txt"
+msgstr "このエンコーダの元になった論文: https://julianor.tripod.com/bc/bypass-msb.txt"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:7
-msgid ""
-"A more visual explanation as well as an implementation in C: "
-"https://vincentdary.github.io/blog-posts/polyasciishellgen-caezar-ascii-"
-"shellcode-generator/index.html#22-mechanism"
-msgstr ""
+msgid "A more visual explanation as well as an implementation in C: https://vincentdary.github.io/blog-posts/polyasciishellgen-caezar-ascii-shellcode-generator/index.html#22-mechanism"
+msgstr "より視覚的な説明と C での実装: https://vincentdary.github.io/blog-posts/polyasciishellgen-caezar-ascii-shellcode-generator/index.html#22-mechanism"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:10
 msgid "Init"
 msgstr ""
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:12
-msgid ""
-"The amount esp will be increased by in the allocation phase (In addition "
-"to the length of the packed shellcode) as well as defines the size of the"
-" NOP sled (you can increase/ decrease the size of the NOP sled by "
-"adding/removing b'P'-s to/ from the end of the packed shellcode). "
-"Defaults to 20."
-msgstr ""
+msgid "The amount esp will be increased by in the allocation phase (In addition to the length of the packed shellcode) as well as defines the size of the NOP sled (you can increase/ decrease the size of the NOP sled by adding/removing b'P'-s to/ from the end of the packed shellcode). Defaults to 20."
+msgstr "確保の段階で esp を増やす量（パックしたシェルコードの長さに加えて）。NOP スレッドの大きさも決めます（パックしたシェルコードの末尾に b'P' を足したり減らしたりして、NOP スレッドの大きさを増減できます）。既定は 20 です。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder:19
-msgid ""
-"The maximum amount of subtractions allowed to be taken. This may be "
-"increased if you have a relatively  restrictive ``avoid`` set. The more "
-"subtractions there are, the bigger the packed shellcode will be. Defaults"
-" to 4."
-msgstr ""
+msgid "The maximum amount of subtractions allowed to be taken. This may be increased if you have a relatively  restrictive ``avoid`` set. The more subtractions there are, the bigger the packed shellcode will be. Defaults to 4."
+msgstr "使える減算の最大回数。``avoid`` の制約がかなり厳しい場合は、増やすとよいです。減算が多いほど、パックしたシェルコードは大きくなります。既定は 4 です。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:4
 msgid "The shellcode to be packed"
@@ -143,7 +117,7 @@ msgstr ""
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:6
 msgid "Characters to avoid. Defaults to allow printable ascii (0x21-0x7e)."
-msgstr ""
+msgstr "避ける文字。既定では、印字可能な ASCII（0x21-0x7e）を許可します。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:9
 msgid "Ignored"
@@ -156,28 +130,20 @@ msgid "Raises"
 msgstr ""
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:12
-msgid ""
-"A required character is in ``avoid`` (required     characters are "
-"characters which assemble into assembly     instructions and are used to "
-"unpack the shellcode onto the     stack, more details in the paper linked"
-" above ``\\ - % T X P``)."
-msgstr ""
+msgid "A required character is in ``avoid`` (required     characters are characters which assemble into assembly     instructions and are used to unpack the shellcode onto the     stack, more details in the paper linked above ``\\ - % T X P``)."
+msgstr "必要な文字が ``avoid`` に含まれています（必要な文字とは、アセンブリ命令にアセンブルされ、シェルコードをスタックに展開するのに使われる文字です。詳しくは上にリンクした論文を参照してください ``\\ - % T X P``）。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:13
 msgid "Not supported architecture"
 msgstr ""
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:14
-msgid ""
-"The allowed character set does not contain     two characters that when "
-"they are bitwise-anded with eachother     their result is 0"
-msgstr ""
+msgid "The allowed character set does not contain     two characters that when they are bitwise-anded with eachother     their result is 0"
+msgstr "許可された文字集合に、互いにビット単位で AND したときの結果が 0 になる 2 つの文字が含まれていません。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:15
-msgid ""
-"Could not find a correct subtraction sequence     to get to the the "
-"desired target value with the given ``avoid``     parameter"
-msgstr ""
+msgid "Could not find a correct subtraction sequence     to get to the the desired target value with the given ``avoid``     parameter"
+msgstr "指定した ``avoid`` パラメータのもとでは、目的の値に到達する正しい減算列が見つかりませんでした。"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions
@@ -189,7 +155,7 @@ msgstr ""
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:17
 msgid "*bytes* -- The packed shellcode"
-msgstr ""
+msgstr "*bytes* -- パックしたシェルコード"
 
 #: of pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder.__call__:20
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:20
@@ -202,14 +168,12 @@ msgstr ""
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:1
 msgid "Given `target` and `last`, return a list of integers that when"
-msgstr ""
+msgstr "`target` と `last` が与えられたとき、整数のリストを返します。それを"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:2
-msgid ""
-"subtracted from `last` will equal `target` while only constructing "
-"integers from bytes in `vocab`"
-msgstr ""
+msgid "subtracted from `last` will equal `target` while only constructing integers from bytes in `vocab`"
+msgstr "`last` から引くと `target` に等しくなり、しかも整数は `vocab` 内のバイトだけで作られます。"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:5
@@ -244,29 +208,23 @@ msgstr ""
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._calc_subtractions:16
-msgid ""
-"*List[bytearray]* -- List of numbers that would need to be subtracted "
-"from `last` to get to `target`"
-msgstr ""
+msgid "*List[bytearray]* -- List of numbers that would need to be subtracted from `last` to get to `target`"
+msgstr "*List[bytearray]* -- `target` に到達するために `last` から引く必要がある数のリスト"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:1
-msgid ""
-"Find two bitwise negatives in the vocab so that when they are and-ed the "
-"result is 0."
-msgstr ""
+msgid "Find two bitwise negatives in the vocab so that when they are and-ed the result is 0."
+msgstr "vocab の中から、AND した結果が 0 になる 2 つのビット反転の組を探します。"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:9
 msgid "*Tuple[int, int]* -- value A, value B"
-msgstr ""
+msgstr "*Tuple[int, int]* -- 値 A、値 B"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._find_negatives:11
-msgid ""
-"The allowed character set does not contain     two characters that when "
-"they are bitwise-and-ed with eachother     the result is 0"
-msgstr ""
+msgid "The allowed character set does not contain     two characters that when they are bitwise-and-ed with eachother     the result is 0"
+msgstr "許可された文字集合に、互いにビット単位で AND したときの結果が 0 になる 2 つの文字が含まれていません。"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:1
@@ -281,7 +239,7 @@ msgstr ""
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_allocator:10
 msgid "*bytearray* -- The allocator shellcode"
-msgstr ""
+msgstr "*bytearray* -- アロケータのシェルコード"
 
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:1
@@ -296,11 +254,11 @@ msgstr ""
 #: of
 #: pwnlib.encoders.i386.ascii_shellcode.AsciiShellcodeEncoder._get_subtractions:10
 msgid "*bytearray* -- packed shellcode"
-msgstr ""
+msgstr "*bytearray* -- パックしたシェルコード"
 
 #: of pwnlib.encoders.i386.xor.i386XorEncoder:1
 msgid "Generates an XOR decoder for i386."
-msgstr ""
+msgstr "i386 用の XOR デコーダを生成します。"
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder:17
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder:12
@@ -314,7 +272,7 @@ msgstr ""
 #: pwnlib.encoders.i386.xor.i386XorEncoder:21
 #: pwnlib.encoders.mips.xor.MipsXorEncoder:15
 msgid "Implements an architecture-specific shellcode encoder"
-msgstr ""
+msgstr "アーキテクチャ固有のシェルコードエンコーダを実装します。"
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder.__call__:1
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:1
@@ -341,10 +299,8 @@ msgstr ""
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder.__call__:7
 #: pwnlib.encoders.i386.xor.i386XorEncoder.__call__:7
 #: pwnlib.encoders.mips.xor.MipsXorEncoder.__call__:7
-msgid ""
-"Register which contains the address of the shellcode. May be necessary "
-"for some shellcode."
-msgstr ""
+msgid "Register which contains the address of the shellcode. May be necessary for some shellcode."
+msgstr "シェルコードのアドレスを保持するレジスタ。シェルコードによっては必要になることがあります。"
 
 #: ../pwntools/docs/docstring of pwnlib.encoders.arm.xor.ArmXorEncoder.arch:1
 #: pwnlib.encoders.i386.delta.i386DeltaEncoder.arch:1
@@ -363,11 +319,11 @@ msgstr ""
 
 #: of pwnlib.encoders.i386.delta.i386DeltaEncoder:1
 msgid "i386 encoder built on delta-encoding."
-msgstr ""
+msgstr "デルタエンコーディングに基づく i386 用のエンコーダです。"
 
 #: of pwnlib.encoders.i386.delta.i386DeltaEncoder:3
 msgid "In addition to the loader stub, doubles the size of the shellcode."
-msgstr ""
+msgstr "ローダのスタブに加えて、シェルコードのサイズが 2 倍になります。"
 
 #: of pwnlib.encoders.i386.delta.i386DeltaEncoder:6
 msgid "Example"
@@ -375,9 +331,8 @@ msgstr ""
 
 #: of pwnlib.encoders.arm.xor.ArmXorEncoder:1
 msgid "Generates an XOR decoder for ARM."
-msgstr ""
+msgstr "ARM 用の XOR デコーダを生成します。"
 
 #: of pwnlib.encoders.mips.xor.MipsXorEncoder:1
 msgid "Generates an XOR decoder for MIPS."
-msgstr ""
-
+msgstr "MIPS 用の XOR デコーダを生成します。"

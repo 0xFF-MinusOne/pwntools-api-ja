@@ -21,14 +21,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/dynelf.rst:2
 msgid ":mod:`pwnlib.dynelf` --- Resolving remote functions using leaks"
-msgstr ""
+msgstr ":mod:`pwnlib.dynelf` --- リークを使ったリモート関数の解決"
 
 #: of pwnlib.dynelf:1
-msgid ""
-"Resolve symbols in loaded, dynamically-linked ELF binaries. Given a "
-"function which can leak data at an arbitrary address, any symbol in any "
-"loaded library can be resolved."
-msgstr ""
+msgid "Resolve symbols in loaded, dynamically-linked ELF binaries. Given a function which can leak data at an arbitrary address, any symbol in any loaded library can be resolved."
+msgstr "読み込み済みの、動的リンクされた ELF バイナリのシンボルを解決します。任意のアドレスのデータをリークできる関数があれば、読み込み済みのどのライブラリのシンボルも解決できます。"
 
 #: of pwnlib.dynelf:6
 msgid "Example"
@@ -39,80 +36,52 @@ msgid "DynELF"
 msgstr ""
 
 #: of pwnlib.dynelf.DynELF:1
-msgid ""
-"DynELF knows how to resolve symbols in remote processes via an infoleak "
-"or memleak vulnerability encapsulated by :class:`pwnlib.memleak.MemLeak`."
-msgstr ""
+msgid "DynELF knows how to resolve symbols in remote processes via an infoleak or memleak vulnerability encapsulated by :class:`pwnlib.memleak.MemLeak`."
+msgstr "DynELF は、:class:`pwnlib.memleak.MemLeak` で包んだ infoleak や memleak の脆弱性を使って、リモートプロセスのシンボルを解決する方法を知っています。"
 
 #: of pwnlib.dynelf.DynELF:4
 msgid "Implementation Details:"
-msgstr ""
+msgstr "実装の詳細:"
 
 #: of pwnlib.dynelf.DynELF:6
 msgid "Resolving Functions:"
-msgstr ""
+msgstr "関数の解決:"
 
 #: of pwnlib.dynelf.DynELF:8
-msgid ""
-"In all ELFs which export symbols for importing by other libraries, (e.g. "
-"``libc.so``) there are a series of tables which give exported symbol "
-"names, exported symbol addresses, and the ``hash`` of those exported "
-"symbols.  By applying a hash function to the name of the desired symbol "
-"(e.g., ``'printf'``), it can be located in the hash table.  Its location "
-"in the hash table provides an index into the string name table (strtab_),"
-" and the symbol address (symtab_)."
-msgstr ""
+msgid "In all ELFs which export symbols for importing by other libraries, (e.g. ``libc.so``) there are a series of tables which give exported symbol names, exported symbol addresses, and the ``hash`` of those exported symbols.  By applying a hash function to the name of the desired symbol (e.g., ``'printf'``), it can be located in the hash table.  Its location in the hash table provides an index into the string name table (strtab_), and the symbol address (symtab_)."
+msgstr "ほかのライブラリからインポートされるシンボルをエクスポートするすべての ELF（例: ``libc.so``）には、エクスポートされたシンボルの名前、エクスポートされたシンボルのアドレス、それらのシンボルの ``hash`` を示す、一連のテーブルがあります。目的のシンボルの名前（例: ``'printf'``）にハッシュ関数を適用すると、ハッシュテーブルの中でその位置が分かります。ハッシュテーブル内の位置から、文字列名のテーブル（strtab_）のインデックスと、シンボルアドレス（symtab_）が分かります。"
 
 #: of pwnlib.dynelf.DynELF:16
-msgid ""
-"Assuming we have the base address of ``libc.so``, the way to resolve the "
-"address of ``printf`` is to locate the ``symtab``, ``strtab``, and hash "
-"table. The string ``\"printf\"`` is hashed according to the style of the "
-"hash table (SYSV_ or GNU_), and the hash table is walked until a matching"
-" entry is located. We can verify an exact match by checking the string "
-"table, and then get the offset into ``libc.so`` from the ``symtab``."
-msgstr ""
+msgid "Assuming we have the base address of ``libc.so``, the way to resolve the address of ``printf`` is to locate the ``symtab``, ``strtab``, and hash table. The string ``\"printf\"`` is hashed according to the style of the hash table (SYSV_ or GNU_), and the hash table is walked until a matching entry is located. We can verify an exact match by checking the string table, and then get the offset into ``libc.so`` from the ``symtab``."
+msgstr "``libc.so`` のベースアドレスが分かっているとして、``printf`` のアドレスを解決するには、``symtab``、``strtab``、ハッシュテーブルの位置を調べます。文字列 ``\"printf\"`` を、ハッシュテーブルの形式（SYSV_ か GNU_）に従ってハッシュし、一致するエントリが見つかるまでハッシュテーブルをたどります。文字列テーブルで完全一致かどうかを確認し、``symtab`` から ``libc.so`` 内のオフセットを取得できます。"
 
 #: of pwnlib.dynelf.DynELF:24
 msgid "Resolving Library Addresses:"
-msgstr ""
+msgstr "ライブラリのアドレスの解決:"
 
 #: of pwnlib.dynelf.DynELF:26
-msgid ""
-"If we have a pointer into a dynamically-linked executable, we can "
-"leverage an internal linker structure called the `link map`_. This is a "
-"linked list structure which contains information about each loaded "
-"library, including its full path and base address."
-msgstr ""
+msgid "If we have a pointer into a dynamically-linked executable, we can leverage an internal linker structure called the `link map`_. This is a linked list structure which contains information about each loaded library, including its full path and base address."
+msgstr "動的リンクされた実行ファイル内のポインタが分かっていれば、`link map`_ と呼ばれる、リンカの内部構造を利用できます。これは連結リスト構造で、読み込み済みの各ライブラリについて、フルパスやベースアドレスなどの情報を持っています。"
 
 #: of pwnlib.dynelf.DynELF:31
-msgid ""
-"A pointer to the ``link map`` can be found in two ways.  Both are "
-"referenced from entries in the DYNAMIC_ array."
-msgstr ""
+msgid "A pointer to the ``link map`` can be found in two ways.  Both are referenced from entries in the DYNAMIC_ array."
+msgstr "``link map`` へのポインタは、2 通りの方法で見つかります。どちらも DYNAMIC_ 配列のエントリから参照されています。"
 
 #: of pwnlib.dynelf.DynELF:34
-msgid ""
-"In non-RELRO binaries, a pointer is placed in the `.got.plt`_ area in the"
-" binary. This is marked by finding the DT_PLTGOT_ area in the binary."
-msgstr ""
+msgid "In non-RELRO binaries, a pointer is placed in the `.got.plt`_ area in the binary. This is marked by finding the DT_PLTGOT_ area in the binary."
+msgstr "RELRO のないバイナリでは、バイナリ内の `.got.plt`_ 領域にポインタが置かれています。これは、バイナリ内の DT_PLTGOT_ 領域を探すと見つかります。"
 
 #: of pwnlib.dynelf.DynELF:37
-msgid ""
-"In all binaries, a pointer can be found in the area described by the "
-"DT_DEBUG_ area.  This exists even in stripped binaries."
-msgstr ""
+msgid "In all binaries, a pointer can be found in the area described by the DT_DEBUG_ area.  This exists even in stripped binaries."
+msgstr "すべてのバイナリでは、DT_DEBUG_ 領域が示す領域にポインタがあります。これはストリップされたバイナリにも存在します。"
 
 #: of pwnlib.dynelf.DynELF:40
 msgid "For maximum flexibility, both mechanisms are used exhaustively."
-msgstr ""
+msgstr "柔軟性を最大にするため、両方の仕組みを網羅的に使います。"
 
 #: of pwnlib.dynelf.DynELF:52 pwnlib.dynelf.DynELF.__init__:1
-msgid ""
-"Instantiates an object which can resolve symbols in a running binary "
-"given a :class:`pwnlib.memleak.MemLeak` leaker and a pointer inside the "
-"binary."
-msgstr ""
+msgid "Instantiates an object which can resolve symbols in a running binary given a :class:`pwnlib.memleak.MemLeak` leaker and a pointer inside the binary."
+msgstr ":class:`pwnlib.memleak.MemLeak` のリーカーと、バイナリ内のポインタを与えると、実行中のバイナリのシンボルを解決できるオブジェクトを作ります。"
 
 #: ../pwntools/docs/source/dynelf.rst
 msgid "Parameters"
@@ -120,7 +89,7 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF:56 pwnlib.dynelf.DynELF.__init__:5
 msgid "Instance of pwnlib.memleak.MemLeak for leaking memory"
-msgstr ""
+msgstr "メモリをリークするための pwnlib.memleak.MemLeak のインスタンス"
 
 #: of pwnlib.dynelf.DynELF:58 pwnlib.dynelf.DynELF.__init__:7
 msgid "A pointer into a loaded ELF file"
@@ -128,25 +97,23 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF:60 pwnlib.dynelf.DynELF.__init__:9
 msgid "Path to the ELF file on disk, or a loaded :class:`pwnlib.elf.ELF`."
-msgstr ""
+msgstr "ディスク上の ELF ファイルのパス、または読み込み済みの :class:`pwnlib.elf.ELF`。"
 
 #: of pwnlib.dynelf.DynELF:62 pwnlib.dynelf.DynELF.__init__:11
 msgid "Attempt to use libcdb to speed up libc lookups"
 msgstr ""
 
 #: of pwnlib.dynelf.DynELF.find_base:1
-msgid ""
-"Given a :class:`pwnlib.memleak.MemLeak` object and a pointer into a "
-"library, find its base address."
-msgstr ""
+msgid "Given a :class:`pwnlib.memleak.MemLeak` object and a pointer into a library, find its base address."
+msgstr ":class:`pwnlib.memleak.MemLeak` オブジェクトと、ライブラリ内のポインタを与えると、そのベースアドレスを探します。"
 
 #: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:1
 msgid "Looks up information about a loaded library via the link map."
-msgstr ""
+msgstr "link map を使って、読み込み済みのライブラリの情報を調べます。"
 
 #: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:3
 msgid "Name of the library to resolve, or a substring (e.g. 'libc.so')"
-msgstr ""
+msgstr "解決するライブラリの名前、またはその一部の文字列（例: 'libc.so'）"
 
 #: ../pwntools/docs/source/dynelf.rst
 msgid "Returns"
@@ -154,11 +121,11 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF._dynamic_load_dynelf:6
 msgid "A DynELF instance for the loaded library, or None."
-msgstr ""
+msgstr "読み込み済みのライブラリの DynELF インスタンス、または None。"
 
 #: of pwnlib.dynelf.DynELF._find_dt:1
 msgid "Find an entry in the DYNAMIC array."
-msgstr ""
+msgstr "DYNAMIC 配列のエントリを探します。"
 
 #: of pwnlib.dynelf.DynELF._find_dt:3
 msgid "Single tag to find"
@@ -166,7 +133,7 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF._find_dt:6 pwnlib.dynelf.DynELF._find_dt_optimized:6
 msgid "Pointer to the data described by the specified entry."
-msgstr ""
+msgstr "指定したエントリが示すデータへのポインタ。"
 
 #: of pwnlib.dynelf.DynELF._find_dt_optimized:1
 msgid "Find an entry in the DYNAMIC array through an ELF"
@@ -174,99 +141,80 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF._find_dt_optimized:3
 msgid "Name of the tag to find ('DT_DEBUG', 'DT_PLTGOT', ...)"
-msgstr ""
+msgstr "探すタグの名前（'DT_DEBUG'、'DT_PLTGOT' など）"
 
 #: of pwnlib.dynelf.DynELF._find_dynamic_phdr:1
 msgid "Returns the address of the first Program Header with the type PT_DYNAMIC."
-msgstr ""
+msgstr "型が PT_DYNAMIC である最初のプログラムヘッダのアドレスを返します。"
 
 #: of pwnlib.dynelf.DynELF._find_linkmap:1
-msgid ""
-"The linkmap is a chained structure created by the loader at runtime which"
-" contains information on the names and load addresses of all libraries."
-msgstr ""
+msgid "The linkmap is a chained structure created by the loader at runtime which contains information on the names and load addresses of all libraries."
+msgstr "linkmap は、実行時にローダが作る連鎖構造で、すべてのライブラリの名前とロードアドレスの情報を持っています。"
 
 #: of pwnlib.dynelf.DynELF._find_linkmap:5
 msgid "For non-RELRO binaries, a pointer to this is stored in the .got.plt area."
-msgstr ""
+msgstr "RELRO のないバイナリでは、これへのポインタが .got.plt 領域に格納されています。"
 
 #: of pwnlib.dynelf.DynELF._find_linkmap:8
 msgid "For RELRO binaries, a pointer is additionally stored in the DT_DEBUG area."
-msgstr ""
+msgstr "RELRO のあるバイナリでは、ポインタは DT_DEBUG 領域にも格納されています。"
 
 #: of pwnlib.dynelf.DynELF._find_mapped_pages:1
 msgid "A generator of all mapped pages, as found using the Program Headers."
-msgstr ""
+msgstr "プログラムヘッダから見つかる、マップされたすべてのページのジェネレータです。"
 
 #: of pwnlib.dynelf.DynELF._find_mapped_pages:3
 msgid "Yields tuples of the form: (virtual address, memory size)"
-msgstr ""
+msgstr "(仮想アドレス, メモリサイズ) の形のタプルを yield します。"
 
 #: of pwnlib.dynelf.DynELF._lookup:1
 msgid "Performs the actual symbol lookup within one ELF file."
-msgstr ""
+msgstr "1 つの ELF ファイルの中で、実際のシンボル検索を行います。"
 
 #: of pwnlib.dynelf.DynELF._make_absolute_ptr:1
-msgid ""
-"For shared libraries (or PIE executables), many ELF fields may contain "
-"offsets rather than actual pointers. If the ELF type is 'DYN', the "
-"argument may be an offset. It will not necessarily be an offset, because "
-"the run-time linker may have fixed it up to be a real pointer already. In"
-" this case an educated guess is made, and the ELF base address is added "
-"to the value if it is determined to be an offset."
-msgstr ""
+msgid "For shared libraries (or PIE executables), many ELF fields may contain offsets rather than actual pointers. If the ELF type is 'DYN', the argument may be an offset. It will not necessarily be an offset, because the run-time linker may have fixed it up to be a real pointer already. In this case an educated guess is made, and the ELF base address is added to the value if it is determined to be an offset."
+msgstr "共有ライブラリ（または PIE の実行ファイル）では、多くの ELF フィールドが、実際のポインタではなくオフセットを持つことがあります。ELF の型が 'DYN' の場合、引数はオフセットかもしれません。実行時リンカがすでに実際のポインタに修正している場合もあるため、必ずオフセットとは限りません。この場合は推測で判断し、オフセットだと判断した場合は、値に ELF のベースアドレスを加えます。"
 
 #: of pwnlib.dynelf.DynELF._rel_lookup:1
 msgid "Performs slower symbol lookup using DT_JMPREL(.rela.plt)"
-msgstr ""
+msgstr "DT_JMPREL (.rela.plt) を使って、より遅いシンボル検索を行います。"
 
 #: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:1
 #: pwnlib.dynelf.DynELF._resolve_symbol_sysv:1
 msgid "Internal Documentation:"
-msgstr ""
+msgstr "内部ドキュメント:"
 
 #: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:2
-msgid ""
-"The GNU hash structure is a bit more complex than the normal hash "
-"structure."
-msgstr ""
+msgid "The GNU hash structure is a bit more complex than the normal hash structure."
+msgstr "GNU ハッシュの構造は、通常のハッシュ構造より少し複雑です。"
 
 #: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:5
-msgid ""
-"Again, Oracle has good documentation. "
-"https://blogs.oracle.com/solaris/post/gnu-hash-elf-sections"
-msgstr ""
+msgid "Again, Oracle has good documentation. https://blogs.oracle.com/solaris/post/gnu-hash-elf-sections"
+msgstr "ここでも、Oracle のドキュメントが役に立ちます。https://blogs.oracle.com/solaris/post/gnu-hash-elf-sections"
 
 #: of pwnlib.dynelf.DynELF._resolve_symbol_gnu:8
-msgid ""
-"You can force an ELF to use this type of symbol table by compiling with "
-"'gcc -Wl,--hash-style=gnu'"
-msgstr ""
+msgid "You can force an ELF to use this type of symbol table by compiling with 'gcc -Wl,--hash-style=gnu'"
+msgstr "'gcc -Wl,--hash-style=gnu' でコンパイルすると、ELF にこの形式のシンボルテーブルを使わせることができます。"
 
 #: of pwnlib.dynelf.DynELF._resolve_symbol_sysv:2
-msgid ""
-"See the ELF manual for more information.  Search for the phrase \"A hash "
-"table of Elf32_Word objects supports symbol table access\", or see: "
-"https://docs.oracle.com/cd/E19504-01/802-6319/6ia12qkfo/index.html#chapter6-48031"
-msgstr ""
+msgid "See the ELF manual for more information.  Search for the phrase \"A hash table of Elf32_Word objects supports symbol table access\", or see: https://docs.oracle.com/cd/E19504-01/802-6319/6ia12qkfo/index.html#chapter6-48031"
+msgstr "詳しくは ELF のマニュアルを参照してください。「A hash table of Elf32_Word objects supports symbol table access」というフレーズを検索するか、次を参照してください: https://docs.oracle.com/cd/E19504-01/802-6319/6ia12qkfo/index.html#chapter6-48031"
 
 #: of pwnlib.dynelf.DynELF._resolve_symbol_sysv:15
-msgid ""
-"You can force an ELF to use this type of symbol table by compiling with "
-"'gcc -Wl,--hash-style=sysv'"
-msgstr ""
+msgid "You can force an ELF to use this type of symbol table by compiling with 'gcc -Wl,--hash-style=sysv'"
+msgstr "'gcc -Wl,--hash-style=sysv' でコンパイルすると、ELF にこの形式のシンボルテーブルを使わせることができます。"
 
 #: of pwnlib.dynelf.DynELF.bases:1
 msgid "Resolve base addresses of all loaded libraries."
-msgstr ""
+msgstr "読み込み済みのすべてのライブラリのベースアドレスを解決します。"
 
 #: of pwnlib.dynelf.DynELF.bases:3
 msgid "Return a dictionary mapping library path to its base address."
-msgstr ""
+msgstr "ライブラリのパスとベースアドレスの対応を表す辞書を返します。"
 
 #: of pwnlib.dynelf.DynELF.dump:1
 msgid "Dumps the ELF's memory pages to allow further analysis."
-msgstr ""
+msgstr "ELF のメモリページをダンプして、さらに解析できるようにします。"
 
 #: of pwnlib.dynelf.DynELF.dump:3
 msgid "True if should dump the libraries too (False by default)"
@@ -274,44 +222,36 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF.dump:5
 msgid "True if should dump read-only pages (False by default)"
-msgstr ""
+msgstr "読み取り専用ページもダンプする場合は True（既定は False）"
 
 #: of pwnlib.dynelf.DynELF.dump:8
 #, python-brace-format
 msgid "*a dictionary of the form* -- { address : bytes }"
-msgstr ""
+msgstr "*{ address : bytes } の形の辞書* -- { address : bytes }"
 
 #: of pwnlib.dynelf.DynELF.heap:1
-msgid ""
-"Finds the beginning of the heap via __curbrk, which is an exported symbol"
-" in the linker, which points to the current brk."
-msgstr ""
+msgid "Finds the beginning of the heap via __curbrk, which is an exported symbol in the linker, which points to the current brk."
+msgstr "__curbrk を使って、ヒープの先頭を探します。__curbrk は、リンカがエクスポートしているシンボルで、現在の brk を指します。"
 
 #: of pwnlib.dynelf.DynELF.lookup:1
 msgid "Find the address of ``symbol``, which is found in ``lib``."
-msgstr ""
+msgstr "``lib`` の中にある ``symbol`` のアドレスを探します。"
 
 #: of pwnlib.dynelf.DynELF.lookup:3
-msgid ""
-"Named routine to look up If omitted, the base address of the library will"
-" be returned."
-msgstr ""
+msgid "Named routine to look up If omitted, the base address of the library will be returned."
+msgstr "検索するルーチンの名前。省略すると、ライブラリのベースアドレスを返します。"
 
 #: of pwnlib.dynelf.DynELF.lookup:6
-msgid ""
-"Substring to match for the library name. If omitted, the current library "
-"is searched. If set to ``'libc'``, ``'libc.so'`` is assumed."
-msgstr ""
+msgid "Substring to match for the library name. If omitted, the current library is searched. If set to ``'libc'``, ``'libc.so'`` is assumed."
+msgstr "ライブラリ名に一致させる部分文字列。省略した場合は、現在のライブラリから探します。``'libc'`` を指定すると、``'libc.so'`` とみなされます。"
 
 #: of pwnlib.dynelf.DynELF.lookup:11
 msgid "Address of the named symbol, or :const:`None`."
-msgstr ""
+msgstr "指定した名前のシンボルのアドレス、または :const:`None`。"
 
 #: of pwnlib.dynelf.DynELF.stack:1
-msgid ""
-"Finds a pointer to the stack via __environ, which is an exported symbol "
-"in libc, which points to the environment block."
-msgstr ""
+msgid "Finds a pointer to the stack via __environ, which is an exported symbol in libc, which points to the environment block."
+msgstr "__environ を使って、スタックへのポインタを探します。__environ は、libc がエクスポートしているシンボルで、環境変数のブロックを指します。"
 
 #: ../pwntools/docs/docstring of pwnlib.dynelf.DynELF.__weakref__:1
 msgid "list of weak references to the object"
@@ -319,28 +259,23 @@ msgstr ""
 
 #: of pwnlib.dynelf.DynELF.dynamic:1
 msgid "Returns: Pointer to the ``.DYNAMIC`` area."
-msgstr ""
+msgstr "Returns: ``.DYNAMIC`` 領域へのポインタ。"
 
 #: of pwnlib.dynelf.DynELF.elfclass:1
 msgid "32 or 64"
 msgstr ""
 
 #: of pwnlib.dynelf.DynELF.elftype:1
-msgid ""
-"e_type from the elf header. In practice the value will almost always be "
-"'EXEC' or 'DYN'. If the value is architecture-specific (between ET_LOPROC"
-" and ET_HIPROC) or invalid, KeyError is raised."
-msgstr ""
+msgid "e_type from the elf header. In practice the value will almost always be 'EXEC' or 'DYN'. If the value is architecture-specific (between ET_LOPROC and ET_HIPROC) or invalid, KeyError is raised."
+msgstr "ELF ヘッダの e_type。実際には、値はほぼ常に 'EXEC' か 'DYN' です。値がアーキテクチャ固有（ET_LOPROC から ET_HIPROC の間）の場合や不正な場合は、KeyError が発生します。"
 
 #: of pwnlib.dynelf.DynELF.libc:1
-msgid ""
-"Leak the Build ID of the remote libc.so, download the file, and load an "
-"``ELF`` object with the correct base address."
-msgstr ""
+msgid "Leak the Build ID of the remote libc.so, download the file, and load an ``ELF`` object with the correct base address."
+msgstr "リモートの libc.so の Build ID をリークし、ファイルをダウンロードして、正しいベースアドレスで ``ELF`` オブジェクトを読み込みます。"
 
 #: of pwnlib.dynelf.DynELF.libc:4
 msgid "An ELF object, or None."
-msgstr ""
+msgstr "ELF オブジェクト、または None。"
 
 #: of pwnlib.dynelf.DynELF.link_map:1
 msgid "Pointer to the runtime link_map object"
@@ -348,9 +283,8 @@ msgstr ""
 
 #: of pwnlib.dynelf.gnu_hash:1
 msgid "Function used to generated GNU-style hashes for strings."
-msgstr ""
+msgstr "文字列から GNU 形式のハッシュを生成する関数です。"
 
 #: of pwnlib.dynelf.sysv_hash:1
 msgid "Function used to generate SYSV-style hashes for strings."
-msgstr ""
-
+msgstr "文字列から SYSV 形式のハッシュを生成する関数です。"

@@ -21,13 +21,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/adb.rst:11
 msgid ":mod:`pwnlib.adb` --- Android Debug Bridge"
-msgstr ""
+msgstr ":mod:`pwnlib.adb` --- Android Debug Bridge"
 
 #: of pwnlib.adb.adb:1
-msgid ""
-"Provides utilities for interacting with Android devices via the Android "
-"Debug Bridge."
-msgstr ""
+msgid "Provides utilities for interacting with Android devices via the Android Debug Bridge."
+msgstr "Android Debug Bridge を介して、Android デバイスを操作するためのユーティリティを提供します。"
 
 #: of pwnlib.adb.adb:4
 msgid "Using Android Devices with Pwntools"
@@ -35,34 +33,27 @@ msgstr ""
 
 #: of pwnlib.adb.adb:6
 msgid "Pwntools tries to be as easy as possible to use with Android devices."
-msgstr ""
+msgstr "Pwntools は、Android デバイスをできるだけ簡単に扱えるようにしています。"
 
 #: of pwnlib.adb.adb:8
 msgid "If you have only one device attached, everything \"just works\"."
-msgstr ""
+msgstr "接続しているデバイスが 1 台だけなら、何もしなくても動きます。"
 
 #: of pwnlib.adb.adb:10
-msgid ""
-"If you have multiple devices, you have a handful of options to select "
-"one, or iterate over the devices."
-msgstr ""
+msgid "If you have multiple devices, you have a handful of options to select one, or iterate over the devices."
+msgstr "複数のデバイスがある場合は、1 台を選んだり、デバイスを順に処理したりする方法がいくつかあります。"
 
 #: of pwnlib.adb.adb:13
-msgid ""
-"First and most important is the ``context.device`` property, which "
-"declares the \"currently\" selected device in any scope.  It can be set "
-"manually to a serial number, or to a ``Device`` instance."
-msgstr ""
+msgid "First and most important is the ``context.device`` property, which declares the \"currently\" selected device in any scope.  It can be set manually to a serial number, or to a ``Device`` instance."
+msgstr "まず最も重要なのが ``context.device`` プロパティで、どのスコープでも「現在」選択されているデバイスを表します。シリアル番号か ``Device`` インスタンスを、手動で設定できます。"
 
 #: of pwnlib.adb.adb:32
-msgid ""
-"Once a device is selected, you can operate on it with any of the "
-"functions in the :mod:`pwnlib.adb` module."
-msgstr ""
+msgid "Once a device is selected, you can operate on it with any of the functions in the :mod:`pwnlib.adb` module."
+msgstr "デバイスを選択すると、:mod:`pwnlib.adb` モジュールのどの関数でも、そのデバイスを操作できます。"
 
 #: of pwnlib.adb.adb.AdbDevice:1
 msgid "Encapsulates information about a connected device."
-msgstr ""
+msgstr "接続されているデバイスの情報をまとめたものです。"
 
 #: of pwnlib.adb.adb.AdbDevice:3 pwnlib.adb.adb.Partitions:3
 #: pwnlib.adb.adb.boot_time:4 pwnlib.adb.adb.compile:3 pwnlib.adb.adb.getprop:9
@@ -72,22 +63,20 @@ msgid "Example:"
 msgstr ""
 
 #: of pwnlib.adb.adb.AdbDevice.__getattr__:1
-msgid ""
-"Provides scoped access to ``adb`` module properties, in the context of "
-"this device."
-msgstr ""
+msgid "Provides scoped access to ``adb`` module properties, in the context of this device."
+msgstr "このデバイスを対象として、``adb`` モジュールのプロパティにスコープ付きでアクセスできるようにします。"
 
 #: of pwnlib.adb.adb.AdbDevice.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: of pwnlib.adb.adb.AdbDevice.__str__:1
 msgid "Return str(self)."
-msgstr ""
+msgstr "str(self) を返します。"
 
 #: of pwnlib.adb.adb.AdbDevice.__wrapped:1
 msgid "Wraps a callable in a scope which selects the current device."
-msgstr ""
+msgstr "呼び出し可能オブジェクトを、現在のデバイスを選択するスコープで包みます。"
 
 #: of pwnlib.adb.adb.Partitions:1
 msgid "Enable access to partitions"
@@ -95,7 +84,7 @@ msgstr ""
 
 #: of pwnlib.adb.adb.Partitions.__dir__:1
 msgid "Default dir() implementation."
-msgstr ""
+msgstr "既定の dir() の実装です。"
 
 #: ../pwntools/docs/docstring of pwnlib.adb.adb.Partitions.__weakref__:1
 msgid "list of weak references to the object"
@@ -103,11 +92,11 @@ msgstr ""
 
 #: of pwnlib.adb.adb._build_date:1
 msgid "Returns the build date in the form YYYY-MM-DD as a string"
-msgstr ""
+msgstr "ビルド日を、YYYY-MM-DD 形式の文字列で返します。"
 
 #: of pwnlib.adb.adb.adb:1
 msgid "Returns the output of an ADB subcommand."
-msgstr ""
+msgstr "ADB のサブコマンドの出力を返します。"
 
 #: ../pwntools/docs/source/adb.rst
 msgid "Returns"
@@ -115,35 +104,31 @@ msgstr ""
 
 #: of pwnlib.adb.adb.boot_time:1
 msgid "Boot time of the device, in Unix time, rounded to the nearest second."
-msgstr ""
+msgstr "デバイスの起動時刻。Unix 時間で、秒単位に丸めた値です。"
 
 #: of pwnlib.adb.adb.build:1
 msgid "Returns the Build ID of the device."
-msgstr ""
+msgstr "デバイスのビルド ID を返します。"
 
 #: of pwnlib.adb.adb.compile:1
 msgid "Compile a source file or project with the Android NDK."
-msgstr ""
+msgstr "ソースファイルまたはプロジェクトを、Android NDK でコンパイルします。"
 
 #: of pwnlib.adb.adb.current_device:1
-msgid ""
-"Returns an ``AdbDevice`` instance for the currently-selected device (via "
-"``context.device``)."
-msgstr ""
+msgid "Returns an ``AdbDevice`` instance for the currently-selected device (via ``context.device``)."
+msgstr "現在選択されているデバイス(``context.device`` 経由)の ``AdbDevice`` インスタンスを返します。"
 
 #: of pwnlib.adb.adb.devices:1
-msgid ""
-"Returns a list of ``Device`` objects corresponding to the connected "
-"devices."
-msgstr ""
+msgid "Returns a list of ``Device`` objects corresponding to the connected devices."
+msgstr "接続されているデバイスに対応する ``Device`` オブジェクトのリストを返します。"
 
 #: of pwnlib.adb.adb.disable_verity:1
 msgid "Disables dm-verity on the device."
-msgstr ""
+msgstr "デバイスの dm-verity を無効にします。"
 
 #: of pwnlib.adb.adb.exists:1
 msgid "Return :const:`True` if ``path`` exists on the target device."
-msgstr ""
+msgstr "``path`` が対象のデバイスに存在する場合は :const:`True` を返します。"
 
 #: of pwnlib.adb.adb.exists:3 pwnlib.adb.adb.isdir:3 pwnlib.adb.adb.makedirs:5
 #: pwnlib.adb.adb.mkdir:8 pwnlib.adb.adb.process:7 pwnlib.adb.adb.read:12
@@ -154,31 +139,31 @@ msgstr ""
 
 #: of pwnlib.adb.adb.fastboot:1
 msgid "Executes a fastboot command."
-msgstr ""
+msgstr "fastboot コマンドを実行します。"
 
 #: of pwnlib.adb.adb.fastboot:3
 msgid "The command output."
-msgstr ""
+msgstr "コマンドの出力。"
 
 #: of pwnlib.adb.adb.find_ndk_project_root:1
 msgid "Given a directory path, find the topmost project root."
-msgstr ""
+msgstr "ディレクトリのパスから、最上位のプロジェクトルートを探します。"
 
 #: of pwnlib.adb.adb.find_ndk_project_root:3
 msgid "tl;dr \"foo/bar/jni/baz.cpp\" ==> \"foo/bar\""
-msgstr ""
+msgstr "要するに: \"foo/bar/jni/baz.cpp\" ==> \"foo/bar\""
 
 #: of pwnlib.adb.adb.fingerprint:1
 msgid "Returns the device build fingerprint."
-msgstr ""
+msgstr "デバイスのビルドフィンガープリントを返します。"
 
 #: of pwnlib.adb.adb.forward:1
 msgid "Sets up a port to forward to the device."
-msgstr ""
+msgstr "デバイスへ転送するポートを設定します。"
 
 #: of pwnlib.adb.adb.getprop:1
 msgid "Reads a properties from the system property store."
-msgstr ""
+msgstr "システムプロパティストアからプロパティを読み取ります。"
 
 #: ../pwntools/docs/source/adb.rst
 msgid "Parameters"
@@ -186,91 +171,79 @@ msgstr ""
 
 #: of pwnlib.adb.adb.getprop:3
 msgid "Optional, read a single property."
-msgstr ""
+msgstr "省略可。1 つのプロパティを読み取ります。"
 
 #: of pwnlib.adb.adb.getprop:6
-msgid ""
-"If ``name`` is not specified, a ``dict`` of all properties is returned. "
-"Otherwise, a string is returned with the contents of the named property."
-msgstr ""
+msgid "If ``name`` is not specified, a ``dict`` of all properties is returned. Otherwise, a string is returned with the contents of the named property."
+msgstr "``name`` を指定しない場合は、すべてのプロパティの ``dict`` を返します。指定した場合は、その名前のプロパティの内容を文字列で返します。"
 
 #: of pwnlib.adb.adb.install:1
 msgid "Install an APK onto the device."
-msgstr ""
+msgstr "APK をデバイスにインストールします。"
 
 #: of pwnlib.adb.adb.install:3
 msgid "This is a wrapper around 'pm install', which backs 'adb install'."
-msgstr ""
+msgstr "'adb install' の裏で動く 'pm install' のラッパーです。"
 
 #: of pwnlib.adb.adb.install:5
 msgid "Path to the APK to install (e.g. ``'foo.apk'``)"
-msgstr ""
+msgstr "インストールする APK のパス(例: ``'foo.apk'``)"
 
 #: of pwnlib.adb.adb.install:7
 msgid "Supplementary arguments to 'pm install', e.g. ``'-l', '-g'``."
-msgstr ""
+msgstr "'pm install' への追加の引数(例: ``'-l', '-g'``)。"
 
 #: of pwnlib.adb.adb.interactive:1
 msgid "Spawns an interactive shell."
-msgstr ""
+msgstr "対話型のシェルを起動します。"
 
 #: of pwnlib.adb.adb.isdir:1
 msgid "Return :const:`True` if ``path`` is a on the target device."
-msgstr ""
+msgstr "``path`` が対象のデバイスにあるディレクトリの場合は :const:`True` を返します。"
 
 #: of pwnlib.adb.adb.listdir:1
 msgid "Returns a list containing the entries in the provided directory."
-msgstr ""
+msgstr "指定したディレクトリのエントリのリストを返します。"
 
 #: of pwnlib.adb.adb.listdir:5
-msgid ""
-"This uses the SYNC LIST functionality, which runs in the adbd SELinux "
-"context.  If adbd is running in the su domain ('adb root'), this behaves "
-"as expected."
-msgstr ""
+msgid "This uses the SYNC LIST functionality, which runs in the adbd SELinux context.  If adbd is running in the su domain ('adb root'), this behaves as expected."
+msgstr "SYNC LIST の機能を使うため、adbd の SELinux コンテキストで動作します。adbd が su ドメイン('adb root')で動いていれば、期待どおりに動きます。"
 
 #: of pwnlib.adb.adb.listdir:9
-msgid ""
-"Otherwise, less files may be returned due to restrictive SELinux policies"
-" on adbd."
-msgstr ""
+msgid "Otherwise, less files may be returned due to restrictive SELinux policies on adbd."
+msgstr "そうでない場合は、adbd に対する SELinux のポリシーが厳しいため、返されるファイルが少なくなることがあります。"
 
 #: of pwnlib.adb.adb.logcat:1
 msgid "Reads the system log file."
-msgstr ""
+msgstr "システムのログファイルを読み取ります。"
 
 #: of pwnlib.adb.adb.logcat:3
 msgid "By default, causes logcat to exit after reading the file."
-msgstr ""
+msgstr "既定では、ファイルを読み終えると logcat が終了します。"
 
 #: of pwnlib.adb.adb.logcat:5
-msgid ""
-"If :const:`True`, the contents are streamed rather than read in a one-"
-"shot manner.  Default is :const:`False`."
-msgstr ""
+msgid "If :const:`True`, the contents are streamed rather than read in a one-shot manner.  Default is :const:`False`."
+msgstr ":const:`True` にすると、内容を一度に読み取らず、ストリームで受け取ります。既定値は :const:`False` です。"
 
 #: of pwnlib.adb.adb.logcat:9
-msgid ""
-"If ``stream`` is :const:`False`, returns a string containing the log "
-"data. Otherwise, it returns a :class:`pwnlib.tubes.tube.tube` connected "
-"to the log output."
-msgstr ""
+msgid "If ``stream`` is :const:`False`, returns a string containing the log data. Otherwise, it returns a :class:`pwnlib.tubes.tube.tube` connected to the log output."
+msgstr "``stream`` が :const:`False` の場合は、ログデータを含む文字列を返します。そうでない場合は、ログの出力につながった :class:`pwnlib.tubes.tube.tube` を返します。"
 
 #: of pwnlib.adb.adb.makedirs:1
 msgid "Create a directory and all parent directories on the target device."
-msgstr ""
+msgstr "対象のデバイスに、ディレクトリと、その親ディレクトリをすべて作成します。"
 
 #: of pwnlib.adb.adb.makedirs:3 pwnlib.adb.adb.mkdir:3
 msgid "Silently succeeds if the directory already exists."
-msgstr ""
+msgstr "ディレクトリがすでにある場合は、何も言わずに成功します。"
 
 #: of pwnlib.adb.adb.mkdir:1
 msgid "Create a directory on the target device."
-msgstr ""
+msgstr "対象のデバイスにディレクトリを作成します。"
 
 #: of pwnlib.adb.adb.mkdir:5
 msgid "Directory to create."
-msgstr ""
+msgstr "作成するディレクトリ。"
 
 #: of pwnlib.adb.adb.packages:1
 msgid "Returns a list of packages installed on the system"
@@ -278,131 +251,131 @@ msgstr ""
 
 #: of pwnlib.adb.adb.pidof:1
 msgid "Returns a list of PIDs for the named process."
-msgstr ""
+msgstr "指定した名前のプロセスの PID のリストを返します。"
 
 #: of pwnlib.adb.adb.proc_exe:1
 msgid "Returns the full path of the executable for the provided PID."
-msgstr ""
+msgstr "指定した PID の実行ファイルのフルパスを返します。"
 
 #: of pwnlib.adb.adb.process:1
 msgid "Execute a process on the device."
-msgstr ""
+msgstr "デバイスでプロセスを実行します。"
 
 #: of pwnlib.adb.adb.process:3
 msgid "See :class:`pwnlib.tubes.process.process` documentation for more info."
-msgstr ""
+msgstr "詳しくは :class:`pwnlib.tubes.process.process` の文書を参照してください。"
 
 #: of pwnlib.adb.adb.process:5
 msgid "A :class:`pwnlib.tubes.process.process` tube."
-msgstr ""
+msgstr ":class:`pwnlib.tubes.process.process` の tube。"
 
 #: of pwnlib.adb.adb.product:1
 msgid "Returns the device product identifier."
-msgstr ""
+msgstr "デバイスの製品識別子を返します。"
 
 #: of pwnlib.adb.adb.pull:1
 msgid "Download a file from the device."
-msgstr ""
+msgstr "デバイスからファイルをダウンロードします。"
 
 #: of pwnlib.adb.adb.pull:3
 msgid "Path or directory of the file on the device."
-msgstr ""
+msgstr "デバイス上のファイルのパス、またはディレクトリ。"
 
 #: of pwnlib.adb.adb.pull:5
 msgid "Path to save the file to. Uses the file's name by default."
-msgstr ""
+msgstr "ファイルの保存先のパス。既定では、ファイルの名前を使います。"
 
 #: of pwnlib.adb.adb.pull:9
 msgid "The contents of the file."
-msgstr ""
+msgstr "ファイルの内容。"
 
 #: of pwnlib.adb.adb.push:1
 msgid "Upload a file to the device."
-msgstr ""
+msgstr "デバイスにファイルをアップロードします。"
 
 #: of pwnlib.adb.adb.push:3
 msgid "Path to the local file to push."
-msgstr ""
+msgstr "プッシュするローカルのファイルのパス。"
 
 #: of pwnlib.adb.adb.push:5
 msgid "Path or directory to store the file on the device."
-msgstr ""
+msgstr "デバイス上にファイルを保存するパス、またはディレクトリ。"
 
 #: of pwnlib.adb.adb.push:8
 msgid "Remote path of the file."
-msgstr ""
+msgstr "ファイルのリモートのパス。"
 
 #: of pwnlib.adb.adb.read:1
 msgid "Download a file from the device, and extract its contents."
-msgstr ""
+msgstr "デバイスからファイルをダウンロードして、その内容を取り出します。"
 
 #: of pwnlib.adb.adb.read:3
 msgid "Path to the file on the device."
-msgstr ""
+msgstr "デバイス上のファイルのパス。"
 
 #: of pwnlib.adb.adb.read:5
 msgid "Optional, location to store the file. Uses a temporary file by default."
-msgstr ""
+msgstr "省略可。ファイルを保存する場所。既定では、一時ファイルを使います。"
 
 #: of pwnlib.adb.adb.read:8
 msgid "See the documentation for ``adb.protocol.AdbClient.read``."
-msgstr ""
+msgstr "``adb.protocol.AdbClient.read`` の文書を参照してください。"
 
 #: of pwnlib.adb.adb.reboot:1
 msgid "Reboots the device."
-msgstr ""
+msgstr "デバイスを再起動します。"
 
 #: of pwnlib.adb.adb.reboot_bootloader:1
 msgid "Reboots the device to the bootloader."
-msgstr ""
+msgstr "デバイスをブートローダーへ再起動します。"
 
 #: of pwnlib.adb.adb.remount:1
 msgid "Remounts the filesystem as writable."
-msgstr ""
+msgstr "ファイルシステムを書き込み可能で再マウントします。"
 
 #: of pwnlib.adb.adb.root:1
 msgid "Restarts adbd as root."
-msgstr ""
+msgstr "adbd を root として再起動します。"
 
 #: of pwnlib.adb.adb.setprop:1
 msgid "Writes a property to the system property store."
-msgstr ""
+msgstr "システムプロパティストアにプロパティを書き込みます。"
 
 #: of pwnlib.adb.adb.shell:1
 msgid "Returns an interactive shell."
-msgstr ""
+msgstr "対話型のシェルを返します。"
 
 #: of pwnlib.adb.adb.uninstall:1
 msgid "Uninstall an APK from the device."
-msgstr ""
+msgstr "デバイスから APK をアンインストールします。"
 
 #: of pwnlib.adb.adb.uninstall:3
 msgid "This is a wrapper around 'pm uninstall', which backs 'adb uninstall'."
-msgstr ""
+msgstr "'adb uninstall' の裏で動く 'pm uninstall' のラッパーです。"
 
 #: of pwnlib.adb.adb.uninstall:5
 msgid "Name of the package to uninstall (e.g. ``'com.foo.MyPackage'``)"
-msgstr ""
+msgstr "アンインストールするパッケージの名前(例: ``'com.foo.MyPackage'``)"
 
 #: of pwnlib.adb.adb.uninstall:7
 msgid "Supplementary arguments to ``'pm install'``, e.g. ``'-k'``."
-msgstr ""
+msgstr "``'pm install'`` への追加の引数(例: ``'-k'``)。"
 
 #: of pwnlib.adb.adb.unlink:1
 msgid "Unlinks a file or directory on the target device."
-msgstr ""
+msgstr "対象のデバイス上のファイルまたはディレクトリを削除します。"
 
 #: of pwnlib.adb.adb.unlock_bootloader:1
 msgid "Unlocks the bootloader of the device."
-msgstr ""
+msgstr "デバイスのブートローダーのロックを解除します。"
 
 #: of pwnlib.adb.adb.unlock_bootloader:3
 msgid "This requires physical interaction with the device."
-msgstr ""
+msgstr "デバイスを物理的に操作する必要があります。"
 
 #: of pwnlib.adb.adb.unroot:1
 msgid "Restarts adbd as AID_SHELL."
-msgstr ""
+msgstr "adbd を AID_SHELL として再起動します。"
 
 #: of pwnlib.adb.adb.uptime:1
 msgid "Uptime of the device, in seconds"
@@ -410,26 +383,23 @@ msgstr ""
 
 #: of pwnlib.adb.adb.version:1
 msgid "Returns rthe platform version as a tuple."
-msgstr ""
+msgstr "プラットフォームのバージョンを、タプルで返します。"
 
 #: of pwnlib.adb.adb.wait_for_device:1
 msgid "Waits for a device to be connected."
-msgstr ""
+msgstr "デバイスが接続されるのを待ちます。"
 
 #: of pwnlib.adb.adb.wait_for_device:3
-msgid ""
-"By default, waits for the currently-selected device (via "
-"``context.device``). To wait for a specific device, set "
-"``context.device``. To wait for *any* device, clear ``context.device``."
-msgstr ""
+msgid "By default, waits for the currently-selected device (via ``context.device``). To wait for a specific device, set ``context.device``. To wait for *any* device, clear ``context.device``."
+msgstr "既定では、(``context.device`` で)現在選択されているデバイスを待ちます。特定のデバイスを待つには、``context.device`` を設定します。*どれか* のデバイスを待つには、``context.device`` を消去します。"
 
 #: of pwnlib.adb.adb.wait_for_device:7
 msgid "An ``AdbDevice`` instance for the device."
-msgstr ""
+msgstr "そのデバイスの ``AdbDevice`` インスタンス。"
 
 #: of pwnlib.adb.adb.which:1
 msgid "Retrieves the full path to a binary in ``$PATH`` on the device"
-msgstr ""
+msgstr "デバイスの ``$PATH`` にあるバイナリのフルパスを取得します"
 
 #: of pwnlib.adb.adb.which:3
 msgid "Binary name"
@@ -441,7 +411,7 @@ msgstr ""
 
 #: of pwnlib.adb.adb.which:7 pwnlib.adb.adb.which:8
 msgid "Additional arguments for :func:`.adb.process`"
-msgstr ""
+msgstr ":func:`.adb.process` への追加の引数"
 
 #: of pwnlib.adb.adb.which:10
 msgid "Either a path, or list of paths"
@@ -453,7 +423,7 @@ msgstr ""
 
 #: of pwnlib.adb.adb.write:1
 msgid "Create a file on the device with the provided contents."
-msgstr ""
+msgstr "指定した内容で、デバイス上にファイルを作成します。"
 
 #: of pwnlib.adb.adb.write:3
 msgid "Path to the file on the device"
@@ -466,4 +436,3 @@ msgstr ""
 #: of pwnlib.adb.protocol:1
 msgid "This file exists only for backward compatibility"
 msgstr ""
-

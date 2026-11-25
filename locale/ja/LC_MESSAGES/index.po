@@ -24,17 +24,12 @@ msgid "pwntools"
 msgstr ""
 
 #: ../pwntools/docs/source/index.rst:4
-msgid ""
-"``pwntools`` is a CTF framework and exploit development library. Written "
-"in Python, it is designed for rapid prototyping and development, and "
-"intended to make exploit writing as simple as possible."
-msgstr ""
+msgid "``pwntools`` is a CTF framework and exploit development library. Written in Python, it is designed for rapid prototyping and development, and intended to make exploit writing as simple as possible."
+msgstr "``pwntools`` は、CTF フレームワークであり、エクスプロイト開発用のライブラリです。Python で書かれており、素早いプロトタイプ作成と開発のために設計されていて、エクスプロイトの記述をできるだけ簡単にすることを目指しています。"
 
 #: ../pwntools/docs/source/index.rst:8
-msgid ""
-"The primary location for this documentation is at docs.pwntools.com_, "
-"which uses readthedocs_. It comes in three primary flavors:"
-msgstr ""
+msgid "The primary location for this documentation is at docs.pwntools.com_, which uses readthedocs_. It comes in three primary flavors:"
+msgstr "このドキュメントの主な公開場所は docs.pwntools.com_ で、readthedocs_ を使っています。主な形式は 3 つあります。"
 
 #: ../pwntools/docs/source/index.rst:11
 msgid "Stable_"
@@ -58,18 +53,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/index.rst:39
 msgid "Each of the ``pwntools`` modules is documented here."
-msgstr ""
+msgstr "``pwntools`` の各モジュールを、ここで説明しています。"
 
 #: ../pwntools/docs/source/index.rst:97
 msgid "Bytes"
 msgstr ""
 
 #: ../pwntools/docs/source/index.rst:99
-msgid ""
-"The bytes vs text distinction is so important that it even made it to "
-"this main page. See the pwntools-tutorial_ repo for the latest tutorial "
-"finally explaining the difference once and for all (hopefully)."
-msgstr ""
+msgid "The bytes vs text distinction is so important that it even made it to this main page. See the pwntools-tutorial_ repo for the latest tutorial finally explaining the difference once and for all (hopefully)."
+msgstr "bytes と text の違いはとても重要なので、このトップページにも載せています。その違いをついに決着させる(はずの)最新のチュートリアルは、pwntools-tutorial_ リポジトリを参照してください。"
 
 #: ../pwntools/docs/source/index.rst:90
 msgid "Indices and tables"
@@ -86,4 +78,3 @@ msgstr ""
 #: ../pwntools/docs/source/index.rst:94
 msgid ":ref:`search`"
 msgstr ""
-

@@ -1766,7 +1766,7 @@ msgstr "保存するローカルのファイル名。既定では、リモート
 
 #: of pwnlib.tubes.ssh.ssh.download:1
 msgid "download(file_or_directory, local=None)"
-msgstr ""
+msgstr "download(file_or_directory, local=None)"
 
 #: of pwnlib.tubes.ssh.ssh.getenv:1
 msgid "Retrieve the address of an environment variable on the remote system."
@@ -1914,7 +1914,7 @@ msgstr "リモートのサーバーに Python が必要です。"
 
 #: of pwnlib.tubes.ssh.ssh.upload:1
 msgid "upload(file_or_directory, remote=None)"
-msgstr ""
+msgstr "upload(file_or_directory, remote=None)"
 
 #: of pwnlib.tubes.ssh.ssh.upload:1 pwnlib.tubes.ssh.ssh.upload:3
 msgid "Upload a file or directory to the remote host."

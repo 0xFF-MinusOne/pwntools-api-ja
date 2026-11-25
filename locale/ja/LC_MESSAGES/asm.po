@@ -21,27 +21,23 @@ msgstr ""
 
 #: ../pwntools/docs/source/asm.rst:12
 msgid ":mod:`pwnlib.asm` --- Assembler functions"
-msgstr ""
+msgstr ":mod:`pwnlib.asm` --- アセンブラ関数"
 
 #: of pwnlib.asm:1
 msgid "Utilities for assembling and disassembling code."
-msgstr ""
+msgstr "コードのアセンブルと逆アセンブルのためのユーティリティです。"
 
 #: of pwnlib.asm:4
 msgid "Architecture Selection"
 msgstr ""
 
 #: of pwnlib.asm:6
-msgid ""
-"Architecture, endianness, and word size are selected by using "
-":mod:`pwnlib.context`."
-msgstr ""
+msgid "Architecture, endianness, and word size are selected by using :mod:`pwnlib.context`."
+msgstr "アーキテクチャ、エンディアン、ワードサイズは :mod:`pwnlib.context` で選びます。"
 
 #: of pwnlib.asm:8
-msgid ""
-"Any parameters which can be specified to ``context`` can also be "
-"specified as keyword arguments to either :func:`asm` or :func:`disasm`."
-msgstr ""
+msgid "Any parameters which can be specified to ``context`` can also be specified as keyword arguments to either :func:`asm` or :func:`disasm`."
+msgstr "``context`` に指定できるパラメータは、:func:`asm` や :func:`disasm` にもキーワード引数として指定できます。"
 
 #: of pwnlib.asm:12
 msgid "Assembly"
@@ -49,46 +45,35 @@ msgstr ""
 
 #: of pwnlib.asm:14
 msgid "To assemble code, simply invoke :func:`asm` on the code to assemble."
-msgstr ""
+msgstr "コードをアセンブルするには、アセンブルしたいコードに対して :func:`asm` を呼び出すだけです。"
 
 #: of pwnlib.asm:19
-msgid ""
-"Additionally, you can use constants as defined in the "
-":mod:`pwnlib.constants` module."
-msgstr ""
+msgid "Additionally, you can use constants as defined in the :mod:`pwnlib.constants` module."
+msgstr "さらに、:mod:`pwnlib.constants` モジュールで定義された定数も使えます。"
 
 #: of pwnlib.asm:25
-msgid ""
-"Finally, :func:`asm` is used to assemble shellcode provided by "
-"``pwntools`` in the :mod:`shellcraft` module."
-msgstr ""
+msgid "Finally, :func:`asm` is used to assemble shellcode provided by ``pwntools`` in the :mod:`shellcraft` module."
+msgstr "最後に、:func:`asm` は、``pwntools`` が :mod:`shellcraft` モジュールで提供するシェルコードのアセンブルにも使われます。"
 
 #: of pwnlib.asm:32
 msgid "Disassembly"
 msgstr ""
 
 #: of pwnlib.asm:34
-msgid ""
-"To disassemble code, simply invoke :func:`disasm` on the bytes to "
-"disassemble."
-msgstr ""
+msgid "To disassemble code, simply invoke :func:`disasm` on the bytes to disassemble."
+msgstr "コードを逆アセンブルするには、逆アセンブルしたいバイト列に対して :func:`disasm` を呼び出すだけです。"
 
 #: of pwnlib.asm.asm:1
 msgid "Runs :func:`cpp` over a given shellcode and then assembles it into bytes."
-msgstr ""
+msgstr "指定したシェルコードに :func:`cpp` を実行してから、バイト列にアセンブルします。"
 
 #: of pwnlib.asm.asm:3
-msgid ""
-"To see which architectures or operating systems are supported, look in "
-":mod:`pwnlib.context`."
-msgstr ""
+msgid "To see which architectures or operating systems are supported, look in :mod:`pwnlib.context`."
+msgstr "どのアーキテクチャや OS に対応しているかは、:mod:`pwnlib.context` を参照してください。"
 
 #: of pwnlib.asm.asm:6
-msgid ""
-"Assembling shellcode requires that the GNU assembler is installed for the"
-" target architecture. See :doc:`Installing Binutils </install/binutils>` "
-"for more information."
-msgstr ""
+msgid "Assembling shellcode requires that the GNU assembler is installed for the target architecture. See :doc:`Installing Binutils </install/binutils>` for more information."
+msgstr "シェルコードをアセンブルするには、対象のアーキテクチャ用の GNU アセンブラがインストールされている必要があります。詳しくは :doc:`Installing Binutils </install/binutils>` を参照してください。"
 
 #: of pwnlib.asm.asm pwnlib.asm.cpp pwnlib.asm.disasm pwnlib.asm.make_elf
 #: pwnlib.asm.make_elf_from_assembly
@@ -97,26 +82,23 @@ msgstr ""
 
 #: of pwnlib.asm.asm:10
 msgid "Assembler code to assemble."
-msgstr ""
+msgstr "アセンブルするアセンブラコード。"
 
 #: of pwnlib.asm.asm:12
 msgid "Virtual memory address of the beginning of assembly"
 msgstr ""
 
 #: of pwnlib.asm.asm:14
-msgid ""
-"Extract the raw assembly bytes from the assembled file.  If "
-":const:`False`, returns the path to an ELF file with the assembly "
-"embedded."
-msgstr ""
+msgid "Extract the raw assembly bytes from the assembled file.  If :const:`False`, returns the path to an ELF file with the assembly embedded."
+msgstr "アセンブルしたファイルから、生のアセンブリのバイト列を取り出します。:const:`False` の場合は、アセンブリが埋め込まれた ELF ファイルのパスを返します。"
 
 #: of pwnlib.asm.asm:18
 msgid "Create a shared object."
-msgstr ""
+msgstr "共有オブジェクトを作成します。"
 
 #: of pwnlib.asm.asm:20
 msgid "Any attributes on :data:`.context` can be set, e.g.set ``arch='arm'``."
-msgstr ""
+msgstr ":data:`.context` の属性はどれも設定できます。例: ``arch='arm'`` を設定します。"
 
 #: of pwnlib.asm.asm:25 pwnlib.asm.cpp:12 pwnlib.asm.disasm:19
 #: pwnlib.asm.make_elf:19
@@ -125,15 +107,15 @@ msgstr ""
 
 #: of pwnlib.asm.asm:39
 msgid "The output is cached:"
-msgstr ""
+msgstr "出力はキャッシュされます。"
 
 #: of pwnlib.asm.cpp:1
 msgid "Runs CPP over the given shellcode."
-msgstr ""
+msgstr "指定したシェルコードに CPP を実行します。"
 
 #: of pwnlib.asm.cpp:3
 msgid "The output will always contain exactly one newline at the end."
-msgstr ""
+msgstr "出力の末尾には、必ずちょうど 1 つの改行が付きます。"
 
 #: of pwnlib.asm.cpp:5
 msgid "Shellcode to preprocess"
@@ -145,27 +127,27 @@ msgstr ""
 
 #: of pwnlib.asm.cpp:9 pwnlib.asm.disasm:16
 msgid "Any arguments/properties that can be set on ``context``"
-msgstr ""
+msgstr "``context`` に設定できる引数やプロパティ。"
 
 #: of pwnlib.asm.disasm:1
 msgid "Disassembles a bytestring into human readable assembler."
-msgstr ""
+msgstr "バイト列を、人間が読めるアセンブラに逆アセンブルします。"
 
 #: of pwnlib.asm.disasm:3
 msgid "To see which architectures are supported, look in :mod:`pwnlib.contex`."
-msgstr ""
+msgstr "どのアーキテクチャに対応しているかは、:mod:`pwnlib.contex` を参照してください。"
 
 #: of pwnlib.asm.disasm:6
 msgid "Bytestring to disassemble."
-msgstr ""
+msgstr "逆アセンブルするバイト列。"
 
 #: of pwnlib.asm.disasm:8
 msgid "Passed through to the --adjust-vma argument of objdump"
-msgstr ""
+msgstr "objdump の --adjust-vma 引数にそのまま渡されます。"
 
 #: of pwnlib.asm.disasm:10
 msgid "Include the hex-printed bytes in the disassembly"
-msgstr ""
+msgstr "逆アセンブルの結果に、16 進表記のバイトを含めます。"
 
 #: of pwnlib.asm.disasm:12
 msgid "Include the virtual memory address in the disassembly"
@@ -173,7 +155,7 @@ msgstr ""
 
 #: of pwnlib.asm.make_elf:1
 msgid "Builds an ELF file with the specified binary data as its executable code."
-msgstr ""
+msgstr "指定したバイナリデータを実行可能コードとして持つ ELF ファイルを作ります。"
 
 #: of pwnlib.asm.make_elf:3
 msgid "Assembled code"
@@ -184,99 +166,76 @@ msgid "Load address for the ELF file"
 msgstr ""
 
 #: of pwnlib.asm.make_elf:7
-msgid ""
-"Strip the resulting ELF file. Only matters if ``extract=False``. "
-"(Default: ``True``)"
-msgstr ""
+msgid "Strip the resulting ELF file. Only matters if ``extract=False``. (Default: ``True``)"
+msgstr "作成した ELF ファイルをストリップします。``extract=False`` の場合にだけ意味があります。（既定: ``True``）"
 
 #: of pwnlib.asm.make_elf:10
-msgid ""
-"Extract the assembly from the ELF file. If ``False``, the path of the ELF"
-" file is returned. (Default: ``True``)"
-msgstr ""
+msgid "Extract the assembly from the ELF file. If ``False``, the path of the ELF file is returned. (Default: ``True``)"
+msgstr "ELF ファイルからアセンブリを取り出します。``False`` の場合は、ELF ファイルのパスを返します。（既定: ``True``）"
 
 #: of pwnlib.asm.make_elf:14
-msgid ""
-"Create a Dynamic Shared Object (DSO, i.e. a ``.so``) which can be loaded "
-"via ``dlopen`` or ``LD_PRELOAD``."
-msgstr ""
+msgid "Create a Dynamic Shared Object (DSO, i.e. a ``.so``) which can be loaded via ``dlopen`` or ``LD_PRELOAD``."
+msgstr "``dlopen`` や ``LD_PRELOAD`` で読み込める動的共有オブジェクト（DSO、つまり ``.so``）を作成します。"
 
 #: of pwnlib.asm.make_elf:20
 msgid "This example creates an i386 ELF that just does execve('/bin/sh',...)."
-msgstr ""
+msgstr "この例では、execve('/bin/sh',...) を実行するだけの i386 の ELF を作ります。"
 
 #: of pwnlib.asm.make_elf_from_assembly:1
 msgid "Builds an ELF file with the specified assembly as its executable code."
-msgstr ""
+msgstr "指定したアセンブリを実行可能コードとして持つ ELF ファイルを作ります。"
 
 #: of pwnlib.asm.make_elf_from_assembly:3
-msgid ""
-"This differs from :func:`.make_elf` in that all ELF symbols are "
-"preserved, such as labels and local variables.  Use :func:`.make_elf` if "
-"size matters. Additionally, the default value for ``extract`` in "
-":func:`.make_elf` is different."
-msgstr ""
+msgid "This differs from :func:`.make_elf` in that all ELF symbols are preserved, such as labels and local variables.  Use :func:`.make_elf` if size matters. Additionally, the default value for ``extract`` in :func:`.make_elf` is different."
+msgstr ":func:`.make_elf` と違い、ラベルやローカル変数など、すべての ELF シンボルが保持されます。サイズが重要なら :func:`.make_elf` を使ってください。また、:func:`.make_elf` では ``extract`` の既定値が異なります。"
 
 #: of pwnlib.asm.make_elf_from_assembly:10
-msgid ""
-"This is effectively a wrapper around :func:`.asm`. with setting "
-"``extract=False``, ``vma=0x10000000``, and marking the resulting file as "
-"executable (``chmod +x``)."
-msgstr ""
+msgid "This is effectively a wrapper around :func:`.asm`. with setting ``extract=False``, ``vma=0x10000000``, and marking the resulting file as executable (``chmod +x``)."
+msgstr "実質的には :func:`.asm` のラッパーで、``extract=False`` と ``vma=0x10000000`` を設定し、できたファイルを実行可能にします（``chmod +x``）。"
 
 #: of pwnlib.asm.make_elf_from_assembly:16
-msgid ""
-"ELF files created with `arch=thumb` will prepend an ARM stub which "
-"switches to Thumb mode."
-msgstr ""
+msgid "ELF files created with `arch=thumb` will prepend an ARM stub which switches to Thumb mode."
+msgstr "`arch=thumb` で作成した ELF ファイルは、先頭に、Thumb モードに切り替える ARM のスタブが付きます。"
 
 #: of pwnlib.asm.make_elf_from_assembly:19
 msgid "Assembly code to build into an ELF"
 msgstr ""
 
 #: of pwnlib.asm.make_elf_from_assembly:21
-msgid ""
-"Load address of the binary (Default: ``0x10000000``, or ``0`` if "
-"``shared=True``)"
-msgstr ""
+msgid "Load address of the binary (Default: ``0x10000000``, or ``0`` if ``shared=True``)"
+msgstr "バイナリのロードアドレス。（既定: ``0x10000000``。``shared=True`` の場合は ``0``）"
 
 #: of pwnlib.asm.make_elf_from_assembly:24
 msgid "Extract the full ELF data from the file. (Default: ``False``)"
-msgstr ""
+msgstr "ファイルから ELF データ全体を取り出します。（既定: ``False``）"
 
 #: of pwnlib.asm.make_elf_from_assembly:27
 msgid "Create a shared library (Default: ``False``)"
-msgstr ""
+msgstr "共有ライブラリを作成します。（既定: ``False``）"
 
 #: of pwnlib.asm.make_elf_from_assembly:30
 msgid "Arguments to pass to :func:`.asm`."
-msgstr ""
+msgstr ":func:`.asm` に渡す引数。"
 
 #: of pwnlib.asm.dpkg_search_for_binutils pwnlib.asm.make_elf_from_assembly
 msgid "Returns"
 msgstr ""
 
 #: of pwnlib.asm.make_elf_from_assembly:33
-msgid ""
-"The path to the assembled ELF (extract=False), or the data of the "
-"assembled ELF."
-msgstr ""
+msgid "The path to the assembled ELF (extract=False), or the data of the assembled ELF."
+msgstr "アセンブルした ELF のパス（extract=False の場合）、またはアセンブルした ELF のデータ。"
 
 #: of pwnlib.asm.make_elf_from_assembly:37
 msgid "Example"
 msgstr ""
 
 #: of pwnlib.asm.make_elf_from_assembly:38
-msgid ""
-"This example shows how to create a shared library, and load it via "
-"``LD_PRELOAD``."
-msgstr ""
+msgid "This example shows how to create a shared library, and load it via ``LD_PRELOAD``."
+msgstr "この例では、共有ライブラリを作成し、``LD_PRELOAD`` で読み込む方法を示します。"
 
 #: of pwnlib.asm.make_elf_from_assembly:50
-msgid ""
-"The same thing can be done with :func:`.make_elf`, though the sizes are "
-"different.  They both"
-msgstr ""
+msgid "The same thing can be done with :func:`.make_elf`, though the sizes are different.  They both"
+msgstr "同じことは :func:`.make_elf` でもできますが、サイズが異なります。どちらも"
 
 #: ../pwntools/docs/source/asm.rst:18
 msgid "Internal Functions"
@@ -284,27 +243,24 @@ msgstr ""
 
 #: ../pwntools/docs/source/asm.rst:20
 msgid "These are only included so that their tests are run."
-msgstr ""
+msgstr "これらは、テストを実行するためだけに含まれています。"
 
 #: ../pwntools/docs/source/asm.rst:22
 msgid "You should never need these."
-msgstr ""
+msgstr "これらが必要になることはないはずです。"
 
 #: of pwnlib.asm.dpkg_search_for_binutils:1
 msgid "Use dpkg to search for any available assemblers which will work."
-msgstr ""
+msgstr "dpkg を使って、利用できるアセンブラを検索します。"
 
 #: of pwnlib.asm.dpkg_search_for_binutils:3
 msgid "A list of candidate package names."
-msgstr ""
+msgstr "候補となるパッケージ名のリスト。"
 
 #: of pwnlib.asm.print_binutils_instructions:1
-msgid ""
-"On failure to find a binutils utility, inform the user of a way they can "
-"get it easily."
-msgstr ""
+msgid "On failure to find a binutils utility, inform the user of a way they can get it easily."
+msgstr "binutils のユーティリティが見つからなかった場合に、簡単に入手できる方法をユーザーに知らせます。"
 
 #: of pwnlib.asm.print_binutils_instructions:4
 msgid "Doctest:"
 msgstr ""
-

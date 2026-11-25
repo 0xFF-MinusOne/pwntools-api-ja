@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/flag.rst:7
 msgid ":mod:`pwnlib.flag` --- CTF Flag Management"
-msgstr ""
+msgstr ":mod:`pwnlib.flag` --- CTF のフラグ管理"
 
 #: of pwnlib.flag.flag.submit_flag:1
 msgid "Submits a flag to the game server"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: of pwnlib.flag.flag.submit_flag:3
 msgid "The flag to submit."
-msgstr ""
+msgstr "提出するフラグです。"
 
 #: of pwnlib.flag.flag.submit_flag:5
 msgid "Exploit identifier, optional"
@@ -56,10 +56,8 @@ msgid "Team identifier, optional"
 msgstr ""
 
 #: of pwnlib.flag.flag.submit_flag:16
-msgid ""
-"Optional arguments are inferred from the environment, or omitted if none "
-"is set."
-msgstr ""
+msgid "Optional arguments are inferred from the environment, or omitted if none is set."
+msgstr "省略可能な引数は、環境から推測されます。何も設定されていなければ省略されます。"
 
 #: of pwnlib.flag.flag.submit_flag
 msgid "Returns"
@@ -67,9 +65,8 @@ msgstr ""
 
 #: of pwnlib.flag.flag.submit_flag:19
 msgid "A string indicating the status of the key submission, or an error code."
-msgstr ""
+msgstr "キーの提出結果を示す文字列、またはエラーコードです。"
 
 #: of pwnlib.flag.flag.submit_flag:22
 msgid "Doctest:"
 msgstr ""
-

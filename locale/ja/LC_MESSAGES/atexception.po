@@ -21,52 +21,36 @@ msgstr ""
 
 #: ../pwntools/docs/source/atexception.rst:6
 msgid ":mod:`pwnlib.atexception` --- Callbacks on unhandled exception"
-msgstr ""
+msgstr ":mod:`pwnlib.atexception` --- 未処理の例外時のコールバック"
 
 #: of pwnlib.atexception:1
-msgid ""
-"Analogous to atexit, this module allows the programmer to register "
-"functions to be run if an unhandled exception occurs."
-msgstr ""
+msgid "Analogous to atexit, this module allows the programmer to register functions to be run if an unhandled exception occurs."
+msgstr "atexit と同様に、このモジュールを使うと、未処理の例外が発生したときに実行する関数を登録できます。"
 
 #: of pwnlib.atexception.register:1
-msgid ""
-"Registers a function to be called when an unhandled exception occurs.  "
-"The function will be called with positional arguments `args` and keyword "
-"arguments `kwargs`, i.e. ``func(*args, **kwargs)``.  The current "
-"`context` is recorded and will be the one used when the handler is run."
-msgstr ""
+msgid "Registers a function to be called when an unhandled exception occurs.  The function will be called with positional arguments `args` and keyword arguments `kwargs`, i.e. ``func(*args, **kwargs)``.  The current `context` is recorded and will be the one used when the handler is run."
+msgstr "未処理の例外が発生したときに呼ばれる関数を登録します。関数は、位置引数 `args` とキーワード引数 `kwargs` で、つまり ``func(*args, **kwargs)`` として呼ばれます。現在の `context` が記録され、ハンドラの実行時に使われます。"
 
 #: of pwnlib.atexception.register:6
-msgid ""
-"E.g. to suppress logging output from an exception-handler one could "
-"write::"
-msgstr ""
+msgid "E.g. to suppress logging output from an exception-handler one could write::"
+msgstr "たとえば、例外ハンドラのログ出力を抑えるには、次のように書けます。::"
 
 #: of pwnlib.atexception.register:11
-msgid ""
-"An identifier is returned which can be used to unregister the exception-"
-"handler."
-msgstr ""
+msgid "An identifier is returned which can be used to unregister the exception-handler."
+msgstr "例外ハンドラの登録解除に使える識別子が返されます。"
 
 #: of pwnlib.atexception.register:14
 msgid "This function can be used as a decorator::"
-msgstr ""
+msgstr "この関数は、デコレータとして使えます。::"
 
 #: of pwnlib.atexception.register:20
-msgid ""
-"Notice however that this will bind ``handler`` to the identifier and not "
-"the actual exception-handler.  The exception-handler can then be "
-"unregistered with::"
-msgstr ""
+msgid "Notice however that this will bind ``handler`` to the identifier and not the actual exception-handler.  The exception-handler can then be unregistered with::"
+msgstr "ただし、この場合 ``handler`` には、実際の例外ハンドラではなく識別子が束縛されます。例外ハンドラは、次のようにして登録解除できます。::"
 
 #: of pwnlib.atexception.register:27
 msgid "This function is thread safe."
-msgstr ""
+msgstr "この関数はスレッドセーフです。"
 
 #: of pwnlib.atexception.unregister:1
-msgid ""
-"Remove the exception-handler identified by `ident` from the list of "
-"registered handlers.  If `ident` isn't registered this is a no-op."
-msgstr ""
-
+msgid "Remove the exception-handler identified by `ident` from the list of registered handlers.  If `ident` isn't registered this is a no-op."
+msgstr "`ident` で識別される例外ハンドラを、登録済みのハンドラの一覧から取り除きます。`ident` が登録されていなければ、何もしません。"

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/rop.rst:2
 msgid ":mod:`pwnlib.rop` --- Return Oriented Programming"
-msgstr ""
+msgstr ":mod:`pwnlib.rop` --- Return Oriented Programming"
 
 #: ../pwntools/docs/source/rop.rst:5
 msgid "Submodules"
@@ -29,27 +29,23 @@ msgstr ""
 
 #: ../pwntools/docs/source/rop/ret2dlresolve.rst:7
 msgid ":mod:`pwnlib.rop.ret2dlresolve` --- Return to dl_resolve"
-msgstr ""
+msgstr ":mod:`pwnlib.rop.ret2dlresolve` --- dl_resolve へのリターン"
 
 #: of pwnlib.rop.ret2dlresolve:1
-msgid ""
-"Provides automatic payload generation for exploiting buffer overflows "
-"using ret2dlresolve."
-msgstr ""
+msgid "Provides automatic payload generation for exploiting buffer overflows using ret2dlresolve."
+msgstr "ret2dlresolve を使ったバッファオーバーフローのエクスプロイトのために、ペイロードを自動で生成します。"
 
 #: of pwnlib.rop.ret2dlresolve:4
 msgid "We use the following example program:"
-msgstr ""
+msgstr "次のサンプルプログラムを使います。"
 
 #: of pwnlib.rop.ret2dlresolve:17
-msgid ""
-"We can automate the  process of exploitation with these some example "
-"binaries."
-msgstr ""
+msgid "We can automate the  process of exploitation with these some example binaries."
+msgstr "次のサンプルバイナリを使って、エクスプロイトの手順を自動化できます。"
 
 #: of pwnlib.rop.ret2dlresolve:39
 msgid "You can also use ``Ret2dlresolve`` on AMD64:"
-msgstr ""
+msgstr "AMD64 でも ``Ret2dlresolve`` を使えます。"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:1
 msgid "Create a ret2dlresolve payload"
@@ -75,16 +71,12 @@ msgid "List of arguments to pass to the function"
 msgstr ""
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:9
-msgid ""
-"The address where the payload will be written to. If not provided, a "
-"suitable address will be chosen automatically (recommended)."
-msgstr ""
+msgid "The address where the payload will be written to. If not provided, a suitable address will be chosen automatically (recommended)."
+msgstr "ペイロードを書き込むアドレス。指定しない場合は、適切なアドレスが自動で選ばれます（推奨）。"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:13
-msgid ""
-"The address where the location of the resolved symbol will be written to."
-" If not provided will be equal to data_addr."
-msgstr ""
+msgid "The address where the location of the resolved symbol will be written to. If not provided will be equal to data_addr."
+msgstr "解決されたシンボルの位置を書き込むアドレス。指定しない場合は data_addr と同じになります。"
 
 #: ../pwntools/docs/source/rop/ret2dlresolve.rst
 #: ../pwntools/docs/source/rop/rop.rst of pwnlib.rop.rop.ROP.ref
@@ -92,30 +84,16 @@ msgid "Returns"
 msgstr ""
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:18
-msgid ""
-"A ``Ret2dlresolvePayload`` object. It can be passed to "
-"``rop.ret2dlresolve`` for automatic exploitation.  If that is not "
-"suitable the object generates useful values (.reloc_index and .payload) "
-"which can be used to aid manual exploitation. In this case it is "
-"recommended to set .resolution_addr to the GOT address of an easily "
-"callable function (do not set it when passing the object to "
-"rop.ret2dlresolve)."
-msgstr ""
+msgid "A ``Ret2dlresolvePayload`` object. It can be passed to ``rop.ret2dlresolve`` for automatic exploitation.  If that is not suitable the object generates useful values (.reloc_index and .payload) which can be used to aid manual exploitation. In this case it is recommended to set .resolution_addr to the GOT address of an easily callable function (do not set it when passing the object to rop.ret2dlresolve)."
+msgstr "``Ret2dlresolvePayload`` オブジェクト。``rop.ret2dlresolve`` に渡すと、自動でエクスプロイトできます。それが適さない場合は、このオブジェクトが手動でのエクスプロイトに役立つ値（.reloc_index と .payload）を生成します。その場合は、.resolution_addr に、簡単に呼び出せる関数の GOT アドレスを設定することを推奨します（オブジェクトを rop.ret2dlresolve に渡すときは設定しないでください）。"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:18
-msgid ""
-"A ``Ret2dlresolvePayload`` object. It can be passed to "
-"``rop.ret2dlresolve`` for automatic exploitation."
-msgstr ""
+msgid "A ``Ret2dlresolvePayload`` object. It can be passed to ``rop.ret2dlresolve`` for automatic exploitation."
+msgstr "``Ret2dlresolvePayload`` オブジェクト。``rop.ret2dlresolve`` に渡すと、自動でエクスプロイトできます。"
 
 #: of pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload:21
-msgid ""
-"If that is not suitable the object generates useful values (.reloc_index "
-"and .payload) which can be used to aid manual exploitation. In this case "
-"it is recommended to set .resolution_addr to the GOT address of an easily"
-" callable function (do not set it when passing the object to "
-"rop.ret2dlresolve)."
-msgstr ""
+msgid "If that is not suitable the object generates useful values (.reloc_index and .payload) which can be used to aid manual exploitation. In this case it is recommended to set .resolution_addr to the GOT address of an easily callable function (do not set it when passing the object to rop.ret2dlresolve)."
+msgstr "それが適さない場合は、このオブジェクトが手動でのエクスプロイトに役立つ値（.reloc_index と .payload）を生成します。その場合は、.resolution_addr に、簡単に呼び出せる関数の GOT アドレスを設定することを推奨します（オブジェクトを rop.ret2dlresolve に渡すときは設定しないでください）。"
 
 #: ../pwntools/docs/docstring of
 #: pwnlib.rop.ret2dlresolve.Ret2dlresolvePayload.__weakref__:1
@@ -126,7 +104,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/rop/rop.rst:28
 msgid ":mod:`pwnlib.rop.rop` --- Return Oriented Programming"
-msgstr ""
+msgstr ":mod:`pwnlib.rop.rop` --- Return Oriented Programming"
 
 #: of pwnlib.rop.rop:1
 msgid "Return Oriented Programming"
@@ -137,236 +115,178 @@ msgid "Manual ROP"
 msgstr ""
 
 #: of pwnlib.rop.rop:6
-msgid ""
-"The ROP tool can be used to build stacks pretty trivially. Let's create a"
-" fake binary which has some symbols which might have been useful."
-msgstr ""
+msgid "The ROP tool can be used to build stacks pretty trivially. Let's create a fake binary which has some symbols which might have been useful."
+msgstr "ROP ツールを使うと、スタックをとても簡単に組み立てられます。まず、役に立ちそうなシンボルを持つ、偽のバイナリを作ってみましょう。"
 
 #: of pwnlib.rop.rop:14
-msgid ""
-"Creating a ROP object which looks up symbols in the binary is pretty "
-"straightforward."
-msgstr ""
+msgid "Creating a ROP object which looks up symbols in the binary is pretty straightforward."
+msgstr "バイナリ内のシンボルを検索する ROP オブジェクトの作成は、とても簡単です。"
 
 #: of pwnlib.rop.rop:18
-msgid ""
-"Once the ROP object has been loaded, you can trivially find gadgets, by "
-"using magic properties on the ``ROP`` object. Each :class:`Gadget` has an"
-" ``address`` property which has the real address as well."
-msgstr ""
+msgid "Once the ROP object has been loaded, you can trivially find gadgets, by using magic properties on the ``ROP`` object. Each :class:`Gadget` has an ``address`` property which has the real address as well."
+msgstr "ROP オブジェクトを読み込んだら、``ROP`` オブジェクトの特殊なプロパティを使って、ガジェットを簡単に探せます。各 :class:`Gadget` には ``address`` プロパティがあり、実際のアドレスも取得できます。"
 
 #: of pwnlib.rop.rop:26
 msgid "Other, more complicated gadgets also happen magically"
 msgstr ""
 
 #: of pwnlib.rop.rop:31
-msgid ""
-"The easiest way to set up individual registers is to invoke the ``ROP`` "
-"object as a callable, with the registers as arguments. This has the "
-"benefit of using multi-pop gadgets to set multiple registers with one "
-"gadget."
-msgstr ""
+msgid "The easiest way to set up individual registers is to invoke the ``ROP`` object as a callable, with the registers as arguments. This has the benefit of using multi-pop gadgets to set multiple registers with one gadget."
+msgstr "個々のレジスタを設定する最も簡単な方法は、``ROP`` オブジェクトを、レジスタを引数にして関数のように呼び出すことです。複数の値をポップするガジェットを使って、1 つのガジェットで複数のレジスタを設定できる利点があります。"
 
 #: of pwnlib.rop.rop:36
-msgid ""
-"Setting register values this way accounts for padding and extra registers"
-" which are popped off the stack. Values which are filled with garbage "
-"(i.e. are not used) are filled with the :func:`cyclic` pattern which "
-"corresponds to their offset, which is useful when debugging your exploit."
-msgstr ""
+msgid "Setting register values this way accounts for padding and extra registers which are popped off the stack. Values which are filled with garbage (i.e. are not used) are filled with the :func:`cyclic` pattern which corresponds to their offset, which is useful when debugging your exploit."
+msgstr "この方法でレジスタの値を設定すると、パディングや、スタックからポップされる余分なレジスタも考慮されます。ゴミで埋められる値（つまり使われない値）は、そのオフセットに対応する :func:`cyclic` のパターンで埋められます。エクスプロイトのデバッグに役立ちます。"
 
 #: of pwnlib.rop.rop:48
-msgid ""
-"If you really want to set one register at a time, you can also use the "
-"assignment form. It's generally advised to use the rop(eax=..., ecx=...) "
-"form, since there may be an e.g. ``pop eax; pop ecx; ret`` gadget that "
-"can be taken advantage of."
-msgstr ""
+msgid "If you really want to set one register at a time, you can also use the assignment form. It's generally advised to use the rop(eax=..., ecx=...) form, since there may be an e.g. ``pop eax; pop ecx; ret`` gadget that can be taken advantage of."
+msgstr "どうしても 1 つずつレジスタを設定したい場合は、代入の形式も使えます。ただし、``pop eax; pop ecx; ret`` のようなガジェットを活用できる場合があるため、一般には rop(eax=..., ecx=...) の形式を使うことを勧めます。"
 
 #: of pwnlib.rop.rop:64
-msgid ""
-"If you just want to FIND a ROP gadget, you can access them as a property "
-"on the ``ROP`` object by register name."
-msgstr ""
+msgid "If you just want to FIND a ROP gadget, you can access them as a property on the ``ROP`` object by register name."
+msgstr "ROP ガジェットを探すだけでよければ、``ROP`` オブジェクトのプロパティとして、レジスタ名で取得できます。"
 
 #: of pwnlib.rop.rop:78
 msgid "Let's re-create our ROP object now to show for some other examples."
-msgstr ""
+msgstr "別の例を示すために、ROP オブジェクトを作り直します。"
 
 #: of pwnlib.rop.rop:82
 msgid "With the ROP object, you can manually add stack frames."
-msgstr ""
+msgstr "ROP オブジェクトを使うと、スタックフレームを手動で追加できます。"
 
 #: of pwnlib.rop.rop:88
 msgid "Inspecting the ROP stack is easy, and laid out in an easy-to-read manner."
-msgstr ""
+msgstr "ROP スタックの内容は、読みやすい形で簡単に確認できます。"
 
 #: of pwnlib.rop.rop:96
-msgid ""
-"The ROP module is also aware of how to make function calls with standard "
-"Linux ABIs."
-msgstr ""
+msgid "The ROP module is also aware of how to make function calls with standard Linux ABIs."
+msgstr "ROP モジュールは、標準的な Linux の ABI での関数呼び出しの作り方も理解しています。"
 
 #: of pwnlib.rop.rop:110
-msgid ""
-"You can also use a shorthand to invoke calls. The stack is automatically "
-"adjusted for the next frame."
-msgstr ""
+msgid "You can also use a shorthand to invoke calls. The stack is automatically adjusted for the next frame."
+msgstr "呼び出しを短く書く記法も使えます。スタックは、次のフレームのために自動で調整されます。"
 
 #: of pwnlib.rop.rop:131
-msgid ""
-"You can also append complex arguments onto stack when the stack pointer "
-"is known."
-msgstr ""
+msgid "You can also append complex arguments onto stack when the stack pointer is known."
+msgstr "スタックポインタが分かっている場合は、複雑な引数をスタックに追加することもできます。"
 
 #: of pwnlib.rop.rop:151
-msgid ""
-"ROP also detects 'jmp $sp' gadget to help exploit binaries with NX "
-"disabled. You can get this gadget on 'i386':"
-msgstr ""
+msgid "ROP also detects 'jmp $sp' gadget to help exploit binaries with NX disabled. You can get this gadget on 'i386':"
+msgstr "ROP は 'jmp $sp' ガジェットも検出するため、NX が無効なバイナリのエクスプロイトに役立ちます。'i386' では、このガジェットを次のように取得できます。"
 
 #: of pwnlib.rop.rop:161
 msgid "You can also get this gadget on 'amd64':"
-msgstr ""
+msgstr "'amd64' でも、このガジェットを取得できます。"
 
 #: of pwnlib.rop.rop:170
 msgid "Gadgets whose address has badchar are filtered out:"
-msgstr ""
+msgstr "アドレスに不正な文字（badchar）を含むガジェットは除外されます。"
 
 #: of pwnlib.rop.rop:183
 msgid "ROP Example"
 msgstr ""
 
 #: of pwnlib.rop.rop:185
-msgid ""
-"Let's assume we have a trivial binary that just reads some data onto the "
-"stack, and returns."
-msgstr ""
+msgid "Let's assume we have a trivial binary that just reads some data onto the stack, and returns."
+msgstr "スタックにデータを読み込んで、リターンするだけの単純なバイナリがあるとします。"
 
 #: of pwnlib.rop.rop:193
 msgid "Let's provide some simple gadgets:"
-msgstr ""
+msgstr "単純なガジェットを用意します。"
 
 #: of pwnlib.rop.rop:197
 msgid "And perhaps a nice \"write\" function."
-msgstr ""
+msgstr "それと、使いやすい「write」関数も用意します。"
 
 #: of pwnlib.rop.rop:208
 msgid "And a way to exit cleanly."
-msgstr ""
+msgstr "正常に終了する方法も用意します。"
 
 #: of pwnlib.rop.rop:213
 msgid "Finally, let's build our ROP stack"
-msgstr ""
+msgstr "最後に、ROP スタックを組み立てます。"
 
 #: of pwnlib.rop.rop:225
-msgid ""
-"The raw data from the ROP stack is available via `r.chain()` (or "
-"`bytes(r)`)."
-msgstr ""
+msgid "The raw data from the ROP stack is available via `r.chain()` (or `bytes(r)`)."
+msgstr "ROP スタックの生データは、`r.chain()`（または `bytes(r)`）で取得できます。"
 
 #: of pwnlib.rop.rop:231 pwnlib.rop.rop:350
 msgid "Let's try it out!"
-msgstr ""
+msgstr "試してみましょう。"
 
 #: of pwnlib.rop.rop:239
 msgid "ROP Example (amd64)"
 msgstr ""
 
 #: of pwnlib.rop.rop:241
-msgid ""
-"For amd64 binaries, the registers are loaded off the stack.  Pwntools can"
-" do basic reasoning about simple \"pop; pop; add; ret\"-style gadgets, "
-"and satisfy requirements so that everything \"just works\"."
-msgstr ""
+msgid "For amd64 binaries, the registers are loaded off the stack.  Pwntools can do basic reasoning about simple \"pop; pop; add; ret\"-style gadgets, and satisfy requirements so that everything \"just works\"."
+msgstr "amd64 のバイナリでは、レジスタはスタックから読み込まれます。Pwntools は、「pop; pop; add; ret」のような単純なガジェットについて基本的な推論ができ、すべてがうまく動くように条件を満たします。"
 
 #: of pwnlib.rop.rop:280
-msgid ""
-"Pwntools will also filter out some bad instructions while setting the "
-"registers ( e.g. syscall, int 0x80... )"
-msgstr ""
+msgid "Pwntools will also filter out some bad instructions while setting the registers ( e.g. syscall, int 0x80... )"
+msgstr "Pwntools は、レジスタを設定する際に、不適切な命令（例: syscall、int 0x80 など）も除外します。"
 
 #: of pwnlib.rop.rop:296
 msgid "ROP + Sigreturn"
-msgstr ""
+msgstr "ROP + Sigreturn"
 
 #: of pwnlib.rop.rop:298
-msgid ""
-"In some cases, control of the desired register is not available. However,"
-" if you have control of the stack, EAX, and can find a `int 0x80` gadget,"
-" you can use sigreturn."
-msgstr ""
+msgid "In some cases, control of the desired register is not available. However, if you have control of the stack, EAX, and can find a `int 0x80` gadget, you can use sigreturn."
+msgstr "目的のレジスタを制御できない場合があります。しかし、スタックと EAX を制御でき、`int 0x80` ガジェットを見つけられるなら、sigreturn を使えます。"
 
 #: of pwnlib.rop.rop:302
 msgid "Even better, this happens automagically."
-msgstr ""
+msgstr "さらに便利なことに、これは自動で行われます。"
 
 #: of pwnlib.rop.rop:304
-msgid ""
-"Our example binary will read some data onto the stack, and not do "
-"anything else interesting."
-msgstr ""
+msgid "Our example binary will read some data onto the stack, and not do anything else interesting."
+msgstr "サンプルのバイナリは、スタックにデータを読み込む以外には、特に何もしません。"
 
 #: of pwnlib.rop.rop:316
 msgid "Let's create a ROP object and invoke the call."
-msgstr ""
+msgstr "ROP オブジェクトを作成して、呼び出しを行います。"
 
 #: of pwnlib.rop.rop:323
 msgid "That's all there is to it."
-msgstr ""
+msgstr "以上です。"
 
 #: of pwnlib.rop.rop:360
 msgid "ROP + stack relative addresses"
-msgstr ""
+msgstr "ROP + スタック相対アドレス"
 
 #: of pwnlib.rop.rop:362
-msgid ""
-"Sometimes you want to use gadgets which require you to point back into "
-"your ROP chain. This is especially common for gadgets which adjust the "
-"stack pointer, but can also be useful for other gadgets. You have to know"
-" the absolute address of the ROP chain in memory for this and pass it as "
-"``base=`` into the :class:`ROP` constructor."
-msgstr ""
+msgid "Sometimes you want to use gadgets which require you to point back into your ROP chain. This is especially common for gadgets which adjust the stack pointer, but can also be useful for other gadgets. You have to know the absolute address of the ROP chain in memory for this and pass it as ``base=`` into the :class:`ROP` constructor."
+msgstr "ROP チェーン内を指し戻す必要があるガジェットを使いたい場合があります。特にスタックポインタを調整するガジェットでよくありますが、ほかのガジェットでも役立つことがあります。そのためには、メモリ上の ROP チェーンの絶対アドレスを知っている必要があり、それを :class:`ROP` のコンストラクタに ``base=`` として渡します。"
 
 #: of pwnlib.rop.rop:366
-msgid ""
-"You can use labels to reference other slots in the ROP chain, and the ROP"
-" module will resolve them to the correct addresses when the chain is "
-"finalized. Set a label at the current chain position using "
-":meth:`ROP.label`, and reference it using :meth:`ROP.ref` with an "
-"optional offset."
-msgstr ""
+msgid "You can use labels to reference other slots in the ROP chain, and the ROP module will resolve them to the correct addresses when the chain is finalized. Set a label at the current chain position using :meth:`ROP.label`, and reference it using :meth:`ROP.ref` with an optional offset."
+msgstr "ラベルを使うと、ROP チェーン内のほかのスロットを参照できます。ROP モジュールは、チェーンが確定するときに、それらを正しいアドレスに解決します。:meth:`ROP.label` で現在のチェーン位置にラベルを設定し、:meth:`ROP.ref` で（オフセットを付けることもできます）参照します。"
 
 #: of pwnlib.rop.rop:369
-msgid ""
-"Imagine you want to use a `pop rdx; leave; ret` gadget to control rdx and"
-" continue your rop chain afterwards. You can use a label in front of your"
-" next gadget and reference it in `rbp` to achieve this."
-msgstr ""
+msgid "Imagine you want to use a `pop rdx; leave; ret` gadget to control rdx and continue your rop chain afterwards. You can use a label in front of your next gadget and reference it in `rbp` to achieve this."
+msgstr "`pop rdx; leave; ret` ガジェットで rdx を制御し、そのあとも ROP チェーンを続けたいとします。次のガジェットの前にラベルを置いて、それを `rbp` で参照すれば実現できます。"
 
 #: of pwnlib.rop.rop.ROP:1
 msgid "Class which simplifies the generation of ROP-chains."
-msgstr ""
+msgstr "ROP チェーンの生成を簡単にするクラスです。"
 
 #: of pwnlib.rop.rop.ROP:3
 msgid "Example:"
 msgstr ""
 
 #: of pwnlib.rop.rop.ROP:109 pwnlib.rop.rop.ROP.__init__:1
-msgid ""
-"List of :class:`.ELF` objects or single :class:`.ELF` for mining gadgets."
-" bytes or str are passed to :class:`.ELF`'s constructor."
-msgstr ""
+msgid "List of :class:`.ELF` objects or single :class:`.ELF` for mining gadgets. bytes or str are passed to :class:`.ELF`'s constructor."
+msgstr "ガジェットを探す対象の :class:`.ELF` オブジェクトのリスト、または単一の :class:`.ELF`。bytes や str は :class:`.ELF` のコンストラクタに渡されます。"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP:111
 #: pwnlib.rop.rop.ROP.__init__:3 pwnlib.rop.rop.ROP.base:1
 msgid "Stack address where the first byte of the ROP chain lies, if known."
-msgstr ""
+msgstr "ROP チェーンの先頭バイトがあるスタックアドレス（分かっている場合）。"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP:113
 #: pwnlib.rop.rop.ROP.__init__:5 pwnlib.rop.rop.ROP._badchars:1
 msgid "Characters which should not appear in ROP gadget addresses."
-msgstr ""
+msgstr "ROP ガジェットのアドレスに含めてはいけない文字。"
 
 #: of pwnlib.rop.rop.ROP.clear_cache:1
 msgid "Clears the ROP gadget cache"
@@ -374,27 +294,23 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.__bytes__:1
 msgid "Returns: Raw bytes of the ROP chain"
-msgstr ""
+msgstr "Returns: ROP チェーンの生のバイト列"
 
 #: of pwnlib.rop.rop.ROP.__call__:1
 msgid "Set the given register(s)' by constructing a rop chain."
-msgstr ""
+msgstr "ROP チェーンを組み立てて、指定したレジスタを設定します。"
 
 #: of pwnlib.rop.rop.ROP.__call__:3
-msgid ""
-"This is a thin wrapper around :meth:`setRegisters` which actually "
-"executes the rop chain."
-msgstr ""
+msgid "This is a thin wrapper around :meth:`setRegisters` which actually executes the rop chain."
+msgstr ":meth:`setRegisters` の薄いラッパーで、実際に ROP チェーンを実行します。"
 
 #: of pwnlib.rop.rop.ROP.__call__:6
-msgid ""
-"You can call this :class:`ROP` instance and provide keyword arguments, or"
-" a dictionary."
-msgstr ""
+msgid "You can call this :class:`ROP` instance and provide keyword arguments, or a dictionary."
+msgstr "この :class:`ROP` インスタンスを呼び出して、キーワード引数または辞書を渡せます。"
 
 #: of pwnlib.rop.rop.ROP.__call__:9
 msgid "Mapping of registers to values. Can instead provide ``kwargs``."
-msgstr ""
+msgstr "レジスタと値の対応。代わりに ``kwargs`` を渡すこともできます。"
 
 #: of pwnlib.rop.rop.ROP.__get_cachefile_name:1
 msgid ""
@@ -404,15 +320,15 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.__getattr__:1
 msgid "Helper to make finding ROP gadgets easier."
-msgstr ""
+msgstr "ROP ガジェットを探しやすくするヘルパーです。"
 
 #: of pwnlib.rop.rop.ROP.__getattr__:3
 msgid "Also provides a shorthand for ``.call()``:"
-msgstr ""
+msgstr "``.call()`` の短縮形も使えます。"
 
 #: of pwnlib.rop.rop.ROP.__getattr__:4
 msgid "``rop.function(args)`` is equivalent to ``rop.call(function, args)``"
-msgstr ""
+msgstr "``rop.function(args)`` は ``rop.call(function, args)`` と同じ意味です。"
 
 #: of pwnlib.rop.rop.ROP.__load:1
 msgid "Load all ROP gadgets for the selected ELF files"
@@ -420,46 +336,36 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: of pwnlib.rop.rop.ROP.__setattr__:1
 msgid "Helper for setting registers."
-msgstr ""
+msgstr "レジスタを設定するヘルパーです。"
 
 #: of pwnlib.rop.rop.ROP.__setattr__:3
-msgid ""
-"This convenience feature allows one to set the values of registers with "
-"simple python assignment syntax."
-msgstr ""
+msgid "This convenience feature allows one to set the values of registers with simple python assignment syntax."
+msgstr "この便利機能を使うと、Python の単純な代入構文でレジスタの値を設定できます。"
 
 #: of pwnlib.rop.rop.ROP.__setattr__:8
-msgid ""
-"Only one register is set at a time (one per rop chain). This may lead to "
-"some previously set to registers be overwritten!"
-msgstr ""
+msgid "Only one register is set at a time (one per rop chain). This may lead to some previously set to registers be overwritten!"
+msgstr "一度に設定されるレジスタは 1 つだけです（ROP チェーン 1 つにつき 1 つ）。そのため、先に設定したレジスタが上書きされることがあります。"
 
 #: of pwnlib.rop.rop.ROP.__setattr__:13
-msgid ""
-"If you would like to set multiple registers in as few rop chains as "
-"possible, see :meth:`__call__`."
-msgstr ""
+msgid "If you would like to set multiple registers in as few rop chains as possible, see :meth:`__call__`."
+msgstr "できるだけ少ない ROP チェーンで複数のレジスタを設定したい場合は、:meth:`__call__` を参照してください。"
 
 #: of pwnlib.rop.rop.ROP.build:1
-msgid ""
-"Construct the ROP chain into a list of elements which can be passed to "
-":func:`.flat`."
-msgstr ""
+msgid "Construct the ROP chain into a list of elements which can be passed to :func:`.flat`."
+msgstr "ROP チェーンを、:func:`.flat` に渡せる要素のリストとして組み立てます。"
 
 #: of pwnlib.rop.rop.ROP.build:4 pwnlib.rop.rop.ROP.chain:3
 #: pwnlib.rop.rop.ROP.dump:3
 msgid "The base address to build the rop-chain from. Defaults to :attr:`base`."
-msgstr ""
+msgstr "ROP チェーンを組み立てる基準のアドレス。既定は :attr:`base` です。"
 
 #: of pwnlib.rop.rop.ROP.build:7
-msgid ""
-"Optional output argument, which will gets a mapping of ``address: "
-"description`` for each address on the stack, starting at ``base``."
-msgstr ""
+msgid "Optional output argument, which will gets a mapping of ``address: description`` for each address on the stack, starting at ``base``."
+msgstr "出力用の省略可能な引数。``base`` から始まるスタック上の各アドレスについて、``address: description`` の対応が格納されます。"
 
 #: of pwnlib.rop.rop.ROP.call:1
 msgid "Add a call to the ROP chain"
@@ -467,14 +373,11 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.call:3
 msgid "Value which can be looked up via 'resolve', or is already an integer."
-msgstr ""
+msgstr "'resolve' で検索できる値、またはすでに整数になっている値。"
 
 #: of pwnlib.rop.rop.ROP.call:6
-msgid ""
-"List of arguments which can be passed to pack(). Alternately, if a base "
-"address is set, arbitrarily nested structures of strings or integers can "
-"be provided."
-msgstr ""
+msgid "List of arguments which can be passed to pack(). Alternately, if a base address is set, arbitrarily nested structures of strings or integers can be provided."
+msgstr "pack() に渡せる引数のリスト。基準アドレスが設定されている場合は、文字列や整数を任意に入れ子にした構造も渡せます。"
 
 #: of pwnlib.rop.rop.ROP.chain:1
 msgid "Build the ROP chain"
@@ -490,32 +393,27 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.dump:1
 msgid "Dump the ROP chain in an easy-to-read manner"
-msgstr ""
+msgstr "ROP チェーンを、読みやすい形でダンプします。"
 
 #: of pwnlib.rop.rop.ROP.find_gadget:1
-msgid ""
-"Returns a gadget with the exact sequence of instructions specified in the"
-" ``instructions`` argument."
-msgstr ""
+msgid "Returns a gadget with the exact sequence of instructions specified in the ``instructions`` argument."
+msgstr "``instructions`` 引数で指定した命令列とちょうど同じ命令列を持つガジェットを返します。"
 
 #: of pwnlib.rop.rop.ROP.generatePadding:1
 msgid "Generates padding to be inserted into the ROP stack."
-msgstr ""
+msgstr "ROP スタックに挿入するパディングを生成します。"
 
 #: of pwnlib.rop.rop.ROP.label:1
-msgid ""
-"Assign a label to the current position in the ROP chain. The label can be"
-" used with :meth:`ref` to refer to this position from elsewhere in the "
-"chain."
-msgstr ""
+msgid "Assign a label to the current position in the ROP chain. The label can be used with :meth:`ref` to refer to this position from elsewhere in the chain."
+msgstr "ROP チェーン内の現在の位置にラベルを付けます。ラベルは :meth:`ref` と組み合わせて、チェーンの別の場所からこの位置を参照するのに使えます。"
 
 #: of pwnlib.rop.rop.ROP.label:5
 msgid "Labels can only be set on non-migrated chains with a known base address."
-msgstr ""
+msgstr "ラベルを設定できるのは、基準アドレスが分かっている、移行されていないチェーンだけです。"
 
 #: of pwnlib.rop.rop.ROP.label:7
 msgid "Name of the label to set. Has to be unique."
-msgstr ""
+msgstr "設定するラベルの名前。一意である必要があります。"
 
 #: of pwnlib.rop.rop.ROP.label:10 pwnlib.rop.rop.ROP.ref:14
 msgid "Examples:"
@@ -523,66 +421,55 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.label:26
 msgid "The base address of your rop chain in memory has to be known:"
-msgstr ""
+msgstr "メモリ上の ROP チェーンの基準アドレスが分かっている必要があります。"
 
 #: of pwnlib.rop.rop.ROP.label:34
 msgid "Labels have to be unique:"
-msgstr ""
+msgstr "ラベルは一意である必要があります。"
 
 #: of pwnlib.rop.rop.ROP.label:43
 msgid "Trying to set a label on a migrated chain is not allowed:"
-msgstr ""
+msgstr "移行されたチェーンにラベルを設定することは認められていません。"
 
 #: of pwnlib.rop.rop.ROP.migrate:1
 msgid "Explicitly set $sp, by using a ``leave; ret`` gadget"
-msgstr ""
+msgstr "``leave; ret`` ガジェットを使って、$sp を明示的に設定します。"
 
 #: of pwnlib.rop.rop.ROP.raw:1
 msgid "Adds a raw integer or string to the ROP chain."
-msgstr ""
+msgstr "生の整数または文字列を ROP チェーンに追加します。"
 
 #: of pwnlib.rop.rop.ROP.raw:3
-msgid ""
-"If your architecture requires aligned values, then make sure that any "
-"given string is aligned!"
-msgstr ""
+msgid "If your architecture requires aligned values, then make sure that any given string is aligned!"
+msgstr "アーキテクチャがアラインメントされた値を必要とする場合は、渡す文字列もアラインメントされていることを確認してください。"
 
 #: of pwnlib.rop.rop.ROP.raw:6
-msgid ""
-"When given a list or a tuple of values, the list is flattened before "
-"adding every item to the chain."
-msgstr ""
+msgid "When given a list or a tuple of values, the list is flattened before adding every item to the chain."
+msgstr "値のリストまたはタプルを渡した場合は、リストを平坦化してから、各要素をチェーンに追加します。"
 
 #: of pwnlib.rop.rop.ROP.raw:9
 msgid "The raw value to put onto the rop chain."
-msgstr ""
+msgstr "ROP チェーンに置く生の値。"
 
 #: of pwnlib.rop.rop.ROP.ref:1
 msgid "Insert a placeholder to the address of a label set by :meth:`label`."
-msgstr ""
+msgstr ":meth:`label` で設定したラベルのアドレスのプレースホルダを挿入します。"
 
 #: of pwnlib.rop.rop.ROP.ref:3
-msgid ""
-"You can reference labels that are not defined yet. This placeholder will "
-"be replaced with the address of the label when building the chain. You "
-"can also specify an optional offset to add to the label address."
-msgstr ""
+msgid "You can reference labels that are not defined yet. This placeholder will be replaced with the address of the label when building the chain. You can also specify an optional offset to add to the label address."
+msgstr "まだ定義されていないラベルも参照できます。このプレースホルダは、チェーンを組み立てるときに、ラベルのアドレスに置き換えられます。ラベルのアドレスに加えるオフセットを、省略可能な引数で指定することもできます。"
 
 #: of pwnlib.rop.rop.ROP.ref:7
-msgid ""
-"Name of the label to refer to. Has to be defined by a previous call to "
-":meth:`label`."
-msgstr ""
+msgid "Name of the label to refer to. Has to be defined by a previous call to :meth:`label`."
+msgstr "参照するラベルの名前。事前に :meth:`label` の呼び出しで定義されている必要があります。"
 
 #: of pwnlib.rop.rop.ROP.ref:9
 msgid "Optional offset to add to the label address. Defaults to 0."
-msgstr ""
+msgstr "ラベルのアドレスに加えるオフセット（省略可）。既定は 0 です。"
 
 #: of pwnlib.rop.rop.ROP.ref:12
-msgid ""
-"A :class:`LabelUser` instance which will be resolved to the address of "
-"the label when building the chain."
-msgstr ""
+msgid "A :class:`LabelUser` instance which will be resolved to the address of the label when building the chain."
+msgstr "チェーンを組み立てるときにラベルのアドレスに解決される :class:`LabelUser` インスタンス。"
 
 #: of pwnlib.rop.rop.ROP.resolve:1
 msgid "Resolves a symbol to an address"
@@ -594,7 +481,7 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.resolve:6
 msgid "int containing address of 'resolvable', or None"
-msgstr ""
+msgstr "'resolvable' のアドレスを持つ int、または None"
 
 #: of pwnlib.rop.rop.ROP.ret2csu:1
 msgid "Build a ret2csu ROPchain"
@@ -612,11 +499,8 @@ msgid "Optional registers to populate"
 msgstr ""
 
 #: of pwnlib.rop.rop.ROP.ret2csu:12
-msgid ""
-"Pointer to the address of a function to call during second gadget. If "
-"None then use the address of _fini in the .dynamic section. .got.plt "
-"entries are a good target. Required for PIE binaries."
-msgstr ""
+msgid "Pointer to the address of a function to call during second gadget. If None then use the address of _fini in the .dynamic section. .got.plt entries are a good target. Required for PIE binaries."
+msgstr "2 番目のガジェットの実行中に呼び出す関数のアドレスへのポインタ。None の場合は、.dynamic セクションの _fini のアドレスを使います。.got.plt のエントリが適した対象です。PIE のバイナリでは必須です。"
 
 #: of pwnlib.rop.rop.ROP.ret2csu:17
 msgid "Test:"
@@ -624,111 +508,80 @@ msgstr ""
 
 #: of pwnlib.rop.rop.ROP.search:1
 msgid "Search for a gadget which matches the specified criteria."
-msgstr ""
+msgstr "指定した条件に一致するガジェットを探します。"
 
 #: of pwnlib.rop.rop.ROP.search:3
 msgid "Minimum number of bytes by which the stack pointer is adjusted."
-msgstr ""
+msgstr "スタックポインタが調整されるバイト数の最小値。"
 
 #: of pwnlib.rop.rop.ROP.search:6
 msgid "Minimum list of registers which are popped off the stack."
-msgstr ""
+msgstr "スタックからポップされるレジスタの最小限のリスト。"
 
 #: of pwnlib.rop.rop.ROP.search:9
-msgid ""
-"Either the string 'size', 'leav' or 'regs'. Decides how to order multiple"
-" gadgets the fulfill the requirements."
-msgstr ""
+msgid "Either the string 'size', 'leav' or 'regs'. Decides how to order multiple gadgets the fulfill the requirements."
+msgstr "文字列 'size'、'leav'、'regs' のいずれか。条件を満たす複数のガジェットを、どう並べ替えるかを決めます。"
 
 #: of pwnlib.rop.rop.ROP.search:13
-msgid ""
-"The search will try to minimize the number of bytes popped more than "
-"requested, the number of registers touched besides the requested and the "
-"address."
-msgstr ""
+msgid "The search will try to minimize the number of bytes popped more than requested, the number of registers touched besides the requested and the address."
+msgstr "検索では、要求より多くポップされるバイト数、要求されたもの以外に触れるレジスタの数、アドレスを、それぞれ小さくしようとします。"
 
 #: of pwnlib.rop.rop.ROP.search:17
-msgid ""
-"If ``order == 'size'``, then gadgets are compared lexicographically by "
-"``(total_moves, total_regs, addr)``, if ``order == 'regs'``, then by "
-"``(total_regs, total_moves, addr)``. ``order == 'leav'`` is specifically "
-"for ``leave`` insn."
-msgstr ""
+msgid "If ``order == 'size'``, then gadgets are compared lexicographically by ``(total_moves, total_regs, addr)``, if ``order == 'regs'``, then by ``(total_regs, total_moves, addr)``. ``order == 'leav'`` is specifically for ``leave`` insn."
+msgstr "``order == 'size'`` の場合、ガジェットは ``(total_moves, total_regs, addr)`` の辞書式順序で比較されます。``order == 'regs'`` の場合は ``(total_regs, total_moves, addr)`` の順です。``order == 'leav'`` は、``leave`` 命令専用です。"
 
 #: of pwnlib.rop.rop.ROP.search:22
 msgid "A :class:`.Gadget` object"
-msgstr ""
+msgstr ":class:`.Gadget` オブジェクト"
 
 #: of pwnlib.rop.rop.ROP.search_iter:1
-msgid ""
-"Iterate through all gadgets which move the stack pointer by *at least* "
-"``move`` bytes, and which allow you to set all registers in ``regs``."
-msgstr ""
+msgid "Iterate through all gadgets which move the stack pointer by *at least* ``move`` bytes, and which allow you to set all registers in ``regs``."
+msgstr "スタックポインタを *少なくとも* ``move`` バイト動かし、``regs`` のすべてのレジスタを設定できるガジェットを、すべて順に調べます。"
 
 #: of pwnlib.rop.rop.ROP.setRegisters:1
-msgid ""
-"Returns an list of addresses/values which will set the specified register"
-" context."
-msgstr ""
+msgid "Returns an list of addresses/values which will set the specified register context."
+msgstr "指定したレジスタの context を設定する、アドレスや値のリストを返します。"
 
 #: of pwnlib.rop.rop.ROP.setRegisters:3
 #, python-brace-format
 msgid "Dictionary of ``{register name: value}``"
-msgstr ""
+msgstr "``{register name: value}`` の辞書"
 
 #: of pwnlib.rop.rop.ROP.setRegisters:6
-msgid ""
-"A list of tuples, ordering the stack.  Each tuple is in the form of "
-"``(value, name)`` where ``value`` is either a gadget address or literal "
-"value to go on the stack, and ``name`` is either a string name or other "
-"item which can be \"unresolved\"."
-msgstr ""
+msgid "A list of tuples, ordering the stack.  Each tuple is in the form of ``(value, name)`` where ``value`` is either a gadget address or literal value to go on the stack, and ``name`` is either a string name or other item which can be \"unresolved\"."
+msgstr "スタックの順序を表すタプルのリスト。各タプルは ``(value, name)`` の形で、``value`` はスタックに置くガジェットのアドレスまたはリテラル値、``name`` は文字列の名前、または「未解決」になりうるほかの要素です。"
 
 #: of pwnlib.rop.rop.ROP.setRegisters:6
 msgid "A list of tuples, ordering the stack."
-msgstr ""
+msgstr "スタックの順序を表すタプルのリスト。"
 
 #: of pwnlib.rop.rop.ROP.setRegisters:8
-msgid ""
-"Each tuple is in the form of ``(value, name)`` where ``value`` is either "
-"a gadget address or literal value to go on the stack, and ``name`` is "
-"either a string name or other item which can be \"unresolved\"."
-msgstr ""
+msgid "Each tuple is in the form of ``(value, name)`` where ``value`` is either a gadget address or literal value to go on the stack, and ``name`` is either a string name or other item which can be \"unresolved\"."
+msgstr "各タプルは ``(value, name)`` の形で、``value`` はスタックに置くガジェットのアドレスまたはリテラル値、``name`` は文字列の名前、または「未解決」になりうるほかの要素です。"
 
 #: of pwnlib.rop.rop.ROP.setRegisters:14
-msgid ""
-"This is basically an implementation of the Set Cover Problem, which is "
-"NP-hard.  This means that we will take polynomial time N**2, where N is "
-"the number of gadgets.  We can reduce runtime by discarding useless and "
-"inferior gadgets ahead of time."
-msgstr ""
+msgid "This is basically an implementation of the Set Cover Problem, which is NP-hard.  This means that we will take polynomial time N**2, where N is the number of gadgets.  We can reduce runtime by discarding useless and inferior gadgets ahead of time."
+msgstr "これは基本的に、NP 困難な集合被覆問題の実装です。そのため、ガジェット数を N とすると、多項式時間 N**2 かかります。役に立たないガジェットや劣るガジェットを事前に捨てることで、実行時間を減らせます。"
 
 #: of pwnlib.rop.rop.ROP.unresolve:1
-msgid ""
-"Inverts 'resolve'.  Given an address, it attempts to find a symbol for it"
-" in the loaded ELF files.  If none is found, it searches all known "
-"gadgets, and returns the disassembly"
-msgstr ""
+msgid "Inverts 'resolve'.  Given an address, it attempts to find a symbol for it in the loaded ELF files.  If none is found, it searches all known gadgets, and returns the disassembly"
+msgstr "'resolve' の逆の操作です。アドレスを与えると、読み込んだ ELF ファイルの中から、そのアドレスのシンボルを探します。見つからない場合は、既知のすべてのガジェットから探し、逆アセンブルの結果を返します。"
 
 #: of pwnlib.rop.rop.ROP.unresolve:5
 msgid "Address to look up"
 msgstr ""
 
 #: of pwnlib.rop.rop.ROP.unresolve:8
-msgid ""
-"String containing the symbol name for the address, disassembly for a "
-"gadget (if there's one at that address), or an empty string."
-msgstr ""
+msgid "String containing the symbol name for the address, disassembly for a gadget (if there's one at that address), or an empty string."
+msgstr "アドレスのシンボル名を含む文字列。そのアドレスにガジェットがある場合は、その逆アセンブル。どちらもなければ空文字列。"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP._chain:1
-msgid ""
-"List of individual ROP gadgets, ROP calls, SROP frames, etc. This is "
-"intended to be the highest-level abstraction that we can muster."
-msgstr ""
+msgid "List of individual ROP gadgets, ROP calls, SROP frames, etc. This is intended to be the highest-level abstraction that we can muster."
+msgstr "個々の ROP ガジェット、ROP の呼び出し、SROP フレームなどのリスト。私たちが用意できる、最も高水準の抽象化を意図したものです。"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP._labels:1
 msgid "Dictionary of named labels in the ROP chain."
-msgstr ""
+msgstr "ROP チェーン内の名前付きラベルの辞書。"
 
 #: ../pwntools/docs/docstring of pwnlib.rop.rop.ROP.elfs:1
 msgid "List of ELF files which are available for mining gadgets"
@@ -742,75 +595,63 @@ msgstr ""
 
 #: ../pwntools/docs/source/rop/srop.rst:14
 msgid ":mod:`pwnlib.rop.srop` --- Sigreturn Oriented Programming"
-msgstr ""
+msgstr ":mod:`pwnlib.rop.srop` --- Sigreturn Oriented Programming"
 
 #: of pwnlib.rop.srop:1
 msgid "Sigreturn ROP (SROP)"
 msgstr ""
 
 #: of pwnlib.rop.srop:3
-msgid ""
-"Sigreturn is a syscall used to restore the entire register context from "
-"memory pointed at by ESP."
-msgstr ""
+msgid "Sigreturn is a syscall used to restore the entire register context from memory pointed at by ESP."
+msgstr "Sigreturn は、ESP が指すメモリから、レジスタ全体の context を復元するシステムコールです。"
 
 #: of pwnlib.rop.srop:6
-msgid ""
-"We can leverage this during ROP to gain control of registers for which "
-"there are not convenient gadgets.  The main caveat is that *all* "
-"registers are set, including ESP and EIP (or their equivalents).  This "
-"means that in order to continue after using a sigreturn frame, the stack "
-"pointer must be set accordingly."
-msgstr ""
+msgid "We can leverage this during ROP to gain control of registers for which there are not convenient gadgets.  The main caveat is that *all* registers are set, including ESP and EIP (or their equivalents).  This means that in order to continue after using a sigreturn frame, the stack pointer must be set accordingly."
+msgstr "ROP の中でこれを使うと、都合のよいガジェットがないレジスタを制御できます。主な注意点は、ESP と EIP（またはそれに相当するもの）を含む、*すべての* レジスタが設定されることです。そのため、sigreturn フレームを使ったあとも続けるには、スタックポインタを適切に設定しておく必要があります。"
 
 #: of pwnlib.rop.srop:12
 msgid "i386 Example:"
-msgstr ""
+msgstr "i386 の例:"
 
 #: of pwnlib.rop.srop:14
 msgid "Let's just print a message out using SROP."
-msgstr ""
+msgstr "SROP を使って、メッセージを出力してみます。"
 
 #: of pwnlib.rop.srop:18
-msgid ""
-"First, we'll create our example binary. It just reads some data onto the "
-"stack, and invokes the ``sigreturn`` syscall. We also make an ``int "
-"0x80`` gadget available, followed immediately by ``exit(0)``."
-msgstr ""
+msgid "First, we'll create our example binary. It just reads some data onto the stack, and invokes the ``sigreturn`` syscall. We also make an ``int 0x80`` gadget available, followed immediately by ``exit(0)``."
+msgstr "まず、サンプルのバイナリを作ります。スタックにデータを読み込んで、``sigreturn`` システムコールを呼び出すだけのバイナリです。``int 0x80`` ガジェットも用意し、その直後に ``exit(0)`` を置きます。"
 
 #: of pwnlib.rop.srop:34
-msgid ""
-"Let's construct our frame to have it invoke a ``write`` syscall, and dump"
-" the message to stdout."
-msgstr ""
+msgid "Let's construct our frame to have it invoke a ``write`` syscall, and dump the message to stdout."
+msgstr "``write`` システムコールを呼び出して、メッセージを標準出力に出すように、フレームを組み立てます。"
 
 #: of pwnlib.rop.srop:45
 msgid "Let's start the process, send the data, and check the message."
-msgstr ""
+msgstr "プロセスを起動し、データを送って、メッセージを確認します。"
 
 #: of pwnlib.rop.srop:54
 msgid "amd64 Example:"
-msgstr ""
+msgstr "amd64 の例:"
 
 #: of pwnlib.rop.srop:80
 msgid "arm Example:"
-msgstr ""
+msgstr "arm の例:"
 
 #: of pwnlib.rop.srop:107
 msgid "Mips Example:"
-msgstr ""
+msgstr "Mips の例:"
 
 #: of pwnlib.rop.srop:133
 msgid "Mipsel Example:"
-msgstr ""
+msgstr "Mipsel の例:"
 
 #: of pwnlib.rop.srop.SigreturnFrame:1
 msgid "Crafts a sigreturn frame with values that are loaded up into registers."
-msgstr ""
+msgstr "レジスタに読み込まれる値を持つ、sigreturn フレームを作ります。"
 
 #: of pwnlib.rop.srop.SigreturnFrame:4
 msgid "The architecture. Currently ``i386`` and ``amd64`` are supported."
-msgstr ""
+msgstr "アーキテクチャ。現在は ``i386`` と ``amd64`` に対応しています。"
 
 #: of pwnlib.rop.srop.SigreturnFrame:9
 msgid "Examples"
@@ -842,21 +683,20 @@ msgstr ""
 
 #: of pwnlib.rop.srop.SigreturnFrame.__len__:1
 msgid "Return len(self)."
-msgstr ""
+msgstr "len(self) を返します。"
 
 #: of pwnlib.rop.srop.SigreturnFrame.__setattr__:1
 msgid "Implement setattr(self, name, value)."
-msgstr ""
+msgstr "setattr(self, name, value) を実装します。"
 
 #: of pwnlib.rop.srop.SigreturnFrame.__setitem__:1
 msgid "Set self[key] to value."
-msgstr ""
+msgstr "self[key] に value を設定します。"
 
 #: of pwnlib.rop.srop.SigreturnFrame.__str__:1
 msgid "Return str(self)."
-msgstr ""
+msgstr "str(self) を返します。"
 
 #: of pwnlib.rop.srop.SigreturnFrame.set_regvalue:1
 msgid "Sets a specific ``reg`` to a ``val``"
-msgstr ""
-
+msgstr "特定の ``reg`` に ``val`` を設定します。"

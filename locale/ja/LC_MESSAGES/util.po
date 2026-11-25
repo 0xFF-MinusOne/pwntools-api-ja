@@ -21,53 +21,43 @@ msgstr ""
 
 #: ../pwntools/docs/source/util/crc.rst:7
 msgid ":mod:`pwnlib.util.crc` --- Calculating CRC-sums"
-msgstr ""
+msgstr ":mod:`pwnlib.util.crc` --- CRC チェックサムの計算"
 
 #: of pwnlib.util.crc:1
 msgid "Module for calculating CRC-sums."
-msgstr ""
+msgstr "CRC チェックサムを計算するモジュールです。"
 
 #: of pwnlib.util.crc:3
-msgid ""
-"Contains all crc implementations know on the interwebz. For most "
-"implementations it contains only the core crc algorithm and not e.g. "
-"padding schemes."
-msgstr ""
+msgid "Contains all crc implementations know on the interwebz. For most implementations it contains only the core crc algorithm and not e.g. padding schemes."
+msgstr "ネット上で知られているすべての crc 実装を含みます。ほとんどの実装では、コアとなる crc アルゴリズムだけを含み、たとえばパディング方式は含みません。"
 
 #: of pwnlib.util.crc:6
-msgid ""
-"It is horribly slow, as implements a naive algorithm working direclty on "
-"bit polynomials. This class is exposed as `BitPolynom`."
-msgstr ""
+msgid "It is horribly slow, as implements a naive algorithm working direclty on bit polynomials. This class is exposed as `BitPolynom`."
+msgstr "ビット多項式を直接扱う素朴なアルゴリズムで実装しているため、非常に低速です。このクラスは `BitPolynom` として公開されています。"
 
 #: of pwnlib.util.crc:9
-msgid ""
-"The current algorithm is super-linear and takes about 4 seconds to "
-"calculate the crc32-sum of ``'A'*40000``."
-msgstr ""
+msgid "The current algorithm is super-linear and takes about 4 seconds to calculate the crc32-sum of ``'A'*40000``."
+msgstr "現在のアルゴリズムは超線形で、``'A'*40000`` の crc32 を計算するのに約 4 秒かかります。"
 
 #: of pwnlib.util.crc:12
 msgid "An obvious optimization would be to actually generate some lookup-tables."
-msgstr ""
+msgstr "明らかな最適化として、ルックアップテーブルを実際に生成する方法があります。"
 
 #: of pwnlib.util.crc:14
 msgid "This doctest is to ensure that the known data are accurate:"
-msgstr ""
+msgstr "この doctest は、既知のデータが正確であることを確かめるためのものです。"
 
 #: of pwnlib.util.crc.BitPolynom:1
 msgid "Class for representing GF(2)[X], i.e. the field of polynomials over GF(2)."
-msgstr ""
+msgstr "GF(2)[X]、つまり GF(2) 上の多項式の体を表すクラスです。"
 
 #: of pwnlib.util.crc.BitPolynom:4
-msgid ""
-"In practice the polynomials are represented as numbers such that `x**n` "
-"corresponds to `1 << n`. In this representation calculations are easy: "
-"Just do everything as normal, but forget about everything the carries."
-msgstr ""
+msgid "In practice the polynomials are represented as numbers such that `x**n` corresponds to `1 << n`. In this representation calculations are easy: Just do everything as normal, but forget about everything the carries."
+msgstr "実際には、多項式は `x**n` が `1 << n` に対応する数として表現されます。この表現では計算が簡単で、桁上がりを無視して通常どおりに計算するだけです。"
 
 #: of pwnlib.util.crc.BitPolynom:8
 msgid "Addition becomes xor and multiplication becomes carry-less multiplication."
-msgstr ""
+msgstr "加算は xor に、乗算は桁上がりなしの乗算になります。"
 
 #: of pwnlib.util.crc.BitPolynom:11 pwnlib.util.crc.BitPolynom.degree:4
 #: pwnlib.util.cyclic.cyclic_find:22
@@ -101,28 +91,28 @@ msgstr ""
 
 #: of pwnlib.util.crc.BitPolynom.__eq__:1
 msgid "Return self==value."
-msgstr ""
+msgstr "self==value を返します。"
 
 #: of pwnlib.util.crc.BitPolynom.__hash__:1
 msgid "Return hash(self)."
-msgstr ""
+msgstr "hash(self) を返します。"
 
 #: of pwnlib.util.crc.BitPolynom.__or__:1
 msgid "Return self|value."
-msgstr ""
+msgstr "self|value を返します。"
 
 #: of pwnlib.util.crc.BitPolynom.__repr__:1
 #: pwnlib.util.getdents.linux_dirent.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: of pwnlib.util.crc.BitPolynom.__ror__:1
 msgid "Return value|self."
-msgstr ""
+msgstr "value|self を返します。"
 
 #: of pwnlib.util.crc.BitPolynom.degree:1
 msgid "Returns the degree of the polynomial."
-msgstr ""
+msgstr "多項式の次数を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.util.crc.BitPolynom.__weakref__:1
 #: pwnlib.util.cyclic.cyclic_gen.__weakref__:1
@@ -132,7 +122,7 @@ msgstr ""
 
 #: of pwnlib.util.crc.Module.cksum:1
 msgid "Calculates the same checksum as returned by the UNIX-tool ``cksum``."
-msgstr ""
+msgstr "UNIX のツール ``cksum`` が返すものと同じチェックサムを計算します。"
 
 #: ../pwntools/docs/source/util/crc.rst ../pwntools/docs/source/util/cyclic.rst
 #: ../pwntools/docs/source/util/fiddling.rst
@@ -298,7 +288,7 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:14 pwnlib.util.crc.crc_crc_8_smbus:14
 #: pwnlib.util.crc.crc_crc_8_tech_3250:14 pwnlib.util.crc.crc_crc_8_wcdma:14
 msgid "The data to checksum."
-msgstr ""
+msgstr "チェックサムを計算するデータ。"
 
 #: of pwnlib.util.crc.Module.cksum:7 pwnlib.util.crc.Module.find_crc_function:8
 #: pwnlib.util.crc.crc_crc_10_atm:18 pwnlib.util.crc.crc_crc_10_cdma2000:18
@@ -391,7 +381,7 @@ msgstr ""
 
 #: of pwnlib.util.crc.crc_crc_10_atm:1
 msgid "Calculates the crc_10_atm checksum."
-msgstr ""
+msgstr "crc_10_atm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:3 pwnlib.util.crc.crc_crc_10_cdma2000:3
 #: pwnlib.util.crc.crc_crc_10_gsm:3 pwnlib.util.crc.crc_crc_11_flexray:3
@@ -453,16 +443,16 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:3 pwnlib.util.crc.crc_crc_8_smbus:3
 #: pwnlib.util.crc.crc_crc_8_tech_3250:3 pwnlib.util.crc.crc_crc_8_wcdma:3
 msgid "This is simply the :func:`generic_crc` with these frozen arguments:"
-msgstr ""
+msgstr "これは、次の引数を固定した :func:`generic_crc` そのものです。"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:5
 msgid "polynom = 0x233"
-msgstr ""
+msgstr "polynom = 0x233"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:6 pwnlib.util.crc.crc_crc_10_cdma2000:6
 #: pwnlib.util.crc.crc_crc_10_gsm:6
 msgid "width   = 10"
-msgstr ""
+msgstr "width   = 10"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:7 pwnlib.util.crc.crc_crc_10_gsm:7
 #: pwnlib.util.crc.crc_crc_11_umts:7 pwnlib.util.crc.crc_crc_12_dect:7
@@ -494,7 +484,7 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_maxim_dow:7 pwnlib.util.crc.crc_crc_8_opensafety:7
 #: pwnlib.util.crc.crc_crc_8_smbus:7 pwnlib.util.crc.crc_crc_8_wcdma:7
 msgid "init    = 0x0"
-msgstr ""
+msgstr "init    = 0x0"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:8 pwnlib.util.crc.crc_crc_10_cdma2000:8
 #: pwnlib.util.crc.crc_crc_10_gsm:8 pwnlib.util.crc.crc_crc_11_flexray:8
@@ -537,7 +527,7 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_nrsc_5:8 pwnlib.util.crc.crc_crc_8_opensafety:8
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:8 pwnlib.util.crc.crc_crc_8_smbus:8
 msgid "refin   = False"
-msgstr ""
+msgstr "refin   = False"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:9 pwnlib.util.crc.crc_crc_10_cdma2000:9
 #: pwnlib.util.crc.crc_crc_10_gsm:9 pwnlib.util.crc.crc_crc_11_flexray:9
@@ -579,7 +569,7 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_nrsc_5:9 pwnlib.util.crc.crc_crc_8_opensafety:9
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:9 pwnlib.util.crc.crc_crc_8_smbus:9
 msgid "refout  = False"
-msgstr ""
+msgstr "refout  = False"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:10 pwnlib.util.crc.crc_crc_10_cdma2000:10
 #: pwnlib.util.crc.crc_crc_11_flexray:10 pwnlib.util.crc.crc_crc_11_umts:10
@@ -624,144 +614,128 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_smbus:10 pwnlib.util.crc.crc_crc_8_tech_3250:10
 #: pwnlib.util.crc.crc_crc_8_wcdma:10
 msgid "xorout  = 0x0"
-msgstr ""
+msgstr "xorout  = 0x0"
 
 #: of pwnlib.util.crc.crc_crc_10_atm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-10-atm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-10-atm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-10-atm"
 
 #: of pwnlib.util.crc.crc_crc_10_cdma2000:1
 msgid "Calculates the crc_10_cdma2000 checksum."
-msgstr ""
+msgstr "crc_10_cdma2000 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_10_cdma2000:5
 msgid "polynom = 0x3d9"
-msgstr ""
+msgstr "polynom = 0x3d9"
 
 #: of pwnlib.util.crc.crc_crc_10_cdma2000:7
 msgid "init    = 0x3ff"
-msgstr ""
+msgstr "init    = 0x3ff"
 
 #: of pwnlib.util.crc.crc_crc_10_cdma2000:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-10-cdma2000"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-10-cdma2000"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-10-cdma2000"
 
 #: of pwnlib.util.crc.crc_crc_10_gsm:1
 msgid "Calculates the crc_10_gsm checksum."
-msgstr ""
+msgstr "crc_10_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_10_gsm:5
 msgid "polynom = 0x175"
-msgstr ""
+msgstr "polynom = 0x175"
 
 #: of pwnlib.util.crc.crc_crc_10_gsm:10
 msgid "xorout  = 0x3ff"
-msgstr ""
+msgstr "xorout  = 0x3ff"
 
 #: of pwnlib.util.crc.crc_crc_10_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-10-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-10-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-10-gsm"
 
 #: of pwnlib.util.crc.crc_crc_11_flexray:1
 msgid "Calculates the crc_11_flexray checksum."
-msgstr ""
+msgstr "crc_11_flexray チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_11_flexray:5
 msgid "polynom = 0x385"
-msgstr ""
+msgstr "polynom = 0x385"
 
 #: of pwnlib.util.crc.crc_crc_11_flexray:6 pwnlib.util.crc.crc_crc_11_umts:6
 msgid "width   = 11"
-msgstr ""
+msgstr "width   = 11"
 
 #: of pwnlib.util.crc.crc_crc_11_flexray:7
 msgid "init    = 0x1a"
-msgstr ""
+msgstr "init    = 0x1a"
 
 #: of pwnlib.util.crc.crc_crc_11_flexray:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-11-flexray"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-11-flexray"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-11-flexray"
 
 #: of pwnlib.util.crc.crc_crc_11_umts:1
 msgid "Calculates the crc_11_umts checksum."
-msgstr ""
+msgstr "crc_11_umts チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_11_umts:5
 msgid "polynom = 0x307"
-msgstr ""
+msgstr "polynom = 0x307"
 
 #: of pwnlib.util.crc.crc_crc_11_umts:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-11-umts"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-11-umts"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-11-umts"
 
 #: of pwnlib.util.crc.crc_crc_12_cdma2000:1
 msgid "Calculates the crc_12_cdma2000 checksum."
-msgstr ""
+msgstr "crc_12_cdma2000 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_12_cdma2000:5
 msgid "polynom = 0xf13"
-msgstr ""
+msgstr "polynom = 0xf13"
 
 #: of pwnlib.util.crc.crc_crc_12_cdma2000:6 pwnlib.util.crc.crc_crc_12_dect:6
 #: pwnlib.util.crc.crc_crc_12_gsm:6 pwnlib.util.crc.crc_crc_12_umts:6
 msgid "width   = 12"
-msgstr ""
+msgstr "width   = 12"
 
 #: of pwnlib.util.crc.crc_crc_12_cdma2000:7
 msgid "init    = 0xfff"
-msgstr ""
+msgstr "init    = 0xfff"
 
 #: of pwnlib.util.crc.crc_crc_12_cdma2000:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-12-cdma2000"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-cdma2000"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-cdma2000"
 
 #: of pwnlib.util.crc.crc_crc_12_dect:1
 msgid "Calculates the crc_12_dect checksum."
-msgstr ""
+msgstr "crc_12_dect チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_12_dect:5 pwnlib.util.crc.crc_crc_12_umts:5
 msgid "polynom = 0x80f"
-msgstr ""
+msgstr "polynom = 0x80f"
 
 #: of pwnlib.util.crc.crc_crc_12_dect:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-12-dect"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-dect"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-dect"
 
 #: of pwnlib.util.crc.crc_crc_12_gsm:1
 msgid "Calculates the crc_12_gsm checksum."
-msgstr ""
+msgstr "crc_12_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_12_gsm:5
 msgid "polynom = 0xd31"
-msgstr ""
+msgstr "polynom = 0xd31"
 
 #: of pwnlib.util.crc.crc_crc_12_gsm:10
 msgid "xorout  = 0xfff"
-msgstr ""
+msgstr "xorout  = 0xfff"
 
 #: of pwnlib.util.crc.crc_crc_12_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-12-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-gsm"
 
 #: of pwnlib.util.crc.crc_crc_12_umts:1
 msgid "Calculates the crc_12_umts checksum."
-msgstr ""
+msgstr "crc_12_umts チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_12_umts:9 pwnlib.util.crc.crc_crc_14_darc:9
 #: pwnlib.util.crc.crc_crc_16_arc:9 pwnlib.util.crc.crc_crc_16_dnp:9
@@ -785,43 +759,39 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_maxim_dow:9 pwnlib.util.crc.crc_crc_8_rohc:9
 #: pwnlib.util.crc.crc_crc_8_tech_3250:9 pwnlib.util.crc.crc_crc_8_wcdma:9
 msgid "refout  = True"
-msgstr ""
+msgstr "refout  = True"
 
 #: of pwnlib.util.crc.crc_crc_12_umts:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-12-umts"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-umts"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-12-umts"
 
 #: of pwnlib.util.crc.crc_crc_13_bbc:1
 msgid "Calculates the crc_13_bbc checksum."
-msgstr ""
+msgstr "crc_13_bbc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_13_bbc:5
 msgid "polynom = 0x1cf5"
-msgstr ""
+msgstr "polynom = 0x1cf5"
 
 #: of pwnlib.util.crc.crc_crc_13_bbc:6
 msgid "width   = 13"
-msgstr ""
+msgstr "width   = 13"
 
 #: of pwnlib.util.crc.crc_crc_13_bbc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-13-bbc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-13-bbc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-13-bbc"
 
 #: of pwnlib.util.crc.crc_crc_14_darc:1
 msgid "Calculates the crc_14_darc checksum."
-msgstr ""
+msgstr "crc_14_darc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_14_darc:5
 msgid "polynom = 0x805"
-msgstr ""
+msgstr "polynom = 0x805"
 
 #: of pwnlib.util.crc.crc_crc_14_darc:6 pwnlib.util.crc.crc_crc_14_gsm:6
 msgid "width   = 14"
-msgstr ""
+msgstr "width   = 14"
 
 #: of pwnlib.util.crc.crc_crc_14_darc:8 pwnlib.util.crc.crc_crc_16_arc:8
 #: pwnlib.util.crc.crc_crc_16_dnp:8 pwnlib.util.crc.crc_crc_16_ibm_sdlc:8
@@ -844,79 +814,71 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_maxim_dow:8 pwnlib.util.crc.crc_crc_8_rohc:8
 #: pwnlib.util.crc.crc_crc_8_tech_3250:8 pwnlib.util.crc.crc_crc_8_wcdma:8
 msgid "refin   = True"
-msgstr ""
+msgstr "refin   = True"
 
 #: of pwnlib.util.crc.crc_crc_14_darc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-14-darc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-14-darc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-14-darc"
 
 #: of pwnlib.util.crc.crc_crc_14_gsm:1
 msgid "Calculates the crc_14_gsm checksum."
-msgstr ""
+msgstr "crc_14_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_14_gsm:5
 msgid "polynom = 0x202d"
-msgstr ""
+msgstr "polynom = 0x202d"
 
 #: of pwnlib.util.crc.crc_crc_14_gsm:10
 msgid "xorout  = 0x3fff"
-msgstr ""
+msgstr "xorout  = 0x3fff"
 
 #: of pwnlib.util.crc.crc_crc_14_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-14-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-14-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-14-gsm"
 
 #: of pwnlib.util.crc.crc_crc_15_can:1
 msgid "Calculates the crc_15_can checksum."
-msgstr ""
+msgstr "crc_15_can チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_15_can:5
 msgid "polynom = 0x4599"
-msgstr ""
+msgstr "polynom = 0x4599"
 
 #: of pwnlib.util.crc.crc_crc_15_can:6 pwnlib.util.crc.crc_crc_15_mpt1327:6
 msgid "width   = 15"
-msgstr ""
+msgstr "width   = 15"
 
 #: of pwnlib.util.crc.crc_crc_15_can:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-15-can"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-15-can"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-15-can"
 
 #: of pwnlib.util.crc.crc_crc_15_mpt1327:1
 msgid "Calculates the crc_15_mpt1327 checksum."
-msgstr ""
+msgstr "crc_15_mpt1327 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_15_mpt1327:5
 msgid "polynom = 0x6815"
-msgstr ""
+msgstr "polynom = 0x6815"
 
 #: of pwnlib.util.crc.crc_crc_15_mpt1327:10
 #: pwnlib.util.crc.crc_crc_16_dect_r:10
 msgid "xorout  = 0x1"
-msgstr ""
+msgstr "xorout  = 0x1"
 
 #: of pwnlib.util.crc.crc_crc_15_mpt1327:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-15-mpt1327"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-15-mpt1327"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-15-mpt1327"
 
 #: of pwnlib.util.crc.crc_crc_16_arc:1
 msgid "Calculates the crc_16_arc checksum."
-msgstr ""
+msgstr "crc_16_arc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_arc:5 pwnlib.util.crc.crc_crc_16_cms:5
 #: pwnlib.util.crc.crc_crc_16_dds_110:5 pwnlib.util.crc.crc_crc_16_maxim_dow:5
 #: pwnlib.util.crc.crc_crc_16_modbus:5 pwnlib.util.crc.crc_crc_16_umts:5
 #: pwnlib.util.crc.crc_crc_16_usb:5
 msgid "polynom = 0x8005"
-msgstr ""
+msgstr "polynom = 0x8005"
 
 #: of pwnlib.util.crc.crc_crc_16_arc:6 pwnlib.util.crc.crc_crc_16_cdma2000:6
 #: pwnlib.util.crc.crc_crc_16_cms:6 pwnlib.util.crc.crc_crc_16_dds_110:6
@@ -937,21 +899,19 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_16_tms37157:6 pwnlib.util.crc.crc_crc_16_umts:6
 #: pwnlib.util.crc.crc_crc_16_usb:6 pwnlib.util.crc.crc_crc_16_xmodem:6
 msgid "width   = 16"
-msgstr ""
+msgstr "width   = 16"
 
 #: of pwnlib.util.crc.crc_crc_16_arc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-arc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-arc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-arc"
 
 #: of pwnlib.util.crc.crc_crc_16_cdma2000:1
 msgid "Calculates the crc_16_cdma2000 checksum."
-msgstr ""
+msgstr "crc_16_cdma2000 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_cdma2000:5
 msgid "polynom = 0xc867"
-msgstr ""
+msgstr "polynom = 0xc867"
 
 #: of pwnlib.util.crc.crc_crc_16_cdma2000:7 pwnlib.util.crc.crc_crc_16_cms:7
 #: pwnlib.util.crc.crc_crc_16_genibus:7 pwnlib.util.crc.crc_crc_16_ibm_3740:7
@@ -960,69 +920,59 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_16_nrsc_5:7 pwnlib.util.crc.crc_crc_16_profibus:7
 #: pwnlib.util.crc.crc_crc_16_usb:7
 msgid "init    = 0xffff"
-msgstr ""
+msgstr "init    = 0xffff"
 
 #: of pwnlib.util.crc.crc_crc_16_cdma2000:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-cdma2000"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-cdma2000"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-cdma2000"
 
 #: of pwnlib.util.crc.crc_crc_16_cms:1
 msgid "Calculates the crc_16_cms checksum."
-msgstr ""
+msgstr "crc_16_cms チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_cms:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-cms"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-cms"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-cms"
 
 #: of pwnlib.util.crc.crc_crc_16_dds_110:1
 msgid "Calculates the crc_16_dds_110 checksum."
-msgstr ""
+msgstr "crc_16_dds_110 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_dds_110:7
 msgid "init    = 0x800d"
-msgstr ""
+msgstr "init    = 0x800d"
 
 #: of pwnlib.util.crc.crc_crc_16_dds_110:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-dds-110"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dds-110"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dds-110"
 
 #: of pwnlib.util.crc.crc_crc_16_dect_r:1
 msgid "Calculates the crc_16_dect_r checksum."
-msgstr ""
+msgstr "crc_16_dect_r チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_dect_r:5 pwnlib.util.crc.crc_crc_16_dect_x:5
 msgid "polynom = 0x589"
-msgstr ""
+msgstr "polynom = 0x589"
 
 #: of pwnlib.util.crc.crc_crc_16_dect_r:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-dect-r"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dect-r"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dect-r"
 
 #: of pwnlib.util.crc.crc_crc_16_dect_x:1
 msgid "Calculates the crc_16_dect_x checksum."
-msgstr ""
+msgstr "crc_16_dect_x チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_dect_x:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-dect-x"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dect-x"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dect-x"
 
 #: of pwnlib.util.crc.crc_crc_16_dnp:1
 msgid "Calculates the crc_16_dnp checksum."
-msgstr ""
+msgstr "crc_16_dnp チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_dnp:5 pwnlib.util.crc.crc_crc_16_en_13757:5
 msgid "polynom = 0x3d65"
-msgstr ""
+msgstr "polynom = 0x3d65"
 
 #: of pwnlib.util.crc.crc_crc_16_dnp:10 pwnlib.util.crc.crc_crc_16_en_13757:10
 #: pwnlib.util.crc.crc_crc_16_genibus:10 pwnlib.util.crc.crc_crc_16_gsm:10
@@ -1030,27 +980,23 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_16_maxim_dow:10
 #: pwnlib.util.crc.crc_crc_16_profibus:10 pwnlib.util.crc.crc_crc_16_usb:10
 msgid "xorout  = 0xffff"
-msgstr ""
+msgstr "xorout  = 0xffff"
 
 #: of pwnlib.util.crc.crc_crc_16_dnp:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-dnp"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dnp"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-dnp"
 
 #: of pwnlib.util.crc.crc_crc_16_en_13757:1
 msgid "Calculates the crc_16_en_13757 checksum."
-msgstr ""
+msgstr "crc_16_en_13757 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_en_13757:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-en-13757"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-en-13757"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-en-13757"
 
 #: of pwnlib.util.crc.crc_crc_16_genibus:1
 msgid "Calculates the crc_16_genibus checksum."
-msgstr ""
+msgstr "crc_16_genibus チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_genibus:5 pwnlib.util.crc.crc_crc_16_gsm:5
 #: pwnlib.util.crc.crc_crc_16_ibm_3740:5 pwnlib.util.crc.crc_crc_16_ibm_sdlc:5
@@ -1059,322 +1005,272 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_16_riello:5 pwnlib.util.crc.crc_crc_16_spi_fujitsu:5
 #: pwnlib.util.crc.crc_crc_16_tms37157:5 pwnlib.util.crc.crc_crc_16_xmodem:5
 msgid "polynom = 0x1021"
-msgstr ""
+msgstr "polynom = 0x1021"
 
 #: of pwnlib.util.crc.crc_crc_16_genibus:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-genibus"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-genibus"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-genibus"
 
 #: of pwnlib.util.crc.crc_crc_16_gsm:1
 msgid "Calculates the crc_16_gsm checksum."
-msgstr ""
+msgstr "crc_16_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-gsm"
 
 #: of pwnlib.util.crc.crc_crc_16_ibm_3740:1
 msgid "Calculates the crc_16_ibm_3740 checksum."
-msgstr ""
+msgstr "crc_16_ibm_3740 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_ibm_3740:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-ibm-3740"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-ibm-3740"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-ibm-3740"
 
 #: of pwnlib.util.crc.crc_crc_16_ibm_sdlc:1
 msgid "Calculates the crc_16_ibm_sdlc checksum."
-msgstr ""
+msgstr "crc_16_ibm_sdlc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_ibm_sdlc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-ibm-sdlc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-ibm-sdlc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-ibm-sdlc"
 
 #: of pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:1
 msgid "Calculates the crc_16_iso_iec_14443_3_a checksum."
-msgstr ""
+msgstr "crc_16_iso_iec_14443_3_a チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:7
 msgid "init    = 0xc6c6"
-msgstr ""
+msgstr "init    = 0xc6c6"
 
 #: of pwnlib.util.crc.crc_crc_16_iso_iec_14443_3_a:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-iso-iec-14443-3-a"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-iso-iec-14443-3-a"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-iso-iec-14443-3-a"
 
 #: of pwnlib.util.crc.crc_crc_16_kermit:1
 msgid "Calculates the crc_16_kermit checksum."
-msgstr ""
+msgstr "crc_16_kermit チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_kermit:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-kermit"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-kermit"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-kermit"
 
 #: of pwnlib.util.crc.crc_crc_16_lj1200:1
 msgid "Calculates the crc_16_lj1200 checksum."
-msgstr ""
+msgstr "crc_16_lj1200 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_lj1200:5
 msgid "polynom = 0x6f63"
-msgstr ""
+msgstr "polynom = 0x6f63"
 
 #: of pwnlib.util.crc.crc_crc_16_lj1200:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-lj1200"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-lj1200"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-lj1200"
 
 #: of pwnlib.util.crc.crc_crc_16_m17:1
 msgid "Calculates the crc_16_m17 checksum."
-msgstr ""
+msgstr "crc_16_m17 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_m17:5
 #: pwnlib.util.crc.crc_crc_16_opensafety_a:5
 msgid "polynom = 0x5935"
-msgstr ""
+msgstr "polynom = 0x5935"
 
 #: of pwnlib.util.crc.crc_crc_16_m17:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-m17"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-m17"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-m17"
 
 #: of pwnlib.util.crc.crc_crc_16_maxim_dow:1
 msgid "Calculates the crc_16_maxim_dow checksum."
-msgstr ""
+msgstr "crc_16_maxim_dow チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_maxim_dow:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-maxim-dow"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-maxim-dow"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-maxim-dow"
 
 #: of pwnlib.util.crc.crc_crc_16_mcrf4xx:1
 msgid "Calculates the crc_16_mcrf4xx checksum."
-msgstr ""
+msgstr "crc_16_mcrf4xx チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_mcrf4xx:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-mcrf4xx"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-mcrf4xx"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-mcrf4xx"
 
 #: of pwnlib.util.crc.crc_crc_16_modbus:1
 msgid "Calculates the crc_16_modbus checksum."
-msgstr ""
+msgstr "crc_16_modbus チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_modbus:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-modbus"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-modbus"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-modbus"
 
 #: of pwnlib.util.crc.crc_crc_16_nrsc_5:1
 msgid "Calculates the crc_16_nrsc_5 checksum."
-msgstr ""
+msgstr "crc_16_nrsc_5 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_nrsc_5:5
 msgid "polynom = 0x80b"
-msgstr ""
+msgstr "polynom = 0x80b"
 
 #: of pwnlib.util.crc.crc_crc_16_nrsc_5:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-nrsc-5"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-nrsc-5"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-nrsc-5"
 
 #: of pwnlib.util.crc.crc_crc_16_opensafety_a:1
 msgid "Calculates the crc_16_opensafety_a checksum."
-msgstr ""
+msgstr "crc_16_opensafety_a チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_opensafety_a:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-opensafety-a"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-opensafety-a"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-opensafety-a"
 
 #: of pwnlib.util.crc.crc_crc_16_opensafety_b:1
 msgid "Calculates the crc_16_opensafety_b checksum."
-msgstr ""
+msgstr "crc_16_opensafety_b チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_opensafety_b:5
 msgid "polynom = 0x755b"
-msgstr ""
+msgstr "polynom = 0x755b"
 
 #: of pwnlib.util.crc.crc_crc_16_opensafety_b:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-opensafety-b"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-opensafety-b"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-opensafety-b"
 
 #: of pwnlib.util.crc.crc_crc_16_profibus:1
 msgid "Calculates the crc_16_profibus checksum."
-msgstr ""
+msgstr "crc_16_profibus チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_profibus:5
 msgid "polynom = 0x1dcf"
-msgstr ""
+msgstr "polynom = 0x1dcf"
 
 #: of pwnlib.util.crc.crc_crc_16_profibus:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-profibus"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-profibus"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-profibus"
 
 #: of pwnlib.util.crc.crc_crc_16_riello:1
 msgid "Calculates the crc_16_riello checksum."
-msgstr ""
+msgstr "crc_16_riello チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_riello:7
 msgid "init    = 0xb2aa"
-msgstr ""
+msgstr "init    = 0xb2aa"
 
 #: of pwnlib.util.crc.crc_crc_16_riello:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-riello"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-riello"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-riello"
 
 #: of pwnlib.util.crc.crc_crc_16_spi_fujitsu:1
 msgid "Calculates the crc_16_spi_fujitsu checksum."
-msgstr ""
+msgstr "crc_16_spi_fujitsu チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_spi_fujitsu:7
 msgid "init    = 0x1d0f"
-msgstr ""
+msgstr "init    = 0x1d0f"
 
 #: of pwnlib.util.crc.crc_crc_16_spi_fujitsu:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-spi-fujitsu"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-spi-fujitsu"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-spi-fujitsu"
 
 #: of pwnlib.util.crc.crc_crc_16_t10_dif:1
 msgid "Calculates the crc_16_t10_dif checksum."
-msgstr ""
+msgstr "crc_16_t10_dif チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_t10_dif:5
 msgid "polynom = 0x8bb7"
-msgstr ""
+msgstr "polynom = 0x8bb7"
 
 #: of pwnlib.util.crc.crc_crc_16_t10_dif:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-t10-dif"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-t10-dif"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-t10-dif"
 
 #: of pwnlib.util.crc.crc_crc_16_teledisk:1
 msgid "Calculates the crc_16_teledisk checksum."
-msgstr ""
+msgstr "crc_16_teledisk チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_teledisk:5
 msgid "polynom = 0xa097"
-msgstr ""
+msgstr "polynom = 0xa097"
 
 #: of pwnlib.util.crc.crc_crc_16_teledisk:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-teledisk"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-teledisk"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-teledisk"
 
 #: of pwnlib.util.crc.crc_crc_16_tms37157:1
 msgid "Calculates the crc_16_tms37157 checksum."
-msgstr ""
+msgstr "crc_16_tms37157 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_tms37157:7
 msgid "init    = 0x89ec"
-msgstr ""
+msgstr "init    = 0x89ec"
 
 #: of pwnlib.util.crc.crc_crc_16_tms37157:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-tms37157"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-tms37157"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-tms37157"
 
 #: of pwnlib.util.crc.crc_crc_16_umts:1
 msgid "Calculates the crc_16_umts checksum."
-msgstr ""
+msgstr "crc_16_umts チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_umts:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-umts"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-umts"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-umts"
 
 #: of pwnlib.util.crc.crc_crc_16_usb:1
 msgid "Calculates the crc_16_usb checksum."
-msgstr ""
+msgstr "crc_16_usb チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_usb:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-usb"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-usb"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-usb"
 
 #: of pwnlib.util.crc.crc_crc_16_xmodem:1
 msgid "Calculates the crc_16_xmodem checksum."
-msgstr ""
+msgstr "crc_16_xmodem チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_16_xmodem:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-16-xmodem"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-xmodem"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-16-xmodem"
 
 #: of pwnlib.util.crc.crc_crc_17_can_fd:1
 msgid "Calculates the crc_17_can_fd checksum."
-msgstr ""
+msgstr "crc_17_can_fd チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_17_can_fd:5
 msgid "polynom = 0x1685b"
-msgstr ""
+msgstr "polynom = 0x1685b"
 
 #: of pwnlib.util.crc.crc_crc_17_can_fd:6
 msgid "width   = 17"
-msgstr ""
+msgstr "width   = 17"
 
 #: of pwnlib.util.crc.crc_crc_17_can_fd:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-17-can-fd"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-17-can-fd"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-17-can-fd"
 
 #: of pwnlib.util.crc.crc_crc_21_can_fd:1
 msgid "Calculates the crc_21_can_fd checksum."
-msgstr ""
+msgstr "crc_21_can_fd チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_21_can_fd:5
 msgid "polynom = 0x102899"
-msgstr ""
+msgstr "polynom = 0x102899"
 
 #: of pwnlib.util.crc.crc_crc_21_can_fd:6
 msgid "width   = 21"
-msgstr ""
+msgstr "width   = 21"
 
 #: of pwnlib.util.crc.crc_crc_21_can_fd:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-21-can-fd"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-21-can-fd"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-21-can-fd"
 
 #: of pwnlib.util.crc.crc_crc_24_ble:1
 msgid "Calculates the crc_24_ble checksum."
-msgstr ""
+msgstr "crc_24_ble チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_ble:5
 msgid "polynom = 0x65b"
-msgstr ""
+msgstr "polynom = 0x65b"
 
 #: of pwnlib.util.crc.crc_crc_24_ble:6 pwnlib.util.crc.crc_crc_24_flexray_a:6
 #: pwnlib.util.crc.crc_crc_24_flexray_b:6
@@ -1382,187 +1278,167 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_24_lte_b:6 pwnlib.util.crc.crc_crc_24_openpgp:6
 #: pwnlib.util.crc.crc_crc_24_os_9:6
 msgid "width   = 24"
-msgstr ""
+msgstr "width   = 24"
 
 #: of pwnlib.util.crc.crc_crc_24_ble:7
 msgid "init    = 0x555555"
-msgstr ""
+msgstr "init    = 0x555555"
 
 #: of pwnlib.util.crc.crc_crc_24_ble:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-ble"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-ble"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-ble"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_a:1
 msgid "Calculates the crc_24_flexray_a checksum."
-msgstr ""
+msgstr "crc_24_flexray_a チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_a:5
 #: pwnlib.util.crc.crc_crc_24_flexray_b:5
 msgid "polynom = 0x5d6dcb"
-msgstr ""
+msgstr "polynom = 0x5d6dcb"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_a:7
 msgid "init    = 0xfedcba"
-msgstr ""
+msgstr "init    = 0xfedcba"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_a:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-flexray-a"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-flexray-a"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-flexray-a"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_b:1
 msgid "Calculates the crc_24_flexray_b checksum."
-msgstr ""
+msgstr "crc_24_flexray_b チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_b:7
 msgid "init    = 0xabcdef"
-msgstr ""
+msgstr "init    = 0xabcdef"
 
 #: of pwnlib.util.crc.crc_crc_24_flexray_b:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-flexray-b"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-flexray-b"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-flexray-b"
 
 #: of pwnlib.util.crc.crc_crc_24_interlaken:1
 msgid "Calculates the crc_24_interlaken checksum."
-msgstr ""
+msgstr "crc_24_interlaken チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_interlaken:5
 msgid "polynom = 0x328b63"
-msgstr ""
+msgstr "polynom = 0x328b63"
 
 #: of pwnlib.util.crc.crc_crc_24_interlaken:7 pwnlib.util.crc.crc_crc_24_os_9:7
 msgid "init    = 0xffffff"
-msgstr ""
+msgstr "init    = 0xffffff"
 
 #: of pwnlib.util.crc.crc_crc_24_interlaken:10
 #: pwnlib.util.crc.crc_crc_24_os_9:10
 msgid "xorout  = 0xffffff"
-msgstr ""
+msgstr "xorout  = 0xffffff"
 
 #: of pwnlib.util.crc.crc_crc_24_interlaken:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-interlaken"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-interlaken"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-interlaken"
 
 #: of pwnlib.util.crc.crc_crc_24_lte_a:1
 msgid "Calculates the crc_24_lte_a checksum."
-msgstr ""
+msgstr "crc_24_lte_a チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_lte_a:5 pwnlib.util.crc.crc_crc_24_openpgp:5
 msgid "polynom = 0x864cfb"
-msgstr ""
+msgstr "polynom = 0x864cfb"
 
 #: of pwnlib.util.crc.crc_crc_24_lte_a:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-lte-a"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-lte-a"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-lte-a"
 
 #: of pwnlib.util.crc.crc_crc_24_lte_b:1
 msgid "Calculates the crc_24_lte_b checksum."
-msgstr ""
+msgstr "crc_24_lte_b チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_lte_b:5 pwnlib.util.crc.crc_crc_24_os_9:5
 msgid "polynom = 0x800063"
-msgstr ""
+msgstr "polynom = 0x800063"
 
 #: of pwnlib.util.crc.crc_crc_24_lte_b:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-lte-b"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-lte-b"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-lte-b"
 
 #: of pwnlib.util.crc.crc_crc_24_openpgp:1
 msgid "Calculates the crc_24_openpgp checksum."
-msgstr ""
+msgstr "crc_24_openpgp チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_openpgp:7
 msgid "init    = 0xb704ce"
-msgstr ""
+msgstr "init    = 0xb704ce"
 
 #: of pwnlib.util.crc.crc_crc_24_openpgp:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-openpgp"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-openpgp"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-openpgp"
 
 #: of pwnlib.util.crc.crc_crc_24_os_9:1
 msgid "Calculates the crc_24_os_9 checksum."
-msgstr ""
+msgstr "crc_24_os_9 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_24_os_9:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-24-os-9"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-os-9"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-24-os-9"
 
 #: of pwnlib.util.crc.crc_crc_30_cdma:1
 msgid "Calculates the crc_30_cdma checksum."
-msgstr ""
+msgstr "crc_30_cdma チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_30_cdma:5
 msgid "polynom = 0x2030b9c7"
-msgstr ""
+msgstr "polynom = 0x2030b9c7"
 
 #: of pwnlib.util.crc.crc_crc_30_cdma:6
 msgid "width   = 30"
-msgstr ""
+msgstr "width   = 30"
 
 #: of pwnlib.util.crc.crc_crc_30_cdma:7
 msgid "init    = 0x3fffffff"
-msgstr ""
+msgstr "init    = 0x3fffffff"
 
 #: of pwnlib.util.crc.crc_crc_30_cdma:10
 msgid "xorout  = 0x3fffffff"
-msgstr ""
+msgstr "xorout  = 0x3fffffff"
 
 #: of pwnlib.util.crc.crc_crc_30_cdma:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-30-cdma"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-30-cdma"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-30-cdma"
 
 #: of pwnlib.util.crc.crc_crc_31_philips:1
 msgid "Calculates the crc_31_philips checksum."
-msgstr ""
+msgstr "crc_31_philips チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_31_philips:5 pwnlib.util.crc.crc_crc_32_bzip2:5
 #: pwnlib.util.crc.crc_crc_32_cksum:5 pwnlib.util.crc.crc_crc_32_iso_hdlc:5
 #: pwnlib.util.crc.crc_crc_32_jamcrc:5 pwnlib.util.crc.crc_crc_32_mpeg_2:5
 msgid "polynom = 0x4c11db7"
-msgstr ""
+msgstr "polynom = 0x4c11db7"
 
 #: of pwnlib.util.crc.crc_crc_31_philips:6
 msgid "width   = 31"
-msgstr ""
+msgstr "width   = 31"
 
 #: of pwnlib.util.crc.crc_crc_31_philips:7
 msgid "init    = 0x7fffffff"
-msgstr ""
+msgstr "init    = 0x7fffffff"
 
 #: of pwnlib.util.crc.crc_crc_31_philips:10
 msgid "xorout  = 0x7fffffff"
-msgstr ""
+msgstr "xorout  = 0x7fffffff"
 
 #: of pwnlib.util.crc.crc_crc_31_philips:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-31-philips"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-31-philips"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-31-philips"
 
 #: of pwnlib.util.crc.crc_crc_32_aixm:1
 msgid "Calculates the crc_32_aixm checksum."
-msgstr ""
+msgstr "crc_32_aixm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_aixm:5
 msgid "polynom = 0x814141ab"
-msgstr ""
+msgstr "polynom = 0x814141ab"
 
 #: of pwnlib.util.crc.crc_crc_32_aixm:6 pwnlib.util.crc.crc_crc_32_autosar:6
 #: pwnlib.util.crc.crc_crc_32_base91_d:6 pwnlib.util.crc.crc_crc_32_bzip2:6
@@ -1571,21 +1447,19 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_32_jamcrc:6 pwnlib.util.crc.crc_crc_32_mef:6
 #: pwnlib.util.crc.crc_crc_32_mpeg_2:6 pwnlib.util.crc.crc_crc_32_xfer:6
 msgid "width   = 32"
-msgstr ""
+msgstr "width   = 32"
 
 #: of pwnlib.util.crc.crc_crc_32_aixm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-aixm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-aixm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-aixm"
 
 #: of pwnlib.util.crc.crc_crc_32_autosar:1
 msgid "Calculates the crc_32_autosar checksum."
-msgstr ""
+msgstr "crc_32_autosar チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_autosar:5
 msgid "polynom = 0xf4acfb13"
-msgstr ""
+msgstr "polynom = 0xf4acfb13"
 
 #: of pwnlib.util.crc.crc_crc_32_autosar:7
 #: pwnlib.util.crc.crc_crc_32_base91_d:7 pwnlib.util.crc.crc_crc_32_bzip2:7
@@ -1593,523 +1467,457 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_32_jamcrc:7 pwnlib.util.crc.crc_crc_32_mef:7
 #: pwnlib.util.crc.crc_crc_32_mpeg_2:7
 msgid "init    = 0xffffffff"
-msgstr ""
+msgstr "init    = 0xffffffff"
 
 #: of pwnlib.util.crc.crc_crc_32_autosar:10
 #: pwnlib.util.crc.crc_crc_32_base91_d:10 pwnlib.util.crc.crc_crc_32_bzip2:10
 #: pwnlib.util.crc.crc_crc_32_cksum:10 pwnlib.util.crc.crc_crc_32_iscsi:10
 #: pwnlib.util.crc.crc_crc_32_iso_hdlc:10
 msgid "xorout  = 0xffffffff"
-msgstr ""
+msgstr "xorout  = 0xffffffff"
 
 #: of pwnlib.util.crc.crc_crc_32_autosar:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-autosar"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-autosar"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-autosar"
 
 #: of pwnlib.util.crc.crc_crc_32_base91_d:1
 msgid "Calculates the crc_32_base91_d checksum."
-msgstr ""
+msgstr "crc_32_base91_d チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_base91_d:5
 msgid "polynom = 0xa833982b"
-msgstr ""
+msgstr "polynom = 0xa833982b"
 
 #: of pwnlib.util.crc.crc_crc_32_base91_d:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-base91-d"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-base91-d"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-base91-d"
 
 #: of pwnlib.util.crc.crc_crc_32_bzip2:1
 msgid "Calculates the crc_32_bzip2 checksum."
-msgstr ""
+msgstr "crc_32_bzip2 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_bzip2:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-bzip2"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-bzip2"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-bzip2"
 
 #: of pwnlib.util.crc.crc_crc_32_cd_rom_edc:1
 msgid "Calculates the crc_32_cd_rom_edc checksum."
-msgstr ""
+msgstr "crc_32_cd_rom_edc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_cd_rom_edc:5
 msgid "polynom = 0x8001801b"
-msgstr ""
+msgstr "polynom = 0x8001801b"
 
 #: of pwnlib.util.crc.crc_crc_32_cd_rom_edc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-cd-rom-edc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-cd-rom-edc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-cd-rom-edc"
 
 #: of pwnlib.util.crc.crc_crc_32_cksum:1
 msgid "Calculates the crc_32_cksum checksum."
-msgstr ""
+msgstr "crc_32_cksum チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_cksum:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-cksum"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-cksum"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-cksum"
 
 #: of pwnlib.util.crc.crc_crc_32_iscsi:1
 msgid "Calculates the crc_32_iscsi checksum."
-msgstr ""
+msgstr "crc_32_iscsi チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_iscsi:5
 msgid "polynom = 0x1edc6f41"
-msgstr ""
+msgstr "polynom = 0x1edc6f41"
 
 #: of pwnlib.util.crc.crc_crc_32_iscsi:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-iscsi"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-iscsi"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-iscsi"
 
 #: of pwnlib.util.crc.crc_crc_32_iso_hdlc:1
 msgid "Calculates the crc_32_iso_hdlc checksum."
-msgstr ""
+msgstr "crc_32_iso_hdlc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_iso_hdlc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-iso-hdlc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-iso-hdlc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-iso-hdlc"
 
 #: of pwnlib.util.crc.crc_crc_32_jamcrc:1
 msgid "Calculates the crc_32_jamcrc checksum."
-msgstr ""
+msgstr "crc_32_jamcrc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_jamcrc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-jamcrc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-jamcrc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-jamcrc"
 
 #: of pwnlib.util.crc.crc_crc_32_mef:1
 msgid "Calculates the crc_32_mef checksum."
-msgstr ""
+msgstr "crc_32_mef チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_mef:5
 msgid "polynom = 0x741b8cd7"
-msgstr ""
+msgstr "polynom = 0x741b8cd7"
 
 #: of pwnlib.util.crc.crc_crc_32_mef:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-mef"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-mef"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-mef"
 
 #: of pwnlib.util.crc.crc_crc_32_mpeg_2:1
 msgid "Calculates the crc_32_mpeg_2 checksum."
-msgstr ""
+msgstr "crc_32_mpeg_2 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_mpeg_2:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-mpeg-2"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-mpeg-2"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-mpeg-2"
 
 #: of pwnlib.util.crc.crc_crc_32_xfer:1
 msgid "Calculates the crc_32_xfer checksum."
-msgstr ""
+msgstr "crc_32_xfer チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_32_xfer:5
 msgid "polynom = 0xaf"
-msgstr ""
+msgstr "polynom = 0xaf"
 
 #: of pwnlib.util.crc.crc_crc_32_xfer:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-32-xfer"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-xfer"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-32-xfer"
 
 #: of pwnlib.util.crc.crc_crc_3_gsm:1
 msgid "Calculates the crc_3_gsm checksum."
-msgstr ""
+msgstr "crc_3_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_3_gsm:5 pwnlib.util.crc.crc_crc_3_rohc:5
 #: pwnlib.util.crc.crc_crc_4_g_704:5 pwnlib.util.crc.crc_crc_4_interlaken:5
 #: pwnlib.util.crc.crc_crc_6_g_704:5
 msgid "polynom = 0x3"
-msgstr ""
+msgstr "polynom = 0x3"
 
 #: of pwnlib.util.crc.crc_crc_3_gsm:6 pwnlib.util.crc.crc_crc_3_rohc:6
 msgid "width   = 3"
-msgstr ""
+msgstr "width   = 3"
 
 #: of pwnlib.util.crc.crc_crc_3_gsm:10
 msgid "xorout  = 0x7"
-msgstr ""
+msgstr "xorout  = 0x7"
 
 #: of pwnlib.util.crc.crc_crc_3_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-3-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-3-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-3-gsm"
 
 #: of pwnlib.util.crc.crc_crc_3_rohc:1
 msgid "Calculates the crc_3_rohc checksum."
-msgstr ""
+msgstr "crc_3_rohc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_3_rohc:7
 msgid "init    = 0x7"
-msgstr ""
+msgstr "init    = 0x7"
 
 #: of pwnlib.util.crc.crc_crc_3_rohc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-3-rohc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-3-rohc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-3-rohc"
 
 #: of pwnlib.util.crc.crc_crc_40_gsm:1
 msgid "Calculates the crc_40_gsm checksum."
-msgstr ""
+msgstr "crc_40_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_40_gsm:5
 msgid "polynom = 0x4820009"
-msgstr ""
+msgstr "polynom = 0x4820009"
 
 #: of pwnlib.util.crc.crc_crc_40_gsm:6
 msgid "width   = 40"
-msgstr ""
+msgstr "width   = 40"
 
 #: of pwnlib.util.crc.crc_crc_40_gsm:10
 msgid "xorout  = 0xffffffffff"
-msgstr ""
+msgstr "xorout  = 0xffffffffff"
 
 #: of pwnlib.util.crc.crc_crc_40_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-40-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-40-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-40-gsm"
 
 #: of pwnlib.util.crc.crc_crc_4_g_704:1
 msgid "Calculates the crc_4_g_704 checksum."
-msgstr ""
+msgstr "crc_4_g_704 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_4_g_704:6 pwnlib.util.crc.crc_crc_4_interlaken:6
 msgid "width   = 4"
-msgstr ""
+msgstr "width   = 4"
 
 #: of pwnlib.util.crc.crc_crc_4_g_704:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-4-g-704"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-4-g-704"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-4-g-704"
 
 #: of pwnlib.util.crc.crc_crc_4_interlaken:1
 msgid "Calculates the crc_4_interlaken checksum."
-msgstr ""
+msgstr "crc_4_interlaken チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_4_interlaken:7
 msgid "init    = 0xf"
-msgstr ""
+msgstr "init    = 0xf"
 
 #: of pwnlib.util.crc.crc_crc_4_interlaken:10
 msgid "xorout  = 0xf"
-msgstr ""
+msgstr "xorout  = 0xf"
 
 #: of pwnlib.util.crc.crc_crc_4_interlaken:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-4-interlaken"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-4-interlaken"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-4-interlaken"
 
 #: of pwnlib.util.crc.crc_crc_5_epc_c1g2:1
 msgid "Calculates the crc_5_epc_c1g2 checksum."
-msgstr ""
+msgstr "crc_5_epc_c1g2 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_5_epc_c1g2:5 pwnlib.util.crc.crc_crc_7_mmc:5
 msgid "polynom = 0x9"
-msgstr ""
+msgstr "polynom = 0x9"
 
 #: of pwnlib.util.crc.crc_crc_5_epc_c1g2:6 pwnlib.util.crc.crc_crc_5_g_704:6
 #: pwnlib.util.crc.crc_crc_5_usb:6
 msgid "width   = 5"
-msgstr ""
+msgstr "width   = 5"
 
 #: of pwnlib.util.crc.crc_crc_5_epc_c1g2:7
 msgid "init    = 0x9"
-msgstr ""
+msgstr "init    = 0x9"
 
 #: of pwnlib.util.crc.crc_crc_5_epc_c1g2:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-5-epc-c1g2"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-5-epc-c1g2"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-5-epc-c1g2"
 
 #: of pwnlib.util.crc.crc_crc_5_g_704:1
 msgid "Calculates the crc_5_g_704 checksum."
-msgstr ""
+msgstr "crc_5_g_704 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_5_g_704:5
 msgid "polynom = 0x15"
-msgstr ""
+msgstr "polynom = 0x15"
 
 #: of pwnlib.util.crc.crc_crc_5_g_704:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-5-g-704"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-5-g-704"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-5-g-704"
 
 #: of pwnlib.util.crc.crc_crc_5_usb:1
 msgid "Calculates the crc_5_usb checksum."
-msgstr ""
+msgstr "crc_5_usb チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_5_usb:5
 msgid "polynom = 0x5"
-msgstr ""
+msgstr "polynom = 0x5"
 
 #: of pwnlib.util.crc.crc_crc_5_usb:7
 msgid "init    = 0x1f"
-msgstr ""
+msgstr "init    = 0x1f"
 
 #: of pwnlib.util.crc.crc_crc_5_usb:10
 msgid "xorout  = 0x1f"
-msgstr ""
+msgstr "xorout  = 0x1f"
 
 #: of pwnlib.util.crc.crc_crc_5_usb:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-5-usb"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-5-usb"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-5-usb"
 
 #: of pwnlib.util.crc.crc_crc_64_ecma_182:1
 msgid "Calculates the crc_64_ecma_182 checksum."
-msgstr ""
+msgstr "crc_64_ecma_182 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_64_ecma_182:5 pwnlib.util.crc.crc_crc_64_we:5
 #: pwnlib.util.crc.crc_crc_64_xz:5
 msgid "polynom = 0x42f0e1eba9ea3693"
-msgstr ""
+msgstr "polynom = 0x42f0e1eba9ea3693"
 
 #: of pwnlib.util.crc.crc_crc_64_ecma_182:6 pwnlib.util.crc.crc_crc_64_go_iso:6
 #: pwnlib.util.crc.crc_crc_64_ms:6 pwnlib.util.crc.crc_crc_64_we:6
 #: pwnlib.util.crc.crc_crc_64_xz:6
 msgid "width   = 64"
-msgstr ""
+msgstr "width   = 64"
 
 #: of pwnlib.util.crc.crc_crc_64_ecma_182:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-64-ecma-182"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-ecma-182"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-ecma-182"
 
 #: of pwnlib.util.crc.crc_crc_64_go_iso:1
 msgid "Calculates the crc_64_go_iso checksum."
-msgstr ""
+msgstr "crc_64_go_iso チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_64_go_iso:5
 msgid "polynom = 0x1b"
-msgstr ""
+msgstr "polynom = 0x1b"
 
 #: of pwnlib.util.crc.crc_crc_64_go_iso:7 pwnlib.util.crc.crc_crc_64_ms:7
 #: pwnlib.util.crc.crc_crc_64_we:7 pwnlib.util.crc.crc_crc_64_xz:7
 msgid "init    = 0xffffffffffffffff"
-msgstr ""
+msgstr "init    = 0xffffffffffffffff"
 
 #: of pwnlib.util.crc.crc_crc_64_go_iso:10 pwnlib.util.crc.crc_crc_64_we:10
 #: pwnlib.util.crc.crc_crc_64_xz:10
 msgid "xorout  = 0xffffffffffffffff"
-msgstr ""
+msgstr "xorout  = 0xffffffffffffffff"
 
 #: of pwnlib.util.crc.crc_crc_64_go_iso:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-64-go-iso"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-go-iso"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-go-iso"
 
 #: of pwnlib.util.crc.crc_crc_64_ms:1
 msgid "Calculates the crc_64_ms checksum."
-msgstr ""
+msgstr "crc_64_ms チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_64_ms:5
 msgid "polynom = 0x259c84cba6426349"
-msgstr ""
+msgstr "polynom = 0x259c84cba6426349"
 
 #: of pwnlib.util.crc.crc_crc_64_ms:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-64-ms"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-ms"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-ms"
 
 #: of pwnlib.util.crc.crc_crc_64_we:1
 msgid "Calculates the crc_64_we checksum."
-msgstr ""
+msgstr "crc_64_we チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_64_we:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-64-we"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-we"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-we"
 
 #: of pwnlib.util.crc.crc_crc_64_xz:1
 msgid "Calculates the crc_64_xz checksum."
-msgstr ""
+msgstr "crc_64_xz チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_64_xz:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-64-xz"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-xz"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-64-xz"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_a:1
 msgid "Calculates the crc_6_cdma2000_a checksum."
-msgstr ""
+msgstr "crc_6_cdma2000_a チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_a:5
 msgid "polynom = 0x27"
-msgstr ""
+msgstr "polynom = 0x27"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_a:6
 #: pwnlib.util.crc.crc_crc_6_cdma2000_b:6 pwnlib.util.crc.crc_crc_6_darc:6
 #: pwnlib.util.crc.crc_crc_6_g_704:6 pwnlib.util.crc.crc_crc_6_gsm:6
 msgid "width   = 6"
-msgstr ""
+msgstr "width   = 6"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_a:7
 #: pwnlib.util.crc.crc_crc_6_cdma2000_b:7
 msgid "init    = 0x3f"
-msgstr ""
+msgstr "init    = 0x3f"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_a:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-6-cdma2000-a"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-cdma2000-a"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-cdma2000-a"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_b:1
 msgid "Calculates the crc_6_cdma2000_b checksum."
-msgstr ""
+msgstr "crc_6_cdma2000_b チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_b:5
 #: pwnlib.util.crc.crc_crc_8_i_432_1:5 pwnlib.util.crc.crc_crc_8_rohc:5
 #: pwnlib.util.crc.crc_crc_8_smbus:5
 msgid "polynom = 0x7"
-msgstr ""
+msgstr "polynom = 0x7"
 
 #: of pwnlib.util.crc.crc_crc_6_cdma2000_b:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-6-cdma2000-b"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-cdma2000-b"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-cdma2000-b"
 
 #: of pwnlib.util.crc.crc_crc_6_darc:1
 msgid "Calculates the crc_6_darc checksum."
-msgstr ""
+msgstr "crc_6_darc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_6_darc:5
 msgid "polynom = 0x19"
-msgstr ""
+msgstr "polynom = 0x19"
 
 #: of pwnlib.util.crc.crc_crc_6_darc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-6-darc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-darc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-darc"
 
 #: of pwnlib.util.crc.crc_crc_6_g_704:1
 msgid "Calculates the crc_6_g_704 checksum."
-msgstr ""
+msgstr "crc_6_g_704 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_6_g_704:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-6-g-704"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-g-704"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-g-704"
 
 #: of pwnlib.util.crc.crc_crc_6_gsm:1
 msgid "Calculates the crc_6_gsm checksum."
-msgstr ""
+msgstr "crc_6_gsm チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_6_gsm:5 pwnlib.util.crc.crc_crc_8_autosar:5
 #: pwnlib.util.crc.crc_crc_8_opensafety:5
 msgid "polynom = 0x2f"
-msgstr ""
+msgstr "polynom = 0x2f"
 
 #: of pwnlib.util.crc.crc_crc_6_gsm:10
 msgid "xorout  = 0x3f"
-msgstr ""
+msgstr "xorout  = 0x3f"
 
 #: of pwnlib.util.crc.crc_crc_6_gsm:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-6-gsm"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-gsm"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-6-gsm"
 
 #: of pwnlib.util.crc.crc_crc_7_mmc:1
 msgid "Calculates the crc_7_mmc checksum."
-msgstr ""
+msgstr "crc_7_mmc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_7_mmc:6 pwnlib.util.crc.crc_crc_7_rohc:6
 #: pwnlib.util.crc.crc_crc_7_umts:6
 msgid "width   = 7"
-msgstr ""
+msgstr "width   = 7"
 
 #: of pwnlib.util.crc.crc_crc_7_mmc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-7-mmc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-7-mmc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-7-mmc"
 
 #: of pwnlib.util.crc.crc_crc_7_rohc:1
 msgid "Calculates the crc_7_rohc checksum."
-msgstr ""
+msgstr "crc_7_rohc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_7_rohc:5
 msgid "polynom = 0x4f"
-msgstr ""
+msgstr "polynom = 0x4f"
 
 #: of pwnlib.util.crc.crc_crc_7_rohc:7
 msgid "init    = 0x7f"
-msgstr ""
+msgstr "init    = 0x7f"
 
 #: of pwnlib.util.crc.crc_crc_7_rohc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-7-rohc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-7-rohc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-7-rohc"
 
 #: of pwnlib.util.crc.crc_crc_7_umts:1
 msgid "Calculates the crc_7_umts checksum."
-msgstr ""
+msgstr "crc_7_umts チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_7_umts:5
 msgid "polynom = 0x45"
-msgstr ""
+msgstr "polynom = 0x45"
 
 #: of pwnlib.util.crc.crc_crc_7_umts:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-7-umts"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-7-umts"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-7-umts"
 
 #: of pwnlib.util.crc.crc_crc_82_darc:1
 msgid "Calculates the crc_82_darc checksum."
-msgstr ""
+msgstr "crc_82_darc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_82_darc:5
 msgid "polynom = 0x308c0111011401440411"
-msgstr ""
+msgstr "polynom = 0x308c0111011401440411"
 
 #: of pwnlib.util.crc.crc_crc_82_darc:6
 msgid "width   = 82"
-msgstr ""
+msgstr "width   = 82"
 
 #: of pwnlib.util.crc.crc_crc_82_darc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-82-darc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-82-darc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-82-darc"
 
 #: of pwnlib.util.crc.crc_crc_8_autosar:1
 msgid "Calculates the crc_8_autosar checksum."
-msgstr ""
+msgstr "crc_8_autosar チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_autosar:6 pwnlib.util.crc.crc_crc_8_bluetooth:6
 #: pwnlib.util.crc.crc_crc_8_cdma2000:6 pwnlib.util.crc.crc_crc_8_darc:6
@@ -2122,309 +1930,258 @@ msgstr ""
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:6 pwnlib.util.crc.crc_crc_8_smbus:6
 #: pwnlib.util.crc.crc_crc_8_tech_3250:6 pwnlib.util.crc.crc_crc_8_wcdma:6
 msgid "width   = 8"
-msgstr ""
+msgstr "width   = 8"
 
 #: of pwnlib.util.crc.crc_crc_8_autosar:7 pwnlib.util.crc.crc_crc_8_cdma2000:7
 #: pwnlib.util.crc.crc_crc_8_hitag:7 pwnlib.util.crc.crc_crc_8_nrsc_5:7
 #: pwnlib.util.crc.crc_crc_8_rohc:7 pwnlib.util.crc.crc_crc_8_sae_j1850:7
 #: pwnlib.util.crc.crc_crc_8_tech_3250:7
 msgid "init    = 0xff"
-msgstr ""
+msgstr "init    = 0xff"
 
 #: of pwnlib.util.crc.crc_crc_8_autosar:10 pwnlib.util.crc.crc_crc_8_gsm_b:10
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:10
 msgid "xorout  = 0xff"
-msgstr ""
+msgstr "xorout  = 0xff"
 
 #: of pwnlib.util.crc.crc_crc_8_autosar:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-autosar"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-autosar"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-autosar"
 
 #: of pwnlib.util.crc.crc_crc_8_bluetooth:1
 msgid "Calculates the crc_8_bluetooth checksum."
-msgstr ""
+msgstr "crc_8_bluetooth チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_bluetooth:5
 msgid "polynom = 0xa7"
-msgstr ""
+msgstr "polynom = 0xa7"
 
 #: of pwnlib.util.crc.crc_crc_8_bluetooth:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-bluetooth"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-bluetooth"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-bluetooth"
 
 #: of pwnlib.util.crc.crc_crc_8_cdma2000:1
 msgid "Calculates the crc_8_cdma2000 checksum."
-msgstr ""
+msgstr "crc_8_cdma2000 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_cdma2000:5 pwnlib.util.crc.crc_crc_8_lte:5
 #: pwnlib.util.crc.crc_crc_8_wcdma:5
 msgid "polynom = 0x9b"
-msgstr ""
+msgstr "polynom = 0x9b"
 
 #: of pwnlib.util.crc.crc_crc_8_cdma2000:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-cdma2000"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-cdma2000"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-cdma2000"
 
 #: of pwnlib.util.crc.crc_crc_8_darc:1
 msgid "Calculates the crc_8_darc checksum."
-msgstr ""
+msgstr "crc_8_darc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_darc:5
 msgid "polynom = 0x39"
-msgstr ""
+msgstr "polynom = 0x39"
 
 #: of pwnlib.util.crc.crc_crc_8_darc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-darc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-darc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-darc"
 
 #: of pwnlib.util.crc.crc_crc_8_dvb_s2:1
 msgid "Calculates the crc_8_dvb_s2 checksum."
-msgstr ""
+msgstr "crc_8_dvb_s2 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_dvb_s2:5
 msgid "polynom = 0xd5"
-msgstr ""
+msgstr "polynom = 0xd5"
 
 #: of pwnlib.util.crc.crc_crc_8_dvb_s2:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-dvb-s2"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-dvb-s2"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-dvb-s2"
 
 #: of pwnlib.util.crc.crc_crc_8_gsm_a:1
 msgid "Calculates the crc_8_gsm_a checksum."
-msgstr ""
+msgstr "crc_8_gsm_a チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_gsm_a:5 pwnlib.util.crc.crc_crc_8_hitag:5
 #: pwnlib.util.crc.crc_crc_8_i_code:5 pwnlib.util.crc.crc_crc_8_mifare_mad:5
 #: pwnlib.util.crc.crc_crc_8_sae_j1850:5 pwnlib.util.crc.crc_crc_8_tech_3250:5
 msgid "polynom = 0x1d"
-msgstr ""
+msgstr "polynom = 0x1d"
 
 #: of pwnlib.util.crc.crc_crc_8_gsm_a:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-gsm-a"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-gsm-a"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-gsm-a"
 
 #: of pwnlib.util.crc.crc_crc_8_gsm_b:1
 msgid "Calculates the crc_8_gsm_b checksum."
-msgstr ""
+msgstr "crc_8_gsm_b チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_gsm_b:5
 msgid "polynom = 0x49"
-msgstr ""
+msgstr "polynom = 0x49"
 
 #: of pwnlib.util.crc.crc_crc_8_gsm_b:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-gsm-b"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-gsm-b"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-gsm-b"
 
 #: of pwnlib.util.crc.crc_crc_8_hitag:1
 msgid "Calculates the crc_8_hitag checksum."
-msgstr ""
+msgstr "crc_8_hitag チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_hitag:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-hitag"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-hitag"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-hitag"
 
 #: of pwnlib.util.crc.crc_crc_8_i_432_1:1
 msgid "Calculates the crc_8_i_432_1 checksum."
-msgstr ""
+msgstr "crc_8_i_432_1 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_i_432_1:10
 msgid "xorout  = 0x55"
-msgstr ""
+msgstr "xorout  = 0x55"
 
 #: of pwnlib.util.crc.crc_crc_8_i_432_1:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-i-432-1"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-i-432-1"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-i-432-1"
 
 #: of pwnlib.util.crc.crc_crc_8_i_code:1
 msgid "Calculates the crc_8_i_code checksum."
-msgstr ""
+msgstr "crc_8_i_code チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_i_code:7
 msgid "init    = 0xfd"
-msgstr ""
+msgstr "init    = 0xfd"
 
 #: of pwnlib.util.crc.crc_crc_8_i_code:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-i-code"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-i-code"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-i-code"
 
 #: of pwnlib.util.crc.crc_crc_8_lte:1
 msgid "Calculates the crc_8_lte checksum."
-msgstr ""
+msgstr "crc_8_lte チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_lte:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-lte"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-lte"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-lte"
 
 #: of pwnlib.util.crc.crc_crc_8_maxim_dow:1
 msgid "Calculates the crc_8_maxim_dow checksum."
-msgstr ""
+msgstr "crc_8_maxim_dow チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_maxim_dow:5 pwnlib.util.crc.crc_crc_8_nrsc_5:5
 msgid "polynom = 0x31"
-msgstr ""
+msgstr "polynom = 0x31"
 
 #: of pwnlib.util.crc.crc_crc_8_maxim_dow:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-maxim-dow"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-maxim-dow"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-maxim-dow"
 
 #: of pwnlib.util.crc.crc_crc_8_mifare_mad:1
 msgid "Calculates the crc_8_mifare_mad checksum."
-msgstr ""
+msgstr "crc_8_mifare_mad チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_mifare_mad:7
 msgid "init    = 0xc7"
-msgstr ""
+msgstr "init    = 0xc7"
 
 #: of pwnlib.util.crc.crc_crc_8_mifare_mad:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-mifare-mad"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-mifare-mad"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-mifare-mad"
 
 #: of pwnlib.util.crc.crc_crc_8_nrsc_5:1
 msgid "Calculates the crc_8_nrsc_5 checksum."
-msgstr ""
+msgstr "crc_8_nrsc_5 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_nrsc_5:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-nrsc-5"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-nrsc-5"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-nrsc-5"
 
 #: of pwnlib.util.crc.crc_crc_8_opensafety:1
 msgid "Calculates the crc_8_opensafety checksum."
-msgstr ""
+msgstr "crc_8_opensafety チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_opensafety:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-opensafety"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-opensafety"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-opensafety"
 
 #: of pwnlib.util.crc.crc_crc_8_rohc:1
 msgid "Calculates the crc_8_rohc checksum."
-msgstr ""
+msgstr "crc_8_rohc チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_rohc:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-rohc"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-rohc"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-rohc"
 
 #: of pwnlib.util.crc.crc_crc_8_sae_j1850:1
 msgid "Calculates the crc_8_sae_j1850 checksum."
-msgstr ""
+msgstr "crc_8_sae_j1850 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_sae_j1850:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-sae-j1850"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-sae-j1850"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-sae-j1850"
 
 #: of pwnlib.util.crc.crc_crc_8_smbus:1
 msgid "Calculates the crc_8_smbus checksum."
-msgstr ""
+msgstr "crc_8_smbus チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_smbus:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-smbus"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-smbus"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-smbus"
 
 #: of pwnlib.util.crc.crc_crc_8_tech_3250:1
 msgid "Calculates the crc_8_tech_3250 checksum."
-msgstr ""
+msgstr "crc_8_tech_3250 チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_tech_3250:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-tech-3250"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-tech-3250"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-tech-3250"
 
 #: of pwnlib.util.crc.crc_crc_8_wcdma:1
 msgid "Calculates the crc_8_wcdma checksum."
-msgstr ""
+msgstr "crc_8_wcdma チェックサムを計算します。"
 
 #: of pwnlib.util.crc.crc_crc_8_wcdma:12
-msgid ""
-"See also: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm#crc.cat.crc-8-wcdma"
-msgstr ""
+msgid "See also: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-wcdma"
+msgstr "関連項目: https://reveng.sourceforge.io/crc-catalogue/all.htm#crc.cat.crc-8-wcdma"
 
 #: of pwnlib.util.crc.Module.find_crc_function:1
-msgid ""
-"Finds all known CRC functions that hashes a piece of data into a specific"
-" checksum. It does this by trying all known CRC functions one after the "
-"other."
-msgstr ""
+msgid "Finds all known CRC functions that hashes a piece of data into a specific checksum. It does this by trying all known CRC functions one after the other."
+msgstr "データをあるチェックサムにハッシュする既知の CRC 関数をすべて探します。既知の CRC 関数を順番にひとつずつ試します。"
 
 #: of pwnlib.util.crc.Module.find_crc_function:4
 msgid "Data for which the checksum is known."
-msgstr ""
+msgstr "チェックサムが分かっているデータ。"
 
 #: of pwnlib.util.crc.Module.generic_crc:1
 msgid "A generic CRC-sum function."
-msgstr ""
+msgstr "汎用の CRC 関数です。"
 
 #: of pwnlib.util.crc.Module.generic_crc:3
-msgid ""
-"This is suitable to use with: https://reveng.sourceforge.io/crc-"
-"catalogue/all.htm"
-msgstr ""
+msgid "This is suitable to use with: https://reveng.sourceforge.io/crc-catalogue/all.htm"
+msgstr "https://reveng.sourceforge.io/crc-catalogue/all.htm と組み合わせて使えます。"
 
 #: of pwnlib.util.crc.Module.generic_crc:6
-msgid ""
-"The \"check\" value in the document is the CRC-sum of the string "
-"\"123456789\"."
-msgstr ""
+msgid "The \"check\" value in the document is the CRC-sum of the string \"123456789\"."
+msgstr "文書中の「check」値は、文字列 \"123456789\" の CRC です。"
 
 #: of pwnlib.util.crc.Module.generic_crc:8
-msgid ""
-"The data to calculate the CRC-sum of. This should either be a string or a"
-" list of bits."
-msgstr ""
+msgid "The data to calculate the CRC-sum of. This should either be a string or a list of bits."
+msgstr "CRC を計算するデータ。文字列かビットのリストを指定します。"
 
 #: of pwnlib.util.crc.Module.generic_crc:10
 msgid "The polynomial to use."
-msgstr ""
+msgstr "使用する多項式。"
 
 #: of pwnlib.util.crc.Module.generic_crc:12
-msgid ""
-"If the CRC-sum was calculated in hardware, then this would b the initial "
-"value of the checksum register."
-msgstr ""
+msgid "If the CRC-sum was calculated in hardware, then this would b the initial value of the checksum register."
+msgstr "CRC をハードウェアで計算する場合の、チェックサムレジスタの初期値です。"
 
 #: of pwnlib.util.crc.Module.generic_crc:15
 msgid "Should the input bytes be reflected?"
-msgstr ""
+msgstr "入力バイトを反転するかどうか。"
 
 #: of pwnlib.util.crc.Module.generic_crc:17
 msgid "Should the checksum be reflected?"
-msgstr ""
+msgstr "チェックサムを反転するかどうか。"
 
 #: of pwnlib.util.crc.Module.generic_crc:19
 msgid "The value to xor the checksum with before outputting"
@@ -2432,51 +2189,43 @@ msgstr ""
 
 #: ../pwntools/docs/source/util/cyclic.rst:8
 msgid ":mod:`pwnlib.util.cyclic` --- Generation of unique sequences"
-msgstr ""
+msgstr ":mod:`pwnlib.util.cyclic` --- 一意な列の生成"
 
 #: of pwnlib.util.cyclic.cyclic_gen:1
-msgid ""
-"Creates a stateful cyclic generator which can generate sequential chunks "
-"of de Bruijn sequences."
-msgstr ""
+msgid "Creates a stateful cyclic generator which can generate sequential chunks of de Bruijn sequences."
+msgstr "状態を持つ cyclic ジェネレータを作成します。de Bruijn 列を順に塊で生成できます。"
 
 #: of pwnlib.util.cyclic.cyclic_gen.find:1
 msgid "Find a chunk and subindex from all the generates de Bruijn sequences."
-msgstr ""
+msgstr "生成済みのすべての de Bruijn 列から、塊とその中の添字を探します。"
 
 #: of pwnlib.util.cyclic.cyclic_gen.get:1
 msgid "Get the next de Bruijn sequence from this generator."
-msgstr ""
+msgstr "このジェネレータから、次の de Bruijn 列を取得します。"
 
 #: of pwnlib.util.cyclic._gen_find:1
-msgid ""
-"Returns the first position of `subseq` in the generator or -1 if there is"
-" no such position."
-msgstr ""
+msgid "Returns the first position of `subseq` in the generator or -1 if there is no such position."
+msgstr "ジェネレータ内で `subseq` が最初に現れる位置を返します。なければ -1 を返します。"
 
 #: of pwnlib.util.cyclic.cyclic:1
-msgid ""
-"A simple wrapper over :func:`de_bruijn`. This function returns at most "
-"`length` elements."
-msgstr ""
+msgid "A simple wrapper over :func:`de_bruijn`. This function returns at most `length` elements."
+msgstr ":func:`de_bruijn` の簡単なラッパーです。この関数は最大で `length` 個の要素を返します。"
 
 #: of pwnlib.util.cyclic.cyclic:4
-msgid ""
-"If the given alphabet is a string, a string is returned from this "
-"function. Otherwise a list is returned."
-msgstr ""
+msgid "If the given alphabet is a string, a string is returned from this function. Otherwise a list is returned."
+msgstr "与えられた alphabet が文字列なら、この関数は文字列を返します。そうでなければリストを返します。"
 
 #: of pwnlib.util.cyclic.cyclic:7
 msgid "The desired length of the list or None if the entire sequence is desired."
-msgstr ""
+msgstr "リストまたは文字列の望ましい長さ。列全体が必要な場合は None。"
 
 #: of pwnlib.util.cyclic.cyclic:8 pwnlib.util.cyclic.de_bruijn:6
 msgid "List or string to generate the sequence over."
-msgstr ""
+msgstr "列を生成する元になるリストまたは文字列。"
 
 #: of pwnlib.util.cyclic.cyclic:9 pwnlib.util.cyclic.de_bruijn:7
 msgid "The length of subsequences that should be unique."
-msgstr ""
+msgstr "一意であるべき部分列の長さ。"
 
 #: of pwnlib.util.cyclic.cyclic:13 pwnlib.util.misc.run_in_new_terminal:48
 msgid "Notes"
@@ -2484,176 +2233,129 @@ msgstr ""
 
 #: of pwnlib.util.cyclic.cyclic:14
 msgid "The maximum length is `len(alphabet)**n`."
-msgstr ""
+msgstr "最大の長さは `len(alphabet)**n` です。"
 
 #: of pwnlib.util.cyclic.cyclic:16
-msgid ""
-"The default values for `alphabet` and `n` restrict the total space to "
-"~446KB."
-msgstr ""
+msgid "The default values for `alphabet` and `n` restrict the total space to ~446KB."
+msgstr "`alphabet` と `n` の既定値では、全体の大きさは約 446KB に制限されます。"
 
 #: of pwnlib.util.cyclic.cyclic:18
-msgid ""
-"If you need to generate a longer cyclic pattern, provide a longer "
-"`alphabet`, or if possible a larger `n`."
-msgstr ""
+msgid "If you need to generate a longer cyclic pattern, provide a longer `alphabet`, or if possible a larger `n`."
+msgstr "さらに長い cyclic パターンが必要な場合は、より長い `alphabet` を指定するか、可能であればより大きな `n` を指定してください。"
 
 #: of pwnlib.util.cyclic.cyclic:23
 msgid "Cyclic patterns are usually generated by providing a specific `length`."
-msgstr ""
+msgstr "cyclic パターンは、通常、特定の `length` を指定して生成します。"
 
 #: of pwnlib.util.cyclic.cyclic:31
-msgid ""
-"The `alphabet` and `n` arguments will control the actual output of the "
-"pattern"
-msgstr ""
+msgid "The `alphabet` and `n` arguments will control the actual output of the pattern"
+msgstr "`alphabet` と `n` の引数が、パターンの実際の出力を決めます。"
 
 #: of pwnlib.util.cyclic.cyclic:42
-msgid ""
-"The size of `n` and `alphabet` limit the maximum length that can be "
-"generated. Without providing `length`, the entire possible cyclic space "
-"is generated."
-msgstr ""
+msgid "The size of `n` and `alphabet` limit the maximum length that can be generated. Without providing `length`, the entire possible cyclic space is generated."
+msgstr "`n` と `alphabet` の大きさが、生成できる最大の長さを制限します。`length` を指定しない場合は、可能な cyclic 空間全体が生成されます。"
 
 #: of pwnlib.util.cyclic.cyclic:53
-msgid ""
-"The `alphabet` can be set in `context`, which is useful for circumstances"
-" when certain characters are not allowed.  See "
-":obj:`.context.cyclic_alphabet`."
-msgstr ""
+msgid "The `alphabet` can be set in `context`, which is useful for circumstances when certain characters are not allowed.  See :obj:`.context.cyclic_alphabet`."
+msgstr "`alphabet` は `context` に設定できます。使えない文字がある場合に便利です。:obj:`.context.cyclic_alphabet` を参照してください。"
 
 #: of pwnlib.util.cyclic.cyclic:60
 msgid "The original values can always be restored with:"
-msgstr ""
+msgstr "元の値は、次のようにしていつでも復元できます。"
 
 #: of pwnlib.util.cyclic.cyclic:64
 msgid "The following just a test to make sure the length is correct."
-msgstr ""
+msgstr "以下は、長さが正しいことを確かめるだけのテストです。"
 
 #: of pwnlib.util.cyclic.cyclic_find:1
 msgid "Calculates the position of a substring into a De Bruijn sequence."
-msgstr ""
+msgstr "部分文字列が De Bruijn 列のどの位置にあるかを計算します。"
 
 #: of pwnlib.util.cyclic.cyclic_find:12
-msgid ""
-"The subsequence to look for. This can be a string, a list or an integer. "
-"If an integer is provided it will be packed as a little endian integer."
-msgstr ""
+msgid "The subsequence to look for. This can be a string, a list or an integer. If an integer is provided it will be packed as a little endian integer."
+msgstr "探す部分列。文字列、リスト、整数を指定できます。整数を指定した場合は、リトルエンディアンの整数としてパックされます。"
 
 #: of pwnlib.util.cyclic.cyclic_find:15
-msgid ""
-"List or string to generate the sequence over. By default, uses "
-":obj:`.context.cyclic_alphabet`."
-msgstr ""
+msgid "List or string to generate the sequence over. By default, uses :obj:`.context.cyclic_alphabet`."
+msgstr "列を生成する元になるリストまたは文字列。既定では :obj:`.context.cyclic_alphabet` を使います。"
 
 #: of pwnlib.util.cyclic.cyclic_find:17
-msgid ""
-"The length of subsequences that should be unique. By default, uses "
-":obj:`.context.cyclic_size`."
-msgstr ""
+msgid "The length of subsequences that should be unique. By default, uses :obj:`.context.cyclic_size`."
+msgstr "一意であるべき部分列の長さ。既定では :obj:`.context.cyclic_size` を使います。"
 
 #: of pwnlib.util.cyclic.cyclic_find:23
 msgid "Let's generate an example cyclic pattern."
-msgstr ""
+msgstr "cyclic パターンの例を生成してみます。"
 
 #: of pwnlib.util.cyclic.cyclic_find:28
-msgid ""
-"Note that 'baaa' starts at offset 4.  The `cyclic_find` routine shows us "
-"this:"
-msgstr ""
+msgid "Note that 'baaa' starts at offset 4.  The `cyclic_find` routine shows us this:"
+msgstr "'baaa' はオフセット 4 から始まります。`cyclic_find` ルーチンでも、それが分かります。"
 
 #: of pwnlib.util.cyclic.cyclic_find:33
-msgid ""
-"The *default* length of a subsequence generated by `cyclic` is `4`. If a "
-"longer value is submitted, it is automatically truncated to four bytes."
-msgstr ""
+msgid "The *default* length of a subsequence generated by `cyclic` is `4`. If a longer value is submitted, it is automatically truncated to four bytes."
+msgstr "`cyclic` が生成する部分列の *既定の* 長さは `4` です。それより長い値を渡した場合は、自動的に 4 バイトに切り詰められます。"
 
 #: of pwnlib.util.cyclic.cyclic_find:39
-msgid ""
-"If you provided e.g. `n=8` to `cyclic` to generate larger subsequences, "
-"you must explicitly provide that argument."
-msgstr ""
+msgid "If you provided e.g. `n=8` to `cyclic` to generate larger subsequences, you must explicitly provide that argument."
+msgstr "`cyclic` に `n=8` などを指定してより長い部分列を生成した場合は、その引数を明示的に渡す必要があります。"
 
 #: of pwnlib.util.cyclic.cyclic_find:45
-msgid ""
-"We can generate a large cyclic pattern, and grab a subset of it to check "
-"a deeper offset."
-msgstr ""
+msgid "We can generate a large cyclic pattern, and grab a subset of it to check a deeper offset."
+msgstr "大きな cyclic パターンを生成し、その一部を取り出して、より深いオフセットを調べることもできます。"
 
 #: of pwnlib.util.cyclic.cyclic_find:51
-msgid ""
-"Instead of passing in the byte representation of the pattern, you can "
-"also pass in the integer value.  Note that this is sensitive to the "
-"selected endianness via `context.endian`."
-msgstr ""
+msgid "Instead of passing in the byte representation of the pattern, you can also pass in the integer value.  Note that this is sensitive to the selected endianness via `context.endian`."
+msgstr "パターンのバイト表現の代わりに、整数値を渡すこともできます。この場合は、`context.endian` で選んだエンディアンの影響を受けることに注意してください。"
 
 #: of pwnlib.util.cyclic.cyclic_find:60
-msgid ""
-"Similarly to the case where you can provide a bytes value that is longer "
-"than four bytes, you can provided an integer value that is larger than "
-"what can be held in four bytes. If such a large value is given, it is "
-"automatically truncated."
-msgstr ""
+msgid "Similarly to the case where you can provide a bytes value that is longer than four bytes, you can provided an integer value that is larger than what can be held in four bytes. If such a large value is given, it is automatically truncated."
+msgstr "4 バイトより長いバイト列を渡せるのと同様に、4 バイトに収まらない大きさの整数値も渡せます。そのような大きな値を渡した場合は、自動的に切り詰められます。"
 
 #: of pwnlib.util.cyclic.cyclic_find:70
-msgid ""
-"You can use anything for the cyclic pattern, including non-printable "
-"characters."
-msgstr ""
+msgid "You can use anything for the cyclic pattern, including non-printable characters."
+msgstr "cyclic パターンには、表示できない文字を含め、どんな文字でも使えます。"
 
 #: of pwnlib.util.cyclic.cyclic_metasploit:1
-msgid ""
-"A simple wrapper over :func:`metasploit_pattern`. This function returns a"
-" string of length `length`."
-msgstr ""
+msgid "A simple wrapper over :func:`metasploit_pattern`. This function returns a string of length `length`."
+msgstr ":func:`metasploit_pattern` の簡単なラッパーです。この関数は長さ `length` の文字列を返します。"
 
 #: of pwnlib.util.cyclic.cyclic_metasploit:4
-msgid ""
-"The desired length of the string or None if the entire sequence is "
-"desired."
-msgstr ""
+msgid "The desired length of the string or None if the entire sequence is desired."
+msgstr "文字列の望ましい長さ。列全体が必要な場合は None。"
 
 #: of pwnlib.util.cyclic.cyclic_metasploit:5
 #: pwnlib.util.cyclic.cyclic_metasploit_find:6
 #: pwnlib.util.cyclic.metasploit_pattern:7
 msgid "List of strings to generate the sequence over."
-msgstr ""
+msgstr "列を生成する元になる文字列のリスト。"
 
 #: of pwnlib.util.cyclic.cyclic_metasploit_find:1
 msgid "Calculates the position of a substring into a Metasploit Pattern sequence."
-msgstr ""
+msgstr "部分文字列が Metasploit Pattern 列のどの位置にあるかを計算します。"
 
 #: of pwnlib.util.cyclic.cyclic_metasploit_find:3
-msgid ""
-"The subsequence to look for. This can be a string or an integer. If an "
-"integer is provided it will be packed as a little endian integer."
-msgstr ""
+msgid "The subsequence to look for. This can be a string or an integer. If an integer is provided it will be packed as a little endian integer."
+msgstr "探す部分列。文字列か整数を指定できます。整数を指定した場合は、リトルエンディアンの整数としてパックされます。"
 
 #: of pwnlib.util.cyclic.de_bruijn:1
-msgid ""
-"Generator for a sequence of unique substrings of length `n`. This is "
-"implemented using a De Bruijn Sequence over the given `alphabet`."
-msgstr ""
+msgid "Generator for a sequence of unique substrings of length `n`. This is implemented using a De Bruijn Sequence over the given `alphabet`."
+msgstr "長さ `n` の一意な部分文字列の列を生成するジェネレータです。与えられた `alphabet` 上の De Bruijn 列を使って実装されています。"
 
 #: of pwnlib.util.cyclic.de_bruijn:4
 msgid "The returned generator will yield up to ``len(alphabet)**n`` elements."
-msgstr ""
+msgstr "返されるジェネレータは、最大で ``len(alphabet)**n`` 個の要素を返します。"
 
 #: of pwnlib.util.cyclic.metasploit_pattern:1
-msgid ""
-"Generator for a sequence of characters as per Metasploit Framework's "
-"`Rex::Text.pattern_create` (aka `pattern_create.rb`)."
-msgstr ""
+msgid "Generator for a sequence of characters as per Metasploit Framework's `Rex::Text.pattern_create` (aka `pattern_create.rb`)."
+msgstr "Metasploit Framework の `Rex::Text.pattern_create`(別名 `pattern_create.rb`)と同じ文字列を生成するジェネレータです。"
 
 #: of pwnlib.util.cyclic.metasploit_pattern:4
-msgid ""
-"The returned generator will yield up to ``len(sets) * reduce(lambda x,y: "
-"x*y, map(len, sets))`` elements."
-msgstr ""
+msgid "The returned generator will yield up to ``len(sets) * reduce(lambda x,y: x*y, map(len, sets))`` elements."
+msgstr "返されるジェネレータは、最大で ``len(sets) * reduce(lambda x,y: x*y, map(len, sets))`` 個の要素を返します。"
 
 #: ../pwntools/docs/source/util/fiddling.rst:8
 msgid ":mod:`pwnlib.util.fiddling` --- Utilities bit fiddling"
-msgstr ""
+msgstr ":mod:`pwnlib.util.fiddling` --- ビット操作のユーティリティ"
 
 #: of pwnlib.util.fiddling.b64d:1
 msgid "Base64 decodes a string"
@@ -2669,23 +2371,23 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.bits:3
 msgid "Converts the argument into a list of bits."
-msgstr ""
+msgstr "引数をビットのリストに変換します。"
 
 #: of pwnlib.util.fiddling.bits:5
 msgid "A bytestring or number to be converted into bits."
-msgstr ""
+msgstr "ビットに変換するバイト列または数値。"
 
 #: of pwnlib.util.fiddling.bits:6
 msgid "The binary endian, default 'big'."
-msgstr ""
+msgstr "バイナリのエンディアン。既定は 'big'。"
 
 #: of pwnlib.util.fiddling.bits:8
 msgid "The value representing a 0-bit."
-msgstr ""
+msgstr "0 ビットを表す値。"
 
 #: of pwnlib.util.fiddling.bits:9
 msgid "The value representing a 1-bit."
-msgstr ""
+msgstr "1 ビットを表す値。"
 
 #: ../pwntools/docs/source/util/fiddling.rst
 #: ../pwntools/docs/source/util/misc.rst ../pwntools/docs/source/util/net.rst
@@ -2727,23 +2429,23 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.bits:11
 msgid "A list consisting of the values specified in `zero` and `one`."
-msgstr ""
+msgstr "`zero` と `one` で指定した値からなるリスト。"
 
 #: of pwnlib.util.fiddling.bits_str:1
 msgid "A wrapper around :func:`bits`, which converts the output into a string."
-msgstr ""
+msgstr ":func:`bits` のラッパーで、出力を文字列に変換します。"
 
 #: of pwnlib.util.fiddling.bitswap:1
 msgid "Reverses the bits in every byte of a given string."
-msgstr ""
+msgstr "与えられた文字列の各バイトについて、ビットを反転します。"
 
 #: of pwnlib.util.fiddling.bitswap_int:1
 msgid "Reverses the bits of a numbers and returns the result as a new number."
-msgstr ""
+msgstr "数値のビットを反転し、結果を新しい数値として返します。"
 
 #: of pwnlib.util.fiddling.bitswap_int:3
 msgid "The number to swap."
-msgstr ""
+msgstr "入れ替える数値。"
 
 #: of pwnlib.util.fiddling.bitswap_int:5
 msgid "The width of the integer"
@@ -2751,17 +2453,15 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.bnot:1
 msgid "Returns the binary inverse of 'value'."
-msgstr ""
+msgstr "'value' のビット反転を返します。"
 
 #: of pwnlib.util.fiddling.enhex:1
 msgid "Hex-encodes a string."
-msgstr ""
+msgstr "文字列を 16 進数にエンコードします。"
 
 #: of pwnlib.util.fiddling.hexdump:1
-msgid ""
-"hexdump(s, width = 16, skip = True, hexii = False, begin = 0, style = "
-"None,"
-msgstr ""
+msgid "hexdump(s, width = 16, skip = True, hexii = False, begin = 0, style = None,"
+msgstr "hexdump(s, width = 16, skip = True, hexii = False, begin = 0, style = None,"
 
 #: of pwnlib.util.fiddling.hexdump:2
 msgid "highlight = None, cyclic = False, groupsize=4, total = True) -> str"
@@ -2769,11 +2469,11 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.hexdump:4
 msgid "Return a hexdump-dump of a string."
-msgstr ""
+msgstr "文字列の hexdump を返します。"
 
 #: of pwnlib.util.fiddling.hexdump:6
 msgid "The data to hexdump."
-msgstr ""
+msgstr "hexdump するデータ。"
 
 #: of pwnlib.util.fiddling.hexdump:8 pwnlib.util.fiddling.hexdump_iter:9
 #: pwnlib.util.fiddling.hexii:5
@@ -2786,11 +2486,11 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.hexdump:12 pwnlib.util.fiddling.hexdump_iter:13
 msgid "Set to True, if repeated lines should be replaced by a \"*\""
-msgstr ""
+msgstr "True にすると、繰り返しの行を \"*\" に置き換えます。"
 
 #: of pwnlib.util.fiddling.hexdump:14 pwnlib.util.fiddling.hexdump_iter:15
 msgid "Set to True, if a hexii-dump should be returned instead of a hexdump."
-msgstr ""
+msgstr "True にすると、hexdump の代わりに hexii-dump を返します。"
 
 #: of pwnlib.util.fiddling.hexdump:16 pwnlib.util.fiddling.hexdump_iter:17
 msgid "Offset of the first byte to print in the left column"
@@ -2798,11 +2498,11 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.hexdump:18 pwnlib.util.fiddling.hexdump_iter:19
 msgid "Color scheme to use."
-msgstr ""
+msgstr "使用する配色。"
 
 #: of pwnlib.util.fiddling.hexdump:20 pwnlib.util.fiddling.hexdump_iter:21
 msgid "Byte values to highlight."
-msgstr ""
+msgstr "強調するバイト値。"
 
 #: of pwnlib.util.fiddling.hexdump:22 pwnlib.util.fiddling.hexdump_iter:23
 msgid "Attempt to skip consecutive, unmodified cyclic lines"
@@ -2814,13 +2514,11 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.hexdump:27
 msgid "A hexdump-dump in the form of a string."
-msgstr ""
+msgstr "文字列の形式の hexdump。"
 
 #: of pwnlib.util.fiddling.hexdump_iter:1
-msgid ""
-"hexdump_iter(s, width = 16, skip = True, hexii = False, begin = 0, style "
-"= None,"
-msgstr ""
+msgid "hexdump_iter(s, width = 16, skip = True, hexii = False, begin = 0, style = None,"
+msgstr "hexdump_iter(s, width = 16, skip = True, hexii = False, begin = 0, style = None,"
 
 #: of pwnlib.util.fiddling.hexdump_iter:2
 msgid ""
@@ -2829,24 +2527,20 @@ msgid ""
 msgstr ""
 
 #: of pwnlib.util.fiddling.hexdump_iter:4
-msgid ""
-"Return a hexdump-dump of a string as a generator of lines.  Unless you "
-"have massive amounts of data you probably want to use :meth:`hexdump`."
-msgstr ""
+msgid "Return a hexdump-dump of a string as a generator of lines.  Unless you have massive amounts of data you probably want to use :meth:`hexdump`."
+msgstr "文字列の hexdump を、行のジェネレータとして返します。大量のデータを扱う場合を除き、通常は :meth:`hexdump` を使うのがよいでしょう。"
 
 #: of pwnlib.util.fiddling.hexdump_iter:7
-msgid ""
-"File object to dump.  Use :class:`io.BytesIO` or :meth:`hexdump` to dump "
-"a byte string."
-msgstr ""
+msgid "File object to dump.  Use :class:`io.BytesIO` or :meth:`hexdump` to dump a byte string."
+msgstr "ダンプするファイルオブジェクト。バイト列をダンプするには :class:`io.BytesIO` か :meth:`hexdump` を使います。"
 
 #: of pwnlib.util.fiddling.hexdump_iter:28
 msgid "A generator producing the hexdump-dump one line at a time."
-msgstr ""
+msgstr "hexdump を 1 行ずつ生成するジェネレータ。"
 
 #: of pwnlib.util.fiddling.hexii:1
 msgid "Return a HEXII-dump of a string."
-msgstr ""
+msgstr "文字列の HEXII-dump を返します。"
 
 #: of pwnlib.util.fiddling.hexii:3
 msgid "The bytes to dump"
@@ -2854,25 +2548,23 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.hexii:7
 msgid "Should repeated lines be replaced by a \"*\""
-msgstr ""
+msgstr "繰り返しの行を \"*\" に置き換えるかどうか。"
 
 #: of pwnlib.util.fiddling.hexii:10
 msgid "A HEXII-dump in the form of a string."
-msgstr ""
+msgstr "文字列の形式の HEXII-dump。"
 
 #: of pwnlib.util.fiddling.hexstr:1
 msgid "Escapes byte string into a C representation."
-msgstr ""
+msgstr "バイト列を C の表現にエスケープします。"
 
 #: of pwnlib.util.fiddling.isprint:1
 msgid "Return True if a character is printable"
 msgstr ""
 
 #: of pwnlib.util.fiddling.js_escape:1
-msgid ""
-"Pack data as an escaped Unicode string for use in JavaScript's "
-"`unescape()` function"
-msgstr ""
+msgid "Pack data as an escaped Unicode string for use in JavaScript's `unescape()` function"
+msgstr "JavaScript の `unescape()` 関数で使うために、データをエスケープした Unicode 文字列としてパックします。"
 
 #: of pwnlib.util.fiddling.js_escape:3
 msgid "Bytes to pack"
@@ -2884,7 +2576,7 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.js_escape:7
 msgid "Endianness with which to pack the string (\"little\"/\"big\")"
-msgstr ""
+msgstr "文字列をパックするときのエンディアン(\"little\"/\"big\")。"
 
 #: of pwnlib.util.fiddling.js_escape:10
 msgid "A string representation of the packed data"
@@ -2892,7 +2584,7 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.js_unescape:1
 msgid "Unpack an escaped Unicode string from JavaScript's `escape()` function"
-msgstr ""
+msgstr "JavaScript の `escape()` 関数が出力するエスケープ済みの Unicode 文字列をアンパックします。"
 
 #: of pwnlib.util.fiddling.js_unescape:3
 msgid "Escaped string to unpack"
@@ -2900,89 +2592,76 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.js_unescape:5
 msgid "Endianness with which to unpack the string (\"little\"/\"big\")"
-msgstr ""
+msgstr "文字列をアンパックするときのエンディアン(\"little\"/\"big\")。"
 
 #: of pwnlib.util.fiddling.js_unescape:8
 msgid "A bytes representation of the unpacked data"
 msgstr ""
 
 #: of pwnlib.util.fiddling.naf:1
-msgid ""
-"Returns a generator for the non-adjacent form (NAF[1]) of a number, `n`."
-"  If `naf(n)` generates `z_0, z_1, ...`, then `n == z_0 + z_1 * 2 + z_2 *"
-" 2**2, ...`."
-msgstr ""
+msgid "Returns a generator for the non-adjacent form (NAF[1]) of a number, `n`.  If `naf(n)` generates `z_0, z_1, ...`, then `n == z_0 + z_1 * 2 + z_2 * 2**2, ...`."
+msgstr "数値 `n` の非隣接形式(NAF[1])のジェネレータを返します。`naf(n)` が `z_0, z_1, ...` を生成するとき、`n == z_0 + z_1 * 2 + z_2 * 2**2, ...` が成り立ちます。"
 
 #: of pwnlib.util.fiddling.naf:5
 msgid "[1] https://en.wikipedia.org/wiki/Non-adjacent_form"
-msgstr ""
+msgstr "[1] https://en.wikipedia.org/wiki/Non-adjacent_form"
 
 #: of pwnlib.util.fiddling.negate:1
 msgid "Returns the two's complement of 'value'."
-msgstr ""
+msgstr "'value' の 2 の補数を返します。"
 
 #: of pwnlib.util.fiddling.randoms:1
-msgid ""
-"Returns a random string of a given length using only the specified "
-"alphabet."
-msgstr ""
+msgid "Returns a random string of a given length using only the specified alphabet."
+msgstr "指定した alphabet だけを使った、指定した長さのランダムな文字列を返します。"
 
 #: of pwnlib.util.fiddling.randoms:3
 msgid "The length of the desired string."
-msgstr ""
+msgstr "文字列の望ましい長さ。"
 
 #: of pwnlib.util.fiddling.randoms:5
 msgid "The alphabet of allowed characters. Defaults to all lowercase characters."
-msgstr ""
+msgstr "使用できる文字の alphabet。既定はすべての小文字です。"
 
 #: of pwnlib.util.fiddling.randoms:7
 msgid "A random string."
-msgstr ""
+msgstr "ランダムな文字列。"
 
 #: of pwnlib.util.fiddling.rol:1
 msgid "Returns a rotation by `k` of `n`."
-msgstr ""
+msgstr "`n` を `k` だけ回転した値を返します。"
 
 #: of pwnlib.util.fiddling.rol:3
-msgid ""
-"When `n` is a number, then means ``((n << k) | (n >> (word_size - k)))`` "
-"truncated to `word_size` bits."
-msgstr ""
+msgid "When `n` is a number, then means ``((n << k) | (n >> (word_size - k)))`` truncated to `word_size` bits."
+msgstr "`n` が数値のときは、`word_size` ビットに切り詰めた ``((n << k) | (n >> (word_size - k)))`` を意味します。"
 
 #: of pwnlib.util.fiddling.rol:5
 #, python-format
-msgid ""
-"When `n` is a list, tuple or string, this is ``n[k % len(n):] + n[:k % "
-"len(n)]``."
-msgstr ""
+msgid "When `n` is a list, tuple or string, this is ``n[k % len(n):] + n[:k % len(n)]``."
+msgstr "`n` がリスト、タプル、文字列のときは、``n[k % len(n):] + n[:k % len(n)]`` です。"
 
 #: of pwnlib.util.fiddling.rol:7
 msgid "The value to rotate."
-msgstr ""
+msgstr "回転する値。"
 
 #: of pwnlib.util.fiddling.rol:8
 msgid "The rotation amount. Can be a positive or negative number."
-msgstr ""
+msgstr "回転量。正の数でも負の数でも指定できます。"
 
 #: of pwnlib.util.fiddling.rol:10
-msgid ""
-"If `n` is a number, then this is the assumed bitsize of `n`.  Defaults to"
-" :data:`pwnlib.context.word_size` if `None` ."
-msgstr ""
+msgid "If `n` is a number, then this is the assumed bitsize of `n`.  Defaults to :data:`pwnlib.context.word_size` if `None` ."
+msgstr "`n` が数値の場合の、`n` のビット幅として仮定する値。`None` の場合の既定は :data:`pwnlib.context.word_size` です。"
 
 #: of pwnlib.util.fiddling.ror:1
 msgid "A simple wrapper around :func:`rol`, which negates the values of `k`."
-msgstr ""
+msgstr ":func:`rol` の簡単なラッパーで、`k` の符号を反転します。"
 
 #: of pwnlib.util.fiddling.tty_escape:1
-msgid ""
-"Escape data for terminal output. This is useful when sending data to a "
-"terminal that may interpret certain bytes as control characters."
-msgstr ""
+msgid "Escape data for terminal output. This is useful when sending data to a terminal that may interpret certain bytes as control characters."
+msgstr "端末への出力用にデータをエスケープします。特定のバイトを制御文字として解釈する可能性のある端末にデータを送るときに便利です。"
 
 #: of pwnlib.util.fiddling.tty_escape:4
 msgid "Check ``stty --all`` for the current settings on your terminal."
-msgstr ""
+msgstr "端末の現在の設定は ``stty --all`` で確認してください。"
 
 #: of pwnlib.util.fiddling.tty_escape:6
 msgid "The data to escape"
@@ -2990,7 +2669,7 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.tty_escape:8
 msgid "The byte to prepend to escape the next character. Defaults to ^V."
-msgstr ""
+msgstr "次の文字をエスケープするために前に付けるバイト。既定は ^V です。"
 
 #: of pwnlib.util.fiddling.tty_escape:10
 msgid "The bytes to escape"
@@ -2998,11 +2677,11 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.tty_escape:13
 msgid "The escaped data."
-msgstr ""
+msgstr "エスケープしたデータ。"
 
 #: of pwnlib.util.fiddling.unbits:1
 msgid "Converts an iterable of bits into a string."
-msgstr ""
+msgstr "ビットのイテラブルを文字列に変換します。"
 
 #: of pwnlib.util.fiddling.unbits:3
 msgid "Iterable of bits"
@@ -3010,89 +2689,75 @@ msgstr ""
 
 #: of pwnlib.util.fiddling.unbits:4
 msgid "The string \"little\" or \"big\", which specifies the bits endianness."
-msgstr ""
+msgstr "ビットのエンディアンを指定する文字列 \"little\" または \"big\"。"
 
 #: of pwnlib.util.fiddling.unbits:7
 msgid "A string of the decoded bits."
-msgstr ""
+msgstr "デコードしたビットの文字列。"
 
 #: of pwnlib.util.fiddling.unhex:1
 msgid "Hex-decodes a string."
-msgstr ""
+msgstr "16 進数の文字列をデコードします。"
 
 #: of pwnlib.util.fiddling.urldecode:1
 msgid "URL-decodes a string."
-msgstr ""
+msgstr "文字列を URL デコードします。"
 
 #: of pwnlib.util.fiddling.urlencode:1
 msgid "URL-encodes a string."
-msgstr ""
+msgstr "文字列を URL エンコードします。"
 
 #: of pwnlib.util.fiddling.xor:1
-msgid ""
-"Flattens its arguments using :func:`pwnlib.util.packing.flat` and then "
-"xors them together. If the end of a string is reached, it wraps around in"
-" the string."
-msgstr ""
+msgid "Flattens its arguments using :func:`pwnlib.util.packing.flat` and then xors them together. If the end of a string is reached, it wraps around in the string."
+msgstr "引数を :func:`pwnlib.util.packing.flat` で平坦化し、すべてを xor します。文字列の終わりに達した場合は、その文字列の先頭に戻って続けます。"
 
 #: of pwnlib.util.fiddling.xor:5
 msgid "The arguments to be xor'ed together."
-msgstr ""
+msgstr "xor する引数。"
 
 #: of pwnlib.util.fiddling.xor:6
-msgid ""
-"How long a string should be returned. Can be either "
-"'min'/'max'/'left'/'right' or a number."
-msgstr ""
+msgid "How long a string should be returned. Can be either 'min'/'max'/'left'/'right' or a number."
+msgstr "返す文字列の長さ。'min'/'max'/'left'/'right' のいずれか、または数値を指定できます。"
 
 #: of pwnlib.util.fiddling.xor:9
 msgid "The string of the arguments xor'ed together."
-msgstr ""
+msgstr "引数を xor した文字列。"
 
 #: of pwnlib.util.fiddling.xor_key:1
-msgid ""
-"Finds a ``size``-width value that can be XORed with a string to produce "
-"``data``, while neither the XOR value or XOR string contain any bytes in "
-"``avoid``."
-msgstr ""
+msgid "Finds a ``size``-width value that can be XORed with a string to produce ``data``, while neither the XOR value or XOR string contain any bytes in ``avoid``."
+msgstr "文字列と XOR すると ``data`` になる ``size`` 幅の値を探します。XOR する値と XOR する文字列のどちらにも、``avoid`` のバイトを含めません。"
 
 #: of pwnlib.util.fiddling.xor_key:5 pwnlib.util.fiddling.xor_pair:4
 msgid "The desired string."
-msgstr ""
+msgstr "目的の文字列。"
 
 #: of pwnlib.util.fiddling.xor_key:7 pwnlib.util.fiddling.xor_pair:6
 msgid "The list of disallowed characters. Defaults to nulls and newlines."
-msgstr ""
+msgstr "使用できない文字のリスト。既定は NUL と改行です。"
 
 #: of pwnlib.util.fiddling.xor_key:8
 msgid "Size of the desired output value, default is word size."
-msgstr ""
+msgstr "出力する値の大きさ。既定はワードサイズです。"
 
 #: of pwnlib.util.fiddling.xor_key:11
-msgid ""
-"A tuple containing two byte strings; the XOR key and the XOR string. If "
-"no such pair exists, None is returned."
-msgstr ""
+msgid "A tuple containing two byte strings; the XOR key and the XOR string. If no such pair exists, None is returned."
+msgstr "2 つのバイト列からなるタプル(XOR の鍵と XOR する文字列)。そのような組がなければ None を返します。"
 
 #: of pwnlib.util.fiddling.xor_pair:1
-msgid ""
-"Finds two strings that will xor into a given string, while only using a "
-"given alphabet."
-msgstr ""
+msgid "Finds two strings that will xor into a given string, while only using a given alphabet."
+msgstr "指定した alphabet だけを使い、xor すると与えられた文字列になる 2 つの文字列を探します。"
 
 #: of pwnlib.util.fiddling.xor_pair:8
-msgid ""
-"Two strings which will xor to the given string. If no such two strings "
-"exist, then None is returned."
-msgstr ""
+msgid "Two strings which will xor to the given string. If no such two strings exist, then None is returned."
+msgstr "xor すると与えられた文字列になる 2 つの文字列。そのような 2 つの文字列がなければ None を返します。"
 
 #: ../pwntools/docs/source/util/getdents.rst:8
 msgid ":mod:`pwnlib.util.getdents` --- Linux binary directory listing"
-msgstr ""
+msgstr ":mod:`pwnlib.util.getdents` --- Linux のバイナリ形式のディレクトリ一覧"
 
 #: of pwnlib.util.getdents.Dtype.__format__:1
 msgid "Convert to a string according to format_spec."
-msgstr ""
+msgstr "format_spec に従って文字列に変換します。"
 
 #: of pwnlib.util.getdents.linux_dirent:1
 msgid "Represent struct linux_dirent"
@@ -3100,7 +2765,7 @@ msgstr ""
 
 #: of pwnlib.util.getdents.linux_dirent.__str__:1
 msgid "Return str(self)."
-msgstr ""
+msgstr "str(self) を返します。"
 
 #: of pwnlib.util.getdents.dirents:1
 msgid "Extracts data from a buffer emitted by getdents"
@@ -3128,11 +2793,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/util/hashes.rst:2
 msgid ":mod:`pwnlib.util.hashes` --- Hashing functions"
-msgstr ""
+msgstr ":mod:`pwnlib.util.hashes` --- ハッシュ関数"
 
 #: of pwnlib.util.hashes:1
 msgid "Functions for computing various hashes of files and strings."
-msgstr ""
+msgstr "ファイルや文字列のさまざまなハッシュを計算する関数です。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a file"
@@ -3140,7 +2805,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの blake2b 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a string"
@@ -3148,7 +2813,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2b sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の blake2b 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a file"
@@ -3156,7 +2821,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの blake2s 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a string"
@@ -3164,7 +2829,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the blake2s sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の blake2s 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a file"
@@ -3172,7 +2837,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの md5 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a string"
@@ -3180,7 +2845,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the md5 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の md5 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a file"
@@ -3188,7 +2853,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha1 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a string"
@@ -3196,7 +2861,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha1 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha1 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a file"
@@ -3204,7 +2869,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha224 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a string"
@@ -3212,7 +2877,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha224 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha224 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a file"
@@ -3220,7 +2885,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha256 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a string"
@@ -3228,7 +2893,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha256 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha256 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a file"
@@ -3236,7 +2901,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha384 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a string"
@@ -3244,7 +2909,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha384 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha384 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a file"
@@ -3252,7 +2917,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha3_224 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a string"
@@ -3260,7 +2925,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_224 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha3_224 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a file"
@@ -3268,7 +2933,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha3_256 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a string"
@@ -3276,7 +2941,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_256 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha3_256 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a file"
@@ -3284,7 +2949,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha3_384 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a string"
@@ -3292,7 +2957,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_384 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha3_384 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a file"
@@ -3300,7 +2965,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha3_512 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a string"
@@ -3308,7 +2973,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha3_512 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha3_512 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a file"
@@ -3316,7 +2981,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの sha512 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a string"
@@ -3324,7 +2989,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the sha512 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の sha512 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a file"
@@ -3332,7 +2997,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの shake_128 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a string"
@@ -3340,7 +3005,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_128 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の shake_128 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a file"
@@ -3348,7 +3013,7 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a file; returns hex-encoded"
-msgstr ""
+msgstr "ファイルの shake_256 和を計算し、16 進数にエンコードして返します。"
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a string"
@@ -3356,19 +3021,19 @@ msgstr ""
 
 #: of pwnlib.util.hashes._closure.<locals>.<lambda>:1
 msgid "Calculates the shake_256 sum of a string; returns hex-encoded"
-msgstr ""
+msgstr "文字列の shake_256 和を計算し、16 進数にエンコードして返します。"
 
 #: ../pwntools/docs/source/util/iters.rst:8
 msgid ":mod:`pwnlib.util.iters` --- Extension of standard module :mod:`itertools`"
-msgstr ""
+msgstr ":mod:`pwnlib.util.iters` --- 標準モジュール :mod:`itertools` の拡張"
 
 #: of pwnlib.util.iters:1
 msgid "This module includes and extends the standard module :mod:`itertools`."
-msgstr ""
+msgstr "このモジュールは、標準モジュール :mod:`itertools` を含み、さらに拡張します。"
 
 #: itertools.pairwise:1 of
 msgid "Return an iterator of overlapping pairs taken from the input iterator."
-msgstr ""
+msgstr "入力のイテレータから取り出した、重なりのあるペアのイテレータを返します。"
 
 #: itertools.pairwise:3 of
 msgid "s -> (s0,s1), (s1,s2), (s2, s3), ..."
@@ -3376,88 +3041,71 @@ msgstr ""
 
 #: of pwnlib.util.iters.pairwise.__getattribute__:1
 msgid "Return getattr(self, name)."
-msgstr ""
+msgstr "getattr(self, name) を返します。"
 
 #: of pwnlib.util.iters.pairwise.__iter__:1
 msgid "Implement iter(self)."
-msgstr ""
+msgstr "iter(self) を実装します。"
 
 #: of pwnlib.util.iters.pairwise.__next__:1
 msgid "Implement next(self)."
-msgstr ""
+msgstr "next(self) を実装します。"
 
 #: of pwnlib.util.iters.bruteforce:1
-msgid ""
-"Bruteforce `func` to return :const:`True`.  `func` should take a string "
-"input and return a :func:`bool`.  `func` will be called with strings from"
-" `alphabet` until it returns :const:`True` or the search space has been "
-"exhausted."
-msgstr ""
+msgid "Bruteforce `func` to return :const:`True`.  `func` should take a string input and return a :func:`bool`.  `func` will be called with strings from `alphabet` until it returns :const:`True` or the search space has been exhausted."
+msgstr "`func` が :const:`True` を返すように総当たりします。`func` は文字列を受け取って :func:`bool` を返す関数にします。`func` は、:const:`True` を返すか探索空間を調べ尽くすまで、`alphabet` の文字からなる文字列で呼び出されます。"
 
 #: of pwnlib.util.iters.bruteforce:6
-msgid ""
-"The argument `start` can be used to split the search space, which is "
-"useful if multiple CPU cores are available."
-msgstr ""
+msgid "The argument `start` can be used to split the search space, which is useful if multiple CPU cores are available."
+msgstr "引数 `start` で探索空間を分割できます。複数の CPU コアが使える場合に便利です。"
 
 #: of pwnlib.util.iters.bruteforce:9
 msgid "The function to bruteforce."
-msgstr ""
+msgstr "総当たりする関数。"
 
 #: of pwnlib.util.iters.bruteforce:11 pwnlib.util.iters.lexicographic:4
 msgid "The alphabet to draw symbols from."
-msgstr ""
+msgstr "記号を取り出す元の alphabet。"
 
 #: of pwnlib.util.iters.bruteforce:12
 msgid "Longest string to try."
-msgstr ""
+msgstr "試す文字列の最大の長さ。"
 
 #: of pwnlib.util.iters.bruteforce:13
-msgid ""
-"If 'upto' try strings of length ``1 .. length``, if 'fixed' only try "
-"strings of length ``length`` and if 'downfrom' try strings of length "
-"``length .. 1``."
-msgstr ""
+msgid "If 'upto' try strings of length ``1 .. length``, if 'fixed' only try strings of length ``length`` and if 'downfrom' try strings of length ``length .. 1``."
+msgstr "'upto' なら長さ ``1 .. length`` の文字列を、'fixed' なら長さ ``length`` の文字列だけを、'downfrom' なら長さ ``length .. 1`` の文字列を試します。"
 
 #: of pwnlib.util.iters.bruteforce:16
-msgid ""
-"a tuple ``(i, N)`` which splits the search space up into `N` pieces and "
-"starts at piece `i` (1..N). :const:`None` is equivalent to ``(1, 1)``."
-msgstr ""
+msgid "a tuple ``(i, N)`` which splits the search space up into `N` pieces and starts at piece `i` (1..N). :const:`None` is equivalent to ``(1, 1)``."
+msgstr "探索空間を `N` 個に分割し、`i` 番目(1..N)から始めることを表すタプル ``(i, N)``。:const:`None` は ``(1, 1)`` と同じです。"
 
 #: of pwnlib.util.iters.bruteforce:19
-msgid ""
-"A string `s` such that ``func(s)`` returns :const:`True` or :const:`None`"
-" if the search space was exhausted."
-msgstr ""
+msgid "A string `s` such that ``func(s)`` returns :const:`True` or :const:`None` if the search space was exhausted."
+msgstr "``func(s)`` が :const:`True` を返す文字列 `s`。探索空間を調べ尽くした場合は :const:`None`。"
 
 #: of pwnlib.util.iters.chained:1
 msgid "A decorator chaining the results of `func`.  Useful for generators."
-msgstr ""
+msgstr "`func` の結果を連結するデコレータです。ジェネレータで便利です。"
 
 #: of pwnlib.util.iters.chained:3
 msgid "The function being decorated."
-msgstr ""
+msgstr "デコレートする関数。"
 
 #: of pwnlib.util.iters.chained:6
-msgid ""
-"A generator function whoose elements are the concatenation of the return "
-"values from ``func(*args, **kwargs)``."
-msgstr ""
+msgid "A generator function whoose elements are the concatenation of the return values from ``func(*args, **kwargs)``."
+msgstr "``func(*args, **kwargs)`` の戻り値を連結したものを要素とするジェネレータ関数。"
 
 #: of pwnlib.util.iters.consume:1
-msgid ""
-"Advance the iterator `n` steps ahead. If `n is :const:`None`, consume "
-"everything."
-msgstr ""
+msgid "Advance the iterator `n` steps ahead. If `n is :const:`None`, consume everything."
+msgstr "イテレータを `n` ステップ先に進めます。`n is :const:`None` の場合は、すべてを消費します。"
 
 #: of pwnlib.util.iters.consume:4
 msgid "Number of elements to consume."
-msgstr ""
+msgstr "消費する要素の数。"
 
 #: of pwnlib.util.iters.consume:6
 msgid "An iterator."
-msgstr ""
+msgstr "イテレータ。"
 
 #: of pwnlib.util.iters.consume:9
 msgid ":const:`None`."
@@ -3465,11 +3113,11 @@ msgstr ""
 
 #: of pwnlib.util.iters.cyclen:1
 msgid "Repeats the elements of `iterable` `n` times."
-msgstr ""
+msgstr "`iterable` の要素を `n` 回繰り返します。"
 
 #: of pwnlib.util.iters.cyclen:3
 msgid "The number of times to repeat `iterable`."
-msgstr ""
+msgstr "`iterable` を繰り返す回数。"
 
 #: of pwnlib.util.iters.cyclen:5 pwnlib.util.iters.dotproduct:3
 #: pwnlib.util.iters.dotproduct:5 pwnlib.util.iters.group:6
@@ -3480,97 +3128,75 @@ msgstr ""
 #: pwnlib.util.iters.unique_everseen:6 pwnlib.util.iters.unique_justseen:8
 #: pwnlib.util.iters.unique_window:8
 msgid "An iterable."
-msgstr ""
+msgstr "イテラブル。"
 
 #: of pwnlib.util.iters.cyclen:7
-msgid ""
-"An iterator whoose elements are the elements of `iterator` repeated `n` "
-"times."
-msgstr ""
+msgid "An iterator whoose elements are the elements of `iterator` repeated `n` times."
+msgstr "`iterator` の要素を `n` 回ずつ繰り返したものを要素とするイテレータ。"
 
 #: of pwnlib.util.iters.dotproduct:1
 msgid "Computes the dot product of `x` and `y`."
-msgstr ""
+msgstr "`x` と `y` の内積を計算します。"
 
 #: of pwnlib.util.iters.dotproduct:8
-msgid ""
-"The dot product of `x` and `y`, i.e. -- ``x[0] * y[0] + x[1] * y[1] + "
-"...``."
-msgstr ""
+msgid "The dot product of `x` and `y`, i.e. -- ``x[0] * y[0] + x[1] * y[1] + ...``."
+msgstr "`x` と `y` の内積。つまり ``x[0] * y[0] + x[1] * y[1] + ...``。"
 
 #: of pwnlib.util.iters.flatten:1
-msgid ""
-"Flattens one level of nesting; when `xss` is an iterable of iterables, "
-"returns an iterator whoose elements is the concatenation of the elements "
-"of `xss`."
-msgstr ""
+msgid "Flattens one level of nesting; when `xss` is an iterable of iterables, returns an iterator whoose elements is the concatenation of the elements of `xss`."
+msgstr "入れ子を 1 段階だけ平坦化します。`xss` がイテラブルのイテラブルの場合、`xss` の要素を連結したものを要素とするイテレータを返します。"
 
 #: of pwnlib.util.iters.flatten:5
 msgid "An iterable of iterables."
-msgstr ""
+msgstr "イテラブルのイテラブル。"
 
 #: of pwnlib.util.iters.flatten:7
-msgid ""
-"An iterator whoose elements are the concatenation of the iterables in "
-"`xss`."
-msgstr ""
+msgid "An iterator whoose elements are the concatenation of the iterables in `xss`."
+msgstr "`xss` のイテラブルを連結したものを要素とするイテレータ。"
 
 #: of pwnlib.util.iters.group:1
-msgid ""
-"Similar to :func:`pwnlib.util.lists.group`, but returns an iterator and "
-"uses :mod:`itertools` fast build-in functions."
-msgstr ""
+msgid "Similar to :func:`pwnlib.util.lists.group`, but returns an iterator and uses :mod:`itertools` fast build-in functions."
+msgstr ":func:`pwnlib.util.lists.group` と似ていますが、イテレータを返し、:mod:`itertools` の高速な組み込み関数を使います。"
 
 #: of pwnlib.util.iters.group:4
 msgid "The group size."
-msgstr ""
+msgstr "グループの大きさ。"
 
 #: of pwnlib.util.iters.group:7
-msgid ""
-"The value to fill into the remaining slots of the last group if the `n` "
-"does not divide the number of elements in `iterable`."
-msgstr ""
+msgid "The value to fill into the remaining slots of the last group if the `n` does not divide the number of elements in `iterable`."
+msgstr "`n` が `iterable` の要素数を割り切れない場合に、最後のグループの残りの枠を埋める値。"
 
 #: of pwnlib.util.iters.group:10
 msgid "An iterator whoose elements are `n`-tuples of the elements of `iterable`."
-msgstr ""
+msgstr "`iterable` の要素の `n` 個組(タプル)を要素とするイテレータ。"
 
 #: of pwnlib.util.iters.iter_except:1
-msgid ""
-"Calls `func` repeatedly until an exception is raised.  Works like the "
-"build-in :func:`iter` but uses an exception instead of a sentinel to "
-"signal the end."
-msgstr ""
+msgid "Calls `func` repeatedly until an exception is raised.  Works like the build-in :func:`iter` but uses an exception instead of a sentinel to signal the end."
+msgstr "例外が発生するまで `func` を繰り返し呼び出します。組み込みの :func:`iter` と同様に動きますが、終わりを番兵値ではなく例外で知らせます。"
 
 #: of pwnlib.util.iters.iter_except:5 pwnlib.util.iters.repeat_func:6
 msgid "The function to call."
-msgstr ""
+msgstr "呼び出す関数。"
 
 #: of pwnlib.util.iters.iter_except:7
 msgid "The exception that signals the end.  Other exceptions will not be caught."
-msgstr ""
+msgstr "終わりを知らせる例外。ほかの例外は捕捉されません。"
 
 #: of pwnlib.util.iters.iter_except:11
-msgid ""
-"An iterator whoose elements are the results of calling ``func()`` until "
-"an exception matching `exception` is raised."
-msgstr ""
+msgid "An iterator whoose elements are the results of calling ``func()`` until an exception matching `exception` is raised."
+msgstr "`exception` に一致する例外が発生するまで ``func()`` を呼び出した結果を要素とするイテレータ。"
 
 #: of pwnlib.util.iters.lexicographic:1
-msgid ""
-"The words with symbols in `alphabet`, in lexicographic order (determined "
-"by the order of `alphabet`)."
-msgstr ""
+msgid "The words with symbols in `alphabet`, in lexicographic order (determined by the order of `alphabet`)."
+msgstr "`alphabet` の記号からなる単語を、辞書式順序(`alphabet` の順で決まる)で並べたもの。"
 
 #: of pwnlib.util.iters.lexicographic:6
-msgid ""
-"An iterator of the words with symbols in `alphabet`, in lexicographic "
-"order."
-msgstr ""
+msgid "An iterator of the words with symbols in `alphabet`, in lexicographic order."
+msgstr "`alphabet` の記号からなる単語を、辞書式順序で返すイテレータ。"
 
 #: of pwnlib.util.iters.mbruteforce:1
 msgid "Same functionality as bruteforce(), but multithreaded."
-msgstr ""
+msgstr "bruteforce() と同じ機能ですが、マルチスレッドで動きます。"
 
 #: of pwnlib.util.iters.mbruteforce:3 pwnlib.util.iters.mbruteforce:4
 #: pwnlib.util.iters.mbruteforce:5 pwnlib.util.iters.mbruteforce:6
@@ -3580,108 +3206,92 @@ msgstr ""
 
 #: of pwnlib.util.iters.mbruteforce:8
 msgid "Amount of threads to spawn, default is the amount of cores."
-msgstr ""
+msgstr "起動するスレッドの数。既定はコア数です。"
 
 #: of pwnlib.util.iters.mbruteforce:10
 msgid "Example:"
 msgstr ""
 
 #: of pwnlib.util.iters.nth:1
-msgid ""
-"Returns the element at index `n` in `iterable`.  If `iterable` is a "
-"iterator it will be advanced."
-msgstr ""
+msgid "Returns the element at index `n` in `iterable`.  If `iterable` is a iterator it will be advanced."
+msgstr "`iterable` のインデックス `n` の要素を返します。`iterable` がイテレータの場合は、先に進められます。"
 
 #: of pwnlib.util.iters.nth:4
 msgid "Index of the element to return."
-msgstr ""
+msgstr "返す要素のインデックス。"
 
 #: of pwnlib.util.iters.nth:7
 msgid "A default value."
-msgstr ""
+msgstr "既定値。"
 
 #: of pwnlib.util.iters.nth:10
-msgid ""
-"The element at index `n` in `iterable` or `default` if `iterable` has too"
-" few elements."
-msgstr ""
+msgid "The element at index `n` in `iterable` or `default` if `iterable` has too few elements."
+msgstr "`iterable` のインデックス `n` の要素。`iterable` の要素が足りない場合は `default`。"
 
 #: of pwnlib.util.iters.pad:1
-msgid ""
-"Pad an `iterable` with `value`, i.e. returns an iterator whoose elements "
-"are first the elements of `iterable` then `value` indefinitely."
-msgstr ""
+msgid "Pad an `iterable` with `value`, i.e. returns an iterator whoose elements are first the elements of `iterable` then `value` indefinitely."
+msgstr "`iterable` を `value` で埋めます。つまり、最初は `iterable` の要素で、そのあとは `value` が無限に続くイテレータを返します。"
 
 #: of pwnlib.util.iters.pad:5
 msgid "The value to pad with."
-msgstr ""
+msgstr "埋める値。"
 
 #: of pwnlib.util.iters.pad:7
-msgid ""
-"An iterator whoose elements are first the elements of `iterable` then "
-"`value` indefinitely."
-msgstr ""
+msgid "An iterator whoose elements are first the elements of `iterable` then `value` indefinitely."
+msgstr "最初は `iterable` の要素で、そのあとは `value` が無限に続くイテレータ。"
 
 #: of pwnlib.util.iters.powerset:1
 msgid "The powerset of an iterable."
-msgstr ""
+msgstr "イテラブルのべき集合。"
 
 #: of pwnlib.util.iters.powerset:4
 msgid "Whether to include the empty set."
-msgstr ""
+msgstr "空集合を含めるかどうか。"
 
 #: of pwnlib.util.iters.powerset:7
 msgid "The powerset of `iterable` as an interator of tuples."
-msgstr ""
+msgstr "`iterable` のべき集合を、タプルのイテレータとして返したもの。"
 
 #: of pwnlib.util.iters.quantify:1
 msgid "Count how many times the predicate `pred` is :const:`True`."
-msgstr ""
+msgstr "述語 `pred` が :const:`True` になる回数を数えます。"
 
 #: of pwnlib.util.iters.quantify:4
-msgid ""
-"A function that given an element from `iterable` returns either "
-":const:`True` or :const:`False`."
-msgstr ""
+msgid "A function that given an element from `iterable` returns either :const:`True` or :const:`False`."
+msgstr "`iterable` の要素を受け取り、:const:`True` か :const:`False` を返す関数。"
 
 #: of pwnlib.util.iters.quantify:7
-msgid ""
-"The number of elements in `iterable` for which `pred` returns "
-":const:`True`."
-msgstr ""
+msgid "The number of elements in `iterable` for which `pred` returns :const:`True`."
+msgstr "`iterable` の要素のうち、`pred` が :const:`True` を返すものの数。"
 
 #: of pwnlib.util.iters.random_combination:2
 #: pwnlib.util.iters.random_combination_with_replacement:4
 msgid "Size of the combination."
-msgstr ""
+msgstr "組み合わせの大きさ。"
 
 #: of pwnlib.util.iters.random_combination:5
 msgid "A random element from ``itertools.combinations(iterable, r = r)``."
-msgstr ""
+msgstr "``itertools.combinations(iterable, r = r)`` からのランダムな要素。"
 
 #: of pwnlib.util.iters.random_combination_with_replacement:1
 msgid "random_combination(iterable, r) -> tuple"
 msgstr ""
 
 #: of pwnlib.util.iters.random_combination_with_replacement:7
-msgid ""
-"A random element from ``itertools.combinations_with_replacement(iterable,"
-" r = r)``."
-msgstr ""
+msgid "A random element from ``itertools.combinations_with_replacement(iterable, r = r)``."
+msgstr "``itertools.combinations_with_replacement(iterable, r = r)`` からのランダムな要素。"
 
 #: of pwnlib.util.iters.random_permutation:1
 msgid "random_product(iterable, r = None) -> tuple"
 msgstr ""
 
 #: of pwnlib.util.iters.random_permutation:4
-msgid ""
-"Size of the permutation.  If :const:`None` select all elements in "
-"`iterable`."
-msgstr ""
+msgid "Size of the permutation.  If :const:`None` select all elements in `iterable`."
+msgstr "順列の大きさ。:const:`None` の場合は `iterable` のすべての要素を選びます。"
 
 #: of pwnlib.util.iters.random_permutation:8
 msgid "A random element from ``itertools.permutations(iterable, r = r)``."
-msgstr ""
+msgstr "``itertools.permutations(iterable, r = r)`` からのランダムな要素。"
 
 #: of pwnlib.util.iters.random_product:1
 msgid "One or more iterables"
@@ -3689,123 +3299,97 @@ msgstr ""
 
 #: of pwnlib.util.iters.random_product:2
 msgid "Number of times to repeat `args`."
-msgstr ""
+msgstr "`args` を繰り返す回数。"
 
 #: of pwnlib.util.iters.random_product:5
 msgid "A random element from ``itertools.product(*args, repeat = repeat)``."
-msgstr ""
+msgstr "``itertools.product(*args, repeat = repeat)`` からのランダムな要素。"
 
 #: of pwnlib.util.iters.repeat_func:1
-msgid ""
-"Repeatedly calls `func` with positional arguments `args` and keyword "
-"arguments `kwargs`.  If no keyword arguments is given the resulting "
-"iterator will be computed using only functions from :mod:`itertools` "
-"which are very fast."
-msgstr ""
+msgid "Repeatedly calls `func` with positional arguments `args` and keyword arguments `kwargs`.  If no keyword arguments is given the resulting iterator will be computed using only functions from :mod:`itertools` which are very fast."
+msgstr "位置引数 `args` とキーワード引数 `kwargs` で `func` を繰り返し呼び出します。キーワード引数を指定しない場合、結果のイテレータは、非常に高速な :mod:`itertools` の関数だけで計算されます。"
 
 #: of pwnlib.util.iters.repeat_func:8
 msgid "Positional arguments."
-msgstr ""
+msgstr "位置引数。"
 
 #: of pwnlib.util.iters.repeat_func:9
 msgid "Keyword arguments."
-msgstr ""
+msgstr "キーワード引数。"
 
 #: of pwnlib.util.iters.repeat_func:11
-msgid ""
-"An iterator whoose elements are the results of calling ``func(*args, "
-"**kwargs)`` repeatedly."
-msgstr ""
+msgid "An iterator whoose elements are the results of calling ``func(*args, **kwargs)`` repeatedly."
+msgstr "``func(*args, **kwargs)`` を繰り返し呼び出した結果を要素とするイテレータ。"
 
 #: of pwnlib.util.iters.roundrobin:1
 msgid "Take elements from `iterables` in a round-robin fashion."
-msgstr ""
+msgstr "`iterables` から、ラウンドロビン方式で要素を取り出します。"
 
 #: of pwnlib.util.iters.roundrobin:3
 msgid "One or more iterables."
-msgstr ""
+msgstr "1 つ以上のイテラブル。"
 
 #: of pwnlib.util.iters.roundrobin:5
-msgid ""
-"An iterator whoose elements are taken from `iterables` in a round-robin "
-"fashion."
-msgstr ""
+msgid "An iterator whoose elements are taken from `iterables` in a round-robin fashion."
+msgstr "`iterables` からラウンドロビン方式で取り出した要素を要素とするイテレータ。"
 
 #: of pwnlib.util.iters.tabulate:1
 msgid "The function to tabulate over."
-msgstr ""
+msgstr "表にする対象の関数。"
 
 #: of pwnlib.util.iters.tabulate:3
 msgid "Number to start on."
-msgstr ""
+msgstr "開始する数。"
 
 #: of pwnlib.util.iters.tabulate:6
 msgid "An iterator with the elements ``func(start), func(start + 1), ...``."
-msgstr ""
+msgstr "要素が ``func(start), func(start + 1), ...`` のイテレータ。"
 
 #: of pwnlib.util.iters.take:1
-msgid ""
-"Returns first `n` elements of `iterable`.  If `iterable` is a iterator it"
-" will be advanced."
-msgstr ""
+msgid "Returns first `n` elements of `iterable`.  If `iterable` is a iterator it will be advanced."
+msgstr "`iterable` の最初の `n` 個の要素を返します。`iterable` がイテレータの場合は、先に進められます。"
 
 #: of pwnlib.util.iters.take:4
 msgid "Number of elements to take."
-msgstr ""
+msgstr "取り出す要素の数。"
 
 #: of pwnlib.util.iters.take:8
-msgid ""
-"A list of the first `n` elements of `iterable`.  If there are fewer than "
-"`n` elements in `iterable` they will all be returned."
-msgstr ""
+msgid "A list of the first `n` elements of `iterable`.  If there are fewer than `n` elements in `iterable` they will all be returned."
+msgstr "`iterable` の最初の `n` 個の要素のリスト。`iterable` の要素が `n` 個に満たない場合は、すべてを返します。"
 
 #: of pwnlib.util.iters.unique_everseen:1
-msgid ""
-"Get unique elements, preserving order. Remember all elements ever seen.  "
-"If `key` is not :const:`None` then for each element ``elm`` in `iterable`"
-" the element that will be rememberes is ``key(elm)``.  Otherwise ``elm`` "
-"is remembered."
-msgstr ""
+msgid "Get unique elements, preserving order. Remember all elements ever seen.  If `key` is not :const:`None` then for each element ``elm`` in `iterable` the element that will be rememberes is ``key(elm)``.  Otherwise ``elm`` is remembered."
+msgstr "順序を保ったまま、重複しない要素を取り出します。これまでに見たすべての要素を記憶します。`key` が :const:`None` でない場合は、`iterable` の各要素 ``elm`` について、``key(elm)`` を記憶します。そうでなければ ``elm`` を記憶します。"
 
 #: of pwnlib.util.iters.unique_everseen:7 pwnlib.util.iters.unique_justseen:9
 #: pwnlib.util.iters.unique_window:11
-msgid ""
-"A function to map over each element in `iterable` before remembering it."
-"  Setting to :const:`None` is equivalent to the identity function."
-msgstr ""
+msgid "A function to map over each element in `iterable` before remembering it.  Setting to :const:`None` is equivalent to the identity function."
+msgstr "`iterable` の各要素を記憶する前に適用する関数。:const:`None` を指定すると恒等関数と同じになります。"
 
 #: of pwnlib.util.iters.unique_everseen:10 pwnlib.util.iters.unique_justseen:12
 #: pwnlib.util.iters.unique_window:14
 msgid "An iterator of the unique elements in `iterable`."
-msgstr ""
+msgstr "`iterable` の重複しない要素のイテレータ。"
 
 #: of pwnlib.util.iters.unique_justseen:1
 msgid "unique_everseen(iterable, key = None) -> iterator"
 msgstr ""
 
 #: of pwnlib.util.iters.unique_justseen:3
-msgid ""
-"Get unique elements, preserving order. Remember only the elements just "
-"seen. If `key` is not :const:`None` then for each element ``elm`` in "
-"`iterable` the element that will be rememberes is ``key(elm)``.  "
-"Otherwise ``elm`` is remembered."
-msgstr ""
+msgid "Get unique elements, preserving order. Remember only the elements just seen. If `key` is not :const:`None` then for each element ``elm`` in `iterable` the element that will be rememberes is ``key(elm)``.  Otherwise ``elm`` is remembered."
+msgstr "順序を保ったまま、重複しない要素を取り出します。直前に見た要素だけを記憶します。`key` が :const:`None` でない場合は、`iterable` の各要素 ``elm`` について、``key(elm)`` を記憶します。そうでなければ ``elm`` を記憶します。"
 
 #: of pwnlib.util.iters.unique_window:1
 msgid "unique_everseen(iterable, window, key = None) -> iterator"
 msgstr ""
 
 #: of pwnlib.util.iters.unique_window:3
-msgid ""
-"Get unique elements, preserving order. Remember only the last `window` "
-"elements seen.  If `key` is not :const:`None` then for each element "
-"``elm`` in `iterable` the element that will be rememberes is "
-"``key(elm)``. Otherwise ``elm`` is remembered."
-msgstr ""
+msgid "Get unique elements, preserving order. Remember only the last `window` elements seen.  If `key` is not :const:`None` then for each element ``elm`` in `iterable` the element that will be rememberes is ``key(elm)``. Otherwise ``elm`` is remembered."
+msgstr "順序を保ったまま、重複しない要素を取り出します。最後に見た `window` 個の要素だけを記憶します。`key` が :const:`None` でない場合は、`iterable` の各要素 ``elm`` について、``key(elm)`` を記憶します。そうでなければ ``elm`` を記憶します。"
 
 #: of pwnlib.util.iters.unique_window:9
 msgid "The number of elements to remember."
-msgstr ""
+msgstr "記憶する要素の数。"
 
 #: ../pwntools/docs/source/util/iters.rst:36
 msgid "Alias for :func:`itertools.chain`."
@@ -3841,7 +3425,7 @@ msgstr ":func:`itertools.groupby` の別名です。"
 
 #: ../pwntools/docs/source/util/iters.rst:68
 msgid "Alias for python3-style :func:`filter`"
-msgstr ""
+msgstr "Python 3 形式の :func:`filter` の別名です。"
 
 #: ../pwntools/docs/source/util/iters.rst:72
 msgid "Alias for :func:`itertools.filterfalse`"
@@ -3849,7 +3433,7 @@ msgstr ":func:`itertools.filterfalse` の別名です。"
 
 #: ../pwntools/docs/source/util/iters.rst:76
 msgid "Alias for python3-style :func:`map`"
-msgstr ""
+msgstr "Python 3 形式の :func:`map` の別名です。"
 
 #: ../pwntools/docs/source/util/iters.rst:80
 msgid "Alias for :func:`itertools.islice`"
@@ -3857,7 +3441,7 @@ msgstr ":func:`itertools.islice` の別名です。"
 
 #: ../pwntools/docs/source/util/iters.rst:84
 msgid "Alias for python3-style :func:`zip`"
-msgstr ""
+msgstr "Python 3 形式の :func:`zip` の別名です。"
 
 #: ../pwntools/docs/source/util/iters.rst:88
 msgid "Alias for :func:`itertools.zip_longest`"
@@ -3889,33 +3473,27 @@ msgstr ":func:`itertools.tee` の別名です。"
 
 #: ../pwntools/docs/source/util/lists.rst:6
 msgid ":mod:`pwnlib.util.lists` --- Operations on lists"
-msgstr ""
+msgstr ":mod:`pwnlib.util.lists` --- リストの操作"
 
 #: of pwnlib.util.lists.concat:1
 msgid "Concats a list of lists into a list."
-msgstr ""
+msgstr "リストのリストを連結して、1 つのリストにします。"
 
 #: of pwnlib.util.lists.concat_all:1
 msgid "Concats all the arguments together."
-msgstr ""
+msgstr "すべての引数を連結します。"
 
 #: of pwnlib.util.lists.findall:1
-msgid ""
-"Generate all indices of needle in haystack, using the Knuth-Morris-Pratt "
-"algorithm."
-msgstr ""
+msgid "Generate all indices of needle in haystack, using the Knuth-Morris-Pratt algorithm."
+msgstr "Knuth-Morris-Pratt アルゴリズムで、haystack の中にある needle のすべてのインデックスを生成します。"
 
 #: of pwnlib.util.lists.group:1
 msgid "group(n, lst, underfull_action = 'ignore', fill_value = None) -> list"
 msgstr ""
 
 #: of pwnlib.util.lists.group:3
-msgid ""
-"Split sequence into subsequences of given size. If the values cannot be "
-"evenly distributed among into groups, then the last group will either be "
-"returned as is, thrown out or padded with the value specified in "
-"fill_value."
-msgstr ""
+msgid "Split sequence into subsequences of given size. If the values cannot be evenly distributed among into groups, then the last group will either be returned as is, thrown out or padded with the value specified in fill_value."
+msgstr "シーケンスを、指定した大きさの部分列に分割します。値を均等にグループに分けられない場合、最後のグループは、そのまま返すか、捨てるか、fill_value で指定した値で埋めます。"
 
 #: of pwnlib.util.lists.group:7
 msgid "The size of resulting groups"
@@ -3926,38 +3504,32 @@ msgid "The list, tuple or string to group"
 msgstr ""
 
 #: of pwnlib.util.lists.group:10
-msgid ""
-"The action to take in case of an underfull group at the end. Possible "
-"values are 'ignore', 'drop' or 'fill'."
-msgstr ""
+msgid "The action to take in case of an underfull group at the end. Possible values are 'ignore', 'drop' or 'fill'."
+msgstr "末尾に要素数の足りないグループが残った場合の動作。指定できる値は 'ignore'、'drop'、'fill' です。"
 
 #: of pwnlib.util.lists.group:12
 msgid "The value to fill into an underfull remaining group."
-msgstr ""
+msgstr "要素数の足りない最後のグループを埋める値。"
 
 #: of pwnlib.util.lists.group:14
 msgid "A list containing the grouped values."
-msgstr ""
+msgstr "グループ化した値を含むリスト。"
 
 #: of pwnlib.util.lists.ordlist:1
 msgid "Turns a string into a list of the corresponding ascii values."
-msgstr ""
+msgstr "文字列を、対応する ASCII 値のリストに変換します。"
 
 #: of pwnlib.util.lists.partition:1
 msgid "partition(lst, f, save_keys = False) -> list"
 msgstr ""
 
 #: of pwnlib.util.lists.partition:3
-msgid ""
-"Partitions an iterable into sublists using a function to specify which "
-"group they belong to."
-msgstr ""
+msgid "Partitions an iterable into sublists using a function to specify which group they belong to."
+msgstr "どのグループに属するかを指定する関数を使って、イテラブルを部分リストに分割します。"
 
 #: of pwnlib.util.lists.partition:6
-msgid ""
-"It works by calling `f` on every element and saving the results into an "
-":class:`collections.OrderedDict`."
-msgstr ""
+msgid "It works by calling `f` on every element and saving the results into an :class:`collections.OrderedDict`."
+msgstr "すべての要素に対して `f` を呼び出し、結果を :class:`collections.OrderedDict` に保存することで動作します。"
 
 #: of pwnlib.util.lists.partition:9
 msgid "The iterable to partition"
@@ -3965,7 +3537,7 @@ msgstr ""
 
 #: of pwnlib.util.lists.partition:10
 msgid "The function to use as the partitioner."
-msgstr ""
+msgstr "分割に使う関数。"
 
 #: of pwnlib.util.lists.partition:12
 msgid ""
@@ -3975,17 +3547,15 @@ msgstr ""
 
 #: of pwnlib.util.lists.unordlist:1
 msgid "Takes a list of ascii values and returns the corresponding string."
-msgstr ""
+msgstr "ASCII 値のリストを受け取り、対応する文字列を返します。"
 
 #: ../pwntools/docs/source/util/misc.rst:8
 msgid ":mod:`pwnlib.util.misc` --- We could not fit it any other place"
-msgstr ""
+msgstr ":mod:`pwnlib.util.misc` --- ほかに置き場所がないもの"
 
 #: of pwnlib.util.misc._create_execve_script:1
-msgid ""
-"Creates a python wrapper script that triggers the syscall `execve` "
-"directly."
-msgstr ""
+msgid "Creates a python wrapper script that triggers the syscall `execve` directly."
+msgstr "システムコール `execve` を直接呼び出す Python のラッパースクリプトを作成します。"
 
 #: of pwnlib.util.misc._create_execve_script:3
 msgid "List of arguments to pass into the process"
@@ -3993,93 +3563,78 @@ msgstr ""
 
 #: of pwnlib.util.misc._create_execve_script:5
 msgid "Path to the executable to run. If :const:`None`, ``argv[0]`` is used."
-msgstr ""
+msgstr "実行する実行ファイルのパス。:const:`None` の場合は ``argv[0]`` を使います。"
 
 #: of pwnlib.util.misc._create_execve_script:8
-msgid ""
-"Working directory.  If :const:`None`, uses the working directory "
-"specified on :attr:`cwd` or set via :meth:`set_working_directory`."
-msgstr ""
+msgid "Working directory.  If :const:`None`, uses the working directory specified on :attr:`cwd` or set via :meth:`set_working_directory`."
+msgstr "作業ディレクトリ。:const:`None` の場合は、:attr:`cwd` に指定されている作業ディレクトリ、または :meth:`set_working_directory` で設定した作業ディレクトリを使います。"
 
 #: of pwnlib.util.misc._create_execve_script:11
 msgid "Environment variables to add to the environment."
-msgstr ""
+msgstr "環境に追加する環境変数。"
 
 #: of pwnlib.util.misc._create_execve_script:13
 msgid "Function to find the path of a binary."
-msgstr ""
+msgstr "バイナリのパスを探す関数。"
 
 #: of pwnlib.util.misc._create_execve_script:15
-msgid ""
-"Ignore default environment.  By default use default environment iff env "
-"not specified."
-msgstr ""
+msgid "Ignore default environment.  By default use default environment iff env not specified."
+msgstr "既定の環境を無視します。既定では、env を指定しない場合に限り、既定の環境を使います。"
 
 #: of pwnlib.util.misc._create_execve_script:17
-msgid ""
-"If an integer, replace stdin with the numbered file descriptor. If a "
-"string, a open a file with the specified path and replace stdin with its "
-"file descriptor.  May also be one of ``sys.stdin``, ``sys.stdout``, "
-"``sys.stderr``.  If :const:`None`, the file descriptor is closed."
-msgstr ""
+msgid "If an integer, replace stdin with the numbered file descriptor. If a string, a open a file with the specified path and replace stdin with its file descriptor.  May also be one of ``sys.stdin``, ``sys.stdout``, ``sys.stderr``.  If :const:`None`, the file descriptor is closed."
+msgstr "整数の場合は、標準入力を、その番号のファイルディスクリプタに置き換えます。文字列の場合は、そのパスのファイルを開き、そのファイルディスクリプタで標準入力を置き換えます。``sys.stdin``、``sys.stdout``、``sys.stderr`` のいずれかも指定できます。:const:`None` の場合は、ファイルディスクリプタを閉じます。"
 
 #: of pwnlib.util.misc._create_execve_script:22
 #: pwnlib.util.misc._create_execve_script:24
 msgid "See ``stdin``."
-msgstr ""
+msgstr "``stdin`` を参照してください。"
 
 #: of pwnlib.util.misc._create_execve_script:26
-msgid ""
-"Function which is executed on the remote side before execve(). This "
-"**MUST** be a self-contained function -- it must perform all of its own "
-"imports, and cannot refer to variables outside its scope."
-msgstr ""
+msgid "Function which is executed on the remote side before execve(). This **MUST** be a self-contained function -- it must perform all of its own imports, and cannot refer to variables outside its scope."
+msgstr "execve() の前にリモート側で実行される関数。自己完結した関数で **なければなりません**。必要な import はすべて関数内で行い、スコープ外の変数は参照できません。"
 
 #: of pwnlib.util.misc._create_execve_script:31
-msgid ""
-"Argument passed to ``preexec_fn``. This **MUST** only consist of native "
-"Python objects."
-msgstr ""
+msgid "Argument passed to ``preexec_fn``. This **MUST** only consist of native Python objects."
+msgstr "``preexec_fn`` に渡す引数。ネイティブの Python オブジェクトだけで構成されて **いなければなりません**。"
 
 #: of pwnlib.util.misc._create_execve_script:34
 #: pwnlib.util.misc._create_execve_script:36
 msgid "See :class:`pwnlib.tubes.process.process` for more information."
-msgstr ""
+msgstr "詳しくは :class:`pwnlib.tubes.process.process` を参照してください。"
 
 #: of pwnlib.util.misc._create_execve_script:38
 msgid "Pass the command-line arguments to the shell."
-msgstr ""
+msgstr "コマンドライン引数をシェルに渡します。"
 
 #: of pwnlib.util.misc._create_execve_script:41
 msgid "A string containing the python script."
-msgstr ""
+msgstr "Python スクリプトを含む文字列。"
 
 #: of pwnlib.util.misc.align:1
 msgid "Rounds `x` up to nearest multiple of the `alignment`."
-msgstr ""
+msgstr "`x` を `alignment` の倍数のうち、それ以上で最も近い値に切り上げます。"
 
 #: of pwnlib.util.misc.align_down:1
 msgid "Rounds `x` down to nearest multiple of the `alignment`."
-msgstr ""
+msgstr "`x` を `alignment` の倍数のうち、それ以下で最も近い値に切り捨てます。"
 
 #: of pwnlib.util.misc.binary_ip:1
 msgid "Resolve host and return IP as four byte string."
-msgstr ""
+msgstr "ホスト名を解決し、IP を 4 バイトの文字列として返します。"
 
 #: of pwnlib.util.misc.dealarm_shell:1
 msgid "Given a tube which is a shell, dealarm it."
-msgstr ""
+msgstr "シェルである tube を受け取り、alarm を解除します。"
 
 #: of pwnlib.util.misc.mkdir_p:1
 msgid "Emulates the behavior of ``mkdir -p``."
-msgstr ""
+msgstr "``mkdir -p`` の動作を再現します。"
 
 #: of pwnlib.util.misc.parse_ldd_output:1
 #, python-brace-format
-msgid ""
-"Parses the output from a run of 'ldd' on a binary. Returns a dictionary "
-"of {path: address} for each library required by the specified binary."
-msgstr ""
+msgid "Parses the output from a run of 'ldd' on a binary. Returns a dictionary of {path: address} for each library required by the specified binary."
+msgstr "バイナリに対して実行した 'ldd' の出力を解析します。指定したバイナリが必要とする各ライブラリについて、{パス: アドレス} の辞書を返します。"
 
 #: of pwnlib.util.misc.parse_ldd_output:5
 msgid "The output to parse"
@@ -4087,142 +3642,111 @@ msgstr ""
 
 #: of pwnlib.util.misc.read:1
 msgid "Open file, return content."
-msgstr ""
+msgstr "ファイルを開き、内容を返します。"
 
 #: of pwnlib.util.misc.register_sizes:1
 msgid "Create dictionaries over register sizes and relations"
 msgstr ""
 
 #: of pwnlib.util.misc.register_sizes:3
-msgid ""
-"Given a list of lists of overlapping register names (e.g. "
-"['eax','ax','al','ah']) and a list of input sizes, it returns the "
-"following:"
-msgstr ""
+msgid "Given a list of lists of overlapping register names (e.g. ['eax','ax','al','ah']) and a list of input sizes, it returns the following:"
+msgstr "重なり合うレジスタ名のリストのリスト(例: ['eax','ax','al','ah'])と、入力サイズのリストを受け取り、次を返します。"
 
 #: of pwnlib.util.misc.register_sizes:6
 msgid "all_regs    : list of all valid registers"
-msgstr ""
+msgstr "all_regs    : 有効なすべてのレジスタのリスト"
 
 #: of pwnlib.util.misc.register_sizes:7
 msgid "sizes[reg]  : the size of reg in bits"
-msgstr ""
+msgstr "sizes[reg]  : reg のビット単位の大きさ"
 
 #: of pwnlib.util.misc.register_sizes:8
 msgid "bigger[reg] : list of overlapping registers bigger than reg"
-msgstr ""
+msgstr "bigger[reg] : reg より大きく、reg と重なるレジスタのリスト"
 
 #: of pwnlib.util.misc.register_sizes:9
 msgid "smaller[reg]: list of overlapping registers smaller than reg"
-msgstr ""
+msgstr "smaller[reg]: reg より小さく、reg と重なるレジスタのリスト"
 
 #: of pwnlib.util.misc.register_sizes:11
 msgid "Used in i386/AMD64 shellcode, e.g. the mov-shellcode."
-msgstr ""
+msgstr "i386/AMD64 のシェルコード(たとえば mov-shellcode)で使います。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:1
 msgid "Run a command in a new terminal."
-msgstr ""
+msgstr "新しい端末でコマンドを実行します。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:3
 msgid "When ``terminal`` is not set:"
-msgstr ""
+msgstr "``terminal`` が設定されていない場合:"
 
 #: of pwnlib.util.misc.run_in_new_terminal:4
-msgid ""
-"If ``context.terminal`` is set it will be used. If it is an iterable then"
-" ``context.terminal[1:]`` are default arguments."
-msgstr ""
+msgid "If ``context.terminal`` is set it will be used. If it is an iterable then ``context.terminal[1:]`` are default arguments."
+msgstr "``context.terminal`` が設定されていれば、それを使います。イテラブルの場合は、``context.terminal[1:]`` が既定の引数になります。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:6
 msgid "If a ``pwntools-terminal`` command exists in ``$PATH``, it is used"
-msgstr ""
+msgstr "``$PATH`` に ``pwntools-terminal`` コマンドがあれば、それを使います。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:7
-msgid ""
-"If tmux is detected (by the presence of the ``$TMUX`` environment "
-"variable), a new pane will be opened."
-msgstr ""
+msgid "If tmux is detected (by the presence of the ``$TMUX`` environment variable), a new pane will be opened."
+msgstr "tmux が検出された場合(環境変数 ``$TMUX`` の有無で判定)は、新しいペインを開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:9
-msgid ""
-"If GNU Screen is detected (by the presence of the ``$STY`` environment "
-"variable), a new screen will be opened."
-msgstr ""
+msgid "If GNU Screen is detected (by the presence of the ``$STY`` environment variable), a new screen will be opened."
+msgstr "GNU Screen が検出された場合(環境変数 ``$STY`` の有無で判定)は、新しい screen を開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:11
 msgid "If ``$TERM_PROGRAM`` is set, that is used."
-msgstr ""
+msgstr "``$TERM_PROGRAM`` が設定されていれば、それを使います。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:12
-msgid ""
-"If X11 is detected (by the presence of the ``$DISPLAY`` environment "
-"variable), ``x-terminal-emulator`` is used."
-msgstr ""
+msgid "If X11 is detected (by the presence of the ``$DISPLAY`` environment variable), ``x-terminal-emulator`` is used."
+msgstr "X11 が検出された場合(環境変数 ``$DISPLAY`` の有無で判定)は、``x-terminal-emulator`` を使います。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:14
-msgid ""
-"If kitty is detected (by the presence of the ``$KITTY_PID`` environment "
-"variable), a new kitty window will be opened."
-msgstr ""
+msgid "If kitty is detected (by the presence of the ``$KITTY_PID`` environment variable), a new kitty window will be opened."
+msgstr "kitty が検出された場合(環境変数 ``$KITTY_PID`` の有無で判定)は、新しい kitty のウィンドウを開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:16
-msgid ""
-"If Terminator is detected (by the presence of the ``$TERMINATOR_UUID`` "
-"environment variable), a new terminator window will be opened."
-msgstr ""
+msgid "If Terminator is detected (by the presence of the ``$TERMINATOR_UUID`` environment variable), a new terminator window will be opened."
+msgstr "Terminator が検出された場合(環境変数 ``$TERMINATOR_UUID`` の有無で判定)は、新しい terminator のウィンドウを開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:18
-msgid ""
-"If GNOME Terminal is detected (by the presence of the "
-"``$GNOME_TERMINAL_SCREEN`` and ``$GNOME_TERMINAL_SERVICE`` environment "
-"variables), a new GNOME Terminal will be opened."
-msgstr ""
+msgid "If GNOME Terminal is detected (by the presence of the ``$GNOME_TERMINAL_SCREEN`` and ``$GNOME_TERMINAL_SERVICE`` environment variables), a new GNOME Terminal will be opened."
+msgstr "GNOME Terminal が検出された場合(環境変数 ``$GNOME_TERMINAL_SCREEN`` と ``$GNOME_TERMINAL_SERVICE`` の有無で判定)は、新しい GNOME Terminal を開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:21
-msgid ""
-"If Alacritty is detected (by the presence of the ``$ALACRITTY_SOCKET`` "
-"and ``$ALACRITTY_WINDOW_ID`` environment variables), Alacritty is used."
-msgstr ""
+msgid "If Alacritty is detected (by the presence of the ``$ALACRITTY_SOCKET`` and ``$ALACRITTY_WINDOW_ID`` environment variables), Alacritty is used."
+msgstr "Alacritty が検出された場合(環境変数 ``$ALACRITTY_SOCKET`` と ``$ALACRITTY_WINDOW_ID`` の有無で判定)は、Alacritty を使います。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:23
-msgid ""
-"If Tilix is detected (by the presence of the ``$TILIX_ID`` environment "
-"variable), a new pane is split."
-msgstr ""
+msgid "If Tilix is detected (by the presence of the ``$TILIX_ID`` environment variable), a new pane is split."
+msgstr "Tilix が検出された場合(環境変数 ``$TILIX_ID`` の有無で判定)は、新しいペインを分割して開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:25
-msgid ""
-"If KDE Konsole is detected (by the presence of the ``$KONSOLE_VERSION`` "
-"environment variable), a terminal will be split."
-msgstr ""
+msgid "If KDE Konsole is detected (by the presence of the ``$KONSOLE_VERSION`` environment variable), a terminal will be split."
+msgstr "KDE Konsole が検出された場合(環境変数 ``$KONSOLE_VERSION`` の有無で判定)は、端末を分割します。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:27
-msgid ""
-"If WSL (Windows Subsystem for Linux) is detected (by the presence of a "
-"``wsl.exe`` binary in the ``$PATH`` and ``/proc/sys/kernel/osrelease`` "
-"containing ``Microsoft``), a new ``cmd.exe`` window will be opened."
-msgstr ""
+msgid "If WSL (Windows Subsystem for Linux) is detected (by the presence of a ``wsl.exe`` binary in the ``$PATH`` and ``/proc/sys/kernel/osrelease`` containing ``Microsoft``), a new ``cmd.exe`` window will be opened."
+msgstr "WSL(Windows Subsystem for Linux)が検出された場合(``$PATH`` に ``wsl.exe`` のバイナリがあり、``/proc/sys/kernel/osrelease`` に ``Microsoft`` が含まれていることで判定)は、新しい ``cmd.exe`` のウィンドウを開きます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:30
-msgid ""
-"If zellij is detected (by the presence of the ``$ZELLIJ`` environment "
-"variable), a new screen will be opened.`)"
-msgstr ""
+msgid "If zellij is detected (by the presence of the ``$ZELLIJ`` environment variable), a new screen will be opened.`)"
+msgstr "zellij が検出された場合(環境変数 ``$ZELLIJ`` の有無で判定)は、新しい screen を開きます。`)"
 
 #: of pwnlib.util.misc.run_in_new_terminal:33
-msgid ""
-"If `kill_at_exit` is :const:`True`, try to close the command/terminal "
-"when the current process exits. This may not work for all terminal types."
-msgstr ""
+msgid "If `kill_at_exit` is :const:`True`, try to close the command/terminal when the current process exits. This may not work for all terminal types."
+msgstr "`kill_at_exit` が :const:`True` の場合は、現在のプロセスが終了するときに、コマンドや端末を閉じようとします。すべての種類の端末で動作するとは限りません。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:36
 msgid "The command to run."
-msgstr ""
+msgstr "実行するコマンド。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:38
 msgid "Which terminal to use."
-msgstr ""
+msgstr "使用する端末。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:40
 msgid "Arguments to pass to the terminal"
@@ -4230,23 +3754,19 @@ msgstr ""
 
 #: of pwnlib.util.misc.run_in_new_terminal:42
 msgid "Whether to close the command/terminal on process exit."
-msgstr ""
+msgstr "プロセスの終了時に、コマンドや端末を閉じるかどうか。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:44
 msgid "Callable to invoke before exec()."
-msgstr ""
+msgstr "exec() の前に呼び出す呼び出し可能オブジェクト。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:49
 msgid "The command is opened with ``/dev/null`` for stdin, stdout, stderr."
-msgstr ""
+msgstr "コマンドは、標準入力・標準出力・標準エラー出力を ``/dev/null`` にして開かれます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:50
-msgid ""
-"When ``context.terminal`` is not a path and the terminal is one of the "
-"above which support windowing/tiling, this will also cause the terminal "
-"to split. Setting ``context.terminal`` to a path (e.g. using "
-"``which(terminal)``) bypasses this."
-msgstr ""
+msgid "When ``context.terminal`` is not a path and the terminal is one of the above which support windowing/tiling, this will also cause the terminal to split. Setting ``context.terminal`` to a path (e.g. using ``which(terminal)``) bypasses this."
+msgstr "``context.terminal`` がパスでなく、端末が上記のうちウィンドウ分割やタイリングに対応するものの場合は、端末も分割されます。``context.terminal`` にパス(たとえば ``which(terminal)`` の結果)を設定すると、この動作を避けられます。"
 
 #: of pwnlib.util.misc.run_in_new_terminal:55
 msgid "PID of the new terminal process"
@@ -4254,71 +3774,56 @@ msgstr ""
 
 #: of pwnlib.util.misc.size:1
 msgid "Convert the length of a bytestream to human readable form."
-msgstr ""
+msgstr "バイトストリームの長さを、人間が読みやすい形に変換します。"
 
 #: of pwnlib.util.misc.size:3
-msgid ""
-"The length to convert to human readable form, or an object which can have"
-" ``len()`` called on it."
-msgstr ""
+msgid "The length to convert to human readable form, or an object which can have ``len()`` called on it."
+msgstr "人間が読みやすい形に変換する長さ、または ``len()`` を呼び出せるオブジェクト。"
 
 #: of pwnlib.util.misc.size:6
 msgid "String appended to the size, defaults to ``'B'``."
-msgstr ""
+msgstr "サイズの後ろに付ける文字列。既定は ``'B'`` です。"
 
 #: of pwnlib.util.misc.which:1
-msgid ""
-"Works as the system command ``which``; searches $PATH for ``name`` and "
-"returns a full path if found. Tries all of the file extensions in "
-"$PATHEXT on Windows too."
-msgstr ""
+msgid "Works as the system command ``which``; searches $PATH for ``name`` and returns a full path if found. Tries all of the file extensions in $PATHEXT on Windows too."
+msgstr "システムコマンドの ``which`` と同様に動作します。$PATH から ``name`` を探し、見つかればフルパスを返します。Windows では、$PATHEXT のすべての拡張子も試します。"
 
 #: of pwnlib.util.misc.which:5
-msgid ""
-"If `all` is :const:`True` the set of all found locations is returned, "
-"else the first occurrence or :const:`None` is returned."
-msgstr ""
+msgid "If `all` is :const:`True` the set of all found locations is returned, else the first occurrence or :const:`None` is returned."
+msgstr "`all` が :const:`True` の場合は、見つかったすべての場所の集合を返します。そうでなければ、最初に見つかった場所か :const:`None` を返します。"
 
 #: of pwnlib.util.misc.which:8
 msgid "The file to search for."
-msgstr ""
+msgstr "探すファイル。"
 
 #: of pwnlib.util.misc.which:10
 msgid "Whether to return all locations where `name` was found."
-msgstr ""
+msgstr "`name` が見つかったすべての場所を返すかどうか。"
 
 #: of pwnlib.util.misc.which:13
-msgid ""
-"If `all` is :const:`True` the set of all locations where `name` was "
-"found, else the first location or :const:`None` if not found."
-msgstr ""
+msgid "If `all` is :const:`True` the set of all locations where `name` was found, else the first location or :const:`None` if not found."
+msgstr "`all` が :const:`True` の場合は、`name` が見つかったすべての場所の集合。そうでなければ、最初に見つかった場所。見つからなければ :const:`None`。"
 
 #: of pwnlib.util.misc.write:1
 msgid "Create new file or truncate existing to zero length and write data."
-msgstr ""
+msgstr "新しいファイルを作成するか、既存のファイルを長さ 0 に切り詰めて、データを書き込みます。"
 
 #: ../pwntools/docs/source/util/net.rst:9
 msgid ":mod:`pwnlib.util.net` --- Networking interfaces"
-msgstr ""
+msgstr ":mod:`pwnlib.util.net` --- ネットワークインターフェース"
 
 #: of pwnlib.util.net.getifaddrs:1
 msgid "A wrapper for libc's ``getifaddrs``."
-msgstr ""
+msgstr "libc の ``getifaddrs`` のラッパーです。"
 
 #: of pwnlib.util.net.getifaddrs:5
-msgid ""
-"list of dictionaries each representing a `struct ifaddrs`. The "
-"dictionaries have the fields `name`, `flags`, `family`, `addr` and "
-"`netmask`.  Refer to `getifaddrs(3)` for details.  The fields `addr` and "
-"`netmask` are themselves dictionaries.  Their structure depend on "
-"`family`.  If `family` is not :const:`socket.AF_INET` or "
-":const:`socket.AF_INET6` they will be empty."
-msgstr ""
+msgid "list of dictionaries each representing a `struct ifaddrs`. The dictionaries have the fields `name`, `flags`, `family`, `addr` and `netmask`.  Refer to `getifaddrs(3)` for details.  The fields `addr` and `netmask` are themselves dictionaries.  Their structure depend on `family`.  If `family` is not :const:`socket.AF_INET` or :const:`socket.AF_INET6` they will be empty."
+msgstr "`struct ifaddrs` を表す辞書のリスト。辞書には `name`、`flags`、`family`、`addr`、`netmask` のフィールドがあります。詳しくは `getifaddrs(3)` を参照してください。`addr` と `netmask` のフィールドも辞書で、構造は `family` によって変わります。`family` が :const:`socket.AF_INET` でも :const:`socket.AF_INET6` でもない場合は、空になります。"
 
 #: of pwnlib.util.net.interfaces:1 pwnlib.util.net.interfaces4:4
 #: pwnlib.util.net.interfaces6:4
 msgid "Whether to include interfaces with not associated address."
-msgstr ""
+msgstr "アドレスが関連付けられていないインターフェースを含めるかどうか。"
 
 #: of pwnlib.util.net.interfaces:3 pwnlib.util.net.interfaces4:6
 #: pwnlib.util.net.interfaces6:6
@@ -4326,55 +3831,44 @@ msgid ":const:`False`."
 msgstr ""
 
 #: of pwnlib.util.net.interfaces:5
-msgid ""
-"A dictionary mapping each of the hosts interfaces to a list of it's "
-"addresses.  Each entry in the list is a tuple ``(family, addr)``, and "
-"`family` is either :const:`socket.AF_INET` or :const:`socket.AF_INET6`."
-msgstr ""
+msgid "A dictionary mapping each of the hosts interfaces to a list of it's addresses.  Each entry in the list is a tuple ``(family, addr)``, and `family` is either :const:`socket.AF_INET` or :const:`socket.AF_INET6`."
+msgstr "ホストの各インターフェースを、そのアドレスのリストに対応付ける辞書。リストの各要素はタプル ``(family, addr)`` で、`family` は :const:`socket.AF_INET` か :const:`socket.AF_INET6` です。"
 
 #: of pwnlib.util.net.interfaces4:1
-msgid ""
-"As :func:`interfaces` but only includes IPv4 addresses and the lists in "
-"the dictionary only contains the addresses not the family."
-msgstr ""
+msgid "As :func:`interfaces` but only includes IPv4 addresses and the lists in the dictionary only contains the addresses not the family."
+msgstr ":func:`interfaces` と同じですが、IPv4 アドレスだけを含み、辞書のリストにはファミリーを含めずアドレスだけを含みます。"
 
 #: of pwnlib.util.net.interfaces4:8
-msgid ""
-"A dictionary mapping each of the hosts interfaces to a list of it's IPv4 "
-"addresses."
-msgstr ""
+msgid "A dictionary mapping each of the hosts interfaces to a list of it's IPv4 addresses."
+msgstr "ホストの各インターフェースを、その IPv4 アドレスのリストに対応付ける辞書。"
 
 #: of pwnlib.util.net.interfaces6:1
-msgid ""
-"As :func:`interfaces` but only includes IPv6 addresses and the lists in "
-"the dictionary only contains the addresses not the family."
-msgstr ""
+msgid "As :func:`interfaces` but only includes IPv6 addresses and the lists in the dictionary only contains the addresses not the family."
+msgstr ":func:`interfaces` と同じですが、IPv6 アドレスだけを含み、辞書のリストにはファミリーを含めずアドレスだけを含みます。"
 
 #: of pwnlib.util.net.interfaces6:8
-msgid ""
-"A dictionary mapping each of the hosts interfaces to a list of it's IPv6 "
-"addresses."
-msgstr ""
+msgid "A dictionary mapping each of the hosts interfaces to a list of it's IPv6 addresses."
+msgstr "ホストの各インターフェースを、その IPv6 アドレスのリストに対応付ける辞書。"
 
 #: of pwnlib.util.net.sockaddr:1
 msgid "Creates a sockaddr_in or sockaddr_in6 memory buffer for use in shellcode."
-msgstr ""
+msgstr "シェルコードで使うための、sockaddr_in または sockaddr_in6 のメモリバッファを作成します。"
 
 #: of pwnlib.util.net.sockaddr:3
 msgid "Either an IP address or a hostname to be looked up."
-msgstr ""
+msgstr "IP アドレス、または名前解決するホスト名。"
 
 #: of pwnlib.util.net.sockaddr:5
 msgid "TCP/UDP port."
-msgstr ""
+msgstr "TCP/UDP のポート。"
 
 #: of pwnlib.util.net.sockaddr:7
 msgid "Either 'ipv4' or 'ipv6'."
-msgstr ""
+msgstr "'ipv4' または 'ipv6'。"
 
 #: of pwnlib.util.net.sockaddr:10
 msgid "A tuple containing the sockaddr buffer, length, and the address family."
-msgstr ""
+msgstr "sockaddr バッファ、長さ、アドレスファミリーを含むタプル。"
 
 #: ../pwntools/docs/source/util/packing.rst:7
 msgid ":mod:`pwnlib.util.packing` --- Packing and unpacking of strings"
@@ -4446,7 +3940,7 @@ msgstr ":func:`flat` の、古い名前の別名です"
 
 #: of pwnlib.util.packing.flat:1
 msgid "flat(\\*args, preprocessor = None, length = None, filler = de_bruijn(),"
-msgstr ""
+msgstr "flat(\\*args, preprocessor = None, length = None, filler = de_bruijn(),"
 
 #: of pwnlib.util.packing.flat:2
 msgid "word_size = None, endianness = None, sign = None) -> bytes"
@@ -4821,7 +4315,7 @@ msgstr "アンパックした数のリスト。"
 
 #: ../pwntools/docs/source/util/proc.rst:12
 msgid ":mod:`pwnlib.util.proc` --- Working with ``/proc/``"
-msgstr ""
+msgstr ":mod:`pwnlib.util.proc` --- ``/proc/`` の操作"
 
 #: of pwnlib.util.proc.ancestors:1 pwnlib.util.proc.children:1
 #: pwnlib.util.proc.cmdline:1 pwnlib.util.proc.cwd:1
@@ -4831,145 +4325,123 @@ msgstr ""
 #: pwnlib.util.proc.stat:1 pwnlib.util.proc.state:1 pwnlib.util.proc.status:3
 #: pwnlib.util.proc.tracer:1 pwnlib.util.proc.wait_for_debugger:4
 msgid "PID of the process."
-msgstr ""
+msgstr "プロセスの PID。"
 
 #: of pwnlib.util.proc.ancestors:4
 msgid "List of PIDs of whose parent process is `pid` or an ancestor of `pid`."
-msgstr ""
+msgstr "親プロセスが `pid` である、または `pid` の祖先である PID のリスト。"
 
 #: of pwnlib.util.proc.children:4
 msgid "List of PIDs of whose parent process is `pid`."
-msgstr ""
+msgstr "親プロセスが `pid` である PID のリスト。"
 
 #: of pwnlib.util.proc.cmdline:4
 msgid "A list of the fields in ``/proc/<pid>/cmdline``."
-msgstr ""
+msgstr "``/proc/<pid>/cmdline`` のフィールドのリスト。"
 
 #: of pwnlib.util.proc.cwd:4
-msgid ""
-"The path of the process's current working directory. I.e. what "
-"``/proc/<pid>/cwd`` points to."
-msgstr ""
+msgid "The path of the process's current working directory. I.e. what ``/proc/<pid>/cwd`` points to."
+msgstr "プロセスの現在の作業ディレクトリのパス。つまり ``/proc/<pid>/cwd`` が指すもの。"
 
 #: of pwnlib.util.proc.descendants:4
 msgid "Dictionary mapping the PID of each child of `pid` to it's descendants."
-msgstr ""
+msgstr "`pid` の各子プロセスの PID を、その子孫に対応付ける辞書。"
 
 #: of pwnlib.util.proc.exe:4
-msgid ""
-"The path of the binary of the process. I.e. what ``/proc/<pid>/exe`` "
-"points to."
-msgstr ""
+msgid "The path of the binary of the process. I.e. what ``/proc/<pid>/exe`` points to."
+msgstr "プロセスのバイナリのパス。つまり ``/proc/<pid>/exe`` が指すもの。"
 
 #: of pwnlib.util.proc.memory_maps:4
 msgid "A list of the memory mappings in the process."
-msgstr ""
+msgstr "プロセスのメモリマッピングのリスト。"
 
 #: of pwnlib.util.proc.name:4
 msgid "Name of process as listed in ``/proc/<pid>/status``."
-msgstr ""
+msgstr "``/proc/<pid>/status`` に記載されているプロセス名。"
 
 #: of pwnlib.util.proc.parent:4
-msgid ""
-"Parent PID as listed in ``/proc/<pid>/status`` under ``PPid``, or 0 if "
-"there is not parent."
-msgstr ""
+msgid "Parent PID as listed in ``/proc/<pid>/status`` under ``PPid``, or 0 if there is not parent."
+msgstr "``/proc/<pid>/status`` の ``PPid`` に記載されている親 PID。親がなければ 0。"
 
 #: of pwnlib.util.proc.pid_by_name:1
 msgid "Name of program."
-msgstr ""
+msgstr "プログラムの名前。"
 
 #: of pwnlib.util.proc.pid_by_name:4
 msgid "List of PIDs matching `name` sorted by lifetime, youngest to oldest."
-msgstr ""
+msgstr "`name` に一致する PID のリスト。生存期間の短い順(新しいものから古いものへ)に並びます。"
 
 #: of pwnlib.util.proc.pidof:1
-msgid ""
-"Get PID(s) of `target`.  The returned PID(s) depends on the type of "
-"`target`:"
-msgstr ""
+msgid "Get PID(s) of `target`.  The returned PID(s) depends on the type of `target`:"
+msgstr "`target` の PID を取得します。返される PID は、`target` の型によって決まります。"
 
 #: of pwnlib.util.proc.pidof:3
 msgid ":class:`str`: PIDs of all processes with a name matching `target`."
-msgstr ""
+msgstr ":class:`str`: 名前が `target` に一致するすべてのプロセスの PID。"
 
 #: of pwnlib.util.proc.pidof:4
-msgid ""
-":class:`pwnlib.tubes.process.process`: singleton list of the PID of "
-"`target`."
-msgstr ""
+msgid ":class:`pwnlib.tubes.process.process`: singleton list of the PID of `target`."
+msgstr ":class:`pwnlib.tubes.process.process`: `target` の PID だけを含むリスト。"
 
 #: of pwnlib.util.proc.pidof:5
-msgid ""
-":class:`pwnlib.tubes.sock.sock`: singleton list of the PID at the remote "
-"end of `target` if it is running on the host.  Otherwise an empty list."
-msgstr ""
+msgid ":class:`pwnlib.tubes.sock.sock`: singleton list of the PID at the remote end of `target` if it is running on the host.  Otherwise an empty list."
+msgstr ":class:`pwnlib.tubes.sock.sock`: `target` の接続先がこのホスト上で動いている場合は、その相手側の PID だけを含むリスト。そうでなければ空のリスト。"
 
 #: of pwnlib.util.proc.pidof:8
-msgid ""
-":class:`pwnlib.tubes.ssh.ssh_process`: singleton list of the PID of "
-"`target` on the remote system."
-msgstr ""
+msgid ":class:`pwnlib.tubes.ssh.ssh_process`: singleton list of the PID of `target` on the remote system."
+msgstr ":class:`pwnlib.tubes.ssh.ssh_process`: リモートシステム上の `target` の PID だけを含むリスト。"
 
 #: of pwnlib.util.proc.pidof:10
 msgid ":class:`tuple`: singleton list of the PID at the local end of the"
-msgstr ""
+msgstr ":class:`tuple`: `target` への接続のこちら側が、このホスト上で動いている場合は、"
 
 #: of pwnlib.util.proc.pidof:11
-msgid ""
-"connection to `target` if it is running on the host.  Otherwise an empty "
-"list."
-msgstr ""
+msgid "connection to `target` if it is running on the host.  Otherwise an empty list."
+msgstr "`target` への接続のこちら側が、このホスト上で動いている場合は、その PID だけを含むリスト。そうでなければ空のリスト。"
 
 #: of pwnlib.util.proc.pidof:14
 msgid "The target whose PID(s) to find."
-msgstr ""
+msgstr "PID を探す対象。"
 
 #: of pwnlib.util.proc.pidof:17
 msgid "A list of found PIDs."
-msgstr ""
+msgstr "見つかった PID のリスト。"
 
 #: of pwnlib.util.proc.starttime:4
 msgid "The time (in seconds) the process started after system boot"
 msgstr ""
 
 #: of pwnlib.util.proc.stat:4
-msgid ""
-"A list of the values in ``/proc/<pid>/stat``, with the exception that "
-"``(`` and ``)`` has been removed from around the process name."
-msgstr ""
+msgid "A list of the values in ``/proc/<pid>/stat``, with the exception that ``(`` and ``)`` has been removed from around the process name."
+msgstr "``/proc/<pid>/stat`` の値のリスト。ただし、プロセス名の前後の ``(`` と ``)`` は取り除かれています。"
 
 #: of pwnlib.util.proc.state:4
-msgid ""
-"State of the process as listed in ``/proc/<pid>/status``.  See `proc(5)` "
-"for details."
-msgstr ""
+msgid "State of the process as listed in ``/proc/<pid>/status``.  See `proc(5)` for details."
+msgstr "``/proc/<pid>/status`` に記載されているプロセスの状態。詳しくは `proc(5)` を参照してください。"
 
 #: of pwnlib.util.proc.status:1
 msgid "Get the status of a process."
-msgstr ""
+msgstr "プロセスの状態を取得します。"
 
 #: of pwnlib.util.proc.status:6
 msgid "The contents of ``/proc/<pid>/status`` as a dictionary."
-msgstr ""
+msgstr "``/proc/<pid>/status`` の内容を辞書にしたもの。"
 
 #: of pwnlib.util.proc.tracer:4
 msgid "PID of the process tracing `pid`, or None if no `pid` is not being traced."
-msgstr ""
+msgstr "`pid` をトレースしているプロセスの PID。`pid` がトレースされていなければ None。"
 
 #: of pwnlib.util.proc.wait_for_debugger:1
-msgid ""
-"Sleeps until the process with PID `pid` is being traced. If debugger_pid "
-"is set and debugger exits, raises an error."
-msgstr ""
+msgid "Sleeps until the process with PID `pid` is being traced. If debugger_pid is set and debugger exits, raises an error."
+msgstr "PID が `pid` のプロセスがトレースされるまでスリープします。debugger_pid が設定されていて、デバッガが終了した場合は、エラーを送出します。"
 
 #: of pwnlib.util.proc.wait_for_debugger:7
 msgid "The PID of the debugger that attached to the process."
-msgstr ""
+msgstr "プロセスにアタッチしたデバッガの PID。"
 
 #: ../pwntools/docs/source/util/safeeval.rst:8
 msgid ":mod:`pwnlib.util.safeeval` --- Safe evaluation of python code"
-msgstr ""
+msgstr ":mod:`pwnlib.util.safeeval` --- Python コードの安全な評価"
 
 #: of pwnlib.util.safeeval._get_opcodes:1
 msgid "Extract the actual opcodes as a list from a code object"
@@ -4980,40 +4452,28 @@ msgid "Safe Python constant evaluation"
 msgstr ""
 
 #: of pwnlib.util.safeeval.const:3
-msgid ""
-"Evaluates a string that contains an expression describing a Python "
-"constant. Strings that are not valid Python expressions or that contain "
-"other code besides the constant raise ValueError."
-msgstr ""
+msgid "Evaluates a string that contains an expression describing a Python constant. Strings that are not valid Python expressions or that contain other code besides the constant raise ValueError."
+msgstr "Python の定数を表す式を含む文字列を評価します。有効な Python の式でない文字列や、定数以外のコードを含む文字列は、ValueError を送出します。"
 
 #: of pwnlib.util.safeeval.expr:1 pwnlib.util.safeeval.values:1
 msgid "Safe Python expression evaluation"
 msgstr ""
 
 #: of pwnlib.util.safeeval.expr:3
-msgid ""
-"Evaluates a string that contains an expression that only uses Python "
-"constants. This can be used to e.g. evaluate a numerical expression from "
-"an untrusted source."
-msgstr ""
+msgid "Evaluates a string that contains an expression that only uses Python constants. This can be used to e.g. evaluate a numerical expression from an untrusted source."
+msgstr "Python の定数だけを使う式を含む文字列を評価します。たとえば、信頼できない入力元からの数式を評価するのに使えます。"
 
 #: of pwnlib.util.safeeval.test_expr:1
-msgid ""
-"Test that the expression contains only the listed opcodes. If the "
-"expression is valid and contains only allowed codes, return the compiled "
-"code object. Otherwise raise a ValueError"
-msgstr ""
+msgid "Test that the expression contains only the listed opcodes. If the expression is valid and contains only allowed codes, return the compiled code object. Otherwise raise a ValueError"
+msgstr "式が、列挙した opcode だけを含むかどうかを調べます。式が有効で、許可された opcode だけを含む場合は、コンパイル済みのコードオブジェクトを返します。そうでなければ ValueError を送出します。"
 
 #: of pwnlib.util.safeeval.values:3
-msgid ""
-"Evaluates a string that contains an expression that only uses Python "
-"constants and values from a supplied dictionary. This can be used to e.g."
-" evaluate e.g. an argument to a syscall."
-msgstr ""
+msgid "Evaluates a string that contains an expression that only uses Python constants and values from a supplied dictionary. This can be used to e.g. evaluate e.g. an argument to a syscall."
+msgstr "Python の定数と、与えた辞書の値だけを使う式を含む文字列を評価します。たとえば、システムコールの引数の評価に使えます。"
 
 #: of pwnlib.util.safeeval.values:7
 msgid "Note: This is potentially unsafe if e.g. the __add__ method has side"
-msgstr ""
+msgstr "注意: たとえば __add__ メソッドに副作用がある場合などは、安全でない可能性があります。"
 
 #: of pwnlib.util.safeeval.values:8
 msgid "effects."
@@ -5021,14 +4481,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/util/sh_string.rst:7
 msgid ":mod:`pwnlib.util.sh_string` --- Shell Expansion is Hard"
-msgstr ""
+msgstr ":mod:`pwnlib.util.sh_string` --- シェル展開は難しい"
 
 #: of pwnlib.util.sh_string:1
-msgid ""
-"Routines here are for getting any NULL-terminated sequence of bytes "
-"evaluated intact by any shell.  This includes all variants of quotes, "
-"whitespace, and non-printable characters."
-msgstr ""
+msgid "Routines here are for getting any NULL-terminated sequence of bytes evaluated intact by any shell.  This includes all variants of quotes, whitespace, and non-printable characters."
+msgstr "ここにあるルーチンは、NULL で終わる任意のバイト列を、どのシェルでもそのまま評価されるようにするためのものです。あらゆる種類の引用符、空白、表示できない文字を含みます。"
 
 #: of pwnlib.util.sh_string:6
 msgid "Supported Shells"
@@ -5036,11 +4493,11 @@ msgstr ""
 
 #: of pwnlib.util.sh_string:8
 msgid "The following shells have been evaluated:"
-msgstr ""
+msgstr "次のシェルで評価しました。"
 
 #: of pwnlib.util.sh_string:10
 msgid "Ubuntu (dash/sh)"
-msgstr ""
+msgstr "Ubuntu (dash/sh)"
 
 #: of pwnlib.util.sh_string:11
 msgid "MacOS (GNU Bash)"
@@ -5067,58 +4524,40 @@ msgid "Debian Almquist shell (Dash)"
 msgstr ""
 
 #: of pwnlib.util.sh_string:20
-msgid ""
-"Ubuntu 14.04 and 16.04 use the Dash shell, and /bin/sh is actually just a"
-" symlink to /bin/dash.  The feature set supported when invoked as \"sh\" "
-"instead of \"dash\" is different, and we focus exclusively on the "
-"\"/bin/sh\" implementation."
-msgstr ""
+msgid "Ubuntu 14.04 and 16.04 use the Dash shell, and /bin/sh is actually just a symlink to /bin/dash.  The feature set supported when invoked as \"sh\" instead of \"dash\" is different, and we focus exclusively on the \"/bin/sh\" implementation."
+msgstr "Ubuntu 14.04 と 16.04 は Dash シェルを使い、/bin/sh は実際には /bin/dash へのシンボリックリンクにすぎません。\"dash\" ではなく \"sh\" として起動した場合に使える機能は異なり、ここでは \"/bin/sh\" の実装だけを対象にしています。"
 
 #: of pwnlib.util.sh_string:24
-msgid ""
-"From the `Ubuntu Man Pages`_, every character except for single-quote can"
-" be wrapped in single-quotes, and a backslash can be used to escape "
-"unquoted single-quotes."
-msgstr ""
+msgid "From the `Ubuntu Man Pages`_, every character except for single-quote can be wrapped in single-quotes, and a backslash can be used to escape unquoted single-quotes."
+msgstr "`Ubuntu Man Pages`_ によると、単一引用符を除くすべての文字は単一引用符で囲め、引用符で囲まれていない単一引用符はバックスラッシュでエスケープできます。"
 
 #: of pwnlib.util.sh_string:55
 msgid "GNU Bash"
 msgstr ""
 
 #: of pwnlib.util.sh_string:57
-msgid ""
-"The Bash shell is default on many systems, though it is not generally the"
-" default system-wide shell (i.e., the `system` syscall does not generally"
-" invoke it)."
-msgstr ""
+msgid "The Bash shell is default on many systems, though it is not generally the default system-wide shell (i.e., the `system` syscall does not generally invoke it)."
+msgstr "Bash シェルは多くのシステムで既定ですが、一般にはシステム全体の既定のシェルではありません(つまり、`system` システムコールは通常これを呼び出しません)。"
 
 #: of pwnlib.util.sh_string:60
 msgid "That said, its prevalence suggests that it also be addressed."
-msgstr ""
+msgstr "とはいえ、広く使われているため、対象にしておくのがよいでしょう。"
 
 #: of pwnlib.util.sh_string:62
-msgid ""
-"From the `GNU Bash Manual`_, every character except for single-quote can "
-"be wrapped in single-quotes, and a backslash can be used to escape "
-"unquoted single-quotes."
-msgstr ""
+msgid "From the `GNU Bash Manual`_, every character except for single-quote can be wrapped in single-quotes, and a backslash can be used to escape unquoted single-quotes."
+msgstr "`GNU Bash Manual`_ によると、単一引用符を除くすべての文字は単一引用符で囲め、引用符で囲まれていない単一引用符はバックスラッシュでエスケープできます。"
 
 #: of pwnlib.util.sh_string:100
 msgid "Z Shell"
 msgstr ""
 
 #: of pwnlib.util.sh_string:102
-msgid ""
-"The Z shell is also a relatively common user shell, even though it's not "
-"generally the default system-wide shell."
-msgstr ""
+msgid "The Z shell is also a relatively common user shell, even though it's not generally the default system-wide shell."
+msgstr "Z シェルも、システム全体の既定のシェルではありませんが、ユーザーのシェルとして比較的よく使われています。"
 
 #: of pwnlib.util.sh_string:105
-msgid ""
-"From the `Z Shell Manual`_, every character except for single-quote can "
-"be wrapped in single-quotes, and a backslash can be used to escape "
-"unquoted single-quotes."
-msgstr ""
+msgid "From the `Z Shell Manual`_, every character except for single-quote can be wrapped in single-quotes, and a backslash can be used to escape unquoted single-quotes."
+msgstr "`Z Shell Manual`_ によると、単一引用符を除くすべての文字は単一引用符で囲め、引用符で囲まれていない単一引用符はバックスラッシュでエスケープできます。"
 
 #: of pwnlib.util.sh_string:132
 msgid "FreeBSD Shell"
@@ -5126,25 +4565,19 @@ msgstr ""
 
 #: of pwnlib.util.sh_string:134
 msgid "Compatibility with the FreeBSD shell is included for completeness."
-msgstr ""
+msgstr "FreeBSD のシェルとの互換性も、念のために含めています。"
 
 #: of pwnlib.util.sh_string:136
-msgid ""
-"From the `FreeBSD man pages`_, every character except for single-quote "
-"can be wrapped in single-quotes, and a backslash can be used to escape "
-"unquoted single-quotes."
-msgstr ""
+msgid "From the `FreeBSD man pages`_, every character except for single-quote can be wrapped in single-quotes, and a backslash can be used to escape unquoted single-quotes."
+msgstr "`FreeBSD man pages`_ によると、単一引用符を除くすべての文字は単一引用符で囲め、引用符で囲まれていない単一引用符はバックスラッシュでエスケープできます。"
 
 #: of pwnlib.util.sh_string:176
 msgid "OpenBSD Shell"
 msgstr ""
 
 #: of pwnlib.util.sh_string:178
-msgid ""
-"From the `OpenBSD Man Pages`_, every character except for single-quote "
-"can be wrapped in single-quotes, and a backslash can be used to escape "
-"unquoted single-quotes."
-msgstr ""
+msgid "From the `OpenBSD Man Pages`_, every character except for single-quote can be wrapped in single-quotes, and a backslash can be used to escape unquoted single-quotes."
+msgstr "`OpenBSD Man Pages`_ によると、単一引用符を除くすべての文字は単一引用符で囲め、引用符で囲まれていない単一引用符はバックスラッシュでエスケープできます。"
 
 #: of pwnlib.util.sh_string:200
 msgid "NetBSD Shell"
@@ -5152,7 +4585,7 @@ msgstr ""
 
 #: of pwnlib.util.sh_string:202
 msgid "The NetBSD shell's documentation is identical to the Dash documentation."
-msgstr ""
+msgstr "NetBSD のシェルのドキュメントは、Dash のドキュメントと同一です。"
 
 #: of pwnlib.util.sh_string:205
 msgid "Android Shells"
@@ -5160,21 +4593,19 @@ msgstr ""
 
 #: of pwnlib.util.sh_string:207
 msgid "Android has gone through some number of shells."
-msgstr ""
+msgstr "Android では、シェルがいくつか変遷しています。"
 
 #: of pwnlib.util.sh_string:209
 msgid "Mksh, a Korn shell, was used with Toolbox releases (5.0 and prior)"
-msgstr ""
+msgstr "Korn シェルである Mksh は、Toolbox のリリース(5.0 以前)で使われていました。"
 
 #: of pwnlib.util.sh_string:210
 msgid "Toybox, also derived from the Almquist Shell (6.0 and newer)"
-msgstr ""
+msgstr "Almquist Shell から派生した Toybox(6.0 以降)。"
 
 #: of pwnlib.util.sh_string:212
-msgid ""
-"Notably, the Toolbox implementation is not POSIX compliant as it lacks a "
-"\"printf\" builtin (e.g. Android 5.0 emulator images)."
-msgstr ""
+msgid "Notably, the Toolbox implementation is not POSIX compliant as it lacks a \"printf\" builtin (e.g. Android 5.0 emulator images)."
+msgstr "特に、Toolbox の実装には \"printf\" の組み込みコマンドがないため、POSIX に準拠していません(たとえば Android 5.0 のエミュレータイメージ)。"
 
 #: of pwnlib.util.sh_string:216
 msgid "Toybox Shell"
@@ -5182,93 +4613,71 @@ msgstr ""
 
 #: of pwnlib.util.sh_string:218
 msgid "Android 6.0 (and possibly other versions) use a shell based on ``toybox``."
-msgstr ""
+msgstr "Android 6.0(およびおそらくほかのバージョン)は、``toybox`` をもとにしたシェルを使います。"
 
 #: of pwnlib.util.sh_string:220
-msgid ""
-"While it does not include a ``printf`` builtin, ``toybox`` itself "
-"includes a POSIX-compliant ``printf`` binary."
-msgstr ""
+msgid "While it does not include a ``printf`` builtin, ``toybox`` itself includes a POSIX-compliant ``printf`` binary."
+msgstr "``printf`` の組み込みコマンドはありませんが、``toybox`` 自体に、POSIX に準拠した ``printf`` バイナリが含まれています。"
 
 #: of pwnlib.util.sh_string:223
 msgid "The Ash shells should be feature-compatible with ``dash``."
-msgstr ""
+msgstr "Ash 系のシェルは、``dash`` と機能的に互換のはずです。"
 
 #: of pwnlib.util.sh_string:226
 msgid "BusyBox Shell"
 msgstr ""
 
 #: of pwnlib.util.sh_string:228
-msgid ""
-"`BusyBox's Wikipedia page`_ claims to use an ``ash``-compliant shell, and"
-" should therefore be compatible with ``dash``."
-msgstr ""
+msgid "`BusyBox's Wikipedia page`_ claims to use an ``ash``-compliant shell, and should therefore be compatible with ``dash``."
+msgstr "`BusyBox's Wikipedia page`_ によると、``ash`` に準拠したシェルを使っているため、``dash`` と互換のはずです。"
 
 #: of pwnlib.util.sh_string.sh_command_with:1
-msgid ""
-"Returns a command create by evaluating `f(new_arg0, ..., new_argN)` "
-"whenever `f` is a function and `f % (new_arg0, ..., new_argN)` otherwise."
-msgstr ""
+msgid "Returns a command create by evaluating `f(new_arg0, ..., new_argN)` whenever `f` is a function and `f % (new_arg0, ..., new_argN)` otherwise."
+msgstr "`f` が関数なら `f(new_arg0, ..., new_argN)` を、そうでなければ `f % (new_arg0, ..., new_argN)` を評価して作ったコマンドを返します。"
 
 #: of pwnlib.util.sh_string.sh_command_with:4
-msgid ""
-"If the arguments are purely alphanumeric, then they are simply passed to "
-"function. If they are simple to escape, they will be escaped and passed "
-"to the function."
-msgstr ""
+msgid "If the arguments are purely alphanumeric, then they are simply passed to function. If they are simple to escape, they will be escaped and passed to the function."
+msgstr "引数が英数字だけなら、そのまま関数に渡されます。簡単にエスケープできる場合は、エスケープして関数に渡されます。"
 
 #: of pwnlib.util.sh_string.sh_command_with:8
-msgid ""
-"If the arguments contain trailing newlines, then it is hard to use them "
-"directly because of a limitation in the posix shell. In this case the "
-"output from `f` is prepended with a bit of code to create the variables."
-msgstr ""
+msgid "If the arguments contain trailing newlines, then it is hard to use them directly because of a limitation in the posix shell. In this case the output from `f` is prepended with a bit of code to create the variables."
+msgstr "引数の末尾に改行が含まれる場合は、POSIX シェルの制限のため、そのまま使うのは困難です。この場合は、`f` の出力の前に、変数を作るための少しのコードが付きます。"
 
 #: of pwnlib.util.sh_string.sh_prepare:1
-msgid ""
-"Outputs a posix compliant shell command that will put the data specified "
-"by the dictionary into the environment."
-msgstr ""
+msgid "Outputs a posix compliant shell command that will put the data specified by the dictionary into the environment."
+msgstr "辞書で指定したデータを環境に設定する、POSIX 準拠のシェルコマンドを出力します。"
 
 #: of pwnlib.util.sh_string.sh_prepare:4
-msgid ""
-"It is assumed that the keys in the dictionary are valid variable names "
-"that does not need any escaping."
-msgstr ""
+msgid "It is assumed that the keys in the dictionary are valid variable names that does not need any escaping."
+msgstr "辞書のキーは、エスケープの必要がない有効な変数名であると仮定します。"
 
 #: of pwnlib.util.sh_string.sh_prepare:7
 msgid "The variables to set."
-msgstr ""
+msgstr "設定する変数。"
 
 #: of pwnlib.util.sh_string.sh_prepare:9
 msgid "Should the variables be exported or only stored in the shell environment?"
-msgstr ""
+msgstr "変数をエクスポートするか、シェルの環境にだけ保存するか。"
 
 #: of pwnlib.util.sh_string.sh_prepare:11
 msgid "A valid posix shell command that will set the given variables."
-msgstr ""
+msgstr "指定した変数を設定する、有効な POSIX シェルコマンド。"
 
 #: of pwnlib.util.sh_string.sh_prepare:14
 msgid "It is assumed that `var` is a valid name for a variable in the shell."
-msgstr ""
+msgstr "`var` は、シェルで有効な変数名であると仮定します。"
 
 #: of pwnlib.util.sh_string.sh_string:1
 msgid "Outputs a string in a format that will be understood by /bin/sh."
-msgstr ""
+msgstr "/bin/sh が解釈できる形式の文字列を出力します。"
 
 #: of pwnlib.util.sh_string.sh_string:3
-msgid ""
-"If the string does not contain any bad characters, it will simply be "
-"returned, possibly with quotes. If it contains bad characters, it will be"
-" escaped in a way which is compatible with most known systems."
-msgstr ""
+msgid "If the string does not contain any bad characters, it will simply be returned, possibly with quotes. If it contains bad characters, it will be escaped in a way which is compatible with most known systems."
+msgstr "文字列に問題のある文字が含まれなければ、そのまま(場合によっては引用符付きで)返します。問題のある文字が含まれる場合は、既知のほとんどのシステムと互換性のある方法でエスケープします。"
 
 #: of pwnlib.util.sh_string.sh_string:9
-msgid ""
-"This does not play along well with the shell's built-in \"echo\". It "
-"works exactly as expected to set environment variables and arguments, "
-"**unless** it's the shell-builtin echo."
-msgstr ""
+msgid "This does not play along well with the shell's built-in \"echo\". It works exactly as expected to set environment variables and arguments, **unless** it's the shell-builtin echo."
+msgstr "シェルの組み込みの \"echo\" とはうまく連携しません。環境変数や引数の設定では想定どおりに動作しますが、シェルの組み込みの echo **だけは例外です**。"
 
 #: of pwnlib.util.sh_string.sh_string:13
 msgid "Argument:"
@@ -5276,7 +4685,7 @@ msgstr ""
 
 #: of pwnlib.util.sh_string.sh_string:14
 msgid "s(str): String to escape."
-msgstr ""
+msgstr "s(str): エスケープする文字列。"
 
 #: of pwnlib.util.sh_string.test:1
 msgid "Tests the output provided by a shell interpreting a string"
@@ -5284,24 +4693,20 @@ msgstr ""
 
 #: ../pwntools/docs/source/util/web.rst:9
 msgid ":mod:`pwnlib.util.web` --- Utilities for working with the WWW"
-msgstr ""
+msgstr ":mod:`pwnlib.util.web` --- WWW を扱うユーティリティ"
 
 #: of pwnlib.util.web.wget:1
 msgid "Downloads a file via HTTP/HTTPS."
-msgstr ""
+msgstr "HTTP/HTTPS でファイルをダウンロードします。"
 
 #: of pwnlib.util.web.wget:3
 msgid "URL to download"
 msgstr ""
 
 #: of pwnlib.util.web.wget:5
-msgid ""
-"Name to save as.  Any truthy value will auto-generate a name based on the"
-" URL."
-msgstr ""
+msgid "Name to save as.  Any truthy value will auto-generate a name based on the URL."
+msgstr "保存する名前。真と評価される値を指定すると、URL をもとに名前を自動生成します。"
 
 #: of pwnlib.util.web.wget:8
-msgid ""
-"Timeout, in seconds. Can be a single value for both connect and read, or "
-"a tuple of (connect, read). Set to None to disable timeouts."
-msgstr ""
+msgid "Timeout, in seconds. Can be a single value for both connect and read, or a tuple of (connect, read). Set to None to disable timeouts."
+msgstr "タイムアウト(秒)。接続と読み取りに共通の単一の値か、(接続, 読み取り) のタプルを指定できます。None を指定すると、タイムアウトを無効にします。"

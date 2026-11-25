@@ -21,33 +21,23 @@ msgstr ""
 
 #: ../pwntools/docs/source/libcdb.rst:11
 msgid ":mod:`pwnlib.libcdb` --- Libc Database"
-msgstr ""
+msgstr ":mod:`pwnlib.libcdb` --- libc データベース"
 
 #: of pwnlib.libcdb:1
 msgid "Fetch a LIBC binary based on some heuristics."
-msgstr ""
+msgstr "いくつかのヒューリスティックに基づいて、LIBC のバイナリを取得します。"
 
 #: of pwnlib.libcdb.download_libraries:1
-msgid ""
-"Download the matching libraries for the given libc binary and cache them "
-"in a local directory. The libraries are looked up using `libc.rip "
-"<https://libc.rip>`_ and fetched from the official package repositories "
-"if available."
-msgstr ""
+msgid "Download the matching libraries for the given libc binary and cache them in a local directory. The libraries are looked up using `libc.rip <https://libc.rip>`_ and fetched from the official package repositories if available."
+msgstr "指定した libc のバイナリに対応するライブラリをダウンロードして、ローカルのディレクトリにキャッシュします。ライブラリは `libc.rip <https://libc.rip>`_ で調べ、公式のパッケージリポジトリから取得できる場合はそこから取得します。"
 
 #: of pwnlib.libcdb.download_libraries:5
-msgid ""
-"This commonly includes the ``ld-linux-x86-64.so.2`` and "
-"``libpthread.so.0`` binaries which can be used to execute the program "
-"locally when the given libc is incompatible with the local dynamic "
-"loader."
-msgstr ""
+msgid "This commonly includes the ``ld-linux-x86-64.so.2`` and ``libpthread.so.0`` binaries which can be used to execute the program locally when the given libc is incompatible with the local dynamic loader."
+msgstr "これには通常、``ld-linux-x86-64.so.2`` と ``libpthread.so.0`` のバイナリが含まれます。指定した libc がローカルの動的ローダーと互換性がないときに、プログラムをローカルで実行するために使えます。"
 
 #: of pwnlib.libcdb.download_libraries:9
-msgid ""
-"Note: Only .deb and .pkg.tar.* packages are currently supported "
-"(Debian/Ubuntu, Arch)."
-msgstr ""
+msgid "Note: Only .deb and .pkg.tar.* packages are currently supported (Debian/Ubuntu, Arch)."
+msgstr "注: 現在対応しているのは、.deb と .pkg.tar.* のパッケージ(Debian/Ubuntu、Arch)だけです。"
 
 #: of pwnlib.libcdb.download_libraries pwnlib.libcdb.search_by_build_id
 #: pwnlib.libcdb.search_by_libs_id pwnlib.libcdb.search_by_md5
@@ -58,26 +48,18 @@ msgstr ""
 
 #: of pwnlib.libcdb.download_libraries:11
 msgid "The path the libc binary."
-msgstr ""
+msgstr "libc のバイナリのパス。"
 
 #: of pwnlib.libcdb.download_libraries:13 pwnlib.libcdb.search_by_build_id:5
 #: pwnlib.libcdb.search_by_libs_id:5 pwnlib.libcdb.search_by_md5:5
 #: pwnlib.libcdb.search_by_sha1:5 pwnlib.libcdb.search_by_sha256:5
 #: pwnlib.libcdb.search_by_symbol_offsets:15
 msgid "Try to fetch debug info for the libc and apply it to the downloaded file."
-msgstr ""
+msgstr "libc のデバッグ情報を取得して、ダウンロードしたファイルに適用します。"
 
 #: of pwnlib.libcdb.download_libraries:15
-msgid ""
-"Optional additional Debian-style apt mirror prefix(es) to try after the "
-"libc.rip URL. Useful when the official mirror has dropped older "
-"vulnerable libc versions: each candidate URL is re-tried with everything "
-"before ``/pool/`` swapped for the mirror prefix. Mirrors can also be "
-"supplied via the ``PWNLIB_EXTRA_LIBC_MIRRORS`` environment variable as a "
-"comma- or whitespace-separated list. Example: pass "
-"``\"https://debian.sipwise.com/debian-security\"`` to find ``GLIBC "
-"2.36-9+deb12u6`` after the official Debian mirrors removed it."
-msgstr ""
+msgid "Optional additional Debian-style apt mirror prefix(es) to try after the libc.rip URL. Useful when the official mirror has dropped older vulnerable libc versions: each candidate URL is re-tried with everything before ``/pool/`` swapped for the mirror prefix. Mirrors can also be supplied via the ``PWNLIB_EXTRA_LIBC_MIRRORS`` environment variable as a comma- or whitespace-separated list. Example: pass ``\"https://debian.sipwise.com/debian-security\"`` to find ``GLIBC 2.36-9+deb12u6`` after the official Debian mirrors removed it."
+msgstr "省略可。libc.rip の URL のあとに試す、Debian 形式の apt ミラーの接頭辞(追加分)。公式のミラーから、古い脆弱な libc のバージョンが削除されている場合に便利です。候補の URL ごとに、``/pool/`` より前の部分をミラーの接頭辞に置き換えて、もう一度試します。ミラーは、環境変数 ``PWNLIB_EXTRA_LIBC_MIRRORS`` に、カンマか空白で区切ったリストとして渡すこともできます。例: 公式の Debian ミラーから削除されたあとの ``GLIBC 2.36-9+deb12u6`` を探すには、``\"https://debian.sipwise.com/debian-security\"`` を渡します。"
 
 #: of pwnlib.libcdb.download_libraries pwnlib.libcdb.search_by_build_id
 #: pwnlib.libcdb.search_by_libs_id pwnlib.libcdb.search_by_md5
@@ -88,49 +70,39 @@ msgstr ""
 
 #: of pwnlib.libcdb.download_libraries:27
 msgid "The path to the cached directory containing the downloaded libraries."
-msgstr ""
+msgstr "ダウンロードしたライブラリを含む、キャッシュされたディレクトリのパス。"
 
 #: of pwnlib.libcdb.download_libraries:30
 msgid "Example"
 msgstr ""
 
 #: of pwnlib.libcdb.download_libraries:40
-msgid ""
-"Fetch libraries from a different mirror for a vulnerable libc version "
-"``libc6_2.36-9+deb12u6_amd64`` that was removed from the official Debian "
-"mirrors:"
-msgstr ""
+msgid "Fetch libraries from a different mirror for a vulnerable libc version ``libc6_2.36-9+deb12u6_amd64`` that was removed from the official Debian mirrors:"
+msgstr "公式の Debian ミラーから削除された、脆弱な libc のバージョン ``libc6_2.36-9+deb12u6_amd64`` のライブラリを、別のミラーから取得します:"
 
 #: of pwnlib.libcdb.get_build_id_offsets:1
-msgid ""
-"Returns a list of file offsets where the Build ID should reside within an"
-" ELF file of the currently selected architecture."
-msgstr ""
+msgid "Returns a list of file offsets where the Build ID should reside within an ELF file of the currently selected architecture."
+msgstr "現在選択されているアーキテクチャの ELF ファイルで、Build ID があるはずのファイルオフセットのリストを返します。"
 
 #: of pwnlib.libcdb.search_by_build_id:1
-msgid ""
-"Given a hex-encoded Build ID, attempt to download a matching libc from "
-"libcdb."
-msgstr ""
+msgid "Given a hex-encoded Build ID, attempt to download a matching libc from libcdb."
+msgstr "16 進にエンコードされた Build ID から、一致する libc を libcdb からダウンロードしようとします。"
 
 #: of pwnlib.libcdb.search_by_build_id:3
 msgid "Hex-encoded Build ID (e.g. 'ABCDEF...') of the library"
-msgstr ""
+msgstr "ライブラリの、16 進にエンコードされた Build ID(例: 'ABCDEF...')"
 
 #: of pwnlib.libcdb.search_by_build_id:7 pwnlib.libcdb.search_by_md5:7
 #: pwnlib.libcdb.search_by_sha1:7 pwnlib.libcdb.search_by_sha256:7
 #: pwnlib.libcdb.search_by_symbol_offsets:17
-msgid ""
-"When pass `offline_only=True`, restricts search mode to offline sources "
-"only, disable online lookup. Defaults to `False`, and enable both offline"
-" and online providers."
-msgstr ""
+msgid "When pass `offline_only=True`, restricts search mode to offline sources only, disable online lookup. Defaults to `False`, and enable both offline and online providers."
+msgstr "`offline_only=True` を渡すと、検索をオフラインの情報源だけに限り、オンラインでの検索を無効にします。既定値は `False` で、オフラインとオンラインの両方の提供元を有効にします。"
 
 #: of pwnlib.libcdb.search_by_build_id:11 pwnlib.libcdb.search_by_libs_id:11
 #: pwnlib.libcdb.search_by_md5:11 pwnlib.libcdb.search_by_sha1:11
 #: pwnlib.libcdb.search_by_sha256:11
 msgid "Path to the downloaded library on disk, or :const:`None`."
-msgstr ""
+msgstr "ダウンロードしたライブラリのディスク上のパス。または :const:`None`。"
 
 #: of pwnlib.libcdb.search_by_build_id:14 pwnlib.libcdb.search_by_libs_id:14
 #: pwnlib.libcdb.search_by_md5:14 pwnlib.libcdb.search_by_sha1:14
@@ -141,109 +113,88 @@ msgstr ""
 
 #: of pwnlib.libcdb.search_by_libs_id:1
 msgid "Given a Libs ID, attempt to download a matching libc from libcdb."
-msgstr ""
+msgstr "Libs ID から、一致する libc を libcdb からダウンロードしようとします。"
 
 #: of pwnlib.libcdb.search_by_libs_id:3
 msgid "Libs ID (e.g. ``'libc6_...'``) of the library"
-msgstr ""
+msgstr "ライブラリの Libs ID(例: ``'libc6_...'``)"
 
 #: of pwnlib.libcdb.search_by_libs_id:7
-msgid ""
-"When pass ``offline_only=True``, restricts search mode to offline sources"
-" only, disable online lookup. Defaults to :const:`False`, and enable both"
-" offline and online providers."
-msgstr ""
+msgid "When pass ``offline_only=True``, restricts search mode to offline sources only, disable online lookup. Defaults to :const:`False`, and enable both offline and online providers."
+msgstr "``offline_only=True`` を渡すと、検索をオフラインの情報源だけに限り、オンラインでの検索を無効にします。既定値は :const:`False` で、オフラインとオンラインの両方の提供元を有効にします。"
 
 #: of pwnlib.libcdb.search_by_md5:1
-msgid ""
-"Given a hex-encoded md5sum, attempt to download a matching libc from "
-"libcdb."
-msgstr ""
+msgid "Given a hex-encoded md5sum, attempt to download a matching libc from libcdb."
+msgstr "16 進にエンコードされた md5sum から、一致する libc を libcdb からダウンロードしようとします。"
 
 #: of pwnlib.libcdb.search_by_md5:3
 msgid "Hex-encoded md5sum (e.g. 'ABCDEF...') of the library"
-msgstr ""
+msgstr "ライブラリの、16 進にエンコードされた md5sum(例: 'ABCDEF...')"
 
 #: of pwnlib.libcdb.search_by_sha1:1
 msgid "Given a hex-encoded sha1, attempt to download a matching libc from libcdb."
-msgstr ""
+msgstr "16 進にエンコードされた sha1 から、一致する libc を libcdb からダウンロードしようとします。"
 
 #: of pwnlib.libcdb.search_by_sha1:3
 msgid "Hex-encoded sha1sum (e.g. 'ABCDEF...') of the library"
-msgstr ""
+msgstr "ライブラリの、16 進にエンコードされた sha1sum(例: 'ABCDEF...')"
 
 #: of pwnlib.libcdb.search_by_sha256:1
-msgid ""
-"Given a hex-encoded sha256, attempt to download a matching libc from "
-"libcdb."
-msgstr ""
+msgid "Given a hex-encoded sha256, attempt to download a matching libc from libcdb."
+msgstr "16 進にエンコードされた sha256 から、一致する libc を libcdb からダウンロードしようとします。"
 
 #: of pwnlib.libcdb.search_by_sha256:3
 msgid "Hex-encoded sha256sum (e.g. 'ABCDEF...') of the library"
-msgstr ""
+msgstr "ライブラリの、16 進にエンコードされた sha256sum(例: 'ABCDEF...')"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:1
 msgid "Lookup possible matching libc versions based on leaked function addresses."
-msgstr ""
+msgstr "リークした関数のアドレスから、一致する可能性のある libc のバージョンを調べます。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:3
-msgid ""
-"The leaked function addresses have to be provided as a dict mapping the "
-"function name to the leaked value. Only the lower 3 nibbles are relevant "
-"for the lookup."
-msgstr ""
+msgid "The leaked function addresses have to be provided as a dict mapping the function name to the leaked value. Only the lower 3 nibbles are relevant for the lookup."
+msgstr "リークした関数のアドレスは、関数名からリークした値への辞書で渡す必要があります。検索に使われるのは、下位 3 ニブル(nibble)だけです。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:7
-msgid ""
-"If there are multiple matches you are presented with a list to select one"
-" interactively, unless the ``select_index`` or ``return_as_list`` "
-"arguments are used."
-msgstr ""
+msgid "If there are multiple matches you are presented with a list to select one interactively, unless the ``select_index`` or ``return_as_list`` arguments are used."
+msgstr "複数が一致した場合は、一覧から対話的に 1 つを選びます。ただし ``select_index`` か ``return_as_list`` を指定した場合は選びません。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:11
 msgid "Dictionary mapping symbol names to their addresses."
-msgstr ""
+msgstr "シンボル名からアドレスへの辞書。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:13
 msgid "The libc to select if there are multiple matches (starting at 1)."
-msgstr ""
+msgstr "複数が一致した場合に選ぶ libc(1 から数えます)。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:20
 msgid "An option to select searched hash."
-msgstr ""
+msgstr "検索するハッシュを選ぶオプション。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:22
-msgid ""
-"Return a list of build ids of all matching libc versions instead of a "
-"path to a downloaded file."
-msgstr ""
+msgid "Return a list of build ids of all matching libc versions instead of a path to a downloaded file."
+msgstr "ダウンロードしたファイルのパスの代わりに、一致するすべての libc のバージョンの build id のリストを返します。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:25
 msgid "Return raw list of matched libc."
-msgstr ""
+msgstr "一致した libc の生のリストを返します。"
 
 #: of pwnlib.libcdb.search_by_symbol_offsets:28
-msgid ""
-"Path to the downloaded library on disk, or :const:`None`. If the "
-"``return_as_list`` argument is :const:`True`, a list of build ids is "
-"returned instead."
-msgstr ""
+msgid "Path to the downloaded library on disk, or :const:`None`. If the ``return_as_list`` argument is :const:`True`, a list of build ids is returned instead."
+msgstr "ダウンロードしたライブラリのディスク上のパス。または :const:`None`。``return_as_list`` 引数が :const:`True` の場合は、代わりに build id のリストを返します。"
 
 #: of pwnlib.libcdb.unstrip_libc:1
-msgid ""
-"Given a path to a libc binary, attempt to download matching debug info "
-"and add them back to the given binary."
-msgstr ""
+msgid "Given a path to a libc binary, attempt to download matching debug info and add them back to the given binary."
+msgstr "libc のバイナリのパスから、一致するデバッグ情報をダウンロードして、そのバイナリに戻して追加しようとします。"
 
 #: of pwnlib.libcdb.unstrip_libc:4
 msgid "This modifies the given file."
-msgstr ""
+msgstr "指定したファイルを変更します。"
 
 #: of pwnlib.libcdb.unstrip_libc:6
 msgid "Path to the libc binary to unstrip."
-msgstr ""
+msgstr "strip を元に戻す libc のバイナリのパス。"
 
 #: of pwnlib.libcdb.unstrip_libc:9
 msgid ":const:`True` if binary was unstripped, :const:`False` otherwise."
-msgstr ""
-
+msgstr "バイナリの strip を戻せた場合は :const:`True`、そうでなければ :const:`False`。"

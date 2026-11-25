@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/ui.rst:10
 msgid ":mod:`pwnlib.ui` --- Functions for user interaction"
-msgstr ""
+msgstr ":mod:`pwnlib.ui` --- ユーザーとのやり取りのための関数"
 
 #: of pwnlib.ui.more:1
 msgid "Shows text like the command line tool ``more``."
-msgstr ""
+msgstr "コマンドラインツールの ``more`` のように、テキストを表示します。"
 
 #: of pwnlib.ui.more:3
 msgid "It not in term_mode, just prints the data to the screen."
-msgstr ""
+msgstr "term_mode でない場合は、データを画面に表示するだけです。"
 
 #: of pwnlib.ui.more pwnlib.ui.options pwnlib.ui.yesno
 msgid "Parameters"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: of pwnlib.ui.more:5
 msgid "The text to show."
-msgstr ""
+msgstr "表示するテキストです。"
 
 #: of pwnlib.ui.more pwnlib.ui.options pwnlib.ui.yesno
 msgid "Returns"
@@ -53,10 +53,8 @@ msgid "Tests:"
 msgstr ""
 
 #: of pwnlib.ui.options:1
-msgid ""
-"Presents the user with a prompt (typically in the form of a question) and"
-" a number of options."
-msgstr ""
+msgid "Presents the user with a prompt (typically in the form of a question) and a number of options."
+msgstr "ユーザーにプロンプト(通常は質問の形)と、いくつかの選択肢を提示します。"
 
 #: of pwnlib.ui.options:4 pwnlib.ui.yesno:4
 msgid "The prompt to show"
@@ -72,7 +70,7 @@ msgstr ""
 
 #: of pwnlib.ui.options:10
 msgid "The users choice in the form of an integer."
-msgstr ""
+msgstr "ユーザーの選択を整数で表したものです。"
 
 #: of pwnlib.ui.options:13 pwnlib.ui.pause:4 pwnlib.ui.yesno:11
 msgid "Examples"
@@ -80,19 +78,16 @@ msgstr ""
 
 #: of pwnlib.ui.pause:1
 msgid "Waits for either user input or a specific number of seconds."
-msgstr ""
+msgstr "ユーザーの入力、または指定した秒数のどちらかを待ちます。"
 
 #: of pwnlib.ui.yesno:1
-msgid ""
-"Presents the user with prompt (typically in the form of question) which "
-"the user must answer yes or no."
-msgstr ""
+msgid "Presents the user with prompt (typically in the form of question) which the user must answer yes or no."
+msgstr "ユーザーにプロンプト(通常は質問の形)を提示し、yes か no で答えさせます。"
 
 #: of pwnlib.ui.yesno:6
 msgid "The default option;  `True` means \"yes\""
-msgstr ""
+msgstr "既定の選択肢です。`True` は「yes」を意味します。"
 
 #: of pwnlib.ui.yesno:8
 msgid "`True` if the answer was \"yes\", `False` if \"no\""
-msgstr ""
-
+msgstr "答えが「yes」なら `True`、「no」なら `False` です。"

@@ -21,37 +21,31 @@ msgstr ""
 
 #: ../pwntools/docs/source/protocols.rst:7
 msgid ":mod:`pwnlib.protocols.adb` --- Protocol implementations"
-msgstr ""
+msgstr ":mod:`pwnlib.protocols.adb` --- プロトコルの実装"
 
 #: of pwnlib.protocols.adb:1
 msgid "Implementation of the Android Debug Bridge (ADB) protocol."
-msgstr ""
+msgstr "Android Debug Bridge (ADB) プロトコルの実装です。"
 
 #: of pwnlib.protocols.adb:3
 msgid "Documentation is available here_."
-msgstr ""
+msgstr "文書は here_ にあります。"
 
 #: of pwnlib.protocols.adb.AdbClient:1
 msgid "ADB Client"
 msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient._autoclose:1
-msgid ""
-"Decorator which automatically closes the connection to the ADB server "
-"after calling the decorated function."
-msgstr ""
+msgid "Decorator which automatically closes the connection to the ADB server after calling the decorated function."
+msgstr "修飾した関数を呼び出したあとに、ADB サーバーへの接続を自動で閉じるデコレータです。"
 
 #: of pwnlib.protocols.adb.AdbClient._sync:1
-msgid ""
-"Decorator which enters 'sync:' mode to the selected transport, then "
-"invokes the decorated funciton."
-msgstr ""
+msgid "Decorator which enters 'sync:' mode to the selected transport, then invokes the decorated funciton."
+msgstr "選択したトランスポートを 'sync:' モードにしてから、修飾した関数を呼び出すデコレータです。"
 
 #: of pwnlib.protocols.adb.AdbClient._with_transport:1
-msgid ""
-"Decorator which automatically selects a device transport before calling "
-"the decorated function, and closes the connection afterward."
-msgstr ""
+msgid "Decorator which automatically selects a device transport before calling the decorated function, and closes the connection afterward."
+msgstr "修飾した関数を呼び出す前にデバイスのトランスポートを自動で選択し、呼び出し後に接続を閉じるデコレータです。"
 
 #: ../pwntools/docs/source/protocols.rst
 msgid "Parameters"
@@ -59,7 +53,7 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.devices:1
 msgid "If :const:`True`, fetch the long-format listing."
-msgstr ""
+msgstr ":const:`True` の場合、長い形式の一覧を取得します。"
 
 #: ../pwntools/docs/source/protocols.rst
 msgid "Returns"
@@ -67,15 +61,15 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.devices:4
 msgid "String representation of all available devices."
-msgstr ""
+msgstr "利用できるすべてのデバイスの文字列表現。"
 
 #: of pwnlib.protocols.adb.AdbClient.execute:1
 msgid "Executes a program on the device."
-msgstr ""
+msgstr "デバイスでプログラムを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.execute:3
 msgid "A :class:`pwnlib.tubes.tube.tube` which is connected to the process."
-msgstr ""
+msgstr "そのプロセスにつながった :class:`pwnlib.tubes.tube.tube`。"
 
 #: of pwnlib.protocols.adb.AdbClient.execute:5
 #: pwnlib.protocols.adb.AdbClient.list:25
@@ -85,55 +79,43 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.kill:1
 msgid "Kills the remote ADB server\""
-msgstr ""
+msgstr "リモートの ADB サーバーを終了します。"
 
 #: of pwnlib.protocols.adb.AdbClient.kill:9
-msgid ""
-"The server is automatically re-started on the next request, if the "
-"default host/port are used."
-msgstr ""
+msgid "The server is automatically re-started on the next request, if the default host/port are used."
+msgstr "既定のホストとポートを使っている場合、サーバーは次のリクエストで自動的に再起動されます。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:1
 msgid "Execute the ``LIST`` command of the ``SYNC`` API."
-msgstr ""
+msgstr "``SYNC`` API の ``LIST`` コマンドを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:3
 msgid "Path of the directory to list."
-msgstr ""
+msgstr "一覧にするディレクトリのパス。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:6
-msgid ""
-"A dictionary, where the keys are relative filenames, and the values are a"
-" dictionary containing the same values as ``stat()`` supplies."
-msgstr ""
+msgid "A dictionary, where the keys are relative filenames, and the values are a dictionary containing the same values as ``stat()`` supplies."
+msgstr "辞書。キーは相対的なファイル名で、値は ``stat()`` が返すものと同じ値を含む辞書です。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:12
-msgid ""
-"In recent releases of Android (e.g. 7.0), the domain that adbd executes "
-"from does not have access to everything that the shell user does."
-msgstr ""
+msgid "In recent releases of Android (e.g. 7.0), the domain that adbd executes from does not have access to everything that the shell user does."
+msgstr "最近の Android(たとえば 7.0)では、adbd が動くドメインは、シェルのユーザーが持つすべてへのアクセス権を持っていません。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:16
-msgid ""
-"Because of this, while the shell user can get listings of e.g. the root "
-"directory ('/'), adbd cannot."
-msgstr ""
+msgid "Because of this, while the shell user can get listings of e.g. the root directory ('/'), adbd cannot."
+msgstr "そのため、シェルのユーザーならたとえばルートディレクトリ('/')の一覧を取得できますが、adbd にはできません。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:19
-msgid ""
-"The SYNC APIs are executed within the adbd context, not the shell user "
-"context."
-msgstr ""
+msgid "The SYNC APIs are executed within the adbd context, not the shell user context."
+msgstr "SYNC API は、シェルのユーザーのコンテキストではなく、adbd のコンテキストで実行されます。"
 
 #: of pwnlib.protocols.adb.AdbClient.list:22
-msgid ""
-"This issue is not a problem if the phone is rooted via 'adb root', since "
-"adbd then runs in the ``su`` domain."
-msgstr ""
+msgid "This issue is not a problem if the phone is rooted via 'adb root', since adbd then runs in the ``su`` domain."
+msgstr "'adb root' で端末を root 化している場合は、adbd が ``su`` ドメインで動くため、この問題は起きません。"
 
 #: of pwnlib.protocols.adb.AdbClient.read:1
 msgid "Execute the ``READ`` command of the ``SYNC`` API."
-msgstr ""
+msgstr "``SYNC`` API の ``READ`` コマンドを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.read:3
 msgid "Path to the file to read"
@@ -141,20 +123,15 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.read:5
 msgid "Size of the file, in bytes.  Optional."
-msgstr ""
+msgstr "ファイルのサイズ(バイト)。省略可。"
 
 #: of pwnlib.protocols.adb.AdbClient.read:7
-msgid ""
-"Callback function invoked as data becomes available.  Arguments provided "
-"are:  - File path - All data - Expected size of all data - Current chunk "
-"- Expected size of chunk"
-msgstr ""
+msgid "Callback function invoked as data becomes available.  Arguments provided are:  - File path - All data - Expected size of all data - Current chunk - Expected size of chunk"
+msgstr "データが利用できるようになるたびに呼ばれるコールバック関数。渡される引数は次のとおりです: - ファイルのパス - すべてのデータ - すべてのデータの想定サイズ - 現在のチャンク - チャンクの想定サイズ"
 
 #: of pwnlib.protocols.adb.AdbClient.read:7
-msgid ""
-"Callback function invoked as data becomes available.  Arguments provided "
-"are:"
-msgstr ""
+msgid "Callback function invoked as data becomes available.  Arguments provided are:"
+msgstr "データが利用できるようになるたびに呼ばれるコールバック関数。渡される引数は次のとおりです。"
 
 #: of pwnlib.protocols.adb.AdbClient.read:10
 #: pwnlib.protocols.adb.AdbClient.write:14
@@ -183,11 +160,11 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.read:17
 msgid "The data received as a string."
-msgstr ""
+msgstr "文字列として受け取ったデータ。"
 
 #: of pwnlib.protocols.adb.AdbClient.recvl:1
 msgid "Receives a length-prefixed data buffer from the ADB server"
-msgstr ""
+msgstr "ADB サーバーから、長さが前に付いたデータバッファを受け取ります"
 
 #: of pwnlib.protocols.adb.AdbClient.send:1
 msgid "Sends data to the ADB server"
@@ -195,17 +172,15 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.stat:1
 msgid "Execute the STAT command of the SYNC API."
-msgstr ""
+msgstr "SYNC API の STAT コマンドを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.stat:3
 msgid "Path to the file to stat."
-msgstr ""
+msgstr "stat するファイルのパス。"
 
 #: of pwnlib.protocols.adb.AdbClient.stat:6
-msgid ""
-"On success, a dictionary mapping the values returned. If the file cannot "
-"be stat() ed, None is returned."
-msgstr ""
+msgid "On success, a dictionary mapping the values returned. If the file cannot be stat() ed, None is returned."
+msgstr "成功した場合は、返された値を対応させた辞書。ファイルを stat() できない場合は、None を返します。"
 
 #: of pwnlib.protocols.adb.AdbClient.stat:9
 #: pwnlib.protocols.adb.AdbClient.version:3
@@ -213,26 +188,24 @@ msgid "Example:"
 msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.track_devices:1
-msgid ""
-"Generator which returns a short-format listing of available devices each "
-"time a device state changes."
-msgstr ""
+msgid "Generator which returns a short-format listing of available devices each time a device state changes."
+msgstr "デバイスの状態が変わるたびに、利用できるデバイスの短い形式の一覧を返すジェネレータです。"
 
 #: of pwnlib.protocols.adb.AdbClient.transport:1
 msgid "Sets the Transport on the remote device."
-msgstr ""
+msgstr "リモートのデバイスのトランスポートを設定します。"
 
 #: of pwnlib.protocols.adb.AdbClient.unpack:1
 msgid "Receives a hex-ascii packed integer from the ADB server"
-msgstr ""
+msgstr "ADB サーバーから、16 進の ASCII で表された整数を受け取ります"
 
 #: of pwnlib.protocols.adb.AdbClient.version:1
 msgid "Tuple containing the ``(major, minor)`` version from the ADB server"
-msgstr ""
+msgstr "ADB サーバーの ``(major, minor)`` バージョンを含むタプル"
 
 #: of pwnlib.protocols.adb.AdbClient.write:1
 msgid "Execute the ``WRITE`` command of the ``SYNC`` API."
-msgstr ""
+msgstr "``SYNC`` API の ``WRITE`` コマンドを実行します。"
 
 #: of pwnlib.protocols.adb.AdbClient.write:3
 msgid "Path to the file to write"
@@ -244,26 +217,23 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.write:7
 msgid "File mode to set (e.g. ``0o755``)"
-msgstr ""
+msgstr "設定するファイルのモード(例: ``0o755``)"
 
 #: of pwnlib.protocols.adb.AdbClient.write:9
 msgid "Unix timestamp to set the file date to"
 msgstr ""
 
 #: of pwnlib.protocols.adb.AdbClient.write:11
-msgid ""
-"Callback function invoked as data is written.  Arguments provided are:  -"
-" File path - All data - Expected size of all data - Current chunk - "
-"Expected size of chunk"
-msgstr ""
+msgid "Callback function invoked as data is written.  Arguments provided are:  - File path - All data - Expected size of all data - Current chunk - Expected size of chunk"
+msgstr "データが書き込まれるたびに呼ばれるコールバック関数。渡される引数は次のとおりです: - ファイルのパス - すべてのデータ - すべてのデータの想定サイズ - 現在のチャンク - チャンクの想定サイズ"
 
 #: of pwnlib.protocols.adb.AdbClient.write:11
 msgid "Callback function invoked as data is written.  Arguments provided are:"
-msgstr ""
+msgstr "データが書き込まれるたびに呼ばれるコールバック関数。渡される引数は次のとおりです。"
 
 #: of pwnlib.protocols.adb.AdbClient.c:1
 msgid "AdbClient's connection to the ADB server"
-msgstr ""
+msgstr "ADB サーバーへの AdbClient の接続"
 
 #: of pwnlib.protocols.adb.Connection:1
 msgid "Connection to the ADB server"
@@ -271,27 +241,24 @@ msgstr ""
 
 #: of pwnlib.protocols.adb.Connection.close:1
 msgid "Closes the tube."
-msgstr ""
+msgstr "tube を閉じます。"
 
 #: of pwnlib.protocols.adb.Message:1
 msgid "An ADB hex-length-prefixed message"
-msgstr ""
+msgstr "16 進の長さが前に付いた ADB のメッセージ"
 
 #: of pwnlib.protocols.adb.Message.__str__:1
 msgid "Return str(self)."
-msgstr ""
+msgstr "str(self) を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.protocols.adb.Message.__weakref__:1
 msgid "list of weak references to the object"
 msgstr ""
 
 #: of pwnlib.protocols.adb.Process:1
-msgid ""
-"Duck-typed ``tubes.remote`` object to add properties of a "
-"``tubes.process``"
-msgstr ""
+msgid "Duck-typed ``tubes.remote`` object to add properties of a ``tubes.process``"
+msgstr "``tubes.process`` のプロパティを加えた、ダックタイピングの ``tubes.remote`` オブジェクト"
 
 #: of pwnlib.protocols.adb.proxy:1
 msgid "Starts an ADB proxy on the specified port, for debugging purposes."
-msgstr ""
-
+msgstr "デバッグ用に、指定したポートで ADB プロキシを起動します。"

@@ -21,132 +21,96 @@ msgstr ""
 
 #: ../pwntools/docs/source/args.rst:6
 msgid ":mod:`pwnlib.args` --- Magic Command-Line Arguments"
-msgstr ""
+msgstr ":mod:`pwnlib.args` --- 特別なコマンドライン引数"
 
 #: of pwnlib.args:1
-msgid ""
-"Pwntools exposes several magic command-line arguments and environment "
-"variables when operating in `from pwn import *` mode."
-msgstr ""
+msgid "Pwntools exposes several magic command-line arguments and environment variables when operating in `from pwn import *` mode."
+msgstr "Pwntools は、`from pwn import *` モードで動作しているとき、いくつかの特別なコマンドライン引数と環境変数を提供します。"
 
 #: of pwnlib.args:4
-msgid ""
-"The arguments extracted from the command-line and removed from "
-"``sys.argv``."
-msgstr ""
+msgid "The arguments extracted from the command-line and removed from ``sys.argv``."
+msgstr "コマンドラインから取り出され、``sys.argv`` から取り除かれた引数です。"
 
 #: of pwnlib.args:6
-msgid ""
-"Arguments can be set by appending them to the command-line, or setting "
-"them in the environment prefixed by ``PWNLIB_``."
-msgstr ""
+msgid "Arguments can be set by appending them to the command-line, or setting them in the environment prefixed by ``PWNLIB_``."
+msgstr "引数は、コマンドラインの末尾に付けるか、``PWNLIB_`` を前に付けた環境変数で設定できます。"
 
 #: of pwnlib.args:9
-msgid ""
-"The easiest example is to enable more verbose debugging.  Just set "
-"``DEBUG``."
-msgstr ""
+msgid "The easiest example is to enable more verbose debugging.  Just set ``DEBUG``."
+msgstr "いちばん簡単な例は、より詳細なデバッグ出力を有効にすることです。``DEBUG`` を設定するだけです。"
 
 #: of pwnlib.args:16
-msgid ""
-"These arguments are automatically extracted, regardless of their name, "
-"and exposed via :mod:`pwnlib.args.args`, which is exposed as the global "
-"variable :data:`args`.  Arguments which ``pwntools`` reserves internally "
-"are not exposed this way.  These reserved arguments (such as ``DEBUG`` "
-"and ``NOASLR``) instead adjust :data:`pwnlib.context.context`, so their "
-"effect is read from ``context`` (e.g. ``context.log_level``, "
-"``context.aslr``) rather than from ``args`` -- ``args.NOASLR`` is always "
-"the empty string."
-msgstr ""
+msgid "These arguments are automatically extracted, regardless of their name, and exposed via :mod:`pwnlib.args.args`, which is exposed as the global variable :data:`args`.  Arguments which ``pwntools`` reserves internally are not exposed this way.  These reserved arguments (such as ``DEBUG`` and ``NOASLR``) instead adjust :data:`pwnlib.context.context`, so their effect is read from ``context`` (e.g. ``context.log_level``, ``context.aslr``) rather than from ``args`` -- ``args.NOASLR`` is always the empty string."
+msgstr "これらの引数は、名前に関係なく自動的に取り出され、:mod:`pwnlib.args.args` を通じて公開されます。これはグローバル変数 :data:`args` として使えます。``pwntools`` が内部で予約している引数は、この方法では公開されません。予約された引数(``DEBUG`` や ``NOASLR`` など)は、代わりに :data:`pwnlib.context.context` を調整します。そのため、効果は ``args`` ではなく ``context`` (たとえば ``context.log_level``、``context.aslr``)から読み取ります。``args.NOASLR`` は常に空文字列です。"
 
 #: of pwnlib.args:29
-msgid ""
-"This is very useful for conditional code, for example determining whether"
-" to run an exploit locally or to connect to a remote server.  Arguments "
-"which are not specified evaluate to an empty string."
-msgstr ""
+msgid "This is very useful for conditional code, for example determining whether to run an exploit locally or to connect to a remote server.  Arguments which are not specified evaluate to an empty string."
+msgstr "これは条件分岐のコードにとても便利で、たとえばエクスプロイトをローカルで実行するか、リモートサーバーに接続するかの判定に使えます。指定されていない引数は、空文字列として評価されます。"
 
 #: of pwnlib.args:40
 msgid "Arguments can also be accessed directly with the dot operator, e.g.:"
-msgstr ""
+msgstr "引数は、ドット演算子で直接参照することもできます。例:"
 
 #: of pwnlib.args:47
 msgid "Any undefined arguments evaluate to an empty string, ``''``."
-msgstr ""
+msgstr "未定義の引数は、空文字列 ``''`` として評価されます。"
 
 #: of pwnlib.args:49
-msgid ""
-"The full list of supported \"magic arguments\" and their effects are "
-"listed below."
-msgstr ""
+msgid "The full list of supported \"magic arguments\" and their effects are listed below."
+msgstr "サポートされている「特別な引数」とその効果の一覧は、次のとおりです。"
 
 #: ../pwntools/docs/docstring of pwnlib.args.PwnlibArgs.__weakref__:1
 msgid "list of weak references to the object"
 msgstr ""
 
 #: of pwnlib.args.DEBUG:1
-msgid ""
-"Sets the logging verbosity to ``debug`` which displays much more "
-"information, including logging each byte sent by tubes."
-msgstr ""
+msgid "Sets the logging verbosity to ``debug`` which displays much more information, including logging each byte sent by tubes."
+msgstr "ログの詳細度を ``debug`` にします。tube が送った各バイトのログなど、はるかに多くの情報が表示されます。"
 
 #: of pwnlib.args.LOCAL_LIBCDB:1
-msgid ""
-"Sets path to local libc-database via ``context.local_libcdb``, e.g. "
-"``LOCAL_LIBCDB='/path/to/libc-databse'``"
-msgstr ""
+msgid "Sets path to local libc-database via ``context.local_libcdb``, e.g. ``LOCAL_LIBCDB='/path/to/libc-databse'``"
+msgstr "``context.local_libcdb`` を通じて、ローカルの libc-database のパスを設定します。例: ``LOCAL_LIBCDB='/path/to/libc-databse'``"
 
 #: of pwnlib.args.LOG_FILE:1
-msgid ""
-"Sets a log file to be used via ``context.log_file``, e.g. "
-"``LOG_FILE=./log.txt``"
-msgstr ""
+msgid "Sets a log file to be used via ``context.log_file``, e.g. ``LOG_FILE=./log.txt``"
+msgstr "``context.log_file`` を通じて、使用するログファイルを設定します。例: ``LOG_FILE=./log.txt``"
 
 #: of pwnlib.args.LOG_LEVEL:1
-msgid ""
-"Sets the logging verbosity used via ``context.log_level``, e.g. "
-"``LOG_LEVEL=debug``."
-msgstr ""
+msgid "Sets the logging verbosity used via ``context.log_level``, e.g. ``LOG_LEVEL=debug``."
+msgstr "``context.log_level`` を通じて、ログの詳細度を設定します。例: ``LOG_LEVEL=debug``。"
 
 #: of pwnlib.args.NOASLR:1
 msgid "Disables ASLR via ``context.aslr``"
-msgstr ""
+msgstr "``context.aslr`` を通じて、ASLR を無効にします。"
 
 #: of pwnlib.args.NOPTRACE:1
-msgid ""
-"Disables facilities which require ``ptrace`` such as ``gdb.attach()`` "
-"statements, via ``context.noptrace``."
-msgstr ""
+msgid "Disables facilities which require ``ptrace`` such as ``gdb.attach()`` statements, via ``context.noptrace``."
+msgstr "``context.noptrace`` を通じて、``gdb.attach()`` 文など ``ptrace`` を必要とする機能を無効にします。"
 
 #: of pwnlib.args.NOTERM:1
 msgid "Disables pretty terminal settings and animations."
-msgstr ""
+msgstr "見た目を整えるターミナル設定とアニメーションを無効にします。"
 
 #: of pwnlib.args.RANDOMIZE:1
 msgid "Enables randomization of various pieces via ``context.randomize``"
-msgstr ""
+msgstr "``context.randomize`` を通じて、さまざまな要素のランダム化を有効にします。"
 
 #: of pwnlib.args.SILENT:1
 msgid "Sets the logging verbosity to ``error`` which silences most output."
-msgstr ""
+msgstr "ログの詳細度を ``error`` にして、ほとんどの出力を抑えます。"
 
 #: of pwnlib.args.STDERR:1
 msgid "Sends logging to ``stderr`` by default, instead of ``stdout``"
-msgstr ""
+msgstr "ログの出力先を、既定の ``stdout`` ではなく ``stderr`` にします。"
 
 #: of pwnlib.args.TIMEOUT:1
-msgid ""
-"Sets a timeout for tube operations (in seconds) via ``context.timeout``, "
-"e.g. ``TIMEOUT=30``"
-msgstr ""
+msgid "Sets a timeout for tube operations (in seconds) via ``context.timeout``, e.g. ``TIMEOUT=30``"
+msgstr "``context.timeout`` を通じて、tube 操作のタイムアウト(秒)を設定します。例: ``TIMEOUT=30``"
 
 #: of pwnlib.args.asbool:1
 msgid "Convert a string to its boolean value"
 msgstr ""
 
 #: of pwnlib.args.isident:1
-msgid ""
-"Helper function to check whether a string is a valid identifier, as "
-"passed in on the command-line."
-msgstr ""
-
+msgid "Helper function to check whether a string is a valid identifier, as passed in on the command-line."
+msgstr "コマンドラインから渡された文字列が、有効な識別子かどうかを調べるヘルパー関数です。"

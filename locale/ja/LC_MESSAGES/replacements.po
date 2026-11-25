@@ -21,17 +21,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/replacements.rst:2
 msgid ":mod:`pwnlib.replacements` --- Replacements for various functions"
-msgstr ""
+msgstr ":mod:`pwnlib.replacements` --- さまざまな関数の置き換え"
 
 #: of pwnlib.replacements:1
 msgid "Improved replacements for standard functions"
 msgstr ""
 
 #: of pwnlib.replacements.sleep:1
-msgid ""
-"Replacement for :func:`time.sleep()`, which does not return if a signal "
-"is received."
-msgstr ""
+msgid "Replacement for :func:`time.sleep()`, which does not return if a signal is received."
+msgstr ":func:`time.sleep()` の置き換えです。シグナルを受け取っても戻りません。"
 
 #: ../pwntools/docs/source/replacements.rst
 msgid "Parameters"
@@ -39,5 +37,4 @@ msgstr ""
 
 #: of pwnlib.replacements.sleep:3
 msgid "Number of seconds to sleep."
-msgstr ""
-
+msgstr "スリープする秒数です。"

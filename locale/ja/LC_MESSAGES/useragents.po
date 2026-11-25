@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/useragents.rst:6
 msgid ":mod:`pwnlib.useragents` --- A database of useragent strings"
-msgstr ""
+msgstr ":mod:`pwnlib.useragents` --- ユーザーエージェント文字列のデータベース"
 
 #: of pwnlib.useragents:1
 msgid "Database of >22,000 user agent strings"
-msgstr ""
+msgstr "22,000 件を超えるユーザーエージェント文字列のデータベースです。"
 
 #: of pwnlib.useragents.getall:1
 msgid "Get all the user agents that we know about."
-msgstr ""
+msgstr "既知のユーザーエージェントをすべて取得します。"
 
 #: of pwnlib.useragents.getall pwnlib.useragents.random
 msgid "Parameters"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: of pwnlib.useragents.getall:5
 msgid "A set of user agent strings."
-msgstr ""
+msgstr "ユーザーエージェント文字列の集合です。"
 
 #: of pwnlib.useragents.getall:8
 msgid "Examples"
@@ -49,9 +49,8 @@ msgstr ""
 
 #: of pwnlib.useragents.random:1
 msgid "Get a random user agent string."
-msgstr ""
+msgstr "ランダムなユーザーエージェント文字列を取得します。"
 
 #: of pwnlib.useragents.random:5
 msgid "A random user agent string selected from :func:`getall`."
-msgstr ""
-
+msgstr ":func:`getall` から選ばれた、ランダムなユーザーエージェント文字列です。"

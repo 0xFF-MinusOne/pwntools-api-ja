@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/timeout.rst:8
 msgid ":mod:`pwnlib.timeout` --- Timeout handling"
-msgstr ""
+msgstr ":mod:`pwnlib.timeout` --- タイムアウトの処理"
 
 #: of pwnlib.timeout:1
 msgid "Timeout encapsulation, complete with countdowns and scope managers."
-msgstr ""
+msgstr "カウントダウンとスコープ管理を備えた、タイムアウトのカプセル化です。"
 
 #: of pwnlib.timeout.Maximum.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Maximum.__weakref__:1
 #: pwnlib.timeout.Timeout.__weakref__:1
@@ -37,22 +37,20 @@ msgid "list of weak references to the object"
 msgstr ""
 
 #: of pwnlib.timeout.Timeout:1
-msgid ""
-"Implements a basic class which has a timeout, and support for scoped "
-"timeout countdowns."
-msgstr ""
+msgid "Implements a basic class which has a timeout, and support for scoped timeout countdowns."
+msgstr "タイムアウトを持ち、スコープ付きのタイムアウトのカウントダウンをサポートする、基本的なクラスを実装します。"
 
 #: of pwnlib.timeout.Timeout:4
 msgid "Valid timeout values are:"
-msgstr ""
+msgstr "有効なタイムアウトの値は次のとおりです。"
 
 #: of pwnlib.timeout.Timeout:6
 msgid "``Timeout.default`` use the global default value (``context.default``)"
-msgstr ""
+msgstr "``Timeout.default`` はグローバルの既定値(``context.default``)を使います"
 
 #: of pwnlib.timeout.Timeout:7
 msgid "``Timeout.forever`` or :const:`None` never time out"
-msgstr ""
+msgstr "``Timeout.forever`` または :const:`None` はタイムアウトしません"
 
 #: of pwnlib.timeout.Timeout:8
 msgid "Any positive float, indicates timeouts in seconds"
@@ -63,27 +61,20 @@ msgid "Example"
 msgstr ""
 
 #: of pwnlib.timeout.Timeout.countdown:1 pwnlib.timeout.Timeout.local:1
-msgid ""
-"Scoped timeout setter.  Sets the timeout within the scope, and restores "
-"it when leaving the scope."
-msgstr ""
+msgid "Scoped timeout setter.  Sets the timeout within the scope, and restores it when leaving the scope."
+msgstr "スコープ付きのタイムアウトの設定です。スコープ内でタイムアウトを設定し、スコープを抜けるときに元に戻します。"
 
 #: of pwnlib.timeout.Timeout.countdown:4
-msgid ""
-"When accessing :attr:`timeout` within the scope, it will be calculated "
-"against the time when the scope was entered, in a countdown fashion."
-msgstr ""
+msgid "When accessing :attr:`timeout` within the scope, it will be calculated against the time when the scope was entered, in a countdown fashion."
+msgstr "スコープ内で :attr:`timeout` にアクセスすると、スコープに入った時刻を基準に、カウントダウンの形で計算されます。"
 
 #: of pwnlib.timeout.Timeout.countdown:8
-msgid ""
-"If :const:`None` is specified for ``timeout``, then the current timeout "
-"is used is made.  This allows :const:`None` to be specified as a default "
-"argument with less complexity."
-msgstr ""
+msgid "If :const:`None` is specified for ``timeout``, then the current timeout is used is made.  This allows :const:`None` to be specified as a default argument with less complexity."
+msgstr "``timeout`` に :const:`None` を指定すると、現在のタイムアウトが使われます。これにより、:const:`None` を引数の既定値として、簡単に指定できます。"
 
 #: of pwnlib.timeout.Timeout.timeout_change:1
 msgid "Callback for subclasses to hook a timeout change."
-msgstr ""
+msgstr "サブクラスがタイムアウトの変更をフックするためのコールバックです。"
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.default:1
 msgid "Value indicating that the timeout should not be changed"
@@ -94,19 +85,13 @@ msgid "Value indicating that a timeout should not ever occur"
 msgstr ""
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.maximum:1
-msgid ""
-"Maximum value for a timeout.  Used to get around platform issues with "
-"very large timeouts."
-msgstr ""
+msgid "Maximum value for a timeout.  Used to get around platform issues with very large timeouts."
+msgstr "タイムアウトの最大値です。非常に大きなタイムアウトによるプラットフォームの問題を回避するために使います。"
 
 #: ../pwntools/docs/docstring of pwnlib.timeout.Timeout.maximum:4
-msgid ""
-"OSX does not permit setting socket timeouts to 2**22. Assume that if we "
-"receive a timeout of 2**21 or greater, that the value is effectively "
-"infinite."
-msgstr ""
+msgid "OSX does not permit setting socket timeouts to 2**22. Assume that if we receive a timeout of 2**21 or greater, that the value is effectively infinite."
+msgstr "OSX では、ソケットのタイムアウトを 2**22 に設定できません。2**21 以上のタイムアウトを受け取った場合は、実質的に無限とみなします。"
 
 #: of pwnlib.timeout.Timeout.timeout:1
 msgid "Timeout for obj operations.  By default, uses ``context.timeout``."
-msgstr ""
-
+msgstr "obj の操作のタイムアウトです。既定では ``context.timeout`` を使います。"

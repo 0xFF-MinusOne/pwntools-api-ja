@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/runner.rst:11
 msgid ":mod:`pwnlib.runner` --- Running Shellcode"
-msgstr ""
+msgstr ":mod:`pwnlib.runner` --- シェルコードの実行"
 
 #: of pwnlib.runner.run_assembly:1
 msgid "Given an assembly listing, assemble and execute it."
-msgstr ""
+msgstr "アセンブリのリストを受け取り、アセンブルして実行します。"
 
 #: of pwnlib.runner.run_assembly pwnlib.runner.run_assembly_exitcode
 #: pwnlib.runner.run_shellcode_exitcode
@@ -34,7 +34,7 @@ msgstr ""
 
 #: of pwnlib.runner.run_assembly:3
 msgid "A :class:`pwnlib.tubes.process.process` tube to interact with the process."
-msgstr ""
+msgstr "プロセスとやり取りするための :class:`pwnlib.tubes.process.process` の tube です。"
 
 #: of pwnlib.runner.run_assembly:6 pwnlib.runner.run_assembly_exitcode:7
 #: pwnlib.runner.run_shellcode:4 pwnlib.runner.run_shellcode_exitcode:7
@@ -42,23 +42,18 @@ msgid "Example"
 msgstr ""
 
 #: of pwnlib.runner.run_assembly_exitcode:1
-msgid ""
-"Given an assembly listing, assemble and execute it, and wait for the "
-"process to die."
-msgstr ""
+msgid "Given an assembly listing, assemble and execute it, and wait for the process to die."
+msgstr "アセンブリのリストを受け取り、アセンブルして実行し、プロセスが終了するまで待ちます。"
 
 #: of pwnlib.runner.run_assembly_exitcode:4
 #: pwnlib.runner.run_shellcode_exitcode:4
 msgid "The exit code of the process."
-msgstr ""
+msgstr "プロセスの終了コードです。"
 
 #: of pwnlib.runner.run_shellcode:1
 msgid "Given assembled machine code bytes, execute them."
-msgstr ""
+msgstr "アセンブル済みの機械語のバイト列を受け取り、実行します。"
 
 #: of pwnlib.runner.run_shellcode_exitcode:1
-msgid ""
-"Given assembled machine code bytes, execute them, and wait for the "
-"process to die."
-msgstr ""
-
+msgid "Given assembled machine code bytes, execute them, and wait for the process to die."
+msgstr "アセンブル済みの機械語のバイト列を受け取り、実行し、プロセスが終了するまで待ちます。"

@@ -21,39 +21,31 @@ msgstr ""
 
 #: ../pwntools/docs/source/update.rst:7
 msgid ":mod:`pwnlib.update` --- Updating Pwntools"
-msgstr ""
+msgstr ":mod:`pwnlib.update` --- Pwntools の更新"
 
 #: of pwnlib.update:1
 msgid "# Pwntools Update"
 msgstr ""
 
 #: of pwnlib.update:3
-msgid ""
-"In order to ensure that Pwntools users always have the latest and "
-"greatest version, Pwntools automatically checks for updates."
-msgstr ""
+msgid "In order to ensure that Pwntools users always have the latest and greatest version, Pwntools automatically checks for updates."
+msgstr "Pwntools は、ユーザーが常に最新版を使えるように、更新を自動的に確認します。"
 
 #: of pwnlib.update:6
-msgid ""
-"Since this update check takes a moment, it is only performed once every "
-"week.  It can be permanently disabled via:"
-msgstr ""
+msgid "Since this update check takes a moment, it is only performed once every week.  It can be permanently disabled via:"
+msgstr "この更新の確認には少し時間がかかるため、1 週間に 1 回だけ行われます。次の方法で、恒久的に無効にできます。"
 
 #: of pwnlib.update:13
-msgid ""
-"Or adding the following lines to ~/.pwn.conf (or system-wide "
-"/etc/pwn.conf):"
-msgstr ""
+msgid "Or adding the following lines to ~/.pwn.conf (or system-wide /etc/pwn.conf):"
+msgstr "または、~/.pwn.conf(あるいはシステム全体の /etc/pwn.conf)に次の行を追加します。"
 
 #: of pwnlib.update.available_on_pypi:1
 msgid "Return True if an update is available on PyPI."
-msgstr ""
+msgstr "PyPI に更新がある場合は True を返します。"
 
 #: of pwnlib.update.cache_file:1
-msgid ""
-"Returns the path of the file used to cache update data, and ensures that "
-"it exists."
-msgstr ""
+msgid "Returns the path of the file used to cache update data, and ensures that it exists."
+msgstr "更新データのキャッシュに使うファイルのパスを返し、そのファイルが存在することを保証します。"
 
 #: of pwnlib.update.last_check:1
 msgid "Return the date of the last check"
@@ -61,7 +53,7 @@ msgstr ""
 
 #: of pwnlib.update.perform_check:1
 msgid "Perform the update check, and report to the user."
-msgstr ""
+msgstr "更新の確認を行い、ユーザーに報告します。"
 
 #: of pwnlib.update.perform_check
 msgid "Parameters"
@@ -69,7 +61,7 @@ msgstr ""
 
 #: of pwnlib.update.perform_check:3
 msgid "Whether or not to include pre-release versions."
-msgstr ""
+msgstr "プレリリース版を含めるかどうかです。"
 
 #: of pwnlib.update.perform_check
 msgid "Returns"
@@ -77,9 +69,8 @@ msgstr ""
 
 #: of pwnlib.update.perform_check:6
 msgid "A list of arguments to the update command."
-msgstr ""
+msgstr "更新コマンドに渡す引数のリストです。"
 
 #: of pwnlib.update.should_check:1
 msgid "Return True if we should check for an update"
 msgstr ""
-

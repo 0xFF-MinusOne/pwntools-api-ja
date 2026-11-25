@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/libc.rst:2
 msgid ":mod:`pwnlib.libc` --- Convenient Functions for Libc Implementations"
-msgstr ""
+msgstr ":mod:`pwnlib.libc` --- libc の実装向けの便利な関数"
 
 #: ../pwntools/docs/source/libc.rst:5
 msgid "Submodules"
@@ -29,19 +29,15 @@ msgstr ""
 
 #: ../pwntools/docs/source/libc/glibc.rst:6
 msgid ":mod:`pwnlib.libc.glibc` --- Convenient Functions for Glibc"
-msgstr ""
+msgstr ":mod:`pwnlib.libc.glibc` --- glibc 向けの便利な関数"
 
 #: of pwnlib.libc.glibc:1
 msgid "Some glibc related convenient functions."
-msgstr ""
+msgstr "glibc に関する便利な関数です。"
 
 #: of pwnlib.libc.glibc.ExitDtorList:1
-msgid ""
-"Craft a ``struct dtor_list`` object. glibc will invoke functions in it if"
-" it's not null when exits. Note that to avoid program aborting, the "
-"``ExitDtorList`` pointer must be free-able. Check `struct dtor_list "
-"definitions`_."
-msgstr ""
+msgid "Craft a ``struct dtor_list`` object. glibc will invoke functions in it if it's not null when exits. Note that to avoid program aborting, the ``ExitDtorList`` pointer must be free-able. Check `struct dtor_list definitions`_."
+msgstr "``struct dtor_list`` オブジェクトを組み立てます。glibc は終了時に、これが null でなければ、中の関数を呼び出します。プログラムが異常終了しないように、``ExitDtorList`` のポインタは free できるものでなければならないことに注意してください。`struct dtor_list definitions`_ を参照してください。"
 
 #: ../pwntools/docs/source/libc/glibc.rst of
 #: pwnlib.libc.glibc.ExitDtorList.from_bytes
@@ -54,25 +50,23 @@ msgstr ""
 
 #: of pwnlib.libc.glibc.ExitDtorList:5 pwnlib.libc.glibc.ExitFunc:8
 msgid "A pointer to function to execute."
-msgstr ""
+msgstr "実行する関数へのポインタ。"
 
 #: of pwnlib.libc.glibc.ExitDtorList:7 pwnlib.libc.glibc.ExitFunc:10
 msgid "Process ``POINTER_GUARD``."
-msgstr ""
+msgstr "``POINTER_GUARD`` を処理します。"
 
 #: of pwnlib.libc.glibc.ExitDtorList:9
 msgid "Argument passed to ``func``."
-msgstr ""
+msgstr "``func`` に渡す引数。"
 
 #: of pwnlib.libc.glibc.ExitDtorList:11
-msgid ""
-"A valid pointer to a ``link_map`` if you want program not to abort. "
-"(``func`` is executed first.)"
-msgstr ""
+msgid "A valid pointer to a ``link_map`` if you want program not to abort. (``func`` is executed first.)"
+msgstr "プログラムを異常終了させたくない場合は、``link_map`` への有効なポインタ。(``func`` が先に実行されます。)"
 
 #: of pwnlib.libc.glibc.ExitDtorList:14
 msgid "Next ``ExitDtorList`` on chain. ``0`` means end of chain."
-msgstr ""
+msgstr "チェーンの次の ``ExitDtorList``。``0`` はチェーンの終わりを意味します。"
 
 #: of pwnlib.libc.glibc.ExitDtorList:18
 #: pwnlib.libc.glibc.ExitDtorList.from_bytes:10 pwnlib.libc.glibc.ExitFunc:18
@@ -85,25 +79,23 @@ msgstr ""
 
 #: of pwnlib.libc.glibc.ExitDtorList.from_bytes:1
 msgid "Construct an ``ExitDtorList`` from bytes object."
-msgstr ""
+msgstr "bytes オブジェクトから ``ExitDtorList`` を組み立てます。"
 
 #: of pwnlib.libc.glibc.ExitDtorList.from_bytes:3
-msgid ""
-"The bytes object to convert to ``ExitDtorList``, whose length should "
-"exactly be ``4 * sizeof(size_t)``."
-msgstr ""
+msgid "The bytes object to convert to ``ExitDtorList``, whose length should exactly be ``4 * sizeof(size_t)``."
+msgstr "``ExitDtorList`` に変換する bytes オブジェクト。長さはちょうど ``4 * sizeof(size_t)`` でなければなりません。"
 
 #: of pwnlib.libc.glibc.ExitDtorList.from_bytes:6
 #: pwnlib.libc.glibc.ExitFunc.from_bytes:6
 #: pwnlib.libc.glibc.ExitFuncList.from_bytes:6
 msgid "Process ``POINTER_GUARD`` to demangle pointers."
-msgstr ""
+msgstr "ポインタを復元(demangle)するために、``POINTER_GUARD`` を処理します。"
 
 #: of pwnlib.libc.glibc.ExitDtorList.__repr__:1
 #: pwnlib.libc.glibc.ExitFunc.__repr__:1
 #: pwnlib.libc.glibc.ExitFuncList.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: ../pwntools/docs/docstring of pwnlib.libc.glibc.ExitDtorList.__weakref__:1
 #: pwnlib.libc.glibc.ExitFunc.__weakref__:1
@@ -113,58 +105,47 @@ msgstr ""
 
 #: of pwnlib.libc.glibc.ExitFlavor:1
 msgid "Enum adapted from glibc ``exit.h``. Check `enum definitions`_."
-msgstr ""
+msgstr "glibc の ``exit.h`` から取り入れた列挙型です。`enum definitions`_ を参照してください。"
 
 #: of pwnlib.libc.glibc.ExitFlavor:3
-msgid ""
-"Original enums are: ``ef_free``, ``ef_us``, ``ef_on``, ``ef_at`` and "
-"``ef_cxa``."
-msgstr ""
+msgid "Original enums are: ``ef_free``, ``ef_us``, ``ef_on``, ``ef_at`` and ``ef_cxa``."
+msgstr "元の列挙型は ``ef_free``、``ef_us``、``ef_on``、``ef_at``、``ef_cxa`` です。"
 
 #: of pwnlib.libc.glibc.ExitFlavor.__format__:1
 msgid "Convert to a string according to format_spec."
-msgstr ""
+msgstr "format_spec に従って、文字列に変換します。"
 
 #: of pwnlib.libc.glibc.ExitFunc:1
-msgid ""
-"Craft a ``struct exit_function`` object. If user has arbitrary write to "
-"libc area and knows pointer guard used in ``PTR_MANGLE``, then the user "
-"is able to hijack control flow when process exits. Check `struct "
-"exit_function definitions`_."
-msgstr ""
+msgid "Craft a ``struct exit_function`` object. If user has arbitrary write to libc area and knows pointer guard used in ``PTR_MANGLE``, then the user is able to hijack control flow when process exits. Check `struct exit_function definitions`_."
+msgstr "``struct exit_function`` オブジェクトを組み立てます。ユーザーが libc 領域に任意の書き込みができ、``PTR_MANGLE`` で使われるポインタガードを知っていれば、プロセスの終了時に制御フローを乗っ取れます。`struct exit_function definitions`_ を参照してください。"
 
 #: of pwnlib.libc.glibc.ExitFunc:6
 msgid "Which flavor of exit func is registered."
-msgstr ""
+msgstr "登録する終了関数の種類。"
 
 #: of pwnlib.libc.glibc.ExitFunc:12
 msgid "Optional. ``onexit`` and ``cxa_exit`` require it."
-msgstr ""
+msgstr "省略可。``onexit`` と ``cxa_exit`` で必要です。"
 
 #: of pwnlib.libc.glibc.ExitFunc:14
 msgid "Optional. ``cxa_exit`` require it. (dso_handle)"
-msgstr ""
+msgstr "省略可。``cxa_exit`` で必要です。(dso_handle)"
 
 #: of pwnlib.libc.glibc.ExitFunc.from_bytes:1
 msgid "Construct an ``ExitFunc`` from bytes object."
-msgstr ""
+msgstr "bytes オブジェクトから ``ExitFunc`` を組み立てます。"
 
 #: of pwnlib.libc.glibc.ExitFunc.from_bytes:3
-msgid ""
-"The bytes object to convert to ``ExitFunc``. Must be aligned to "
-"``context.arch`` word boundry."
-msgstr ""
+msgid "The bytes object to convert to ``ExitFunc``. Must be aligned to ``context.arch`` word boundry."
+msgstr "``ExitFunc`` に変換する bytes オブジェクト。``context.arch`` のワード境界にそろえる必要があります。"
 
 #: of pwnlib.libc.glibc.ExitFuncList:1
-msgid ""
-"Craft a ``struct exit_function_list`` object. glibc has a static variable"
-" ``initial`` to store most atexit objects and a pointer ``__exit_funcs`` "
-"pointing to ``initial``. Check `struct exit_function_list definitions`_."
-msgstr ""
+msgid "Craft a ``struct exit_function_list`` object. glibc has a static variable ``initial`` to store most atexit objects and a pointer ``__exit_funcs`` pointing to ``initial``. Check `struct exit_function_list definitions`_."
+msgstr "``struct exit_function_list`` オブジェクトを組み立てます。glibc は、ほとんどの atexit のオブジェクトを保存する静的変数 ``initial`` と、``initial`` を指すポインタ ``__exit_funcs`` を持っています。`struct exit_function_list definitions`_ を参照してください。"
 
 #: of pwnlib.libc.glibc.ExitFuncList:5
 msgid "Next ``struct exit_function_list`` pointer on chain."
-msgstr ""
+msgstr "チェーンの次の ``struct exit_function_list`` のポインタ。"
 
 #: of pwnlib.libc.glibc.ExitFuncList:7
 msgid "Registered exit functions"
@@ -175,37 +156,28 @@ msgid "Variables"
 msgstr ""
 
 #: of pwnlib.libc.glibc.ExitFuncList:10
-msgid ""
-"Total size of registered exit funcs. (This field is automatically "
-"obtained via ``len(funcs)``)"
-msgstr ""
+msgid "Total size of registered exit funcs. (This field is automatically obtained via ``len(funcs)``)"
+msgstr "登録された終了関数の合計サイズ。(このフィールドは ``len(funcs)`` から自動で求められます)"
 
 #: of pwnlib.libc.glibc.ExitFuncList.from_bytes:1
 msgid "Construct an ``ExitFuncList`` from bytes object."
-msgstr ""
+msgstr "bytes オブジェクトから ``ExitFuncList`` を組み立てます。"
 
 #: of pwnlib.libc.glibc.ExitFuncList.from_bytes:3
-msgid ""
-"The bytes object to convert to ``ExitFuncList``. Should be large enough "
-"to resolve all entries specified by ``idx``."
-msgstr ""
+msgid "The bytes object to convert to ``ExitFuncList``. Should be large enough to resolve all entries specified by ``idx``."
+msgstr "``ExitFuncList`` に変換する bytes オブジェクト。``idx`` で指定したすべてのエントリを解決できる大きさが必要です。"
 
 #: of pwnlib.libc.glibc.protect_ptr:1
-msgid ""
-"Perform `PROTECT_PTR "
-"<https://elixir.bootlin.com/glibc/glibc-2.42/source/malloc/malloc.c#L331>`__"
-" in glibc heap macros to protect pointers. ``REVEAL_PTR`` is basically "
-"``PROTECT_PTR``, and since we don't know the address of the word, so use "
-"``protect_ptr`` instead."
-msgstr ""
+msgid "Perform `PROTECT_PTR <https://elixir.bootlin.com/glibc/glibc-2.42/source/malloc/malloc.c#L331>`__ in glibc heap macros to protect pointers. ``REVEAL_PTR`` is basically ``PROTECT_PTR``, and since we don't know the address of the word, so use ``protect_ptr`` instead."
+msgstr "glibc のヒープのマクロにある `PROTECT_PTR <https://elixir.bootlin.com/glibc/glibc-2.42/source/malloc/malloc.c#L331>`__ を実行して、ポインタを保護します。``REVEAL_PTR`` は基本的に ``PROTECT_PTR`` と同じです。ワードのアドレスが分からないので、代わりに ``protect_ptr`` を使ってください。"
 
 #: of pwnlib.libc.glibc.protect_ptr:6
 msgid "The address of where ``value`` is stored."
-msgstr ""
+msgstr "``value`` が格納されているアドレス。"
 
 #: of pwnlib.libc.glibc.protect_ptr:8
 msgid "The value to protect/reveal."
-msgstr ""
+msgstr "保護する(または復元する)値。"
 
 #: of pwnlib.libc.glibc.protect_ptr pwnlib.libc.glibc.ptr_demangle
 #: pwnlib.libc.glibc.ptr_mangle pwnlib.libc.glibc.reveal_ptr_same_page
@@ -214,52 +186,48 @@ msgstr ""
 
 #: of pwnlib.libc.glibc.protect_ptr:11
 msgid "Protected/Revealed value."
-msgstr ""
+msgstr "保護された(または復元された)値。"
 
 #: of pwnlib.libc.glibc.ptr_demangle:1
 msgid "Perform ``PTR_DEMANGLE`` in glibc to demangle protected pointer."
-msgstr ""
+msgstr "glibc の ``PTR_DEMANGLE`` を実行して、保護されたポインタを復元します。"
 
 #: of pwnlib.libc.glibc.ptr_demangle:3 pwnlib.libc.glibc.ptr_mangle:3
 msgid "The value of ``POINTER_GUARD``."
-msgstr ""
+msgstr "``POINTER_GUARD`` の値。"
 
 #: of pwnlib.libc.glibc.ptr_demangle:5
 msgid "The value to demangle."
-msgstr ""
+msgstr "復元する値。"
 
 #: of pwnlib.libc.glibc.ptr_demangle:8
 msgid "Demangled value."
-msgstr ""
+msgstr "復元された値。"
 
 #: of pwnlib.libc.glibc.ptr_mangle:1
 msgid "Perform ``PTR_MANGLE`` in glibc to protect pointers."
-msgstr ""
+msgstr "glibc の ``PTR_MANGLE`` を実行して、ポインタを保護します。"
 
 #: of pwnlib.libc.glibc.ptr_mangle:5
 msgid "The value to protect."
-msgstr ""
+msgstr "保護する値。"
 
 #: of pwnlib.libc.glibc.ptr_mangle:8
 msgid "Mangled value."
-msgstr ""
+msgstr "保護された値。"
 
 #: of pwnlib.libc.glibc.reveal_ptr_same_page:1
-msgid ""
-"Reveal a pointer that was mangled by protect_ptr without knowing where "
-"the pointer is stored. Only works if the leaked pointer itself is stored "
-"on the same page as its value."
-msgstr ""
+msgid "Reveal a pointer that was mangled by protect_ptr without knowing where the pointer is stored. Only works if the leaked pointer itself is stored on the same page as its value."
+msgstr "ポインタがどこに格納されているかを知らなくても、protect_ptr で保護されたポインタを復元します。リークしたポインタ自体が、その値と同じページに格納されている場合にだけ動作します。"
 
 #: of pwnlib.libc.glibc.reveal_ptr_same_page:4
 msgid "The mangled pointer."
-msgstr ""
+msgstr "保護されたポインタ。"
 
 #: of pwnlib.libc.glibc.reveal_ptr_same_page:7
 msgid "*int* -- The original pointer."
-msgstr ""
+msgstr "*int* -- 元のポインタ。"
 
 #: of pwnlib.libc.glibc.reveal_ptr_same_page:10
 msgid "Example"
 msgstr ""
-

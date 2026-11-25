@@ -21,32 +21,23 @@ msgstr ""
 
 #: ../pwntools/docs/source/term.rst:2
 msgid ":mod:`pwnlib.term` --- Terminal handling"
-msgstr ""
+msgstr ":mod:`pwnlib.term` --- ターミナルの処理"
 
 #: of pwnlib.term.can_init:1
-msgid ""
-"This function returns True iff stderr is a TTY and we are not inside a "
-"REPL.  Iff this function returns `True`, a call to :meth:`init` will let "
-"``pwnlib`` manage the terminal."
-msgstr ""
+msgid "This function returns True iff stderr is a TTY and we are not inside a REPL.  Iff this function returns `True`, a call to :meth:`init` will let ``pwnlib`` manage the terminal."
+msgstr "stderr が TTY で、かつ REPL の中ではない場合に限り、True を返します。この関数が `True` を返す場合に限り、:meth:`init` を呼ぶと ``pwnlib`` がターミナルを管理します。"
 
 #: of pwnlib.term.init:1
-msgid ""
-"Calling this function will take over the terminal (iff :func:`can_init` "
-"returns True) until the current python interpreter is closed."
-msgstr ""
+msgid "Calling this function will take over the terminal (iff :func:`can_init` returns True) until the current python interpreter is closed."
+msgstr "この関数を呼ぶと、現在の Python インタープリタが終了するまで、ターミナルを引き継ぎます(:func:`can_init` が True を返す場合に限ります)。"
 
 #: of pwnlib.term.init:4
-msgid ""
-"It is on our TODO, to create a function to \"give back\" the terminal "
-"without closing the interpreter."
-msgstr ""
+msgid "It is on our TODO, to create a function to \"give back\" the terminal without closing the interpreter."
+msgstr "インタープリタを終了せずにターミナルを「返す」関数を作ることは、TODO に入っています。"
 
 #: ../pwntools/docs/docstring of pwnlib.term.term_mode:1
-msgid ""
-"This is True exactly when we have taken over the terminal using "
-":func:`init`."
-msgstr ""
+msgid "This is True exactly when we have taken over the terminal using :func:`init`."
+msgstr ":func:`init` でターミナルを引き継いだときに限り、True になります。"
 
 #: ../pwntools/docs/source/term.rst:8
 msgid "Term Modules"
@@ -54,14 +45,11 @@ msgstr ""
 
 #: ../pwntools/docs/source/term/readline.rst:7
 msgid ":mod:`pwnlib.term.readline` --- Terminal nice readline"
-msgstr ""
+msgstr ":mod:`pwnlib.term.readline` --- 見やすい readline"
 
 #: of pwnlib.term.readline.eval_input:1
-msgid ""
-"Replacement for the built-in python 2 - style ``input`` using ``pwnlib`` "
-"readline implementation, and `pwnlib.util.safeeval.expr` instead of "
-"``eval`` (!)."
-msgstr ""
+msgid "Replacement for the built-in python 2 - style ``input`` using ``pwnlib`` readline implementation, and `pwnlib.util.safeeval.expr` instead of ``eval`` (!)."
+msgstr "組み込みの Python 2 形式の ``input`` を、``pwnlib`` の readline 実装で置き換えるものです。``eval`` の代わりに `pwnlib.util.safeeval.expr` を使います(!)。"
 
 #: ../pwntools/docs/source/term/readline.rst of pwnlib.term.readline.eval_input
 msgid "Parameters"
@@ -70,33 +58,24 @@ msgstr ""
 #: of pwnlib.term.readline.eval_input:5 pwnlib.term.readline.raw_input:4
 #: pwnlib.term.readline.str_input:4
 msgid "The prompt to show to the user."
-msgstr ""
+msgstr "ユーザーに表示するプロンプトです。"
 
 #: of pwnlib.term.readline.eval_input:7
-msgid ""
-"If set to ``True``, prompt and input will float to the bottom of the "
-"screen when `term.term_mode` is enabled."
-msgstr ""
+msgid "If set to ``True``, prompt and input will float to the bottom of the screen when `term.term_mode` is enabled."
+msgstr "``True`` にすると、`term.term_mode` が有効なとき、プロンプトと入力が画面の下に固定されます。"
 
 #: of pwnlib.term.readline.eval_input:12
 msgid "Example"
 msgstr ""
 
 #: of pwnlib.term.readline.raw_input:1
-msgid ""
-"Replacement for the built-in ``raw_input`` using ``pwnlib`` readline "
-"implementation."
-msgstr ""
+msgid "Replacement for the built-in ``raw_input`` using ``pwnlib`` readline implementation."
+msgstr "組み込みの ``raw_input`` を、``pwnlib`` の readline 実装で置き換えるものです。"
 
 #: of pwnlib.term.readline.raw_input:6 pwnlib.term.readline.str_input:6
-msgid ""
-"If set to `True`, prompt and input will float to the bottom of the screen"
-" when `term.term_mode` is enabled."
-msgstr ""
+msgid "If set to `True`, prompt and input will float to the bottom of the screen when `term.term_mode` is enabled."
+msgstr "`True` にすると、`term.term_mode` が有効なとき、プロンプトと入力が画面の下に固定されます。"
 
 #: of pwnlib.term.readline.str_input:1
-msgid ""
-"Replacement for the built-in ``input`` in python3 using ``pwnlib`` "
-"readline implementation."
-msgstr ""
-
+msgid "Replacement for the built-in ``input`` in python3 using ``pwnlib`` readline implementation."
+msgstr "Python 3 の組み込みの ``input`` を、``pwnlib`` の readline 実装で置き換えるものです。"

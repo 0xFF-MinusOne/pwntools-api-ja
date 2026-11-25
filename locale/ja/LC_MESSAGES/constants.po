@@ -21,39 +21,28 @@ msgstr ""
 
 #: ../pwntools/docs/source/constants.rst:7
 msgid ":mod:`pwnlib.constants` --- Easy access to header file constants"
-msgstr ""
+msgstr ":mod:`pwnlib.constants` --- ヘッダファイルの定数への簡単なアクセス"
 
 #: of pwnlib.constants:1
 msgid "Module containing constants extracted from header files."
-msgstr ""
+msgstr "ヘッダファイルから抽出した定数を収めたモジュールです。"
 
 #: of pwnlib.constants:3
-msgid ""
-"The purpose of this module is to provide quick access to constants from "
-"different architectures and operating systems."
-msgstr ""
+msgid "The purpose of this module is to provide quick access to constants from different architectures and operating systems."
+msgstr "このモジュールの目的は、さまざまなアーキテクチャと OS の定数に、すばやくアクセスできるようにすることです。"
 
 #: of pwnlib.constants:6
-msgid ""
-"The constants are wrapped by a convenience class that allows accessing "
-"the name of the constant, while performing all normal mathematical "
-"operations on it."
-msgstr ""
+msgid "The constants are wrapped by a convenience class that allows accessing the name of the constant, while performing all normal mathematical operations on it."
+msgstr "定数は便利なクラスで包まれており、定数の名前を参照できる一方で、通常の数値演算はすべてそのまま行えます。"
 
 #: of pwnlib.constants:11 pwnlib.constants:31
 msgid "Example"
 msgstr ""
 
 #: of pwnlib.constants:23
-msgid ""
-"The submodule ``freebsd`` contains all constants for FreeBSD, while the "
-"constants for Linux have been split up by architecture."
-msgstr ""
+msgid "The submodule ``freebsd`` contains all constants for FreeBSD, while the constants for Linux have been split up by architecture."
+msgstr "サブモジュール ``freebsd`` には FreeBSD の定数がすべて入っています。Linux の定数はアーキテクチャごとに分けられています。"
 
 #: of pwnlib.constants:26
-msgid ""
-"The variables of the submodules will be \"lifted up\" by setting the "
-":data:`pwnlib.context.arch` or :data:`pwnlib.context.os` in a manner "
-"similar to what happens in :mod:`pwnlib.shellcraft`."
-msgstr ""
-
+msgid "The variables of the submodules will be \"lifted up\" by setting the :data:`pwnlib.context.arch` or :data:`pwnlib.context.os` in a manner similar to what happens in :mod:`pwnlib.shellcraft`."
+msgstr "サブモジュールの変数は、:mod:`pwnlib.shellcraft` で行われるのと同様の方法で、:data:`pwnlib.context.arch` または :data:`pwnlib.context.os` を設定することによって「引き上げられ」ます。"

@@ -21,37 +21,24 @@ msgstr ""
 
 #: ../pwntools/docs/source/config.rst:2
 msgid ":mod:`pwnlib.config` --- Pwntools Configuration File"
-msgstr ""
+msgstr ":mod:`pwnlib.config` --- Pwntools の設定ファイル"
 
 #: of pwnlib.config:1
 msgid "Allows per-user and per-host configuration of Pwntools settings."
-msgstr ""
+msgstr "ユーザーごと、ホストごとに、Pwntools の設定を変更できます。"
 
 #: of pwnlib.config:3
-msgid ""
-"The list of configurable options includes all of the logging symbols and "
-"colors, as well as all of the default values on the global context "
-"object."
-msgstr ""
+msgid "The list of configurable options includes all of the logging symbols and colors, as well as all of the default values on the global context object."
+msgstr "設定できる項目には、ログのシンボルと色のすべてに加えて、グローバルな context オブジェクトの既定値のすべてが含まれます。"
 
 #: of pwnlib.config:7
-msgid ""
-"The configuration file is read from ``~/.pwn.conf``, "
-"``$XDG_CONFIG_HOME/pwn.conf`` (``$XDG_CONFIG_HOME`` defaults to "
-"``~/.config``, per XDG Base Directory Specification), and "
-"``/etc/pwn.conf``."
-msgstr ""
+msgid "The configuration file is read from ``~/.pwn.conf``, ``$XDG_CONFIG_HOME/pwn.conf`` (``$XDG_CONFIG_HOME`` defaults to ``~/.config``, per XDG Base Directory Specification), and ``/etc/pwn.conf``."
+msgstr "設定ファイルは、``~/.pwn.conf``、``$XDG_CONFIG_HOME/pwn.conf``(``$XDG_CONFIG_HOME`` の既定値は、XDG Base Directory Specification に従って ``~/.config``)、``/etc/pwn.conf`` から読み込まれます。"
 
 #: of pwnlib.config:11
-msgid ""
-"The configuration file is only read in ``from pwn import *`` mode, and "
-"not when used in library mode (``import pwnlib``).  To read the "
-"configuration file in library mode, invoke :func:`.config.initialize`."
-msgstr ""
+msgid "The configuration file is only read in ``from pwn import *`` mode, and not when used in library mode (``import pwnlib``).  To read the configuration file in library mode, invoke :func:`.config.initialize`."
+msgstr "設定ファイルが読み込まれるのは ``from pwn import *`` モードだけで、ライブラリモード(``import pwnlib``)では読み込まれません。ライブラリモードで設定ファイルを読み込むには、:func:`.config.initialize` を呼びます。"
 
 #: of pwnlib.config:15
-msgid ""
-"The ``context`` section supports complex types, at least as far as is "
-"supported by :func:`pwnlib.util.safeeval.expr`."
-msgstr ""
-
+msgid "The ``context`` section supports complex types, at least as far as is supported by :func:`pwnlib.util.safeeval.expr`."
+msgstr "``context`` セクションは、少なくとも :func:`pwnlib.util.safeeval.expr` がサポートする範囲で、複雑な型をサポートします。"

@@ -24,126 +24,92 @@ msgid "Installation"
 msgstr ""
 
 #: ../pwntools/docs/source/install.rst:4
-msgid ""
-"Pwntools is best supported on 64-bit Ubuntu LTS releases (22.04 and "
-"24.04).  Most functionality should work on any Posix-like distribution "
-"(Debian, Arch, FreeBSD, OSX, etc.)."
-msgstr ""
+msgid "Pwntools is best supported on 64-bit Ubuntu LTS releases (22.04 and 24.04).  Most functionality should work on any Posix-like distribution (Debian, Arch, FreeBSD, OSX, etc.)."
+msgstr "Pwntools は、64 ビットの Ubuntu LTS(22.04 と 24.04)で最もよくサポートされています。ほとんどの機能は、Posix 系のディストリビューション(Debian、Arch、FreeBSD、OSX など)であれば動作するはずです。"
 
 #: ../pwntools/docs/source/install.rst:7
 msgid "Prerequisites"
 msgstr ""
 
 #: ../pwntools/docs/source/install.rst:9
-msgid ""
-"In order to get the most out of ``pwntools``, you should have the "
-"following system libraries installed."
-msgstr ""
+msgid "In order to get the most out of ``pwntools``, you should have the following system libraries installed."
+msgstr "``pwntools`` を最大限に活用するには、次のシステムライブラリをインストールしておいてください。"
 
 #: ../pwntools/docs/source/install.rst:19
-msgid ""
-"Note: For Mac OS X you will need to have cmake ``brew install cmake`` and"
-" pkg-config ``brew install pkg-config`` installed."
-msgstr ""
+msgid "Note: For Mac OS X you will need to have cmake ``brew install cmake`` and pkg-config ``brew install pkg-config`` installed."
+msgstr "注: Mac OS X では、cmake(``brew install cmake``)と pkg-config(``brew install pkg-config``)のインストールが必要です。"
 
 #: ../pwntools/docs/source/install.rst:26
 msgid "Released Version"
 msgstr ""
 
 #: ../pwntools/docs/source/install.rst:28
-msgid ""
-"pwntools is available as a ``pip`` package for Python3. Version v5.0.0 "
-"supports Python3.10 or later. Use v4 if you use earlier versions of "
-"Python."
-msgstr ""
+msgid "pwntools is available as a ``pip`` package for Python3. Version v5.0.0 supports Python3.10 or later. Use v4 if you use earlier versions of Python."
+msgstr "pwntools は、Python3 用の ``pip`` パッケージとして提供されています。バージョン v5.0.0 は Python3.10 以降に対応しています。それより前のバージョンの Python を使う場合は、v4 を使ってください。"
 
 #: ../pwntools/docs/source/install.rst:31
 msgid "Python3"
 msgstr ""
 
 #: ../pwntools/docs/source/install.rst:33
-msgid ""
-"The Python version required for installing Pwntools is kept as low as "
-"possible on a best-effort basis.  However, new features target Python3.10"
-" and later."
-msgstr ""
+msgid "The Python version required for installing Pwntools is kept as low as possible on a best-effort basis.  However, new features target Python3.10 and later."
+msgstr "Pwntools のインストールに必要な Python のバージョンは、可能な範囲でできるだけ低く保っています。ただし、新機能は Python3.10 以降を対象にしています。"
 
 #: ../pwntools/docs/source/install.rst:44
 msgid "Python2 (Deprecated)"
 msgstr ""
 
 #: ../pwntools/docs/source/install.rst:46
-msgid ""
-"Python2 support has been removed in Pwntools v5.0.0.  The last version to"
-" support Python2 was v4.15.0."
-msgstr ""
+msgid "Python2 support has been removed in Pwntools v5.0.0.  The last version to support Python2 was v4.15.0."
+msgstr "Pwntools v5.0.0 で、Python2 のサポートを削除しました。Python2 をサポートした最後のバージョンは v4.15.0 です。"
 
 #: ../pwntools/docs/source/install.rst:48
-msgid ""
-"NOTE: Pwntools maintainers STRONGLY recommend using Python3 for all "
-"future Pwntools-based scripts and projects."
-msgstr ""
+msgid "NOTE: Pwntools maintainers STRONGLY recommend using Python3 for all future Pwntools-based scripts and projects."
+msgstr "注意: Pwntools のメンテナーは、今後 Pwntools を使うスクリプトやプロジェクトでは、すべて Python3 を使うことを強く推奨します。"
 
 #: ../pwntools/docs/source/install.rst:50
-msgid ""
-"Additionally, due to `pip` dropping support for Python2, a specfic "
-"version of `pip` must be installed."
-msgstr ""
+msgid "Additionally, due to `pip` dropping support for Python2, a specfic version of `pip` must be installed."
+msgstr "また、`pip` が Python2 のサポートを終了したため、特定のバージョンの `pip` をインストールする必要があります。"
 
 #: ../pwntools/docs/source/install.rst:61
 msgid "Command-Line Tools"
-msgstr ""
+msgstr "コマンドラインツール"
 
 #: ../pwntools/docs/source/install.rst:63
-msgid ""
-"When installed with ``sudo`` the above commands will install Pwntools' "
-"command-line tools to somewhere like ``/usr/bin``."
-msgstr ""
+msgid "When installed with ``sudo`` the above commands will install Pwntools' command-line tools to somewhere like ``/usr/bin``."
+msgstr "``sudo`` を付けてインストールすると、上記のコマンドにより、Pwntools のコマンドラインツールが ``/usr/bin`` などにインストールされます。"
 
 #: ../pwntools/docs/source/install.rst:65
-msgid ""
-"However, if you run as an unprivileged user, you may see a warning "
-"message that looks like this::"
-msgstr ""
+msgid "However, if you run as an unprivileged user, you may see a warning message that looks like this::"
+msgstr "ただし、一般ユーザーで実行すると、次のような警告メッセージが表示されることがあります。"
 
 #: ../pwntools/docs/source/install.rst:71
-msgid ""
-"Follow the instructions listed and add ``~/.local/bin`` to your ``$PATH``"
-" environment variable."
-msgstr ""
+msgid "Follow the instructions listed and add ``~/.local/bin`` to your ``$PATH`` environment variable."
+msgstr "表示された指示に従い、``~/.local/bin`` を環境変数 ``$PATH`` に追加してください。"
 
 #: ../pwntools/docs/source/install.rst:74
 msgid "Development"
 msgstr ""
 
 #: ../pwntools/docs/source/install.rst:76
-msgid ""
-"If you are hacking on Pwntools locally, you'll want to do something like "
-"this:"
-msgstr ""
+msgid "If you are hacking on Pwntools locally, you'll want to do something like this:"
+msgstr "Pwntools をローカルで改造する場合は、次のようにするとよいでしょう。"
 
 #: ../pwntools/docs/source/install/binutils.rst:2
 msgid "Binutils"
 msgstr ""
 
 #: ../pwntools/docs/source/install/binutils.rst:4
-msgid ""
-"Assembly of foreign architectures (e.g. assembling Sparc shellcode on Mac"
-" OS X) requires cross-compiled versions of ``binutils`` to be installed. "
-"We've made this process as smooth as we can."
-msgstr ""
+msgid "Assembly of foreign architectures (e.g. assembling Sparc shellcode on Mac OS X) requires cross-compiled versions of ``binutils`` to be installed. We've made this process as smooth as we can."
+msgstr "他のアーキテクチャ向けのアセンブル(たとえば Mac OS X で Sparc のシェルコードをアセンブルする場合)には、クロスコンパイルした ``binutils`` のインストールが必要です。この手順は、できるだけ簡単になるようにしてあります。"
 
 #: ../pwntools/docs/source/install/binutils.rst:8
-msgid ""
-"In these examples, replace ``$ARCH`` with your target architecture (e.g.,"
-" arm, aarch64, mips64, vax, etc.)."
-msgstr ""
+msgid "In these examples, replace ``$ARCH`` with your target architecture (e.g., arm, aarch64, mips64, vax, etc.)."
+msgstr "以下の例では、``$ARCH`` を対象のアーキテクチャ(arm、aarch64、mips64、vax など)に置き換えてください。"
 
 #: ../pwntools/docs/source/install/binutils.rst:10
-msgid ""
-"Building `binutils` from source takes about 60 seconds on a modern 8-core"
-" machine."
-msgstr ""
+msgid "Building `binutils` from source takes about 60 seconds on a modern 8-core machine."
+msgstr "`binutils` をソースからビルドするのにかかる時間は、最近の 8 コアのマシンで約 60 秒です。"
 
 #: ../pwntools/docs/source/install/binutils.rst:13
 #: ../pwntools/docs/source/install/headers.rst:9
@@ -151,21 +117,16 @@ msgid "Ubuntu"
 msgstr ""
 
 #: ../pwntools/docs/source/install/binutils.rst:15
-msgid ""
-"For Ubuntu 12.04 through 15.10, you must first add the pwntools `Personal"
-" Package Archive repository "
-"<https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`__."
-msgstr ""
+msgid "For Ubuntu 12.04 through 15.10, you must first add the pwntools `Personal Package Archive repository <https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`__."
+msgstr "Ubuntu 12.04 から 15.10 では、まず pwntools の `Personal Package Archive repository <https://launchpad.net/~pwntools/+archive/ubuntu/binutils>`__ を追加する必要があります。"
 
 #: ../pwntools/docs/source/install/binutils.rst:17
-msgid ""
-"Ubuntu Xenial (16.04) has official packages for most architectures, and "
-"does not require this step."
-msgstr ""
+msgid "Ubuntu Xenial (16.04) has official packages for most architectures, and does not require this step."
+msgstr "Ubuntu Xenial(16.04)には、ほとんどのアーキテクチャ向けの公式パッケージがあるため、この手順は不要です。"
 
 #: ../pwntools/docs/source/install/binutils.rst:25
 msgid "Then, install the binutils for your architecture."
-msgstr ""
+msgstr "次に、対象のアーキテクチャ向けの binutils をインストールします。"
 
 #: ../pwntools/docs/source/install/binutils.rst:32
 #: ../pwntools/docs/source/install/headers.rst:16
@@ -173,67 +134,45 @@ msgid "Mac OS X"
 msgstr ""
 
 #: ../pwntools/docs/source/install/binutils.rst:34
-msgid ""
-"Mac OS X is just as easy, but requires building binutils from source. "
-"However, we've made ``homebrew`` recipes to make this just two commands. "
-"After installing `brew <https://brew.sh>`__, grab the appropriate recipe "
-"from our `binutils repo <https://github.com/Gallopsled/pwntools-"
-"binutils/>`__."
-msgstr ""
+msgid "Mac OS X is just as easy, but requires building binutils from source. However, we've made ``homebrew`` recipes to make this just two commands. After installing `brew <https://brew.sh>`__, grab the appropriate recipe from our `binutils repo <https://github.com/Gallopsled/pwntools-binutils/>`__."
+msgstr "Mac OS X でも同じくらい簡単ですが、binutils をソースからビルドする必要があります。そこで、2 つのコマンドで済むように ``homebrew`` のレシピを用意しました。`brew <https://brew.sh>`__ をインストールしたあと、`binutils repo <https://github.com/Gallopsled/pwntools-binutils/>`__ から適切なレシピを取得してください。"
 
 #: ../pwntools/docs/source/install/binutils.rst:45
-msgid ""
-"Note: The pwntools/pwntools Homebrew tap is currently (August 2026) "
-"undergoing migration. If you encounter issues on Mac OS, try running "
-"``export HOMEBREW_DEVELOPER=\"true\"`` before ``brew install ...``. The "
-"actual resolution of the tap migration is still pending."
-msgstr ""
+msgid "Note: The pwntools/pwntools Homebrew tap is currently (August 2026) undergoing migration. If you encounter issues on Mac OS, try running ``export HOMEBREW_DEVELOPER=\"true\"`` before ``brew install ...``. The actual resolution of the tap migration is still pending."
+msgstr "注: pwntools/pwntools の Homebrew tap は、現在(2026 年 8 月)移行作業中です。Mac OS で問題が起きた場合は、``brew install ...`` の前に ``export HOMEBREW_DEVELOPER=\"true\"`` を実行してみてください。tap の移行の最終的な解決は、まだ保留になっています。"
 
 #: ../pwntools/docs/source/install/binutils.rst:51
 msgid "Windows"
 msgstr ""
 
 #: ../pwntools/docs/source/install/binutils.rst:53
-msgid ""
-"Windows support is experimental. You can try installing a prebuilt "
-"version of binutils for your desired architecture from the `GNU "
-"Toolchains <https://gnutoolchains.com/>`__ project."
-msgstr ""
+msgid "Windows support is experimental. You can try installing a prebuilt version of binutils for your desired architecture from the `GNU Toolchains <https://gnutoolchains.com/>`__ project."
+msgstr "Windows のサポートは実験的なものです。対象のアーキテクチャ向けにビルド済みの binutils を、`GNU Toolchains <https://gnutoolchains.com/>`__ プロジェクトからインストールしてみてください。"
 
 #: ../pwntools/docs/source/install/binutils.rst:56
-msgid ""
-"Note: For x86 and x86_64, you should use the `ubuntu toolchain "
-"<https://gnutoolchains.com/ubuntu/>`__ instead of the MinGW toolchains "
-"due to differences in the commandline handling."
-msgstr ""
+msgid "Note: For x86 and x86_64, you should use the `ubuntu toolchain <https://gnutoolchains.com/ubuntu/>`__ instead of the MinGW toolchains due to differences in the commandline handling."
+msgstr "注: x86 と x86_64 では、コマンドライン処理の違いのため、MinGW のツールチェーンではなく `ubuntu toolchain <https://gnutoolchains.com/ubuntu/>`__ を使ってください。"
 
 #: ../pwntools/docs/source/install/binutils.rst:60
 msgid "Alternate OSes"
 msgstr ""
 
 #: ../pwntools/docs/source/install/binutils.rst:62
-msgid ""
-"If you want to build everything by hand, or don't use any of the above "
-"OSes, ``binutils`` is simple to build by hand."
-msgstr ""
+msgid "If you want to build everything by hand, or don't use any of the above OSes, ``binutils`` is simple to build by hand."
+msgstr "すべてを手作業でビルドしたい場合や、上記以外の OS を使っている場合でも、``binutils`` は手作業で簡単にビルドできます。"
 
 #: ../pwntools/docs/source/install/headers.rst:2
 msgid "Python Development Headers"
 msgstr ""
 
 #: ../pwntools/docs/source/install/headers.rst:4
-msgid ""
-"Some of pwntools' Python dependencies require native extensions (for "
-"example, Paramiko requires PyCrypto)."
-msgstr ""
+msgid "Some of pwntools' Python dependencies require native extensions (for example, Paramiko requires PyCrypto)."
+msgstr "pwntools が依存する Python パッケージの一部には、ネイティブ拡張が必要なものがあります(たとえば Paramiko は PyCrypto を必要とします)。"
 
 #: ../pwntools/docs/source/install/headers.rst:6
-msgid ""
-"In order to build these native extensions, the development headers for "
-"Python must be installed."
-msgstr ""
+msgid "In order to build these native extensions, the development headers for Python must be installed."
+msgstr "これらのネイティブ拡張をビルドするには、Python の開発用ヘッダーをインストールしておく必要があります。"
 
 #: ../pwntools/docs/source/install/headers.rst:18
 msgid "No action needed."
-msgstr ""
-
+msgstr "対応は不要です。"

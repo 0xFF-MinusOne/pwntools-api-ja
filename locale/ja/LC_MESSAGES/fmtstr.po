@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../pwntools/docs/source/fmtstr.rst:7
 msgid ":mod:`pwnlib.fmtstr` --- Format string bug exploitation tools"
-msgstr ""
+msgstr ":mod:`pwnlib.fmtstr` --- フォーマット文字列バグのエクスプロイト用ツール"
 
 #: of pwnlib.fmtstr:1
 msgid "Provide some tools to exploit format string bug"
@@ -29,67 +29,51 @@ msgstr ""
 
 #: of pwnlib.fmtstr:3
 msgid "Let's use this program as an example:"
-msgstr ""
+msgstr "次のプログラムを例にします。"
 
 #: of pwnlib.fmtstr:33
 msgid "We can automate the exploitation of the process like so:"
-msgstr ""
+msgstr "このプロセスのエクスプロイトは、次のように自動化できます。"
 
 #: of pwnlib.fmtstr:54
 msgid "Example - Payload generation"
-msgstr ""
+msgstr "例 - ペイロードの生成"
 
 #: of pwnlib.fmtstr:72
 msgid "Example - Automated exploitation"
-msgstr ""
+msgstr "例 - 自動エクスプロイト"
 
 #: of pwnlib.fmtstr.AtomWrite:1
-msgid ""
-"This class represents a write action that can be carried out by a single "
-"format string specifier."
-msgstr ""
+msgid "This class represents a write action that can be carried out by a single format string specifier."
+msgstr "このクラスは、フォーマット指定子 1 つで実行できる書き込み操作を表します。"
 
 #: of pwnlib.fmtstr.AtomWrite:3
-msgid ""
-"Each write has an address (start), a size and the integer that should be "
-"written."
-msgstr ""
+msgid "Each write has an address (start), a size and the integer that should be written."
+msgstr "各書き込みには、アドレス（start）、サイズ、書き込む整数があります。"
 
 #: of pwnlib.fmtstr.AtomWrite:5
-msgid ""
-"Additionally writes can have a mask to specify which bits are important. "
-"While the write always overwrites all bytes in the range [start, "
-"start+size) the mask sometimes allows more efficient execution. For "
-"example, assume the current format string counter is at 0xaabb and a "
-"write with with integer = 0xaa00 and mask = 0xff00 needs to be executed. "
-"In that case, since the lower byte is not covered by the mask, the write "
-"can be directly executed with a %hn sequence (so we will write 0xaabb, "
-"but that is ok because the mask only requires the upper byte to be "
-"correctly written)."
-msgstr ""
+msgid "Additionally writes can have a mask to specify which bits are important. While the write always overwrites all bytes in the range [start, start+size) the mask sometimes allows more efficient execution. For example, assume the current format string counter is at 0xaabb and a write with with integer = 0xaa00 and mask = 0xff00 needs to be executed. In that case, since the lower byte is not covered by the mask, the write can be directly executed with a %hn sequence (so we will write 0xaabb, but that is ok because the mask only requires the upper byte to be correctly written)."
+msgstr "さらに、どのビットが重要かを指定するマスクを持たせることもできます。書き込みは常に範囲 [start, start+size) のすべてのバイトを上書きしますが、マスクがあると、より効率よく実行できることがあります。例えば、現在のフォーマット文字列のカウンタが 0xaabb で、integer = 0xaa00、mask = 0xff00 の書き込みを実行する必要があるとします。この場合、下位バイトはマスクの対象外なので、書き込みは %hn だけで直接実行できます（0xaabb が書き込まれますが、マスクが上位バイトの正しい書き込みだけを要求しているので問題ありません）。"
 
 #: of pwnlib.fmtstr.AtomWrite.__eq__:1
 msgid "Return self==value."
-msgstr ""
+msgstr "self==value を返します。"
 
 #: of pwnlib.fmtstr.AtomWrite.__hash__:1
 msgid "Return hash(self)."
-msgstr ""
+msgstr "hash(self) を返します。"
 
 #: of pwnlib.fmtstr.AtomWrite.__ne__:1
 msgid "Return self!=value."
-msgstr ""
+msgstr "self!=value を返します。"
 
 #: of pwnlib.fmtstr.AtomWrite.__repr__:1
 msgid "Return repr(self)."
-msgstr ""
+msgstr "repr(self) を返します。"
 
 #: of pwnlib.fmtstr.AtomWrite.compute_padding:1
-msgid ""
-"This function computes the least amount of padding necessary to execute "
-"this write, given the current format string write counter (how many bytes"
-" have been written until now)."
-msgstr ""
+msgid "This function computes the least amount of padding necessary to execute this write, given the current format string write counter (how many bytes have been written until now)."
+msgstr "この関数は、現在のフォーマット文字列の書き込みカウンタ（ここまでに書き込まれたバイト数）を前提に、この書き込みを実行するために必要な最小のパディング量を計算します。"
 
 #: of pwnlib.fmtstr.AtomWrite.compute_padding:5 pwnlib.fmtstr.FmtStr.write:11
 #: pwnlib.fmtstr.find_min_hamming_in_range:16
@@ -109,7 +93,7 @@ msgstr ""
 
 #: of pwnlib.fmtstr.AtomWrite.union:1
 msgid "Combine adjacent writes into a single write."
-msgstr ""
+msgstr "隣り合う書き込みを 1 つの書き込みにまとめます。"
 
 #: of pwnlib.fmtstr.AtomWrite.union:4
 msgid "Example"
@@ -117,21 +101,15 @@ msgstr ""
 
 #: of pwnlib.fmtstr.FmtStr:1
 msgid "Provides an automated format string exploitation."
-msgstr ""
+msgstr "フォーマット文字列のエクスプロイトを自動で行います。"
 
 #: of pwnlib.fmtstr.FmtStr:3
-msgid ""
-"It takes a function which is called every time the automated process want"
-" to communicate with the vulnerable process. this function takes a "
-"parameter with the payload that you have to send to the vulnerable "
-"process and must return the process returns."
-msgstr ""
+msgid "It takes a function which is called every time the automated process want to communicate with the vulnerable process. this function takes a parameter with the payload that you have to send to the vulnerable process and must return the process returns."
+msgstr "自動処理が脆弱なプロセスと通信したくなるたびに呼び出される関数を受け取ります。この関数は、脆弱なプロセスに送るペイロードを引数に取り、プロセスの返す出力を返す必要があります。"
 
 #: of pwnlib.fmtstr.FmtStr:9
-msgid ""
-"If the `offset` parameter is not given, then try to find the right offset"
-" by leaking stack data."
-msgstr ""
+msgid "If the `offset` parameter is not given, then try to find the right offset by leaking stack data."
+msgstr "`offset` パラメータが指定されていない場合は、スタックのデータをリークして、正しいオフセットを探そうとします。"
 
 #: ../pwntools/docs/source/fmtstr.rst of pwnlib.fmtstr.FmtStr.write
 #: pwnlib.fmtstr.find_min_hamming_in_range
@@ -147,7 +125,7 @@ msgstr ""
 
 #: of pwnlib.fmtstr.FmtStr:14 pwnlib.fmtstr.fmtstr_payload:14
 msgid "the first formatter's offset you control"
-msgstr ""
+msgstr "制御できる最初のフォーマッタのオフセット"
 
 #: of pwnlib.fmtstr.FmtStr:16
 msgid "size of the pad you want to add before the payload"
@@ -173,7 +151,7 @@ msgstr ""
 
 #: of pwnlib.fmtstr.FmtStr.write:1
 msgid "In order to tell : I want to write ``data`` at ``addr``."
-msgstr ""
+msgstr "``addr`` に ``data`` を書き込みたい、と伝えるためのものです。"
 
 #: of pwnlib.fmtstr.FmtStr.write:3
 msgid "the address where you want to write"
@@ -181,30 +159,23 @@ msgstr ""
 
 #: of pwnlib.fmtstr.FmtStr.write:5
 msgid "the data that you want to write ``addr``"
-msgstr ""
+msgstr "``addr`` に書き込みたいデータ"
 
 #: ../pwntools/docs/docstring of pwnlib.fmtstr.FmtStr.__weakref__:1
 msgid "list of weak references to the object"
 msgstr ""
 
 #: of pwnlib.fmtstr.find_min_hamming_in_range:1
-msgid ""
-"Find the value which differs in the least amount of bytes from the target"
-" and is in the given range."
-msgstr ""
+msgid "Find the value which differs in the least amount of bytes from the target and is in the given range."
+msgstr "指定した範囲内で、目標の値と異なるバイト数が最も少ない値を探します。"
 
 #: of pwnlib.fmtstr.find_min_hamming_in_range:3
-msgid ""
-"Returns a tuple (count, value, mask) where count is the number of equal "
-"bytes and mask selects the equal bytes. So mask & target == value & "
-"target and lower <= value <= upper."
-msgstr ""
+msgid "Returns a tuple (count, value, mask) where count is the number of equal bytes and mask selects the equal bytes. So mask & target == value & target and lower <= value <= upper."
+msgstr "タプル (count, value, mask) を返します。count は一致したバイトの数で、mask は一致したバイトを選びます。つまり mask & target == value & target で、lower <= value <= upper です。"
 
 #: of pwnlib.fmtstr.find_min_hamming_in_range:6
-msgid ""
-"bytes above maxbytes (counting from the least significant first) don't "
-"need to match"
-msgstr ""
+msgid "bytes above maxbytes (counting from the least significant first) don't need to match"
+msgstr "maxbytes より上のバイト（最下位から数えます）は、一致していなくても構いません。"
 
 #: of pwnlib.fmtstr.find_min_hamming_in_range:8
 msgid "lower bound for the returned value, inclusive"
@@ -235,50 +206,30 @@ msgid "carry means allow for overflow of the previous (less significant) byte"
 msgstr ""
 
 #: of pwnlib.fmtstr.find_min_hamming_in_range_step:9
-msgid ""
-"strict means allow the previous bytes to be bigger than the upper limit "
-"(limited to those bytes) in lower = 0x2000, upper = 0x2100, choosing 0x21"
-" for the upper byte is not strict because then the lower bytes have to "
-"actually be smaller than or equal to 00 (0x2111 would not be in range)"
-msgstr ""
+msgid "strict means allow the previous bytes to be bigger than the upper limit (limited to those bytes) in lower = 0x2000, upper = 0x2100, choosing 0x21 for the upper byte is not strict because then the lower bytes have to actually be smaller than or equal to 00 (0x2111 would not be in range)"
+msgstr "strict は、それより前のバイトが上限より大きくてもよいことを表します（そのバイトまでに限ります）。lower = 0x2000、upper = 0x2100 の場合、上位バイトに 0x21 を選ぶのは strict ではありません。下位バイトが実際に 00 以下でなければならなくなるためです（0x2111 は範囲外になります）。"
 
 #: of pwnlib.fmtstr.find_min_hamming_in_range_step:15
-msgid ""
-"A tuple (score, value, mask) where score equals the number of matching "
-"bytes between the returned value and target."
-msgstr ""
+msgid "A tuple (score, value, mask) where score equals the number of matching bytes between the returned value and target."
+msgstr "タプル (score, value, mask)。score は、返された値と target で一致しているバイト数です。"
 
 #: of pwnlib.fmtstr.fmtstr_payload:1
-msgid ""
-"Makes payload with given parameter. It can generate payload for 32 or 64 "
-"bits architectures. The size of the addr is taken from ``context.bits``"
-msgstr ""
+msgid "Makes payload with given parameter. It can generate payload for 32 or 64 bits architectures. The size of the addr is taken from ``context.bits``"
+msgstr "指定したパラメータでペイロードを作ります。32 ビットと 64 ビットのアーキテクチャ用に、ペイロードを生成できます。addr のサイズは ``context.bits`` から取ります。"
 
 #: of pwnlib.fmtstr.fmtstr_payload:5
-msgid ""
-"The overflows argument is a format-string-length to output-amount "
-"tradeoff: Larger values for ``overflows`` produce shorter format strings "
-"that generate more output at runtime."
-msgstr ""
+msgid "The overflows argument is a format-string-length to output-amount tradeoff: Larger values for ``overflows`` produce shorter format strings that generate more output at runtime."
+msgstr "overflows 引数は、フォーマット文字列の長さと出力量のトレードオフです。``overflows`` を大きくすると、フォーマット文字列は短くなりますが、実行時の出力は増えます。"
 
 #: of pwnlib.fmtstr.fmtstr_payload:8
 #, python-brace-format
-msgid ""
-"The writes argument is a dictionary with address/value pairs like "
-"``{addr: value, addr2: value2}``. If the value is an ``int`` datatype, it"
-" will be automatically casted into a bytestring with the length of a "
-"``long`` (8 bytes in 64-bit, 4 bytes in 32-bit). If a specific number of "
-"bytes is intended to be written (such as only a single byte, single "
-"short, or single int and not an entire long), then provide a bytestring "
-"like ``b'\\x37\\x13'`` or ``p16(0x1337)``. Note that the ``write_size`` "
-"argument does not determine **total** bytes written, only the size of "
-"each consecutive write."
-msgstr ""
+msgid "The writes argument is a dictionary with address/value pairs like ``{addr: value, addr2: value2}``. If the value is an ``int`` datatype, it will be automatically casted into a bytestring with the length of a ``long`` (8 bytes in 64-bit, 4 bytes in 32-bit). If a specific number of bytes is intended to be written (such as only a single byte, single short, or single int and not an entire long), then provide a bytestring like ``b'\\x37\\x13'`` or ``p16(0x1337)``. Note that the ``write_size`` argument does not determine **total** bytes written, only the size of each consecutive write."
+msgstr "writes 引数は、``{addr: value, addr2: value2}`` のような、アドレスと値の組の辞書です。値が ``int`` 型の場合は、``long`` の長さ（64 ビットでは 8 バイト、32 ビットでは 4 バイト）のバイト列に自動で変換されます。特定のバイト数だけを書き込みたい場合（long 全体ではなく、1 バイト、short 1 つ、int 1 つだけなど）は、``b'\\x37\\x13'`` や ``p16(0x1337)`` のようなバイト列を渡してください。``write_size`` 引数が決めるのは、書き込む合計バイト数ではなく、連続する各書き込みのサイズだけである点に注意してください。"
 
 #: of pwnlib.fmtstr.fmtstr_payload:16 pwnlib.fmtstr.make_atoms:9
 #, python-brace-format
 msgid "dict with addr, value ``{addr: value, addr2: value2}``"
-msgstr ""
+msgstr "アドレスと値の辞書 ``{addr: value, addr2: value2}``"
 
 #: of pwnlib.fmtstr.fmtstr_payload:18 pwnlib.fmtstr.make_atoms:15
 #: pwnlib.fmtstr.make_payload_dollar:10
@@ -286,10 +237,8 @@ msgid "number of byte already written by the printf function"
 msgstr ""
 
 #: of pwnlib.fmtstr.fmtstr_payload:20
-msgid ""
-"must be ``byte``, ``short`` or ``int``. Tells if you want to write byte "
-"by byte, short by short or int by int (hhn, hn or n)"
-msgstr ""
+msgid "must be ``byte``, ``short`` or ``int``. Tells if you want to write byte by byte, short by short or int by int (hhn, hn or n)"
+msgstr "``byte``、``short``、``int`` のいずれか。1 バイトずつ、short ずつ、int ずつ書き込む（hhn、hn、n）かどうかを指定します。"
 
 #: of pwnlib.fmtstr.fmtstr_payload:22
 msgid ""
@@ -298,30 +247,24 @@ msgid ""
 msgstr ""
 
 #: of pwnlib.fmtstr.fmtstr_payload:24
-msgid ""
-"either 'fast' or 'small' ('small' is default, 'fast' can be used if there"
-" are many writes)"
-msgstr ""
+msgid "either 'fast' or 'small' ('small' is default, 'fast' can be used if there are many writes)"
+msgstr "'fast' か 'small'（既定は 'small'。書き込みが多いときは 'fast' が使えます）"
 
 #: of pwnlib.fmtstr.fmtstr_payload:26 pwnlib.fmtstr.make_payload_dollar:14
 msgid "flag to generete the payload with or w/o $ notation"
-msgstr ""
+msgstr "$ 表記を使ってペイロードを生成するかどうかのフラグ"
 
 #: of pwnlib.fmtstr.fmtstr_payload:29
 msgid "The payload in order to do needed writes"
 msgstr ""
 
 #: of pwnlib.fmtstr.fmtstr_split:1
-msgid ""
-"Build a format string like fmtstr_payload but return the string and data "
-"separately."
-msgstr ""
+msgid "Build a format string like fmtstr_payload but return the string and data separately."
+msgstr "fmtstr_payload のようにフォーマット文字列を作りますが、文字列とデータを別々に返します。"
 
 #: of pwnlib.fmtstr.make_atoms:1
-msgid ""
-"Builds an optimized list of atoms for the given format string payload "
-"parameters. This function tries to optimize two things:"
-msgstr ""
+msgid "Builds an optimized list of atoms for the given format string payload parameters. This function tries to optimize two things:"
+msgstr "指定したフォーマット文字列ペイロードのパラメータに対する、最適化されたアトムのリストを作ります。この関数は、次の 2 点を最適化しようとします。"
 
 #: of pwnlib.fmtstr.make_atoms:4
 msgid "use the fewest amount of possible atoms"
@@ -335,19 +278,15 @@ msgstr ""
 
 #: of pwnlib.fmtstr.make_atoms:7
 msgid "Together this should produce short format strings."
-msgstr ""
+msgstr "これらを合わせると、短いフォーマット文字列になります。"
 
 #: of pwnlib.fmtstr.make_atoms:11 pwnlib.fmtstr.merge_atoms_overlapping:7
-msgid ""
-"basic write size in bytes. Atoms of this size are generated without "
-"constraints on their values."
-msgstr ""
+msgid "basic write size in bytes. Atoms of this size are generated without constraints on their values."
+msgstr "基本の書き込みサイズ（バイト）。このサイズのアトムは、値に制約なしで生成されます。"
 
 #: of pwnlib.fmtstr.make_atoms:13
-msgid ""
-"maximum write size in bytes. No atoms with a size larger than this are "
-"generated (ignored for strategy 'fast')"
-msgstr ""
+msgid "maximum write size in bytes. No atoms with a size larger than this are generated (ignored for strategy 'fast')"
+msgstr "書き込みサイズの最大値（バイト）。これより大きいサイズのアトムは生成されません（strategy が 'fast' の場合は無視されます）。"
 
 #: of pwnlib.fmtstr.make_atoms:17
 msgid ""
@@ -357,42 +296,31 @@ msgstr ""
 
 #: of pwnlib.fmtstr.make_atoms:19
 msgid "either 'fast' or 'small'"
-msgstr ""
+msgstr "'fast' か 'small'"
 
 #: of pwnlib.fmtstr.make_atoms:21
 msgid "bytes that are not allowed to appear in the payload"
 msgstr ""
 
 #: of pwnlib.fmtstr.make_atoms_simple:1
-msgid ""
-"Build format string atoms for writing some data at a given address where "
-"some bytes are not allowed to appear in addresses (such as nullbytes)."
-msgstr ""
+msgid "Build format string atoms for writing some data at a given address where some bytes are not allowed to appear in addresses (such as nullbytes)."
+msgstr "アドレスに現れてはいけないバイト（ヌルバイトなど）がある場合に、指定したアドレスにデータを書き込むためのフォーマット文字列のアトムを作ります。"
 
 #: of pwnlib.fmtstr.make_atoms_simple:4
-msgid ""
-"This function is simple and does not try to minimize the number of atoms."
-" For example, if there are no bad bytes, it simply returns one atom for "
-"each byte:"
-msgstr ""
+msgid "This function is simple and does not try to minimize the number of atoms. For example, if there are no bad bytes, it simply returns one atom for each byte:"
+msgstr "この関数は単純で、アトムの数を最小にしようとはしません。例えば、不正なバイトがなければ、1 バイトごとにアトムを 1 つ返すだけです。"
 
 #: of pwnlib.fmtstr.make_atoms_simple:10
-msgid ""
-"If there are bad bytes, it will try to bypass by skipping addresses "
-"containing bad bytes, otherwise a RuntimeError will be raised:"
-msgstr ""
+msgid "If there are bad bytes, it will try to bypass by skipping addresses containing bad bytes, otherwise a RuntimeError will be raised:"
+msgstr "不正なバイトがある場合は、不正なバイトを含むアドレスを飛ばして回避しようとします。回避できなければ RuntimeError が発生します。"
 
 #: of pwnlib.fmtstr.make_payload_dollar:1
-msgid ""
-"Makes a format-string payload using glibc's dollar syntax to access the "
-"arguments."
-msgstr ""
+msgid "Makes a format-string payload using glibc's dollar syntax to access the arguments."
+msgstr "glibc のドル記号の構文を使って、引数にアクセスするフォーマット文字列のペイロードを作ります。"
 
 #: of pwnlib.fmtstr.make_payload_dollar:3
-msgid ""
-"A tuple (fmt, data) where ``fmt`` are the format string instructions and "
-"data are the pointers that are accessed by the instructions."
-msgstr ""
+msgid "A tuple (fmt, data) where ``fmt`` are the format string instructions and data are the pointers that are accessed by the instructions."
+msgstr "タプル (fmt, data)。``fmt`` はフォーマット文字列の命令、data は、その命令がアクセスするポインタです。"
 
 #: of pwnlib.fmtstr.make_payload_dollar:6
 msgid "format string argument offset at which the first pointer is located"
@@ -407,22 +335,16 @@ msgid "size in bytes of the format string counter (usually 4)"
 msgstr ""
 
 #: of pwnlib.fmtstr.merge_atoms_overlapping:1
-msgid ""
-"Takes a list of atoms and merges consecutive atoms to reduce the number "
-"of atoms. For example if you have two atoms ``AtomWrite(0, 1, 1)`` and "
-"``AtomWrite(1, 1, 1)`` they can be merged into a single atom "
-"``AtomWrite(0, 2, 0x0101)`` to produce a short format string."
-msgstr ""
+msgid "Takes a list of atoms and merges consecutive atoms to reduce the number of atoms. For example if you have two atoms ``AtomWrite(0, 1, 1)`` and ``AtomWrite(1, 1, 1)`` they can be merged into a single atom ``AtomWrite(0, 2, 0x0101)`` to produce a short format string."
+msgstr "アトムのリストを受け取り、連続するアトムをまとめて、アトムの数を減らします。例えば、2 つのアトム ``AtomWrite(0, 1, 1)`` と ``AtomWrite(1, 1, 1)`` は、1 つのアトム ``AtomWrite(0, 2, 0x0101)`` にまとめられ、短いフォーマット文字列になります。"
 
 #: of pwnlib.fmtstr.merge_atoms_overlapping:5
 msgid "list of atoms to merge"
 msgstr ""
 
 #: of pwnlib.fmtstr.merge_atoms_overlapping:9
-msgid ""
-"maximum write size in bytes. No atoms with a size larger than this are "
-"generated."
-msgstr ""
+msgid "maximum write size in bytes. No atoms with a size larger than this are generated."
+msgstr "書き込みサイズの最大値（バイト）。これより大きいサイズのアトムは生成されません。"
 
 #: of pwnlib.fmtstr.merge_atoms_overlapping:11 pwnlib.fmtstr.sort_atoms:11
 msgid "the value at which the counter starts"
@@ -436,61 +358,41 @@ msgstr ""
 
 #: of pwnlib.fmtstr.merge_atoms_writesize:1
 msgid "Merge consecutive atoms based on size."
-msgstr ""
+msgstr "連続するアトムを、サイズに基づいてまとめます。"
 
 #: of pwnlib.fmtstr.merge_atoms_writesize:3
-msgid ""
-"This function simply merges adjacent atoms as long as the merged atom's "
-"size is not larger than ``maxsize``."
-msgstr ""
+msgid "This function simply merges adjacent atoms as long as the merged atom's size is not larger than ``maxsize``."
+msgstr "この関数は、まとめたアトムのサイズが ``maxsize`` を超えない限り、隣り合うアトムをまとめるだけです。"
 
 #: of pwnlib.fmtstr.normalize_writes:1
 #, python-brace-format
-msgid ""
-"This function converts user-specified writes to a dict ``{ address1: "
-"data1, address2: data2, ... }`` such that all values are raw bytes and "
-"consecutive writes are merged to a single key."
-msgstr ""
+msgid "This function converts user-specified writes to a dict ``{ address1: data1, address2: data2, ... }`` such that all values are raw bytes and consecutive writes are merged to a single key."
+msgstr "この関数は、ユーザーが指定した書き込みを、辞書 ``{ address1: data1, address2: data2, ... }`` に変換します。すべての値は生のバイト列になり、連続する書き込みは 1 つのキーにまとめられます。"
 
 #: of pwnlib.fmtstr.overlapping_atoms:1
 msgid "Finds pairs of atoms that write to the same address."
-msgstr ""
+msgstr "同じアドレスに書き込むアトムの組を探します。"
 
 #: of pwnlib.fmtstr.overlapping_atoms:3
 msgid "Basic examples:"
-msgstr ""
+msgstr "基本的な例:"
 
 #: of pwnlib.fmtstr.overlapping_atoms:11
-msgid ""
-"When there are transitive overlaps, only the largest overlap is returned."
-" For example:"
-msgstr ""
+msgid "When there are transitive overlaps, only the largest overlap is returned. For example:"
+msgstr "推移的な重なりがある場合は、最大の重なりだけが返されます。例:"
 
 #: of pwnlib.fmtstr.overlapping_atoms:16
-msgid ""
-"Even though ``AtomWrite(0, 3, 0)`` and ``AtomWrite(2, 4, 1)`` overlap as "
-"well that overlap is not returned as only the largest overlap is "
-"returned."
-msgstr ""
+msgid "Even though ``AtomWrite(0, 3, 0)`` and ``AtomWrite(2, 4, 1)`` overlap as well that overlap is not returned as only the largest overlap is returned."
+msgstr "``AtomWrite(0, 3, 0)`` と ``AtomWrite(2, 4, 1)`` も重なっていますが、最大の重なりだけが返されるため、その重なりは返されません。"
 
 #: of pwnlib.fmtstr.sort_atoms:1
-msgid ""
-"This function sorts atoms such that the amount by which the format string"
-" counter has to been increased between consecutive atoms is minimized."
-msgstr ""
+msgid "This function sorts atoms such that the amount by which the format string counter has to been increased between consecutive atoms is minimized."
+msgstr "この関数は、連続するアトムの間でフォーマット文字列のカウンタを増やす必要がある量が最小になるように、アトムを並べ替えます。"
 
 #: of pwnlib.fmtstr.sort_atoms:4
-msgid ""
-"The idea is to reduce the amount of data the the format string has to "
-"output to write the desired atoms. For example, directly generating a "
-"format string for the atoms ``[AtomWrite(0, 1, 0xff), AtomWrite(1, 1, "
-"0xfe)]`` is suboptimal: we'd first need to output 0xff bytes to get the "
-"counter to 0xff and then output 0x100+1 bytes to get it to 0xfe again. If"
-" we sort the writes first we only need to output 0xfe bytes and then 1 "
-"byte to get to 0xff."
-msgstr ""
+msgid "The idea is to reduce the amount of data the the format string has to output to write the desired atoms. For example, directly generating a format string for the atoms ``[AtomWrite(0, 1, 0xff), AtomWrite(1, 1, 0xfe)]`` is suboptimal: we'd first need to output 0xff bytes to get the counter to 0xff and then output 0x100+1 bytes to get it to 0xfe again. If we sort the writes first we only need to output 0xfe bytes and then 1 byte to get to 0xff."
+msgstr "目的は、目的のアトムを書き込むためにフォーマット文字列が出力しなければならないデータ量を減らすことです。例えば、アトム ``[AtomWrite(0, 1, 0xff), AtomWrite(1, 1, 0xfe)]`` からそのままフォーマット文字列を作ると、最適ではありません。まず 0xff バイトを出力してカウンタを 0xff にし、さらに 0xfe に戻すために 0x100+1 バイトを出力する必要があるからです。先に書き込みを並べ替えれば、0xfe バイトを出力し、そのあと 1 バイト出力するだけで 0xff に達します。"
 
 #: of pwnlib.fmtstr.sort_atoms:9
 msgid "list of atoms to sort"
 msgstr ""
-
